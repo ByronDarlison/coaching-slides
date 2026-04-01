@@ -20,22 +20,22 @@
             --bg-primary: #FAFAFA;
             --bg-white: #FFFFFF;
             --text-primary: #1a1a1a;
-            --text-secondary: #666666;
+            --text-secondary: #555555;
             --text-muted: #999999;
             --accent-blue: #326AB5;
             --accent-green: #54B570;
             --accent-green-light: #f5faf6;
             --accent-green-border: #dceee0;
-            --accent-green-text: #7aba8a;
+            --accent-green-text: #54B570;
             --border-light: #e8e8e8;
 
             /* Typography */
             --font-main: 'IBM Plex Sans', sans-serif;
-            --title-size: clamp(1.8rem, 4.5vw, 3.2rem);
-            --h2-size: clamp(1.4rem, 3vw, 2.2rem);
-            --h3-size: clamp(1rem, 2vw, 1.4rem);
-            --body-size: clamp(0.8rem, 1.4vw, 1.05rem);
-            --small-size: clamp(0.65rem, 1vw, 0.85rem);
+            --title-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            --h2-size: clamp(1.375rem, 2.5vw, 1.875rem);
+            --h3-size: clamp(1.125rem, 1.8vw, 1.5rem);
+            --body-size: clamp(1rem, 1.5vw, 1.25rem);
+            --small-size: clamp(0.875rem, 1.2vw, 1.0625rem);
 
             /* Spacing */
             --slide-padding: clamp(2rem, 5vw, 5rem);
@@ -178,7 +178,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+            background: linear-gradient(90deg, var(--accent-blue) 60%, var(--accent-green) 60%);
         }
 
         /* --- Slide titles --- */
@@ -244,8 +244,8 @@
             position: absolute;
             left: 0;
             top: clamp(6px, 0.8vh, 10px);
-            width: 6px;
-            height: 6px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: var(--accent-green);
         }
@@ -269,13 +269,14 @@
             color: var(--accent-blue);
             text-decoration: none;
             padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px);
-            border: 1px solid rgba(50, 106, 181, 0.25);
+            background: rgba(50, 106, 181, 0.06);
+            border: 2px solid rgba(50, 106, 181, 0.25);
             border-radius: 4px;
             transition: background 0.2s, border-color 0.2s;
         }
 
         .link-article:hover {
-            background: rgba(50, 106, 181, 0.06);
+            background: rgba(50, 106, 181, 0.12);
             border-color: var(--accent-blue);
         }
 
@@ -287,7 +288,7 @@
             font-weight: 600;
             color: var(--accent-green-text);
             background: var(--accent-green-light);
-            border: 1px solid var(--accent-green-border);
+            border: 2px solid var(--accent-green-border);
             border-radius: 3px;
             padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px);
             text-decoration: none;
@@ -315,7 +316,7 @@
         /* --- Two-column layout for deliverable slides --- */
         .two-col {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 3fr 2fr;
             gap: clamp(1.5rem, 3vw, 3rem);
             align-items: center;
             flex: 1;
@@ -413,7 +414,7 @@
         .homework-section h3 {
             font-size: var(--h3-size);
             font-weight: 600;
-            color: var(--accent-blue);
+            color: #333333;
             margin-bottom: clamp(0.3rem, 0.8vh, 0.6rem);
         }
 
@@ -425,7 +426,7 @@
         }
 
         .homework-list li {
-            font-size: var(--small-size);
+            font-size: var(--body-size);
             line-height: 1.5;
             color: var(--text-primary);
             padding-left: clamp(0.8rem, 1.5vw, 1.2rem);
@@ -437,8 +438,8 @@
             position: absolute;
             left: 0;
             top: clamp(5px, 0.7vh, 8px);
-            width: 5px;
-            height: 5px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: var(--accent-green);
         }
@@ -454,7 +455,7 @@
         }
 
         .homework-list .link-prompt {
-            font-size: clamp(0.55rem, 0.8vw, 0.7rem);
+            font-size: clamp(0.65rem, 1vw, 0.85rem);
             padding: 1px 6px;
             vertical-align: middle;
             margin-left: 4px;
@@ -463,7 +464,7 @@
         /* --- Intro slide --- */
         .intro-quote {
             font-size: var(--h2-size);
-            font-weight: 300;
+            font-weight: 400;
             color: var(--text-primary);
             line-height: 1.5;
             max-width: 700px;
@@ -473,7 +474,7 @@
         /* --- Close slide --- */
         .close-question {
             font-size: var(--h2-size);
-            font-weight: 300;
+            font-weight: 400;
             color: var(--text-secondary);
             margin-top: var(--element-gap);
         }
@@ -569,7 +570,7 @@
             <div class="two-col">
                 <div class="col-text" style="align-items: flex-start;">
                     <h1 class="slide-title reveal">Good News</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size); font-weight: 300;">
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size); font-weight: 400;">
                         Positive. Professional. 5-10 seconds.
                     </p>
                 </div>
@@ -634,7 +635,7 @@
                     <h1 class="slide-title reveal">Byron Darlison</h1>
                     <p class="slide-subtitle reveal">Metronomics Coach</p>
                     <p class="intro-quote reveal">
-                        It took me 30 years to build and sell my company. I'd like to help you do what I did in 3.
+                        I built and sold a technology company after scaling it with the Metronomics operating system. Now I coach founders to do in three years what took me thirty.
                     </p>
                 </div>
                 <div class="col-image reveal">
@@ -676,13 +677,12 @@
                 <div class="col-text">
                     <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
                     <h1 class="slide-title reveal">Owner's Outcome</h1>
-                    <p class="slide-subtitle reveal">Quick Check-In</p>
                     <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
-                        Confirm completion of the pre-work exercise. Questions only.
+                        What the owner personally wants the business to deliver — by when, measured by what.
                     </p>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a>
                     </div>
                 </div>
                 <div class="col-image reveal">
@@ -709,7 +709,7 @@
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a>
                     </div>
                 </div>
                 <div class="col-image reveal">
@@ -738,7 +738,7 @@
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a>
                     </div>
                 </div>
                 <div class="col-image reveal">
@@ -765,7 +765,7 @@
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a>
                     </div>
                 </div>
                 <div class="col-image reveal">
@@ -792,7 +792,7 @@
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a>
                     </div>
                 </div>
                 <div class="col-image reveal">
@@ -821,12 +821,12 @@
             </div>
 
             <div class="homework-section reveal">
-                <h3>Read Ahead for M2</h3>
+                <h3>Read Ahead and Complete the AI Prompts for M2</h3>
                 <ul class="homework-list">
-                    <li><a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener">Core Purpose ★ and BHAG ★</a> <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener">Meeting Cadence ★</a> <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/a-player-team-assessment/" target="_blank" rel="noopener">A-Player Team Assessment ★</a> <a href="https://www.darlison.com/a-player-team-assessment-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank" rel="noopener">Core Values ★</a> <a href="https://www.darlison.com/values-discovery-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener">Core Purpose ★ and BHAG ★</a> <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener">Meeting Cadence ★</a> <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/a-player-team-assessment/" target="_blank" rel="noopener">A-Player Team Assessment ★</a> <a href="https://www.darlison.com/a-player-team-assessment-prompt/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank" rel="noopener">Core Values ★</a> <a href="https://www.darlison.com/values-discovery-prompt/" target="_blank" rel="noopener" class="link-prompt">AI Prompt</a></li>
                 </ul>
             </div>
 
