@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "coaching-slides",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/byron/coaching-slides", "-l", "3847", "--no-clipboard"],
+      "port": 3847
+    }
+  ]
+}
