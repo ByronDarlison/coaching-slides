@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M1 — Monthly Coaching Meeting</title>
+    <title>M2 — Monthly Coaching Meeting</title>
 
     <!-- Fonts: IBM Plex Sans from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,6 +214,12 @@
             color: var(--accent-blue);
             background: rgba(50, 106, 181, 0.08);
             border: 1px solid rgba(50, 106, 181, 0.2);
+        }
+
+        .symbol-evolution {
+            color: #b5832a;
+            background: rgba(181, 131, 42, 0.08);
+            border: 1px solid rgba(181, 131, 42, 0.2);
         }
 
         .symbol-confirm {
@@ -471,16 +477,6 @@
             margin-left: 4px;
         }
 
-        /* --- Intro slide --- */
-        .intro-quote {
-            font-size: var(--h2-size);
-            font-weight: 400;
-            color: var(--text-primary);
-            line-height: 1.5;
-            max-width: 700px;
-            margin-top: var(--content-gap);
-        }
-
         /* --- Close slide --- */
         .close-question {
             font-size: var(--h2-size);
@@ -575,18 +571,18 @@
     <!-- ===========================================
          SLIDE 0: TITLE
          =========================================== -->
-    <section class="slide" aria-label="Monthly Meeting One">
+    <section class="slide" aria-label="Monthly Meeting Two">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text" style="gap: clamp(0.75rem, 2vh, 1.5rem);">
-                    <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">Monthly Meeting One</h1>
-                    <p class="slide-subtitle reveal">Mapping how the company works and makes money</p>
+                    <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">Monthly Meeting Two</h1>
+                    <p class="slide-subtitle reveal">Defining who you are and where you're going</p>
                     <hr class="reveal" style="width: clamp(60px, 10vw, 120px); height: 2px; background: var(--accent-green); border: none;">
                     <img class="reveal" src="../../shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(160px, 20vw, 260px); height: auto;">
                     <span class="reveal" style="font-size: var(--body-size); font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em;">darlison.com</span>
                 </div>
                 <div class="col-image reveal">
-                    <img src="assets/title-m1.png" alt="Mapping how the business works">
+                    <img src="assets/title-options/option-1-compass.png" alt="Defining who you are and where you're going">
                 </div>
             </div>
         </div>
@@ -659,29 +655,7 @@
     </section>
 
     <!-- ===========================================
-         SLIDE 3: INTRODUCTION
-         =========================================== -->
-    <section class="slide" aria-label="Introduction">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Byron Darlison</h1>
-                    <p class="slide-subtitle reveal">Metronomics Coach</p>
-                    <p class="intro-quote reveal">
-                        I built and sold a technology company after scaling it with the Metronomics operating system. Now I coach founders to do in three years what took me thirty.
-                    </p>
-                </div>
-                <div class="col-image reveal">
-                    <img src="assets/introduction.png" alt="Coach guiding the path forward">
-                </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(2/12)</span>
-    </section>
-
-    <!-- ===========================================
-         SLIDE 4: READING
+         SLIDE 3: READING
          =========================================== -->
     <section class="slide" aria-label="Reading">
         <div class="slide-content">
@@ -695,16 +669,16 @@
                     </ul>
                 </div>
                 <div class="col-image reveal">
-                    <img src="assets/reading.png" alt="Reading list">
+                    <img src="../m1/assets/reading.png" alt="Reading list">
                 </div>
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(2/14)</span>
+        <span class="time-indicator">(2/12)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 5: OWNER'S OUTCOME — QUICK CHECK-IN
+         SLIDE 4: OWNER'S OUTCOME — CONFIRM
          =========================================== -->
     <section class="slide" aria-label="Owner's Outcome">
         <div class="slide-content">
@@ -726,22 +700,20 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(3/17)</span>
+        <span class="time-indicator">(3/15)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 6: ORGANIZATIONAL FUNCTION CHART
+         SLIDE 5: ORG FUNCTION CHART — EVOLUTION
          =========================================== -->
     <section class="slide" aria-label="Organizational Function Chart">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
                     <h1 class="slide-title reveal">Organizational Function Chart</h1>
                     <ul class="talking-points">
-                        <li class="reveal">Structure the company by function, not by person</li>
-                        <li class="reveal">Identify where the gaps are — open roles and future functions</li>
-                        <li class="reveal">One person can appear in multiple boxes</li>
+                        <li class="reveal">Review and refine from M1</li>
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
@@ -754,24 +726,22 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(20/37)</span>
+        <span class="time-indicator">(8/23)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 7: KFFM
+         SLIDE 6: KFFM — EVOLUTION
          =========================================== -->
     <section class="slide" aria-label="KFFM">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
                     <h1 class="slide-title reveal">KFFM</h1>
                     <p class="slide-subtitle reveal">Key Function Flow Map</p>
                     <ul class="talking-points">
-                        <li class="reveal">Map the 3-5 key functions from lead to cash</li>
-                        <li class="reveal">Color code green/yellow/red — winning or losing at a glance</li>
-                        <li class="reveal">Label arrows with widgets — countable things, not dollars</li>
-                        <li class="reveal">Four stages: functions, owners, widgets, critical numbers</li>
+                        <li class="reveal">Revisit the Level 1 flow — does it still hold?</li>
+                        <li class="reveal">Sharpen widget labels — countable, not dollar-based</li>
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
@@ -784,22 +754,21 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(30/67)</span>
+        <span class="time-indicator">(8/31)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 8: FUNCTIONAL ACCOUNTABILITY CHART
+         SLIDE 7: FUNCTIONAL ACCOUNTABILITY CHART — EVOLUTION
          =========================================== -->
     <section class="slide" aria-label="Functional Accountability Chart">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
                     <h1 class="slide-title reveal">Functional Accountability Chart</h1>
                     <ul class="talking-points">
-                        <li class="reveal">For each function: who owns it and what number tells you if it's winning or losing</li>
-                        <li class="reveal">The test: can the owner move the number by changing how they run the function</li>
-                        <li class="reveal">Set green/yellow/red thresholds for each critical number</li>
+                        <li class="reveal">Review owner assignments and critical numbers</li>
+                        <li class="reveal">Test: can each owner actually move their number?</li>
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
@@ -812,23 +781,22 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(20/87)</span>
+        <span class="time-indicator">(7/38)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 9: PROFIT/X
+         SLIDE 8: PROFIT/X — EVOLUTION
          =========================================== -->
     <section class="slide" aria-label="Profit/X">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
                     <h1 class="slide-title reveal">Profit/X</h1>
                     <p class="slide-subtitle reveal">The one unit of measurement that captures how the company makes money — profit per customer, per transaction, per subscription.</p>
                     <ul class="talking-points">
-                        <li class="reveal">Identify the single denominator — profit per what — that captures how the company makes money</li>
-                        <li class="reveal">The obvious billing unit is often wrong. X emerges from the widgets on the KFFM.</li>
-                        <li class="reveal">Once identified, every function aligns around one shared measure</li>
+                        <li class="reveal">Revisit the denominator — is it still the right X?</li>
+                        <li class="reveal">Connect it back to the refined KFFM widgets</li>
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
@@ -841,11 +809,213 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(15/102)</span>
+        <span class="time-indicator">(5/43)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 10: HOMEWORK
+         SLIDE 9: CORE PURPOSE — INTRODUCED
+         =========================================== -->
+    <section class="slide" aria-label="Core Purpose">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Core Purpose</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Why does this company exist beyond making money?</li>
+                        <li class="reveal">It must personally inspire the team — no persuasion required</li>
+                        <li class="reveal">Explore the origin story to find what would be missed if you disappeared</li>
+                        <li class="reveal">Each leader discovers independently first, then compare</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/core-purpose-bhag.png" alt="Core Purpose and BHAG">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(12/55)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 10: CORE PURPOSE — EXAMPLES
+         =========================================== -->
+    <section class="slide" aria-label="Core Purpose Examples">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Core Purpose Examples</h1>
+                <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(0.8rem, 2vh, 1.5rem); margin-top: var(--content-gap);">
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/disney.png" alt="Disney" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">Walt Disney</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">To make people happy</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/nike.png" alt="Nike" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">Nike</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">To experience the emotion of competition, winning, and crushing competitors</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/3m.png" alt="3M" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">3M</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">To solve unsolved problems innovatively</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/patagonia.png" alt="Patagonia" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">Patagonia</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">We're in business to save our home planet</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/sony.png" alt="Sony" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">Sony</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">To experience the joy of advancing and applying technology for the benefit of the public</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: clamp(8px, 1vw, 16px);">
+                        <img src="assets/logos/hp.png" alt="HP" style="width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 4px;">
+                        <div>
+                            <span style="font-size: var(--small-size); font-weight: 600; color: var(--text-primary);">Hewlett-Packard</span><br>
+                            <span style="font-size: var(--small-size); color: var(--text-secondary);">To make technical contributions for the advancement and welfare of humanity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(12/55)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 11: BHAG — INTRODUCED
+         =========================================== -->
+    <section class="slide" aria-label="BHAG">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">BHAG</h1>
+                    <p class="slide-subtitle reveal">Big Hairy Audacious Goal</p>
+                    <ul class="talking-points">
+                        <li class="reveal">A 10-30 year goal with no numbers — just a destination</li>
+                        <li class="reveal">Lives at the intersection of purpose, capability, and economic engine</li>
+                        <li class="reveal">Test for authenticity and a plausible path</li>
+                        <li class="reveal">Validate independently, then align as a team</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/core-purpose-bhag.png" alt="BHAG">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(12/67)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 11: CORE VALUES — INTRODUCED
+         =========================================== -->
+    <section class="slide" aria-label="Core Values">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Core Values</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Real values show up in costly decisions, not brainstorming</li>
+                        <li class="reveal">Stories reveal values — seven specific leadership stories surface patterns</li>
+                        <li class="reveal">Each candidate value gets pressure-tested through 10 evaluations</li>
+                        <li class="reveal">Values must direct behavior — "Tell the truth before asked" beats "be honest"</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/values-discovery-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/core-values.png" alt="Core Values">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(10/77)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 12: A-PLAYER TEAM ASSESSMENT — INTRODUCED
+         =========================================== -->
+    <section class="slide" aria-label="A-Player Team Assessment">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">A-Player Team Assessment</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Plot every team member: values alignment vs performance</li>
+                        <li class="reveal">Four zones, four actions: celebrate, coach, confront, part ways</li>
+                        <li class="reveal">The peer conversation is the point, not the graph</li>
+                        <li class="reveal">Start with gut feel now — it sharpens over time</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/a-player-team-assessment/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/a-player-team-assessment-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/a-player.png" alt="A-Player Team Assessment">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(11/88)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 13: MEETING CADENCE — INTRODUCED
+         =========================================== -->
+    <section class="slide" aria-label="Meeting Cadence">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Meeting Cadence</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Eight meetings across six frequencies drive all systems</li>
+                        <li class="reveal">Keep status meetings clean — solve problems outside the room</li>
+                        <li class="reveal">Start with the daily huddle — it's the foundation</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/meeting-cadence.png" alt="Meeting Cadence">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(10/98)</span>
+    </section>
+
+    <!-- ===========================================
+         SLIDE 14: HOMEWORK
          =========================================== -->
     <section class="slide" aria-label="Homework">
         <div class="slide-content">
@@ -856,18 +1026,17 @@
             <div class="homework-section reveal">
                 <h3>Review and Complete</h3>
                 <ul class="homework-list">
-                    <li>Finalize the Organizational Function Chart, KFFM, Functional Accountability Chart, and Profit/X</li>
+                    <li>Finalize Core Purpose, BHAG, Core Values (first draft), A-Player Assessment, and Meeting Cadence</li>
                     <li>Add finalized tools to Mural and Metronome Software</li>
                 </ul>
             </div>
 
             <div class="homework-section reveal">
-                <h3>Read Ahead and Complete the ✦ AI Prompts for M2</h3>
+                <h3>Read Ahead and Complete the ✦ AI Prompts for M3</h3>
                 <ul class="homework-list">
-                    <li><a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener">Core Purpose ★ and BHAG ★</a> <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener">Meeting Cadence ★</a> <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/a-player-team-assessment/" target="_blank" rel="noopener">A-Player Team Assessment ★</a> <a href="https://www.darlison.com/a-player-team-assessment-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
-                    <li><a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank" rel="noopener">Core Values ★</a> <a href="https://www.darlison.com/values-discovery-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">3HAG ★</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">1HAG ★</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">QHAG + 13-Week Sprint Lanes ★</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a></li>
                 </ul>
             </div>
 
@@ -875,21 +1044,21 @@
                 <h3>Books for Month 3</h3>
                 <ul class="homework-list">
                     <li><a href="https://www.amazon.ca/dp/1544503687" target="_blank" rel="noopener">3HAG WAY</a> <span style="color: var(--text-secondary);">— Shannon Susko</span></li>
-                    <li><a href="https://www.amazon.ca/dp/1591845262" target="_blank" rel="noopener">Topgrading</a> <span style="color: var(--text-secondary);">— Bradford D. Smart</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0887306632" target="_blank" rel="noopener">Topgrading</a> <span style="color: var(--text-secondary);">— Bradford D. Smart</span></li>
                 </ul>
             </div>
             </div>
             <div class="col-image reveal">
-                <img src="assets/homework.png" alt="Homework and preparation">
+                <img src="../m1/assets/homework.png" alt="Homework and preparation">
             </div>
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(13/115)</span>
+        <span class="time-indicator">(12/110)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 11: CASCADE 3 KEY MESSAGES
+         SLIDE 15: CASCADE 3 KEY MESSAGES
          =========================================== -->
     <section class="slide" aria-label="Cascade 3 Key Messages">
         <div class="slide-content">
@@ -905,12 +1074,11 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
-        <span class="time-indicator">(2/117)</span>
+        <span class="time-indicator">(7/117)</span>
     </section>
 
     <!-- ===========================================
-         SLIDE 12: ONE-PHRASE CLOSE
-
+         SLIDE 16: ONE-PHRASE CLOSE
          =========================================== -->
     <section class="slide" aria-label="One-Phrase Close">
         <div class="slide-content">
@@ -947,13 +1115,11 @@
                 this.setupWheelNav();
             }
 
-            /* --- Intersection Observer for reveal animations --- */
             setupIntersectionObserver() {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('visible');
-                            // Update current slide index
                             const idx = Array.from(this.slides).indexOf(entry.target);
                             if (idx !== -1) {
                                 this.currentSlide = idx;
@@ -967,7 +1133,6 @@
                 this.slides.forEach(slide => observer.observe(slide));
             }
 
-            /* --- Keyboard navigation --- */
             setupKeyboardNav() {
                 document.addEventListener('keydown', (e) => {
                     switch(e.key) {
@@ -996,7 +1161,6 @@
                 });
             }
 
-            /* --- Touch/swipe navigation --- */
             setupTouchNav() {
                 let touchStartY = 0;
                 document.addEventListener('touchstart', (e) => {
@@ -1012,7 +1176,6 @@
                 }, { passive: true });
             }
 
-            /* --- Mouse wheel navigation --- */
             setupWheelNav() {
                 document.addEventListener('wheel', (e) => {
                     if (this.isScrolling) return;
@@ -1025,7 +1188,6 @@
                 }, { passive: true });
             }
 
-            /* --- Progress bar --- */
             setupProgressBar() {
                 this.progressBar = document.getElementById('progressBar');
                 this.updateProgressBar();
@@ -1037,7 +1199,6 @@
                 this.progressBar.style.width = progress + '%';
             }
 
-            /* --- Navigation dots --- */
             setupNavDots() {
                 const nav = document.getElementById('navDots');
                 if (!nav) return;
@@ -1058,7 +1219,6 @@
                 });
             }
 
-            /* --- Navigate to slide --- */
             goToSlide(index) {
                 if (index < 0 || index >= this.slides.length) return;
                 this.currentSlide = index;
@@ -1068,7 +1228,6 @@
             }
         }
 
-        // Initialize
         new SlidePresentation();
     </script>
 </body>
