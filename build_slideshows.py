@@ -15,15 +15,15 @@ MONTHLY_DIR = os.path.join(BASE_DIR, "monthly")
 # ─── Image URL map (keyed by article topic) ──────────────────────────
 IMG = {
     "kffm": "https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png",
-    "purpose": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_cav5aicav5aicav5.png",
-    "planning": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_6ndqgg6ndqgg6ndq.png",
-    "meetings": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_29ejjc29ejjc29ej.png",
-    "aplayer": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_hhw37ohhw37ohhw3.png",
-    "values": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_83f51483f51483f5.png",
-    "scorecards": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_yxjsdkyxjsdkyxjs.png",
-    "coaching": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_jksdx8jksdx8jksd.png",
-    "skiplevel": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_nw29ftnw29ftnw29.png",
-    "owner": "https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
+    "purpose": "https://www.darlison.com/content/images/size/w1200/2026/03/core-purpose-discovery-company-why.png",
+    "planning": "https://www.darlison.com/content/images/size/w1200/2026/04/planning-cascade-3hag-weekly-execution.png",
+    "meetings": "https://www.darlison.com/content/images/size/w1200/2026/03/eight-meetings-company-cadence-2.png",
+    "aplayer": "https://www.darlison.com/content/images/size/w1200/2026/03/a-player-team-assessment-values-performance-scatter.png",
+    "values": "https://www.darlison.com/content/images/size/w1200/2026/03/How-To-Disover-Company-Values.png",
+    "scorecards": "https://www.darlison.com/content/images/size/w1200/2026/04/darlison-featured-scoreboard-day-and-the-weekly-leadership-20260401_060903.png",
+    "coaching": "https://www.darlison.com/content/images/2026/02/The-Art-of-Mentorship--A-Framework-for-One-on-One-Coaching.png",
+    "skiplevel": "https://www.darlison.com/content/images/size/w1200/2026/01/Skip-Level---cropped.png",
+    "owner": "https://www.darlison.com/content/images/size/w1200/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
 }
 
 # ─── Book data ────────────────────────────────────────────────────────
