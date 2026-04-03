@@ -13,18 +13,40 @@ BASE_DIR = os.path.expanduser("~/coaching-slides")
 MONTHLY_DIR = os.path.join(BASE_DIR, "monthly")
 
 # ─── Image URL map (keyed by article topic) ──────────────────────────
-IMG = {
-    "kffm": "https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png",
-    "purpose": "https://www.darlison.com/content/images/size/w1200/2026/03/core-purpose-discovery-company-why.png",
-    "planning": "https://www.darlison.com/content/images/size/w1200/2026/04/planning-cascade-3hag-weekly-execution.png",
-    "meetings": "https://www.darlison.com/content/images/size/w1200/2026/03/eight-meetings-company-cadence-2.png",
-    "aplayer": "https://www.darlison.com/content/images/size/w1200/2026/03/a-player-team-assessment-values-performance-scatter.png",
-    "values": "https://www.darlison.com/content/images/size/w1200/2026/03/How-To-Disover-Company-Values.png",
-    "scorecards": "https://www.darlison.com/content/images/size/w1200/2026/04/darlison-featured-scoreboard-day-and-the-weekly-leadership-20260401_060903.png",
-    "coaching": "https://www.darlison.com/content/images/2026/02/The-Art-of-Mentorship--A-Framework-for-One-on-One-Coaching.png",
-    "skiplevel": "https://www.darlison.com/content/images/size/w1200/2026/01/Skip-Level---cropped.png",
-    "owner": "https://www.darlison.com/content/images/size/w1200/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
-}
+def _img(month):
+    """Return a function that resolves image keys to paths relative to m{month}/."""
+    prefix = "../../shared/assets/deliverables"
+    # Article-sourced images (external URLs)
+    base = {
+        "kffm": "https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png",
+        "purpose": "https://www.darlison.com/content/images/size/w1200/2026/03/core-purpose-discovery-company-why.png",
+        "planning": "https://www.darlison.com/content/images/size/w1200/2026/04/planning-cascade-3hag-weekly-execution.png",
+        "meetings": "https://www.darlison.com/content/images/size/w1200/2026/03/eight-meetings-company-cadence-2.png",
+        "aplayer": "https://www.darlison.com/content/images/size/w1200/2026/03/a-player-team-assessment-values-performance-scatter.png",
+        "values": "https://www.darlison.com/content/images/size/w1200/2026/03/How-To-Disover-Company-Values.png",
+        "scorecards": "https://www.darlison.com/content/images/size/w1200/2026/04/darlison-featured-scoreboard-day-and-the-weekly-leadership-20260401_060903.png",
+        "coaching": "https://www.darlison.com/content/images/2026/02/The-Art-of-Mentorship--A-Framework-for-One-on-One-Coaching.png",
+        "skiplevel": "https://www.darlison.com/content/images/size/w1200/2026/01/Skip-Level---cropped.png",
+        "owner": "https://www.darlison.com/content/images/size/w1200/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
+        # Generated images for deliverables without articles
+        "market_map": f"{prefix}/market-map.png",
+        "core_customer": f"{prefix}/core-customer.png",
+        "attribution_map": f"{prefix}/attribution-map.png",
+        "activity_fit": f"{prefix}/activity-fit-map.png",
+        "swimlanes": f"{prefix}/swimlanes.png",
+        "widget_forecast": f"{prefix}/widget-forecast.png",
+        "positioning": f"{prefix}/positioning-statement.png",
+        "value_prop": f"{prefix}/value-proposition.png",
+        "monthly_forecast": f"{prefix}/monthly-forecast-review.png",
+        "strategy_confirm": f"{prefix}/strategy-confirmation.png",
+        "rolling_forecast": f"{prefix}/rolling-forecast-36.png",
+        "flywheel": f"{prefix}/flywheel.png",
+        "brand_promise": f"{prefix}/brand-promise.png",
+        "secret_sauce": f"{prefix}/secret-sauce.png",
+    }
+    return base
+
+IMG = _img(0)  # Same for all months since we use ../../shared/assets/ prefix
 
 # ─── Book data ────────────────────────────────────────────────────────
 BOOKS_PREKICKOFF = [
@@ -62,10 +84,30 @@ def reading_for(month):
     return books
 
 
+# ─── Auto image key lookup by deliverable name ─────────────────────
+_NAME_TO_IMAGE = {
+    "Market Map": "market_map",
+    "Core Customer Analysis": "core_customer",
+    "Attribution Map": "attribution_map",
+    "Activity Fit Map": "activity_fit",
+    "Swimlanes": "swimlanes",
+    "12-Month Widget-Based Forecast": "widget_forecast",
+    "Positioning Statement": "positioning",
+    "Value Proposition": "value_prop",
+    "Monthly Forecast Review": "monthly_forecast",
+    "Strategy Confirmation": "strategy_confirm",
+    "36-Month Rolling Forecast": "rolling_forecast",
+    "Flywheel": "flywheel",
+    "Brand Promise with Guarantee": "brand_promise",
+    "Secret Sauce": "secret_sauce",
+}
+
 # ─── Deliverable helper ──────────────────────────────────────────────
 def D(name, symbol, badge, time, cumulative, subtitle=None, desc=None,
       points=None, article=None, prompt=None, image_key=None):
-    """Create a deliverable dict."""
+    """Create a deliverable dict. Auto-assigns image_key from name if not provided."""
+    if image_key is None:
+        image_key = _NAME_TO_IMAGE.get(name)
     return {
         "name": name,
         "symbol": symbol,
