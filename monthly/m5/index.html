@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5 &mdash; Monthly Meeting Five</title>
+
+    <!-- Fonts: IBM Plex Sans from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================================
+           CSS CUSTOM PROPERTIES (THEME)
+           Brand: Blue #326AB5, Green #54B570
+           =========================================== */
+        :root {
+            /* Colors */
+            --bg-primary: #FAFAFA;
+            --bg-white: #FFFFFF;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --text-muted: #999999;
+            --accent-blue: #326AB5;
+            --accent-green: #54B570;
+            --accent-green-light: #f5faf6;
+            --accent-green-border: #dceee0;
+            --accent-green-text: #54B570;
+            --border-light: #e8e8e8;
+
+            /* Typography */
+            --font-main: 'IBM Plex Sans', sans-serif;
+            --title-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            --h2-size: clamp(1.375rem, 2.5vw, 1.875rem);
+            --h3-size: clamp(1.125rem, 1.8vw, 1.5rem);
+            --body-size: clamp(1rem, 1.5vw, 1.25rem);
+            --small-size: clamp(0.875rem, 1.2vw, 1.0625rem);
+
+            /* Spacing */
+            --slide-padding: clamp(2rem, 5vw, 5rem);
+            --content-gap: clamp(0.75rem, 2vw, 1.5rem);
+            --element-gap: clamp(0.25rem, 1vw, 0.75rem);
+
+            /* Animation */
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration-normal: 0.6s;
+        }
+
+        /* ===========================================
+           RESET
+           =========================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ===========================================
+           VIEWPORT FITTING: MANDATORY BASE STYLES
+           =========================================== */
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+            font-family: var(--font-main);
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: var(--bg-white);
+        }
+
+        .slide-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-height: 100%;
+            overflow: hidden;
+            padding: var(--slide-padding);
+            padding-left: clamp(3rem, 8vw, 8rem);
+            padding-right: clamp(3rem, 8vw, 8rem);
+        }
+
+        .card, .container, .content-box {
+            max-width: min(90vw, 1000px);
+            max-height: min(80vh, 700px);
+        }
+
+        .feature-list, .bullet-list {
+            gap: clamp(0.4rem, 1vh, 1rem);
+        }
+
+        .feature-list li, .bullet-list li {
+            font-size: var(--body-size);
+            line-height: 1.4;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            gap: clamp(0.5rem, 1.5vw, 1rem);
+        }
+
+        img, .image-container {
+            max-width: 100%;
+            max-height: min(50vh, 400px);
+            object-fit: contain;
+        }
+
+        /* ===========================================
+           RESPONSIVE BREAKPOINTS
+           =========================================== */
+        @media (max-height: 700px) {
+            :root {
+                --slide-padding: clamp(0.75rem, 3vw, 2rem);
+                --content-gap: clamp(0.4rem, 1.5vw, 1rem);
+                --title-size: clamp(1.25rem, 4.5vw, 2.5rem);
+                --h2-size: clamp(1rem, 3vw, 1.75rem);
+            }
+        }
+
+        @media (max-height: 600px) {
+            :root {
+                --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem);
+                --content-gap: clamp(0.3rem, 1vw, 0.75rem);
+                --title-size: clamp(1.1rem, 4vw, 2rem);
+                --body-size: clamp(0.7rem, 1.2vw, 0.95rem);
+            }
+            .nav-dots, .keyboard-hint, .decorative {
+                display: none;
+            }
+        }
+
+        @media (max-height: 500px) {
+            :root {
+                --slide-padding: clamp(0.4rem, 2vw, 1rem);
+                --title-size: clamp(1rem, 3.5vw, 1.5rem);
+                --h2-size: clamp(0.9rem, 2.5vw, 1.25rem);
+                --body-size: clamp(0.65rem, 1vw, 0.85rem);
+            }
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                --title-size: clamp(1.25rem, 7vw, 2.5rem);
+            }
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.2s !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+
+        /* ===========================================
+           SLIDE DESIGN SYSTEM
+           =========================================== */
+
+        /* --- Top accent bar --- */
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue) 60%, var(--accent-green) 60%);
+        }
+
+        /* --- Slide titles --- */
+        .slide-title {
+            font-size: var(--title-size);
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: var(--content-gap);
+        }
+
+        .slide-subtitle {
+            font-size: var(--h3-size);
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: var(--content-gap);
+        }
+
+        /* --- Symbol badges --- */
+        .symbol-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: clamp(4px, 0.5vw, 8px);
+            font-size: var(--small-size);
+            font-weight: 600;
+            padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px);
+            border-radius: 4px;
+            margin-bottom: var(--content-gap);
+        }
+
+        .symbol-introduced {
+            color: var(--accent-blue);
+            background: rgba(50, 106, 181, 0.08);
+            border: 1px solid rgba(50, 106, 181, 0.2);
+        }
+
+        .symbol-evolution {
+            color: #b5832a;
+            background: rgba(181, 131, 42, 0.08);
+            border: 1px solid rgba(181, 131, 42, 0.2);
+        }
+
+        .symbol-confirm {
+            color: var(--text-secondary);
+            background: rgba(102, 102, 102, 0.08);
+            border: 1px solid rgba(102, 102, 102, 0.2);
+        }
+
+        .symbol-rebuilt {
+            color: #b53232;
+            background: rgba(181, 50, 50, 0.08);
+            border: 1px solid rgba(181, 50, 50, 0.2);
+        }
+
+        /* --- Bullet lists --- */
+        .talking-points {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.5rem, 1.2vh, 1rem);
+            margin-bottom: var(--content-gap);
+        }
+
+        .talking-points li {
+            font-size: var(--body-size);
+            line-height: 1.5;
+            color: var(--text-primary);
+            padding-left: clamp(1rem, 2vw, 1.5rem);
+            position: relative;
+        }
+
+        .talking-points li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: clamp(6px, 0.8vh, 10px);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-green);
+        }
+
+        /* --- Link buttons --- */
+        .slide-links {
+            display: flex;
+            gap: clamp(6px, 1vw, 12px);
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: auto;
+            padding-top: var(--content-gap);
+        }
+
+        .link-article {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: var(--small-size);
+            font-weight: 500;
+            color: var(--accent-blue);
+            text-decoration: none;
+            padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px);
+            background: rgba(50, 106, 181, 0.06);
+            border: 2px solid rgba(50, 106, 181, 0.25);
+            border-radius: 4px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .link-article:hover {
+            background: rgba(50, 106, 181, 0.12);
+            border-color: var(--accent-blue);
+        }
+
+        .link-prompt {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-size: var(--small-size);
+            font-weight: 600;
+            color: var(--accent-green-text);
+            background: var(--accent-green-light);
+            border: 2px solid var(--accent-green-border);
+            border-radius: 3px;
+            padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px);
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .link-prompt:hover {
+            background: #edf7ef;
+            border-color: var(--accent-green);
+        }
+
+        /* --- Footer branding --- */
+        .slide-footer {
+            position: absolute;
+            bottom: clamp(12px, 2vh, 24px);
+            left: clamp(16px, 3vw, 32px);
+            font-size: var(--small-size);
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        /* --- Time indicator --- */
+        .time-indicator {
+            position: absolute;
+            bottom: clamp(12px, 2vh, 24px);
+            right: clamp(16px, 3vw, 32px);
+            font-size: var(--small-size);
+            font-weight: 500;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* --- Two-column layout for deliverable slides --- */
+        .two-col {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: clamp(1.5rem, 3vw, 3rem);
+            align-items: center;
+            flex: 1;
+        }
+
+        .two-col .col-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .two-col .col-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .two-col .col-image img {
+            max-height: min(45vh, 380px);
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        @media (max-width: 900px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .two-col .col-image {
+                display: none;
+            }
+        }
+
+        /* --- Rules of Engagement --- */
+        .rules-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.6rem, 1.5vh, 1.2rem);
+        }
+
+        .rules-list li {
+            font-size: var(--body-size);
+            line-height: 1.5;
+            color: var(--text-primary);
+            display: flex;
+            align-items: flex-start;
+            gap: clamp(8px, 1vw, 14px);
+        }
+
+        .rule-icon {
+            flex-shrink: 0;
+            width: clamp(18px, 2vw, 24px);
+            height: clamp(18px, 2vw, 24px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .rule-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- Reading list --- */
+        .book-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.6rem, 1.5vh, 1.2rem);
+        }
+
+        .book-list li a {
+            font-size: var(--body-size);
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .book-list li a:hover {
+            border-bottom-color: var(--accent-blue);
+        }
+
+        .book-list li .book-author {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* --- Homework sections --- */
+        .homework-section {
+            margin-bottom: clamp(0.8rem, 1.5vh, 1.2rem);
+        }
+
+        .homework-section h3 {
+            font-size: var(--h3-size);
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: clamp(0.3rem, 0.8vh, 0.6rem);
+        }
+
+        .homework-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.3rem, 0.8vh, 0.6rem);
+        }
+
+        .homework-list li {
+            font-size: var(--body-size);
+            line-height: 1.5;
+            color: var(--text-primary);
+            padding-left: clamp(0.8rem, 1.5vw, 1.2rem);
+            position: relative;
+        }
+
+        .homework-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: clamp(5px, 0.7vh, 8px);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-green);
+        }
+
+        .homework-list a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .homework-list a:hover {
+            text-decoration: underline;
+        }
+
+        .homework-list .link-prompt {
+            font-size: clamp(0.65rem, 1vw, 0.85rem);
+            padding: 1px 6px;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        /* --- Close slide --- */
+        .close-question {
+            font-size: var(--h2-size);
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-top: var(--element-gap);
+        }
+
+        .close-instruction {
+            font-size: var(--h3-size);
+            font-weight: 500;
+            color: var(--accent-green);
+            margin-top: var(--content-gap);
+        }
+
+        /* ===========================================
+           ANIMATIONS
+           =========================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity var(--duration-normal) var(--ease-out-expo),
+                        transform var(--duration-normal) var(--ease-out-expo);
+        }
+
+        .slide.visible .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal:nth-child(1) { transition-delay: 0.05s; }
+        .reveal:nth-child(2) { transition-delay: 0.12s; }
+        .reveal:nth-child(3) { transition-delay: 0.19s; }
+        .reveal:nth-child(4) { transition-delay: 0.26s; }
+        .reveal:nth-child(5) { transition-delay: 0.33s; }
+        .reveal:nth-child(6) { transition-delay: 0.40s; }
+        .reveal:nth-child(7) { transition-delay: 0.47s; }
+        .reveal:nth-child(8) { transition-delay: 0.54s; }
+
+        /* --- Progress bar --- */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent-blue);
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+
+        /* --- Nav dots --- */
+        .nav-dots {
+            position: fixed;
+            right: clamp(12px, 2vw, 20px);
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .nav-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-light);
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            padding: 0;
+        }
+
+        .nav-dot.active {
+            background: var(--accent-blue);
+            transform: scale(1.3);
+        }
+
+        .nav-dot:hover {
+            background: var(--accent-green);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation dots -->
+    <nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
+
+    <!-- SLIDE: TITLE -->
+    <section class="slide" aria-label="Monthly Meeting Five">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text" style="gap: clamp(0.75rem, 2vh, 1.5rem);">
+                    <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">Monthly Meeting Five</h1>
+                    <p class="slide-subtitle reveal">Sharpening the Edge — Scorecards, Differentiators, and Strategic Discipline</p>
+                    <hr class="reveal" style="width: clamp(60px, 10vw, 120px); height: 2px; background: var(--accent-green); border: none;">
+                    <img class="reveal" src="../../shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(160px, 20vw, 260px); height: auto;">
+                    <span class="reveal" style="font-size: var(--body-size); font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em;">darlison.com</span>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/title-m5.png" alt="Sharpening the Edge — Scorecards, Differentiators, and Strategic Discipline">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+    </section>
+
+    <!-- SLIDE: GOOD NEWS -->
+    <section class="slide" aria-label="Good News">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text" style="align-items: flex-start;">
+                    <h1 class="slide-title reveal">Good News</h1>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size); font-weight: 400;">
+                        Positive. Professional. 5-10 seconds.
+                    </p>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/good-news.png" alt="Good News">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(5/5)</span>
+    </section>
+
+    <!-- SLIDE: RULES OF ENGAGEMENT -->
+    <section class="slide" aria-label="Rules of Engagement">
+        <div class="slide-content">
+            <div class="two-col">
+            <div class="col-text">
+            <h1 class="slide-title reveal">Rules of Engagement</h1>
+            <ul class="rules-list">
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 2L15 8.5L22 9.5L17 14.5L18 21.5L12 18.5L6 21.5L7 14.5L2 9.5L9 8.5Z"/></svg></span>
+                    Challenge yourself. Challenge each other.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    Discussion and collaboration. Your best contribution.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                    Be present in the room.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    No blame, no shame. No dumb questions.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                    Don't ignore the brutal facts. Bring them forward.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+                    Confidentiality. What happens here stays here.
+                </li>
+            </ul>
+            </div>
+            <div class="col-image reveal">
+                <img src="../../shared/assets/rules-of-engagement.png" alt="Rules of Engagement">
+            </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(5/10)</span>
+    </section>
+
+    <!-- SLIDE: READING -->
+    <section class="slide" aria-label="Reading">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Reading</h1>
+                    <ul class="book-list">
+                        <li class="reveal"><a href="https://www.amazon.ca/dp/1544521294" target="_blank" rel="noopener">Metronomics</a> <span class="book-author">&mdash; Shannon Susko</span></li>
+                        <li class="reveal"><a href="https://www.amazon.ca/dp/0787960756" target="_blank" rel="noopener">The Five Dysfunctions of a Team</a> <span class="book-author">&mdash; Patrick Lencioni</span></li>
+                        <li class="reveal"><a href="https://www.amazon.ca/dp/1591846447" target="_blank" rel="noopener">Start with Why</a> <span class="book-author">&mdash; Simon Sinek</span></li>
+                        <li class="reveal"><a href="https://www.amazon.ca/dp/1544503687" target="_blank" rel="noopener">3HAG WAY</a> <span class="book-author">&mdash; Shannon Susko</span></li>
+                        <li class="reveal"><a href="https://www.amazon.ca/dp/1591845262" target="_blank" rel="noopener">Topgrading</a> <span class="book-author">&mdash; Bradford D. Smart</span></li>
+                    </ul>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../m1/assets/reading.png" alt="Reading list">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/12)</span>
+    </section>
+
+    <!-- SLIDE: Core Purpose -->
+    <section class="slide" aria-label="Core Purpose">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
+                    <h1 class="slide-title reveal">Core Purpose</h1>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        Why the company exists beyond making money.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_cav5aicav5aicav5.png" alt="Core Purpose">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/14)</span>
+    </section>
+
+    <!-- SLIDE: BHAG -->
+    <section class="slide" aria-label="BHAG">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
+                    <h1 class="slide-title reveal">BHAG</h1>
+                    <p class="slide-subtitle reveal">Big Hairy Audacious Goal</p>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        A 10-to-30-year goal with no numbers — just a destination.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_cav5aicav5aicav5.png" alt="BHAG">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/16)</span>
+    </section>
+
+    <!-- SLIDE: QHAG + Sprint Lanes -->
+    <section class="slide" aria-label="QHAG + Sprint Lanes">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
+                    <h1 class="slide-title reveal">QHAG + Sprint Lanes</h1>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        Sprint lane status check.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_6ndqgg6ndqgg6ndq.png" alt="QHAG + Sprint Lanes">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(3/19)</span>
+    </section>
+
+    <!-- SLIDE: Meeting Cadence -->
+    <section class="slide" aria-label="Meeting Cadence">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
+                    <h1 class="slide-title reveal">Meeting Cadence</h1>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        Eight meetings at six frequencies.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_29ejjc29ejjc29ej.png" alt="Meeting Cadence">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/21)</span>
+    </section>
+
+    <!-- SLIDE: A-Player Team Assessment -->
+    <section class="slide" aria-label="A-Player Team Assessment">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-confirm reveal">✓ Confirm</span>
+                    <h1 class="slide-title reveal">A-Player Team Assessment</h1>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        Quick scan of the values-performance chart.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/a-player-team-assessment/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/a-player-team-assessment-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_hhw37ohhw37ohhw3.png" alt="A-Player Team Assessment">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/23)</span>
+    </section>
+
+    <!-- SLIDE: Org Function Chart -->
+    <section class="slide" aria-label="Org Function Chart">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
+                    <h1 class="slide-title reveal">Org Function Chart</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Evolving with KFFM refinement</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="Org Function Chart">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(5/28)</span>
+    </section>
+
+    <!-- SLIDE: KFFM -->
+    <section class="slide" aria-label="KFFM">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
+                    <h1 class="slide-title reveal">KFFM</h1>
+                    <p class="slide-subtitle reveal">Key Function Flow Map</p>
+                    <ul class="talking-points">
+                        <li class="reveal">Continue defining widgets and handoffs between functions</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="KFFM">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(5/33)</span>
+    </section>
+
+    <!-- SLIDE: Functional Accountability Chart -->
+    <section class="slide" aria-label="Functional Accountability Chart">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
+                    <h1 class="slide-title reveal">Functional Accountability Chart</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Sharpen critical numbers as KFFM matures</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="Functional Accountability Chart">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(4/37)</span>
+    </section>
+
+    <!-- SLIDE: Profit/X -->
+    <section class="slide" aria-label="Profit/X">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
+                    <h1 class="slide-title reveal">Profit/X</h1>
+                    <p class="slide-subtitle reveal">The one unit of measurement that captures how the company makes money</p>
+                    <ul class="talking-points">
+                        <li class="reveal">Refine with accumulating data</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="Profit/X">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(4/41)</span>
+    </section>
+
+    <!-- SLIDE: Core Values -->
+    <section class="slide" aria-label="Core Values">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-evolution reveal">▲ Evolution</span>
+                    <h1 class="slide-title reveal">Core Values</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Continue pressure testing candidate values</li>
+                        <li class="reveal">Each faces ten systematic tests including custom crisis scenarios</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/values-discovery-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_83f51483f51483f5.png" alt="Core Values">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(5/46)</span>
+    </section>
+
+    <!-- SLIDE: Function Scorecards -->
+    <section class="slide" aria-label="Function Scorecards">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Function Scorecards</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">One-page view per function: role purpose, key accountabilities, critical numbers, values expected</li>
+                        <li class="reveal">CEO creates the first one (Head of Company) as the model</li>
+                        <li class="reveal">Scoreboard Day: once per week, same day, all critical numbers updated by 10 AM</li>
+                        <li class="reveal">Every red number triggers a written Situation Report: Situation, Cause, Correction, Follow-up</li>
+                        <li class="reveal">Causes must be structural (capacity, policies, incentives) — never motivation</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/scoreboard-day/" target="_blank" rel="noopener" class="link-article">Article</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_yxjsdkyxjsdkyxjs.png" alt="Function Scorecards">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(30/76)</span>
+    </section>
+
+    <!-- SLIDE: Activity Fit Map -->
+    <section class="slide" aria-label="Activity Fit Map">
+        <div class="slide-content">
+            <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Activity Fit Map</h1>
+                    <p class="slide-subtitle reveal">Differentiators</p>
+                    <ul class="talking-points">
+                        <li class="reveal">From Attribution Map white space, determine 3-5 interdependent Differentiating Actions</li>
+                        <li class="reveal">Draw connections showing dependencies (Activity Fit Map Level I) — Porter&#x27;s framework</li>
+                        <li class="reveal">If a competitor copies any single action, it shouldn&#x27;t upend your position — interdependence is the key</li>
+                        <li class="reveal">Level II adds supporting tactical activities around each differentiator</li>
+                        <li class="reveal">Distill into a One-Phrase Strategy that ties all differentiating actions together</li>
+                    </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(27/103)</span>
+    </section>
+
+    <!-- SLIDE: HOMEWORK -->
+    <section class="slide" aria-label="Homework">
+        <div class="slide-content">
+            <div class="two-col">
+            <div class="col-text">
+            <h1 class="slide-title reveal">Homework</h1>
+
+            <div class="homework-section reveal">
+                <h3>Review and Complete</h3>
+                <ul class="homework-list">
+                    <li>Finalize Function Scorecards and Activity Fit Map</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>Read Ahead and Complete the ✦ AI Prompts for M6</h3>
+                <ul class="homework-list">
+                    <li>Swimlanes ★</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>Books for Month 6</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.amazon.ca/dp/0787954039" target="_blank" rel="noopener">The Four Obsessions of an Extraordinary Executive</a> <span style="color: var(--text-secondary);">&mdash; Patrick Lencioni</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0978774957" target="_blank" rel="noopener">Mastering the Rockefeller Habits</a> <span style="color: var(--text-secondary);">&mdash; Verne Harnish</span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-image reveal">
+                <img src="../m1/assets/homework.png" alt="Homework and preparation">
+            </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(12/115)</span>
+    </section>
+
+    <!-- SLIDE: CASCADE 3 KEY MESSAGES -->
+    <section class="slide" aria-label="Cascade 3 Key Messages">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Cascade 3 Key Messages</h1>
+                    <p class="close-instruction reveal">What are the 3 things your team needs to hear from this meeting?</p>
+                    <p class="close-question reveal">Share them in tomorrow's huddle.</p>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/cascade-3-key-messages.png" alt="Cascade 3 Key Messages">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(2/117)</span>
+    </section>
+
+    <!-- SLIDE: ONE-PHRASE CLOSE -->
+    <section class="slide" aria-label="One-Phrase Close">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">One-Phrase Close</h1>
+                    <p class="close-instruction reveal">5 words or less.</p>
+                    <p class="close-question reveal">How do you feel right now?</p>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/one-phrase-close.png" alt="One-Phrase Close">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+        <span class="time-indicator">(3/120)</span>
+    </section>
+
+    <!-- ===========================================
+       SLIDE PRESENTATION CONTROLLER
+       =========================================== -->
+    <script>
+        class SlidePresentation {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.currentSlide = 0;
+                this.isScrolling = false;
+
+                this.setupIntersectionObserver();
+                this.setupKeyboardNav();
+                this.setupTouchNav();
+                this.setupProgressBar();
+                this.setupNavDots();
+                this.setupWheelNav();
+            }
+
+            setupIntersectionObserver() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            const idx = Array.from(this.slides).indexOf(entry.target);
+                            if (idx !== -1) {
+                                this.currentSlide = idx;
+                                this.updateNavDots();
+                                this.updateProgressBar();
+                            }
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                this.slides.forEach(slide => observer.observe(slide));
+            }
+
+            setupKeyboardNav() {
+                document.addEventListener('keydown', (e) => {
+                    switch(e.key) {
+                        case 'ArrowDown':
+                        case 'ArrowRight':
+                        case ' ':
+                        case 'PageDown':
+                            e.preventDefault();
+                            this.goToSlide(this.currentSlide + 1);
+                            break;
+                        case 'ArrowUp':
+                        case 'ArrowLeft':
+                        case 'PageUp':
+                            e.preventDefault();
+                            this.goToSlide(this.currentSlide - 1);
+                            break;
+                        case 'Home':
+                            e.preventDefault();
+                            this.goToSlide(0);
+                            break;
+                        case 'End':
+                            e.preventDefault();
+                            this.goToSlide(this.slides.length - 1);
+                            break;
+                    }
+                });
+            }
+
+            setupTouchNav() {
+                let touchStartY = 0;
+                document.addEventListener('touchstart', (e) => {
+                    touchStartY = e.touches[0].clientY;
+                }, { passive: true });
+
+                document.addEventListener('touchend', (e) => {
+                    const diff = touchStartY - e.changedTouches[0].clientY;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) this.goToSlide(this.currentSlide + 1);
+                        else this.goToSlide(this.currentSlide - 1);
+                    }
+                }, { passive: true });
+            }
+
+            setupWheelNav() {
+                document.addEventListener('wheel', (e) => {
+                    if (this.isScrolling) return;
+                    this.isScrolling = true;
+
+                    if (e.deltaY > 0) this.goToSlide(this.currentSlide + 1);
+                    else if (e.deltaY < 0) this.goToSlide(this.currentSlide - 1);
+
+                    setTimeout(() => { this.isScrolling = false; }, 800);
+                }, { passive: true });
+            }
+
+            setupProgressBar() {
+                this.progressBar = document.getElementById('progressBar');
+                this.updateProgressBar();
+            }
+
+            updateProgressBar() {
+                if (!this.progressBar) return;
+                const progress = ((this.currentSlide + 1) / this.slides.length) * 100;
+                this.progressBar.style.width = progress + '%';
+            }
+
+            setupNavDots() {
+                const nav = document.getElementById('navDots');
+                if (!nav) return;
+
+                this.slides.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+                    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                    dot.addEventListener('click', () => this.goToSlide(i));
+                    nav.appendChild(dot);
+                });
+            }
+
+            updateNavDots() {
+                const dots = document.querySelectorAll('.nav-dot');
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === this.currentSlide);
+                });
+            }
+
+            goToSlide(index) {
+                if (index < 0 || index >= this.slides.length) return;
+                this.currentSlide = index;
+                this.slides[index].scrollIntoView({ behavior: 'smooth' });
+                this.updateNavDots();
+                this.updateProgressBar();
+            }
+        }
+
+        new SlidePresentation();
+    </script>
+</body>
+</html>
