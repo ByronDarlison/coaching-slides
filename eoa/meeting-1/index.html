@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting 1 — EOTO Accountability Group 7</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #FAFAFA;
+            --bg-white: #FFFFFF;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --text-muted: #999999;
+            --accent-blue: #326AB5;
+            --accent-green: #54B570;
+            --accent-green-light: #f5faf6;
+            --accent-green-border: #dceee0;
+            --accent-green-text: #54B570;
+            --border-light: #e8e8e8;
+            --font-main: 'IBM Plex Sans', sans-serif;
+            --title-size: clamp(1.75rem, 3.5vw, 2.5rem);
+            --h2-size: clamp(1.375rem, 2.5vw, 1.875rem);
+            --h3-size: clamp(1.125rem, 1.8vw, 1.5rem);
+            --body-size: clamp(1rem, 1.5vw, 1.25rem);
+            --small-size: clamp(0.875rem, 1.2vw, 1.0625rem);
+            --slide-padding: clamp(2rem, 5vw, 5rem);
+            --content-gap: clamp(0.75rem, 2vw, 1.5rem);
+            --element-gap: clamp(0.25rem, 1vw, 0.75rem);
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --duration-normal: 0.6s;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+            font-family: var(--font-main);
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+
+        html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+
+        .slide {
+            width: 100vw; height: 100vh; height: 100dvh;
+            overflow: hidden; scroll-snap-align: start;
+            display: flex; flex-direction: column;
+            position: relative; background: var(--bg-white);
+        }
+
+        .slide-content {
+            flex: 1; display: flex; flex-direction: column; justify-content: center;
+            max-height: 100%; overflow: hidden; padding: var(--slide-padding);
+            padding-left: clamp(3rem, 8vw, 8rem); padding-right: clamp(3rem, 8vw, 8rem);
+        }
+
+        .slide::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue) 60%, var(--accent-green) 60%);
+        }
+
+        .slide-title { font-size: var(--title-size); font-weight: 700; color: var(--accent-blue); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: var(--content-gap); }
+        .slide-subtitle { font-size: var(--h3-size); font-weight: 400; color: var(--text-secondary); margin-bottom: var(--content-gap); }
+
+        .talking-points { list-style: none; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.2vh, 1rem); margin-bottom: var(--content-gap); }
+        .talking-points li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(1rem, 2vw, 1.5rem); position: relative; }
+        .talking-points li::before { content: ''; position: absolute; left: 0; top: clamp(6px, 0.8vh, 10px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
+
+        .numbered-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.2vh, 1rem); margin-bottom: var(--content-gap); counter-reset: item; }
+        .numbered-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(1.5rem, 2.5vw, 2rem); position: relative; counter-increment: item; }
+        .numbered-list li::before { content: counter(item) "."; position: absolute; left: 0; font-weight: 600; color: var(--accent-blue); }
+
+        .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
+        .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
+
+        .slide-links { display: flex; gap: clamp(6px, 1vw, 12px); align-items: center; flex-wrap: wrap; margin-top: auto; padding-top: var(--content-gap); }
+        .link-article { display: inline-flex; align-items: center; gap: 4px; font-size: var(--small-size); font-weight: 500; color: var(--accent-blue); text-decoration: none; padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px); background: rgba(50, 106, 181, 0.06); border: 2px solid rgba(50, 106, 181, 0.25); border-radius: 4px; transition: background 0.2s, border-color 0.2s; }
+        .link-article:hover { background: rgba(50, 106, 181, 0.12); border-color: var(--accent-blue); }
+        .link-prompt { display: inline-flex; align-items: center; gap: 3px; font-size: var(--small-size); font-weight: 600; color: var(--accent-green-text); background: var(--accent-green-light); border: 2px solid var(--accent-green-border); border-radius: 3px; padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px); text-decoration: none; cursor: pointer; white-space: nowrap; transition: background 0.2s, border-color 0.2s; }
+        .link-prompt:hover { background: #edf7ef; border-color: var(--accent-green); }
+
+        .two-col { display: grid; grid-template-columns: 3fr 2fr; gap: clamp(1.5rem, 3vw, 3rem); align-items: center; flex: 1; }
+        .two-col .col-text { display: flex; flex-direction: column; }
+        .two-col .col-image { display: flex; align-items: center; justify-content: center; }
+        .two-col .col-image img { max-height: min(45vh, 380px); border-radius: 8px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06); }
+        @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } .two-col .col-image { display: none; } }
+
+        .rules-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.5vh, 1.2rem); }
+        .rules-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); display: flex; align-items: flex-start; gap: clamp(8px, 1vw, 14px); }
+        .rule-icon { flex-shrink: 0; width: clamp(18px, 2vw, 24px); height: clamp(18px, 2vw, 24px); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+        .rule-icon svg { width: 100%; height: 100%; }
+
+        .homework-section { margin-bottom: clamp(0.8rem, 1.5vh, 1.2rem); }
+        .homework-section h3 { font-size: var(--h3-size); font-weight: 600; color: #333333; margin-bottom: clamp(0.3rem, 0.8vh, 0.6rem); }
+        .homework-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.3rem, 0.8vh, 0.6rem); }
+        .homework-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(0.8rem, 1.5vw, 1.2rem); position: relative; }
+        .homework-list li::before { content: ''; position: absolute; left: 0; top: clamp(5px, 0.7vh, 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
+        .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
+        .homework-list a:hover { text-decoration: underline; }
+        .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
+
+        .close-question { font-size: var(--h2-size); font-weight: 400; color: var(--text-secondary); margin-top: var(--element-gap); }
+        .close-instruction { font-size: var(--h3-size); font-weight: 500; color: var(--accent-green); margin-top: var(--content-gap); }
+
+        .slide-footer { position: absolute; bottom: clamp(12px, 2vh, 24px); left: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 400; color: var(--text-muted); }
+        .time-indicator { position: absolute; bottom: clamp(12px, 2vh, 24px); right: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 500; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo); }
+        .slide.visible .reveal { opacity: 1; transform: translateY(0); }
+        .reveal:nth-child(1) { transition-delay: 0.05s; } .reveal:nth-child(2) { transition-delay: 0.12s; } .reveal:nth-child(3) { transition-delay: 0.19s; }
+        .reveal:nth-child(4) { transition-delay: 0.26s; } .reveal:nth-child(5) { transition-delay: 0.33s; } .reveal:nth-child(6) { transition-delay: 0.40s; }
+
+        .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent-blue); z-index: 1000; transition: width 0.3s ease; }
+        .nav-dots { position: fixed; right: clamp(12px, 2vw, 20px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 100; }
+        .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border-light); border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0; }
+        .nav-dot.active { background: var(--accent-blue); transform: scale(1.3); }
+        .nav-dot:hover { background: var(--accent-green); }
+
+        @media (max-height: 700px) { :root { --slide-padding: clamp(0.75rem, 3vw, 2rem); --content-gap: clamp(0.4rem, 1.5vw, 1rem); --title-size: clamp(1.25rem, 4.5vw, 2.5rem); } }
+        @media (max-height: 600px) { :root { --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem); --content-gap: clamp(0.3rem, 1vw, 0.75rem); --title-size: clamp(1.1rem, 4vw, 2rem); --body-size: clamp(0.7rem, 1.2vw, 0.95rem); } .nav-dots { display: none; } }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; } html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+    <nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
+
+    <!-- SLIDE 0: TITLE -->
+    <section class="slide" aria-label="Title">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text" style="gap: clamp(0.75rem, 2vh, 1.5rem);">
+                    <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">EOTO Accountability Group 7</h1>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">Meeting 1 - April 21, 2026</p>
+                    <hr class="reveal" style="width: clamp(60px, 10vw, 120px); height: 2px; background: var(--accent-green); border: none;">
+                    <div class="reveal" style="display: flex; align-items: center; gap: clamp(12px, 2vw, 24px);">
+                        <img src="assets/eoa-logo.png" alt="EO Accelerator" style="max-width: clamp(140px, 18vw, 220px); height: auto;">
+                        <img src="../../shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(120px, 15vw, 180px); height: auto;">
+                    </div>
+                    <span class="reveal" style="font-size: var(--body-size); font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em;">darlison.com</span>
+                </div>
+                <div class="col-image reveal">
+                    <img src="assets/title-meeting1.png" alt="Meeting 1">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+    </section>
+
+    <!-- SLIDE 1: ONE WORD BAROMETER -->
+    <section class="slide" aria-label="One Word Barometer">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">One Word Barometer</h1>
+                <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">How are you feeling right now?</p>
+                <ul class="talking-points reveal">
+                    <li>One word. Not a sentence. Not a story.</li>
+                    <li>An emotion that describes where you are right now.</li>
+                    <li>There are no wrong answers.</li>
+                </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 10)</span>
+    </section>
+
+    <!-- SLIDE 2: GROUND RULES -->
+    <section class="slide" aria-label="Ground Rules">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Ground Rules</h1>
+                    <ul class="rules-list reveal">
+                        <li><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></span>No Technology - phones away, laptops closed</li>
+                        <li><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span>Confidentiality - what is said here stays here</li>
+                        <li><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>Gestalt / Experience Sharing - share from experience, not advice. Knock on the table if someone breaks this.</li>
+                        <li><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Own Your Experience - be honest, be prepared, be present</li>
+                    </ul>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/rules-of-engagement.png" alt="Ground Rules">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+    </section>
+
+    <!-- SLIDE 3: CONSTITUTION SIGNING -->
+    <section class="slide" aria-label="Constitution">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Constitution</h1>
+                <p class="slide-subtitle reveal">Reviewed at onboarding. Sign today.</p>
+                <ul class="talking-points reveal">
+                    <li>Mission: achieve your Owner's Outcome</li>
+                    <li>Attendance: mandatory. One excused absence per year, two weeks notice.</li>
+                    <li>Timeliness: 1:00 PM hard start. Late? You are buying lunch.</li>
+                    <li>Confidentiality, no solicitation, no business dealings between members</li>
+                </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+    </section>
+
+    <!-- SLIDE 4: BUSINESS LIFELINES -->
+    <section class="slide" aria-label="Business Lifelines">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Business Lifelines</h1>
+                <p class="slide-subtitle reveal">15 minutes each. Tell us your story.</p>
+                <ol class="numbered-list reveal">
+                    <li>When did you start or acquire the business, and what were you doing before?</li>
+                    <li>What are the 3-4 pivotal moments that shaped the business into what it is today?</li>
+                    <li>What was your lowest point, and what did you do?</li>
+                    <li>What are you most proud of?</li>
+                    <li>Why are you here?</li>
+                </ol>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(75 min / 85)</span>
+    </section>
+
+    <!-- SLIDE 5: BREAK -->
+    <section class="slide" aria-label="Break">
+        <div class="slide-content" style="align-items: center; text-align: center;">
+            <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
+            <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 3:30 PM.</p>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 95)</span>
+    </section>
+
+    <!-- SLIDE 6: BUSINESS UPDATES -->
+    <section class="slide" aria-label="Business Updates">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Business Updates</h1>
+                <p class="slide-subtitle reveal">5 minutes each. First time using the format.</p>
+                <ul class="talking-points reveal">
+                    <li>OBT - One Big Thing. What will you accomplish before the next meeting? (SMART goal)</li>
+                    <li>Best of the month - what went well?</li>
+                    <li>Worst of the month - what didn't?</li>
+                    <li>Financials - revenue, cash. On track?</li>
+                    <li>Presentation needed? What do you need help with?</li>
+                </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(25 min / 120)</span>
+    </section>
+
+    <!-- SLIDE 7: FRAMEWORK - KFFM -->
+    <section class="slide" aria-label="Key Function Flow Map">
+        <div class="slide-content">
+            <div class="col-text">
+                <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                <h1 class="slide-title reveal">Key Function Flow Map</h1>
+                <p class="slide-subtitle reveal">How money flows through your business</p>
+                <ul class="talking-points reveal">
+                    <li>A map of how work flows through your company, from acquiring a customer to getting paid</li>
+                    <li>The things that flow through each function are called widgets</li>
+                    <li>Leads become orders become deliveries become invoices become cash</li>
+                    <li>Every function has a widget you can count</li>
+                </ul>
+                <div class="slide-links reveal">
+                    <a href="https://www.darlison.com/how-your-company-makes-money/" class="link-article" target="_blank">Article</a>
+                    <a href="https://www.darlison.com/kffm-tools/" class="link-prompt" target="_blank">✦ AI Prompt</a>
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(65 min / 185)</span>
+    </section>
+
+    <!-- SLIDE 8: FRAMEWORK - PROFIT/X -->
+    <section class="slide" aria-label="Profit/X">
+        <div class="slide-content">
+            <div class="col-text">
+                <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                <h1 class="slide-title reveal">Profit/X</h1>
+                <p class="slide-subtitle reveal">The one number that captures how your company makes money</p>
+                <ul class="talking-points reveal">
+                    <li>Profit per customer, per transaction, per subscription, per project</li>
+                    <li>The unit of measurement that best captures your economic engine</li>
+                    <li>Comes directly from your KFFM</li>
+                    <li>When you know your Profit/X, you know what to obsess over</li>
+                </ul>
+                <div class="slide-links reveal">
+                    <a href="https://www.darlison.com/how-your-company-makes-money/" class="link-article" target="_blank">Article</a>
+                    <a href="https://www.darlison.com/kffm-tools/" class="link-prompt" target="_blank">✦ AI Prompt</a>
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+    </section>
+
+    <!-- SLIDE 9: BREAK -->
+    <section class="slide" aria-label="Break">
+        <div class="slide-content" style="align-items: center; text-align: center;">
+            <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
+            <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 5:10 PM.</p>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 195)</span>
+    </section>
+
+    <!-- SLIDE 10: PERSONAL REVIEW - SOLO -->
+    <section class="slide" aria-label="Personal Review Solo">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Personal Review</h1>
+                <p class="slide-subtitle reveal">10 minutes. Work alone.</p>
+                <ul class="talking-points reveal">
+                    <li>What are your key takeaways from today?</li>
+                    <li>What commitments are you making?</li>
+                    <li>What is your OBT for next month? (SMART goal)</li>
+                    <li>Update your EOA Prep document with your conclusions</li>
+                </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 205)</span>
+    </section>
+
+    <!-- SLIDE 11: PERSONAL REVIEW - PRESENTATIONS -->
+    <section class="slide" aria-label="Personal Review Presentations">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Personal Review</h1>
+                <p class="slide-subtitle reveal">5 minutes each. Share your conclusions.</p>
+                <ul class="talking-points reveal">
+                    <li>Present your key takeaways</li>
+                    <li>State your OBT for next month</li>
+                    <li>What problem does it solve?</li>
+                    <li>How does it connect to your Owner's Outcome?</li>
+                </ul>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(25 min / 230)</span>
+    </section>
+
+    <!-- SLIDE 12: HOUSEKEEPING -->
+    <section class="slide" aria-label="Housekeeping">
+        <div class="slide-content">
+            <div class="col-text">
+                <h1 class="slide-title reveal">Housekeeping</h1>
+                <div class="homework-section reveal">
+                    <h3>Group Naming</h3>
+                    <ul class="homework-list">
+                        <li>What do we want to call ourselves?</li>
+                    </ul>
+                </div>
+                <div class="homework-section reveal">
+                    <h3>Give / Take (out of 5)</h3>
+                </div>
+                <div class="homework-section reveal">
+                    <h3>Homework before Meeting 2</h3>
+                    <ul class="homework-list">
+                        <li>Complete <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank">Core Purpose</a> <a href="https://www.darlison.com/core-purpose-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a></li>
+                        <li>Complete <a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank">BHAG</a> <a href="https://www.darlison.com/core-purpose-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a></li>
+                        <li>Complete <a href="https://www.darlison.com/how-to-discover-your-companys-values-using-ai" target="_blank">Values Discovery</a> <a href="https://www.darlison.com/values-discovery-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a></li>
+                        <li>Share all three in the WhatsApp group by mid-May</li>
+                        <li>Refine your KFFM and Profit/X in Mural</li>
+                        <li>Complete <a href="https://www.darlison.com/where-are-you-going/" target="_blank">3HAG, 1HAG, QHAG</a> <a href="https://www.darlison.com/planning-cascade-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a></li>
+                    </ul>
+                </div>
+                <div class="homework-section reveal">
+                    <h3>Reading</h3>
+                    <ul class="homework-list">
+                        <li><a href="https://www.darlison.com/reading/" target="_blank">darlison.com/reading</a></li>
+                    </ul>
+                </div>
+                <div class="homework-section reveal">
+                    <h3>Next Meeting</h3>
+                    <ul class="homework-list">
+                        <li>June 5, 2026 at the National Club</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 240)</span>
+    </section>
+
+    <!-- SLIDE 13: ONE PHRASE CLOSE -->
+    <section class="slide" aria-label="One Phrase Close">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text" style="align-items: flex-start;">
+                    <h1 class="slide-title reveal">One Phrase Close</h1>
+                    <p class="close-instruction reveal">5 words or less.</p>
+                    <p class="close-question reveal">How do you feel right now?</p>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/one-phrase-close.png" alt="One Phrase Close">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(5 min / 245)</span>
+    </section>
+
+    <script>
+        class SlidePresentation {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.currentSlide = 0;
+                this.isScrolling = false;
+                this.setupIntersectionObserver();
+                this.setupKeyboardNav();
+                this.setupTouchNav();
+                this.setupProgressBar();
+                this.setupNavDots();
+                this.setupWheelNav();
+            }
+            setupIntersectionObserver() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            const idx = Array.from(this.slides).indexOf(entry.target);
+                            if (idx !== -1) { this.currentSlide = idx; this.updateNavDots(); this.updateProgressBar(); }
+                        }
+                    });
+                }, { threshold: 0.5 });
+                this.slides.forEach(slide => observer.observe(slide));
+            }
+            setupKeyboardNav() {
+                document.addEventListener('keydown', (e) => {
+                    switch(e.key) {
+                        case 'ArrowDown': case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); this.goToSlide(this.currentSlide + 1); break;
+                        case 'ArrowUp': case 'ArrowLeft': case 'PageUp': e.preventDefault(); this.goToSlide(this.currentSlide - 1); break;
+                        case 'Home': e.preventDefault(); this.goToSlide(0); break;
+                        case 'End': e.preventDefault(); this.goToSlide(this.slides.length - 1); break;
+                    }
+                });
+            }
+            setupTouchNav() {
+                let touchStartY = 0;
+                document.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; }, { passive: true });
+                document.addEventListener('touchend', (e) => { const diff = touchStartY - e.changedTouches[0].clientY; if (Math.abs(diff) > 50) { if (diff > 0) this.goToSlide(this.currentSlide + 1); else this.goToSlide(this.currentSlide - 1); } }, { passive: true });
+            }
+            setupWheelNav() {
+                document.addEventListener('wheel', (e) => { if (this.isScrolling) return; this.isScrolling = true; if (e.deltaY > 0) this.goToSlide(this.currentSlide + 1); else if (e.deltaY < 0) this.goToSlide(this.currentSlide - 1); setTimeout(() => { this.isScrolling = false; }, 800); }, { passive: true });
+            }
+            setupProgressBar() { this.progressBar = document.getElementById('progressBar'); this.updateProgressBar(); }
+            updateProgressBar() { if (!this.progressBar) return; this.progressBar.style.width = ((this.currentSlide + 1) / this.slides.length) * 100 + '%'; }
+            setupNavDots() {
+                const nav = document.getElementById('navDots'); if (!nav) return;
+                this.slides.forEach((_, i) => { const dot = document.createElement('button'); dot.className = 'nav-dot' + (i === 0 ? ' active' : ''); dot.setAttribute('aria-label', `Go to slide ${i + 1}`); dot.addEventListener('click', () => this.goToSlide(i)); nav.appendChild(dot); });
+            }
+            updateNavDots() { document.querySelectorAll('.nav-dot').forEach((dot, i) => { dot.classList.toggle('active', i === this.currentSlide); }); }
+            goToSlide(index) { if (index < 0 || index >= this.slides.length) return; this.currentSlide = index; this.slides[index].scrollIntoView({ behavior: 'smooth' }); this.updateNavDots(); this.updateProgressBar(); }
+        }
+        new SlidePresentation();
+    </script>
+</body>
+</html>
