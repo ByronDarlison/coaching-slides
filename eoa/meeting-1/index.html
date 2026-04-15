@@ -33,8 +33,23 @@
         .numbered-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.2vh, 1rem); margin-bottom: var(--content-gap); counter-reset: item; }
         .numbered-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(1.5rem, 2.5vw, 2rem); position: relative; counter-increment: item; }
         .numbered-list li::before { content: counter(item) "."; position: absolute; left: 0; font-weight: 600; color: var(--accent-blue); }
-        .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
+        .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); width: fit-content; }
         .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
+        .talking-points strong { font-weight: 600; color: var(--accent-blue); }
+        .oo-statement { font-size: var(--h2-size); font-weight: 400; color: var(--text-primary); line-height: 1.55; font-style: italic; padding: clamp(0.85rem, 1.8vh, 1.35rem) clamp(1rem, 2vw, 1.5rem); background: rgba(50, 106, 181, 0.04); border-left: 4px solid var(--accent-blue); border-radius: 4px; margin-bottom: var(--content-gap); }
+        .oo-var { display: inline-block; padding: clamp(1px, 0.2vh, 3px) clamp(6px, 0.8vw, 12px); background: var(--accent-green-light); border: 2px solid var(--accent-green-border); color: var(--accent-green-text); border-radius: 4px; font-weight: 600; font-size: 0.78em; font-style: normal; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 2px; vertical-align: baseline; white-space: nowrap; }
+        .gap-table { width: 100%; border-collapse: collapse; margin-top: clamp(0.5rem, 1vh, 1rem); font-size: var(--body-size); }
+        .gap-table thead th { font-size: var(--small-size); font-weight: 600; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.04em; text-align: left; padding: clamp(0.5rem, 1vh, 0.75rem) clamp(0.75rem, 1.2vw, 1rem); border-bottom: 2px solid var(--accent-blue); }
+        .gap-table thead th:first-child { color: var(--text-muted); }
+        .gap-table tbody td { padding: clamp(0.6rem, 1.2vh, 0.9rem) clamp(0.75rem, 1.2vw, 1rem); border-bottom: 1px solid var(--border-light); color: var(--text-primary); vertical-align: top; }
+        .gap-table tbody td:first-child { font-weight: 600; color: var(--accent-blue); width: 22%; }
+        .gap-table tbody td:nth-child(2), .gap-table tbody td:nth-child(3) { color: var(--text-secondary); font-style: italic; }
+        .gap-table tbody td:last-child { color: var(--accent-green-text); font-weight: 500; font-style: normal; }
+        .gap-table tbody tr:last-child td { border-bottom: none; }
+        .one-thing-diagram { display: flex; flex-direction: column; gap: clamp(0.75rem, 2vh, 1.25rem); margin-top: clamp(0.5rem, 1vh, 1rem); }
+        .one-thing-row { display: grid; grid-template-columns: auto 1fr; gap: clamp(8px, 1vw, 16px); align-items: start; padding: clamp(0.5rem, 1vh, 0.75rem) clamp(0.75rem, 1.5vw, 1.25rem); background: var(--accent-green-light); border-left: 3px solid var(--accent-green); border-radius: 4px; }
+        .one-thing-row .label { font-size: var(--small-size); font-weight: 600; color: var(--accent-green-text); text-transform: uppercase; letter-spacing: 0.04em; min-width: clamp(90px, 10vw, 140px); }
+        .one-thing-row .value { font-size: var(--body-size); color: var(--text-primary); line-height: 1.4; }
         .slide-links { display: flex; gap: clamp(6px, 1vw, 12px); align-items: center; flex-wrap: wrap; margin-top: auto; padding-top: var(--content-gap); }
         .link-article { display: inline-flex; align-items: center; gap: 4px; font-size: var(--small-size); font-weight: 500; color: var(--accent-blue); text-decoration: none; padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px); background: rgba(50, 106, 181, 0.06); border: 2px solid rgba(50, 106, 181, 0.25); border-radius: 4px; transition: background 0.2s, border-color 0.2s; }
         .link-article:hover { background: rgba(50, 106, 181, 0.12); border-color: var(--accent-blue); }
@@ -216,6 +231,125 @@
         <span class="time-indicator">(25 min / 120)</span>
     </section>
 
+    <!-- SLIDE 6A: OWNER'S OUTCOME - STATEMENT -->
+    <section class="slide" aria-label="Owner's Outcome">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Owner's Outcome</h1>
+                    <p class="oo-statement reveal">
+                        I am in business because I want <span class="oo-var">what you personally want</span>, and I will achieve it by <span class="oo-var">specific date</span>, as measured by <span class="oo-var">1 to 3 measures</span>.
+                    </p>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal"><img src="assets/slide-1-statement.png" alt="Owner's Outcome statement as a path toward a goal"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(3 min / 123)</span>
+    </section>
+
+    <!-- SLIDE 6B: OWNER'S OUTCOME - GUARDRAILS -->
+    <section class="slide" aria-label="Owner's Outcome Guardrails">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Owner's Outcome Guardrails</h1>
+                    <p class="slide-subtitle reveal">The edges you protect on the way to the goal.</p>
+                    <ul class="talking-points">
+                        <li class="reveal"><strong>What failure looks like.</strong> The picture of this business failing you even if the numbers hit. Not what you are afraid of. What you refuse to walk into on purpose.</li>
+                        <li class="reveal"><strong>Non-Negotiables.</strong> The rules you will not break even if it costs you money or growth. Time, health, family, the kind of work you do, the kind of people you work with. If you have broken one before, it is not a non-negotiable.</li>
+                        <li class="reveal"><strong>Cash Floor.</strong> The number below which you start making decisions from anxiety instead of clarity. Not the number that sounds reasonable. The real one.</li>
+                        <li class="reveal"><strong>Home Alignment.</strong> If you have a partner, do they know what you want from this business, and do they agree? Misalignment at home will override everything else you build.</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal"><img src="assets/slide-2-guardrails.png" alt="A figure walking a path bounded by guardrails toward a goal"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(4 min / 127)</span>
+    </section>
+
+    <!-- SLIDE 6C: OWNER'S OUTCOME - GAP SCORECARD -->
+    <section class="slide" aria-label="Owner's Outcome Gap Scorecard">
+        <div class="slide-content">
+            <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+            <h1 class="slide-title reveal">Owner's Outcome Gap Scorecard</h1>
+            <p class="slide-subtitle reveal">Where you are. Where you want to be. The gap between.</p>
+            <table class="gap-table reveal">
+                <thead>
+                    <tr>
+                        <th>Dimension</th>
+                        <th>Goal</th>
+                        <th>Reality</th>
+                        <th>Gap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="reveal"><td>Time</td><td>hours per week, doing the right work</td><td>hours per week, doing what</td><td>the delta and the shape of it</td></tr>
+                    <tr class="reveal"><td>Money</td><td>revenue, profit, personal income</td><td>today's numbers</td><td>pricing, volume, or structural</td></tr>
+                    <tr class="reveal"><td>Role</td><td>what you will be doing</td><td>what you are doing now</td><td>what is hardest to let go</td></tr>
+                    <tr class="reveal"><td>Team</td><td>people who run it without you</td><td>who is on the team and what they own</td><td>what breaks if you disappear for 30 days</td></tr>
+                    <tr class="reveal"><td>Risk</td><td>exposure you can carry</td><td>debt, commitments, cash position vs floor</td><td>tension with closing other gaps</td></tr>
+                    <tr class="reveal"><td>Value / Exit</td><td>enterprise value and by when</td><td>what a buyer sees today</td><td>what makes the business sellable</td></tr>
+                </tbody>
+            </table>
+            <div class="slide-links reveal" style="margin-top: clamp(0.75rem, 1.5vh, 1.25rem);">
+                <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
+                <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(4 min / 131)</span>
+    </section>
+
+    <!-- SLIDE 6D: OWNER'S OUTCOME - THE ONE THING -->
+    <section class="slide" aria-label="Owner's Outcome The One Thing">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+                    <h1 class="slide-title reveal">Owner's Outcome The One Thing</h1>
+                    <p class="slide-subtitle reveal">Close one gap at a time every 90 days.</p>
+                    <div class="one-thing-diagram">
+                        <div class="one-thing-row reveal">
+                            <span class="label">Discrepancy</span>
+                            <span class="value">The goal, the current reality, and the gap between them in one line.</span>
+                        </div>
+                        <div class="one-thing-row reveal">
+                            <span class="label">Action</span>
+                            <span class="value">One specific action. Not two. Not three.</span>
+                        </div>
+                        <div class="one-thing-row reveal">
+                            <span class="label">By When</span>
+                            <span class="value">A calendar date you can commit to out loud.</span>
+                        </div>
+                        <div class="one-thing-row reveal">
+                            <span class="label">Success Measure</span>
+                            <span class="value">How you will know the discrepancy closed or measurably narrowed.</span>
+                        </div>
+                    </div>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal"><img src="assets/slide-4-one-thing.png" alt="A figure at a junction choosing one path forward"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(4 min / 135)</span>
+    </section>
+
     <!-- SLIDE 7: FRAMEWORK - KFFM -->
     <section class="slide" aria-label="Key Function Flow Map">
         <div class="slide-content">
@@ -239,7 +373,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(65 min / 185)</span>
+        <span class="time-indicator">(65 min / 200)</span>
     </section>
 
     <!-- SLIDE 8: FRAMEWORK - PROFIT/X -->
@@ -274,7 +408,7 @@
             <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 5:10 PM.</p>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 195)</span>
+        <span class="time-indicator">(10 min / 210)</span>
     </section>
 
     <!-- SLIDE 10: PERSONAL REVIEW - SOLO -->
@@ -295,7 +429,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 205)</span>
+        <span class="time-indicator">(10 min / 220)</span>
     </section>
 
     <!-- SLIDE 11: PERSONAL REVIEW - PRESENTATIONS -->
@@ -316,7 +450,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 230)</span>
+        <span class="time-indicator">(25 min / 245)</span>
     </section>
 
     <!-- SLIDE 12: READING -->
@@ -371,7 +505,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 240)</span>
+        <span class="time-indicator">(10 min / 255)</span>
     </section>
 
     <!-- SLIDE: CASCADE 3 KEY MESSAGES -->
@@ -402,7 +536,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 245)</span>
+        <span class="time-indicator">(5 min / 260)</span>
     </section>
 
     <script>
