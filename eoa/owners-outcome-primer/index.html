@@ -278,6 +278,58 @@
             }
         }
 
+        /* --- Gap Scorecard table --- */
+        .gap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: clamp(0.5rem, 1vh, 1rem);
+            font-size: var(--body-size);
+        }
+
+        .gap-table thead th {
+            font-size: var(--small-size);
+            font-weight: 600;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-align: left;
+            padding: clamp(0.5rem, 1vh, 0.75rem) clamp(0.75rem, 1.2vw, 1rem);
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .gap-table thead th:first-child {
+            color: var(--text-muted);
+        }
+
+        .gap-table tbody td {
+            padding: clamp(0.6rem, 1.2vh, 0.9rem) clamp(0.75rem, 1.2vw, 1rem);
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-primary);
+            vertical-align: top;
+        }
+
+        .gap-table tbody td:first-child {
+            font-weight: 600;
+            color: var(--accent-blue);
+            width: 22%;
+        }
+
+        .gap-table tbody td:nth-child(2),
+        .gap-table tbody td:nth-child(3) {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .gap-table tbody td:last-child {
+            color: var(--accent-green-text);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .gap-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
         /* Mock table for slide 2: the one thing */
         .one-thing-diagram {
             display: flex;
@@ -389,7 +441,7 @@
                         I am in business because I want <span class="oo-var">what you personally want</span>, and I will achieve it by <span class="oo-var">specific date</span>, as measured by <span class="oo-var">1 to 3 measures</span>.
                     </p>
                     <ul class="talking-points">
-                        <li class="reveal"><strong>Guardrails.</strong> Anti-outcome, non-negotiables, cash floor, home alignment. The rules you will not break on the way to the goal.</li>
+                        <li class="reveal"><strong>Guardrails.</strong> What failure looks like even if the numbers hit, the rules you will not break, the cash floor you will not drop below, and whether home is aligned.</li>
                         <li class="reveal"><strong>Gap Scorecard.</strong> Time, Money, Role, Team, Risk, Value. Where you are. Where you want to be. The gap between them.</li>
                         <li class="reveal"><strong>The One Thing.</strong> The single structural problem that, if resolved in 90 days, moves the statement the most. Not two. Not three. One.</li>
                     </ul>
@@ -406,7 +458,38 @@
         <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
     </section>
 
-    <!-- SLIDE 2: THE ONE THING -->
+    <!-- SLIDE 2: GAP SCORECARD -->
+    <section class="slide" aria-label="Gap Scorecard">
+        <div class="slide-content">
+            <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
+            <h1 class="slide-title reveal">Gap Scorecard</h1>
+            <p class="slide-subtitle reveal">Where you are. Where you want to be. The gap between.</p>
+            <table class="gap-table reveal">
+                <thead>
+                    <tr>
+                        <th>Dimension</th>
+                        <th>Goal</th>
+                        <th>Reality</th>
+                        <th>Gap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="reveal"><td>Time</td><td>hours per week, doing the right work</td><td>hours per week, doing what</td><td>the delta and the shape of it</td></tr>
+                    <tr class="reveal"><td>Money</td><td>revenue, profit, personal income</td><td>today's numbers</td><td>pricing, volume, or structural</td></tr>
+                    <tr class="reveal"><td>Role</td><td>what you will be doing</td><td>what you are doing now</td><td>what is hardest to let go</td></tr>
+                    <tr class="reveal"><td>Team</td><td>people who run it without you</td><td>who is on the team and what they own</td><td>what breaks if you disappear for 30 days</td></tr>
+                    <tr class="reveal"><td>Risk</td><td>exposure you can carry</td><td>debt, commitments, cash position vs floor</td><td>tension with closing other gaps</td></tr>
+                    <tr class="reveal"><td>Value / Exit</td><td>enterprise value and by when</td><td>what a buyer sees today</td><td>what makes the business sellable</td></tr>
+                </tbody>
+            </table>
+            <div class="slide-links reveal" style="margin-top: clamp(0.75rem, 1.5vh, 1.25rem);">
+                <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching</span>
+    </section>
+
+    <!-- SLIDE 3: THE ONE THING -->
     <section class="slide" aria-label="The One Thing">
         <div class="slide-content">
             <div class="two-col">
