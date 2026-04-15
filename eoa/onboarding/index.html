@@ -55,6 +55,14 @@
         .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border-light); border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0; }
         .nav-dot.active { background: var(--accent-blue); transform: scale(1.3); }
         .nav-dot:hover { background: var(--accent-green); }
+        .homework-section { margin-bottom: clamp(0.8rem, 1.5vh, 1.2rem); }
+        .homework-section h3 { font-size: var(--h3-size); font-weight: 600; color: #333333; margin-bottom: clamp(0.3rem, 0.8vh, 0.6rem); }
+        .homework-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.3rem, 0.8vh, 0.6rem); }
+        .homework-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(0.8rem, 1.5vw, 1.2rem); position: relative; }
+        .homework-list li::before { content: ''; position: absolute; left: 0; top: clamp(5px, 0.7vh, 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
+        .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
+        .homework-list a:hover { text-decoration: underline; }
+        .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
         @media (max-height: 700px) { :root { --slide-padding: clamp(0.75rem, 3vw, 2rem); --content-gap: clamp(0.4rem, 1.5vw, 1rem); --title-size: clamp(1.25rem, 4.5vw, 2.5rem); } }
         @media (max-height: 600px) { :root { --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem); --content-gap: clamp(0.3rem, 1vw, 0.75rem); --title-size: clamp(1.1rem, 4vw, 2rem); --body-size: clamp(0.7rem, 1.2vw, 0.95rem); } .nav-dots { display: none; } }
         @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; } html { scroll-behavior: auto; } }
@@ -441,7 +449,51 @@
         <span class="time-indicator">(1 min / 59 of 60)</span>
     </section>
 
-    <!-- SLIDE 16: ONE-PHRASE CLOSE -->
+    <!-- SLIDE 16: HOMEWORK -->
+    <section class="slide" aria-label="Homework">
+        <div class="slide-content">
+            <div class="two-col">
+            <div class="col-text">
+            <h1 class="slide-title reveal">Homework</h1>
+
+            <div class="homework-section reveal">
+                <h3>Review and Complete</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener">Owner's Outcome ★</a> <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a> <span style="color: var(--text-secondary);">, if not yet submitted</span></li>
+                    <li>Business Lifeline, answers to the 5 questions for Meeting 1</li>
+                    <li>Read the <a href="https://www.darlison.com/eoa-constitution/" target="_blank" rel="noopener">Constitution</a>, ready to sign at Meeting 1</li>
+                    <li>Confirm you can log in to <a href="https://app.mural.co" target="_blank" rel="noopener">Mural</a></li>
+                    <li>Watch the <a href="https://www.darlison.com/eoa/#experience-sharing" target="_blank" rel="noopener">Gestalt videos</a></li>
+                    <li>Email your lunch selection from the <a href="assets/1874-lunch-menu-april-2026.pdf" target="_blank" rel="noopener">1874 Lunch Menu</a> to byron@darlison.com by end of today if you have not already done so</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>Complete the ✦ AI Prompt for Meeting 1</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.darlison.com/eoa-prep-prompt" target="_blank" rel="noopener">EOA Prep Prompt ★</a> <a href="https://www.darlison.com/eoa-prep-prompt" target="_blank" rel="noopener" class="link-prompt">✦ AI Prompt</a> <span style="color: var(--text-secondary);">, email output to byron@darlison.com by Fri Apr 17</span></li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>Books for Meeting 1</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.amazon.ca/dp/1544521294?ref=darlison.com" target="_blank" rel="noopener">Metronomics</a> <span style="color: var(--text-secondary);">, Shannon Susko</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0787960756?ref=darlison.com" target="_blank" rel="noopener">The Five Dysfunctions of a Team</a> <span style="color: var(--text-secondary);">, Patrick Lencioni</span></li>
+                    <li><a href="https://www.amazon.ca/dp/1591846447?ref=darlison.com" target="_blank" rel="noopener">Start with Why</a> <span style="color: var(--text-secondary);">, Simon Sinek</span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-image reveal">
+                <img src="../shared/homework.png" alt="Homework and preparation">
+            </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="time-indicator">(60 of 60)</span>
+    </section>
+
+    <!-- SLIDE 17: ONE-PHRASE CLOSE -->
     <section class="slide" aria-label="One-Phrase Close">
         <div class="slide-content">
             <div class="two-col">
