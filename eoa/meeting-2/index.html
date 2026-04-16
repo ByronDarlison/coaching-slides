@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeting 2 — EOTO Accountability Group 7</title>
+    <title>Meeting 2 -- EOTO Accountability Group 7</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
@@ -54,6 +54,10 @@
         .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
         .homework-list a:hover { text-decoration: underline; }
         .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
+        .rules-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.5vh, 1.2rem); }
+        .rules-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); display: flex; align-items: flex-start; gap: clamp(8px, 1vw, 14px); }
+        .rule-icon { flex-shrink: 0; width: clamp(18px, 2vw, 24px); height: clamp(18px, 2vw, 24px); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+        .rule-icon svg { width: 100%; height: 100%; }
         .close-question { font-size: var(--h2-size); font-weight: 400; color: var(--text-secondary); margin-top: var(--element-gap); }
         .close-instruction { font-size: var(--h3-size); font-weight: 500; color: var(--accent-green); margin-top: var(--content-gap); }
         .slide-footer { position: absolute; bottom: clamp(12px, 2vh, 24px); left: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 400; color: var(--text-muted); }
@@ -76,24 +80,30 @@
     <div class="progress-bar" id="progressBar"></div>
     <nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
 
+    <!-- =============================================
+         SLIDE 1: TITLE
+         ============================================= -->
     <section class="slide" aria-label="Title">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text" style="gap: clamp(0.75rem, 2vh, 1.5rem);">
                     <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">EOTO Accountability Group 7</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">Meeting 2 - June 5, 2026</p>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">Meeting 2: Coaching the foundations</p>
                     <hr class="reveal" style="width: clamp(60px, 10vw, 120px); height: 2px; background: var(--accent-green); border: none;">
                     <div class="reveal" style="display: flex; align-items: center; gap: clamp(12px, 2vw, 24px);">
-                        <img src="assets/eoa-logo.png" alt="EO Accelerator" style="max-width: clamp(140px, 18vw, 220px); height: auto;">
-                        <img src="../../shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(120px, 15vw, 180px); height: auto;">
+                        <img src="https://byrondarlison.github.io/coaching-slides/eoa/meeting-2/assets/eoa-logo.png" alt="EO Accelerator" style="max-width: clamp(140px, 18vw, 220px); height: auto;">
+                        <img src="https://byrondarlison.github.io/coaching-slides/shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(120px, 15vw, 180px); height: auto;">
                     </div>
                 </div>
-                <div class="col-image reveal"><img src="assets/title-meeting2.png" alt="Meeting 2"></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/monthly/m2/assets/title-options/option-1-compass.png" alt="Defining who you are and where you're going"></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 2: ONE WORD BAROMETER (5/5)
+         ============================================= -->
     <section class="slide" aria-label="Opening">
         <div class="slide-content">
             <div class="two-col">
@@ -104,13 +114,60 @@
                         <li>One word. An emotion. No wrong answers.</li>
                     </ul>
                 </div>
-                <div class="col-image reveal"><img src="../shared/one-word-barometer.png" alt=""></div>
+                <div class="col-image reveal"><img src="../shared/one-word-barometer.png" alt="One Word Barometer"></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
         <span class="time-indicator">(5 min / 5)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 3: RULES OF ENGAGEMENT
+         ============================================= -->
+    <section class="slide" aria-label="Rules of Engagement">
+        <div class="slide-content">
+            <div class="two-col">
+            <div class="col-text">
+            <h1 class="slide-title reveal">Rules of Engagement</h1>
+            <ul class="rules-list">
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 2L15 8.5L22 9.5L17 14.5L18 21.5L12 18.5L6 21.5L7 14.5L2 9.5L9 8.5Z"/></svg></span>
+                    Challenge yourself. Challenge each other.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    Discussion and collaboration. Your best contribution.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                    Be present in the room.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    No blame, no shame. No dumb questions.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                    Don't ignore the brutal facts. Bring them forward.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+                    Confidentiality. What happens here stays here.
+                </li>
+            </ul>
+            </div>
+            <div class="col-image reveal">
+                <img src="https://byrondarlison.github.io/coaching-slides/shared/assets/rules-of-engagement.png" alt="Rules of Engagement">
+            </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(3 min / 8)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 4: BUSINESS UPDATES (25/33)
+         ============================================= -->
     <section class="slide" aria-label="Business Updates">
         <div class="slide-content">
             <div class="two-col">
@@ -124,13 +181,16 @@
                         <li>Presentation needed?</li>
                     </ul>
                 </div>
-                <div class="col-image reveal"><img src="../shared/business-updates.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/eoa/shared/business-updates.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 30)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(25 min / 33)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 4: PRESENTATIONS (75/105)
+         ============================================= -->
     <section class="slide" aria-label="Presentations">
         <div class="slide-content">
             <div class="two-col">
@@ -146,90 +206,175 @@
                         <li>Coach feedback (5 min)</li>
                     </ul>
                 </div>
-                <div class="col-image reveal"><img src="../shared/personal-review-presentations.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/eoa/shared/personal-review-presentations.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(75 min / 105)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(75 min / 108)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 5: BREAK (10/115)
+         ============================================= -->
     <section class="slide" aria-label="Break">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text" style="align-items: center; text-align: center;">
                     <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 3:50 PM.</p>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">12 minutes. Be back at 4:00 PM.</p>
                 </div>
                 <div class="col-image"></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 115)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(12 min / 120)</span>
     </section>
 
-    <section class="slide" aria-label="Core Purpose, BHAG, and Values">
+    <!-- =============================================
+         METRONOMICS SECTION (second half)
+         ============================================= -->
+
+    <!-- =============================================
+         SLIDE 6: OWNER'S OUTCOME (5/120)
+         ============================================= -->
+    <section class="slide" aria-label="Owner's Outcome">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-review reveal">▲ Review</span>
-                    <h1 class="slide-title reveal">Core Purpose, BHAG, and Values</h1>
-                    <p class="slide-subtitle reveal">Review your homework from Meeting 1</p>
-                    <ul class="talking-points reveal">
-                        <li>Review Core Purpose: why does your company exist beyond making money?</li>
-                        <li>Review BHAG: your 10-to-30-year destination</li>
-                        <li>Review Values: the 3-5 non-negotiable behaviors</li>
-                        <li>Pressure-test each against reality. Refine in Mural.</li>
-                    </ul>
+                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <h1 class="slide-title reveal">Owner's Outcome</h1>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary);">
+                        What the owner personally wants the business to deliver, by when, measured by what.
+                    </p>
                     <div class="slide-links reveal">
-                        <a href="https://www.darlison.com/why-does-your-company-exist/" class="link-article" target="_blank">Article</a>
-                        <a href="https://www.darlison.com/core-purpose-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
                     </div>
                 </div>
-                <div class="col-image reveal"><img src="../../monthly/m2/assets/core-purpose-bhag.png" alt=""></div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png" alt="Owner's Outcome">
+                </div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(60 min / 165)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(15 min / 135)</span>
     </section>
 
-    <section class="slide" aria-label="3HAG, 1HAG, and QHAG">
+    <!-- =============================================
+         SLIDE 7: KFFM (30/165)
+         ============================================= -->
+    <section class="slide" aria-label="KFFM">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal">★ Introduced</span>
-                    <h1 class="slide-title reveal">3HAG, 1HAG, and QHAG</h1>
-                    <p class="slide-subtitle reveal">Where are you going?</p>
-                    <ul class="talking-points reveal">
-                        <li>3HAG: your 3-Year Highly Achievable Goal. Fiscal targets, key capabilities, widgets.</li>
-                        <li>1HAG: this year's priorities, metrics, and owners</li>
-                        <li>QHAG: your 90-day priorities. What gets done this quarter?</li>
-                        <li>Each member presents. Group reviews. Refine in Mural.</li>
+                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <h1 class="slide-title reveal">Key Function Flow Map (KFFM)</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Revisit the Level 1 flow. Does it still hold?</li>
+                        <li class="reveal">Sharpen widget labels. Countable, not dollar-based.</li>
                     </ul>
                     <div class="slide-links reveal">
-                        <a href="https://www.darlison.com/where-are-you-going/" class="link-article" target="_blank">Article</a>
-                        <a href="https://www.darlison.com/planning-cascade-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a>
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
                     </div>
                 </div>
-                <div class="col-image reveal"><img src="assets/title-meeting2.png" alt=""></div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="Key Function Flow Map">
+                </div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(30 min / 165)</span>
     </section>
 
-    <section class="slide" aria-label="Break">
+    <!-- =============================================
+         SLIDE 8: FAC (15/180)
+         ============================================= -->
+    <section class="slide" aria-label="Functional Accountability Chart (FAC)">
         <div class="slide-content">
             <div class="two-col">
-                <div class="col-text" style="align-items: center; text-align: center;">
-                    <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 5:00 PM.</p>
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <h1 class="slide-title reveal">Functional Accountability Chart (FAC)</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Review owner assignments and critical numbers</li>
+                        <li class="reveal">Test: can each owner actually move their number?</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
                 </div>
-                <div class="col-image"></div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="How Your Company Makes Money">
+                </div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 175)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(15 min / 180)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 9: FOC (15/195)
+         ============================================= -->
+    <section class="slide" aria-label="Functional Organization Chart (FOC)">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <h1 class="slide-title reveal">Functional Organization Chart (FOC)</h1>
+                    <ul class="talking-points">
+                        <li class="reveal">Review and refine the draft from homework</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="How Your Company Makes Money">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(15 min / 195)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 10: PROFIT/X (10/205)
+         ============================================= -->
+    <section class="slide" aria-label="Profit/X">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <h1 class="slide-title reveal">Profit/X</h1>
+                    <p class="slide-subtitle reveal">The one unit of measurement that captures how the company makes money: profit per customer, per transaction, per subscription.</p>
+                    <ul class="talking-points">
+                        <li class="reveal">Revisit the denominator. Is it still the right X?</li>
+                        <li class="reveal">Connect it back to the refined KFFM widgets</li>
+                    </ul>
+                    <div class="slide-links reveal">
+                        <a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener" class="link-article">Article</a>
+                        <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
+                    </div>
+                </div>
+                <div class="col-image reveal">
+                    <img src="https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png" alt="How Your Company Makes Money">
+                </div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 205)</span>
+    </section>
+
+    <!-- =============================================
+         CLOSE SECTION
+         ============================================= -->
+
+    <!-- =============================================
+         SLIDE 12: PERSONAL REVIEW SOLO (5/220)
+         ============================================= -->
     <section class="slide" aria-label="Personal Review Solo">
         <div class="slide-content">
             <div class="two-col">
@@ -243,51 +388,101 @@
                         <li>Update your EOA Prep document with your conclusions</li>
                     </ul>
                 </div>
-                <div class="col-image reveal"><img src="../shared/personal-review.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/eoa/shared/personal-review.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 185)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(5 min / 210)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 13: SHARE CONCLUSIONS (10/230)
+         ============================================= -->
     <section class="slide" aria-label="Personal Review Presentations">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <h1 class="slide-title reveal">Personal Review</h1>
-                    <p class="slide-subtitle reveal">5 minutes each. Share your conclusions.</p>
+                    <h1 class="slide-title reveal">Share Your Conclusions</h1>
                     <ul class="talking-points reveal">
+                        <li>5 minutes each</li>
                         <li>Present your key takeaways</li>
                         <li>State your OBT for next month</li>
                         <li>What problem does it solve?</li>
                         <li>How does it connect to your Owner's Outcome?</li>
                     </ul>
                 </div>
-                <div class="col-image reveal"><img src="../shared/personal-review-presentations.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/eoa/shared/personal-review-presentations.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 210)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 220)</span>
     </section>
 
-    <section class="slide" aria-label="Reading">
+    <!-- =============================================
+         SLIDE 14: HOMEWORK
+         ============================================= -->
+    <section class="slide" aria-label="Homework">
         <div class="slide-content">
             <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Reading</h1>
-                    <p class="slide-subtitle reveal">Current reading list</p>
-                    <ul class="book-list reveal">
-                        <li><a href="https://www.amazon.ca/dp/1544521294" target="_blank">Metronomics</a> <span class="book-author">Shannon Susko</span></li>
-                        <li><a href="https://www.amazon.ca/dp/1591846447" target="_blank">Start with Why</a> <span class="book-author">Simon Sinek</span></li>
-                        <li><a href="https://www.amazon.ca/dp/1544503687" target="_blank">3HAG WAY</a> <span class="book-author">Shannon Susko</span></li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/reading.png" alt=""></div>
+            <div class="col-text">
+            <h1 class="slide-title reveal">Homework</h1>
+
+            <div class="homework-section reveal">
+                <h3>&#9650; Review and Complete</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.darlison.com/are-you-getting-what-you-want/" target="_blank" rel="noopener">Owner's Outcome</a> <a href="https://www.darlison.com/owners-outcome-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener">Key Function Flow Map (KFFM)</a> <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener">Functional Accountability Chart (FAC)</a> <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener">Functional Organization Chart (FOC)</a> <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/how-your-company-makes-money/" target="_blank" rel="noopener">Profit/X</a> <a href="https://www.darlison.com/kffm-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                </ul>
+                <ul class="homework-list" style="margin-top: clamp(0.3rem, 0.8vh, 0.6rem);">
+                    <li>Add finalized artifacts to Mural and Metronome Software</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>&#9733; Read Ahead and Complete the &#10022; AI Prompts for M3</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener">Core Purpose</a> <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/why-does-your-company-exist/" target="_blank" rel="noopener">BHAG</a> <a href="https://www.darlison.com/core-purpose-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li><a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener">Meeting Cadence</a> <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
+                    <li>Add finalized artifacts to Mural</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>EOA Prep Prompt</h3>
+                <ul class="homework-list">
+                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a> and email it to byron@darlison.com at least two business days before Meeting 3</li>
+                </ul>
+            </div>
+
+            <div class="homework-section reveal">
+                <h3>Books</h3>
+                <ul class="homework-list">
+                    <li><a href="https://www.amazon.ca/dp/1544521294" target="_blank" rel="noopener">Metronomics</a> <span style="color: var(--text-secondary);">- Shannon Susko</span></li>
+                    <li><a href="https://www.amazon.ca/dp/1591846447" target="_blank" rel="noopener">Start with Why</a> <span style="color: var(--text-secondary);">- Simon Sinek</span></li>
+                    <li><a href="https://www.amazon.ca/dp/1544503687" target="_blank" rel="noopener">3HAG WAY</a> <span style="color: var(--text-secondary);">- Shannon Susko</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0718033329" target="_blank" rel="noopener">Building a StoryBrand</a> <span style="color: var(--text-secondary);">- Donald Miller</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0066620996" target="_blank" rel="noopener">Good to Great</a> <span style="color: var(--text-secondary);">- Jim Collins</span></li>
+                    <li><a href="https://www.amazon.ca/dp/1416549005" target="_blank" rel="noopener">The Speed of Trust</a> <span style="color: var(--text-secondary);">- Stephen M.R. Covey</span></li>
+                    <li><a href="https://www.amazon.ca/dp/0399592520" target="_blank" rel="noopener">Dare to Lead</a> <span style="color: var(--text-secondary);">- Brene Brown</span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-image reveal">
+                <img src="https://byrondarlison.github.io/coaching-slides/monthly/m1/assets/homework.png" alt="Homework">
+            </div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(5 min / 225)</span>
     </section>
 
+    <!-- =============================================
+         SLIDE 15: HOUSEKEEPING
+         ============================================= -->
     <section class="slide" aria-label="Housekeeping">
         <div class="slide-content">
             <div class="two-col">
@@ -297,41 +492,23 @@
                         <h3>Give / Take (out of 5)</h3>
                     </div>
                     <div class="homework-section reveal">
-                        <h3>Homework before next meeting</h3>
+                        <h3>Upcoming</h3>
                         <ul class="homework-list">
-                        <li>Refine 3HAG, 1HAG, and QHAG in Mural</li>
-                        <li>Complete <a href="https://www.darlison.com/a-player-team-assessment/" target="_blank">A-Player Team Assessment</a> <a href="https://www.darlison.com/a-player-team-assessment-prompt/" class="link-prompt" target="_blank">✦ AI Prompt</a></li>
-                        <li>Complete <a href="https://www.darlison.com/where-are-you-going/" target="_blank">Core Customer Analysis</a></li>
-                        <li>Run EOA Prep Prompt before Meeting 3</li>
+                            <li>July 15, 2026 - Accountability Meeting (M3) at the National Club</li>
+                            <li>September 10, 2026 - Learning Day: Cash</li>
                         </ul>
                     </div>
-                    <div class="homework-section reveal">
-                        <h3>Next Meeting</h3>
-                        <ul class="homework-list"><li>July 15, 2026 at the National Club</li></ul>
-                    </div>
                 </div>
-                <div class="col-image reveal"><img src="../shared/homework.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/eoa/shared/homework.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 220)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(5 min / 230)</span>
     </section>
 
-    <!-- SLIDE: CASCADE 3 KEY MESSAGES -->
-    <section class="slide" aria-label="Cascade 3 Key Messages">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text" style="align-items: flex-start;">
-                    <h1 class="slide-title reveal">Cascade 3 Key Messages</h1>
-                    <p class="close-instruction reveal">Break out as a team. Agree on the 3 things your team needs to hear from this meeting.</p>
-                    <p class="close-question reveal">Come back and present. Share them in tomorrow's huddle.</p>
-                </div>
-                <div class="col-image reveal"><img src="../../shared/assets/cascade-3-key-messages.png" alt="Cascade 3 Key Messages"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-    </section>
-
+    <!-- =============================================
+         ONE PHRASE CLOSE
+         ============================================= -->
     <section class="slide" aria-label="One Phrase Close">
         <div class="slide-content">
             <div class="two-col">
@@ -340,12 +517,13 @@
                     <p class="close-instruction reveal">5 words or less.</p>
                     <p class="close-question reveal">How do you feel right now?</p>
                 </div>
-                <div class="col-image reveal"><img src="../../shared/assets/one-phrase-close.png" alt=""></div>
+                <div class="col-image reveal"><img src="https://byrondarlison.github.io/coaching-slides/shared/assets/one-phrase-close.png" alt=""></div>
             </div>
         </div>
-        <span class="slide-footer">darlison.com | Metronomics™ Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 225)</span>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 240)</span>
     </section>
+
     <script>
         class SlidePresentation {
             constructor() { this.slides = document.querySelectorAll('.slide'); this.currentSlide = 0; this.isScrolling = false; this.setupIntersectionObserver(); this.setupKeyboardNav(); this.setupTouchNav(); this.setupProgressBar(); this.setupNavDots(); this.setupWheelNav(); }

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EOA Meeting Schedule</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #fff; }
+  </style>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+const { useState, useMemo } = React;
+
+const STATUS_TYPES = {
+  new:     { label: "Introduced",        symbol: "\u2605", color: "#326AB5", size: 14 },
+  rebuild: { label: "Rebuilt",           symbol: "\u25FC", color: "#326AB5", size: 14 },
+  dot:     { label: "Review and confirm", symbol: "\u2713", color: "#666666", size: 14 },
+};
+
+const BASE = "https://byrondarlison.github.io/coaching-slides/eoa/";
+const COLUMNS = [
+  { label: "M1",  date: "Apr 21", type: "meeting", url: BASE + "meeting-1/" },
+  { label: "LD",  date: "May 14", type: "learning" },
+  { label: "M2",  date: "Jun 5",  type: "meeting", url: BASE + "meeting-2/" },
+  { label: "M3",  date: "Jul 15", type: "meeting", url: BASE + "meeting-3/" },
+  { label: "LD",  date: "Sep 10", type: "learning" },
+  { label: "M4",  date: "Oct 14", type: "meeting", url: BASE + "meeting-4/" },
+  { label: "LD",  date: "Nov 26", type: "learning" },
+  { label: "M5",  date: "Dec 14", type: "meeting", url: BASE + "meeting-5/" },
+  { label: "M6",  date: "Jan 8",  type: "meeting", url: BASE + "meeting-6/" },
+  { label: "M7",  date: "Feb 10", type: "meeting", url: BASE + "meeting-7/" },
+  { label: "LD",  date: "Mar 25", type: "learning" },
+  { label: "M8",  date: "Apr 14", type: "meeting", url: BASE + "meeting-8/" },
+  { label: "M9",  date: "May 12", type: "meeting", url: BASE + "meeting-9/" },
+  { label: "M10", date: "Jun 9",  type: "annual",  url: BASE + "meeting-10/" },
+];
+
+//                                          M1   LD    M2    M3   LD    M4   LD    M5    M6    M7   LD    M8    M9   M10
+const DELIVERABLES = [
+  { name: "Business Lifelines",
+    data: ["new",null,null,null,null,null,null,null,null,null,null,null,null,null],
+    note: "Each member tells their story: when they started, pivotal moments, lowest point, proudest achievement, and why they are here. Builds trust. One-time M1 activity." },
+  { name: "Owner's Outcome",
+    url: "https://www.darlison.com/are-you-getting-what-you-want/",
+    promptUrl: "https://www.darlison.com/owners-outcome-prompt/",
+    data: ["new",null,"dot","dot",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "What the owner personally wants the business to deliver -- by when, measured by what. Introduced at M1, full prompt completed as homework, reviewed every meeting from M2." },
+  { name: "Learning Day: Execution",
+    learningDay: true,
+    data: [null,"new",null,null,null,null,null,null,null,null,null,null,null,null],
+    note: "EO Accelerator quarterly learning event. Topic: Execution." },
+  { name: "KFFM",
+    url: "https://www.darlison.com/how-your-company-makes-money/",
+    promptUrl: "https://www.darlison.com/kffm-tools/",
+    data: [null,null,"new","dot",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "How work flows through the company. Homework from M1, coached at M2. Gets deeper every meeting." },
+  { name: "Functional Accountability Chart",
+    url: "https://www.darlison.com/how-your-company-makes-money/",
+    promptUrl: "https://www.darlison.com/kffm-tools/",
+    data: [null,null,"new","dot",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "Assigns every function an owner and a critical number. Built alongside the KFFM." },
+  { name: "Functional Organization Chart (FOC)",
+    url: "https://www.darlison.com/how-your-company-makes-money/",
+    promptUrl: "https://www.darlison.com/kffm-tools/",
+    data: [null,null,"new","dot",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "Every function the company needs, who owns each one, and where the gaps are." },
+  { name: "Profit/X",
+    url: "https://www.darlison.com/how-your-company-makes-money/",
+    promptUrl: "https://www.darlison.com/kffm-tools/",
+    data: [null,null,"new","dot",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "The one unit of measurement that best captures how the company makes money." },
+  { name: "Core Purpose",
+    url: "https://www.darlison.com/why-does-your-company-exist/",
+    promptUrl: "https://www.darlison.com/core-purpose-prompt/",
+    data: [null,null,null,"new",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "Why the company exists beyond making money. Homework from M2, coached at M3." },
+  { name: "BHAG",
+    url: "https://www.darlison.com/why-does-your-company-exist/",
+    promptUrl: "https://www.darlison.com/core-purpose-prompt/",
+    data: [null,null,null,"new",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "A 10-to-30-year goal with no numbers. Confirmed every meeting." },
+  { name: "Meeting Cadence",
+    url: "https://www.darlison.com/the-eight-meetings-that-run-your-company/",
+    promptUrl: "https://www.darlison.com/meeting-cadence-assessment/",
+    data: [null,null,null,"new",null,"dot",null,"dot","dot","dot",null,"dot","dot","dot"],
+    note: "Eight meetings at six frequencies. Set once. Runs continuously." },
+  { name: "Learning Day: Cash",
+    learningDay: true,
+    data: [null,null,null,null,"new",null,null,null,null,null,null,null,null,null],
+    note: "EO Accelerator quarterly learning event. Topic: Cash." },
+  { name: "3HAG",
+    url: "https://www.darlison.com/where-are-you-going/",
+    promptUrl: "https://www.darlison.com/planning-cascade-prompt/",
+    data: [null,null,null,null,null,"new",null,"dot","dot","dot",null,"dot","dot","rebuild"],
+    note: "3-Year Highly Achievable Goal. First version at Meeting 4. Rebuilt at the annual (Meeting 10)." },
+  { name: "1HAG",
+    url: "https://www.darlison.com/where-are-you-going/",
+    promptUrl: "https://www.darlison.com/planning-cascade-prompt/",
+    data: [null,null,null,null,null,"new",null,"dot","dot","dot",null,"dot","dot","rebuild"],
+    note: "1-Year Highly Achievable Goal. Aligns to the 3HAG. Rebuilt at Meeting 10." },
+  { name: "QHAG + 13-Week Sprint Lanes",
+    url: "https://www.darlison.com/where-are-you-going/",
+    promptUrl: "https://www.darlison.com/planning-cascade-prompt/",
+    data: [null,null,null,null,null,"new",null,"dot","dot","rebuild",null,"dot","rebuild","rebuild"],
+    note: "90-day priorities with weekly milestones. Rebuilt quarterly to keep the execution rhythm." },
+  { name: "Learning Day: Strategy",
+    learningDay: true,
+    data: [null,null,null,null,null,null,"new",null,null,null,null,null,null,null],
+    note: "EO Accelerator quarterly learning event. Topic: Strategy." },
+  { name: "Core Values",
+    url: "https://www.darlison.com/how-to-discover-your-companys-values-using-ai",
+    promptUrl: "https://www.darlison.com/values-discovery-prompt/",
+    data: [null,null,null,null,null,null,null,"new","dot","dot",null,"dot","dot","dot"],
+    note: "3-5 non-negotiable behaviors. Discovery at Meeting 5 using Mission to Mars." },
+  { name: "A-Player Team Assessment",
+    url: "https://www.darlison.com/a-player-team-assessment/",
+    promptUrl: "https://www.darlison.com/a-player-team-assessment-prompt/",
+    data: [null,null,null,null,null,null,null,"new","dot","dot",null,"dot","dot","dot"],
+    note: "Values alignment vs. performance. Gut-feel first version at Meeting 5." },
+  { name: "Function Scorecards",
+    url: "https://www.darlison.com/scoreboard-day/",
+    data: [null,null,null,null,null,null,null,null,"new","dot",null,"dot","dot","dot"],
+    note: "CEO creates Head of Company scorecard at Meeting 6. Scoreboard Day starts the weekly review rhythm." },
+  { name: "Market Map",
+    data: [null,null,null,null,null,null,null,null,null,"new",null,"dot","dot","dot"],
+    note: "Every player in your market plotted by relevant dimensions. Shows where the open space is." },
+  { name: "Learning Day: People",
+    learningDay: true,
+    data: [null,null,null,null,null,null,null,null,null,null,"new",null,null,null],
+    note: "EO Accelerator quarterly learning event. Topic: People." },
+  { name: "Core Customer Analysis",
+    url: "https://www.darlison.com/who-is-your-most-valuable-customer/",
+    promptUrl: "https://www.darlison.com/core-customer-discovery-prompt/",
+    data: [null,null,null,null,null,null,null,null,null,null,null,"new","dot","dot"],
+    note: "Profile of the one customer type who buys at a profit. Feeds the strategy work that follows." },
+  { name: "Attribution Map",
+    data: [null,null,null,null,null,null,null,null,null,null,null,null,"new","dot"],
+    note: "How you and competitors score on the attributes that matter most to your Core Customer." },
+  { name: "Activity Fit Map (Differentiators)",
+    data: [null,null,null,null,null,null,null,null,null,null,null,null,"new","dot"],
+    note: "The 3-5 capabilities that put your company in a unique position, plus supporting activities." },
+  { name: "Swimlanes",
+    data: [null,null,null,null,null,null,null,null,null,null,null,null,null,"new"],
+    note: "12-quarter grid mapping milestones for each differentiating activity." },
+  { name: "12-Month Widget-Based Forecast",
+    data: [null,null,null,null,null,null,null,null,null,null,null,null,null,"new"],
+    note: "A P&L forecast built on widgets instead of top-down revenue guesses." },
+];
+
+function Cell({ value }) {
+  if (!value) return <td style={styles.cell}></td>;
+  let content;
+  if (value === "new") content = <span style={{ color: "#326AB5", fontSize: 14, fontWeight: 700, lineHeight: 1 }}>{"\u2605"}</span>;
+  else if (value === "rebuild") content = <span style={{ color: "#326AB5", fontSize: 14, fontWeight: 900, lineHeight: 1 }}>{"\u25FC"}</span>;
+  else content = <span style={{ color: "#999", fontSize: 14, fontWeight: 400, lineHeight: 1 }}>{"\u2713"}</span>;
+  return <td style={styles.cell}>{content}</td>;
+}
+
+function EOASchedule() {
+  const [hoveredRow, setHoveredRow] = useState(null);
+
+  return (
+    <div style={styles.page}>
+      <div style={styles.topSection}>
+        <div style={styles.titleRow}>
+          <div>
+            <h1 style={styles.title}>EOA Meeting Schedule</h1>
+            <p style={styles.byline}>Byron Darlison {"\u00B7"} Metronomics Coach {"\u00B7"} <a href="https://www.darlison.com" target="_blank" rel="noopener noreferrer" style={styles.bylineLink}>darlison.com</a></p>
+          </div>
+        </div>
+
+        <p style={styles.introText}></p>
+
+        <div style={styles.legend}>
+          {Object.entries(STATUS_TYPES).map(([key, cfg]) => (
+            <span key={key} style={styles.legendItem}>
+              <span style={{ color: cfg.color, fontSize: 14, fontWeight: 700, marginRight: 4, lineHeight: 1 }}>
+                {key === "new" ? "\u2605" : key === "rebuild" ? "\u25FC" : "\u2713"}
+              </span>
+              <span>{cfg.label}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div style={styles.tableWrap}>
+        <table style={styles.table}>
+          <thead>
+            <tr>
+              <th style={styles.stickyHeaderName}>Deliverable</th>
+              {COLUMNS.map((col, i) => (
+                <th key={i} style={{
+                  ...styles.th,
+                  backgroundColor: col.type === "annual" ? "#fdf6ec" : col.type === "learning" ? "#f9f9f9" : "#f5f7fa",
+                  color: col.type === "learning" ? "#999" : "#555",
+                }} title={col.topic ? col.topic : col.date}>
+                  <div>{col.url ? <a href={col.url} target="_blank" rel="noopener noreferrer" style={{ color: "#326AB5", textDecoration: "none", borderBottom: "1.5px solid #326AB5", paddingBottom: 1 }}>{col.label}</a> : col.label}</div>
+                  <div style={{ fontSize: 9, fontWeight: 400, color: col.type === "learning" ? "#bbb" : "#888", marginTop: 2, textTransform: "none", letterSpacing: 0 }}>{col.date}</div>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {DELIVERABLES.map((d, ri) => {
+              const isHovered = hoveredRow === ri;
+              return (
+                <tr key={ri}
+                  style={{ backgroundColor: isHovered ? "#f5f7fa" : "transparent", transition: "background-color 0.12s" }}
+                  onMouseEnter={() => setHoveredRow(ri)}
+                  onMouseLeave={() => setHoveredRow(null)}
+                  title={d.note}>
+                  <td style={{...styles.nameCell, ...(d.learningDay ? {fontStyle: "italic", color: "#999"} : {})}}>
+                    {d.url ? (
+                      <a href={d.url} target="_blank" rel="noopener noreferrer" style={styles.nameLink}>{d.name} <span style={styles.linkIcon}>{"\u2197"}</span></a>
+                    ) : (
+                      <span style={d.learningDay ? {...styles.nameText, color: "#999", fontStyle: "italic"} : styles.nameText}>{d.name}</span>
+                    )}
+                    {d.promptUrl && (
+                      <a href={d.promptUrl} target="_blank" rel="noopener noreferrer" style={styles.sparklePill}>
+                        <span style={styles.sparkleIcon}>{"\u2726"}</span> AI Prompt
+                      </a>
+                    )}
+                  </td>
+                  {d.data.map((val, ci) => (
+                    <Cell key={ci} value={val} />
+                  ))}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={styles.bottomBar}>
+        <div style={styles.notes}>
+          {hoveredRow !== null && DELIVERABLES[hoveredRow] ? (
+            <p style={styles.noteText}>
+              <strong>{DELIVERABLES[hoveredRow].name}:</strong> {DELIVERABLES[hoveredRow].note}
+            </p>
+          ) : DELIVERABLES[0] ? (
+            <p style={styles.noteText}>
+              <strong>{DELIVERABLES[0].name}:</strong> {DELIVERABLES[0].note}
+            </p>
+          ) : null}
+        </div>
+        <p style={styles.footerText}>Based on the Metronomics system created by Shannon Susko. A few deliverables and sequencing adjustments here reflect how I coach the program. The core frameworks and thinking are hers. If you're serious about scaling a company, start with her books: <em>Metronomics</em> and <em>3HAG WAY</em>.</p>
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  page: { fontFamily: "'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif", display: "flex", flexDirection: "column", height: "100vh", color: "#1a1a1a", overflow: "hidden" },
+  topSection: { padding: "14px 14px 0 14px", flexShrink: 0 },
+  titleRow: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 10 },
+  title: { fontSize: 18, fontWeight: 700, margin: 0, color: "#326AB5", letterSpacing: "-0.3px" },
+  byline: { fontSize: 12, color: "#666", margin: "4px 0 0 0", fontWeight: 400 },
+  bylineLink: { color: "#326AB5", textDecoration: "none", borderBottom: "1px dotted #326AB5" },
+  introText: { fontSize: 14, color: "#1a1a1a", margin: "6px 0 12px 0", lineHeight: 1.7 },
+  legend: { display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 4, alignItems: "center" },
+  legendItem: { display: "inline-flex", alignItems: "center", fontSize: 11, color: "#555", whiteSpace: "nowrap" },
+  tableWrap: { flex: 1, overflow: "auto", margin: "8px 14px 0 14px", border: "1px solid #e0e0e0", borderRadius: 6 },
+  table: { borderCollapse: "collapse", width: "100%", minWidth: 900, fontSize: 12 },
+  stickyHeaderName: { position: "sticky", top: 0, left: 0, zIndex: 12, backgroundColor: "#f5f7fa", padding: "7px 10px", textAlign: "left", fontWeight: 700, fontSize: 10, textTransform: "uppercase", letterSpacing: "0.5px", color: "#444", borderBottom: "2px solid #ddd", minWidth: 210 },
+  th: { position: "sticky", top: 0, zIndex: 10, padding: "7px 4px", textAlign: "center", fontWeight: 700, fontSize: 10, textTransform: "uppercase", letterSpacing: "0.3px", color: "#555", borderBottom: "2px solid #ddd", whiteSpace: "nowrap", minWidth: 60, backgroundColor: "#f5f7fa" },
+  nameCell: { position: "sticky", left: 0, zIndex: 5, backgroundColor: "inherit", padding: "7px 8px", borderBottom: "1px solid #eee", display: "flex", alignItems: "center", gap: 6, minWidth: 210, whiteSpace: "nowrap" },
+  nameText: { fontSize: 12, fontWeight: 500, color: "#1a1a1a" },
+  nameLink: { fontSize: 12, fontWeight: 500, color: "#326AB5", textDecoration: "none", borderBottom: "1px dotted #326AB5" },
+  linkIcon: { fontSize: 11, color: "#326AB5", marginLeft: 3, opacity: 0.6 },
+  sparklePill: { display: "inline-flex", alignItems: "center", gap: 3, fontSize: 10, fontWeight: 600, color: "#7aba8a", backgroundColor: "#f5faf6", border: "1px solid #dceee0", borderRadius: 3, padding: "1px 6px", marginLeft: 6, textDecoration: "none", cursor: "pointer", whiteSpace: "nowrap" },
+  sparkleIcon: { fontSize: 11 },
+  cell: { padding: "7px 4px", textAlign: "center", borderBottom: "1px solid #eee", verticalAlign: "middle" },
+  bottomBar: { flexShrink: 0, padding: "8px 14px 10px 14px", borderTop: "1px solid #e0e0e0", backgroundColor: "#fff" },
+  notes: { minHeight: 32, padding: "6px 10px", backgroundColor: "#f8f9fa", borderRadius: 5, border: "1px solid #e8e8e8", marginBottom: 6 },
+  noteText: { fontSize: 12, color: "#333", margin: 0, lineHeight: 1.5 },
+  footerText: { fontSize: 11, color: "#1a1a1a", margin: 0, lineHeight: 1.5 },
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<EOASchedule />);
+  </script>
+</body>
+</html>
