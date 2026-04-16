@@ -85,6 +85,6 @@ Items join the standing review block the month after they are coached:
 | M4 | Core Purpose, BHAG, Meeting Cadence |
 | M5 | 3HAG, 1HAG, QHAG + Sprint Lanes |
 | M6 | Core Values, A-Player Team Assessment |
-| M7 | Market Map |
-| M8 | Function Scorecards |
+| M7 | Function Scorecards |
+| M8 | Market Map |
 | M9+ | Each finalized deliverable joins the block |
