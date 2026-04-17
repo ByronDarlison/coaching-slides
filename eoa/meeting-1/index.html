@@ -49,6 +49,11 @@
         .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
         .homework-list a:hover { text-decoration: underline; }
         .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
+        .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
+        .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
+        .symbol-coach { color: #54B570; background: rgba(84, 181, 112, 0.08); border: 1px solid rgba(84, 181, 112, 0.2); }
+        .symbol-review { color: #666666; background: rgba(102, 102, 102, 0.08); border: 1px solid rgba(102, 102, 102, 0.2); }
+        .symbol-rebuilt { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
         .link-prompt { display: inline-flex; align-items: center; gap: 3px; font-size: var(--small-size); font-weight: 600; color: var(--accent-green-text); background: var(--accent-green-light); border: 2px solid var(--accent-green-border); border-radius: 3px; padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px); text-decoration: none; cursor: pointer; white-space: nowrap; transition: background 0.2s, border-color 0.2s; }
         .link-prompt:hover { background: #edf7ef; border-color: var(--accent-green); }
         .oo-statement { font-size: var(--h3-size); line-height: 1.6; color: var(--text-primary); margin-bottom: var(--content-gap); }
@@ -172,7 +177,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">Constitution</h1>
                     <p class="slide-subtitle reveal">Reviewed at onboarding. Sign today.</p>
                     <ul class="talking-points reveal">
@@ -196,7 +201,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">Business Lifelines</h1>
                     <p class="slide-subtitle reveal">12 minutes each. Tell us your story.</p>
                     <ol class="numbered-list reveal">
@@ -281,7 +286,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">Owner's Outcome</h1>
                     <p class="oo-statement reveal">
                         I am in business because I want <span class="oo-var">what you personally want</span>, and I will achieve it by <span class="oo-var">specific date</span>, as measured by <span class="oo-var">1 to 3 measures</span>.
@@ -302,7 +307,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">Owner's Outcome Guardrails</h1>
                     <p class="slide-subtitle reveal">The edges you protect on the way to the goal.</p>
                     <ul class="talking-points">
@@ -324,7 +329,7 @@
 
     <section class="slide" aria-label="Owner's Outcome Gap Scorecard">
         <div class="slide-content">
-            <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+            <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
             <h1 class="slide-title reveal">Owner's Outcome Gap Scorecard</h1>
             <p class="slide-subtitle reveal">Where you are. Where you want to be. The gap between.</p>
             <table class="gap-table reveal">
@@ -357,7 +362,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">Owner's Outcome: The One Thing</h1>
                     <p class="slide-subtitle reveal">Close one gap at a time every 90 days.</p>
                     <div class="one-thing-diagram">

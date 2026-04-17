@@ -30,8 +30,9 @@
         .talking-points li::before { content: ''; position: absolute; left: 0; top: clamp(6px, 0.8vh, 10px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
         .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
         .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
-        .symbol-review { color: #b5832a; background: rgba(181, 131, 42, 0.08); border: 1px solid rgba(181, 131, 42, 0.2); }
-        .symbol-rebuild { color: var(--accent-green); background: rgba(84, 181, 112, 0.08); border: 1px solid rgba(84, 181, 112, 0.2); }
+        .symbol-coach { color: #54B570; background: rgba(84, 181, 112, 0.08); border: 1px solid rgba(84, 181, 112, 0.2); }
+        .symbol-review { color: #666666; background: rgba(102, 102, 102, 0.08); border: 1px solid rgba(102, 102, 102, 0.2); }
+        .symbol-rebuilt { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
         .slide-links { display: flex; gap: clamp(6px, 1vw, 12px); align-items: center; flex-wrap: wrap; margin-top: auto; padding-top: var(--content-gap); }
         .link-article { display: inline-flex; align-items: center; gap: 4px; font-size: var(--small-size); font-weight: 500; color: var(--accent-blue); text-decoration: none; padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px); background: rgba(50, 106, 181, 0.06); border: 2px solid rgba(50, 106, 181, 0.25); border-radius: 4px; transition: background 0.2s, border-color 0.2s; }
         .link-article:hover { background: rgba(50, 106, 181, 0.12); border-color: var(--accent-blue); }
@@ -223,7 +224,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">3HAG</h1>
                     <p class="slide-subtitle reveal">Annual review. Confirm where you are against the 3-year path.</p>
                     <ul class="talking-points">
@@ -248,7 +249,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">1HAG</h1>
                     <p class="slide-subtitle reveal">Annual review. Confirm Year 1 against the plan.</p>
                     <ul class="talking-points">
@@ -273,7 +274,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #666666; background: rgba(102, 102, 102, 0.08); border-color: rgba(102, 102, 102, 0.2);">&#10003; Review and confirm</span>
+                    <span class="symbol-badge symbol-review reveal">&#10003; Review and confirm</span>
                     <h1 class="slide-title reveal">QHAG + Sprint Lanes</h1>
                     <p class="slide-subtitle reveal">Sprint 3 in progress. Sprint runs into Year 2.</p>
                     <ul class="talking-points">
@@ -298,7 +299,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
                     <h1 class="slide-title reveal">Swimlanes</h1>
                     <ul class="talking-points">
                         <li class="reveal">12-quarter grid, one row per differentiating activity</li>
@@ -319,7 +320,7 @@
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
-                    <span class="symbol-badge symbol-introduced reveal" style="color: #54B570; background: rgba(84, 181, 112, 0.08); border-color: rgba(84, 181, 112, 0.2);">&#9650; Coach and finalize</span>
+                    <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
                     <h1 class="slide-title reveal">12-Month Widget-Based Forecast</h1>
                     <ul class="talking-points">
                         <li class="reveal">P&amp;L forecast built on widgets, not top-down guesses</li>
