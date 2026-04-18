@@ -1,0 +1,17 @@
+{
+  "name": "coaching-slides-visual-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Tier 2 visual regression harness for coaching decks",
+  "scripts": {
+    "install-browsers": "npx playwright install --with-deps chromium",
+    "baseline": "node visual-regression.js --update-baseline",
+    "test": "node visual-regression.js",
+    "test:one": "node visual-regression.js --deck"
+  },
+  "dependencies": {
+    "pixelmatch": "^6.0.0",
+    "playwright": "^1.48.0",
+    "pngjs": "^7.0.0"
+  }
+}

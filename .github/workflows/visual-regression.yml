@@ -1,0 +1,51 @@
+name: visual-regression
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'monthly/**/index.html'
+      - 'eoa/**/index.html'
+      - 'build_slideshows.py'
+      - 'build_new_slideshows.py'
+      - 'tests/visual/**'
+      - 'scripts/eoa_shared_slides.py'
+      - '.github/workflows/visual-regression.yml'
+  pull_request:
+    paths:
+      - 'monthly/**/index.html'
+      - 'eoa/**/index.html'
+      - 'build_slideshows.py'
+      - 'build_new_slideshows.py'
+      - 'tests/visual/**'
+      - 'scripts/eoa_shared_slides.py'
+      - '.github/workflows/visual-regression.yml'
+  workflow_dispatch:
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: tests/visual/package.json
+      - name: Install dependencies
+        working-directory: tests/visual
+        run: npm install
+      - name: Install Chromium
+        working-directory: tests/visual
+        run: npx playwright install --with-deps chromium
+      - name: Run visual regression
+        working-directory: tests/visual
+        run: node visual-regression.js
+      - name: Upload diffs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-diffs
+          path: tests/visual/diffs/
+          if-no-files-found: ignore
+          retention-days: 14
