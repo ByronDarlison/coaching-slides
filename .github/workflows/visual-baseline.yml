@@ -43,4 +43,7 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh visual baselines from Linux CI"
+          # Rebase onto the latest main before pushing to handle commits
+          # that landed between checkout and this step.
+          git pull --rebase origin main
           git push
