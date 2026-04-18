@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+#
+# .githooks/pre-commit — runs slide-test.py on every staged slide deck
+# before allowing a commit to land.
+#
+# Only tests files that match monthly/*/index.html or eoa/*/index.html.
+# Non-deck commits skip this hook entirely (zero overhead).
+#
+# Fails the commit if any deck fails. Prints the slide-test output so
+# the failure reason is visible at the git-commit site.
+#
+# To enable this hook (one-time per clone):
+#   git config --local core.hooksPath .githooks
+#
+# Emergency bypass (use sparingly, document why in the commit message):
+#   git commit --no-verify
+
+set -e
+
+# Slide decks only: any staged file under monthly/<deck>/index.html
+# or eoa/<deck>/index.html. Skip deletions.
+staged_decks=$(
+    git diff --cached --name-only --diff-filter=ACM \
+        | grep -E '^(monthly|eoa)/[^/]+/index\.html$' || true
+)
+
+if [ -z "$staged_decks" ]; then
+    exit 0
+fi
+
+SLIDE_TEST="$HOME/ai-config/scripts/slide-test.py"
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+if [ ! -f "$SLIDE_TEST" ]; then
+    echo "ERROR: slide-test.py not found at $SLIDE_TEST"
+    echo "       Install it via: cd ~/ai-config && git pull"
+    echo "       Or bypass for this commit with: git commit --no-verify"
+    exit 1
+fi
+
+echo ""
+echo "=========================================================================="
+echo "Running slide-test.py on $(echo "$staged_decks" | wc -l | tr -d ' ') staged deck(s)"
+echo "=========================================================================="
+
+failed=0
+for deck in $staged_decks; do
+    echo ""
+    echo "------- $deck -------"
+    if ! python3 "$SLIDE_TEST" "$REPO_ROOT/$deck"; then
+        failed=$((failed + 1))
+    fi
+done
+
+echo ""
+if [ "$failed" -gt 0 ]; then
+    echo "=========================================================================="
+    echo "$failed deck(s) FAILED slide-test. Commit aborted."
+    echo ""
+    echo "Fix the issues above, re-stage with git add, and commit again."
+    echo "Emergency bypass (document why in the commit): git commit --no-verify"
+    echo "=========================================================================="
+    exit 1
+fi
+
+echo "=========================================================================="
+echo "All staged decks PASSED slide-test. Commit proceeding."
+echo "=========================================================================="
+echo ""
+exit 0
