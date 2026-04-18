@@ -135,16 +135,16 @@ MEETINGS = {}
 MEETINGS[3] = {
     "num": 3,
     "title": "Monthly Meeting Three",
-    "subtitle": "From Vision to Execution — Your First Planning Cascade",
-    "fixed_hw_time": 10,
-    "fixed_hw_cum": 115,
+    "subtitle": "From Vision to Execution - Your First Planning Cascade",
+    "fixed_hw_time": 7,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Org Function Chart", "▲", "symbol-evolution", 8, 20,
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
           image_key="kffm",
           points=[
-              "Revisit the functional map from M2 — have any new functions surfaced or been consolidated?",
+              "Revisit the functional map from M2 - have any new functions surfaced or been consolidated?",
               "Update ownership assignments: who has stepped into gaps since kick-off?",
           ]),
         D("KFFM", "▲", "symbol-evolution", 8, 28,
@@ -153,7 +153,7 @@ MEETINGS[3] = {
           prompt="https://www.darlison.com/kffm-tools/",
           image_key="kffm",
           points=[
-              "Sharpen Level 1 widget flow — are the 3-5 key functions and their handoffs accurate?",
+              "Sharpen Level 1 widget flow - are the 3-5 key functions and their handoffs accurate?",
               "Begin identifying widgets (leads, orders, deliveries) flowing between functions",
               "Rate each function's maturity: still gut-feel or starting to get data?",
           ]),
@@ -171,7 +171,7 @@ MEETINGS[3] = {
           prompt="https://www.darlison.com/kffm-tools/",
           image_key="kffm",
           points=[
-              "Revisit the economic unit chosen at kick-off — does it still feel right?",
+              "Revisit the economic unit chosen at kick-off - does it still feel right?",
               "Cross-check against KFFM widgets: is Profit/X measurable from the flow?",
           ]),
         D("Core Values", "▲", "symbol-evolution", 8, 48,
@@ -190,7 +190,7 @@ MEETINGS[3] = {
           image_key="planning",
           points=[
               "Fiscal targets, key capabilities, and widget commitments for 3 years",
-              "Gut it out: write the first version now — good enough, not perfect",
+              "Gut it out: write the first version now - good enough, not perfect",
               "Must connect to the BHAG (10-30 yr) and drive the 1HAG below it",
               "Include 3-year widget projections that align to the KFFM",
           ]),
@@ -200,7 +200,7 @@ MEETINGS[3] = {
           prompt="https://www.darlison.com/planning-cascade-prompt/",
           image_key="planning",
           points=[
-              "3-5 corporate priorities with single owners — shared ownership is no ownership",
+              "3-5 corporate priorities with single owners - shared ownership is no ownership",
               "Each priority needs a measurable outcome and a clear connection to the 3HAG",
               "Translate year one of the 3HAG into actionable annual targets",
           ]),
@@ -211,7 +211,7 @@ MEETINGS[3] = {
           points=[
               "The 90-day plan: 3-5 priorities for this quarter, each with metrics and an owner",
               "Sprint Lanes: a 13-week grid with one binary deliverable per priority per week",
-              "No gaps allowed — every week needs a milestone to prevent strategic work from slipping",
+              "No gaps allowed - every week needs a milestone to prevent strategic work from slipping",
               "Each level must cascade cleanly: if quarterly work doesn't connect to the 3HAG, adjust",
           ]),
     ],
@@ -231,12 +231,12 @@ MEETINGS[3] = {
 MEETINGS[4] = {
     "num": 4,
     "title": "Monthly Meeting Four",
-    "subtitle": "Know Your Market — Mapping Customers, Competitors, and White Space",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Know Your Market - Mapping Customers, Competitors, and White Space",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Owner's Outcome", "✓", "symbol-confirm", 3, 15,
-          desc="What the owner personally wants the business to deliver — by when, measured by what.",
+          desc="What the owner personally wants the business to deliver - by when, measured by what.",
           article="https://www.darlison.com/are-you-getting-what-you-want/",
           prompt="https://www.darlison.com/owners-outcome-prompt/",
           image_key="owner"),
@@ -251,7 +251,7 @@ MEETINGS[4] = {
           image_key="kffm",
           points=[
               "Update for any structural changes since M3",
-              "Review function ownership — any gaps that need filling?",
+              "Review function ownership - any gaps that need filling?",
           ]),
         D("KFFM", "▲", "symbol-evolution", 6, 30,
           subtitle="Key Function Flow Map",
@@ -290,20 +290,20 @@ MEETINGS[4] = {
           points=[
               "Map ALL players: buyers/customers left, company center, suppliers right",
               "Draw channels, competitors, trade associations with sticky notes",
-              "Follow the dollar — draw revenue flows, estimate percentages per channel",
+              "Follow the dollar - draw revenue flows, estimate percentages per channel",
               "Red circles = weak position, green = strong. Keep it on the wall, update quarterly",
           ]),
         D("Core Customer Analysis", "★", "symbol-introduced", 20, 86,
           points=[
-              "Identify the ONE customer type who buys at a profit — not every customer",
-              "Get down to eye level — name them, describe their life, create a cardboard cutout",
+              "Identify the ONE customer type who buys at a profit - not every customer",
+              "Get down to eye level - name them, describe their life, create a cardboard cutout",
               "Often 60% of customers are Core Customers generating profit; the rest may cost more than they're worth",
               "Identify their top 3 needs and the benefits you offer to serve those needs",
           ]),
         D("Attribution Map", "★", "symbol-introduced", 17, 103,
           points=[
               "Identify 6-8 key market attributes. Rank your company and 2-4 competitors 1-5",
-              "Plot as lines on a graph — where your line diverges from competitors is your white space",
+              "Plot as lines on a graph - where your line diverges from competitors is your white space",
               "Add a '3HAG Line' showing where you want to be in three years",
               "Forces strategic trade-offs: decide what you WILL do and what you WON'T",
           ]),
@@ -323,9 +323,9 @@ MEETINGS[4] = {
 MEETINGS[5] = {
     "num": 5,
     "title": "Monthly Meeting Five",
-    "subtitle": "Sharpening the Edge — Scorecards, Differentiators, and Strategic Discipline",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Sharpening the Edge - Scorecards, Differentiators, and Strategic Discipline",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Core Purpose", "✓", "symbol-confirm", 2, 14,
           desc="Why the company exists beyond making money.",
@@ -334,7 +334,7 @@ MEETINGS[5] = {
           image_key="purpose"),
         D("BHAG", "✓", "symbol-confirm", 2, 16,
           subtitle="Big Hairy Audacious Goal",
-          desc="A 10-to-30-year goal with no numbers — just a destination.",
+          desc="A 10-to-30-year goal with no numbers - just a destination.",
           article="https://www.darlison.com/why-does-your-company-exist/",
           prompt="https://www.darlison.com/core-purpose-prompt/",
           image_key="purpose"),
@@ -391,14 +391,14 @@ MEETINGS[5] = {
               "CEO creates the first one (Head of Company) as the model",
               "Scoreboard Day: once per week, same day, all critical numbers updated by 10 AM",
               "Every red number triggers a written Situation Report: Situation, Cause, Correction, Follow-up",
-              "Causes must be structural (capacity, policies, incentives) — never motivation",
+              "Causes must be structural (capacity, policies, incentives) - never motivation",
           ]),
         D("Activity Fit Map", "★", "symbol-introduced", 27, 103,
           subtitle="Differentiators",
           points=[
               "From Attribution Map white space, determine 3-5 interdependent Differentiating Actions",
-              "Draw connections showing dependencies (Activity Fit Map Level I) — Porter's framework",
-              "If a competitor copies any single action, it shouldn't upend your position — interdependence is the key",
+              "Draw connections showing dependencies (Activity Fit Map Level I) - Porter's framework",
+              "If a competitor copies any single action, it shouldn't upend your position - interdependence is the key",
               "Level II adds supporting tactical activities around each differentiator",
               "Distill into a One-Phrase Strategy that ties all differentiating actions together",
           ]),
@@ -422,9 +422,9 @@ MEETINGS[5] = {
 MEETINGS[6] = {
     "num": 6,
     "title": "Monthly Meeting Six",
-    "subtitle": "Building the Machine — Swimlanes, Sprint Reset, and Team Evolution",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Building the Machine - Swimlanes, Sprint Reset, and Team Evolution",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("3HAG", "✓", "symbol-confirm", 2, 14,
           subtitle="3-Year Highly Achievable Goal",
@@ -448,7 +448,7 @@ MEETINGS[6] = {
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
           image_key="kffm",
-          points=["End of Q2 maturity push — Level 1 should be solid"]),
+          points=["End of Q2 maturity push - Level 1 should be solid"]),
         D("Functional Accountability Chart", "▲", "symbol-evolution", 4, 30,
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
@@ -459,14 +459,14 @@ MEETINGS[6] = {
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
           image_key="kffm",
-          points=["Half a year of data — does the chosen unit still hold?"]),
+          points=["Half a year of data - does the chosen unit still hold?"]),
         D("Core Values", "▲", "symbol-evolution", 5, 39,
           article="https://www.darlison.com/how-to-discover-your-companys-values-using-ai",
           prompt="https://www.darlison.com/values-discovery-prompt/",
           image_key="values",
           points=[
               "Values confirmed and locked at this meeting",
-              "No more discovery — these are the 3-5 non-negotiables",
+              "No more discovery - these are the 3-5 non-negotiables",
           ]),
         D("A-Player Team Assessment", "▲", "symbol-evolution", 10, 49,
           article="https://www.darlison.com/a-player-team-assessment/",
@@ -475,14 +475,14 @@ MEETINGS[6] = {
           points=[
               "Significant evolution: Core Values now confirmed",
               "Full leadership team runs the assessment with values axis in place",
-              "Not just CEO gut feel anymore — the whole team owns this conversation",
+              "Not just CEO gut feel anymore - the whole team owns this conversation",
           ]),
         D("QHAG + Sprint Lanes", "■", "symbol-rebuilt", 18, 67,
           article="https://www.darlison.com/where-are-you-going/",
           prompt="https://www.darlison.com/planning-cascade-prompt/",
           image_key="planning",
           points=[
-              "Rebuilt from scratch — new quarter, fresh 90-day priorities",
+              "Rebuilt from scratch - new quarter, fresh 90-day priorities",
               "3-5 priorities aligned to the 1HAG, each with an owner and metric",
               "Sprint Lanes: 13-week grid, one binary deliverable per priority per week",
           ]),
@@ -490,7 +490,7 @@ MEETINGS[6] = {
           points=[
               "12-quarter grid: one row per differentiating action from the Activity Fit Map",
               "Each cell = the key milestone for that capability in that quarter",
-              "Pull milestones from Activity Fit Map Level II — supporting circles become quarterly deliverables",
+              "Pull milestones from Activity Fit Map Level II - supporting circles become quarterly deliverables",
               "Look horizontally (progression over time) AND vertically (dependencies across lanes in same quarter)",
               "This is what connects strategy to execution quarter by quarter for 3 years",
           ]),
@@ -510,9 +510,9 @@ MEETINGS[6] = {
 MEETINGS[7] = {
     "num": 7,
     "title": "Monthly Meeting Seven",
-    "subtitle": "The Coach Cascade — Reviews, Skip-Levels, and Scorecard Evolution",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "The Coach Cascade - Reviews, Skip-Levels, and Scorecard Evolution",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Owner's Outcome", "✓", "symbol-confirm", 3, 15,
           desc="Quarterly check-in: are you measurably closer to your stated outcome?",
@@ -538,7 +538,7 @@ MEETINGS[7] = {
           image_key="scorecards",
           points=[
               "Scorecards become the basis for quarterly coaching reviews",
-              "Each leader reviews their scorecard — are critical numbers, accountabilities, and values sharp enough for a coaching conversation?",
+              "Each leader reviews their scorecard - are critical numbers, accountabilities, and values sharp enough for a coaching conversation?",
               "Scoreboard Day rhythm should be established: weekly, same day, by 10 AM",
           ]),
         D("Quarterly Coaching Reviews", "★", "symbol-introduced", 30, 76,
@@ -546,8 +546,8 @@ MEETINGS[7] = {
           image_key="coaching",
           points=[
               "90-day two-way conversation based on the function scorecard",
-              "Not a top-down annual review — both sides give and receive feedback",
-              "W.A.I.T. (Why Am I Talking?) — prioritize listening",
+              "Not a top-down annual review - both sides give and receive feedback",
+              "W.A.I.T. (Why Am I Talking?) - prioritize listening",
               "Question Funnel: broad exploration through five dimensions to specific action",
               "Feedback Model: What went well? What was tricky? What would you do differently?",
           ]),
@@ -557,9 +557,9 @@ MEETINGS[7] = {
           points=[
               "CEO talks directly with people one level below leaders",
               "Five pre-meeting questions: keep/stop/start doing, team struggles, what would you do differently?",
-              "Feedback attributed to the team, not individuals — distill into ONE improvement focus",
+              "Feedback attributed to the team, not individuals - distill into ONE improvement focus",
               "Schedule one month before the manager's own quarterly review so findings feed in",
-              "Applies to all managers including the CEO — ideally conducted by an external coach",
+              "Applies to all managers including the CEO - ideally conducted by an external coach",
           ]),
     ],
     "homework": [
@@ -579,9 +579,9 @@ MEETINGS[7] = {
 MEETINGS[8] = {
     "num": 8,
     "title": "Monthly Meeting Eight",
-    "subtitle": "Numbers Tell the Story — Forecasting, Positioning, and Market Advantage",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Numbers Tell the Story - Forecasting, Positioning, and Market Advantage",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("QHAG + Sprint Lanes", "✓", "symbol-confirm", 3, 15,
           desc="Mid-quarter sprint check.",
@@ -609,7 +609,7 @@ MEETINGS[8] = {
           points=[
               "A P&L forecast built on widgets, not top-down revenue guesses",
               "Finance builds the model, leaders own their function's widget assumptions",
-              "Forecast widgets first, then layer in fiscal assumptions — never start with dollars",
+              "Forecast widgets first, then layer in fiscal assumptions - never start with dollars",
               "This shifts forecast ownership from finance to the people who control the numbers",
           ]),
         D("Positioning Statement", "★", "symbol-introduced", 19, 86,
@@ -617,7 +617,7 @@ MEETINGS[8] = {
           points=[
               "Geoffrey Moore's Crossing the Chasm format: For [target customer] who [need], our [product] is a [category] that [key benefit], unlike [alternatives]",
               "Takes all strategic work to date and formats it into one confident, repeatable statement",
-              "Working through it will surface gaps in the strategy — that's the point",
+              "Working through it will surface gaps in the strategy - that's the point",
               "Introduced now because the team needs a full year of strategic picture-building first",
           ]),
         D("Value Proposition", "★", "symbol-introduced", 17, 103,
@@ -625,7 +625,7 @@ MEETINGS[8] = {
           points=[
               "The value exchange: what the customer gets and why it's worth the price",
               "Paired with the Positioning Statement: Positioning says where you play, Value Proposition says why customers buy",
-              "A living artifact — revisited and refined as strategy validation continues",
+              "A living artifact - revisited and refined as strategy validation continues",
           ]),
     ],
     "homework": [
@@ -649,9 +649,9 @@ MEETINGS[8] = {
 MEETINGS[9] = {
     "num": 9,
     "title": "Monthly Meeting Nine",
-    "subtitle": "Strategy Under the Microscope — Confirmation, Forecasting, and the Road Ahead",
-    "fixed_hw_time": 10,
-    "fixed_hw_cum": 115,
+    "subtitle": "Strategy Under the Microscope - Confirmation, Forecasting, and the Road Ahead",
+    "fixed_hw_time": 7,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("A-Player Team Assessment", "✓", "symbol-confirm", 3, 15,
           desc="Quick scan with confirmed values axis.",
@@ -663,7 +663,7 @@ MEETINGS[9] = {
           prompt="https://www.darlison.com/planning-cascade-prompt/",
           image_key="planning",
           points=[
-              "Rebuilt from scratch — new quarter, fresh 90-day priorities",
+              "Rebuilt from scratch - new quarter, fresh 90-day priorities",
               "3-5 priorities aligned to the 1HAG",
               "Sprint Lanes: 13-week grid with one binary deliverable per priority per week",
           ]),
@@ -671,7 +671,7 @@ MEETINGS[9] = {
           points=[
               "Recurring monthly meeting, max one hour, with the leadership team",
               "Compare three numbers: actuals, rolling forecast (evolves monthly), and original approved forecast (stays static)",
-              "Leaders adjust the rolling forecast to align with the approved — never change the approved itself",
+              "Leaders adjust the rolling forecast to align with the approved - never change the approved itself",
               "Five benefits: leaders own forecasts, clear visibility, improved accuracy, forward visibility, collective forecasting skill",
           ]),
         D("Strategy Confirmation", "★", "symbol-introduced", 25, 85,
@@ -679,14 +679,14 @@ MEETINGS[9] = {
               "Progressive series of validation exercises, each adding a different strategic picture",
               "Business Model Canvas (Osterwalder): maps how you create, deliver, and capture value",
               "Porter's Five Forces: assesses industry profitability through five lenses",
-              "Business model innovation is the most valuable area of innovation — not product or technology",
+              "Business model innovation is the most valuable area of innovation - not product or technology",
           ]),
         D("36-Month Rolling Forecast", "★", "symbol-introduced", 20, 105,
           points=[
               "Extends the 12-month widget forecast to 36 months",
               "Three columns per month: Approved (locked), Rolling (evolves), Actual",
-              "Add another month to the end each month — always see 36 months ahead",
-              "Replace the word 'budget' forever — a budget is a license to spend",
+              "Add another month to the end each month - always see 36 months ahead",
+              "Replace the word 'budget' forever - a budget is a license to spend",
               "Also build a 12-Quarter Functional Org Chart showing FTEs per function per quarter",
           ]),
     ],
@@ -706,9 +706,9 @@ MEETINGS[9] = {
 MEETINGS[10] = {
     "num": 10,
     "title": "Monthly Meeting Ten",
-    "subtitle": "Year Two Begins — Rebuild, Refine, and Accelerate",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Year Two Begins - Rebuild, Refine, and Accelerate",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Owner's Outcome", "✓", "symbol-confirm", 2, 14,
           desc="Quarterly check-in.",
@@ -772,7 +772,7 @@ MEETINGS[10] = {
           prompt="https://www.darlison.com/planning-cascade-prompt/",
           image_key="planning",
           points=[
-              "Rebuilt from scratch — don't consult last year's version",
+              "Rebuilt from scratch - don't consult last year's version",
               "Force fresh thinking on fiscal targets, capabilities, and widgets",
           ]),
         D("1HAG", "■", "symbol-rebuilt", 10, 72,
@@ -790,7 +790,7 @@ MEETINGS[10] = {
           subtitle="Differentiators",
           points=["Rebuilt: re-derive 3-5 differentiators from the fresh Attribution Map"]),
         D("Swimlanes", "■", "symbol-rebuilt", 8, 96,
-          points=["Rebuilt alongside new differentiators — fresh 12-quarter grid"]),
+          points=["Rebuilt alongside new differentiators - fresh 12-quarter grid"]),
         D("Flywheel", "★", "symbol-introduced", 7, 103,
           points=[
               "Jim Collins: the greatest companies became great through relentless grit, push by push",
@@ -815,9 +815,9 @@ MEETINGS[10] = {
 MEETINGS[11] = {
     "num": 11,
     "title": "Monthly Meeting Eleven",
-    "subtitle": "Momentum and Promise — Building the Brand from the Inside Out",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Momentum and Promise - Building the Brand from the Inside Out",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("KFFM", "✓", "symbol-confirm", 3, 15,
           subtitle="Key Function Flow Map",
@@ -850,15 +850,15 @@ MEETINGS[11] = {
         D("Flywheel", "▲", "symbol-evolution", 25, 58,
           points=[
               "Color-rate each flywheel component against actuals",
-              "Overlay with KFFM — should be full overlap between flywheel components and widget metrics",
+              "Overlay with KFFM - should be full overlap between flywheel components and widget metrics",
               "Misalignments reveal where momentum is stuck",
               "Review component ratings quarterly from now on",
           ]),
         D("Brand Promise with Guarantee", "★", "symbol-introduced", 45, 103,
           points=[
               "A differentiated brand promise addresses the greatest need of your Core Customer",
-              "The guarantee is the 'hurt' — what the company will suffer if it fails to deliver",
-              "Collins calls the guarantee a 'catalytic mechanism' — aligns the entire team by putting real stakes on performance",
+              "The guarantee is the 'hurt' - what the company will suffer if it fails to deliver",
+              "Collins calls the guarantee a 'catalytic mechanism' - aligns the entire team by putting real stakes on performance",
               "Test against four questions: Does it attract? Do competitors think you're crazy? Does it matter to the Core Customer? Does it differentiate instantly?",
               "Draft from Core Customer's top needs and Activity Fit Map, then test with friendly existing customers",
           ]),
@@ -882,9 +882,9 @@ MEETINGS[11] = {
 MEETINGS[12] = {
     "num": 12,
     "title": "Monthly Meeting Twelve",
-    "subtitle": "The Secret Advantage — Discovering What No One Else Will Solve",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "The Secret Advantage - Discovering What No One Else Will Solve",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("A-Player Team Assessment", "✓", "symbol-confirm", 3, 15,
           desc="Quick scan.",
@@ -900,23 +900,23 @@ MEETINGS[12] = {
           prompt="https://www.darlison.com/planning-cascade-prompt/",
           image_key="planning",
           points=[
-              "Rebuilt from scratch — new quarter, fresh 90-day priorities",
+              "Rebuilt from scratch - new quarter, fresh 90-day priorities",
               "3-5 priorities aligned to the 1HAG",
           ]),
         D("Brand Promise with Guarantee", "▲", "symbol-evolution", 20, 63,
           points=[
               "Review market validation results from customer testing",
               "Refine the promise based on feedback",
-              "Begin locking the specific guarantee — what exactly will you suffer if you don't deliver?",
+              "Begin locking the specific guarantee - what exactly will you suffer if you don't deliver?",
           ]),
         D("Secret Sauce", "★", "symbol-introduced", 40, 103,
           points=[
-              "Your unique tenfold advantage — the problem you solve that no one else wants to solve",
+              "Your unique tenfold advantage - the problem you solve that no one else wants to solve",
               "Look externally at industry pain points (conferences are a goldmine for unsolved problems)",
               "Look internally at your own processes for improvement opportunities",
               "Unlike strategy (which you share openly), Secret Sauce stays confidential",
               "If competitors figure it out, start looking for the next one immediately",
-              "Make it a standing agenda item — may take months or years to find",
+              "Make it a standing agenda item - may take months or years to find",
           ]),
     ],
     "homework": [
@@ -934,9 +934,9 @@ MEETINGS[12] = {
 MEETINGS[13] = {
     "num": 13,
     "title": "Monthly Meeting Thirteen",
-    "subtitle": "Full System Review — Eighteen Months of Compounding Growth",
-    "fixed_hw_time": 12,
-    "fixed_hw_cum": 115,
+    "subtitle": "Full System Review - Eighteen Months of Compounding Growth",
+    "fixed_hw_time": 9,
+    "fixed_hw_cum": 112,
     "deliverables": [
         D("Owner's Outcome", "✓", "symbol-confirm", 2, 14,
           desc="Quarterly check-in.",
@@ -1813,6 +1813,14 @@ def slide_rules(cum):
                     <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
                     Confidentiality. What happens here stays here.
                 </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    Feedback runs both ways. Tell me what didn't land.
+                </li>
+                <li class="reveal">
+                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
+                    Articles and prompts are living. Always pull the latest from darlison.com, not a saved copy.
+                </li>
             </ul>
             </div>
             <div class="col-image reveal">
@@ -1975,11 +1983,13 @@ def slide_homework(meeting):
             <div class="two-col">
             <div class="col-text">
             <h1 class="slide-title reveal">Homework</h1>
+            <p class="slide-subtitle reveal" style="font-size: var(--small-size); color: var(--text-secondary); margin-bottom: 0.4rem;">Add finalized artifacts to Mural and email byron@darlison.com at least two business days before next meeting.</p>
 
 {sections_html}
             </div>
-            <div class="col-image reveal">
+            <div class="col-image reveal" style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
                 <img src="../m1/assets/homework.png" alt="Homework and preparation">
+                <p style="margin-top: 0.25rem; padding: 0.55rem 0.8rem; background: rgba(84, 181, 112, 0.08); border-left: 3px solid #54B570; border-radius: 4px; font-style: italic; font-size: var(--small-size); color: var(--text-primary); max-width: 90%;">Reminder: everything on darlison.com updates continuously. Pull the current version each time. Don't work from a saved copy.</p>
             </div>
             </div>
         </div>
@@ -2005,6 +2015,30 @@ def slide_cascade(cum):
         </div>
 {FOOTER}
         <span class="time-indicator">(2/{cum})</span>
+    </section>"""
+
+
+def slide_feedback(cum):
+    return f"""    <!-- SLIDE: FEEDBACK -->
+    <section class="slide" aria-label="Feedback">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Feedback</h1>
+                    <p class="slide-subtitle reveal">30 seconds each.</p>
+                    <ol class="reveal" style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.4vh, 1.1rem); margin-top: var(--content-gap); font-size: var(--body-size); line-height: 1.45; color: var(--text-primary);">
+                        <li>What landed today?</li>
+                        <li>What confused you, or where did the materials fail you?</li>
+                        <li>What would have made this session more useful?</li>
+                    </ol>
+                </div>
+                <div class="col-image reveal">
+                    <img src="../../shared/assets/feedback.png" alt="Feedback">
+                </div>
+            </div>
+        </div>
+{FOOTER}
+        <span class="time-indicator">(3/{cum})</span>
     </section>"""
 
 
@@ -2042,7 +2076,8 @@ def build_html(meeting):
         slides.append(slide_deliverable(d))
 
     slides.append(slide_homework(meeting))
-    slides.append(slide_cascade(117))
+    slides.append(slide_cascade(114))
+    slides.append(slide_feedback(117))
     slides.append(slide_close())
 
     slides_html = "\n\n".join(slides)

@@ -736,25 +736,28 @@ def build_slideshow(month_num):
         <div class="slide-content">
             <div class="two-col"><div class="col-text">
             <h1 class="slide-title reveal">Homework</h1>
+            <p class="slide-subtitle reveal" style="font-size: var(--small-size); color: var(--text-secondary); margin-bottom: 0.4rem;">Add finalized artifacts to Mural and email byron@darlison.com at least two business days before next meeting.</p>
             <div class="homework-section reveal">
                 <h3>&#9650; Review and Complete</h3>
                 <ul class="homework-list">
 {hw_review}
-                    <li>Add finalized artifacts to Mural and Metronome Software</li>
                 </ul>
             </div>
 {hw_ahead}
             </div>
-            <div class="col-image reveal"><img src="../m1/assets/homework.png" alt="Homework"></div>
+            <div class="col-image reveal" style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                <img src="../m1/assets/homework.png" alt="Homework">
+                <p style="margin-top: 0.25rem; padding: 0.55rem 0.8rem; background: rgba(84, 181, 112, 0.08); border-left: 3px solid #54B570; border-radius: 4px; font-style: italic; font-size: var(--small-size); color: var(--text-primary); max-width: 90%;">Reminder: everything on darlison.com updates continuously. Pull the current version each time. Don't work from a saved copy.</p>
+            </div>
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics Coaching</span>
         <span class="time-indicator">(5/{cumulative})</span>
     </section>''')
 
-    # Cascade
-    remaining_time = 120 - cumulative
-    cascade_time = remaining_time // 2
+    # Cascade (reserve 3 min for Feedback + 3 min for OPC)
+    remaining_time = max(0, 120 - cumulative - 6)
+    cascade_time = max(2, remaining_time // 2) if remaining_time >= 4 else 2
     cumulative += cascade_time
     slides_content.append(f'''
     <section class="slide">
@@ -770,8 +773,31 @@ def build_slideshow(month_num):
         <span class="time-indicator">({cascade_time}/{cumulative})</span>
     </section>''')
 
-    # Close
-    close_time = 120 - cumulative
+    # Feedback (3 min)
+    feedback_time = 3
+    cumulative += feedback_time
+    slides_content.append(f'''
+    <section class="slide" aria-label="Feedback">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Feedback</h1>
+                    <p class="slide-subtitle reveal">30 seconds each.</p>
+                    <ol class="reveal" style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.4vh, 1.1rem); margin-top: var(--content-gap); font-size: var(--body-size); line-height: 1.45; color: var(--text-primary);">
+                        <li>What landed today?</li>
+                        <li>What confused you, or where did the materials fail you?</li>
+                        <li>What would have made this session more useful?</li>
+                    </ol>
+                </div>
+                <div class="col-image reveal"><img src="../../shared/assets/feedback.png" alt="Feedback"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics Coaching</span>
+        <span class="time-indicator">({feedback_time}/{cumulative})</span>
+    </section>''')
+
+    # Close (expands to absorb overflow if the meeting ran long)
+    close_time = max(3, 120 - cumulative)
     cumulative += close_time
     slides_content.append(f'''
     <section class="slide">
