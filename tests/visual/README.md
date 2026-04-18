@@ -26,13 +26,22 @@ npm run test:one -- monthly/m6    # one deck only
 
 ## Updating baselines
 
-When a change is intentional (new slide, layout tweak, pattern deployment):
+When a change is intentional (new slide, layout tweak, pattern deployment), refresh baselines from Linux CI so they match the environment that actually runs the test:
 
 ```bash
-npm run baseline
-git add baselines/
-git commit -m "chore: refresh visual baselines after <change>"
+gh workflow run visual-baseline.yml
 ```
+
+The `visual-baseline.yml` workflow runs the baseline on Linux Chromium and commits the fresh PNGs back to `main`. You don't do this locally because macOS and Linux Chromium anti-alias text differently — local baselines would diverge from CI by thousands of pixels per slide.
+
+Local macOS runs still work for quick checks:
+
+```bash
+npm run baseline   # overwrite with local baselines
+npm test           # verify
+```
+
+But don't commit macOS baselines; trigger `visual-baseline.yml` instead.
 
 ## What it catches that slide-test.py doesn't
 
