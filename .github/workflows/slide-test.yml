@@ -1,0 +1,50 @@
+name: slide-test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'monthly/**/index.html'
+      - 'eoa/**/index.html'
+      - 'scripts/slide-test.py'
+      - '.github/workflows/slide-test.yml'
+  pull_request:
+    paths:
+      - 'monthly/**/index.html'
+      - 'eoa/**/index.html'
+      - 'scripts/slide-test.py'
+      - '.github/workflows/slide-test.yml'
+  workflow_dispatch:
+
+jobs:
+  slide-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run slide-test on every deck
+        run: |
+          set -e
+          decks=$(find monthly eoa -maxdepth 2 -name 'index.html' -type f | sort)
+          if [ -z "$decks" ]; then
+            echo "No decks found to test."
+            exit 0
+          fi
+          failed=0
+          for deck in $decks; do
+            echo ""
+            echo "=============================="
+            echo "Testing: $deck"
+            echo "=============================="
+            if ! python3 scripts/slide-test.py "$deck"; then
+              failed=$((failed + 1))
+            fi
+          done
+          echo ""
+          if [ "$failed" -gt 0 ]; then
+            echo "FAIL: $failed deck(s) failed slide-test"
+            exit 1
+          fi
+          echo "PASS: all decks passed slide-test"

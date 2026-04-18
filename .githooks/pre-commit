@@ -28,13 +28,17 @@ if [ -z "$staged_decks" ]; then
     exit 0
 fi
 
-SLIDE_TEST="$HOME/ai-config/scripts/slide-test.py"
 REPO_ROOT=$(git rev-parse --show-toplevel)
 
-if [ ! -f "$SLIDE_TEST" ]; then
-    echo "ERROR: slide-test.py not found at $SLIDE_TEST"
-    echo "       Install it via: cd ~/ai-config && git pull"
-    echo "       Or bypass for this commit with: git commit --no-verify"
+# Prefer the in-repo copy (same file CI uses). Fall back to the
+# ai-config canonical so the hook still works on clones missing scripts/.
+if [ -f "$REPO_ROOT/scripts/slide-test.py" ]; then
+    SLIDE_TEST="$REPO_ROOT/scripts/slide-test.py"
+elif [ -f "$HOME/ai-config/scripts/slide-test.py" ]; then
+    SLIDE_TEST="$HOME/ai-config/scripts/slide-test.py"
+else
+    echo "ERROR: slide-test.py not found in repo scripts/ or ~/ai-config/scripts/"
+    echo "       Bypass this commit with: git commit --no-verify"
     exit 1
 fi
 
