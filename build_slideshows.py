@@ -55,7 +55,7 @@ BOOKS_PREKICKOFF = [
     ("Start with Why", "Simon Sinek", "https://www.amazon.ca/dp/1591846447"),
 ]
 BOOKS_M3 = [
-    ("3HAG WAY", "Shannon Susko", "https://www.amazon.ca/dp/1544503687"),
+    ("3HAG WAY", "Shannon Susko", "https://www.amazon.ca/3HAG-WAY-Strategic-Execution-Wild-Ass-Guess/dp/1790131235"),
     ("Topgrading", "Bradford D. Smart", "https://www.amazon.ca/dp/1591845262"),
 ]
 BOOKS_M6 = [
@@ -294,6 +294,8 @@ MEETINGS[4] = {
               "Red circles = weak position, green = strong. Keep it on the wall, update quarterly",
           ]),
         D("Core Customer Analysis", "★", "symbol-introduced", 20, 86,
+          article="https://www.darlison.com/who-is-your-most-valuable-customer/",
+          prompt="https://www.darlison.com/core-customer-discovery-prompt/",
           points=[
               "Identify the ONE customer type who buys at a profit - not every customer",
               "Get down to eye level - name them, describe their life, create a cardboard cutout",

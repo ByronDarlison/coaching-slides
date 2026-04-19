@@ -217,6 +217,89 @@ def check_homework_deadline(html: str) -> list[str]:
     return issues
 
 
+# Deliverable-slide titles that DON'T need article+prompt links.
+# Structural slides that carry a symbol-badge but don't map to a
+# darlison.com article/prompt pair.
+NO_LINK_REQUIRED = {
+    "Standing Review Block",
+    "Constitution",
+    "Business Lifelines",
+    "Owner's Outcome Reflection",
+    "Personal Outcome",
+    "Share Your Conclusions",
+    "Synthesis & Conclusions",
+    "Metronomics Operating System",
+    "Meeting Cadence",
+}
+
+# Deliverables where the darlison.com article and/or AI prompt has not
+# yet been written. These slides are allowed to lack the article/prompt
+# links for now. Remove entries here as the articles ship; the test
+# will then enforce link presence.
+PENDING_ARTICLE = {
+    "Market Map",
+    "Attribution Map",
+    "Activity Fit Map",
+    "Activity Fit Map (Differentiators)",
+    "Swimlanes",
+    "12-Month Widget-Based Forecast",
+    "Quarterly Coaching Reviews",
+    "Positioning Statement (Moore)",
+    "Value Proposition (Moore)",
+    "36-Month Rolling Forecast",
+    "Flywheel",
+    "Brand Promise with Guarantee",
+    "Secret Sauce",
+    "Skip-Level Reviews",
+    "Business Model Canvas",
+    "BrandScript",
+    "Porter's Five Forces",
+    "Consumption Chain Mapping",
+    # Function Scorecards has an article but no prompt yet.
+    "Function Scorecards",
+}
+
+
+def check_deliverable_links(html: str) -> tuple[list[str], int]:
+    """Every slide that carries a symbol-badge (★ Introduced, ▲ Coach and
+    finalize, ✓ Review and confirm, ■ Rebuilt) should also carry a
+    slide-links block with article + AI prompt links, unless the slide is
+    structurally exempt (NO_LINK_REQUIRED) or pending article creation
+    (PENDING_ARTICLE). Returns (issues, pending_count)."""
+    issues: list[str] = []
+    pending_count = 0
+    for m in re.finditer(
+        r'<section class="slide"[^>]*>(?:(?!</section>).)*?</section>',
+        html,
+        re.DOTALL,
+    ):
+        block = m.group(0)
+        if "symbol-badge" not in block:
+            continue
+        title_match = re.search(r'<h1 class="slide-title[^>]*>([^<]+)</h1>', block)
+        title = title_match.group(1).strip() if title_match else "?"
+        if title in NO_LINK_REQUIRED:
+            continue
+        has_article = 'class="link-article"' in block or re.search(
+            r'href="[^"]*darlison\.com[^"]*"[^>]*>Article<', block
+        )
+        has_prompt = 'class="link-prompt"' in block
+        if has_article and has_prompt:
+            continue
+        if title in PENDING_ARTICLE:
+            pending_count += 1
+            continue
+        missing = []
+        if not has_article:
+            missing.append("Article")
+        if not has_prompt:
+            missing.append("AI Prompt")
+        issues.append(
+            f"Deliverable slide '{title}' missing: {', '.join(missing)}"
+        )
+    return issues, pending_count
+
+
 # ---------------------------------------------------------------------------
 # Runner
 # ---------------------------------------------------------------------------
@@ -251,44 +334,54 @@ def main() -> int:
             print(f"  PASS  {ok_summary}")
 
     img_ok, img_issues = check_images(html, base_dir)
-    report("1/7 Image audit", img_issues, f"all {len(img_ok)} image(s) resolve")
+    report("1/8 Image audit", img_issues, f"all {len(img_ok)} image(s) resolve")
 
     link_ok, link_issues = check_links(html, base_dir)
-    report("2/7 Link audit", link_issues, f"all {len(link_ok)} link(s) resolve")
+    report("2/8 Link audit", link_issues, f"all {len(link_ok)} link(s) resolve")
 
     n_ind, time_issues = check_time_chain(html)
     report(
-        "3/7 Time chain",
+        "3/8 Time chain",
         time_issues,
         f"all {n_ind} time indicator(s) form a clean chain",
     )
 
     n_slides, struct_issues = check_structure(html)
     report(
-        "4/7 Structure",
+        "4/8 Structure",
         struct_issues,
         f"{n_slides} slide(s), all structurally complete",
     )
 
     style_issues = check_style(html)
     report(
-        "5/7 Style rules",
+        "5/8 Style rules",
         style_issues,
         "no em dashes, British spelling, or OBT spell-out issues",
     )
 
     cohort_issues = check_cohort_generic(html)
     report(
-        "6/7 Cohort-generic",
+        "6/8 Cohort-generic",
         cohort_issues,
         "no cohort-specific dates, months, or group numbers",
     )
 
     hw_issues = check_homework_deadline(html)
     report(
-        "7/7 Homework deadline phrase",
+        "7/8 Homework deadline phrase",
         hw_issues,
         "Homework slide carries the canonical deadline phrase",
+    )
+
+    link_req_issues, pending = check_deliverable_links(html)
+    ok_msg = "every deliverable slide carries article and AI prompt links"
+    if pending:
+        ok_msg += f" ({pending} slide(s) pending article - skipped)"
+    report(
+        "8/8 Deliverable article + AI prompt links",
+        link_req_issues,
+        ok_msg,
     )
 
     print()
