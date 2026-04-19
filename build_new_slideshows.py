@@ -444,6 +444,16 @@ MONTHS = {
         "introduce": ["Flywheel"],
         "rebuild": ["3HAG", "1HAG", "QHAG + 13-Week Sprint Lanes"],
         "quarterly_oo": False,
+        # Annual rebuild month. Tight, choreographed timing to fit 120 min:
+        # 3HAG and 1HAG are re-confirms (10 min each); QHAG + Sprint Lanes
+        # gets the full 20 because weekly execution is being rebuilt.
+        # Standing Review Block absorbs the remaining slack (27 min) to
+        # allow real conversation on any of the 19 items surfaced.
+        # Flywheel is an introduce (★): concept + homework pointer only.
+        "rebuild_times": [10, 10, 20],
+        "standing_review_min": 27,
+        "coach_time": 30,
+        "introduce_time": 5,
     },
     16: {
         "subtitle": "Making a Promise to Your Customer",
@@ -605,9 +615,11 @@ def build_slideshow(month_num):
         <span class="time-indicator">(5/{cumulative})</span>
     </section>''')
 
-    # Rebuild slides (if any)
-    for rb in m["rebuild"]:
-        cumulative += 20
+    # Rebuild slides (if any). Per-slide times default to 20 min; an
+    # m["rebuild_times"] list overrides (must match len(m["rebuild"])).
+    rebuild_times = m.get("rebuild_times", [20] * len(m["rebuild"]))
+    for rb, rb_time in zip(m["rebuild"], rebuild_times):
+        cumulative += rb_time
         d = DELIVERABLES.get(rb, {})
         slides_content.append(f'''
     <section class="slide">
@@ -625,7 +637,7 @@ def build_slideshow(month_num):
             </div></div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics Coaching</span>
-        <span class="time-indicator">(20/{cumulative})</span>
+        <span class="time-indicator">({rb_time}/{cumulative})</span>
     </section>''')
 
     # Owner's Outcome quarterly review
@@ -645,8 +657,10 @@ def build_slideshow(month_num):
         <span class="time-indicator">(5/{cumulative})</span>
     </section>''')
 
-    # Standing Review Block
-    cumulative += 10
+    # Standing Review Block. Default 10 min; m["standing_review_min"]
+    # overrides (useful on months with many accumulated items).
+    review_time = m.get("standing_review_min", 10)
+    cumulative += review_time
     review_lis = "\n".join(f'                <li class="reveal">{item}</li>' for item in review_items)
     slides_content.append(f'''
     <section class="slide">
@@ -658,11 +672,12 @@ def build_slideshow(month_num):
             </ul>
         </div>
         <span class="slide-footer">darlison.com | Metronomics Coaching</span>
-        <span class="time-indicator">(10/{cumulative})</span>
+        <span class="time-indicator">({review_time}/{cumulative})</span>
     </section>''')
 
-    # Coach slides (▲)
-    coach_time = max(10, 50 // max(len(m["coach"]), 1))
+    # Coach slides (▲). Formula splits 50 min across coach items with
+    # a 10-min floor; m["coach_time"] overrides uniformly.
+    coach_time = m.get("coach_time", max(10, 50 // max(len(m["coach"]), 1)))
     for item in m["coach"]:
         cumulative += coach_time
         points = COACH_POINTS.get(item, [f"Review and refine the {item} from last month"])
@@ -686,10 +701,14 @@ def build_slideshow(month_num):
         <span class="time-indicator">({coach_time}/{cumulative})</span>
     </section>''')
 
-    # Introduce slides (★)
+    # Introduce slides (★). Formula uses remaining time with a 15-min
+    # floor; m["introduce_time"] overrides uniformly.
     if m["introduce"]:
-        remaining = 120 - cumulative - 20  # save 20 for homework+cascade+close
-        intro_time = max(15, remaining // max(len(m["introduce"]), 1))
+        if "introduce_time" in m:
+            intro_time = m["introduce_time"]
+        else:
+            remaining = 120 - cumulative - 20  # save 20 for homework+cascade+close
+            intro_time = max(15, remaining // max(len(m["introduce"]), 1))
         for item in m["introduce"]:
             cumulative += intro_time
             points = INTRO_POINTS.get(item, [f"Introduction to {item}"])
