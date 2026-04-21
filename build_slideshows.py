@@ -1985,7 +1985,7 @@ def slide_homework(meeting):
             <div class="two-col">
             <div class="col-text">
             <h1 class="slide-title reveal">Homework</h1>
-            <p class="slide-subtitle reveal" style="font-size: var(--small-size); color: var(--text-secondary); margin-bottom: 0.4rem;">Add finalized artifacts to Mural and email byron@darlison.com at least two business days before next meeting.</p>
+            <p class="slide-subtitle reveal" style="font-size: var(--small-size); color: var(--text-secondary); margin-bottom: 0.4rem;">Add finalized artifacts to Mural and email byron@darlison.com at least five business days before next meeting.</p>
 
 {sections_html}
             </div>

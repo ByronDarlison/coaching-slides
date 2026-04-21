@@ -52,7 +52,7 @@ COHORT_PATTERNS: list[tuple[str, str]] = [
     (r"by (Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b", "specific weekday reference"),
 ]
 
-HOMEWORK_DEADLINE_PHRASE = "at least two business days before next meeting"
+HOMEWORK_DEADLINE_PHRASE = "at least five business days before next meeting"
 
 
 # ---------------------------------------------------------------------------

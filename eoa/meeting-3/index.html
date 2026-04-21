@@ -28,6 +28,10 @@
         .talking-points { list-style: none; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.2vh, 1rem); margin-bottom: var(--content-gap); }
         .talking-points li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(1rem, 2vw, 1.5rem); position: relative; }
         .talking-points li::before { content: ''; position: absolute; left: 0; top: clamp(6px, 0.8vh, 10px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
+        .talking-points strong { font-weight: 600; color: var(--accent-blue); }
+        .talking-points li ul { list-style: none; margin-top: clamp(0.3rem, 0.6vh, 0.5rem); display: flex; flex-direction: column; gap: clamp(0.15rem, 0.3vh, 0.3rem); padding-left: clamp(0.5rem, 1vw, 1rem); }
+        .talking-points li ul li { padding-left: 0; }
+        .talking-points li ul li::before { content: none; }
         .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
         .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
         .symbol-coach { color: #54B570; background: rgba(84, 181, 112, 0.08); border: 1px solid rgba(84, 181, 112, 0.2); }
@@ -394,7 +398,15 @@
                     <ul class="talking-points reveal">
                         <li>What are your key takeaways from today?</li>
                         <li>What commitments are you making?</li>
-                        <li>What is your one big thing (OBT) for next month? (SMART goal)</li>
+                        <li>What is your one big thing (OBT) for next month? (SMART goal)
+                            <ul>
+                                <li><strong>S</strong>pecific</li>
+                                <li><strong>M</strong>easurable</li>
+                                <li><strong>A</strong>chievable</li>
+                                <li><strong>R</strong>elevant</li>
+                                <li><strong>T</strong>ime-bound</li>
+                            </ul>
+                        </li>
                         <li>Update your EOA Prep document with your conclusions</li>
                     </ul>
                 </div>
@@ -419,6 +431,7 @@
                         <li>State your OBT for next month</li>
                         <li>What problem does it solve?</li>
                         <li>How does it connect to your Owner's Outcome?</li>
+                        <li>Email your revised OBT for this month to byron@darlison.com from the meeting</li>
                     </ul>
                 </div>
                 <div class="col-image reveal"><img src="../shared/personal-review-presentations.png" alt="Share Your Conclusions"></div>
@@ -445,7 +458,7 @@
                     <li><a href="https://www.darlison.com/the-eight-meetings-that-run-your-company/" target="_blank" rel="noopener">Meeting Cadence</a> <a href="https://www.darlison.com/meeting-cadence-assessment/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
                 </ul>
                 <ul class="homework-list" style="margin-top: clamp(0.3rem, 0.8vh, 0.6rem);">
-                    <li>Add finalized artifacts to Mural and email byron@darlison.com at least two business days before next meeting</li>
+                    <li>Add finalized artifacts to Mural and email byron@darlison.com at least five business days before next meeting</li>
                 </ul>
             </div>
 
@@ -455,14 +468,14 @@
                     <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">3HAG</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
                     <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">1HAG</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
                     <li><a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener">QHAG + 13-Week Sprint Lanes</a> <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a></li>
-                    <li>Add finalized artifacts to Mural and email byron@darlison.com at least two business days before next meeting</li>
+                    <li>Add finalized artifacts to Mural and email byron@darlison.com at least five business days before next meeting</li>
                 </ul>
             </div>
 
             <div class="homework-section reveal">
                 <h3>EOA Prep Prompt</h3>
                 <ul class="homework-list">
-                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a> and email it to byron@darlison.com at least two business days before next meeting</li>
+                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a> and email it to byron@darlison.com at least five business days before next meeting</li>
                 </ul>
             </div>
 
