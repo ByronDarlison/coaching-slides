@@ -94,12 +94,23 @@ def check_images(html: str, base_dir: Path) -> tuple[list[str], list[str]]:
     return oks, issues
 
 
+# URLs that are scheduled-to-publish but not yet live. Skipped from link-audit
+# until the scheduled time passes. Remove entries after the scheduled publish lands
+# and the URL returns 200.
+SCHEDULED_URLS = {
+    "https://www.darlison.com/scorecards/": "2026-05-04 03:00 EST",
+}
+
+
 def check_links(html: str, base_dir: Path) -> tuple[list[str], list[str]]:
     oks, issues = [], []
     # <a ... href="..."> — be strict about the opening tag to avoid <link> hits.
     hrefs = set(re.findall(r'<a\s[^>]*href="([^"]+)"', html))
     for href in sorted(hrefs):
         if href.startswith(("#", "mailto:", "tel:", "javascript:")):
+            continue
+        if href in SCHEDULED_URLS:
+            oks.append(f"{href}  (scheduled, lands {SCHEDULED_URLS[href]})")
             continue
         if href.startswith(("http://", "https://")):
             ok, detail = fetch_ok(href)
@@ -256,7 +267,6 @@ PENDING_ARTICLE = {
     "Porter's Five Forces",
     "Consumption Chain Mapping",
     # Function Scorecards has an article but no prompt yet.
-    "Function Scorecards",
 }
 
 

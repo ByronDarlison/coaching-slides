@@ -82,8 +82,8 @@ DELIVERABLES = {
         "image": "../../shared/assets/deliverables/market-map.png",
     },
     "Function Scorecards": {
-        "article": "https://www.darlison.com/scoreboard-day/",
-        "prompt": "",
+        "article": "https://www.darlison.com/scorecards/",
+        "prompt": "https://www.darlison.com/scorecards-tools/",
         "image": "",
     },
     "Core Customer Analysis": {
