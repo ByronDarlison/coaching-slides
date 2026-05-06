@@ -32,6 +32,7 @@ def _img(month):
         "skiplevel": "https://www.darlison.com/content/images/size/w1200/2026/01/Skip-Level---cropped.png",
         "owner": "https://www.darlison.com/content/images/size/w1200/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
         # Generated images for deliverables without articles
+        "profit_x": f"{prefix}/profit-x.png",
         "market_map": f"{prefix}/market-map.png",
         "core_customer": f"{prefix}/core-customer.png",
         "attribution_map": f"{prefix}/attribution-map.png",
@@ -171,7 +172,7 @@ MEETINGS[3] = {
           subtitle="The one unit of measurement that captures how the company makes money",
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
-          image_key="kffm",
+          image_key="profit_x",
           points=[
               "Revisit the economic unit chosen at kick-off - does it still feel right?",
               "Cross-check against KFFM widgets: is Profit/X measurable from the flow?",
