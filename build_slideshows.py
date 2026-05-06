@@ -19,6 +19,7 @@ def _img(month):
     # Article-sourced images (external URLs)
     base = {
         "kffm": "https://www.darlison.com/content/images/size/w1920/2026/03/key-function-flow-map-how-company-makes-money.png",
+        "pillar_hr_kffm": "https://www.darlison.com/content/images/size/w1920/2026/04/pillar-hr-kffm-l1.png",
         "purpose": "https://www.darlison.com/content/images/size/w1200/2026/03/core-purpose-discovery-company-why.png",
         "planning": "https://www.darlison.com/content/images/size/w1200/2026/04/planning-cascade-3hag-weekly-execution.png",
         "meetings": "https://www.darlison.com/content/images/size/w1200/2026/03/eight-meetings-company-cadence-2.png",
@@ -147,11 +148,10 @@ MEETINGS[3] = {
               "Revisit the functional map from M2 - have any new functions surfaced or been consolidated?",
               "Update ownership assignments: who has stepped into gaps since kick-off?",
           ]),
-        D("KFFM", "▲", "symbol-evolution", 8, 28,
-          subtitle="Key Function Flow Map",
+        D("Key Function Flow Map (KFFM)", "▲", "symbol-evolution", 8, 28,
           article="https://www.darlison.com/how-your-company-makes-money/",
           prompt="https://www.darlison.com/kffm-tools/",
-          image_key="kffm",
+          image_key="pillar_hr_kffm",
           points=[
               "Sharpen Level 1 widget flow - are the 3-5 key functions and their handoffs accurate?",
               "Begin identifying widgets (leads, orders, deliveries) flowing between functions",
