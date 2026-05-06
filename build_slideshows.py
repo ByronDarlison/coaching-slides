@@ -33,6 +33,9 @@ def _img(month):
         "owner": "https://www.darlison.com/content/images/size/w1200/2026/03/Gemini_Generated_Image_c8oxcvc8oxcvc8ox.png",
         # Generated images for deliverables without articles
         "profit_x": f"{prefix}/profit-x.png",
+        "three_hag": f"{prefix}/3hag.png",
+        "one_hag": f"{prefix}/1hag.png",
+        "q_hag": f"{prefix}/qhag.png",
         "market_map": f"{prefix}/market-map.png",
         "core_customer": f"{prefix}/core-customer.png",
         "attribution_map": f"{prefix}/attribution-map.png",
@@ -190,7 +193,7 @@ MEETINGS[3] = {
           subtitle="3-Year Highly Achievable Goal",
           article="https://www.darlison.com/where-are-you-going/",
           prompt="https://www.darlison.com/planning-cascade-prompt/",
-          image_key="planning",
+          image_key="three_hag",
           points=[
               "Fiscal targets, key capabilities, and widget commitments for 3 years",
               "Gut it out: write the first version now - good enough, not perfect",
@@ -201,7 +204,7 @@ MEETINGS[3] = {
           subtitle="1-Year Highly Achievable Goal",
           article="https://www.darlison.com/where-are-you-going/",
           prompt="https://www.darlison.com/planning-cascade-prompt/",
-          image_key="planning",
+          image_key="one_hag",
           points=[
               "3-5 corporate priorities with single owners - shared ownership is no ownership",
               "Each priority needs a measurable outcome and a clear connection to the 3HAG",
@@ -210,7 +213,7 @@ MEETINGS[3] = {
         D("QHAG + 13-Week Sprint Lanes", "★", "symbol-introduced", 21, 105,
           article="https://www.darlison.com/where-are-you-going/",
           prompt="https://www.darlison.com/planning-cascade-prompt/",
-          image_key="planning",
+          image_key="q_hag",
           points=[
               "The 90-day plan: 3-5 priorities for this quarter, each with metrics and an owner",
               "Sprint Lanes: a 13-week grid with one binary deliverable per priority per week",
