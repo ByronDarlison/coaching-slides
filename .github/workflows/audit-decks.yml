@@ -1,0 +1,41 @@
+name: audit-decks
+
+# Source-level integrity checks for the M3-M13 decks. Catches drift between
+# build_slideshows.py and the deliverables table, hand-edits to monthly/m{N}/
+# index.html that don't match the build script, and order violations
+# (KFFM -> FOC -> FAC). Per-deck rendered checks (time chain, image URLs,
+# style, structure) are handled by slide-test.yml.
+#
+# The audit reads the deliverables table from tests/deliverables-snapshot.md,
+# which is a vendored copy of ~/ai-config/darlison/coaching-deliverables.md.
+# Refresh the snapshot with scripts/sync-deliverables-snapshot.sh before
+# committing changes to the canonical table.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'build_slideshows.py'
+      - 'monthly/**/index.html'
+      - 'tests/deliverables-snapshot.md'
+      - 'scripts/audit-decks.py'
+      - '.github/workflows/audit-decks.yml'
+  pull_request:
+    paths:
+      - 'build_slideshows.py'
+      - 'monthly/**/index.html'
+      - 'tests/deliverables-snapshot.md'
+      - 'scripts/audit-decks.py'
+      - '.github/workflows/audit-decks.yml'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run deck audit (table consistency + round-trip + ordering)
+        run: python3 scripts/audit-decks.py --repo .
