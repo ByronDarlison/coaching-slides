@@ -207,7 +207,7 @@ MEETINGS[3] = {
           image_key="one_hag",
           points=[
               "3-5 corporate priorities with single owners - shared ownership is no ownership",
-              "Each priority needs a measurable outcome and a clear connection to the 3HAG",
+              "Every priority enables a 3HAG key capability AND improves Profit/X",
               "Translate year one of the 3HAG into actionable annual targets",
           ]),
         D("QHAG + 13-Week Sprint Lanes", "★", "symbol-introduced", 21, 105,
@@ -216,9 +216,9 @@ MEETINGS[3] = {
           image_key="q_hag",
           points=[
               "The 90-day plan: 3-5 priorities for this quarter, each with metrics and an owner",
+              "Every priority enables a 1HAG priority OR improves Profit/X",
               "Sprint Lanes: a 13-week grid with one binary deliverable per priority per week",
               "No gaps allowed - every week needs a milestone to prevent strategic work from slipping",
-              "Each level must cascade cleanly: if quarterly work doesn't connect to the 3HAG, adjust",
           ]),
     ],
     "homework": [
