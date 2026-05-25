@@ -2419,6 +2419,57 @@ def slide_close():
     </section>"""
 
 
+def build_deep_link_js():
+    """Hash-based deep-link wiring; matches /tmp/add-deep-links.py SNIPPET."""
+    return """    <script>
+    /* coaching-slides:deep-link v1 */
+    (function() {
+        const toSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const slides = document.querySelectorAll('section.slide');
+        if (!slides.length) return;
+
+        const seen = new Map();
+        slides.forEach(slide => {
+            if (slide.id) return;
+            const label = slide.getAttribute('aria-label') || 'slide';
+            let slug = toSlug(label) || 'slide';
+            const n = (seen.get(slug) || 0) + 1;
+            seen.set(slug, n);
+            slide.id = n > 1 ? `${slug}-${n}` : slug;
+        });
+
+        let suppress = false;
+        const io = new IntersectionObserver(entries => {
+            if (suppress) return;
+            for (const e of entries) {
+                if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+                    const newHash = '#' + e.target.id;
+                    if (location.hash !== newHash) {
+                        history.replaceState(null, '', newHash);
+                    }
+                }
+            }
+        }, { threshold: 0.5 });
+        slides.forEach(s => io.observe(s));
+
+        function scrollToHash() {
+            const slug = decodeURIComponent(location.hash.slice(1));
+            if (!slug) return;
+            const target = document.getElementById(slug);
+            if (!target) return;
+            suppress = true;
+            target.scrollIntoView({ behavior: 'auto', block: 'start' });
+            setTimeout(() => { suppress = false; }, 700);
+        }
+
+        if (location.hash) {
+            window.addEventListener('load', () => setTimeout(scrollToHash, 60));
+        }
+        window.addEventListener('hashchange', scrollToHash);
+    })();
+    </script>"""
+
+
 def build_html(meeting):
     n = meeting["num"]
     title_text = f"M{n} &mdash; {e(meeting['title'])}"
@@ -2469,6 +2520,7 @@ def build_html(meeting):
        SLIDE PRESENTATION CONTROLLER
        =========================================== -->
 {build_js()}
+{build_deep_link_js()}
 </body>
 </html>
 """
