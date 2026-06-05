@@ -24,6 +24,8 @@ from pathlib import Path
 
 from eoa_shared_slides import (
     FOOTER,
+    HOMEWORK_CTA_CSS,
+    HOMEWORK_DEADLINE_CTA,
     HOMEWORK_PULL_LATEST_REMINDER,
     feedback_slide,
     opc_slide,
@@ -143,6 +145,85 @@ def sync_homework_reminder(html: str) -> tuple[str, bool]:
     return html.replace(hw_match.group(0), replacement), True
 
 
+_MURAL_LINE = (
+    r"Add finalized artifacts to Mural and email byron@darlison\.com "
+    r"at least five business days before next meeting"
+)
+
+
+def sync_homework_cta_css(html: str) -> tuple[str, bool]:
+    """Ensure the .homework-cta highlight CSS is in the <style>. No-op if present."""
+    if "li.homework-cta {" in html:
+        return html, False
+    pattern = re.compile(r"(\n[ \t]*\.homework-list \.link-prompt \{[^\n]*\})")
+    m = pattern.search(html)
+    if not m:
+        return html, False
+    return html.replace(m.group(1), m.group(1) + "\n" + HOMEWORK_CTA_CSS, 1), True
+
+
+def sync_homework_cta(html: str) -> tuple[str, bool]:
+    """Inject the deadline CTA at the top of the Homework slide. No-op if present."""
+    if '<li class="homework-cta">' in html:
+        return html, False
+    pattern = re.compile(
+        r'(<section class="slide" aria-label="Homework">\s*<div class="slide-content">)'
+        r'(\s*<div class="two-col">)'
+    )
+    m = pattern.search(html)
+    if not m:
+        return html, False
+    replacement = m.group(1) + "\n            " + HOMEWORK_DEADLINE_CTA + m.group(2)
+    return html.replace(m.group(0), replacement, 1), True
+
+
+def sync_homework_drop_mural(html: str) -> tuple[str, bool]:
+    """Remove the now-redundant 'Add finalized artifacts to Mural...' deadline text
+    (the top CTA carries the deadline). Handles three shapes:
+      1. a standalone submission <ul> whose only child is the Mural line,
+      2. a bare <li> Mural line inside a larger list,
+      3. the deadline sentence appended to a deliverable bullet
+         (e.g. 'Function Scorecards. Add finalized artifacts to Mural ... meeting.')."""
+    changed = False
+    # Form 1: a ul whose only child is the Mural submission line
+    new, n = re.subn(
+        r'\n[ \t]*<ul class="homework-list"[^>]*>\s*<li>' + _MURAL_LINE + r"</li>\s*</ul>",
+        "",
+        html,
+    )
+    if n:
+        html, changed = new, True
+    # Form 2: a bare li that is only the Mural line
+    new, n = re.subn(r"\n[ \t]*<li>" + _MURAL_LINE + r"</li>", "", html)
+    if n:
+        html, changed = new, True
+    # Form 3: the deadline sentence appended to a deliverable bullet
+    new, n = re.subn(r"\.\s*" + _MURAL_LINE + r"\.", "", html)
+    if n:
+        html, changed = new, True
+    return html, changed
+
+
+def sync_homework_trim_eoa_prep(html: str) -> tuple[str, bool]:
+    """Trim 'Run the EOA Prep Prompt and email it...' down to 'Run the EOA Prep Prompt.'"""
+    pattern = re.compile(
+        r'(<li>Run the <a href="https://www\.darlison\.com/eoa-prep-prompt/"[^>]*>'
+        r"EOA Prep Prompt</a>) and email it to byron@darlison\.com "
+        r"at least five business days before next meeting(</li>)"
+    )
+    new, n = pattern.subn(r"\1\2", html)
+    return (new, True) if n else (html, False)
+
+
+# Homework-slide CTA pipeline — meeting-N decks only (not onboarding / primer).
+CTA_SYNCS = [
+    ("homework-cta-css", sync_homework_cta_css),
+    ("homework-cta", sync_homework_cta),
+    ("drop-mural", sync_homework_drop_mural),
+    ("trim-eoa-prep", sync_homework_trim_eoa_prep),
+]
+
+
 def sync_footer_brand(html: str) -> tuple[str, bool]:
     """Normalize all slide footers to the canonical EOA string."""
     canonical = f'<span class="slide-footer">{FOOTER}</span>'
@@ -182,6 +263,11 @@ def main(check_only: bool = False) -> int:
             html, did_change = fn(html)
             if did_change:
                 applied.append(label)
+        if re.match(r"meeting-\d+$", deck_name):
+            for label, fn in CTA_SYNCS:
+                html, did_change = fn(html)
+                if did_change:
+                    applied.append(label)
         html, title_changed = sync_browser_title(html, deck_name)
         if title_changed:
             applied.append("browser-title")

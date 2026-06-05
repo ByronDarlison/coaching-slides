@@ -15,6 +15,7 @@ Covered shared elements:
     - Homework footer: green-bordered pull-latest reminder
     - Feedback slide (before One Phrase Close)
     - One Phrase Close slide
+    - Homework deadline CTA (blue highlight at top of homework slide; meeting-N decks only)
     - Browser <title> (genericized to "EOA Meeting N")
     - Footer brand ("darlison.com | Metronomics(TM) Coaching | EO Accelerator")
 
@@ -84,6 +85,25 @@ RULES_OF_ENGAGEMENT_SLIDE = '''    <section class="slide" aria-label="Rules of E
 
 
 HOMEWORK_PULL_LATEST_REMINDER = '''<p style="margin-top: 0.25rem; padding: 0.55rem 0.8rem; background: rgba(84, 181, 112, 0.08); border-left: 3px solid #54B570; border-radius: 4px; font-style: italic; font-size: var(--small-size); color: var(--text-primary); max-width: 90%;">Reminder: everything on darlison.com updates continuously. Pull the current version each time. Don't work from a saved copy.</p>'''
+
+
+# Blue deadline call-to-action, injected at the TOP of each meeting deck's
+# Homework slide. The canonical "at least five business days before next
+# meeting" phrase MUST stay spelled out (a numeral fails slide-test.py).
+HOMEWORK_DEADLINE_CTA = (
+    '<ul class="homework-list reveal" style="margin: 0 0 clamp(0.6rem, 1.5vh, 1rem);">\n'
+    '                <li class="homework-cta">Email all homework to byron@darlison.com at least five business days before next meeting</li>\n'
+    '            </ul>'
+)
+
+
+# CSS for the deadline CTA, injected into each meeting deck's <style> after
+# the `.homework-list .link-prompt` rule.
+HOMEWORK_CTA_CSS = (
+    '        .homework-list li.homework-cta { background: var(--accent-blue); color: #ffffff; font-weight: 600; border-radius: 6px; padding: clamp(0.4rem, 0.9vh, 0.6rem) clamp(0.7rem, 1.2vw, 1rem); }\n'
+    '        .homework-list li.homework-cta::before { display: none; }\n'
+    '        .homework-list li.homework-cta a { color: #ffffff; text-decoration: underline; }'
+)
 
 
 FEEDBACK_SLIDE = '''    <section class="slide" aria-label="Feedback">

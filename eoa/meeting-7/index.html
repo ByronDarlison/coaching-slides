@@ -55,6 +55,9 @@
         .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
         .homework-list a:hover { text-decoration: underline; }
         .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
+        .homework-list li.homework-cta { background: var(--accent-blue); color: #ffffff; font-weight: 600; border-radius: 6px; padding: clamp(0.4rem, 0.9vh, 0.6rem) clamp(0.7rem, 1.2vw, 1rem); }
+        .homework-list li.homework-cta::before { display: none; }
+        .homework-list li.homework-cta a { color: #ffffff; text-decoration: underline; }
         .rules-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.5vh, 1.2rem); }
         .rules-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); display: flex; align-items: flex-start; gap: clamp(8px, 1vw, 14px); }
         .rule-icon { flex-shrink: 0; width: clamp(18px, 2vw, 24px); height: clamp(18px, 2vw, 24px); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
@@ -327,6 +330,9 @@
     <!-- SLIDE 11: HOMEWORK (5/220) -->
     <section class="slide" aria-label="Homework">
         <div class="slide-content">
+            <ul class="homework-list reveal" style="margin: 0 0 clamp(0.6rem, 1.5vh, 1rem);">
+                <li class="homework-cta">Email all homework to byron@darlison.com at least five business days before next meeting</li>
+            </ul>
             <div class="two-col">
             <div class="col-text">
             <h1 class="slide-title reveal">Homework</h1>
@@ -334,7 +340,7 @@
             <div class="homework-section reveal">
                 <h3>&#9650; Review and Complete</h3>
                 <ul class="homework-list">
-                    <li>Market Map. Add finalized artifacts to Mural and email byron@darlison.com at least five business days before next meeting.</li>
+                    <li>Market Map</li>
                 </ul>
             </div>
 
@@ -349,7 +355,7 @@
             <div class="homework-section reveal">
                 <h3>EOA Prep Prompt</h3>
                 <ul class="homework-list">
-                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a> and email it to byron@darlison.com at least five business days before next meeting</li>
+                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a></li>
                 </ul>
             </div>
 
