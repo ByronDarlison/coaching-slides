@@ -77,8 +77,8 @@ DELIVERABLES = {
         "image": "",
     },
     "Market Map": {
-        "article": "",
-        "prompt": "",
+        "article": "https://www.darlison.com/where-are-you-playing/",
+        "prompt": "https://www.darlison.com/market-map-tools/",
         "image": "../../shared/assets/deliverables/market-map.png",
     },
     "Function Scorecards": {

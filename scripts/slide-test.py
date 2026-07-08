@@ -237,7 +237,6 @@ NO_LINK_REQUIRED = {
 # links for now. Remove entries here as the articles ship; the test
 # will then enforce link presence.
 PENDING_ARTICLE = {
-    "Market Map",
     "Attribution Map",
     "Activity Fit Map",
     "Activity Fit Map (Differentiators)",
