@@ -23,13 +23,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   visual:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -48,36 +50,8 @@ jobs:
         run: node visual-regression.js
         continue-on-error: true
 
-      # When the test fails AND the push commit message contains
-      # [baseline-refresh], capture fresh baselines and commit them.
-      # Intent must be explicit so unintended regressions still fail loudly.
-      - name: Refresh baselines (on [baseline-refresh] marker)
-        id: refresh
-        if: |
-          steps.test.outcome == 'failure' &&
-          github.event_name == 'push' &&
-          contains(github.event.head_commit.message, '[baseline-refresh]')
-        working-directory: tests/visual
-        run: node visual-regression.js --update-baseline
-
-      - name: Commit refreshed baselines
-        if: steps.refresh.outcome == 'success'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tests/visual/baselines/
-          if git diff --cached --quiet; then
-            echo "No baseline changes to commit."
-            exit 0
-          fi
-          git commit -m "chore: auto-refresh visual baselines"
-          git pull --rebase origin main
-          git push
-
       - name: Upload diffs on failure
-        if: |
-          steps.test.outcome == 'failure' &&
-          steps.refresh.outcome != 'success'
+        if: steps.test.outcome == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: visual-diffs
@@ -85,13 +59,10 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-      - name: Fail if no refresh happened
-        if: |
-          steps.test.outcome == 'failure' &&
-          steps.refresh.outcome != 'success'
+      - name: Fail on visual regression
+        if: steps.test.outcome == 'failure'
         run: |
           echo "Visual regression failed against the current baselines."
-          echo "If this layout change is intentional, push again with"
-          echo "[baseline-refresh] in the commit message and the workflow"
-          echo "will auto-capture and commit fresh baselines."
+          echo "If this layout change is intentional, run the"
+          echo "visual-baseline workflow manually to refresh baselines."
           exit 1
