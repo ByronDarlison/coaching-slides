@@ -70,6 +70,42 @@
         .close-instruction { font-size: var(--h3-size); font-weight: 500; color: var(--accent-green); margin-top: var(--content-gap); }
         .slide-footer { position: absolute; bottom: clamp(12px, 2vh, 24px); left: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 400; color: var(--text-muted); }
         .time-indicator { position: absolute; bottom: clamp(12px, 2vh, 24px); right: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 500; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+        .slide-content.sample { justify-content: flex-start; padding-top: clamp(1.1rem, 2.4vh, 1.8rem); padding-bottom: clamp(2.4rem, 4vh, 3.2rem); padding-left: clamp(1.25rem, 3vw, 2.75rem); padding-right: clamp(1.25rem, 3vw, 2.75rem); }
+        .slide-content.sample .slide-title { margin-bottom: 0.2rem; }
+        .slide-content.sample .slide-subtitle { margin-bottom: 0.45rem; }
+        .sample-kicker { font-size: var(--small-size); font-weight: 600; color: var(--accent-blue); margin: 0.55rem 0 0.15rem; }
+        .sample-statement { font-size: var(--body-size); color: var(--text-primary); margin-bottom: 0.35rem; }
+        .sample-table { width: 100%; border-collapse: collapse; font-size: clamp(0.72rem, 1.15vw, 0.92rem); }
+        .sample-table th { font-size: clamp(0.62rem, 0.95vw, 0.78rem); font-weight: 600; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.03em; text-align: left; padding: 0.28rem 0.45rem; border-bottom: 2px solid var(--accent-blue); vertical-align: bottom; }
+        .sample-table td { padding: 0.28rem 0.45rem; border-bottom: 1px solid var(--border-light); color: var(--text-primary); vertical-align: top; }
+        .sample-table td:first-child { font-weight: 600; color: var(--accent-blue); }
+        .sample-table tr:last-child td { border-bottom: none; }
+        .sample-table.dense th, .sample-table.dense td { padding: 0.16rem 0.38rem; font-size: clamp(0.64rem, 0.95vw, 0.78rem); }
+        .sample-table.quote td { color: var(--text-primary); font-weight: 500; font-style: italic; }
+        .lane-chart { display: grid; grid-template-columns: minmax(118px, 1.25fr) repeat(13, minmax(0, 1fr)); width: 100%; border: 1px solid #ccd5df; background: #fff; color: #263746; font-size: clamp(0.58rem, 0.72vw, 0.7rem); line-height: 1.25; }
+        .lane-corner { grid-column: 1; grid-row: 1 / 3; background: #e9f0fa; border-right: 1px solid #ccd5df; border-bottom: 1px solid #ccd5df; padding: 0.4rem 0.45rem; display: flex; flex-direction: column; justify-content: center; gap: 0.12rem; }
+        .lane-corner strong { font-size: 0.82rem; font-weight: 600; }
+        .lane-corner span { font-size: 0.68rem; font-weight: 400; }
+        .lane-period { grid-column: 2 / 15; background: #e9f0fa; text-align: center; font-weight: 600; font-size: 0.78rem; padding: 0.28rem 0.2rem; border-bottom: 1px solid #ccd5df; }
+        .lane-week { background: #f4f6f8; text-align: center; font-weight: 600; padding: 0.18rem 0.08rem 0.22rem; border-left: 1px solid #ccd5df; border-bottom: 1px solid #ccd5df; }
+        .lane-week span { display: block; font-weight: 400; font-size: 0.92em; }
+        .lane-label { background: #f4f6f8; border-top: 1px solid #ccd5df; padding: 0.32rem 0.4rem; display: flex; flex-direction: column; justify-content: center; gap: 0.12rem; min-width: 0; }
+        .lane-label strong { font-size: 0.74rem; font-weight: 600; line-height: 1.2; }
+        .lane-owner { font-size: 0.64rem; }
+        .lane-chip { align-self: flex-start; font-size: 0.58rem; font-weight: 600; line-height: 1.3; padding: 0.04rem 0.32rem; border-radius: 3px; }
+        .chip-referral { background: #E9F0FA; color: #1F3F6E; border: 1px solid #326AB6; }
+        .chip-close { background: #E4F3F0; color: #10594F; border: 1px solid #167568; }
+        .chip-review { background: #FBF1DB; color: #6D4B08; border: 1px solid #A57516; }
+        .lane-cell { border-left: 1px solid #ccd5df; border-top: 1px solid #ccd5df; padding: 0.18rem 0.16rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 600; min-width: 0; background: #fff; }
+        .lane-alt { background: #f9fbfd; }
+        .lane-vac { grid-column: span 2; flex-direction: column; background: #e8e8e8; font-weight: 600; }
+        .lane-vac small { display: block; font-weight: 400; font-size: 0.92em; }
+        .lane-plan { grid-row: span 3; flex-direction: column; background: #edf3eb; font-weight: 600; }
+        @media (max-height: 800px) {
+            .slide-content.sample { padding-top: 0.7rem; padding-bottom: 2rem; }
+            .sample-table th, .sample-table td { padding: 0.14rem 0.32rem; font-size: 0.68rem; }
+            .sample-kicker, .sample-statement { margin-top: 0.25rem; margin-bottom: 0.1rem; }
+        }
         .reveal { opacity: 0; transform: translateY(20px); transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo); }
         .slide.visible .reveal { opacity: 1; transform: translateY(0); }
         .reveal:nth-child(1) { transition-delay: 0.05s; } .reveal:nth-child(2) { transition-delay: 0.12s; } .reveal:nth-child(3) { transition-delay: 0.19s; }
@@ -110,7 +146,33 @@
     </section>
 
     <!-- =============================================
-         SLIDE 2: ONE WORD BAROMETER (5/5)
+         SLIDE 2: LUNCH WITH SARAH (60/60)
+         1:00-2:00 PM. Opening and Rules below are optional
+         inside this hour and do not add time.
+         No business updates while Sarah is in the room.
+         ============================================= -->
+    <section class="slide" aria-label="Lunch with Sarah">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">Lunch with Sarah</h1>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">1:00 to 2:00 PM.</p>
+                    <ul class="talking-points reveal">
+                        <li>Sarah (ops, InTandem) joins for lunch.</li>
+                        <li>One Word Barometer and Rules of Engagement are optional.</li>
+                        <li>No business updates while Sarah is in the room.</li>
+                    </ul>
+                </div>
+                <div class="col-image"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(60 min / 60)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 3: ONE WORD BAROMETER (0/60)
+         Optional during lunch. Included in the 60-minute lunch. Cumulative stays 60.
          ============================================= -->
     <section class="slide" aria-label="Opening">
         <div class="slide-content">
@@ -118,6 +180,7 @@
                 <div class="col-text">
                     <h1 class="slide-title reveal">One Word Barometer</h1>
                     <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">How are you feeling right now?</p>
+                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary); margin-bottom: var(--content-gap);">Optional during lunch. Included in the 1:00 to 2:00 hour.</p>
                     <ul class="talking-points reveal">
                         <li>One word. An emotion. No wrong answers.</li>
                     </ul>
@@ -126,11 +189,12 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 5)</span>
+        <span class="time-indicator">(0 min / 60)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 3: RULES OF ENGAGEMENT (3/8)
+         SLIDE 4: RULES OF ENGAGEMENT (0/60)
+         Optional during lunch. Included in the 60-minute lunch. Cumulative stays 60.
          ============================================= -->
     <section class="slide" aria-label="Rules of Engagement">
         <div class="slide-content">
@@ -178,17 +242,60 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(3 min / 8)</span>
+        <span class="time-indicator">(0 min / 60)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 4: BUSINESS UPDATES (25/33)
+         SLIDE 5: SARAH AI WALKTHROUGH (60/120)
+         2:00-3:00 PM. After lunch, before the 3:00 break.
+         ============================================= -->
+    <section class="slide" aria-label="AI Walkthrough">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text">
+                    <h1 class="slide-title reveal">AI Walkthrough</h1>
+                    <p class="slide-subtitle reveal">With Sarah. About 60 minutes. 2:00 to 3:00 PM.</p>
+                    <ul class="talking-points reveal">
+                        <li>Interactive session with live examples.</li>
+                        <li>Questions as we go.</li>
+                        <li>Q&amp;A through 3:00 PM.</li>
+                    </ul>
+                </div>
+                <div class="col-image reveal"><img src="../shared/experience-sharing.png" alt="Interactive walkthrough"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(60 min / 120)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 6: BREAK (10/130)
+         3:00-3:10 PM. Be back at 3:10 PM. Planning Cascade presentations start at 4:50 PM.
+         ============================================= -->
+    <section class="slide" aria-label="Break">
+        <div class="slide-content">
+            <div class="two-col">
+                <div class="col-text" style="align-items: center; text-align: center;">
+                    <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
+                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">10 minutes. Be back at 3:10 PM.</p>
+                </div>
+                <div class="col-image"></div>
+            </div>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(10 min / 130)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 7: BUSINESS UPDATES (25/155)
+         After Sarah and the break. 3:10-3:35 PM. About 5 min x 5.
          ============================================= -->
     <section class="slide" aria-label="Business Updates">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <h1 class="slide-title reveal">Business Updates</h1>
+                    <p class="slide-subtitle reveal">About 5 minutes each. 5 members. 3:10 to 3:35 PM.</p>
                     <ul class="talking-points reveal">
                         <li><strong>Last Month's Action</strong>
                             <ul>
@@ -215,18 +322,19 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 33)</span>
+        <span class="time-indicator">(25 min / 155)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 5: PRESENTATIONS (75/108)
+         SLIDE 8: PRESENTATIONS (75/230)
+         3:35-4:50 PM. Keep 15 minutes each.
          ============================================= -->
     <section class="slide" aria-label="Presentations">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <h1 class="slide-title reveal">Presentations</h1>
-                    <p class="slide-subtitle reveal">15 minutes each. 5 members.</p>
+                    <p class="slide-subtitle reveal">15 minutes each. 5 members. 3:35 to 4:50 PM.</p>
                     <ul class="talking-points reveal">
                         <li>Headline: what is the issue?</li>
                         <li>Significance: why does it matter?</li>
@@ -240,40 +348,257 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(75 min / 108)</span>
+        <span class="time-indicator">(75 min / 230)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 6: BREAK (12/120)
+         SLIDE 9: SAMPLE 3HAG (0/230)
+         Lark & Ledger example. Intro to the
+         4:50-5:45 member presentations. Not additive.
+         Fictional bookkeeping studio. 3HAG revenue under $1M.
          ============================================= -->
-    <section class="slide" aria-label="Break">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text" style="align-items: center; text-align: center;">
-                    <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">12 minutes. Be back at 4:00 PM.</p>
-                </div>
-                <div class="col-image"></div>
+    <section class="slide" aria-label="Sample 3HAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 3HAG</h1>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger, a founder-led bookkeeping studio. Three years ending 31 December 2028.</p>
+            <p class="sample-statement reveal"><strong>3HAG statement.</strong> The bookkeeping studio clinics call when the books have to be right and on time.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$780,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>18%</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$96,000 (about three months of base cost)</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>180 / year (15 / month)</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>72 / year (6 / month)</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>24 / year (2 / month)</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>70 active clients at year-end</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Key capabilities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Capability we must build inside the company</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>A referral engine that fills the pipeline without the founder chasing every lead.</td></tr>
+                    <tr><td>2</td><td>A close calendar any bookkeeper can hit in five business days.</td></tr>
+                    <tr><td>3</td><td>A monthly client review that flags cash issues before the owner asks.</td></tr>
+                    <tr><td>4</td><td>A playbook that makes a new bookkeeper useful in 30 days.</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Known for</p>
+            <table class="sample-table quote reveal">
+                <thead>
+                    <tr><th>In the customer's words</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>"They keep the books clean, and we always know where the cash stands."</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 10: SAMPLE 1HAG (0/230)
+         Lark & Ledger example. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample 1HAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 1HAG</h1>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. One year ending 31 December 2026.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$360,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>15%</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$42,000</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>96 / year (8 / month)</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>48 / year (4 / month)</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>12 / year (1 / month)</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>36 active clients at year-end</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Annual company priorities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Priority</th><th>Owner</th><th>Measure of success</th><th>Connection to 3HAG</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Stand up a referral and intro engine</td>
+                        <td>Maya Chen</td>
+                        <td>Improve qualified inquiries from 4 to 8 a month (half from referral) by 31 December 2026</td>
+                        <td>A referral engine that fills the pipeline without the founder chasing every lead.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Put the five-day close on the whole book</td>
+                        <td>Lena Ortiz</td>
+                        <td>Improve on-time monthly closes from 55% to 90% by 31 December 2026</td>
+                        <td>A close calendar any bookkeeper can hit in five business days.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Launch the monthly client review</td>
+                        <td>Priya Shah</td>
+                        <td>Improve clients on a written monthly review from 20% to 90% by 31 December 2026</td>
+                        <td>A monthly client review that flags cash issues before the owner asks.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 11: SAMPLE QHAG (0/230)
+         Lark & Ledger example. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample QHAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample QHAG</h1>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. Quarter ending 30 September 2026.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Month 1 · Jul</th><th>Month 2 · Aug</th><th>Month 3 · Sep</th><th>Quarter total</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$24,000</td><td>$28,000</td><td>$32,000</td><td>$84,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>13%</td><td>14%</td><td>15%</td><td>14% (blended)</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$28,000</td><td>$32,000</td><td>$38,000</td><td>$38,000 (end of quarter)</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>6</td><td>7</td><td>9</td><td>22</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>3</td><td>4</td><td>4</td><td>11</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>28</td><td>31</td><td>34</td><td>34 (end of quarter)</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Quarterly company priorities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Priority</th><th>Owner</th><th>Measure of success</th><th>Connection to 1HAG</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ship the intro sequence and book three referral partners</td>
+                        <td>Maya Chen</td>
+                        <td>Improve qualified inquiries from 4 to 9 a month (3 from referral) by 30 September 2026</td>
+                        <td>Stand up a referral and intro engine.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Move the current book onto the five-day close</td>
+                        <td>Lena Ortiz</td>
+                        <td>Improve on-time closes from 65% to 90% by 30 September 2026</td>
+                        <td>Put the five-day close on the whole book.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Send the monthly review note across the book</td>
+                        <td>Priya Shah</td>
+                        <td>Improve clients on a written review from 8 to 24 by 30 September 2026</td>
+                        <td>Launch the monthly client review.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 12: SAMPLE 13-WEEK SPRINT LANES (0/230)
+         Lark & Ledger example. Weeks are columns. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample 13-Week Sprint Lanes">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 13-Week Sprint Lanes</h1>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. 29 June to 27 September 2026. Weeks left to right. One deliverable per priority per week.</p>
+            <div class="lane-chart reveal" role="img" aria-label="Lark and Ledger sprint lanes. Weeks are columns. Priority lanes are rows.">
+                <div class="lane-corner"><strong>Q3 work</strong><span>Lark &amp; Ledger</span></div>
+                <div class="lane-period">29 June to 27 September 2026</div>
+                <div class="lane-week">W1<span>05 Jul</span></div>
+                <div class="lane-week">W2<span>12 Jul</span></div>
+                <div class="lane-week">W3<span>19 Jul</span></div>
+                <div class="lane-week">W4<span>26 Jul</span></div>
+                <div class="lane-week">W5<span>02 Aug</span></div>
+                <div class="lane-week">W6<span>09 Aug</span></div>
+                <div class="lane-week">W7<span>16 Aug</span></div>
+                <div class="lane-week">W8<span>23 Aug</span></div>
+                <div class="lane-week">W9<span>30 Aug</span></div>
+                <div class="lane-week">W10<span>06 Sep</span></div>
+                <div class="lane-week">W11<span>13 Sep</span></div>
+                <div class="lane-week">W12<span>20 Sep</span></div>
+                <div class="lane-week">W13<span>27 Sep</span></div>
+                <div class="lane-label"><strong>Referral engine</strong><span class="lane-owner">Maya Chen</span><span class="lane-chip chip-referral">Referral</span></div>
+                <div class="lane-cell">Partner list drafted</div>
+                <div class="lane-cell">Intro notes sent</div>
+                <div class="lane-cell">First partner call booked</div>
+                <div class="lane-cell">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell">Three partners pitched</div>
+                <div class="lane-cell">One agreement signed</div>
+                <div class="lane-cell">Intro sequence live</div>
+                <div class="lane-cell">Referral form live</div>
+                <div class="lane-cell">Eight inquiries hit</div>
+                <div class="lane-cell">Nine inquiries confirmed</div>
+                <div class="lane-cell lane-plan">Quarterly<br>planning</div>
+                <div class="lane-label"><strong>Five-day close</strong><span class="lane-owner">Lena Ortiz</span><span class="lane-chip chip-close">Close</span></div>
+                <div class="lane-cell lane-alt">Close checklist drafted</div>
+                <div class="lane-cell lane-alt">Book mapped to calendar</div>
+                <div class="lane-cell lane-alt">Two clients closed in five days</div>
+                <div class="lane-cell lane-alt">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell lane-alt">Half the book on calendar</div>
+                <div class="lane-cell lane-alt">Late-close list cleared</div>
+                <div class="lane-cell lane-alt">On-time rate measured</div>
+                <div class="lane-cell lane-alt">80% on time</div>
+                <div class="lane-cell lane-alt">Exception log in use</div>
+                <div class="lane-cell lane-alt">90% on time signed off</div>
+                <div class="lane-label"><strong>Monthly review</strong><span class="lane-owner">Priya Shah</span><span class="lane-chip chip-review">Review</span></div>
+                <div class="lane-cell">Review note outline</div>
+                <div class="lane-cell">Cash line chosen</div>
+                <div class="lane-cell">Pilot note for five clients</div>
+                <div class="lane-cell">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell">Pilot notes sent</div>
+                <div class="lane-cell">Feedback folded in</div>
+                <div class="lane-cell">Template locked</div>
+                <div class="lane-cell">15 clients on the note</div>
+                <div class="lane-cell">20 clients on the note</div>
+                <div class="lane-cell">24 clients on the note</div>
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(12 min / 120)</span>
+        <span class="time-indicator">(0 min / 230)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 7: 3HAG (30/150)
+         SLIDE 13: PLANNING CASCADE PRESENTATIONS (55/285)
+         4:50-5:45 PM. 5 members, about 11 minutes each.
          ============================================= -->
-    <section class="slide" aria-label="3HAG">
+    <section class="slide" aria-label="Planning Cascade">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
-                    <h1 class="slide-title reveal">3HAG</h1>
-                    <p class="slide-subtitle reveal">3-Year Highly Achievable Goal</p>
+                    <h1 class="slide-title reveal">Planning Cascade</h1>
+                    <p class="slide-subtitle reveal">About 11 minutes each. 5 members. 4:50 to 5:45 PM.</p>
                     <ul class="talking-points">
-                        <li class="reveal">Review 3-year fiscal targets, key capabilities, and widgets</li>
-                        <li class="reveal">Are they achievable? Validate against your KFFM</li>
-                        <li class="reveal">Pressure-test the connection between strategy and execution</li>
+                        <li class="reveal">Each member presents their own cascade: 3HAG, then 1HAG, then QHAG + 13-Week Sprint Lanes</li>
+                        <li class="reveal">Use the Lark &amp; Ledger samples as the pattern</li>
+                        <li class="reveal">Keep one thread: the 3-year goal, the annual plan, and this quarter's sprint lanes</li>
                     </ul>
                     <div class="slide-links reveal">
                         <a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener" class="link-article">Article</a>
@@ -281,81 +606,25 @@
                     </div>
                 </div>
                 <div class="col-image reveal">
-                    <img src="assets/title-meeting4.png" alt="3HAG">
+                    <img src="assets/title-meeting4.png" alt="Planning Cascade">
                 </div>
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(30 min / 150)</span>
+        <span class="time-indicator">(55 min / 285)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 8: 1HAG (25/175)
-         ============================================= -->
-    <section class="slide" aria-label="1HAG">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
-                    <h1 class="slide-title reveal">1HAG</h1>
-                    <p class="slide-subtitle reveal">1-Year Highly Achievable Goal</p>
-                    <ul class="talking-points">
-                        <li class="reveal">Does the annual plan align to the 3HAG?</li>
-                        <li class="reveal">Are priorities clear and sequenced?</li>
-                        <li class="reveal">Are metrics owned by specific leaders?</li>
-                    </ul>
-                    <div class="slide-links reveal">
-                        <a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
-                    </div>
-                </div>
-                <div class="col-image reveal">
-                    <img src="assets/title-meeting4.png" alt="1HAG">
-                </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 175)</span>
-    </section>
-
-    <!-- =============================================
-         SLIDE 9: QHAG + SPRINT LANES (25/200)
-         ============================================= -->
-    <section class="slide" aria-label="QHAG + Sprint Lanes">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
-                    <h1 class="slide-title reveal">QHAG + 13-Week Sprint Lanes</h1>
-                    <ul class="talking-points">
-                        <li class="reveal">Set 3-5 priorities for this quarter</li>
-                        <li class="reveal">Build weekly milestones for each priority</li>
-                        <li class="reveal">Binary deliverables per week: done or not done</li>
-                    </ul>
-                    <p class="reveal" style="font-size: var(--body-size); color: var(--text-secondary); margin-top: var(--element-gap);">Add your Sprint Lanes to Mural for weekly tracking.</p>
-                    <div class="slide-links reveal">
-                        <a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener" class="link-article">Article</a>
-                        <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
-                    </div>
-                </div>
-                <div class="col-image reveal">
-                    <img src="assets/title-meeting4.png" alt="QHAG + Sprint Lanes">
-                </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 200)</span>
-    </section>
-
-    <!-- =============================================
-         SLIDE 10: PERSONAL REVIEW (5/205)
+         SLIDE 14: PERSONAL REVIEW (4/289)
+         Personal wrap-up block, 5:45-6:00 PM (15 min total
+         across this slide through One Phrase Close).
          ============================================= -->
     <section class="slide" aria-label="Personal Review">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <h1 class="slide-title reveal">Personal Review</h1>
-                    <p class="slide-subtitle reveal">5 minutes. Work alone.</p>
+                    <p class="slide-subtitle reveal">4 minutes. Work alone. Personal wrap-up, 5:45 to 6:00 PM.</p>
                     <ul class="talking-points reveal">
                         <li>What are your key takeaways from today?</li>
                         <li>What commitments are you making?</li>
@@ -374,19 +643,21 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 205)</span>
+        <span class="time-indicator">(4 min / 289)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 11: SHARE CONCLUSIONS (10/215)
+         SLIDE 15: SHARE CONCLUSIONS (2/291)
+         Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Share Your Conclusions">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <h1 class="slide-title reveal">Share Your Conclusions</h1>
+                    <p class="slide-subtitle reveal">Personal wrap-up. Brief share.</p>
                     <ul class="talking-points reveal">
-                        <li>5 minutes each</li>
+                        <li>Brief share around the room</li>
                         <li>Present your key takeaways</li>
                         <li>State your OBT for next month</li>
                         <li>What problem does it solve?</li>
@@ -398,11 +669,12 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 215)</span>
+        <span class="time-indicator">(2 min / 291)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 12: HOMEWORK (5/220)
+         SLIDE 16: HOMEWORK (2/293)
+         Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Homework">
         <div class="slide-content">
@@ -457,11 +729,12 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 220)</span>
+        <span class="time-indicator">(2 min / 293)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 13: HOUSEKEEPING (5/225)
+         SLIDE 17: HOUSEKEEPING (2/295)
+         Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Housekeeping">
         <div class="slide-content">
@@ -483,12 +756,12 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 225)</span>
+        <span class="time-indicator">(2 min / 295)</span>
     </section>
 
-    
     <!-- =============================================
-         SLIDE: FEEDBACK (+3 min)
+         SLIDE 18: FEEDBACK (3/298)
+         Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Feedback">
         <div class="slide-content">
@@ -508,17 +781,19 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(3 min / 228)</span>
+        <span class="time-indicator">(3 min / 298)</span>
     </section>
 
     <!-- =============================================
-         SLIDE 14: ONE PHRASE CLOSE (15/240)
+         SLIDE 19: ONE PHRASE CLOSE (2/300)
+         Closes the 15-minute personal wrap-up at 6:00 PM.
          ============================================= -->
     <section class="slide" aria-label="One Phrase Close">
         <div class="slide-content">
             <div class="two-col">
                 <div class="col-text">
                     <h1 class="slide-title reveal">One Phrase Close</h1>
+                    <p class="slide-subtitle reveal">Personal wrap-up. Ends at 6:00 PM.</p>
                     <p class="close-instruction reveal">5 words or less.</p>
                     <p class="close-question reveal">How do you feel right now?</p>
                 </div>
@@ -528,7 +803,7 @@
             </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(12 min / 240)</span>
+        <span class="time-indicator">(2 min / 300)</span>
     </section>
 
     <script>

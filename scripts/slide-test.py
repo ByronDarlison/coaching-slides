@@ -192,6 +192,14 @@ def check_cohort_generic(html: str) -> list[str]:
         scrubbed,
         flags=re.DOTALL,
     )
+    # Published teaching examples (aria-label "Sample ...") may quote the
+    # article's own dates. Those are not this cohort's calendar.
+    scrubbed = re.sub(
+        r'<section class="slide"[^>]*aria-label="Sample [^"]*"[^>]*>.*?</section>',
+        "",
+        scrubbed,
+        flags=re.DOTALL,
+    )
     for pattern, desc in COHORT_PATTERNS:
         for m in re.finditer(pattern, scrubbed):
             start = max(0, m.start() - 25)
