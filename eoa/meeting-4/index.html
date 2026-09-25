@@ -70,6 +70,23 @@
         .close-instruction { font-size: var(--h3-size); font-weight: 500; color: var(--accent-green); margin-top: var(--content-gap); }
         .slide-footer { position: absolute; bottom: clamp(12px, 2vh, 24px); left: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 400; color: var(--text-muted); }
         .time-indicator { position: absolute; bottom: clamp(12px, 2vh, 24px); right: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 500; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+        .slide-content.sample { justify-content: flex-start; padding-top: clamp(1.1rem, 2.4vh, 1.8rem); padding-bottom: clamp(2.4rem, 4vh, 3.2rem); padding-left: clamp(1.25rem, 3vw, 2.75rem); padding-right: clamp(1.25rem, 3vw, 2.75rem); }
+        .slide-content.sample .slide-title { margin-bottom: 0.2rem; }
+        .slide-content.sample .slide-subtitle { margin-bottom: 0.45rem; }
+        .sample-kicker { font-size: var(--small-size); font-weight: 600; color: var(--accent-blue); margin: 0.55rem 0 0.15rem; }
+        .sample-statement { font-size: var(--body-size); color: var(--text-primary); margin-bottom: 0.35rem; }
+        .sample-table { width: 100%; border-collapse: collapse; font-size: clamp(0.72rem, 1.15vw, 0.92rem); }
+        .sample-table th { font-size: clamp(0.62rem, 0.95vw, 0.78rem); font-weight: 600; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.03em; text-align: left; padding: 0.28rem 0.45rem; border-bottom: 2px solid var(--accent-blue); vertical-align: bottom; }
+        .sample-table td { padding: 0.28rem 0.45rem; border-bottom: 1px solid var(--border-light); color: var(--text-primary); vertical-align: top; }
+        .sample-table td:first-child { font-weight: 600; color: var(--accent-blue); }
+        .sample-table tr:last-child td { border-bottom: none; }
+        .sample-table.dense th, .sample-table.dense td { padding: 0.16rem 0.38rem; font-size: clamp(0.64rem, 0.95vw, 0.78rem); }
+        .sample-table.quote td { color: var(--text-primary); font-weight: 500; font-style: italic; }
+        @media (max-height: 800px) {
+            .slide-content.sample { padding-top: 0.7rem; padding-bottom: 2rem; }
+            .sample-table th, .sample-table td { padding: 0.14rem 0.32rem; font-size: 0.68rem; }
+            .sample-kicker, .sample-statement { margin-top: 0.25rem; margin-bottom: 0.1rem; }
+        }
         .reveal { opacity: 0; transform: translateY(20px); transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo); }
         .slide.visible .reveal { opacity: 1; transform: translateY(0); }
         .reveal:nth-child(1) { transition-delay: 0.05s; } .reveal:nth-child(2) { transition-delay: 0.12s; } .reveal:nth-child(3) { transition-delay: 0.19s; }
@@ -316,9 +333,212 @@
     </section>
 
     <!-- =============================================
-         SLIDE 9: PLANNING CASCADE PRESENTATIONS (55/285)
+         SLIDE 9: SAMPLE 3HAG (0/230)
+         Brightwater Filtration example. Intro to the
+         4:50-5:45 member presentations. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample 3HAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 3HAG</h1>
+            <p class="slide-subtitle reveal">Brightwater Filtration. Three years ending December 31, 2028.</p>
+            <p class="sample-statement reveal"><strong>3HAG statement.</strong> The filtration partner facilities call first when clean water cannot fail.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$18,000,000</td></tr>
+                    <tr><td>Profit margin</td><td>Priya Nair</td><td>14%</td></tr>
+                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$2,250,000 (about three months of base cost at the $18M run-rate)</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td></tr>
+                    <tr><td>Leads</td><td>Marcus Bell</td><td>1,440 / year (120 / month)</td></tr>
+                    <tr><td>Site surveys</td><td>Elena Cho</td><td>600 / year (50 / month)</td></tr>
+                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>360 / year (30 / month)</td></tr>
+                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>1,200 active accounts at year-end</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Key capabilities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Capability we must build inside the company</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>A repeatable outbound and referral engine that fills the pipeline without the founder.</td></tr>
+                    <tr><td>2</td><td>A two-day install standard any certified crew can hit.</td></tr>
+                    <tr><td>3</td><td>A recurring-service platform that renews itself and flags at-risk accounts early.</td></tr>
+                    <tr><td>4</td><td>A regional depot model that puts a technician within two hours of every account.</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Known for</p>
+            <table class="sample-table quote reveal">
+                <thead>
+                    <tr><th>In the customer's words</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>"They never let our water go down, and we barely have to think about it."</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 10: SAMPLE 1HAG (0/230)
+         Brightwater example. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample 1HAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 1HAG</h1>
+            <p class="slide-subtitle reveal">Brightwater Filtration. One year ending December 31, 2026.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$7,200,000</td></tr>
+                    <tr><td>Profit margin</td><td>Priya Nair</td><td>11%</td></tr>
+                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$850,000</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td></tr>
+                    <tr><td>Leads</td><td>Marcus Bell</td><td>720 / year (60 / month)</td></tr>
+                    <tr><td>Site surveys</td><td>Elena Cho</td><td>300 / year (25 / month)</td></tr>
+                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>216 / year (18 / month)</td></tr>
+                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>520 active accounts at year-end</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Annual company priorities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Priority</th><th>Owner</th><th>Measure of success</th><th>Connection to 3HAG</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Stand up the outbound and referral engine</td>
+                        <td>Marcus Bell</td>
+                        <td>Improve qualified leads from 30 to 60 a month (half from referral) by December 31, 2026</td>
+                        <td>A repeatable outbound and referral engine that fills the pipeline without the founder.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Certify crews to the two-day install standard</td>
+                        <td>Elena Cho</td>
+                        <td>Improve two-day install completion from 60% to 90% across three crews by December 31, 2026</td>
+                        <td>A two-day install standard any certified crew can hit.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Launch the recurring-service platform</td>
+                        <td>Priya Nair</td>
+                        <td>Improve accounts on auto-renew from 40% to 95% (churn under 5%) by December 31, 2026</td>
+                        <td>A recurring-service platform that renews itself and flags at-risk accounts early.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 11: SAMPLE QHAG (0/230)
+         Brightwater example. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample QHAG">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample QHAG</h1>
+            <p class="slide-subtitle reveal">Brightwater Filtration. Quarter ending September 30, 2026.</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>Area</th><th>Owner</th><th>Month 1 · Jul</th><th>Month 2 · Aug</th><th>Month 3 · Sep</th><th>Quarter total</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$520,000</td><td>$560,000</td><td>$600,000</td><td>$1,680,000</td></tr>
+                    <tr><td>Profit margin</td><td>Priya Nair</td><td>9%</td><td>10%</td><td>11%</td><td>10% (blended)</td></tr>
+                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$610,000</td><td>$640,000</td><td>$700,000</td><td>$700,000 (end of quarter)</td></tr>
+                    <tr><td>Widgets (X)</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>Leads</td><td>Marcus Bell</td><td>45</td><td>50</td><td>55</td><td>150</td></tr>
+                    <tr><td>Site surveys</td><td>Elena Cho</td><td>22</td><td>25</td><td>28</td><td>75</td></tr>
+                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>20</td><td>22</td><td>24</td><td>66</td></tr>
+                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>415</td><td>445</td><td>480</td><td>480 (end of quarter)</td></tr>
+                </tbody>
+            </table>
+            <p class="sample-kicker reveal">Quarterly company priorities</p>
+            <table class="sample-table reveal">
+                <thead>
+                    <tr><th>#</th><th>Priority</th><th>Owner</th><th>Measure of success</th><th>Connection to 1HAG</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ship the outbound sequences and book referral partners</td>
+                        <td>Marcus Bell</td>
+                        <td>Improve qualified leads from 35 to 55 a month (20 from referral) by September 30, 2026</td>
+                        <td>Stand up the outbound and referral engine.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Certify crews 2 and 3 to the two-day standard</td>
+                        <td>Elena Cho</td>
+                        <td>Improve two-day install completion from 70% to 90% by September 30, 2026 (crews 2 and 3 pass the two-day audit)</td>
+                        <td>Certify crews to the two-day install standard.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Go live with auto-renew on the service platform</td>
+                        <td>Priya Nair</td>
+                        <td>Improve accounts on auto-renew from 180 to 300 by September 30, 2026</td>
+                        <td>Launch the recurring-service platform.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 12: SAMPLE 13-WEEK SPRINT LANES (0/230)
+         Brightwater example. Not additive.
+         ============================================= -->
+    <section class="slide" aria-label="Sample 13-Week Sprint Lanes">
+        <div class="slide-content sample">
+            <h1 class="slide-title reveal">Sample 13-Week Sprint Lanes</h1>
+            <p class="slide-subtitle reveal">Brightwater Filtration. Quarter ending September 30, 2026. One binary deliverable per priority per week.</p>
+            <table class="sample-table dense reveal">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Widget metric: active accounts<br>owner: Elena Cho</th>
+                        <th>P1 · Outbound &amp; referral engine<br>owner: Marcus Bell</th>
+                        <th>P2 · Two-day install standard<br>owner: Elena Cho</th>
+                        <th>P3 · Auto-renew service platform<br>owner: Priya Nair</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>W1 · Jul 6</td><td>417</td><td>Sequence copy drafted</td><td>Two-day standard doc finalized</td><td>Platform vendor confirmed</td></tr>
+                    <tr><td>W2 · Jul 13</td><td>420</td><td>CRM sequences built</td><td>Crew 2 trained on the standard</td><td>Account data migrated to platform</td></tr>
+                    <tr><td>W3 · Jul 20</td><td>424</td><td>First 200 prospects loaded</td><td>Crew 2 shadow install done</td><td>Auto-renew flow configured</td></tr>
+                    <tr><td>W4 · Jul 27</td><td>428</td><td>Sequences live to segment A</td><td>Crew 2 first solo two-day install</td><td>25-account auto-renew pilot live</td></tr>
+                    <tr><td>W5 · Aug 3</td><td>432</td><td>Referral partner list built</td><td>Crew 2 audit passed</td><td>Pilot billing verified</td></tr>
+                    <tr><td>W6 · Aug 10</td><td>437</td><td>5 referral partners pitched</td><td>Crew 3 training scheduled</td><td>At-risk flag rule built</td></tr>
+                    <tr><td>W7 · Aug 17</td><td>442</td><td>3 partner agreements signed</td><td>Crew 3 trained on the standard</td><td>100 accounts migrated</td></tr>
+                    <tr><td>W8 · Aug 24</td><td>448</td><td>Segment B loaded and live</td><td>Crew 3 shadow install done</td><td>Renewal emails automated</td></tr>
+                    <tr><td>W9 · Aug 31</td><td>454</td><td>Booking rate reviewed, copy v2 live</td><td>Crew 3 first solo two-day install</td><td>200 accounts migrated</td></tr>
+                    <tr><td>W10 · Sep 7</td><td>460</td><td>40 qualified leads hit for the month</td><td>Install-time tracker live</td><td>Churn dashboard live</td></tr>
+                    <tr><td>W11 · Sep 14</td><td>467</td><td>Referral intake form live</td><td>Crew 3 audit passed</td><td>At-risk outreach tested</td></tr>
+                    <tr><td>W12 · Sep 21</td><td>473</td><td>50 qualified leads hit for the month</td><td>90% two-day rate measured</td><td>275 accounts migrated</td></tr>
+                    <tr><td>W13 · Sep 28</td><td>480</td><td>55 leads, 20 from referral, confirmed</td><td>September install audit signed off</td><td>300 accounts on auto-renew</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
+        <span class="time-indicator">(0 min / 230)</span>
+    </section>
+
+    <!-- =============================================
+         SLIDE 13: PLANNING CASCADE PRESENTATIONS (55/285)
          4:50-5:45 PM. 5 members, about 11 minutes each.
-         Byron coaches inside each turn.
          ============================================= -->
     <section class="slide" aria-label="Planning Cascade">
         <div class="slide-content">
@@ -329,7 +549,7 @@
                     <p class="slide-subtitle reveal">About 11 minutes each. 5 members. 4:50 to 5:45 PM.</p>
                     <ul class="talking-points">
                         <li class="reveal">Each member presents their own cascade: 3HAG, then 1HAG, then QHAG + 13-Week Sprint Lanes</li>
-                        <li class="reveal">Byron coaches inside each turn</li>
+                        <li class="reveal">Use the Brightwater Filtration samples as the pattern</li>
                         <li class="reveal">Keep one thread: the 3-year goal, the annual plan, and this quarter's sprint lanes</li>
                     </ul>
                     <div class="slide-links reveal">
@@ -347,7 +567,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 10: PERSONAL REVIEW (4/289)
+         SLIDE 14: PERSONAL REVIEW (4/289)
          Personal wrap-up block, 5:45-6:00 PM (15 min total
          across this slide through One Phrase Close).
          ============================================= -->
@@ -379,7 +599,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 11: SHARE CONCLUSIONS (2/291)
+         SLIDE 15: SHARE CONCLUSIONS (2/291)
          Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Share Your Conclusions">
@@ -405,7 +625,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 12: HOMEWORK (2/293)
+         SLIDE 16: HOMEWORK (2/293)
          Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Homework">
@@ -465,7 +685,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 13: HOUSEKEEPING (2/295)
+         SLIDE 17: HOUSEKEEPING (2/295)
          Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Housekeeping">
@@ -492,7 +712,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 14: FEEDBACK (3/298)
+         SLIDE 18: FEEDBACK (3/298)
          Inside the 15-minute personal wrap-up.
          ============================================= -->
     <section class="slide" aria-label="Feedback">
@@ -517,7 +737,7 @@
     </section>
 
     <!-- =============================================
-         SLIDE 15: ONE PHRASE CLOSE (2/300)
+         SLIDE 19: ONE PHRASE CLOSE (2/300)
          Closes the 15-minute personal wrap-up at 6:00 PM.
          ============================================= -->
     <section class="slide" aria-label="One Phrase Close">
