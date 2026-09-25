@@ -82,6 +82,25 @@
         .sample-table tr:last-child td { border-bottom: none; }
         .sample-table.dense th, .sample-table.dense td { padding: 0.16rem 0.38rem; font-size: clamp(0.64rem, 0.95vw, 0.78rem); }
         .sample-table.quote td { color: var(--text-primary); font-weight: 500; font-style: italic; }
+        .lane-chart { display: grid; grid-template-columns: minmax(118px, 1.25fr) repeat(13, minmax(0, 1fr)); width: 100%; border: 1px solid #ccd5df; background: #fff; color: #263746; font-size: clamp(0.58rem, 0.72vw, 0.7rem); line-height: 1.25; }
+        .lane-corner { grid-column: 1; grid-row: 1 / 3; background: #e9f0fa; border-right: 1px solid #ccd5df; border-bottom: 1px solid #ccd5df; padding: 0.4rem 0.45rem; display: flex; flex-direction: column; justify-content: center; gap: 0.12rem; }
+        .lane-corner strong { font-size: 0.82rem; font-weight: 600; }
+        .lane-corner span { font-size: 0.68rem; font-weight: 400; }
+        .lane-period { grid-column: 2 / 15; background: #e9f0fa; text-align: center; font-weight: 600; font-size: 0.78rem; padding: 0.28rem 0.2rem; border-bottom: 1px solid #ccd5df; }
+        .lane-week { background: #f4f6f8; text-align: center; font-weight: 600; padding: 0.18rem 0.08rem 0.22rem; border-left: 1px solid #ccd5df; border-bottom: 1px solid #ccd5df; }
+        .lane-week span { display: block; font-weight: 400; font-size: 0.92em; }
+        .lane-label { background: #f4f6f8; border-top: 1px solid #ccd5df; padding: 0.32rem 0.4rem; display: flex; flex-direction: column; justify-content: center; gap: 0.12rem; min-width: 0; }
+        .lane-label strong { font-size: 0.74rem; font-weight: 600; line-height: 1.2; }
+        .lane-owner { font-size: 0.64rem; }
+        .lane-chip { align-self: flex-start; font-size: 0.58rem; font-weight: 600; line-height: 1.3; padding: 0.04rem 0.32rem; border-radius: 3px; }
+        .chip-referral { background: #E9F0FA; color: #1F3F6E; border: 1px solid #326AB6; }
+        .chip-close { background: #E4F3F0; color: #10594F; border: 1px solid #167568; }
+        .chip-review { background: #FBF1DB; color: #6D4B08; border: 1px solid #A57516; }
+        .lane-cell { border-left: 1px solid #ccd5df; border-top: 1px solid #ccd5df; padding: 0.18rem 0.16rem; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 600; min-width: 0; background: #fff; }
+        .lane-alt { background: #f9fbfd; }
+        .lane-vac { grid-column: span 2; flex-direction: column; background: #e8e8e8; font-weight: 600; }
+        .lane-vac small { display: block; font-weight: 400; font-size: 0.92em; }
+        .lane-plan { grid-row: span 3; flex-direction: column; background: #edf3eb; font-weight: 600; }
         @media (max-height: 800px) {
             .slide-content.sample { padding-top: 0.7rem; padding-bottom: 2rem; }
             .sample-table th, .sample-table td { padding: 0.14rem 0.32rem; font-size: 0.68rem; }
@@ -334,27 +353,28 @@
 
     <!-- =============================================
          SLIDE 9: SAMPLE 3HAG (0/230)
-         Brightwater Filtration example. Intro to the
+         Lark & Ledger example. Intro to the
          4:50-5:45 member presentations. Not additive.
+         Fictional bookkeeping studio. 3HAG revenue under $1M.
          ============================================= -->
     <section class="slide" aria-label="Sample 3HAG">
         <div class="slide-content sample">
             <h1 class="slide-title reveal">Sample 3HAG</h1>
-            <p class="slide-subtitle reveal">Brightwater Filtration. Three years ending December 31, 2028.</p>
-            <p class="sample-statement reveal"><strong>3HAG statement.</strong> The filtration partner facilities call first when clean water cannot fail.</p>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger, a founder-led bookkeeping studio. Three years ending 31 December 2028.</p>
+            <p class="sample-statement reveal"><strong>3HAG statement.</strong> The bookkeeping studio clinics call when the books have to be right and on time.</p>
             <table class="sample-table reveal">
                 <thead>
                     <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$18,000,000</td></tr>
-                    <tr><td>Profit margin</td><td>Priya Nair</td><td>14%</td></tr>
-                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$2,250,000 (about three months of base cost at the $18M run-rate)</td></tr>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$780,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>18%</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$96,000 (about three months of base cost)</td></tr>
                     <tr><td>Widgets (X)</td><td></td><td></td></tr>
-                    <tr><td>Leads</td><td>Marcus Bell</td><td>1,440 / year (120 / month)</td></tr>
-                    <tr><td>Site surveys</td><td>Elena Cho</td><td>600 / year (50 / month)</td></tr>
-                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>360 / year (30 / month)</td></tr>
-                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>1,200 active accounts at year-end</td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>180 / year (15 / month)</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>72 / year (6 / month)</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>24 / year (2 / month)</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>70 active clients at year-end</td></tr>
                 </tbody>
             </table>
             <p class="sample-kicker reveal">Key capabilities</p>
@@ -363,10 +383,10 @@
                     <tr><th>#</th><th>Capability we must build inside the company</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>1</td><td>A repeatable outbound and referral engine that fills the pipeline without the founder.</td></tr>
-                    <tr><td>2</td><td>A two-day install standard any certified crew can hit.</td></tr>
-                    <tr><td>3</td><td>A recurring-service platform that renews itself and flags at-risk accounts early.</td></tr>
-                    <tr><td>4</td><td>A regional depot model that puts a technician within two hours of every account.</td></tr>
+                    <tr><td>1</td><td>A referral engine that fills the pipeline without the founder chasing every lead.</td></tr>
+                    <tr><td>2</td><td>A close calendar any bookkeeper can hit in five business days.</td></tr>
+                    <tr><td>3</td><td>A monthly client review that flags cash issues before the owner asks.</td></tr>
+                    <tr><td>4</td><td>A playbook that makes a new bookkeeper useful in 30 days.</td></tr>
                 </tbody>
             </table>
             <p class="sample-kicker reveal">Known for</p>
@@ -375,7 +395,7 @@
                     <tr><th>In the customer's words</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>"They never let our water go down, and we barely have to think about it."</td></tr>
+                    <tr><td>"They keep the books clean, and we always know where the cash stands."</td></tr>
                 </tbody>
             </table>
         </div>
@@ -385,25 +405,25 @@
 
     <!-- =============================================
          SLIDE 10: SAMPLE 1HAG (0/230)
-         Brightwater example. Not additive.
+         Lark & Ledger example. Not additive.
          ============================================= -->
     <section class="slide" aria-label="Sample 1HAG">
         <div class="slide-content sample">
             <h1 class="slide-title reveal">Sample 1HAG</h1>
-            <p class="slide-subtitle reveal">Brightwater Filtration. One year ending December 31, 2026.</p>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. One year ending 31 December 2026.</p>
             <table class="sample-table reveal">
                 <thead>
                     <tr><th>Area</th><th>Owner</th><th>Target</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$7,200,000</td></tr>
-                    <tr><td>Profit margin</td><td>Priya Nair</td><td>11%</td></tr>
-                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$850,000</td></tr>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$360,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>15%</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$42,000</td></tr>
                     <tr><td>Widgets (X)</td><td></td><td></td></tr>
-                    <tr><td>Leads</td><td>Marcus Bell</td><td>720 / year (60 / month)</td></tr>
-                    <tr><td>Site surveys</td><td>Elena Cho</td><td>300 / year (25 / month)</td></tr>
-                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>216 / year (18 / month)</td></tr>
-                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>520 active accounts at year-end</td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>96 / year (8 / month)</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>48 / year (4 / month)</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>12 / year (1 / month)</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>36 active clients at year-end</td></tr>
                 </tbody>
             </table>
             <p class="sample-kicker reveal">Annual company priorities</p>
@@ -414,24 +434,24 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Stand up the outbound and referral engine</td>
-                        <td>Marcus Bell</td>
-                        <td>Improve qualified leads from 30 to 60 a month (half from referral) by December 31, 2026</td>
-                        <td>A repeatable outbound and referral engine that fills the pipeline without the founder.</td>
+                        <td>Stand up a referral and intro engine</td>
+                        <td>Maya Chen</td>
+                        <td>Improve qualified inquiries from 4 to 8 a month (half from referral) by 31 December 2026</td>
+                        <td>A referral engine that fills the pipeline without the founder chasing every lead.</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Certify crews to the two-day install standard</td>
-                        <td>Elena Cho</td>
-                        <td>Improve two-day install completion from 60% to 90% across three crews by December 31, 2026</td>
-                        <td>A two-day install standard any certified crew can hit.</td>
+                        <td>Put the five-day close on the whole book</td>
+                        <td>Lena Ortiz</td>
+                        <td>Improve on-time monthly closes from 55% to 90% by 31 December 2026</td>
+                        <td>A close calendar any bookkeeper can hit in five business days.</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Launch the recurring-service platform</td>
-                        <td>Priya Nair</td>
-                        <td>Improve accounts on auto-renew from 40% to 95% (churn under 5%) by December 31, 2026</td>
-                        <td>A recurring-service platform that renews itself and flags at-risk accounts early.</td>
+                        <td>Launch the monthly client review</td>
+                        <td>Priya Shah</td>
+                        <td>Improve clients on a written monthly review from 20% to 90% by 31 December 2026</td>
+                        <td>A monthly client review that flags cash issues before the owner asks.</td>
                     </tr>
                 </tbody>
             </table>
@@ -442,25 +462,25 @@
 
     <!-- =============================================
          SLIDE 11: SAMPLE QHAG (0/230)
-         Brightwater example. Not additive.
+         Lark & Ledger example. Not additive.
          ============================================= -->
     <section class="slide" aria-label="Sample QHAG">
         <div class="slide-content sample">
             <h1 class="slide-title reveal">Sample QHAG</h1>
-            <p class="slide-subtitle reveal">Brightwater Filtration. Quarter ending September 30, 2026.</p>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. Quarter ending 30 September 2026.</p>
             <table class="sample-table reveal">
                 <thead>
                     <tr><th>Area</th><th>Owner</th><th>Month 1 · Jul</th><th>Month 2 · Aug</th><th>Month 3 · Sep</th><th>Quarter total</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Revenue</td><td>Marcus Bell</td><td>$520,000</td><td>$560,000</td><td>$600,000</td><td>$1,680,000</td></tr>
-                    <tr><td>Profit margin</td><td>Priya Nair</td><td>9%</td><td>10%</td><td>11%</td><td>10% (blended)</td></tr>
-                    <tr><td>Cash</td><td>Tom Alvarez</td><td>$610,000</td><td>$640,000</td><td>$700,000</td><td>$700,000 (end of quarter)</td></tr>
+                    <tr><td>Revenue</td><td>Maya Chen</td><td>$24,000</td><td>$28,000</td><td>$32,000</td><td>$84,000</td></tr>
+                    <tr><td>Profit margin</td><td>Omar Hassan</td><td>13%</td><td>14%</td><td>15%</td><td>14% (blended)</td></tr>
+                    <tr><td>Cash</td><td>Priya Shah</td><td>$28,000</td><td>$32,000</td><td>$38,000</td><td>$38,000 (end of quarter)</td></tr>
                     <tr><td>Widgets (X)</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Leads</td><td>Marcus Bell</td><td>45</td><td>50</td><td>55</td><td>150</td></tr>
-                    <tr><td>Site surveys</td><td>Elena Cho</td><td>22</td><td>25</td><td>28</td><td>75</td></tr>
-                    <tr><td>Signed contracts</td><td>Marcus Bell</td><td>20</td><td>22</td><td>24</td><td>66</td></tr>
-                    <tr><td>Active service accounts the X</td><td>Elena Cho</td><td>415</td><td>445</td><td>480</td><td>480 (end of quarter)</td></tr>
+                    <tr><td>Inquiries</td><td>Maya Chen</td><td>6</td><td>7</td><td>9</td><td>22</td></tr>
+                    <tr><td>Discovery calls</td><td>Maya Chen</td><td>3</td><td>4</td><td>4</td><td>11</td></tr>
+                    <tr><td>New clients signed</td><td>Lena Ortiz</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+                    <tr><td>Active monthly clients the X</td><td>Lena Ortiz</td><td>28</td><td>31</td><td>34</td><td>34 (end of quarter)</td></tr>
                 </tbody>
             </table>
             <p class="sample-kicker reveal">Quarterly company priorities</p>
@@ -471,24 +491,24 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Ship the outbound sequences and book referral partners</td>
-                        <td>Marcus Bell</td>
-                        <td>Improve qualified leads from 35 to 55 a month (20 from referral) by September 30, 2026</td>
-                        <td>Stand up the outbound and referral engine.</td>
+                        <td>Ship the intro sequence and book three referral partners</td>
+                        <td>Maya Chen</td>
+                        <td>Improve qualified inquiries from 4 to 9 a month (3 from referral) by 30 September 2026</td>
+                        <td>Stand up a referral and intro engine.</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Certify crews 2 and 3 to the two-day standard</td>
-                        <td>Elena Cho</td>
-                        <td>Improve two-day install completion from 70% to 90% by September 30, 2026 (crews 2 and 3 pass the two-day audit)</td>
-                        <td>Certify crews to the two-day install standard.</td>
+                        <td>Move the current book onto the five-day close</td>
+                        <td>Lena Ortiz</td>
+                        <td>Improve on-time closes from 65% to 90% by 30 September 2026</td>
+                        <td>Put the five-day close on the whole book.</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Go live with auto-renew on the service platform</td>
-                        <td>Priya Nair</td>
-                        <td>Improve accounts on auto-renew from 180 to 300 by September 30, 2026</td>
-                        <td>Launch the recurring-service platform.</td>
+                        <td>Send the monthly review note across the book</td>
+                        <td>Priya Shah</td>
+                        <td>Improve clients on a written review from 8 to 24 by 30 September 2026</td>
+                        <td>Launch the monthly client review.</td>
                     </tr>
                 </tbody>
             </table>
@@ -499,38 +519,66 @@
 
     <!-- =============================================
          SLIDE 12: SAMPLE 13-WEEK SPRINT LANES (0/230)
-         Brightwater example. Not additive.
+         Lark & Ledger example. Weeks are columns. Not additive.
          ============================================= -->
     <section class="slide" aria-label="Sample 13-Week Sprint Lanes">
         <div class="slide-content sample">
             <h1 class="slide-title reveal">Sample 13-Week Sprint Lanes</h1>
-            <p class="slide-subtitle reveal">Brightwater Filtration. Quarter ending September 30, 2026. One binary deliverable per priority per week.</p>
-            <table class="sample-table dense reveal">
-                <thead>
-                    <tr>
-                        <th>Week</th>
-                        <th>Widget metric: active accounts<br>owner: Elena Cho</th>
-                        <th>P1 · Outbound &amp; referral engine<br>owner: Marcus Bell</th>
-                        <th>P2 · Two-day install standard<br>owner: Elena Cho</th>
-                        <th>P3 · Auto-renew service platform<br>owner: Priya Nair</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>W1 · Jul 6</td><td>417</td><td>Sequence copy drafted</td><td>Two-day standard doc finalized</td><td>Platform vendor confirmed</td></tr>
-                    <tr><td>W2 · Jul 13</td><td>420</td><td>CRM sequences built</td><td>Crew 2 trained on the standard</td><td>Account data migrated to platform</td></tr>
-                    <tr><td>W3 · Jul 20</td><td>424</td><td>First 200 prospects loaded</td><td>Crew 2 shadow install done</td><td>Auto-renew flow configured</td></tr>
-                    <tr><td>W4 · Jul 27</td><td>428</td><td>Sequences live to segment A</td><td>Crew 2 first solo two-day install</td><td>25-account auto-renew pilot live</td></tr>
-                    <tr><td>W5 · Aug 3</td><td>432</td><td>Referral partner list built</td><td>Crew 2 audit passed</td><td>Pilot billing verified</td></tr>
-                    <tr><td>W6 · Aug 10</td><td>437</td><td>5 referral partners pitched</td><td>Crew 3 training scheduled</td><td>At-risk flag rule built</td></tr>
-                    <tr><td>W7 · Aug 17</td><td>442</td><td>3 partner agreements signed</td><td>Crew 3 trained on the standard</td><td>100 accounts migrated</td></tr>
-                    <tr><td>W8 · Aug 24</td><td>448</td><td>Segment B loaded and live</td><td>Crew 3 shadow install done</td><td>Renewal emails automated</td></tr>
-                    <tr><td>W9 · Aug 31</td><td>454</td><td>Booking rate reviewed, copy v2 live</td><td>Crew 3 first solo two-day install</td><td>200 accounts migrated</td></tr>
-                    <tr><td>W10 · Sep 7</td><td>460</td><td>40 qualified leads hit for the month</td><td>Install-time tracker live</td><td>Churn dashboard live</td></tr>
-                    <tr><td>W11 · Sep 14</td><td>467</td><td>Referral intake form live</td><td>Crew 3 audit passed</td><td>At-risk outreach tested</td></tr>
-                    <tr><td>W12 · Sep 21</td><td>473</td><td>50 qualified leads hit for the month</td><td>90% two-day rate measured</td><td>275 accounts migrated</td></tr>
-                    <tr><td>W13 · Sep 28</td><td>480</td><td>55 leads, 20 from referral, confirmed</td><td>September install audit signed off</td><td>300 accounts on auto-renew</td></tr>
-                </tbody>
-            </table>
+            <p class="slide-subtitle reveal">Lark &amp; Ledger. 29 June to 27 September 2026. Weeks left to right. One deliverable per priority per week.</p>
+            <div class="lane-chart reveal" role="img" aria-label="Lark and Ledger sprint lanes. Weeks are columns. Priority lanes are rows.">
+                <div class="lane-corner"><strong>Q3 work</strong><span>Lark &amp; Ledger</span></div>
+                <div class="lane-period">29 June to 27 September 2026</div>
+                <div class="lane-week">W1<span>05 Jul</span></div>
+                <div class="lane-week">W2<span>12 Jul</span></div>
+                <div class="lane-week">W3<span>19 Jul</span></div>
+                <div class="lane-week">W4<span>26 Jul</span></div>
+                <div class="lane-week">W5<span>02 Aug</span></div>
+                <div class="lane-week">W6<span>09 Aug</span></div>
+                <div class="lane-week">W7<span>16 Aug</span></div>
+                <div class="lane-week">W8<span>23 Aug</span></div>
+                <div class="lane-week">W9<span>30 Aug</span></div>
+                <div class="lane-week">W10<span>06 Sep</span></div>
+                <div class="lane-week">W11<span>13 Sep</span></div>
+                <div class="lane-week">W12<span>20 Sep</span></div>
+                <div class="lane-week">W13<span>27 Sep</span></div>
+                <div class="lane-label"><strong>Referral engine</strong><span class="lane-owner">Maya Chen</span><span class="lane-chip chip-referral">Referral</span></div>
+                <div class="lane-cell">Partner list drafted</div>
+                <div class="lane-cell">Intro notes sent</div>
+                <div class="lane-cell">First partner call booked</div>
+                <div class="lane-cell">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell">Three partners pitched</div>
+                <div class="lane-cell">One agreement signed</div>
+                <div class="lane-cell">Intro sequence live</div>
+                <div class="lane-cell">Referral form live</div>
+                <div class="lane-cell">Eight inquiries hit</div>
+                <div class="lane-cell">Nine inquiries confirmed</div>
+                <div class="lane-cell lane-plan">Quarterly<br>planning</div>
+                <div class="lane-label"><strong>Five-day close</strong><span class="lane-owner">Lena Ortiz</span><span class="lane-chip chip-close">Close</span></div>
+                <div class="lane-cell lane-alt">Close checklist drafted</div>
+                <div class="lane-cell lane-alt">Book mapped to calendar</div>
+                <div class="lane-cell lane-alt">Two clients closed in five days</div>
+                <div class="lane-cell lane-alt">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell lane-alt">Half the book on calendar</div>
+                <div class="lane-cell lane-alt">Late-close list cleared</div>
+                <div class="lane-cell lane-alt">On-time rate measured</div>
+                <div class="lane-cell lane-alt">80% on time</div>
+                <div class="lane-cell lane-alt">Exception log in use</div>
+                <div class="lane-cell lane-alt">90% on time signed off</div>
+                <div class="lane-label"><strong>Monthly review</strong><span class="lane-owner">Priya Shah</span><span class="lane-chip chip-review">Review</span></div>
+                <div class="lane-cell">Review note outline</div>
+                <div class="lane-cell">Cash line chosen</div>
+                <div class="lane-cell">Pilot note for five clients</div>
+                <div class="lane-cell">-</div>
+                <div class="lane-cell lane-vac">Vacation: Maya<small>27 Jul to 9 Aug</small></div>
+                <div class="lane-cell">Pilot notes sent</div>
+                <div class="lane-cell">Feedback folded in</div>
+                <div class="lane-cell">Template locked</div>
+                <div class="lane-cell">15 clients on the note</div>
+                <div class="lane-cell">20 clients on the note</div>
+                <div class="lane-cell">24 clients on the note</div>
+            </div>
         </div>
         <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
         <span class="time-indicator">(0 min / 230)</span>
@@ -549,7 +597,7 @@
                     <p class="slide-subtitle reveal">About 11 minutes each. 5 members. 4:50 to 5:45 PM.</p>
                     <ul class="talking-points">
                         <li class="reveal">Each member presents their own cascade: 3HAG, then 1HAG, then QHAG + 13-Week Sprint Lanes</li>
-                        <li class="reveal">Use the Brightwater Filtration samples as the pattern</li>
+                        <li class="reveal">Use the Lark &amp; Ledger samples as the pattern</li>
                         <li class="reveal">Keep one thread: the 3-year goal, the annual plan, and this quarter's sprint lanes</li>
                     </ul>
                     <div class="slide-links reveal">
