@@ -80,6 +80,8 @@ coaching-slides/
 
 Read [`SLIDE-RULES.md`](SLIDE-RULES.md) before changing a deck and [`PACING.md`](PACING.md) before changing the coaching sequence.
 
+Visual appearance follows [`darlison/presentations/SLIDE-VISUAL-STANDARD.md`](https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/SLIDE-VISUAL-STANDARD.md) in ByronDarlison/ai-config.
+
 Run the structural checks from the repository root:
 
 ```bash
