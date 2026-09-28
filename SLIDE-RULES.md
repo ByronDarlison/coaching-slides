@@ -8,6 +8,8 @@ Visual appearance follows the house standard in [ByronDarlison/ai-config](https:
 
 This file remains the content and session structure standard for monthly Metronomics decks. It covers blocks, badges, order, and timing.
 
+New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/). EOA Meeting 4 is the first deck on that shell.
+
 ## Session Structure (three blocks, every session)
 
 1. **Review block** - Standing items confirmed every session. Single slide titled "Standing Review Block" with ✓ badge. Items join this block the month AFTER they are coached and finalized.

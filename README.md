@@ -66,7 +66,8 @@ coaching-slides/
 │   ├── owners-outcome-primer/
 │   └── meeting-1/ ... meeting-10/
 ├── shared/
-│   └── assets/
+│   ├── assets/
+│   └── shell/
 ├── scripts/
 ├── tests/
 ├── build_slideshows.py
@@ -81,6 +82,8 @@ coaching-slides/
 Read [`SLIDE-RULES.md`](SLIDE-RULES.md) before changing a deck and [`PACING.md`](PACING.md) before changing the coaching sequence.
 
 Visual appearance follows [`darlison/presentations/SLIDE-VISUAL-STANDARD.md`](https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/SLIDE-VISUAL-STANDARD.md) in ByronDarlison/ai-config.
+
+New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/). EOA Meeting 4 is the first deck on that shell.
 
 Run the structural checks from the repository root:
 
