@@ -1,0 +1,30 @@
+{
+  "playlist": "kickoff",
+  "title": "Metronomics Kickoff",
+  "unit_ids": [
+    "session-open",
+    "good-news",
+    "cohesive-question",
+    "owners-outcome",
+    "functional-accountability-chart",
+    "kffm",
+    "profit-x",
+    "core-purpose",
+    "core-values",
+    "bhag",
+    "3hag",
+    "1hag",
+    "qhag",
+    "aligned-priorities",
+    "meetings",
+    "cascade-3-key-messages",
+    "homework"
+  ],
+  "public_path": "metronomics/kickoff/",
+  "public_url": "https://byrondarlison.github.io/coaching-slides/metronomics/kickoff/",
+  "shell": [
+    "shell.css",
+    "shell.js",
+    "fonts/"
+  ]
+}
