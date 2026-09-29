@@ -97,14 +97,6 @@ button { font: inherit; }
   color: var(--ink);
 }
 
-.brand-line {
-  flex: 0 0 auto;
-  width: clamp(2.4rem, 4.2vw, 3.4rem);
-  height: 0.28rem;
-  margin-bottom: 0.35rem;
-  background: var(--blue);
-}
-
 .eyebrow {
   flex: 0 0 auto;
   color: var(--blue-deep);
@@ -569,7 +561,6 @@ body.dark-slide-controls .control-button:focus-visible {
 
 /* The menu button sits on the slide below 900px, where the 16:9 frame is not used. */
 @media (max-width: 899px) {
-  .brand-line,
   .eyebrow,
   .slide-title,
   .story-title {
