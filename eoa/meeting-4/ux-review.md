@@ -174,3 +174,11 @@ The referral capability, annual priority, and quarterly priority retain their so
 At 1280 pixels, cards, labels, arrows, and footer remain clear. On the phone, each row becomes a complete vertical sequence. Repeated horizon labels retain orientation. All six cards and final footer can be reached without horizontal clipping. No blocking visual issue was found.
 
 This follow-up does not independently reapprove the other 15 slides after intervening owner edits. No new universal playbook rule emerged: this is a presentation layout using the established cascade relationship.
+
+## Visual regression baseline repair, 30 September 2026
+
+The initial PR visual check failed on 34 slides across ten EOA decks. All 17 Meeting 4 references predated the approved redesign. The other 17 differences were Business Updates and Personal Review copy already present on main (source commits eae063e and 12c1049); no other EOA source file changed in this PR. Inspected representative CI pixel diffs and confirmed those historical changes.
+
+The baseline workflow now captures selected Linux reference candidates as an artifact for inspection. It no longer stages, commits, rebases, or pushes automatically. The previous README described a retired commit-marker auto-refresh behavior; it now documents the explicit review and commit route. Screenshot tolerances remain unchanged.
+
+Inspected all 17 Meeting 4 Linux screenshots and all 17 changed historical EOA screenshots from baseline run 36718996106. The replacement files match the approved layouts and the existing source. Removed the two obsolete Meeting 4 screenshot files for deleted slides. All other baseline files remain byte-identical. Full regression rerun follows this commit.
