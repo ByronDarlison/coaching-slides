@@ -75,7 +75,10 @@ New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/
 
 ## Footer
 
-- "darlison.com | Metronomics Coaching"
+- Follow the shared visual standard: darlison.com at bottom left and the program logo at bottom right.
+- EO Accelerator presentations use the EO Accelerator logo instead of the Metronomics logo on every slide, including the opening slide. Do not duplicate the logo in the opening slide body.
+- Metronomics presentations use the Metronomics logo. Do not use “Metronomics Coaching” footer text.
+- Preserve the logo proportions, trim surrounding asset whitespace in the layout, and use a legible light treatment on dark slides.
 
 ## Recurring Rebuilds
 

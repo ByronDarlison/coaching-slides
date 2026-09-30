@@ -1,0 +1,17 @@
+{
+  "standard": "ByronDarlison/ai-config#1209",
+  "standard_merge": "94b399da3aa175f74d362e79c1a3253e661d1f5d",
+  "delivery": "Existing HTML retained for linked resources and structured tables",
+  "shell_sha256": {
+    "shell.css": "9dd4b713e0fc20857af4634ed95c3062f9fd94f20fb17fbbc461f2b8dd0af2b0",
+    "shell.js": "08153dcc11e14f7a57da7907f6a5ed1d75f4739cc552c6c53677be3903ab549a"
+  },
+  "artwork": {
+    "shared-plan.png": "Reused approved kickoff-title.png from the standard",
+    "ai-walkthrough.png": {
+      "generator": "built-in image generation",
+      "reference": "Approved kickoff-title.png character style",
+      "prompt": "Two generic featureless grey rounded figures share a laptop demonstration at a table. Simple green workflow on screen, thin grey outlines, light grey fill, no text, logos, faces, gender cues or hair. Transparent background. Match approved generic character family."
+    }
+  }
+}
