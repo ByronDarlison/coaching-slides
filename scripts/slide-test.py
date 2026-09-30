@@ -25,6 +25,9 @@ import sys
 import urllib.request
 from pathlib import Path
 
+# Match a slide class token regardless of attribute order or layout classes.
+SLIDE_OPEN = r'<section\b(?=[^>]*\bclass="(?:[^"\s]+\s+)*slide(?:\s+[^"\s]+)*")'
+
 TIMEOUT_SECONDS = 6
 USER_AGENT = "slide-test/1.0"
 
@@ -150,7 +153,7 @@ def check_time_chain(html: str) -> tuple[int, list[str]]:
 def check_structure(html: str) -> tuple[int, list[str]]:
     issues: list[str] = []
     sections = re.findall(
-        r'<section class="slide"[^>]*>(.*?)</section>', html, re.DOTALL
+        SLIDE_OPEN + r'[^>]*>(.*?)</section>', html, re.DOTALL
     )
     if len(sections) < 3:
         issues.append(f"Only {len(sections)} slides (expected ≥3)")
@@ -187,7 +190,15 @@ def check_cohort_generic(html: str) -> list[str]:
     # per-cohort dates (Learning Day, next meeting, etc.) so those references
     # should not fail this check.
     scrubbed = re.sub(
-        r'<section class="slide"[^>]*aria-label="Housekeeping[^"]*"[^>]*>.*?</section>',
+        SLIDE_OPEN + r'(?=[^>]*aria-label="Housekeeping[^"]*")[^>]*>.*?</section>',
+        "",
+        scrubbed,
+        flags=re.DOTALL,
+    )
+    # Published teaching examples (aria-label "Sample ...") may quote the
+    # article's own dates. Those are not this cohort's calendar.
+    scrubbed = re.sub(
+        SLIDE_OPEN + r'(?=[^>]*aria-label="Sample [^"]*")[^>]*>.*?</section>',
         "",
         scrubbed,
         flags=re.DOTALL,
@@ -205,7 +216,7 @@ def check_homework_deadline(html: str) -> list[str]:
     issues: list[str] = []
     # Find every slide with aria-label containing "Homework" and check each.
     for m in re.finditer(
-        r'<section class="slide"[^>]*aria-label="Homework[^"]*"[^>]*>.*?</section>',
+        SLIDE_OPEN + r'(?=[^>]*aria-label="Homework[^"]*")[^>]*>.*?</section>',
         html,
         re.DOTALL,
     ):
@@ -267,7 +278,7 @@ def check_deliverable_links(html: str) -> tuple[list[str], int]:
     issues: list[str] = []
     pending_count = 0
     for m in re.finditer(
-        r'<section class="slide"[^>]*>(?:(?!</section>).)*?</section>',
+        SLIDE_OPEN + r'[^>]*>(?:(?!</section>).)*?</section>',
         html,
         re.DOTALL,
     ):
