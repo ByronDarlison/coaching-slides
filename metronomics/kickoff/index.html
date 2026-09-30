@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Single empty template unit. No session titles.">
+  <link rel="icon" href="data:,">
+  <title>Slides</title>
+  <link rel="preload" href="./fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./shell.css">
+</head>
+<body>
+  <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Open slide navigation" aria-expanded="false" aria-controls="slideSidebar">☰</button>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
+  <aside class="slide-sidebar" id="slideSidebar" aria-label="Slide navigation">
+    <header class="sidebar-head">
+    </header>
+    <nav class="sidebar-nav" id="sidebarNav" aria-label="Presentation slides"></nav>
+    <p class="sidebar-help">Arrow keys move. Press N for notes. Press F for full screen.<br>Press S to hide the sidebar.</p>
+  </aside>
+
+  <main id="presentation" aria-label="Slides">
+    <section class="slide" id="slide-1" data-group="" data-title="" data-unit="blank-template">
+      <div class="slide-content">
+        <div class="slide-stage title-follow">
+
+        </div>
+      </div>
+      <aside class="speaker-notes">
+        <p>Stub unit. Replace later.</p>
+      </aside>
+    </section>
+  </main>
+
+  <div class="controls" aria-label="Presentation controls">
+    <button class="control-button control-button--wide" id="sidebarDesktopToggle" type="button" aria-controls="slideSidebar" aria-expanded="true">Hide sidebar</button>
+    <button class="control-button" id="previousButton" type="button" aria-label="Previous slide">←</button>
+    <div class="control-count" id="controlCount" aria-live="polite">1 / 1</div>
+    <button class="control-button control-button--wide" id="fullscreenButton" type="button" aria-label="Enter full screen" aria-pressed="false">
+      <span aria-hidden="true">⛶</span>
+      <span id="fullscreenLabel">Full screen</span>
+    </button>
+    <button class="control-button" id="nextButton" type="button" aria-label="Next slide">→</button>
+  </div>
+
+  <aside class="notes-panel" id="notesPanel" aria-label="Speaker notes" aria-hidden="true">
+    <div class="notes-header">
+      <h2 id="notesTitle">Speaker notes</h2>
+      <button class="notes-close" id="notesClose" type="button" aria-label="Close speaker notes">×</button>
+    </div>
+    <div class="notes-body" id="notesBody"></div>
+  </aside>
+
+  <script src="./shell.js"></script>
+</body>
+</html>

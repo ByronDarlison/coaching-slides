@@ -1,0 +1,14 @@
+{
+  "playlist": "kickoff",
+  "title": "kickoff",
+  "unit_ids": [
+    "blank-template"
+  ],
+  "public_path": "metronomics/kickoff/",
+  "public_url": "https://byrondarlison.github.io/coaching-slides/metronomics/kickoff/",
+  "shell": [
+    "shell.css",
+    "shell.js",
+    "fonts/"
+  ]
+}
