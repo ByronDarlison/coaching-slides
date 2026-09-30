@@ -26,20 +26,13 @@ npm run test:one -- monthly/m6    # one deck only
 
 ## Updating baselines
 
-When a layout change is intentional (new slide, pattern deployment, added links block), put `[baseline-refresh]` anywhere in the push commit message. CI runs the test, sees the failure, sees the marker, and auto-captures + commits fresh Linux baselines in the same workflow run. One push, intent is explicit, the test still fails loudly on unintended regressions.
+When a layout change is intentional, capture candidate baselines on Linux using the manual `visual-baseline` workflow at the PR branch. The `decks` input accepts space-separated repository paths, for example `eoa/meeting-4`. Download the `visual-baseline-candidates` artifact and inspect the changed screenshots before copying the selected deck directories into `baselines/` and explicitly committing them. The workflow never commits or pushes.
 
 ```bash
-git commit -m "Add article links to Core Customer [baseline-refresh]"
-git push
+gh workflow run visual-baseline.yml --ref <pr-branch> -f decks='eoa/meeting-4'
 ```
 
-Without the marker, CI fails and uploads diff PNGs as an artifact — look at them, decide whether the change is intentional, then re-push with the marker (or fix the code).
-
-For manual/ad-hoc refreshes without a content commit:
-
-```bash
-gh workflow run visual-baseline.yml
-```
+A `[baseline-refresh]` commit marker does not update baselines. Regression CI continues to fail until reviewed reference images are committed.
 
 Local macOS runs are still useful for quick checks, but don't commit macOS baselines — they diverge from Linux Chromium by thousands of pixels per slide due to anti-aliasing differences.
 
