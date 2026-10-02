@@ -7,6 +7,7 @@
     constructor() {
       this.slides = Array.from(document.querySelectorAll(".slide"));
       this.currentSlide = 0;
+      document.body.classList.toggle("template-review", new URLSearchParams(location.search).get("review") === "template");
       this.wheelLocked = false;
       this.touchStartY = null;
       this.viewportSettling = false;
@@ -41,7 +42,7 @@
     goTo(index, smooth) {
       if (index < 0 || index >= this.slides.length) return;
       this.currentSlide = index;
-      this.slides[index].scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+      this.slides[index].scrollIntoView({ behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "instant", block: "start" });
       history.replaceState(null, "", "#slide-" + (index + 1));
       this.updateInterface();
     }
@@ -80,21 +81,35 @@
     setupIntersectionObserver() {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("visible");
-          const index = this.slides.indexOf(entry.target);
-          if (!this.viewportSettling && index >= 0 && entry.intersectionRatio >= 0.55) {
-            this.currentSlide = index;
-            history.replaceState(null, "", "#slide-" + (index + 1));
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, { threshold: 0.05 });
+      this.slides.forEach((slide) => observer.observe(slide));
+      let pending = false;
+      document.addEventListener("scroll", (event) => {
+        if (event.target instanceof Element && event.target.closest(".slide-sidebar, .notes-panel")) return;
+        if (pending || this.viewportSettling) return;
+        pending = true;
+        requestAnimationFrame(() => {
+          pending = false;
+          if (this.viewportSettling) return;
+          let selected = 0;
+          this.slides.forEach((slide, index) => {
+            if (slide.getBoundingClientRect().top <= window.innerHeight * 0.35) selected = index;
+          });
+          if (selected !== this.currentSlide) {
+            this.currentSlide = selected;
+            history.replaceState(null, "", "#slide-" + (selected + 1));
             this.updateInterface();
           }
         });
-      }, { threshold: [0.55, 0.85] });
-      this.slides.forEach((slide) => observer.observe(slide));
+      }, { passive: true, capture: true });
+      window.addEventListener("hashchange", () => this.goToHash());
     }
 
     setupKeyboardNavigation() {
       document.addEventListener("keydown", (event) => {
+        if (event.target.closest("input, textarea, select, [contenteditable=true]")) return;
         if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "PageDown" || event.key === " ") {
           event.preventDefault();
           this.next();
@@ -120,22 +135,26 @@
     }
 
     setupTouchNavigation() {
+      let start = null;
       document.addEventListener("touchstart", (event) => {
-        this.touchStartY = event.changedTouches[0].clientY;
+        start = event.changedTouches[0];
       }, { passive: true });
       document.addEventListener("touchend", (event) => {
-        if (this.touchStartY === null) return;
-        const distance = this.touchStartY - event.changedTouches[0].clientY;
-        this.touchStartY = null;
-        if (Math.abs(distance) < 48) return;
+        if (!start) return;
+        const dx = start.clientX - event.changedTouches[0].clientX;
+        const dy = start.clientY - event.changedTouches[0].clientY;
+        start = null;
         if (event.target.closest(".notes-panel, .slide-sidebar, .controls")) return;
-        if (distance > 0) this.next();
-        else this.previous();
+        // Vertical swipes scroll long mobile slides; horizontal swipes change slides.
+        if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 2) {
+          if (dx > 0) this.next(); else this.previous();
+        }
       }, { passive: true });
     }
 
     setupWheelNavigation() {
       document.addEventListener("wheel", (event) => {
+        if (window.matchMedia("(max-width: 899px), (max-height: 599px)").matches) return;
         if (this.wheelLocked || Math.abs(event.deltaY) < 24) return;
         if (this.notesPanel.classList.contains("open")) return;
         if (document.body.classList.contains("sidebar-open")) return;
@@ -163,7 +182,16 @@
     }
 
     setupFullscreen() {
-      window.addEventListener("resize", () => this.alignAfterResize());
+      let lastWidth = window.innerWidth;
+      window.addEventListener("resize", () => {
+        const width = window.innerWidth;
+        const reading = window.matchMedia("(max-width: 899px), (max-height: 599px)").matches;
+        const heightOnly = width === lastWidth;
+        lastWidth = width;
+        // Mobile browser toolbars change viewport height during ordinary reading.
+        if (reading && heightOnly && !document.fullscreenElement) return;
+        this.alignAfterResize();
+      });
       document.addEventListener("fullscreenchange", () => {
         document.body.classList.remove("fullscreen-sidebar-open");
         const desktopHidden = document.body.classList.contains("sidebar-hidden");
@@ -181,9 +209,9 @@
     alignAfterResize() {
       this.viewportSettling = true;
       clearTimeout(this.resizeTimer);
-      this.slides[this.currentSlide].scrollIntoView({ behavior: "auto", block: "start" });
+      this.slides[this.currentSlide].scrollIntoView({ behavior: "instant", block: "start" });
       this.resizeTimer = setTimeout(() => {
-        this.slides[this.currentSlide].scrollIntoView({ behavior: "auto", block: "start" });
+        this.slides[this.currentSlide].scrollIntoView({ behavior: "instant", block: "start" });
         requestAnimationFrame(() => { this.viewportSettling = false; });
       }, 250);
     }
