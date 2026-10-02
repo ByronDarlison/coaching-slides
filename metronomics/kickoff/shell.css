@@ -418,6 +418,10 @@ h1, h2, h3 { font-family: var(--font-display); }
 }
 
 .control-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
   width: 44px;
   min-width: 44px;
   min-height: 44px;
@@ -658,4 +662,302 @@ body.dark-slide-controls .control-button:focus-visible {
 
   html { scroll-behavior: auto; }
   .controls { transition: none; }
+}
+
+/* Kick Off sample extras on shared shell: Ren chrome + layout helpers + shot mode. */
+
+/* Byron's review: domain bottom left, Metronomics logo bottom right. */
+.slide-content {
+  position: relative;
+  padding-bottom: clamp(2.4rem, 5vh, 3.2rem);
+}
+
+.slide-footer {
+  position: absolute;
+  bottom: clamp(12px, 2vh, 24px);
+  left: clamp(16px, 3vw, 32px);
+  right: clamp(16px, 3vw, 32px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 2;
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.05vw, 0.95rem);
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.footer-logo {
+  display: block;
+  width: clamp(130px, 16vw, 210px);
+  height: auto;
+}
+
+.comp-rule .footer-logo {
+  filter: brightness(0) invert(1);
+}
+
+.comp-rule .slide-footer {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Opening slide: title and a relevant illustration in the agreed character style. */
+.layout-title .slide-content {
+  justify-content: center;
+  gap: 0;
+}
+
+.title-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 2vh, 1.5rem);
+  max-width: min(100%, 42rem);
+}
+
+.layout-title .slide-title {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  letter-spacing: -0.03em;
+}
+
+.hairline {
+  width: clamp(60px, 10vw, 120px);
+  height: 2px;
+  border: none;
+  background: var(--green);
+}
+
+.metronomics-logo {
+  display: block;
+  max-width: clamp(160px, 20vw, 260px);
+  width: 100%;
+  height: auto;
+}
+
+/* Story bullet panel used in Kick Off mapped slides. */
+.bullet-panel {
+  display: grid;
+  gap: 0.55rem;
+  align-content: center;
+  min-height: clamp(10rem, 32vh, 18rem);
+  padding: clamp(1rem, 2vw, 1.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 0.7rem;
+}
+
+.bullet-panel p,
+.panel .support-list {
+  color: var(--muted);
+  font-size: clamp(14px, 1.55vw, 22px);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.bullet-panel p strong,
+.panel .support-list strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.stack-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.stack-3 .panel h2 {
+  font-size: clamp(1.1rem, 1.9vw, 1.65rem);
+}
+
+.stack-3 .panel .support {
+  margin-top: 0.55rem;
+  font-size: clamp(14px, 1.7vw, 24px);
+}
+
+.meet-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.meet-grid .panel h2 {
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+}
+
+.meet-grid .panel .support {
+  margin-top: 0.5rem;
+  font-size: clamp(14px, 1.7vw, 24px);
+}
+
+.slide-label {
+  display: none;
+  position: absolute;
+  top: 0.55rem;
+  right: 0.7rem;
+  z-index: 3;
+  padding: 0.22rem 0.45rem;
+  border-radius: 0.35rem;
+  background: rgba(27, 31, 36, 0.72);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.comp-rule .slide-label,
+.layout-title .slide-label {
+  /* label sits on stage; for dark rule use soft chip */
+}
+
+.comp-rule .slide-label {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 760px) {
+  .stack-3,
+  .meet-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Screenshot mode: one slide fills the viewport (used by capture-screenshots.mjs). */
+body.shot {
+  overflow: hidden;
+  background: var(--canvas);
+}
+
+body.shot .sidebar-toggle,
+body.shot .sidebar-backdrop,
+body.shot .slide-sidebar,
+body.shot .controls,
+body.shot .notes-panel,
+body.shot .slide-label,
+body.shot .slide:not(.active-shot) {
+  display: none !important;
+}
+
+body.shot #presentation {
+  width: 100vw;
+  margin-left: 0;
+  background: var(--canvas);
+}
+
+body.shot #presentation .slide.active-shot {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--canvas);
+  place-items: unset;
+}
+
+body.shot #presentation .slide.active-shot .slide-content {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  flex: 1;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* Title art in the story-panel frame (SLIDE-VISUAL-STANDARD). */
+.story-panel--art {
+  padding: clamp(0.55rem, 1.2vw, 0.9rem);
+  align-content: center;
+  justify-items: center;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.story-panel--art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(48vh, 22rem);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.35rem;
+}
+
+.title-opening {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  width: 100%;
+}
+.title-art {
+  display: block;
+  width: 100%;
+  max-height: 52vh;
+  object-fit: contain;
+}
+@media (max-width: 760px) {
+  .title-opening { grid-template-columns: 1fr; gap: 1.5rem; }
+  .title-art { max-height: 38vh; }
+}
+
+/* Audience view hides construction labels; ?review=template reveals them. */
+body.template-review .slide-label { display: block; }
+
+/* Keep the sequence visible on the card-based teaching slides. */
+.causal-arrow { color: var(--blue); }
+
+/* Shared title artwork and readable card variants. */
+.title-art img { display: block; width: 100%; max-height: 52vh; object-fit: contain; }
+.stack-3 .panel .support, .meet-grid .panel .support { font-size: clamp(14px, 1.7vw, 24px); }
+.sidebar-link { min-height: 44px; }
+
+/* Small screens use a readable page per slide, with natural vertical scrolling. */
+@media (max-width: 899px), (max-height: 599px) {
+  html { scroll-snap-type: y proximity; scroll-behavior: auto; }
+  .slide { height: auto; min-height: 100dvh; overflow: visible; }
+  #presentation .slide-content {
+    flex: none; width: 100%; height: auto; min-height: 100dvh; max-height: none;
+    aspect-ratio: auto; overflow: visible; padding: 76px 24px 88px;
+    border: 0; border-radius: 0; box-shadow: none;
+  }
+  .slide-stage { flex: 0 0 auto; overflow: visible; }
+  .eyebrow, .slide-title, .story-title { margin-left: 0; max-width: 100%; }
+  .slide-title, .story-title, .layout-title .slide-title { font-size: clamp(28px, 4vw, 36px); line-height: 1.12; }
+  .support, .stack-3 .panel .support, .meet-grid .panel .support { font-size: 18px; line-height: 1.4; }
+  .panel h2, .stack-3 .panel h2, .meet-grid .panel h2 { font-size: 24px; line-height: 1.15; }
+  .slide-footer { position: static; margin-top: auto; padding-top: 28px; flex-shrink: 0; align-items: center; }
+  .footer-logo { width: 145px; }
+  .story-frame { height: auto; gap: 24px; }
+  .story-panel--art img { max-height: 42vh; }
+  .controls { opacity: 1; pointer-events: auto; bottom: 8px; background: var(--surface); border-color: var(--line); }
+  .title-art img { max-height: 42vh; }
+  .panel { padding: 20px; }
+  .control-count { display: block; }
+}
+@media (max-width: 600px) {
+  .story-frame, .title-opening, .causal-row, .decision-row, .stack-3, .meet-grid { grid-template-columns: minmax(0, 1fr); }
+  .causal-arrow { display: block; justify-self: center; transform: rotate(90deg); line-height: 1; }
+  .title-opening { gap: 32px; }
+  .story-panel { min-height: 0; }
+  .story-panel--art img, .title-art img { max-height: 34vh; }
+  .panel .title-follow { margin-top: 12px; }
+}
+@media (min-width: 601px) and (max-width: 899px) {
+  .story-frame, .title-opening, .decision-row, .meet-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .causal-row { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); }
+  .causal-arrow { display: block; }
+  .stack-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
 }
