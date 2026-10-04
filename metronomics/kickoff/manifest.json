@@ -749,21 +749,21 @@
     },
     {
       "reference": "kickoff:annual#annual-numbers",
-      "sha256": "5af8c5e1a403fada15a656bf6397df372310609ddf46bfb0d49a281be0c3b5fe",
+      "sha256": "f291cf79e93218013e6c9355696b597f91a8aa2a50757c7ecafe1c2671d8a84a",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:annual#annual-first",
-      "sha256": "5af8c5e1a403fada15a656bf6397df372310609ddf46bfb0d49a281be0c3b5fe",
+      "sha256": "f291cf79e93218013e6c9355696b597f91a8aa2a50757c7ecafe1c2671d8a84a",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:annual#annual-rest",
-      "sha256": "5af8c5e1a403fada15a656bf6397df372310609ddf46bfb0d49a281be0c3b5fe",
+      "sha256": "f291cf79e93218013e6c9355696b597f91a8aa2a50757c7ecafe1c2671d8a84a",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
@@ -826,14 +826,14 @@
     },
     {
       "reference": "kickoff:follow-through#plan-ready",
-      "sha256": "4e37faf72788c9ad057e276cd22eb3ad9d6b4724bce5c062d85e28d14b019803",
+      "sha256": "a3b970316acfd726b5b1e1a0f398903013b28679a512e05c058f712810d9e86e",
       "artifact": "follow-through",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:follow-through#next-steps",
-      "sha256": "4e37faf72788c9ad057e276cd22eb3ad9d6b4724bce5c062d85e28d14b019803",
+      "sha256": "a3b970316acfd726b5b1e1a0f398903013b28679a512e05c058f712810d9e86e",
       "artifact": "follow-through",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
