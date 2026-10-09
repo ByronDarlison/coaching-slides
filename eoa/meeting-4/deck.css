@@ -158,9 +158,9 @@
 .date-grid li { padding: 28px; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; background: var(--surface); }
 .date-grid strong { display: block; font-size: clamp(26px, 2.4vw, 38px); margin-bottom: 18px; }
 .date-grid span { font-size: clamp(22px, 1.8vw, 28px); line-height: 1.3; }
-#slide-17 .numbered { list-style-position: outside; margin-left: 1.3em; padding-left: 0; }
-#slide-17 .numbered li { font-size: clamp(24px, 2.2vw, 34px); padding: 24px 16px; margin: 0; border-bottom: 1px solid var(--line); }
-#slide-17 .numbered li::marker { color: var(--blue); font-weight: 600; }
+#slide-18 .numbered { list-style-position: outside; margin-left: 1.3em; padding-left: 0; }
+#slide-18 .numbered li { font-size: clamp(24px, 2.2vw, 34px); padding: 24px 16px; margin: 0; border-bottom: 1px solid var(--line); }
+#slide-18 .numbered li::marker { color: var(--blue); font-weight: 600; }
 .cascade-body .talking-points { list-style: none; padding: 0; }
 .cascade-body .talking-points li { font-size: clamp(22px, 2vw, 32px); padding: 22px; border-bottom: 1px solid var(--line); }
 .cascade-body .talking-points li:first-child { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: 8px; }
@@ -200,12 +200,12 @@
  .capability-item { padding: 16px 0; font-size: 18px; }
  .date-grid li { padding: 22px; }
  .date-grid strong { font-size: 28px; }
- #slide-17 .numbered li { font-size: 23px; padding: 20px 8px; }
+ #slide-18 .numbered li { font-size: 23px; padding: 20px 8px; }
  .cascade-body .talking-points li { font-size: 22px; }
  .slide-footer { margin-bottom: 12px; }
 }
 /* Keep list markers inside the content box. */
-#slide-17 .numbered { margin-left: 0; padding-left: 1.5em; }
+#slide-18 .numbered { margin-left: 0; padding-left: 1.5em; }
 /* Compact spacing at projection sizes, without dropping body text below 18px. */
 @media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
  .original-rules { gap: 12px 24px; }
@@ -219,7 +219,7 @@
  .quote-panel { padding: 10px 14px; }
  .quote-panel blockquote { font-size: 20px; }
  .quote-label { font-size: 14px; margin-bottom: 4px; }
- #slide-15 .original-body, #slide-16 .original-body, #slide-16 .original-body { gap: 12px; }
+ #slide-15 .original-body, #slide-17 .original-body, #slide-17 .original-body { gap: 12px; }
  .review-grid { grid-template-columns: .7fr 1.3fr; gap: 16px; }
  .review-reflection, .review-action { padding: 14px; }
  .review-question { font-size: 22px; }
@@ -245,9 +245,9 @@
  #slide-12 .sample-table td { padding: 5px 8px; }
  #slide-12 .sample-table td:nth-child(2), #slide-12 .sample-table td:last-child { white-space: nowrap; }
 }
-#slide-17 .numbered { list-style: none; padding-left: 0; counter-reset: feedback; }
-#slide-17 .numbered li { display: grid; grid-template-columns: 1.4em minmax(0,1fr); gap: 12px; counter-increment: feedback; }
-#slide-17 .numbered li::before { content: counter(feedback) "."; color: var(--blue); font-weight: 600; }
+#slide-18 .numbered { list-style: none; padding-left: 0; counter-reset: feedback; }
+#slide-18 .numbered li { display: grid; grid-template-columns: 1.4em minmax(0,1fr); gap: 12px; counter-increment: feedback; }
+#slide-18 .numbered li::before { content: counter(feedback) "."; color: var(--blue); font-weight: 600; }
 
 /* Owner-approved three-question personal review. */
 .personal-review-questions { justify-content: flex-start; }
