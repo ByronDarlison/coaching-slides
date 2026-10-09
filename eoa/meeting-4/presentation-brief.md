@@ -21,8 +21,8 @@ The deck does not ask members to complete Fatema's separate worksheets. Their EO
 ## Outcomes and success test
 
 1. Each member reports the result of last month's one big thing and actual revenue, cash, and Profit/X against target.
-2. Each member presents one prepared challenge in a 15-minute turn: five minutes to present, three for questions, and seven for peer experience.
-3. Each member shows the link between their 3HAG, 1HAG, and quarterly sprint lanes, then records one next action tied to an Owner's Outcome measure.
+2. Each member presents one prepared challenge in a 15-minute turn: five minutes to present, five for experience shares from the group, and five for coach feedback.
+3. Each member shows the link between their 3HAG, 1HAG, and QHAG, then records one next action tied to an Owner's Outcome measure.
 4. The meeting ends by 6:00 PM with the next preparation deadline and meeting date clear.
 
 Success is observable when the time chain reaches 300 minutes, all five members have an update and presentation turn, and the closing instructions produce a recorded next action. Live audience completion remains unverified until the meeting occurs.
@@ -48,9 +48,9 @@ Success is observable when the time chain reaches 300 minutes, all five members 
 | Sarah's AI walkthrough | 2:00–3:00 | 60 |
 | Break | 3:00–3:10 | 10 |
 | One-word barometer and confidential group reset | 3:10–3:15 | 5 |
-| Business updates | 3:15–3:40 | 25 |
-| Member presentations | 3:40–4:55 | 75 |
-| Planning-cascade presentations | 4:55–5:45 | 50 |
+| Business updates | 3:15–3:35 | 20 |
+| Member presentations | 3:35–4:50 | 75 |
+| Planning-cascade presentations | 4:50–5:45 | 55 |
 | Personal review and close | 5:45–6:00 | 15 |
 
 ## Sources
@@ -89,7 +89,7 @@ Success is observable when the time chain reaches 300 minutes, all five members 
 | Gate | Status | Evidence |
 |---|---|---|
 | Outcome coverage | Pass | Slides 7–8 cover actuals and peer work; 14–17 cover the cascade and next action. |
-| Slide necessity and density | Pass | All 24 slides are mapped above. Targets and priorities are separated; sprint lanes span three reference slides. |
+| Slide necessity and density | Pass | All 24 slides are mapped above. Targets and priorities are separated. |
 | Narrative coherence | Pass | Guest learning precedes the confidential actuals → challenge → planning → action sequence. |
 | Accuracy | Pass with source gap | Brandon's timing and Fatema's 5/3/7 format were checked. Sarah's own presentation was not available. |
 | Cold comprehension | Not run | Byron's direct content review is pending. |
@@ -168,3 +168,6 @@ Final approved sequence has 17 slides: Sarah’s AI walkthrough, Break, One Word
 Removed obsolete hidden cumulative timing indicators after the approved slide removals and additions. Existing speaker notes are historical facilitation guidance, not a newly approved full-session schedule. No visible content was changed for publication.
 
 Retrospective: the static slide checker assumed one class and a fixed attribute order. Updated it to recognize the shared shell’s slide class token while retaining structure, cohort-date, homework, and deliverable checks. Approved sample and housekeeping date exemptions still apply. Preserve approved content during visual migrations; the earlier restoration and UX review record this lesson.
+
+9 October 2026 (Byron, reconciliation review): times match the member calendar invite (updates to 3:35, presentations 3:35 to 4:50, cascade 4:50 to 5:45, about 11 minutes each; wrap-up 5:45 review, 5:52 housekeeping, 5:55 close). Presentations slide notes match the slide (5 present, 5 experience shares, 5 coach feedback). Lark & Ledger samples reconciled to about $1,000 per active client a month and one new client a month: QHAG revenue $28K, $29K, $30K ($87K) with active clients 28, 29, 30; 1HAG revenue $330,000 and 33 active clients at year-end; inquiries priority 5 to 10 by December and 5 to 9 by September; on-time closes 80% by September on the way to 90%; the review priority stays in percentages (30% to 60% by September). 3HAG statement grammar fixed.
+M5 date corrected to 1 December 2026 to match the member calendar invite (Byron, 9-Oct-2026).

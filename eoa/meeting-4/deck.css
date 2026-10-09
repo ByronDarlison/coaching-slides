@@ -329,3 +329,10 @@
  .member-plan-grid article { padding: 24px; }
  .member-plan-grid article>p { margin-bottom: 14px; }
 }
+
+/* Personal Review: original wording with OBT sub-points (restored 2026-10-09). */
+.personal-review-questions ol { gap: 10px; }
+.personal-review-questions ol > li { padding: 12px 20px; font-size: clamp(18px, 1.7vw, 26px); }
+.personal-review-questions ol > li > ul { grid-column: 2; margin: 6px 0 0; padding-left: 1.1em; list-style: disc; display: block; }
+.personal-review-questions ol > li > ul > li { counter-increment: none; display: list-item; padding: 0; border: 0; background: none; border-radius: 0; font-size: clamp(15px, 1.35vw, 21px); line-height: 1.35; margin: 2px 0; }
+.personal-review-questions ol > li > ul > li::before { content: none; }
