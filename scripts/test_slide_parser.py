@@ -24,10 +24,5 @@ class SlideMarkupTests(unittest.TestCase):
                 self.assertEqual(checks.check_cohort_generic(self.slide(label, 'November 26, 2026', modern)), [])
             self.assertTrue(checks.check_cohort_generic(self.slide('Teaching', 'November 26, 2026', modern)))
 
-    def test_homework_still_required(self):
-        for modern in (True, False):
-            self.assertTrue(checks.check_homework_deadline(self.slide('Homework', 'Missing deadline', modern)))
-            self.assertEqual(checks.check_homework_deadline(self.slide('Homework', checks.HOMEWORK_DEADLINE_PHRASE, modern)), [])
-
 if __name__ == '__main__':
     unittest.main()

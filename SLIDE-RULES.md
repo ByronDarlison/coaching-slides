@@ -18,6 +18,22 @@ New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/
 
 ## Slide Order
 
+Shell decks (EOA Meeting 4 on):
+
+1. Opening (title or guest)
+2. One Word Barometer
+3. Rules of Engagement
+4. Business Updates
+5. Presentations
+6. Teaching and deliverable slides
+7. Member presentations and plan check (when members present work)
+8. Personal Review
+9. Homework
+10. Housekeeping
+11. One Phrase Close
+
+Legacy decks:
+
 1. Title (no timing)
 2. Good News
 3. Standing Review Block (single consolidated slide from M3 onward; M2 has individual ▲ slides since everything is being coached for the first time)
@@ -36,6 +52,10 @@ New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/
 - **✓ Review and confirm** (grey, `symbol-confirm`) - Standing review block. Quick alignment check
 
 ## Homework Slide
+
+Shell decks (EOA Meeting 4 on): up to three numbered cards, top borders green to blue. Each card names the action and its scope in plain words, for example "Create a new QHAG and 13-week sprint lanes", "For next quarter". Name the levels rather than "cascade". Add article and AI Prompt links, or an email deadline, only when the homework needs them.
+
+Legacy decks:
 
 - **▲ Review and Complete** section: lists this month's introduced items with article links and AI Prompt buttons. "Add finalized artifacts to Mural and Metronome Software" at the end.
 - **★ Read Ahead and Complete the AI Prompts for M[next]** section: lists next month's new introductions with article links and AI Prompt buttons. "Add finalized artifacts to Mural" at the end.
