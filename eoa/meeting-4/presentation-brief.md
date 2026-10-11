@@ -175,3 +175,5 @@ M5 date corrected to 1 December 2026 to match the member calendar invite (Byron,
 11 October 2026 (Byron, walkthrough): added "From your big hairy audacious goal to this week's work" (slide 7) and "What each level holds" (slide 8). Deleted the worked cascade and six sample slides; members present their own plans instead. The deck is now 14 slides.
 
 11 October 2026 (Byron, walkthrough, continued): slide 9 shows all five levels, BHAG to sprint lanes, with owners; plan check, Personal Review, Homework and Housekeeping rebuilt as green-to-blue cards; SMART hover on every mention; homework is now fine-tune the BHAG, 3HAG and 1HAG, create a new QHAG and 13-week sprint lanes, and present the plan, with no email deadline or links; Give / Take dropped. The homework deadline check was removed from slide-test.py.
+
+11 October 2026 (Byron): follow Shannon. Profit margin removed from the 3HAG, 1HAG and QHAG (her number frames are future date, gross revenue, cash and two widgets). Known for uses her frame wording: in three years, what people should think when they hear the company name.
