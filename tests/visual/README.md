@@ -45,7 +45,7 @@ npm test           # verify
 
 | slide-test.py (Tier 1) | visual regression (Tier 2) |
 |---|---|
-| Broken images, missing alt | Images that render blank |
+| Broken image URLs | Images that render blank |
 | Em dashes, British spelling | Text that overflows its container |
 | Deliverable link checks | CSS regression that changes visible layout |
 | Time-chain arithmetic | Font loading fallbacks |

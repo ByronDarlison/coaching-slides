@@ -57,24 +57,24 @@ IMG = _img(0)  # Same for all months since we use ../../shared/assets/ prefix
 
 # ─── Book data ────────────────────────────────────────────────────────
 BOOKS_PREKICKOFF = [
-    ("Metronomics", "Shannon Susko", "https://www.amazon.ca/dp/1544521294"),
-    ("The Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.amazon.ca/dp/0787960756"),
-    ("Start with Why", "Simon Sinek", "https://www.amazon.ca/dp/1591846447"),
+    ("Metronomics", "Shannon Susko", "https://www.metronomics.com/books-by-shannon"),
+    ("The Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.tablegroup.com/product/dysfunctions/"),
+    ("Start with Why", "Simon Sinek", "https://simonsinek.com/books/start-with-why/"),
 ]
 BOOKS_M3 = [
-    ("3HAG WAY", "Shannon Susko", "https://www.amazon.ca/3HAG-WAY-Strategic-Execution-Wild-Ass-Guess/dp/1790131235"),
-    ("Topgrading", "Bradford D. Smart", "https://www.amazon.ca/dp/1591845262"),
+    ("3HAG WAY", "Shannon Susko", "https://www.metronomics.com/books-by-shannon"),
+    ("Topgrading", "Bradford D. Smart", "https://topgrading.com/books"),
 ]
 BOOKS_M6 = [
-    ("The Four Obsessions of an Extraordinary Executive", "Patrick Lencioni", "https://www.amazon.ca/dp/0787954039"),
-    ("Mastering the Rockefeller Habits", "Verne Harnish", "https://www.amazon.ca/dp/0978774957"),
+    ("The Four Obsessions of an Extraordinary Executive", "Patrick Lencioni", "https://www.tablegroup.com/pat/"),
+    ("Mastering the Rockefeller Habits", "Verne Harnish", "https://scalingup.com/books/mastering-the-rockefeller-habits"),
 ]
 BOOKS_M9 = [
-    ("Overcoming the Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.amazon.ca/dp/0787976377"),
-    ("The Metronome Effect", "Shannon Susko", "https://www.amazon.ca/dp/1599325446"),
+    ("Overcoming the Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.tablegroup.com/pat/"),
+    ("The Metronome Effect", "Shannon Susko", "https://www.metronomics.com/books-by-shannon"),
 ]
 BOOKS_M12 = [
-    ("Beyond Entrepreneurship 2.0", "Jim Collins & Bill Lazier", "https://www.amazon.ca/dp/0399564233"),
+    ("Beyond Entrepreneurship 2.0", "Jim Collins & Bill Lazier", "https://www.jimcollins.com/books.html#beyond-entrepreneurship"),
 ]
 
 def reading_for(month):
@@ -443,8 +443,8 @@ MEETINGS[5] = {
         ("Books for Month 6", "books"),
     ],
     "homework_books": [
-        ("The Four Obsessions of an Extraordinary Executive", "Patrick Lencioni", "https://www.amazon.ca/dp/0787954039"),
-        ("Mastering the Rockefeller Habits", "Verne Harnish", "https://www.amazon.ca/dp/0978774957"),
+        ("The Four Obsessions of an Extraordinary Executive", "Patrick Lencioni", "https://www.tablegroup.com/pat/"),
+        ("Mastering the Rockefeller Habits", "Verne Harnish", "https://scalingup.com/books/mastering-the-rockefeller-habits"),
     ],
 }
 
@@ -773,8 +773,8 @@ MEETINGS[8] = {
         ("Books for Month 9", "books"),
     ],
     "homework_books": [
-        ("Overcoming the Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.amazon.ca/dp/0787976377"),
-        ("The Metronome Effect", "Shannon Susko", "https://www.amazon.ca/dp/1599325446"),
+        ("Overcoming the Five Dysfunctions of a Team", "Patrick Lencioni", "https://www.tablegroup.com/pat/"),
+        ("The Metronome Effect", "Shannon Susko", "https://www.metronomics.com/books-by-shannon"),
     ],
 }
 
@@ -1134,7 +1134,7 @@ MEETINGS[11] = {
         ("Books for Month 12", "books"),
     ],
     "homework_books": [
-        ("Beyond Entrepreneurship 2.0", "Jim Collins & Bill Lazier", "https://www.amazon.ca/dp/0399564233"),
+        ("Beyond Entrepreneurship 2.0", "Jim Collins & Bill Lazier", "https://www.jimcollins.com/books.html#beyond-entrepreneurship"),
     ],
 }
 
@@ -2210,7 +2210,7 @@ def slide_reading(month, cum):
     books = reading_for(month)
     items = ""
     for title, author, url in books:
-        items += f'                        <li class="reveal"><a href="{e(url)}" target="_blank" rel="noopener">{e(title)}</a> <span class="book-author">&mdash; {e(author)}</span></li>\n'
+        items += f'                        <li class="reveal"><a href="{e(url)}" target="_blank" rel="noopener">{e(title)}</a> <span class="book-author">by {e(author)}</span></li>\n'
     return f"""    <!-- SLIDE: READING -->
     <section class="slide" aria-label="Reading">
         <div class="slide-content">
@@ -2319,7 +2319,7 @@ def slide_homework(meeting):
             book_list = meeting.get("homework_books", [])
             book_items = ""
             for title, author, url in book_list:
-                book_items += f'                    <li><a href="{e(url)}" target="_blank" rel="noopener">{e(title)}</a> <span style="color: var(--text-secondary);">&mdash; {e(author)}</span></li>\n'
+                book_items += f'                    <li><a href="{e(url)}" target="_blank" rel="noopener">{e(title)}</a> <span style="color: var(--text-secondary);">by {e(author)}</span></li>\n'
             sections.append(f"""            <div class="homework-section reveal">
                 <h3>{e(heading)}</h3>
                 <ul class="homework-list">
@@ -2488,7 +2488,7 @@ def build_deep_link_js():
 
 def build_html(meeting):
     n = meeting["num"]
-    title_text = f"M{n} &mdash; {e(meeting['title'])}"
+    title_text = f"M{n}: {e(meeting['title'])}"
 
     slides = []
     slides.append(slide_title(meeting))
@@ -2511,7 +2511,7 @@ def build_html(meeting):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M{n} &mdash; {e(meeting['title'])}</title>
+    <title>M{n}: {e(meeting['title'])}</title>
 
     <!-- Fonts: IBM Plex Sans from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
