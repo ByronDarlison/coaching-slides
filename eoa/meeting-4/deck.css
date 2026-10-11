@@ -570,3 +570,4 @@
 #slide-13 .hk-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 #slide-13 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
 #slide-13 .hk-grid li:nth-child(2) { border-top-color: #326AB6; }
+#slide-8 .levels-table th, #slide-8 .levels-table td { padding-top: 3px; padding-bottom: 3px; } #slide-8 .levels-table .hz { margin-top: 2px; }
