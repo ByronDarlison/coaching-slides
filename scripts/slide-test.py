@@ -10,7 +10,6 @@ Runs a suite of no-rendering static checks against a single deck HTML:
     4. Structure: every <section class="slide"> has required elements.
     5. Style: no em dashes, no British spelling, OBT spelled out.
     6. Cohort-generic: no specific group numbers, dates, or day references.
-    7. Homework deadline: Homework slide carries the canonical deadline phrase.
 
 Usage:
     python3 ~/ai-config/scripts/slide-test.py <path/to/deck/index.html>
@@ -55,7 +54,6 @@ COHORT_PATTERNS: list[tuple[str, str]] = [
     (r"by (Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b", "specific weekday reference"),
 ]
 
-HOMEWORK_DEADLINE_PHRASE = "at least five business days before next meeting"
 
 
 # ---------------------------------------------------------------------------
@@ -212,22 +210,6 @@ def check_cohort_generic(html: str) -> list[str]:
     return issues
 
 
-def check_homework_deadline(html: str) -> list[str]:
-    issues: list[str] = []
-    # Find every slide with aria-label containing "Homework" and check each.
-    for m in re.finditer(
-        SLIDE_OPEN + r'(?=[^>]*aria-label="Homework[^"]*")[^>]*>.*?</section>',
-        html,
-        re.DOTALL,
-    ):
-        slide = m.group()
-        if HOMEWORK_DEADLINE_PHRASE not in slide:
-            issues.append(
-                f"Homework slide missing required phrase: '{HOMEWORK_DEADLINE_PHRASE}'"
-            )
-    return issues
-
-
 # Deliverable-slide titles that DON'T need article+prompt links.
 # Structural slides that carry a symbol-badge but don't map to a
 # darlison.com article/prompt pair.
@@ -343,44 +325,37 @@ def main() -> int:
             print(f"  PASS  {ok_summary}")
 
     img_ok, img_issues = check_images(html, base_dir)
-    report("1/8 Image audit", img_issues, f"all {len(img_ok)} image(s) resolve")
+    report("1/7 Image audit", img_issues, f"all {len(img_ok)} image(s) resolve")
 
     link_ok, link_issues = check_links(html, base_dir)
-    report("2/8 Link audit", link_issues, f"all {len(link_ok)} link(s) resolve")
+    report("2/7 Link audit", link_issues, f"all {len(link_ok)} link(s) resolve")
 
     n_ind, time_issues = check_time_chain(html)
     report(
-        "3/8 Time chain",
+        "3/7 Time chain",
         time_issues,
         f"all {n_ind} time indicator(s) form a clean chain",
     )
 
     n_slides, struct_issues = check_structure(html)
     report(
-        "4/8 Structure",
+        "4/7 Structure",
         struct_issues,
         f"{n_slides} slide(s), all structurally complete",
     )
 
     style_issues = check_style(html)
     report(
-        "5/8 Style rules",
+        "5/7 Style rules",
         style_issues,
         "no em dashes, British spelling, or OBT spell-out issues",
     )
 
     cohort_issues = check_cohort_generic(html)
     report(
-        "6/8 Cohort-generic",
+        "6/7 Cohort-generic",
         cohort_issues,
         "no cohort-specific dates, months, or group numbers",
-    )
-
-    hw_issues = check_homework_deadline(html)
-    report(
-        "7/8 Homework deadline phrase",
-        hw_issues,
-        "Homework slide carries the canonical deadline phrase",
     )
 
     link_req_issues, pending = check_deliverable_links(html)
@@ -388,7 +363,7 @@ def main() -> int:
     if pending:
         ok_msg += f" ({pending} slide(s) pending article - skipped)"
     report(
-        "8/8 Deliverable article + AI prompt links",
+        "7/7 Deliverable article + AI prompt links",
         link_req_issues,
         ok_msg,
     )

@@ -21,7 +21,7 @@ The deck does not ask members to complete Fatema's separate worksheets. Their EO
 ## Outcomes and success test
 
 1. Each member reports the result of last month's one big thing and actual revenue, cash, and Profit/X against target.
-2. Each member presents one prepared challenge in a 15-minute turn: five minutes to present, five for experience shares from the group, and five for coach feedback.
+2. Each member presents one prepared challenge in a 15-minute turn: four minutes to present, five for experience shares from the group, five for coach feedback, and one for the member's takeaways and next action.
 3. Each member shows the link between their 3HAG, 1HAG, and QHAG, then records one next action tied to an Owner's Outcome measure.
 4. The meeting ends by 6:00 PM with the next preparation deadline and meeting date clear.
 
@@ -171,3 +171,7 @@ Retrospective: the static slide checker assumed one class and a fixed attribute 
 
 9 October 2026 (Byron, reconciliation review): times match the member calendar invite (updates to 3:35, presentations 3:35 to 4:50, cascade 4:50 to 5:45, about 11 minutes each; wrap-up 5:45 review, 5:52 housekeeping, 5:55 close). Presentations slide notes match the slide (5 present, 5 experience shares, 5 coach feedback). Lark & Ledger samples reconciled to about $1,000 per active client a month and one new client a month: QHAG revenue $28K, $29K, $30K ($87K) with active clients 28, 29, 30; 1HAG revenue $330,000 and 33 active clients at year-end; inquiries priority 5 to 10 by December and 5 to 9 by September; on-time closes 80% by September on the way to 90%; the review priority stays in percentages (30% to 60% by September). 3HAG statement grammar fixed.
 M5 date corrected to 1 December 2026 to match the member calendar invite (Byron, 9-Oct-2026).
+
+11 October 2026 (Byron, walkthrough): added "From your big hairy audacious goal to this week's work" (slide 7) and "What each level holds" (slide 8). Deleted the worked cascade and six sample slides; members present their own plans instead. The deck is now 14 slides.
+
+11 October 2026 (Byron, walkthrough, continued): slide 9 shows all five levels, BHAG to sprint lanes, with owners; plan check, Personal Review, Homework and Housekeeping rebuilt as green-to-blue cards; SMART hover on every mention; homework is now fine-tune the BHAG, 3HAG and 1HAG, create a new QHAG and 13-week sprint lanes, and present the plan, with no email deadline or links; Give / Take dropped. The homework deadline check was removed from slide-test.py.

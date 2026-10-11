@@ -47,7 +47,7 @@ npm test           # verify
 |---|---|
 | Broken images, missing alt | Images that render blank |
 | Em dashes, British spelling | Text that overflows its container |
-| Missing deadline phrase | CSS regression that changes visible layout |
+| Deliverable link checks | CSS regression that changes visible layout |
 | Time-chain arithmetic | Font loading fallbacks |
 | Cohort-specific content | Image aspect ratio regressions |
 
