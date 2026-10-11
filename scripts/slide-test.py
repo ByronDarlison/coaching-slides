@@ -8,7 +8,7 @@ Runs a suite of no-rendering static checks against a single deck HTML:
     2. Link audit: every <a href> works.
     3. Time chain: per-slide times sum to the cumulative, no drift.
     4. Structure: every <section class="slide"> has required elements.
-    5. Style: no em dashes, no British spelling, OBT spelled out.
+    5. Style: no em or en dashes, no British spelling, OBT spelled out.
     6. Cohort-generic: no specific group numbers, dates, or day references.
 
 Usage:
@@ -22,17 +22,27 @@ from __future__ import annotations
 import re
 import sys
 import urllib.request
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 
 # Match a slide class token regardless of attribute order or layout classes.
-SLIDE_OPEN = r'<section\b(?=[^>]*\bclass="(?:[^"\s]+\s+)*slide(?:\s+[^"\s]+)*")'
+# Requires whitespace before `class` (so `data-class` does not match), allows
+# spaces around `=`, single or double quotes, and padding inside the value.
+# Uses no capturing groups so callers can append their own.
+SLIDE_OPEN = (
+    r'<section\b(?=[^>]*\sclass\s*=\s*(?:'
+    r'"\s*(?:[^"\s]+\s+)*slide(?:\s+[^"\s]+)*\s*"'
+    r"|'\s*(?:[^'\s]+\s+)*slide(?:\s+[^'\s]+)*\s*'"
+    r'))'
+)
 
 TIMEOUT_SECONDS = 6
 USER_AGENT = "slide-test/1.0"
 
 # Style rules. Pattern → human-readable violation.
 STYLE_RULES: list[tuple[str, str]] = [
-    (r"—", "em dash (use period, comma, colon, parens, or conjunction)"),
+    (r"[—–]", "em or en dash (use punctuation or 'to' for ranges)"),
     (r"\bcolour\b", "British spelling 'colour' (use 'color')"),
     (r"\bcentre\b", "British spelling 'centre' (use 'center')"),
     (r"\borganisation\b", "British spelling 'organisation' (use 'organization')"),
@@ -80,9 +90,39 @@ def fetch_ok(url: str) -> tuple[bool, str]:
     return False, "unreachable"
 
 
+class _RefExtractor(HTMLParser):
+    """Collect <img src>, <a href> and element ids, whatever the quote style."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.img_srcs: list[str] = []
+        self.a_hrefs: list[str] = []
+        self.ids: set[str] = set()
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        for name, value in attrs:
+            if value is None:
+                continue
+            if name == "id":
+                self.ids.add(value)
+            elif tag == "img" and name == "src" and value:
+                self.img_srcs.append(value)
+            elif tag == "a" and name == "href" and value:
+                self.a_hrefs.append(value)
+
+    handle_startendtag = handle_starttag
+
+
+def extract_refs(html: str) -> _RefExtractor:
+    parser = _RefExtractor()
+    parser.feed(html)
+    parser.close()
+    return parser
+
+
 def check_images(html: str, base_dir: Path) -> tuple[list[str], list[str]]:
     oks, issues = [], []
-    for src in re.findall(r'<img[^>]+src="([^"]+)"', html):
+    for src in extract_refs(html).img_srcs:
         if src.startswith(("http://", "https://")):
             ok, detail = fetch_ok(src)
             (oks if ok else issues).append(f"{src}  ({detail})")
@@ -97,10 +137,18 @@ def check_images(html: str, base_dir: Path) -> tuple[list[str], list[str]]:
 
 def check_links(html: str, base_dir: Path) -> tuple[list[str], list[str]]:
     oks, issues = [], []
-    # <a ... href="..."> — be strict about the opening tag to avoid <link> hits.
-    hrefs = set(re.findall(r'<a\s[^>]*href="([^"]+)"', html))
-    for href in sorted(hrefs):
-        if href.startswith(("#", "mailto:", "tel:", "javascript:")):
+    # Only <a href> counts; the parser keeps <link> tags out.
+    refs = extract_refs(html)
+    for href in sorted(set(refs.a_hrefs)):
+        if href.startswith(("mailto:", "tel:", "javascript:")):
+            continue
+        if href.startswith("#"):
+            frag = href[1:]
+            # A bare "#" targets the top of the page and always works.
+            if not frag or frag in refs.ids:
+                oks.append(f"{href}  (in-page anchor)")
+            else:
+                issues.append(f"{href}  (no element with id=\"{frag}\")")
             continue
         if href.startswith(("http://", "https://")):
             ok, detail = fetch_ok(href)
@@ -137,6 +185,12 @@ def check_time_chain(html: str) -> tuple[int, list[str]]:
                 continue
             cum_val = int(cum_m.group())
             per_min = cum_val - last_cum  # inferred
+        if per_min < 0 or cum_val < last_cum:
+            issues.append(
+                f"Indicator {i}: time moves backwards from {last_cum} to {cum_val}"
+            )
+            last_cum = cum_val
+            continue
         expected = last_cum + per_min
         # Special case: the final "ceremonial" close often holds the same
         # cumulative as the preceding slide ("in the last minute"). Allow that.
@@ -165,6 +219,8 @@ def check_structure(html: str) -> tuple[int, list[str]]:
 
 def check_style(html: str) -> list[str]:
     issues: list[str] = []
+    # Decode entities so &mdash;, &#8211; and &#x2013; are caught too.
+    html = unescape(html)
     for pattern, desc in STYLE_RULES:
         for m in re.finditer(pattern, html):
             start = max(0, m.start() - 35)
@@ -348,7 +404,7 @@ def main() -> int:
     report(
         "5/7 Style rules",
         style_issues,
-        "no em dashes, British spelling, or OBT spell-out issues",
+        "no em or en dashes, British spelling, or OBT spell-out issues",
     )
 
     cohort_issues = check_cohort_generic(html)
