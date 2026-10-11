@@ -177,3 +177,5 @@ M5 date corrected to 1 December 2026 to match the member calendar invite (Byron,
 11 October 2026 (Byron, walkthrough, continued): slide 9 shows all five levels, BHAG to sprint lanes, with owners; plan check, Personal Review, Homework and Housekeeping rebuilt as green-to-blue cards; SMART hover on every mention; homework is now fine-tune the BHAG, 3HAG and 1HAG, create a new QHAG and 13-week sprint lanes, and present the plan, with no email deadline or links; Give / Take dropped. The homework deadline check was removed from slide-test.py.
 
 11 October 2026 (Byron): follow Shannon. Profit margin removed from the 3HAG, 1HAG and QHAG (her number frames are future date, gross revenue, cash and two widgets). Known for uses her frame wording: in three years, what people should think when they hear the company name.
+
+11 October 2026 (Byron, Codex review decisions): facilitation guidance restored to every slide's notes as "In the room" lines, with no sources or video script; slide 5 notes drop the priority-only SMART lines; slide 6 uses the standard sequence shades; "10-minute break".
