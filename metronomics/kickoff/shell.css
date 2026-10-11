@@ -961,3 +961,15 @@ body.template-review .slide-label { display: block; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
 }
+
+/* Sequences run green to blue (SLIDE-VISUAL-STANDARD, Sequences, cards, and emphasis). Gap cards keep orange. */
+.seq-2 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-2 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #326ab6; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #438f93; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(3) { border-top-color: #326ab6; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #4ca282; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(3) { border-top-color: #3b7da5; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(4) { border-top-color: #326ab6; }
+.panel .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; font-weight: 700; vertical-align: .15em; }
