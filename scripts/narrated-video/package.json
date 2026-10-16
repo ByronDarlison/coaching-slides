@@ -1,0 +1,9 @@
+{
+  "name": "coaching-slides-narrated-video",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Slide capture for narrated videos (Work Card ai-config#1382)",
+  "dependencies": {
+    "playwright": "1.59.1"
+  }
+}

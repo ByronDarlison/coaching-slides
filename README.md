@@ -54,6 +54,10 @@ http://localhost:8000/
 
 Use the arrow keys to move through a deck. Open the browser's print dialog when a PDF copy is needed.
 
+## Narrated videos
+
+Every deck with speaker notes gets a narrated video in Byron's private Google Drive folder. When a merge to `main` changes a deck's slides or notes, [`narrated-video.yml`](.github/workflows/narrated-video.yml) reads each slide's notes up to "In the room:", voices them with ElevenLabs through the narrated-video broker in ai-config, and uploads a new video; unchanged decks spend nothing. Add `data-narration="skip"` to a slide's `<section>` to leave it out. Spoken spellings live in [`scripts/narrated-video/pronunciations.json`](scripts/narrated-video/pronunciations.json). Work Card: ByronDarlison/ai-config#1382.
+
 ## Repository structure
 
 ```text

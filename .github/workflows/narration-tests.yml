@@ -1,0 +1,45 @@
+name: narration-tests
+
+# Secret-free checks for the narrated-video pipeline: extraction, fingerprints,
+# workflow safety, and a silent rehearsal that captures every narrated slide
+# at 1920x1080. No broker, no speech, no upload.
+on:
+  pull_request:
+    paths:
+      - 'scripts/narrated-video/**'
+      - '**/index.html'
+      - '.github/workflows/narrated-video.yml'
+      - '.github/workflows/narration-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/narrated-video/**'
+      - '.github/workflows/narrated-video.yml'
+      - '.github/workflows/narration-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '20'
+      - name: Install capture and video tools
+        working-directory: scripts/narrated-video
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium-headless-shell > /dev/null
+      - name: Run narration tests
+        env:
+          REQUIRE_TOOLS: '1'
+        run: python3 -m unittest discover -s scripts/narrated-video -p 'test_*.py' -v
