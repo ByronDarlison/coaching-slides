@@ -119,3 +119,8 @@ Items join the standing review block the month after they are coached:
 | M7 | Function Scorecards |
 | M8 | Market Map |
 | M9+ | Each finalized deliverable joins the block |
+
+## Narrated videos
+
+- Each deck with speaker notes gets a narrated video automatically. The voice reads each slide's notes up to "In the room:".
+- Add `data-narration="skip"` to a slide's `<section>` to leave that slide out of the video, for example a guest segment or a break.
