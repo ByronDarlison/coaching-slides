@@ -113,6 +113,27 @@ class Inputs(unittest.TestCase):
         finally:
             del os.environ["NARRATION_BROKER_KEY"]
 
+    def test_broker_sends_its_own_user_agent(self):
+        seen = {}
+
+        class Res:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+            def read(self): return b"{}"
+
+        def fake_urlopen(req, timeout=0):
+            seen.update({k.lower(): v for k, v in req.header_items()})
+            return Res()
+        original = run.urllib.request.urlopen
+        run.urllib.request.urlopen = fake_urlopen
+        try:
+            run.Broker("https://example.com", "k").post_json("/v1/speech", {"mode": "preflight"})
+        finally:
+            run.urllib.request.urlopen = original
+        self.assertEqual(seen.get("user-agent"), run.USER_AGENT)
+        self.assertNotIn("python", run.USER_AGENT.lower())
+
     def test_broker_requires_https_and_key(self):
         with self.assertRaises(run.RunError):
             run.Broker("http://example.com", "k")

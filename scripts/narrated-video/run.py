@@ -35,6 +35,7 @@ REPO_ROOT = narration.REPO_ROOT
 MAX_VIDEO = 95_000_000
 CHARS_PER_SECOND = 14
 LEAD_MS = 500
+USER_AGENT = "coaching-slides-narration/1"
 TRAIL_S = 0.75
 
 
@@ -56,7 +57,9 @@ class Broker:
         self._key = key
 
     def _request(self, path: str, body: bytes, content_type: str, extra: dict | None = None):
-        headers = {"x-broker-secret": self._key, "content-type": content_type, **(extra or {})}
+        # Cloudflare refuses the default Python-urllib user agent (error 1010).
+        headers = {"x-broker-secret": self._key, "content-type": content_type,
+                   "user-agent": USER_AGENT, **(extra or {})}
         req = urllib.request.Request(self.url + path, data=body, headers=headers, method="POST")
         try:
             with urllib.request.urlopen(req, timeout=600) as res:
