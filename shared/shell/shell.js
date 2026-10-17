@@ -274,11 +274,25 @@
         copy.textContent = source.textContent;
         this.notesBody.appendChild(copy);
       });
+      const script = slide.querySelector(".video-script");
+      if (script) {
+        const heading = document.createElement("h3");
+        heading.className = "notes-script-heading";
+        heading.textContent = "Video script";
+        this.notesBody.appendChild(heading);
+        script.querySelectorAll("p").forEach((source) => {
+          const copy = document.createElement("p");
+          copy.className = "notes-script";
+          copy.textContent = source.textContent;
+          this.notesBody.appendChild(copy);
+        });
+      }
     }
 
     toggleNotes(force) {
       const shouldOpen = typeof force === "boolean" ? force : !this.notesPanel.classList.contains("open");
       this.notesPanel.classList.toggle("open", shouldOpen);
+      document.body.classList.toggle("notes-open", shouldOpen);
       this.notesPanel.setAttribute("aria-hidden", shouldOpen ? "false" : "true");
       if (shouldOpen) this.renderNotes();
     }

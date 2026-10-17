@@ -1,0 +1,668 @@
+/* EOA content extensions. Visual shell copied without alteration from ai-config PR 1209. */
+.time-indicator { display: none; }
+.comp-rule .eyebrow { color: #b9d3f4; }
+.panel .support { margin-top: 0.7rem; }
+.story-copy { min-width: 0; }
+.resource-links, .slide-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.link-article, .link-prompt { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 12px; border-radius: 6px; font-size: 16px; font-weight: 600; line-height: 1.2; text-decoration: none; }
+.link-article { color: var(--blue-deep); background: var(--blue-soft); border: 1px solid var(--blue); }
+.link-prompt { color: var(--green-text); background: var(--green-soft); border: 1px solid var(--green); }
+.homework-instruction, .housekeeping-rating { margin-top: 20px; }
+.homework-instruction a { color: var(--blue); font-weight: 600; }
+.reading-links { display: grid; gap: 16px; margin-top: 20px; list-style: none; }
+.reading-links li { display: grid; gap: 4px; font-size: clamp(18px, 1.5vw, 24px); line-height: 1.2; }
+.reading-links a { color: var(--blue); font-weight: 600; display: inline-flex; align-items: center; min-height: 44px; }
+.book-author { color: var(--muted); font-size: 0.85em; }
+.sample-stack { display: flex; flex-direction: column; gap: 12px; justify-content: flex-start; }
+.sample .slide-title { font-size: clamp(28px, 3vw, 44px); }
+.sample .support, .sample-statement { font-size: clamp(16px, 1.3vw, 21px); line-height: 1.3; }
+.sample-kicker { color: var(--blue); font-size: 16px; font-weight: 600; }
+.sample-table { width: 100%; border-collapse: collapse; font-size: clamp(16px, 1.2vw, 20px); line-height: 1.25; background: var(--surface); }
+.sample-table th { text-align: left; padding: 7px 10px; color: var(--blue-deep); background: var(--blue-soft); border-bottom: 2px solid var(--blue); font-size: 0.85em; }
+.sample-table td { padding: 7px 10px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+.sample-table td:first-child { font-weight: 600; color: var(--ink-deep); }
+.sample-table tbody tr:last-child td { border-bottom: 0; }
+.priority-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.priority-grid .panel { padding: 18px; }
+.priority-grid h2 { font-size: clamp(20px, 1.8vw, 28px); line-height: 1.15; }
+.priority-measure { font-size: clamp(17px, 1.35vw, 22px); line-height: 1.35; margin-top: 16px; }
+.priority-connection { font-size: clamp(16px, 1.1vw, 18px); color: var(--muted); line-height: 1.35; border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+.sprint-table { table-layout: fixed; }
+.sprint-table th:first-child { width: 19%; }
+.sprint-table td { padding: 12px 8px; }
+@media (min-width:900px) and (min-height:600px) {
+ .sample .sample-stack { margin-top: 16px; }
+ .sample-table th, .sample-table td { padding: 5px 8px; }
+ .reading-links { gap: 10px; margin-top: 12px; }
+}
+@media (max-width:899px), (max-height:599px) {
+ .sample .support, .sample-statement { font-size: 18px; }
+ .sample-stack { gap: 20px; }
+ .priority-grid { grid-template-columns: 1fr; }
+ .priority-grid h2 { font-size: 24px; }
+ .priority-measure, .priority-connection { font-size: 18px; }
+ .sample-table, .sample-table tbody, .sample-table tr, .sample-table td { display: block; width: 100%; }
+ .sample-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+ .sample-table tr { padding: 16px; margin-bottom: 14px; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 8px; background: white; }
+ .sample-table td { display: grid; grid-template-columns: minmax(85px,0.6fr) minmax(0,1fr); gap: 12px; padding: 9px 0; font-size: 18px; overflow-wrap: anywhere; }
+ .sample-table td::before { content: attr(data-label); font-size: 14px; font-weight: 600; color: var(--muted); }
+ .sample-table td:first-child { font-size: 19px; }
+ .sample-table { background: transparent; }
+ .reading-links { gap: 16px; }
+}
+.comp-rule .slide-stage { flex: 0 1 auto; }
+.comp-rule .rule-line a { color: #dff4e5; text-underline-offset: 4px; }
+
+/* EO Accelerator decks use their program logo in the standard footer position. */
+.eoa-footer-logo { display: block; width: clamp(130px, 16vw, 210px); aspect-ratio: 5.8; overflow: hidden; mix-blend-mode: multiply; flex-shrink: 0; }
+.eoa-footer-logo img { display: block; width: 139%; max-width: none; height: auto; transform: translate(-14%, -35.5%); }
+.comp-rule .eoa-footer-logo { mix-blend-mode: screen; }
+.comp-rule .eoa-footer-logo img { filter: grayscale(1) invert(1); }
+@media (max-width: 767px) { .eoa-footer-logo { width: 145px; } }
+
+/* Original EOA wording, laid out in the approved shared visual shell. */
+.original-copy .slide-title { font-size: clamp(30px, 3.2vw, 48px); }
+.original-body { display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+.original-body .support { font-size: clamp(18px, 1.7vw, 26px); }
+.talking-points, .homework-list { padding-left: 1.1em; margin: 0; }
+.talking-points li, .homework-list li, .numbered li { font-size: clamp(18px, 1.55vw, 24px); line-height: 1.35; margin-bottom: 0.4em; }
+.talking-points li::marker, .homework-list li::marker { color: var(--green); }
+.talking-points ul { padding-left: 1.2em; }
+.original-rules { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 36px; list-style: none; padding: 0; }
+.original-rules li { display: flex; gap: 14px; align-items: flex-start; font-size: clamp(18px, 1.6vw, 25px); line-height: 1.35; }
+.rule-icon { width: 24px; flex: 0 0 24px; }
+.rule-icon svg { width: 24px; height: 24px; stroke: var(--blue); }
+#slide-4 .talking-points { columns: 2; column-gap: 48px; }
+#slide-4 .talking-points > li { break-inside: avoid; }
+.homework-section h3 { font-size: clamp(20px, 1.8vw, 27px); margin-bottom: 12px; }
+.homework-list a { color: var(--blue); }
+.pull-note { font-size: 18px; line-height: 1.35; color: var(--muted); }
+.numbered { padding-left: 1.3em; }
+.close-question { font-size: clamp(24px, 2.5vw, 36px); }
+@media (max-width:899px), (max-height:599px) {
+ .original-rules { grid-template-columns: 1fr; }
+ #slide-4 .talking-points { columns: 1; }
+ .original-body { gap: 24px; }
+}
+
+.original-body > .talking-points { padding-left: 1.3em; }
+
+/* Byron's action questions, with business figures and discussion prompts grouped separately. */
+.business-update-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; align-items: stretch; align-content: center; }
+.update-block { align-self: stretch; margin: 0; padding: 26px; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; }
+.update-block:nth-child(2) { border-top-color: var(--green); }
+.update-block h2 { font-size: clamp(23px, 2vw, 32px); line-height: 1.15; margin: 0 0 24px; }
+.update-questions { list-style: decimal; padding-left: 1.25em; margin: 0; display: grid; gap: 24px; }
+.update-questions li { font-size: clamp(19px, 1.55vw, 25px); line-height: 1.4; padding-left: 5px; }
+.update-questions li::marker { color: var(--blue); font-weight: 600; }
+.update-metrics { display: grid; gap: 14px; margin: 0; }
+.update-metrics dt { font-size: clamp(18px, 1.4vw, 22px); font-weight: 600; }
+.update-metrics dd { margin: 3px 0 0; font-size: clamp(17px, 1.2vw, 20px); color: var(--muted); }
+.update-reflections { list-style: none; display: grid; gap: 10px; margin: 22px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+.update-reflections li { font-size: clamp(18px, 1.35vw, 22px); line-height: 1.25; }
+@media (max-width:899px), (max-height:599px) {
+ .business-update-grid { grid-template-columns: 1fr; align-items: stretch; }
+ .update-block { margin: 0; padding: 24px; }
+ .update-questions li { font-size: 20px; }
+}
+
+/* UX review: illustration supports the two brief reflection moments, preserving original copy. */
+.reflection-frame { flex: 1; display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 48px; min-height: 0; }
+.reflection-copy .slide-title { font-size: clamp(34px, 3.4vw, 54px); }
+.reflection-prompts { margin-top: 32px; }
+.reflection-prompts .support, .reflection-prompts .close-question { font-size: clamp(26px, 2.7vw, 42px); line-height: 1.25; }
+.reflection-prompts .talking-points { padding-left: 0; list-style: none; margin-top: 24px; }
+.reflection-prompts .talking-points li { font-size: clamp(20px, 1.7vw, 28px); line-height: 1.4; }
+.reflection-prompts .action-line { color: var(--green-text); font-size: clamp(20px, 1.7vw, 28px); margin-bottom: 20px; }
+.reflection-art { min-height: 0; }
+.reflection-art img { width: 100%; max-height: 54vh; object-fit: contain; display: block; mix-blend-mode: multiply; }
+@media (max-width:899px), (max-height:599px) {
+ .reflection-frame { grid-template-columns: 1fr; gap: 28px; }
+ .reflection-art img { max-height: 310px; }
+ .reflection-prompts { margin-top: 24px; }
+}
+
+/* Agreed UX refinement. Preserve content, strengthen hierarchy and grouping. */
+#slide-1 .story-title + .talking-points { margin-top: 28px; }
+.original-body { justify-content: flex-start; }
+.business-update-grid { align-content: start; }
+.original-rules { gap: 22px 32px; }
+.original-rules li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.prompt-grid, .review-grid, .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.prompt-card, .review-reflection, .review-action, .resource-grid .homework-section { padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.prompt-card { border-left: 4px solid var(--blue); font-size: clamp(22px, 1.9vw, 30px); line-height: 1.35; }
+.discussion-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.action-strip { background: var(--green-soft); color: var(--green-text); border-left: 4px solid var(--green); border-radius: 4px; padding: 18px 22px; font-size: clamp(18px, 1.55vw, 24px); line-height: 1.35; }
+.review-grid { grid-template-columns: 0.8fr 1.2fr; }
+.review-reflection { display: flex; flex-direction: column; gap: 28px; }
+.review-question { font-size: clamp(23px, 2vw, 30px); line-height: 1.3; }
+.review-action { border-top: 4px solid var(--green); }
+.review-action h2 { font-size: clamp(22px, 1.8vw, 28px); line-height: 1.25; margin-bottom: 18px; }
+.review-action ul { padding-left: 1.2em; }
+.review-action li { font-size: clamp(18px, 1.45vw, 23px); line-height: 1.35; margin-bottom: 12px; }
+.review-action li::marker { color: var(--green); }
+.conclusion-prompts { list-style: none; display: grid; gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 0 24px; }
+.conclusion-prompts li { font-size: clamp(21px, 1.8vw, 28px); line-height: 1.35; padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
+.conclusion-prompts li:last-child { border: 0; }
+.resource-grid .homework-section { border-top: 4px solid var(--blue); }
+.resource-grid .homework-section:last-child { border-top-color: var(--green); }
+.resource-grid .homework-list { list-style: none; padding: 0; }
+.resource-grid .homework-list li { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 12px; padding: 16px 0; margin: 0; border-bottom: 1px solid var(--line-soft); }
+.resource-grid .homework-list a { font-size: clamp(18px, 1.5vw, 23px); line-height: 1.35; }
+.resource-grid .homework-list .link-prompt { font-size: 16px; white-space: nowrap; }
+.resource-grid .homework-section h3 { min-height: 2.5em; }
+.rating-strip { padding: 24px; border-left: 4px solid var(--green); background: var(--green-soft); }
+.rating-strip h3 { font-size: clamp(25px, 2.2vw, 34px); }
+.date-section h3 { font-size: 24px; margin: 16px 0; }
+.date-grid { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.date-grid li { padding: 28px; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; background: var(--surface); }
+.date-grid strong { display: block; font-size: clamp(26px, 2.4vw, 38px); margin-bottom: 18px; }
+.date-grid span { font-size: clamp(22px, 1.8vw, 28px); line-height: 1.3; }
+#slide-14 .numbered { list-style-position: outside; margin-left: 1.3em; padding-left: 0; }
+#slide-14 .numbered li { font-size: clamp(24px, 2.2vw, 34px); padding: 24px 16px; margin: 0; border-bottom: 1px solid var(--line); }
+#slide-14 .numbered li::marker { color: var(--blue); font-weight: 600; }
+.cascade-body .talking-points { list-style: none; padding: 0; }
+.cascade-body .talking-points li { font-size: clamp(22px, 2vw, 32px); padding: 22px; border-bottom: 1px solid var(--line); }
+.cascade-body .talking-points li:first-child { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: 8px; }
+.cascade-term { color: var(--blue); }
+.capability-heading, .capability-item { display: grid; grid-template-columns: 32px 1fr; gap: 12px; }
+.capability-heading { color: var(--blue-deep); font-size: 16px; padding: 10px 18px; }
+.capability-item { background: var(--surface); padding: 14px 18px; border-bottom: 1px solid var(--line); font-size: clamp(18px, 1.55vw, 25px); line-height: 1.35; }
+.capability-item span:first-child { color: var(--blue); font-weight: 600; }
+.quote-panel { background: var(--green-soft); border-left: 4px solid var(--green); padding: 16px 20px; }
+.quote-label { font-size: 16px; color: var(--muted); margin-bottom: 8px; }
+.quote-panel blockquote { font-size: clamp(21px, 1.9vw, 30px); line-height: 1.3; }
+.sample-table .table-section-label { background: var(--blue-soft); color: var(--blue-deep); font-size: 0.85em; letter-spacing: .03em; padding: 8px 14px; }
+.vacation-cell { background: var(--paper-soft); color: var(--muted); }
+.planning-cell { background: var(--green-soft); }
+@media (min-width:900px) and (min-height:600px) {
+ .sample-table { font-size: clamp(17px, 1.3vw, 22px); line-height: 1.35; }
+ .sample-table th, .sample-table td { padding: clamp(7px, 1.1vh, 13px) 14px; }
+ .sample-table td:last-child { font-weight: 600; }
+ .sprint-table td { padding: clamp(16px, 2.5vh, 30px) 14px; }
+ .sprint-table td:first-child { background: var(--blue-soft); }
+ .priority-grid .panel { padding: 28px; }
+ .priority-measure { margin-top: 24px; }
+ .priority-connection { padding-top: 20px; margin-top: 20px; }
+}
+@media (max-width:899px), (max-height:599px) {
+ .prompt-grid, .review-grid, .resource-grid, .discussion-strip, .date-grid { grid-template-columns: 1fr; gap: 18px; }
+ .resource-grid .homework-list li { grid-template-columns: 1fr; }
+ .resource-grid .homework-list .link-prompt { justify-self: start; }
+ .resource-grid .homework-section h3 { min-height: 0; }
+ .sample-table .table-section { background: var(--blue-soft); padding: 10px 16px; border-top: 0; }
+ .sample-table .table-section-label { display: block; padding: 0; }
+ .sample-table .table-section-label::before { display: none; }
+ .original-rules li { padding: 12px 0; }
+ .review-action li { font-size: 18px; }
+ .capability-heading { font-size: 14px; padding-inline: 0; }
+ .capability-item { padding: 16px 0; font-size: 18px; }
+ .date-grid li { padding: 22px; }
+ .date-grid strong { font-size: 28px; }
+ #slide-14 .numbered li { font-size: 23px; padding: 20px 8px; }
+ .cascade-body .talking-points li { font-size: 22px; }
+ .slide-footer { margin-bottom: 12px; }
+}
+/* Keep list markers inside the content box. */
+#slide-14 .numbered { margin-left: 0; padding-left: 1.5em; }
+/* Compact spacing at projection sizes, without dropping body text below 18px. */
+@media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
+ .original-rules { gap: 12px 24px; }
+ .original-rules li { padding: 9px 0; font-size: 18px; }
+ .sample .sample-stack { gap: 8px; }
+ .sample-table { font-size: 18px; line-height: 1.2; }
+ .sample-table th, .sample-table td { padding: 6px 10px; }
+ .sample-table .table-section-label { padding: 4px 10px; }
+ .capability-item { padding: 9px 14px; font-size: 18px; line-height: 1.25; }
+ .capability-heading { padding: 6px 14px; }
+ .quote-panel { padding: 10px 14px; }
+ .quote-panel blockquote { font-size: 20px; }
+ .quote-label { font-size: 14px; margin-bottom: 4px; }
+ #slide-11 .original-body, #slide-13 .original-body, #slide-13 .original-body { gap: 12px; }
+ .review-grid { grid-template-columns: .7fr 1.3fr; gap: 16px; }
+ .review-reflection, .review-action { padding: 14px; }
+ .review-question { font-size: 22px; }
+ .review-action h2 { font-size: 20px; margin-bottom: 10px; }
+ .review-action li { font-size: 18px; line-height: 1.25; margin-bottom: 8px; }
+ .action-strip { padding: 12px 16px; font-size: 18px; }
+ .conclusion-prompts li { font-size: 21px; padding: 13px 0; }
+ .resource-grid { gap: 16px; }
+ .resource-grid .homework-section { padding: 16px; }
+ .resource-grid .homework-section h3 { font-size: 21px; }
+ .resource-grid .homework-list li { padding: 9px 0; }
+ .resource-grid .homework-list a { font-size: 18px; }
+ .resource-grid .homework-list .link-prompt { font-size: 16px; }
+ .sprint-table td { padding: 18px 12px; }
+ .priority-grid .panel { padding: 18px; }
+}
+@media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
+}
+#slide-14 .numbered { list-style: none; padding-left: 0; counter-reset: feedback; }
+#slide-14 .numbered li { display: grid; grid-template-columns: 1.4em minmax(0,1fr); gap: 12px; counter-increment: feedback; }
+#slide-14 .numbered li::before { content: counter(feedback) "."; color: var(--blue); font-weight: 600; }
+
+/* Owner-approved three-question personal review. */
+.personal-review-questions { justify-content: flex-start; }
+.personal-review-questions ol { list-style: none; counter-reset: review; display: grid; gap: 24px; }
+.personal-review-questions li { counter-increment: review; display: grid; grid-template-columns: 1.3em minmax(0,1fr); gap: 18px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: clamp(24px, 2.4vw, 38px); line-height: 1.3; }
+.personal-review-questions li::before { content: counter(review) "."; color: var(--blue); font-weight: 600; }
+@media (max-width:899px), (max-height:599px) {
+ .personal-review-questions ol { gap: 18px; }
+ .personal-review-questions li { padding: 20px 16px; gap: 12px; font-size: 24px; }
+}
+
+
+/* Two planning relationships share common horizons, with no cross-lane causality implied. */
+.cascade-explainer .slide-title { font-size: clamp(30px, 3vw, 46px); }
+.cascade-matrix { flex: 0 0 auto; gap: 16px; overflow: visible; }
+.cascade-matrix-row { display: grid; grid-template-columns: minmax(0,1fr) 72px minmax(0,1fr) 72px minmax(0,1fr); gap: 10px; }
+.cascade-column-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.cascade-column-heading strong { color: var(--blue); font-size: clamp(26px, 2.5vw, 38px); }
+.cascade-column-heading span { color: var(--muted); font-size: 16px; }
+.cascade-finance-cell, .cascade-priority-cell { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; padding: 20px; }
+.cascade-priority-cell { border-top-color: var(--green); }
+.cascade-matrix h2 { font-size: clamp(20px, 1.7vw, 26px); line-height: 1.2; margin-bottom: 14px; }
+.cascade-finance-cell dl { display: grid; gap: 10px; }
+.cascade-finance-cell dl>div { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 12px; font-size: clamp(18px, 1.4vw, 22px); line-height: 1.25; }
+.cascade-finance-cell dt { color: var(--muted); }
+.cascade-finance-cell dd { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.cascade-finance-cell .cash-context { font-size: 14px; line-height: 1.25; color: var(--muted); margin-top: 12px; }
+.cascade-priority-cell>p { font-size: clamp(18px, 1.5vw, 24px); line-height: 1.35; }
+.cascade-connector { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; color: var(--blue); text-align: center; font-size: 14px; font-weight: 600; }
+.priorities .cascade-connector { color: var(--green-text); }
+.cascade-direction { font-size: 36px; line-height: 1; }
+.cascade-source { font-size: 14px; color: var(--muted); margin-top: 16px; }
+.cascade-mobile-horizon { display: none; }
+@media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
+ .cascade-matrix { gap: 10px; }
+ .cascade-matrix-row { grid-template-columns: minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,1fr); gap: 8px; }
+ .cascade-column-heading { align-items: flex-start; flex-direction: column; gap: 2px; }
+ .cascade-column-heading strong { font-size: 26px; }
+ .cascade-column-heading span { font-size: 14px; }
+ .cascade-finance-cell, .cascade-priority-cell { padding: 12px; }
+ .cascade-matrix h2 { font-size: 20px; margin-bottom: 10px; }
+ .cascade-finance-cell dl { gap: 6px; }
+ .cascade-finance-cell dl>div { gap: 6px; font-size: 18px; }
+ .cascade-finance-cell .cash-context { font-size: 12px; margin-top: 6px; }
+ .cascade-priority-cell>p { font-size: 18px; line-height: 1.25; }
+ .cascade-connector { font-size: 12px; }
+ .cascade-source { margin-top: 10px; }
+}
+@media (max-width:899px), (max-height:599px) {
+ .cascade-matrix { gap: 36px; }
+ .cascade-matrix-row { grid-template-columns: 1fr; gap: 16px; }
+ .cascade-matrix-row.headers { display: none; }
+ .cascade-mobile-horizon, .cascade-priority-cell>.cascade-mobile-horizon { display: block; font-size: 18px; font-weight: 600; color: var(--blue); margin-bottom: 16px; }
+ .cascade-finance-cell, .cascade-priority-cell { padding: 24px; }
+ .cascade-matrix h2 { font-size: 24px; }
+ .cascade-finance-cell dl>div { font-size: 18px; }
+ .cascade-priority-cell>p { font-size: 20px; }
+ .cascade-direction { transform: rotate(90deg); }
+}
+
+.financial-qualifier { font-size: .75em; font-weight: 400; }
+@media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
+ .cascade-column-heading { flex-direction: row; align-items: baseline; }
+ .cascade-column-heading span { font-size: 12px; }
+ .cascade-finance-cell .financial-qualifier { display: block; font-size: 12px; line-height: 1.2; }
+ .cascade-matrix h2 { font-size: 19px; }
+}
+
+/* Each member presents the three planning horizons in sequence. */
+.member-plans .slide-title { font-size: clamp(30px, 3vw, 46px); max-width: 100%; }
+.member-plan-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; align-content: start; }
+.member-plan-grid article { border: 1px solid var(--line); border-top: 4px solid var(--blue); background: var(--surface); border-radius: 8px; padding: 28px; }
+.member-plan-grid article:last-child { border-top-color: var(--green); }
+.member-plan-grid article>p { font-family: var(--font-mono); color: var(--blue); font-size: 18px; margin-bottom: 24px; }
+.member-plan-grid h2 { font-size: clamp(32px, 3vw, 48px); margin-bottom: 22px; }
+.member-plan-grid article>div { font-size: clamp(22px, 2vw, 30px); line-height: 1.35; }
+@media (max-width:899px), (max-height:599px) {
+ .member-plan-grid { grid-template-columns: 1fr; gap: 18px; }
+ .member-plan-grid article { padding: 24px; }
+ .member-plan-grid article>p { margin-bottom: 14px; }
+}
+
+/* Personal Review: original wording with OBT sub-points (restored 2026-10-09). */
+.personal-review-questions ol { gap: 10px; }
+.personal-review-questions ol > li { padding: 12px 20px; font-size: clamp(18px, 1.7vw, 26px); }
+.personal-review-questions ol > li > ul { grid-column: 2; margin: 6px 0 0; padding-left: 1.1em; list-style: disc; display: block; }
+.personal-review-questions ol > li > ul > li { counter-increment: none; display: list-item; padding: 0; border: 0; background: none; border-radius: 0; font-size: clamp(15px, 1.35vw, 21px); line-height: 1.35; margin: 2px 0; }
+.personal-review-questions ol > li > ul > li::before { content: none; }
+
+/* Plan check: seven checks in two columns so all fit at 1280x720 (2026-10-09). */
+#slide-9 .personal-review-questions ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+#slide-9 .personal-review-questions ol > li { padding: 12px 18px; font-size: clamp(16px, 1.45vw, 22px); }
+@media (max-width: 900px) { #slide-9 .personal-review-questions ol { grid-template-columns: 1fr; } }
+
+/* Business Updates: forecast vs actual wording needs a tighter third column (2026-10-11). */
+.update-metrics { gap: 10px; }
+.update-metrics dd { font-size: clamp(15px, 1.1vw, 18px); line-height: 1.3; }
+.update-reflections { gap: 6px; margin-top: 14px; padding-top: 12px; }
+.update-reflections li { font-size: clamp(16px, 1.25vw, 20px); }
+
+/* Business Updates: forecast-vs-actual table and a bottom strip (2026-10-11). */
+#slide-4 .business-update-grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1.25fr); row-gap: 14px; }
+#slide-4 .update-block { padding: 20px 22px; }
+#slide-4 .update-block h2 { margin-bottom: 16px; }
+#slide-4 .update-questions { gap: 14px; }
+.update-fva { width: 100%; border-collapse: collapse; font-size: clamp(15px, 1.15vw, 19px); }
+.update-fva th, .update-fva td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+.update-fva thead th { color: var(--muted); font-weight: 600; font-size: 0.85em; }
+.update-fva tbody th { font-weight: 600; white-space: nowrap; }
+.update-fva td { height: 2.1em; background: #fff; }
+#slide-4 .update-strip { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0; padding: 0; border: 0; }
+#slide-4 .update-strip li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 18px; font-weight: 600; }
+@media (max-width: 900px) { #slide-4 .business-update-grid { grid-template-columns: 1fr; } #slide-4 .update-strip { grid-template-columns: 1fr; } }
+#slide-4 .business-update-grid { grid-template-columns: minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr); }
+#slide-4 .update-block:nth-child(2) { border-top-color: var(--blue); }
+#slide-4 .update-block:nth-child(3) { border-top-color: var(--green); }
+#slide-4 .update-strip li { padding: 8px 16px; }
+#slide-4 .slide-title { margin-bottom: 12px; }
+/* Numbers card: rows with month/quarter/year pills instead of a blank grid (2026-10-11). */
+#slide-4 .update-business { display: flex; flex-direction: column; }
+.fva-sub { margin: -6px 0 14px; color: var(--muted); font-size: clamp(15px, 1.1vw, 18px); }
+.update-fva-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: space-around; flex: 1; gap: 12px; }
+.update-fva-rows li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.update-fva-rows li:last-child { border-bottom: 0; padding-bottom: 0; }
+.fva-label { font-size: clamp(19px, 1.55vw, 25px); font-weight: 600; }
+.fva-pills { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.fva-pills span { font-size: clamp(13px, 0.95vw, 16px); padding: 4px 10px; border-radius: 999px; background: #EAF1FA; color: var(--blue); font-weight: 600; }
+.update-fva-rows li { flex-direction: column; align-items: flex-start; gap: 8px; }
+.fva-pills { flex-wrap: nowrap; justify-content: flex-start; }
+.fva-pills span { padding: 4px 12px; }
+.fva-sub { margin: -8px 0 8px; }
+.update-fva-rows { gap: 8px; }
+.update-fva-rows li { gap: 6px; padding-bottom: 8px; }
+.fva-ask { color: var(--blue); font-weight: 700; font-size: clamp(16px, 1.25vw, 20px); }
+/* Number boxes: label plus forecast and actual blanks (2026-10-11). */
+.fva-pills { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; width: 100%; }
+.fva-pills .fva-cell { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6px; padding: 4px 8px; border-radius: 6px; background: #EAF1FA; color: var(--ink, #1f2a37); }
+.fva-cell b { grid-column: 1 / -1; font-size: clamp(12px, 0.85vw, 14px); color: var(--blue); font-weight: 700; }
+.fva-cell i { font-style: normal; font-size: clamp(13px, 0.95vw, 16px); font-weight: 600; white-space: nowrap; }
+/* Forecast vs Actual as a say-it-out-loud table (2026-10-11). */
+.fva-table { width: 100%; border-collapse: separate; border-spacing: 0 8px; margin-top: 4px; }
+.fva-table thead th { font-size: clamp(13px, 0.95vw, 16px); color: var(--muted); font-weight: 700; text-align: left; padding: 0 8px; }
+.fva-table tbody th { font-size: clamp(18px, 1.45vw, 23px); font-weight: 600; text-align: left; padding: 10px 8px 10px 0; white-space: nowrap; }
+.fva-table tbody td { background: #EAF1FA; color: var(--blue); font-weight: 700; font-size: clamp(15px, 1.1vw, 18px); padding: 10px 10px; border-left: 3px solid var(--surface); }
+.fva-table tbody td:first-of-type { border-radius: 6px 0 0 6px; }
+.fva-table tbody td:last-child { border-radius: 0 6px 6px 0; white-space: nowrap; }
+/* Strip aligned to the three cards above (2026-10-11). */
+#slide-4 .update-strip { grid-template-columns: minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr); column-gap: 24px; }
+.fva-table tbody td { padding: 10px 8px; }
+.fva-table tbody th { padding-right: 10px; }
+#slide-4 .update-strip li { padding: 6px 16px; }
+#slide-4 .business-update-grid { row-gap: 10px; }
+.fva-table thead th { white-space: nowrap; padding: 0 6px; }
+.fva-table { border-spacing: 0 6px; }
+.fva-table tbody td, .fva-table tbody th { padding-top: 8px; padding-bottom: 8px; }
+/* Presentation-order numbers on Business Updates (2026-10-11). */
+#slide-4 .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 0.7em; font-weight: 700; vertical-align: 0.15em; }
+#slide-4 .update-strip .step { font-size: 0.8em; }
+/* Presentations: 15-minute turn as a three-step flow (2026-10-11). */
+#slide-5 .pres-flow { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: stretch; }
+#slide-5 .pres-step { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; padding: 22px 24px; }
+#slide-5 .pres-step:nth-child(2), #slide-5 .pres-step:nth-child(3) { border-top-color: var(--green); }
+#slide-5 .pres-time { margin: 0 0 14px; font-weight: 700; color: var(--blue); font-size: clamp(16px, 1.2vw, 20px); text-transform: uppercase; letter-spacing: 0.04em; }
+#slide-5 .pres-step h2 { font-size: clamp(22px, 1.9vw, 30px); margin: 0 0 12px; }
+#slide-5 .pres-step p, #slide-5 .pres-step li { font-size: clamp(17px, 1.35vw, 22px); line-height: 1.4; }
+#slide-5 .pres-step ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+#slide-5 .step { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 0.85em; }
+@media (max-width: 900px) { #slide-5 .pres-flow { grid-template-columns: 1fr; } }
+#slide-5 .slide-content { display: flex; flex-direction: column; }
+#slide-5 .slide-stage { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+#slide-5 .pres-flow { flex: 1; margin-bottom: 8px; }
+#slide-5 .pres-step ul { gap: 12px; }
+#slide-5 .pres-flow { flex: 0 0 auto; margin: auto 0; }
+#slide-5 .pres-flow { grid-template-columns: minmax(0,1.45fr) repeat(3, minmax(0,1fr)); gap: 16px; }
+#slide-5 .pres-step { padding: 20px 20px; }
+#slide-5 .pres-step:nth-child(4) { border-top-color: var(--blue); }
+#slide-5 .pres-step h2 { font-size: clamp(20px, 1.7vw, 27px); }
+#slide-5 .pres-step p, #slide-5 .pres-step li { font-size: clamp(16px, 1.25vw, 21px); }
+@media (max-width: 900px) { #slide-5 .pres-flow { grid-template-columns: 1fr; } }
+#slide-5 .pres-time { white-space: nowrap; letter-spacing: 0.02em; font-size: clamp(14px, 1.05vw, 18px); }
+#slide-5 .step { margin-right: 8px; }
+#slide-5 .pres-smart { margin: 12px 0 6px; font-weight: 700; }
+/* SMART hover/focus explainer on Business Updates (2026-10-11). */
+.smart-tip { position: relative; border-bottom: 2px dotted var(--blue); color: var(--blue); cursor: help; font-weight: 700; outline: none; }
+.smart-tip .tip { position: absolute; right: 0; bottom: calc(100% + 10px); width: 300px; padding: 12px 14px; background: #1f2a37; color: #fff; border-radius: 8px; font-size: 15px; font-weight: 400; line-height: 1.45; box-shadow: 0 8px 24px rgba(0,0,0,.25); opacity: 0; visibility: hidden; transition: opacity .15s; z-index: 20; text-align: left; }
+.smart-tip .tip b { color: #9cc3f5; }
+.smart-tip:hover .tip, .smart-tip:focus .tip { opacity: 1; visibility: visible; }
+#slide-4 .slide-stage, #slide-4 .business-update-grid, #slide-4 .update-block { overflow: visible; }
+.smart-tip .tip { width: 380px; }
+/* Cascade: BHAG band above the 3HAG, 1HAG, QHAG (2026-10-11). */
+/* Cascade overview and level definitions (2026-10-11). */
+#slide-7 .chain { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+#slide-7 .chain li { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; border-radius: 8px; color: #fff; position: relative; }
+#slide-7 .chain li strong { font-size: clamp(22px, 1.9vw, 30px); }
+#slide-7 .chain li span { font-size: clamp(14px, 1.05vw, 18px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; opacity: .9; }
+#slide-7 .chain .lvl-0 { background: #1f2a37; margin: 0 0%; }
+#slide-7 .chain .lvl-1 { background: var(--blue); margin: 0 4%; }
+#slide-7 .chain .lvl-2 { background: #4a80c4; margin: 0 8%; }
+#slide-7 .chain .lvl-3 { background: #6b98d1; margin: 0 12%; }
+#slide-7 .chain .lvl-4 { background: var(--green); margin: 0 16%; }
+#slide-7 .chain li + li::before { content: "▼"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); color: var(--muted); font-size: 12px; }
+#slide-7 .chain-note { margin-top: 14px; color: var(--muted); font-size: clamp(15px, 1.15vw, 19px); text-align: center; }
+#slide-8 .levels-table { width: 100%; border-collapse: collapse; }
+#slide-8 .levels-table th, #slide-8 .levels-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: clamp(15px, 1.15vw, 19px); line-height: 1.35; }
+#slide-8 .levels-table thead th { color: var(--muted); font-size: clamp(13px, 0.95vw, 15px); text-transform: uppercase; letter-spacing: 0.04em; }
+#slide-8 .levels-table tbody th { color: var(--blue); font-size: clamp(17px, 1.35vw, 22px); white-space: nowrap; }
+#slide-8 .levels-table td.when { white-space: nowrap; font-weight: 600; }
+/* Acronyms spelled out (2026-10-11). */
+#slide-8 .levels-table tbody th small { display: block; font-size: clamp(12px, 0.85vw, 14px); color: var(--muted); font-weight: 600; white-space: normal; margin-top: 2px; }
+#slide-8 .levels-table tbody th { white-space: normal; width: 22%; }
+#slide-7 .chain li strong em { font-style: normal; font-weight: 500; font-size: 0.55em; opacity: .85; margin-left: 12px; }
+#slide-8 .levels-table th, #slide-8 .levels-table td { padding: 7px 10px; font-size: clamp(14px, 1.1vw, 18px); }
+#slide-8 .levels-table tbody th { font-size: clamp(16px, 1.3vw, 21px); }
+/* Bigger arrows between cascade levels (2026-10-11). */
+#slide-7 .chain { gap: 26px; }
+#slide-7 .chain li { padding-top: 11px; padding-bottom: 11px; }
+#slide-7 .chain li + li::before { content: ""; top: -22px; width: 0; height: 0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 18px solid var(--blue); }
+/* Cascade in Darlison brand gradient: green #54B570 at the top to blue #326AB6 at the bottom (2026-10-11). */
+#slide-7 .chain .lvl-0 { background: #54B570; }
+#slide-7 .chain .lvl-1 { background: #4CA282; }
+#slide-7 .chain .lvl-2 { background: #438F93; }
+#slide-7 .chain .lvl-3 { background: #3B7DA5; }
+#slide-7 .chain .lvl-4 { background: #326AB6; }
+#slide-7 .chain .lvl-1::before { border-top-color: #4CA282; }
+#slide-7 .chain .lvl-2::before { border-top-color: #438F93; }
+#slide-7 .chain .lvl-3::before { border-top-color: #3B7DA5; }
+#slide-7 .chain .lvl-4::before { border-top-color: #326AB6; }
+#slide-7 .slide-title { font-size: clamp(26px, 2.5vw, 40px); line-height: 1.15; }
+#slide-7 .chain { gap: 22px; }
+#slide-7 .chain li { padding-top: 8px; padding-bottom: 8px; }
+#slide-7 .chain li + li::before { top: -19px; border-top-width: 15px; border-left-width: 14px; border-right-width: 14px; }
+#slide-7 .chain-note { margin-top: 10px; }
+/* Large hover explainers on the cascade levels (2026-10-11). */
+#slide-7 .slide-stage, #slide-7 .slide-content, #slide-7 .chain { overflow: visible; }
+#slide-7 .chain li { cursor: help; outline: none; }
+#slide-7 .chain li:hover, #slide-7 .chain li:focus { box-shadow: 0 0 0 3px #fff, 0 0 0 6px currentColor; z-index: 30; }
+#slide-7 .lvl-tip { position: absolute; left: 50%; top: calc(100% + 12px); transform: translateX(-50%); width: min(640px, 90%); padding: 18px 22px; background: #fff; color: #1f2a37; border: 2px solid #326AB6; border-radius: 10px; box-shadow: 0 12px 32px rgba(0,0,0,.25); font-size: clamp(17px, 1.4vw, 22px); line-height: 1.45; font-weight: 400; text-transform: none; letter-spacing: 0; opacity: 0; visibility: hidden; transition: opacity .15s; z-index: 40; pointer-events: none; }
+#slide-7 .lvl-tip b { display: block; color: #326AB6; font-size: 1.1em; margin-bottom: 6px; }
+#slide-7 .chain li:hover .lvl-tip, #slide-7 .chain li:focus .lvl-tip { opacity: 1; visibility: visible; }
+#slide-7 .chain .lvl-3 .lvl-tip, #slide-7 .chain .lvl-4 .lvl-tip { top: auto; bottom: calc(100% + 12px); }
+/* Deliverables as bullets that stand out (2026-10-11). */
+.deliv { margin: 0; padding-left: 1.1em; display: grid; gap: 2px; }
+.deliv li::marker { color: #54B570; }
+.deliv b { color: #326AB6; font-weight: 700; }
+#slide-8 .deliv { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 26px; }
+#slide-8 .levels-table td { padding-top: 6px; padding-bottom: 6px; }
+#slide-7 .lvl-tip .deliv { gap: 6px; }
+#slide-7 .lvl-tip > b { margin-bottom: 8px; }
+#slide-7 .chain .lvl-tip li { display: list-item; position: static; padding: 0; margin: 0; background: none; color: #1f2a37; border-radius: 0; box-shadow: none; justify-content: initial; font-size: clamp(16px, 1.3vw, 21px); }
+#slide-7 .chain .lvl-tip li::before { content: none; border: 0; }
+#slide-7 .chain .lvl-tip li b { display: inline; margin: 0; font-size: 1em; color: #326AB6; }
+#slide-7 .chain .lvl-tip .deliv { padding-left: 1.2em; list-style: disc; }
+#slide-8 .levels-table th, #slide-8 .levels-table td { padding-top: 5px; padding-bottom: 5px; }
+#slide-8 .deliv li { font-size: clamp(13px, 1vw, 16px); line-height: 1.3; }
+#slide-8 .slide-title { margin-bottom: 6px; }
+#slide-8 .levels-table tbody th { width: 24%; }
+#slide-8 .levels-table .hz { display: inline-block; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: #EAF1FA; color: #326AB6; font-size: clamp(11px, 0.8vw, 13px); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+#slide-8 .deliv { column-gap: 30px; }
+#slide-8 .deliv { display: block; columns: 2; column-gap: 30px; }
+#slide-8 .deliv li { break-inside: avoid; margin-bottom: 2px; }
+/* Slide 9: five levels, same colours as the slide 7 cascade */
+#slide-9 .member-plan-grid { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 14px; }
+#slide-9 .member-plan-grid article { border-top: 1px solid var(--line); padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+#slide-9 .member-plan-grid article header { color: #fff; padding: 14px 16px; min-height: 96px; display: flex; flex-direction: column; justify-content: space-between; }
+#slide-9 .member-plan-grid article header span { font-family: var(--font-mono); font-size: 15px; opacity: .85; }
+#slide-9 .member-plan-grid h2 { color: #fff; margin: 6px 0 0; font-size: clamp(22px, 1.9vw, 30px); line-height: 1.1; }
+#slide-9 .member-plan-grid article>div { padding: 16px; font-size: clamp(16px, 1.35vw, 21px); line-height: 1.4; }
+#slide-9 .member-plan-grid .lvl-0 header { background: #54B570; }
+#slide-9 .member-plan-grid .lvl-1 header { background: #4CA282; }
+#slide-9 .member-plan-grid .lvl-2 header { background: #438F93; }
+#slide-9 .member-plan-grid .lvl-3 header { background: #3B7DA5; }
+#slide-9 .member-plan-grid .lvl-4 header { background: #326AB6; }
+@media (max-width: 900px) { #slide-9 .member-plan-grid { grid-template-columns: 1fr; } #slide-9 .member-plan-grid article header { min-height: 0; } }
+#slide-9 .member-plan-grid article header { min-height: 0; height: 112px; justify-content: flex-start; }
+#slide-9 .member-plan-grid .lvl-4 h2 { font-size: clamp(18px, 1.5vw, 24px); }
+#slide-9 .member-plan-grid article>div { padding: 14px 14px 14px 12px; }
+#slide-9 .member-plan-grid .deliv { gap: 6px; }
+#slide-9 .member-plan-grid .deliv li { font-size: clamp(14px, 1.15vw, 18px); line-height: 1.3; }
+/* Slide 10: check marks and key terms in the slide 8 and 9 style */
+#slide-9 .personal-review-questions ol > li b { color: #326AB6; font-weight: 700; }
+#slide-9 .personal-review-questions ol > li::before { content: "\2713"; color: #fff; background: #54B570; border-radius: 50%; width: 1.5em; height: 1.5em; display: inline-flex; align-items: center; justify-content: center; font-size: .85em; font-weight: 700; }
+#slide-9 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; z-index: 20; }
+#slide-9 .personal-review-questions ol > li { overflow: visible; position: relative; }
+#slide-9 .personal-review-questions ol > li:has(.smart-tip) { z-index: 10; }
+/* Slide 6: step borders in the cascade gradient */
+#slide-5 .pres-step:nth-child(1) { border-top-color: #54B570; }
+#slide-5 .pres-step:nth-child(2) { border-top-color: #4ca282; }
+#slide-5 .pres-step:nth-child(3) { border-top-color: #3b7da5; }
+#slide-5 .pres-step:nth-child(4) { border-top-color: #326AB6; }
+/* Slide 13: three matching cards */
+#slide-13 .hk-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; list-style: none; margin: 0; padding: 0; }
+#slide-13 .hk-grid li { display: flex; flex-direction: column; gap: 8px; }
+#slide-13 .hk-grid em { font-style: normal; font-family: var(--font-mono); font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+#slide-13 .hk-grid li:first-child { border-top-color: #54B570; }
+@media (max-width: 900px) { #slide-13 .hk-grid { grid-template-columns: 1fr; } }
+#slide-11 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
+#slide-11 .personal-review-questions ol > li { overflow: visible; }
+/* Slide 11: same cards as slide 5 */
+#slide-11 .review-grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; align-content: start; }
+#slide-11 .update-block { padding: 24px 26px; }
+#slide-11 .update-block:nth-child(1) { border-top-color: var(--blue); }
+#slide-11 .update-block:nth-child(2) { border-top-color: var(--green); }
+#slide-11 .update-block h2 { margin-bottom: 18px; }
+#slide-11 .update-questions { gap: 14px; }
+#slide-11 .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; vertical-align: middle; }
+#slide-11 .slide-stage, #slide-11 .review-grid, #slide-11 .update-block { overflow: visible; }
+#slide-11 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
+@media (max-width: 900px) { #slide-11 .review-grid { grid-template-columns: 1fr; } }
+#slide-11 .update-questions.single { list-style: none; padding-left: 0; }
+/* Card borders run green to blue, as in the cascade */
+#slide-11 .update-block:nth-child(1) { border-top-color: #54B570; }
+#slide-11 .update-block:nth-child(2) { border-top-color: #326AB6; }
+/* Slide 5: four columns read left to right, steps 1 to 6 in order (2026-10-16). */
+#slide-4 .update-flow { grid-template-columns: minmax(0,1fr) minmax(0,1.3fr) minmax(0,0.8fr) minmax(0,1fr); column-gap: 30px; }
+#slide-4 .update-flow > * { position: relative; }
+#slide-4 .update-flow > * + *::before { content: ""; position: absolute; left: -22px; top: 50%; transform: translateY(-50%); border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 11px solid var(--muted); opacity: .55; }
+#slide-4 .update-col { display: flex; flex-direction: column; gap: 14px; }
+#slide-4 .update-col-highlights .update-mini { flex: 1; display: flex; align-items: center; }
+#slide-4 .update-col-ahead > .update-block:first-child { flex: 1; }
+#slide-4 .update-mini { padding: 14px 18px; }
+#slide-4 .update-mini h2 { margin: 0; font-size: clamp(19px, 1.6vw, 26px); }
+#slide-4 .update-mini .step { font-size: 0.85em; }
+#slide-4 .update-flow > .update-block:nth-child(1) { border-top-color: #54B570; }
+#slide-4 .update-flow > .update-block:nth-child(2) { border-top-color: #4ca282; }
+#slide-4 .update-col-highlights .update-block { border-top-color: #3b7da5; }
+#slide-4 .update-col-ahead .update-block { border-top-color: #326AB6; }
+@media (max-width: 900px) { #slide-4 .update-flow { grid-template-columns: 1fr; } #slide-4 .update-flow > * + *::before { content: none; } }
+/* Slide 5 text scales with the slide, so four columns fit with or without the sidebar (2026-10-16). */
+#slide-4 .slide-content { container-type: inline-size; }
+#slide-4 .update-flow .update-block h2 { font-size: clamp(16px, 2.2cqi, 28px); }
+#slide-4 .update-flow .update-mini h2 { font-size: clamp(15px, 1.9cqi, 25px); }
+#slide-4 .update-flow .update-questions li { font-size: clamp(14px, 1.75cqi, 22px); }
+#slide-4 .update-flow .update-questions { gap: clamp(6px, 1.1cqi, 14px); }
+#slide-4 .update-flow .fva-ask { font-size: clamp(12px, 1.35cqi, 18px); }
+#slide-4 .update-flow .fva-table thead th { font-size: clamp(10px, 1cqi, 14px); padding: 0 4px; }
+#slide-4 .update-flow .fva-table tbody th { font-size: clamp(13px, 1.55cqi, 21px); }
+#slide-4 .update-flow .fva-table tbody td { font-size: clamp(11px, 1.25cqi, 17px); padding-left: clamp(4px, .6cqi, 8px); padding-right: clamp(4px, .6cqi, 8px); }
+#slide-4 .update-flow .update-block { padding: clamp(12px, 1.6cqi, 20px) clamp(12px, 1.6cqi, 22px); }
+#slide-4 .update-flow .update-block h2 { margin-bottom: clamp(8px, 1.2cqi, 16px); }
+#slide-4 .update-flow .update-mini h2 { margin: 0; }
+/* Forecast horizon: the last month the forecast covers (2026-10-16). */
+#slide-4 .fva-horizon { margin: auto 0 0; padding-top: clamp(8px, 1cqi, 14px); border-top: 1px solid var(--line); font-weight: 600; font-size: clamp(13px, 1.45cqi, 20px); }
+#slide-4 .fva-blank { display: inline-block; margin-left: 4px; padding: 2px 10px; border-radius: 6px; background: #EAF1FA; color: var(--blue); font-weight: 700; font-size: .85em; white-space: nowrap; }
+#slide-13 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
+#slide-13 .hk-grid li:nth-child(2) { border-top-color: #438F93; }
+#slide-13 .hk-grid li:nth-child(3) { border-top-color: #326AB6; }
+/* Slide 12: three cards, green to blue */
+#slide-12 .hw-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; list-style: none; margin: 0; padding: 0; }
+#slide-12 .hw-grid li { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid #54B570; border-radius: 8px; padding: 24px 26px; }
+#slide-12 .hw-grid li:nth-child(2) { border-top-color: #438F93; }
+#slide-12 .hw-grid li:nth-child(3) { border-top-color: #326AB6; }
+#slide-12 .hw-grid h2 { font-size: clamp(23px, 2vw, 32px); line-height: 1.2; margin: 0 0 14px; }
+#slide-12 .hw-grid p { font-size: clamp(19px, 1.55vw, 25px); line-height: 1.4; margin: 0; }
+#slide-12 .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; font-weight: 700; vertical-align: .15em; }
+@media (max-width: 900px) { #slide-12 .hw-grid { grid-template-columns: 1fr; } }
+#slide-13 .hk-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+#slide-13 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
+#slide-13 .hk-grid li:nth-child(2) { border-top-color: #326AB6; }
+#slide-8 .levels-table th, #slide-8 .levels-table td { padding-top: 3px; padding-bottom: 3px; } #slide-8 .levels-table .hz { margin-top: 2px; }
+
+/* Slide 9: present-then-check process, cloned from the Presentations layout (Meeting 5, 17-Oct-2026). */
+#slide-9 .pres-flow { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: stretch; }
+#slide-9 .pres-step { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; padding: 22px 24px; }
+#slide-9 .pres-step:nth-child(2), #slide-9 .pres-step:nth-child(3) { border-top-color: var(--green); }
+#slide-9 .pres-time { margin: 0 0 14px; font-weight: 700; color: var(--blue); font-size: clamp(16px, 1.2vw, 20px); text-transform: uppercase; letter-spacing: 0.04em; }
+#slide-9 .pres-step h2 { font-size: clamp(22px, 1.9vw, 30px); margin: 0 0 12px; }
+#slide-9 .pres-step p, #slide-9 .pres-step li { font-size: clamp(17px, 1.35vw, 22px); line-height: 1.4; }
+#slide-9 .pres-step ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+#slide-9 .step { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 0.85em; }
+#slide-9 .slide-content { display: flex; flex-direction: column; }
+#slide-9 .slide-stage { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+#slide-9 .pres-flow { flex: 1; margin-bottom: 8px; }
+#slide-9 .pres-step ul { gap: 12px; }
+#slide-9 .pres-flow { flex: 0 0 auto; margin: auto 0; }
+#slide-9 .pres-flow { grid-template-columns: minmax(0,1.45fr) repeat(3, minmax(0,1fr)); gap: 16px; }
+#slide-9 .pres-step { padding: 20px 20px; }
+#slide-9 .pres-step:nth-child(4) { border-top-color: var(--blue); }
+#slide-9 .pres-step h2 { font-size: clamp(20px, 1.7vw, 27px); }
+#slide-9 .pres-step p, #slide-9 .pres-step li { font-size: clamp(16px, 1.25vw, 21px); }
+#slide-9 .pres-time { white-space: nowrap; letter-spacing: 0.02em; font-size: clamp(14px, 1.05vw, 18px); }
+#slide-9 .step { margin-right: 8px; }
+#slide-9 .pres-smart { margin: 12px 0 6px; font-weight: 700; }
+#slide-9 .pres-step:nth-child(1) { border-top-color: #54B570; }
+#slide-9 .pres-step:nth-child(2) { border-top-color: #4ca282; }
+#slide-9 .pres-step:nth-child(3) { border-top-color: #3b7da5; }
+#slide-9 .pres-step:nth-child(4) { border-top-color: #326AB6; }
+#slide-9 .pres-flow { grid-template-columns: repeat(2, minmax(0,1fr)); }
+#slide-9 .pres-step:nth-child(3) { border-top-color: #326AB6; }
+#slide-9 .pres-step { padding: 28px 28px; }
+#slide-9 .pres-step h2 { font-size: clamp(26px, 2.4vw, 38px); margin-bottom: 16px; }
+#slide-9 .pres-step p { font-size: clamp(19px, 1.65vw, 27px); line-height: 1.45; }
+#slide-9 .pres-time { font-size: clamp(16px, 1.25vw, 21px); }
+
+/* Slide 9: process left, plan check right (Meeting 5, 17-Oct-2026). */
+#slide-9 .present-check { display: grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1.6fr); gap: 24px; align-items: stretch; margin: auto 0; }
+#slide-9 .present-check .pres-flow { grid-template-columns: 1fr; margin: 0; gap: 14px; }
+#slide-9 .check-list h2 { font-size: clamp(20px, 1.8vw, 28px); margin: 0 0 12px; }
+#slide-9 .personal-review-questions ol { grid-template-columns: 1fr; gap: 8px; }
+#slide-9 .personal-review-questions ol > li { padding: 10px 16px; font-size: clamp(15px, 1.3vw, 20px); }
+#slide-9 .pres-step { padding: 18px 20px; }
+#slide-9 .pres-step h2 { font-size: clamp(20px, 1.8vw, 28px); margin-bottom: 8px; }
+#slide-9 .pres-step p { font-size: clamp(15px, 1.3vw, 20px); }
+@media (max-width: 900px) { #slide-9 .present-check { grid-template-columns: 1fr; } }
+
+/* Slide 9: three numbered steps, the check in the middle (Meeting 5, 17-Oct-2026). */
+#slide-9 .present-check { grid-template-columns: minmax(0,0.8fr) minmax(0,1.9fr) minmax(0,0.8fr); gap: 16px; }
+#slide-9 .check-step .personal-review-questions ol > li { padding: 7px 12px; font-size: clamp(14px, 1.15vw, 18px); }
+#slide-9 .check-step h2 { margin-bottom: 10px; }
+#slide-9 .present-check > .pres-step:nth-child(1) { border-top-color: #54B570; }
+#slide-9 .present-check > .pres-step:nth-child(2) { border-top-color: #4ca282; }
+#slide-9 .present-check > .pres-step:nth-child(3) { border-top-color: #326AB6; }
+#slide-9 .present-check { grid-template-columns: minmax(0,0.75fr) minmax(0,1.8fr) minmax(0,0.7fr) minmax(0,0.7fr); gap: 14px; }
+#slide-9 .present-check > .pres-step:nth-child(3) { border-top-color: #3b7da5; }
+#slide-9 .present-check > .pres-step:nth-child(4) { border-top-color: #326AB6; }
+/* Slide 9 text scales with the slide, so it fits with the sidebar or notes open (Meeting 5, 17-Oct-2026). */
+#slide-9 .slide-content { container-type: inline-size; }
+#slide-9 .slide-title { font-size: clamp(22px, 3.6cqi, 48px); }
+#slide-9 .present-check { gap: clamp(8px, 1.1cqi, 14px); }
+#slide-9 .pres-step { padding: clamp(10px, 1.4cqi, 20px) clamp(10px, 1.4cqi, 18px); }
+#slide-9 .pres-time { font-size: clamp(11px, 1.3cqi, 18px); margin-bottom: clamp(6px, 0.9cqi, 12px); }
+#slide-9 .pres-step h2 { font-size: clamp(14px, 2cqi, 28px); margin-bottom: clamp(6px, 0.8cqi, 10px); }
+#slide-9 .pres-step p { font-size: clamp(12px, 1.45cqi, 20px); line-height: 1.4; }
+#slide-9 .check-step .personal-review-questions ol { gap: clamp(4px, 0.6cqi, 8px); }
+#slide-9 .check-step .personal-review-questions ol > li { padding: clamp(4px, 0.6cqi, 8px) clamp(8px, 1cqi, 12px); font-size: clamp(11px, 1.3cqi, 18px); line-height: 1.3; }
+
+#slide-12 .hw-grid.hw-two { grid-template-columns: repeat(2, minmax(0,1fr)); }

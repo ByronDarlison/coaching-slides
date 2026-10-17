@@ -38,3 +38,7 @@ Shell how-to:
 https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/shared/README.md
 
 Do not load fonts from the network.
+
+## Notes panel and video script (17-Oct-2026)
+
+Press N to open the notes. The panel pushes the slide aside instead of covering it. When a slide has `<aside class="video-script">`, the panel shows it under the notes, headed "Video script". The narrated-video pipeline reads that script.

@@ -240,11 +240,11 @@ def check_cohort_generic(html: str) -> list[str]:
     issues: list[str] = []
     # Strip comments so the "cohort-independent" header comment doesn't trigger.
     scrubbed = re.sub(r"<!--.*?-->", "", html, flags=re.DOTALL)
-    # Whitelist the Housekeeping slide — that is the canonical home for
+    # Whitelist the Housekeeping and Title slides. Housekeeping is the canonical home for
     # per-cohort dates (Learning Day, next meeting, etc.) so those references
-    # should not fail this check.
+    # should not fail this check. A dated meeting title (Byron, 17-Oct-2026) is allowed too.
     scrubbed = re.sub(
-        SLIDE_OPEN + r'(?=[^>]*aria-label="Housekeeping[^"]*")[^>]*>.*?</section>',
+        SLIDE_OPEN + r'(?=[^>]*aria-label="(?:Housekeeping|Title)[^"]*")[^>]*>.*?</section>',
         "",
         scrubbed,
         flags=re.DOTALL,
