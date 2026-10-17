@@ -1,0 +1,13 @@
+{
+  "standard": "ByronDarlison/ai-config#1209",
+  "standard_merge": "94b399da3aa175f74d362e79c1a3253e661d1f5d",
+  "delivery": "Existing HTML retained for linked resources and structured tables",
+  "shell_sha256": {
+    "shell.css": "9dd4b713e0fc20857af4634ed95c3062f9fd94f20fb17fbbc461f2b8dd0af2b0",
+    "shell.js": "08153dcc11e14f7a57da7907f6a5ed1d75f4739cc552c6c53677be3903ab549a"
+  },
+  "artwork": {
+    "shared-plan.png": "Reused approved kickoff-title.png from the standard"
+  },
+  "derived_from": "eoa/meeting-4 at coaching-slides main adaaa3b, with the four-column Business Updates slide and forecast-horizon line (17-Oct-2026)"
+}

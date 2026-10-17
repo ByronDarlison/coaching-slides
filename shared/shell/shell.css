@@ -668,3 +668,21 @@ body.dark-slide-controls .control-button:focus-visible {
   html { scroll-behavior: auto; }
   .controls { transition: none; }
 }
+
+/* Notes push the slide aside instead of covering it (Meeting 5, 17-Oct-2026). */
+:root { --notes-width: min(30rem, 32vw); }
+@media screen and (min-width: 900px) and (min-height: 600px) {
+  .notes-panel { width: var(--notes-width); box-shadow: none; }
+  #presentation { transition: width 260ms var(--ease-out-expo); }
+  body.notes-open { --deck-nav-space: calc(var(--sidebar-width) + var(--notes-width)); }
+  body.notes-open #presentation { width: calc(100vw - var(--sidebar-width) - var(--notes-width)); }
+  body.notes-open.sidebar-hidden { --deck-nav-space: var(--notes-width); }
+  body.notes-open.sidebar-hidden #presentation { width: calc(100vw - var(--notes-width)); }
+}
+:fullscreen body.notes-open { --deck-nav-space: var(--notes-width); }
+:fullscreen body.notes-open #presentation { width: calc(100vw - var(--notes-width)); }
+
+/* Video script shown under the facilitation notes (Meeting 5, 17-Oct-2026). */
+.video-script { display: none; }
+.notes-script-heading { margin: 1.4rem 0 0.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted, #5b6470); }
+.notes-body .notes-script { color: var(--ink); }
