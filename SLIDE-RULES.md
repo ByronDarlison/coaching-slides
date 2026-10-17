@@ -124,3 +124,6 @@ Items join the standing review block the month after they are coached:
 
 - Each deck with speaker notes gets a narrated video automatically. The voice reads each slide's notes up to "In the room:".
 - Add `data-narration="skip"` to a slide's `<section>` to leave that slide out of the video, for example a guest segment or a break.
+- Give a slide its own voiceover with `<aside class="video-script">` after its speaker notes. The video reads the script when it exists and falls back to the notes before "In the room:" when it does not.
+- Speaker notes carry only what the slide does not show: timing, facilitation cues, and anything the presenter must say that is not on screen. Do not repeat slide text in the notes.
+- The video script is written for someone watching alone before the meeting. Open with what the meeting covers and the outcome members leave with.
