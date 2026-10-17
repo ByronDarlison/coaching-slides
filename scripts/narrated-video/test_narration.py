@@ -40,6 +40,14 @@ class Extraction(unittest.TestCase):
         with self.assertRaises(narration.NarrationError):
             narration.extract(deck_html(slide(1, "<p>a</p>") .replace("</section>", '<aside class="speaker-notes"><p>b</p></aside></section>')), PRON)
 
+    def test_video_script_preferred_over_notes(self):
+        sec = slide(1, "<p>Notes text.</p><p>In the room: cue.</p>").replace(
+            "</section>", '<aside class="video-script"><p>Script BHAG line.</p><p>In the room: still read.</p></aside></section>')
+        self.assertEqual(narration.extract(deck_html(sec), PRON),
+                         [{"slide": 1, "text": "Script Bee-hag line.\n\nIn the room: still read."}])
+        self.assertEqual(narration.extract(deck_html(slide(1, "<p>Only notes.</p>")), PRON),
+                         [{"slide": 1, "text": "Only notes."}])
+
     def test_slide_ids_must_be_sequential(self):
         with self.assertRaises(narration.NarrationError):
             narration.extract(deck_html(slide(2, "<p>x</p>")), PRON)

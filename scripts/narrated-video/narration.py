@@ -4,8 +4,9 @@ A narrated deck is any tracked ``index.html`` (outside ``tests/`` and
 ``node_modules/``, and not the repository landing page) with at least one
 ``aside.speaker-notes`` inside a ``section.slide``.
 
-Spoken text for a slide is its speaker notes up to the facilitator marker
-``In the room:``, with the pronunciation list applied. A slide marked
+Spoken text for a slide is its ``aside.video-script`` when it has one;
+otherwise its speaker notes up to the facilitator marker ``In the room:``.
+The pronunciation list is applied either way. A slide marked
 ``data-narration="skip"`` is left out of the video.
 """
 from __future__ import annotations
@@ -42,6 +43,7 @@ class _DeckParser(HTMLParser):
         self.stack: list[tuple[str, str]] = []  # (tag, role)
         self.current: dict | None = None
         self.in_notes = False
+        self.notes_key = "notes"
         self.notes_depth = 0
         self.paragraph: list[str] | None = None
 
@@ -52,11 +54,12 @@ class _DeckParser(HTMLParser):
         if tag == "section" and "slide" in classes:
             if self.current is not None:
                 raise NarrationError("nested slide sections")
-            self.current = {"id": a.get("id"), "skip": a.get("data-narration") == "skip", "notes": []}
+            self.current = {"id": a.get("id"), "skip": a.get("data-narration") == "skip", "notes": [], "script": []}
             self.slides.append(self.current)
             role = "slide"
-        elif tag == "aside" and "speaker-notes" in classes and self.current is not None:
-            self.current["notes"].append([])
+        elif tag == "aside" and ("speaker-notes" in classes or "video-script" in classes) and self.current is not None:
+            self.notes_key = "script" if "video-script" in classes else "notes"
+            self.current[self.notes_key].append([])
             self.in_notes = True
             self.notes_depth = len(self.stack) + 1
             role = "notes"
@@ -79,7 +82,7 @@ class _DeckParser(HTMLParser):
             if role == "p" and self.paragraph is not None:
                 text = re.sub(r"\s+", " ", "".join(self.paragraph)).strip()
                 if text:
-                    self.current["notes"][-1].append(text)
+                    self.current[self.notes_key][-1].append(text)
                 self.paragraph = None
             elif role == "notes":
                 self.in_notes = False
@@ -131,9 +134,17 @@ def extract(index_html: str, entries: list[dict] | None = None) -> list[dict]:
             raise NarrationError(f"slide {n} has id {slide['id']!r}, expected slide-{n}")
         if len(slide["notes"]) > 1:
             raise NarrationError(f"slide {n} has more than one speaker-notes block")
-        if slide["skip"] or not slide["notes"]:
+        if len(slide["script"]) > 1:
+            raise NarrationError(f"slide {n} has more than one video-script block")
+        if slide["skip"]:
             continue
-        text = spoken_text(slide["notes"][0], entries)
+        if slide["script"]:
+            text = "\n\n".join(slide["script"][0]).strip()
+            text = apply_pronunciations(text, entries) if text else ""
+        elif slide["notes"]:
+            text = spoken_text(slide["notes"][0], entries)
+        else:
+            continue
         if not text:
             continue
         if len(text) > MAX_SLIDE_CHARS:
