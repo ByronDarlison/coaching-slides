@@ -552,9 +552,37 @@
 /* Card borders run green to blue, as in the cascade */
 #slide-11 .update-block:nth-child(1) { border-top-color: #54B570; }
 #slide-11 .update-block:nth-child(2) { border-top-color: #326AB6; }
-#slide-5 .update-block:nth-child(1) { border-top-color: #54B570; }
-#slide-5 .update-block:nth-child(2) { border-top-color: #438F93; }
-#slide-5 .update-block:nth-child(3) { border-top-color: #326AB6; }
+/* Slide 5: four columns read left to right, steps 1 to 6 in order (2026-10-16). */
+#slide-5 .update-flow { grid-template-columns: minmax(0,1fr) minmax(0,1.3fr) minmax(0,0.8fr) minmax(0,1fr); column-gap: 30px; }
+#slide-5 .update-flow > * { position: relative; }
+#slide-5 .update-flow > * + *::before { content: ""; position: absolute; left: -22px; top: 50%; transform: translateY(-50%); border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 11px solid var(--muted); opacity: .55; }
+#slide-5 .update-col { display: flex; flex-direction: column; gap: 14px; }
+#slide-5 .update-col-highlights .update-mini { flex: 1; display: flex; align-items: center; }
+#slide-5 .update-col-ahead > .update-block:first-child { flex: 1; }
+#slide-5 .update-mini { padding: 14px 18px; }
+#slide-5 .update-mini h2 { margin: 0; font-size: clamp(19px, 1.6vw, 26px); }
+#slide-5 .update-mini .step { font-size: 0.85em; }
+#slide-5 .update-flow > .update-block:nth-child(1) { border-top-color: #54B570; }
+#slide-5 .update-flow > .update-block:nth-child(2) { border-top-color: #4ca282; }
+#slide-5 .update-col-highlights .update-block { border-top-color: #3b7da5; }
+#slide-5 .update-col-ahead .update-block { border-top-color: #326AB6; }
+@media (max-width: 900px) { #slide-5 .update-flow { grid-template-columns: 1fr; } #slide-5 .update-flow > * + *::before { content: none; } }
+/* Slide 5 text scales with the slide, so four columns fit with or without the sidebar (2026-10-16). */
+#slide-5 .slide-content { container-type: inline-size; }
+#slide-5 .update-flow .update-block h2 { font-size: clamp(16px, 2.2cqi, 28px); }
+#slide-5 .update-flow .update-mini h2 { font-size: clamp(15px, 1.9cqi, 25px); }
+#slide-5 .update-flow .update-questions li { font-size: clamp(14px, 1.75cqi, 22px); }
+#slide-5 .update-flow .update-questions { gap: clamp(6px, 1.1cqi, 14px); }
+#slide-5 .update-flow .fva-ask { font-size: clamp(12px, 1.35cqi, 18px); }
+#slide-5 .update-flow .fva-table thead th { font-size: clamp(10px, 1cqi, 14px); padding: 0 4px; }
+#slide-5 .update-flow .fva-table tbody th { font-size: clamp(13px, 1.55cqi, 21px); }
+#slide-5 .update-flow .fva-table tbody td { font-size: clamp(11px, 1.25cqi, 17px); padding-left: clamp(4px, .6cqi, 8px); padding-right: clamp(4px, .6cqi, 8px); }
+#slide-5 .update-flow .update-block { padding: clamp(12px, 1.6cqi, 20px) clamp(12px, 1.6cqi, 22px); }
+#slide-5 .update-flow .update-block h2 { margin-bottom: clamp(8px, 1.2cqi, 16px); }
+#slide-5 .update-flow .update-mini h2 { margin: 0; }
+/* Forecast horizon: the last month the forecast covers (2026-10-16). */
+#slide-5 .fva-horizon { margin: auto 0 0; padding-top: clamp(8px, 1cqi, 14px); border-top: 1px solid var(--line); font-weight: 600; font-size: clamp(13px, 1.45cqi, 20px); }
+#slide-5 .fva-blank { display: inline-block; margin-left: 4px; padding: 2px 10px; border-radius: 6px; background: #EAF1FA; color: var(--blue); font-weight: 700; font-size: .85em; white-space: nowrap; }
 #slide-13 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
 #slide-13 .hk-grid li:nth-child(2) { border-top-color: #438F93; }
 #slide-13 .hk-grid li:nth-child(3) { border-top-color: #326AB6; }
