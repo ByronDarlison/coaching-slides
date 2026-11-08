@@ -31,7 +31,7 @@ concurrency:
 
 jobs:
   narrate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment: narration
     timeout-minutes: 90
     steps:

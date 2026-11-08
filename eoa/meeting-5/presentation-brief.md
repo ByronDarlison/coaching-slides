@@ -18,6 +18,16 @@ The deck started as a copy of the approved Meeting 4 deck and was reviewed slide
 - Homework: lock in your cascade; come to Meeting 6 ready to show exactly where you are, including progress on each sprint-lane deliverable. The new QHAG and sprint lanes are built at Meeting 6.
 - Housekeeping: Strategy Learning Day on November 26; the group decides whether Meeting 6 moves from Tuesday, December 1 (National Club) to Friday, December 11, 11 AM to 3 PM, virtual, for 28-day spacing on either side.
 
+## Board and deck split (Byron, 8-Nov-2026)
+
+Members present from their column on the Hold the Pickle Mural board, opened from the invite link. The board holds each member's content; the deck stays generic and points to the board, so nothing is kept in both places.
+
+- Business Updates card 2 points to the QHAG, 1HAG and sprint lanes on the board. The forecast table and the "forecast runs through" line were removed: the 3HAG and 1HAG show how far the plan reaches.
+- Slide 8 became "What each level is for": each level's name, horizon and purpose only. The rows themselves (including profit margin, Profit per X and head count) live on the board.
+- Slide 9: present from the board, not a shared screen. "Every row on your board has a number and one owner" replaces the owner and head count checks.
+- Homework: work top-down, BHAG to sprint lanes. Other homework goes in the Homework area at the bottom of each column.
+- The board link is not in the deck, because the deck is public.
+
 Lines carried from Meeting 4 that had no traceable source (commitment recorder, timekeeper, "signed" constitution, "pick one fix", "write it in your EOA Prep document", the Hedgehog line, "Questions and accountability without replacing peer sharing") were removed.
 
 ## Time contract
