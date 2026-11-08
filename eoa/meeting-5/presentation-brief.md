@@ -34,7 +34,7 @@ Lines carried from Meeting 4 that had no traceable source (commitment recorder, 
 
 | Block | Time |
 | --- | --- |
-| Opening, One Word Barometer, Rules of Engagement | 11:00 to 11:10 AM |
+| Opening, Good News, Rules of Engagement | 11:00 to 11:10 AM |
 | Business updates, about 5 minutes each | 11:10 to 11:35 AM |
 | Presentations, about 15 minutes each | 11:35 AM to 12:50 PM |
 | Break | 12:50 to 1:00 PM |
