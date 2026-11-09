@@ -16,7 +16,7 @@ The deck started as a copy of the approved Meeting 4 deck and was reviewed slide
 - Victoria's scorecards presentation, 2:20 to 2:35 PM.
 - Personal Review card 2 is "Confirm Your Action": members review the action they brought and confirm or reset it.
 - Homework: lock in your cascade; come to Meeting 6 ready to show exactly where you are, including progress on each sprint-lane deliverable. The new QHAG and sprint lanes are built at Meeting 6.
-- Housekeeping: Strategy Learning Day on November 26; the group decides whether Meeting 6 moves from Tuesday, December 1 (National Club) to Friday, December 11, 11 AM to 3 PM, virtual, for 28-day spacing on either side.
+- Housekeeping: Strategy Learning Day on November 26; Meeting 6 is in person on Tuesday, December 1, 1 to 4 PM, at the National Club, followed by the EOA Holiday Celebration at Patois from 4:30 PM.
 
 ## Board and deck split (Byron, 8-Nov-2026)
 
