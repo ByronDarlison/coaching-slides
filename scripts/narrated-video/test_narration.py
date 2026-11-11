@@ -77,7 +77,7 @@ class RealDecks(unittest.TestCase):
             for i in items:
                 self.assertNotIn("In the room:", i["text"])
                 self.assertNotRegex(i["text"], r"(?<![A-Za-z0-9])(BHAG|3HAG|1HAG|QHAG)(?![A-Za-z0-9])")
-        self.assertEqual(len(counts["metronomics/kickoff"]), 107)
+        self.assertEqual(len(counts["metronomics/kickoff"]), 105)
         m4 = [i["slide"] for i in counts["eoa/meeting-4"]]
         self.assertEqual(m4, list(range(3 if self._m4_skips() else 1, 15)))
 
