@@ -35,8 +35,7 @@ Lines carried from Meeting 4 that had no traceable source (commitment recorder, 
 | Block | Time |
 | --- | --- |
 | Opening, Good News, Rules of Engagement | 11:00 to 11:10 AM |
-| Business updates, about 5 minutes each | 11:10 to 11:35 AM |
-| Presentations, about 15 minutes each | 11:35 AM to 12:50 PM |
+| Update and presentation, one 20-minute turn each: on track (revenue, cash, widgets, sprint lane deliverables), best and worst, challenge, experience shares, coach feedback, takeaways | 11:10 AM to 12:50 PM |
 | Break | 12:50 to 1:00 PM |
 | Cascade teaching | 1:00 to 1:20 PM |
 | Member plans, about 12 minutes each | 1:20 to 2:20 PM |
