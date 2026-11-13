@@ -15,7 +15,7 @@ The deck started as a copy of the approved Meeting 4 deck and was reviewed slide
 - Cascade: slide 7 shows how the levels connect; slide 8 shows what each holds; slide 9 is the four-step process (present, check against the plan check, group feedback, coach feedback). The separate plan-check slide was merged into slide 9.
 - Victoria's scorecards presentation, 2:20 to 2:35 PM.
 - Personal Review card 2 is "Confirm Your Action": members review the action they brought and confirm or reset it.
-- Housekeeping: Strategy Learning Day on November 26; Meeting 6 is in person on Tuesday, December 1, 1 to 4 PM, at the National Club, followed by the EOA Holiday Celebration at Patois from 4:30 PM.
+- Housekeeping: Strategy Learning Day on November 26; Meeting 6 is in person on Tuesday, December 1, 12 to 4 PM, at the National Club, followed by the EOA Holiday Celebration at Patois from 4:30 PM.
 
 ## Board and deck split (Byron, 8-Nov-2026)
 
