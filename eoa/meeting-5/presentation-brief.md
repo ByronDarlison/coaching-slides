@@ -15,7 +15,6 @@ The deck started as a copy of the approved Meeting 4 deck and was reviewed slide
 - Cascade: slide 7 shows how the levels connect; slide 8 shows what each holds; slide 9 is the four-step process (present, check against the plan check, group feedback, coach feedback). The separate plan-check slide was merged into slide 9.
 - Victoria's scorecards presentation, 2:20 to 2:35 PM.
 - Personal Review card 2 is "Confirm Your Action": members review the action they brought and confirm or reset it.
-- Homework: lock in your cascade; come to Meeting 6 ready to show exactly where you are, including progress on each sprint-lane deliverable. The new QHAG and sprint lanes are built at Meeting 6.
 - Housekeeping: Strategy Learning Day on November 26; Meeting 6 is in person on Tuesday, December 1, 1 to 4 PM, at the National Club, followed by the EOA Holiday Celebration at Patois from 4:30 PM.
 
 ## Board and deck split (Byron, 8-Nov-2026)
@@ -25,7 +24,6 @@ Members present from their column on the Hold the Pickle Mural board, opened fro
 - Business Updates card 2 points to the QHAG, 1HAG and sprint lanes on the board. The forecast table and the "forecast runs through" line were removed: the 3HAG and 1HAG show how far the plan reaches.
 - Slide 8 became "What each level is for": each level's name, horizon and purpose only. The rows themselves (including profit margin, Profit per X and head count) live on the board.
 - Slide 9: present from the board, not a shared screen. "Every row on your board has a number and one owner" replaces the owner and head count checks.
-- Homework: work top-down, BHAG to sprint lanes. Other homework goes in the Homework area at the bottom of each column.
 - The board link is not in the deck, because the deck is public.
 
 Lines carried from Meeting 4 that had no traceable source (commitment recorder, timekeeper, "signed" constitution, "pick one fix", "write it in your EOA Prep document", the Hedgehog line, "Questions and accountability without replacing peer sharing") were removed.
@@ -40,5 +38,5 @@ Lines carried from Meeting 4 that had no traceable source (commitment recorder, 
 | Cascade teaching | 1:00 to 1:20 PM |
 | Member plans, about 12 minutes each | 1:20 to 2:20 PM |
 | Victoria's scorecards presentation | 2:20 to 2:35 PM |
-| Personal review and homework | 2:35 to 2:50 PM |
+| Personal review | 2:35 to 2:50 PM |
 | Housekeeping and One Phrase Close | 2:50 to 3:00 PM |
