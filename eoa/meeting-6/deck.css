@@ -642,3 +642,9 @@
 #slide-unused-a .turn-smart { margin-top: 8px !important; font-weight: 700; }
 #slide-unused-a .slide-stage, #slide-unused-a .turn-flow, #slide-unused-a .turn-step { overflow: visible; }
 @media (max-width: 900px) { #slide-unused-a .turn-flow { grid-template-columns: 1fr; } }
+/* Meeting 6: three Housekeeping cards */
+#slide-8 .date-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+#slide-8 .date-grid li { padding: 22px; }
+#slide-8 .date-grid strong { font-size: clamp(22px, 1.9vw, 30px); }
+#slide-8 .date-grid span { font-size: clamp(18px, 1.5vw, 24px); }
+@media (max-width: 900px) { #slide-8 .date-grid { grid-template-columns: 1fr; } }
