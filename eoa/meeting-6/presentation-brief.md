@@ -18,7 +18,7 @@ The deck is a rebuild of the approved Meeting 5 deck. Byron set the agenda on 14
 - Brian Young joins for lunch from 12:20 to 1:20 PM and leaves before the presentations.
 - The four questions for choosing a priority are Byron's, as he said them in Meeting 5 on 13-Nov-2026.
 - Meeting 7 is Friday, January 8, 2027, 1 to 6 PM, from Google Calendar.
-- Slide 4 is the guest's name and a photo only, with no topic line. The photo is not chosen yet; the slide holds a stock illustration until it is.
+- Slide 4 is the guest's name and a photo only, with no topic line. Byron chose the photo on 14-Nov-2026 from images Brian sent him on WhatsApp; it is cropped to the person in front.
 - Housekeeping asks two questions: is Meeting 7 in person or virtual, and does the group want a virtual session before Christmas.
 - No video scripts. Byron retired narrated videos on 11-Nov-2026.
 - The board link is not in the deck, because the deck is public.

@@ -642,6 +642,11 @@
 #slide-unused-a .turn-smart { margin-top: 8px !important; font-weight: 700; }
 #slide-unused-a .slide-stage, #slide-unused-a .turn-flow, #slide-unused-a .turn-step { overflow: visible; }
 @media (max-width: 900px) { #slide-unused-a .turn-flow { grid-template-columns: 1fr; } }
+/* Meeting 6: guest photo */
+#slide-4 .story-panel--art { padding: 0; overflow: hidden; width: fit-content; height: auto; min-height: 0; justify-self: center; align-self: center; }
+#slide-4 .guest-photo { display: block; height: min(54vh, 520px); width: auto; max-width: 100%; max-height: none; object-fit: cover; }
+@media (max-width: 900px) { #slide-4 .guest-photo { height: min(38vh, 360px); } }
+
 /* Meeting 6: three Housekeeping cards */
 #slide-8 .date-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
 #slide-8 .date-grid li { padding: 22px; }
