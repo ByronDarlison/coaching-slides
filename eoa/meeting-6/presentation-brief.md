@@ -21,8 +21,9 @@ The deck is a rebuild of the approved Meeting 5 deck. Byron set the agenda on 14
 - Slide 4 is the guest's name and a photo only, with no topic line. Byron chose the photo on 14-Nov-2026 from images Brian sent him on WhatsApp; it is cropped to the person in front.
 - Housekeeping asks two questions: is Meeting 7 in person or virtual, and does the group want a virtual session before Christmas.
 - No video scripts. Byron retired narrated videos on 11-Nov-2026.
-- Slide 5 links to the Mural board (Byron, 14-Nov-2026). It is the sign-in address with no visitor key, so only invited members can open it. The visitor link lets anyone edit the board and must never go in this public deck.
-- Slide 5 step 1 asks each member to convince the group the plan will work, and to finish with how they will present it to their company (Byron, 14-Nov-2026).
+- Slide 6 links to the Mural board (Byron, 14-Nov-2026). It is the sign-in address with no visitor key, so only invited members can open it. The visitor link lets anyone edit the board and must never go in this public deck.
+- Slide 6 step 1 asks each member to convince the group the plan will work, and to finish with how they will present it to their company (Byron, 14-Nov-2026).
+- The four questions come before the plan slide, as a one-minute recap of Meeting 5 (Byron, 14-Nov-2026).
 
 Rules of Engagement uses the in-person line "Be present in the room." from Meeting 4.
 
@@ -48,8 +49,8 @@ There is no break in the afternoon.
 | 2 Good News | Operational | Share one personal and one business item | Drafted |
 | 3 Rules of Engagement | Reference | Recall the six rules | Drafted |
 | 4 Brian Young | Operational | Know who the guest is and his topic | Drafted |
-| 5 Present your plan | Operational | Follow the four steps of a slot | Drafted |
-| 6 Four questions | Reference | Test a priority with four questions | Drafted |
+| 5 Four questions | Reference | Test a priority with four questions | Drafted |
+| 6 Present your plan | Operational | Follow the four steps of a slot | Drafted |
 | 7 Housekeeping | Operational | Answer two scheduling questions and know tonight's event | Drafted |
 | 8 One Phrase Close | Operational | Give a closing phrase | Drafted |
 
