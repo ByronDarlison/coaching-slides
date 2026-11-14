@@ -158,9 +158,9 @@
 .date-grid li { padding: 28px; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 8px; background: var(--surface); }
 .date-grid strong { display: block; font-size: clamp(26px, 2.4vw, 38px); margin-bottom: 18px; }
 .date-grid span { font-size: clamp(22px, 1.8vw, 28px); line-height: 1.3; }
-#slide-9 .numbered { list-style-position: outside; margin-left: 1.3em; padding-left: 0; }
-#slide-9 .numbered li { font-size: clamp(24px, 2.2vw, 34px); padding: 24px 16px; margin: 0; border-bottom: 1px solid var(--line); }
-#slide-9 .numbered li::marker { color: var(--blue); font-weight: 600; }
+#slide-8 .numbered { list-style-position: outside; margin-left: 1.3em; padding-left: 0; }
+#slide-8 .numbered li { font-size: clamp(24px, 2.2vw, 34px); padding: 24px 16px; margin: 0; border-bottom: 1px solid var(--line); }
+#slide-8 .numbered li::marker { color: var(--blue); font-weight: 600; }
 .cascade-body .talking-points { list-style: none; padding: 0; }
 .cascade-body .talking-points li { font-size: clamp(22px, 2vw, 32px); padding: 22px; border-bottom: 1px solid var(--line); }
 .cascade-body .talking-points li:first-child { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: 8px; }
@@ -199,12 +199,12 @@
  .capability-item { padding: 16px 0; font-size: 18px; }
  .date-grid li { padding: 22px; }
  .date-grid strong { font-size: 28px; }
- #slide-9 .numbered li { font-size: 23px; padding: 20px 8px; }
+ #slide-8 .numbered li { font-size: 23px; padding: 20px 8px; }
  .cascade-body .talking-points li { font-size: 22px; }
  .slide-footer { margin-bottom: 12px; }
 }
 /* Keep list markers inside the content box. */
-#slide-9 .numbered { margin-left: 0; padding-left: 1.5em; }
+#slide-8 .numbered { margin-left: 0; padding-left: 1.5em; }
 /* Compact spacing at projection sizes, without dropping body text below 18px. */
 @media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
  .original-rules { gap: 12px 24px; }
@@ -218,7 +218,7 @@
  .quote-panel { padding: 10px 14px; }
  .quote-panel blockquote { font-size: 20px; }
  .quote-label { font-size: 14px; margin-bottom: 4px; }
- #slide-7 .original-body, #slide-8 .original-body, #slide-8 .original-body { gap: 12px; }
+ #slide-6 .original-body, #slide-7 .original-body, #slide-7 .original-body { gap: 12px; }
  .review-grid { grid-template-columns: .7fr 1.3fr; gap: 16px; }
  .review-reflection, .review-action { padding: 14px; }
  .review-question { font-size: 22px; }
@@ -237,9 +237,9 @@
 }
 @media (min-width:900px) and (max-width:1440px) and (min-height:600px) {
 }
-#slide-9 .numbered { list-style: none; padding-left: 0; counter-reset: feedback; }
-#slide-9 .numbered li { display: grid; grid-template-columns: 1.4em minmax(0,1fr); gap: 12px; counter-increment: feedback; }
-#slide-9 .numbered li::before { content: counter(feedback) "."; color: var(--blue); font-weight: 600; }
+#slide-8 .numbered { list-style: none; padding-left: 0; counter-reset: feedback; }
+#slide-8 .numbered li { display: grid; grid-template-columns: 1.4em minmax(0,1fr); gap: 12px; counter-increment: feedback; }
+#slide-8 .numbered li::before { content: counter(feedback) "."; color: var(--blue); font-weight: 600; }
 
 /* Owner-approved three-question personal review. */
 .personal-review-questions { justify-content: flex-start; }
@@ -419,17 +419,17 @@
 #slide-unused-b .chain .lvl-4 { background: var(--green); margin: 0 16%; }
 #slide-unused-b .chain li + li::before { content: "▼"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); color: var(--muted); font-size: 12px; }
 #slide-unused-b .chain-note { margin-top: 14px; color: var(--muted); font-size: clamp(15px, 1.15vw, 19px); text-align: center; }
-#slide-6 .levels-table { width: 100%; border-collapse: collapse; }
-#slide-6 .levels-table th, #slide-6 .levels-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: clamp(15px, 1.15vw, 19px); line-height: 1.35; }
-#slide-6 .levels-table thead th { color: var(--muted); font-size: clamp(13px, 0.95vw, 15px); text-transform: uppercase; letter-spacing: 0.04em; }
-#slide-6 .levels-table tbody th { color: var(--blue); font-size: clamp(17px, 1.35vw, 22px); white-space: nowrap; }
-#slide-6 .levels-table td.when { white-space: nowrap; font-weight: 600; }
+#slide-unused-c .levels-table { width: 100%; border-collapse: collapse; }
+#slide-unused-c .levels-table th, #slide-unused-c .levels-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: clamp(15px, 1.15vw, 19px); line-height: 1.35; }
+#slide-unused-c .levels-table thead th { color: var(--muted); font-size: clamp(13px, 0.95vw, 15px); text-transform: uppercase; letter-spacing: 0.04em; }
+#slide-unused-c .levels-table tbody th { color: var(--blue); font-size: clamp(17px, 1.35vw, 22px); white-space: nowrap; }
+#slide-unused-c .levels-table td.when { white-space: nowrap; font-weight: 600; }
 /* Acronyms spelled out (2026-10-11). */
-#slide-6 .levels-table tbody th small { display: block; font-size: clamp(12px, 0.85vw, 14px); color: var(--muted); font-weight: 600; white-space: normal; margin-top: 2px; }
-#slide-6 .levels-table tbody th { white-space: normal; width: 22%; }
+#slide-unused-c .levels-table tbody th small { display: block; font-size: clamp(12px, 0.85vw, 14px); color: var(--muted); font-weight: 600; white-space: normal; margin-top: 2px; }
+#slide-unused-c .levels-table tbody th { white-space: normal; width: 22%; }
 #slide-unused-b .chain li strong em { font-style: normal; font-weight: 500; font-size: 0.55em; opacity: .85; margin-left: 12px; }
-#slide-6 .levels-table th, #slide-6 .levels-table td { padding: 7px 10px; font-size: clamp(14px, 1.1vw, 18px); }
-#slide-6 .levels-table tbody th { font-size: clamp(16px, 1.3vw, 21px); }
+#slide-unused-c .levels-table th, #slide-unused-c .levels-table td { padding: 7px 10px; font-size: clamp(14px, 1.1vw, 18px); }
+#slide-unused-c .levels-table tbody th { font-size: clamp(16px, 1.3vw, 21px); }
 /* Bigger arrows between cascade levels (2026-10-11). */
 #slide-unused-b .chain { gap: 26px; }
 #slide-unused-b .chain li { padding-top: 11px; padding-bottom: 11px; }
@@ -461,22 +461,22 @@
 .deliv { margin: 0; padding-left: 1.1em; display: grid; gap: 2px; }
 .deliv li::marker { color: #54B570; }
 .deliv b { color: #326AB6; font-weight: 700; }
-#slide-6 .deliv { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 26px; }
-#slide-6 .levels-table td { padding-top: 6px; padding-bottom: 6px; }
+#slide-unused-c .deliv { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 26px; }
+#slide-unused-c .levels-table td { padding-top: 6px; padding-bottom: 6px; }
 #slide-unused-b .lvl-tip .deliv { gap: 6px; }
 #slide-unused-b .lvl-tip > b { margin-bottom: 8px; }
 #slide-unused-b .chain .lvl-tip li { display: list-item; position: static; padding: 0; margin: 0; background: none; color: #1f2a37; border-radius: 0; box-shadow: none; justify-content: initial; font-size: clamp(16px, 1.3vw, 21px); }
 #slide-unused-b .chain .lvl-tip li::before { content: none; border: 0; }
 #slide-unused-b .chain .lvl-tip li b { display: inline; margin: 0; font-size: 1em; color: #326AB6; }
 #slide-unused-b .chain .lvl-tip .deliv { padding-left: 1.2em; list-style: disc; }
-#slide-6 .levels-table th, #slide-6 .levels-table td { padding-top: 5px; padding-bottom: 5px; }
-#slide-6 .deliv li { font-size: clamp(13px, 1vw, 16px); line-height: 1.3; }
-#slide-6 .slide-title { margin-bottom: 6px; }
-#slide-6 .levels-table tbody th { width: 24%; }
-#slide-6 .levels-table .hz { display: inline-block; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: #EAF1FA; color: #326AB6; font-size: clamp(11px, 0.8vw, 13px); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
-#slide-6 .deliv { column-gap: 30px; }
-#slide-6 .deliv { display: block; columns: 2; column-gap: 30px; }
-#slide-6 .deliv li { break-inside: avoid; margin-bottom: 2px; }
+#slide-unused-c .levels-table th, #slide-unused-c .levels-table td { padding-top: 5px; padding-bottom: 5px; }
+#slide-unused-c .deliv li { font-size: clamp(13px, 1vw, 16px); line-height: 1.3; }
+#slide-unused-c .slide-title { margin-bottom: 6px; }
+#slide-unused-c .levels-table tbody th { width: 24%; }
+#slide-unused-c .levels-table .hz { display: inline-block; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: #EAF1FA; color: #326AB6; font-size: clamp(11px, 0.8vw, 13px); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+#slide-unused-c .deliv { column-gap: 30px; }
+#slide-unused-c .deliv { display: block; columns: 2; column-gap: 30px; }
+#slide-unused-c .deliv li { break-inside: avoid; margin-bottom: 2px; }
 /* Slide 9: five levels, same colours as the slide 7 cascade */
 #slide-5 .member-plan-grid { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 14px; }
 #slide-5 .member-plan-grid article { border-top: 1px solid var(--line); padding: 0; overflow: hidden; display: flex; flex-direction: column; }
@@ -503,28 +503,28 @@
 #slide-5 .personal-review-questions ol > li:has(.smart-tip) { z-index: 10; }
 /* Slide 6: step borders in the cascade gradient */
 /* Slide 13: three matching cards */
-#slide-8 .hk-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; list-style: none; margin: 0; padding: 0; }
-#slide-8 .hk-grid li { display: flex; flex-direction: column; gap: 8px; }
-#slide-8 .hk-grid em { font-style: normal; font-family: var(--font-mono); font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-#slide-8 .hk-grid li:first-child { border-top-color: #54B570; }
-@media (max-width: 900px) { #slide-8 .hk-grid { grid-template-columns: 1fr; } }
-#slide-7 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
-#slide-7 .personal-review-questions ol > li { overflow: visible; }
+#slide-7 .hk-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; list-style: none; margin: 0; padding: 0; }
+#slide-7 .hk-grid li { display: flex; flex-direction: column; gap: 8px; }
+#slide-7 .hk-grid em { font-style: normal; font-family: var(--font-mono); font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+#slide-7 .hk-grid li:first-child { border-top-color: #54B570; }
+@media (max-width: 900px) { #slide-7 .hk-grid { grid-template-columns: 1fr; } }
+#slide-6 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
+#slide-6 .personal-review-questions ol > li { overflow: visible; }
 /* Slide 11: same cards as slide 5 */
-#slide-7 .review-grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; align-content: start; }
-#slide-7 .update-block { padding: 24px 26px; }
-#slide-7 .update-block:nth-child(1) { border-top-color: var(--blue); }
-#slide-7 .update-block:nth-child(2) { border-top-color: var(--green); }
-#slide-7 .update-block h2 { margin-bottom: 18px; }
-#slide-7 .update-questions { gap: 14px; }
-#slide-7 .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; vertical-align: middle; }
-#slide-7 .slide-stage, #slide-7 .review-grid, #slide-7 .update-block { overflow: visible; }
-#slide-7 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
-@media (max-width: 900px) { #slide-7 .review-grid { grid-template-columns: 1fr; } }
-#slide-7 .update-questions.single { list-style: none; padding-left: 0; }
+#slide-6 .review-grid { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; align-content: start; }
+#slide-6 .update-block { padding: 24px 26px; }
+#slide-6 .update-block:nth-child(1) { border-top-color: var(--blue); }
+#slide-6 .update-block:nth-child(2) { border-top-color: var(--green); }
+#slide-6 .update-block h2 { margin-bottom: 18px; }
+#slide-6 .update-questions { gap: 14px; }
+#slide-6 .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; vertical-align: middle; }
+#slide-6 .slide-stage, #slide-6 .review-grid, #slide-6 .update-block { overflow: visible; }
+#slide-6 .smart-tip .tip { top: calc(100% + 10px); bottom: auto; left: 0; right: auto; z-index: 20; }
+@media (max-width: 900px) { #slide-6 .review-grid { grid-template-columns: 1fr; } }
+#slide-6 .update-questions.single { list-style: none; padding-left: 0; }
 /* Card borders run green to blue, as in the cascade */
-#slide-7 .update-block:nth-child(1) { border-top-color: #54B570; }
-#slide-7 .update-block:nth-child(2) { border-top-color: #326AB6; }
+#slide-6 .update-block:nth-child(1) { border-top-color: #54B570; }
+#slide-6 .update-block:nth-child(2) { border-top-color: #326AB6; }
 /* Slide 5: four columns read left to right, steps 1 to 6 in order (2026-10-16). */
 #slide-unused-a .update-flow { grid-template-columns: minmax(0,1fr) minmax(0,1.3fr) minmax(0,0.8fr) minmax(0,1fr); column-gap: 30px; }
 #slide-unused-a .update-flow > * { position: relative; }
@@ -556,14 +556,14 @@
 /* Forecast horizon: the last month the forecast covers (2026-10-16). */
 #slide-unused-a .fva-horizon { margin: auto 0 0; padding-top: clamp(8px, 1cqi, 14px); border-top: 1px solid var(--line); font-weight: 600; font-size: clamp(13px, 1.45cqi, 20px); }
 #slide-unused-a .fva-blank { display: inline-block; margin-left: 4px; padding: 2px 10px; border-radius: 6px; background: #EAF1FA; color: var(--blue); font-weight: 700; font-size: .85em; white-space: nowrap; }
-#slide-8 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
-#slide-8 .hk-grid li:nth-child(2) { border-top-color: #438F93; }
-#slide-8 .hk-grid li:nth-child(3) { border-top-color: #326AB6; }
+#slide-7 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
+#slide-7 .hk-grid li:nth-child(2) { border-top-color: #438F93; }
+#slide-7 .hk-grid li:nth-child(3) { border-top-color: #326AB6; }
 /* Slide 12: three cards, green to blue */
-#slide-8 .hk-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-#slide-8 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
-#slide-8 .hk-grid li:nth-child(2) { border-top-color: #326AB6; }
-#slide-6 .levels-table th, #slide-6 .levels-table td { padding-top: 3px; padding-bottom: 3px; } #slide-6 .levels-table .hz { margin-top: 2px; }
+#slide-7 .hk-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+#slide-7 .hk-grid li:nth-child(1) { border-top-color: #54B570; }
+#slide-7 .hk-grid li:nth-child(2) { border-top-color: #326AB6; }
+#slide-unused-c .levels-table th, #slide-unused-c .levels-table td { padding-top: 3px; padding-bottom: 3px; } #slide-unused-c .levels-table .hz { margin-top: 2px; }
 
 /* Slide 9: present-then-check process, cloned from the Presentations layout (Meeting 5, 17-Oct-2026). */
 #slide-5 .pres-flow { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap: 20px; align-items: stretch; }
@@ -654,8 +654,8 @@
 @media (max-width: 900px) { #slide-4 .guest-photo { height: min(38vh, 360px); } }
 
 /* Meeting 6: three Housekeeping cards */
-#slide-8 .date-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
-#slide-8 .date-grid li { padding: 22px; }
-#slide-8 .date-grid strong { font-size: clamp(22px, 1.9vw, 30px); }
-#slide-8 .date-grid span { font-size: clamp(18px, 1.5vw, 24px); }
-@media (max-width: 900px) { #slide-8 .date-grid { grid-template-columns: 1fr; } }
+#slide-7 .date-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+#slide-7 .date-grid li { padding: 22px; }
+#slide-7 .date-grid strong { font-size: clamp(22px, 1.9vw, 30px); }
+#slide-7 .date-grid span { font-size: clamp(18px, 1.5vw, 24px); }
+@media (max-width: 900px) { #slide-7 .date-grid { grid-template-columns: 1fr; } }

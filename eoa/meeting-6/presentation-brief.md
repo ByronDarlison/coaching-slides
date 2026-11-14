@@ -49,26 +49,26 @@ There is no break in the afternoon.
 | 3 Rules of Engagement | Reference | Recall the six rules | Drafted |
 | 4 Brian Young | Operational | Know who the guest is and his topic | Drafted |
 | 5 Present your plan | Operational | Follow the four steps of a slot | Drafted |
-| 6 What each level is for | Reference | Look up what a level holds | Drafted |
-| 7 Four questions | Reference | Test a priority with four questions | Drafted |
-| 8 Housekeeping | Operational | Know tonight's event and the next meeting | Drafted |
-| 9 One Phrase Close | Operational | Give a closing phrase | Drafted |
+| 6 Four questions | Reference | Test a priority with four questions | Drafted |
+| 7 Housekeeping | Operational | Answer two scheduling questions and know tonight's event | Drafted |
+| 8 One Phrase Close | Operational | Give a closing phrase | Drafted |
+
+The "What each level is for" reference slide was cut (Byron, 14-Nov-2026): no new teaching, and the board is on screen all afternoon.
 
 ## Acceptance results
 
 | Gate | Result | Reason |
 |---|---|---|
-| Outcome coverage | Pass | Slides 5 to 7 carry the plan check and the feedback order |
+| Outcome coverage | Pass | Slides 5 and 6 carry the plan check and the feedback order |
 | Slide necessity | Pass | Every slide maps to an agenda block |
 | Information density | Pass | No Teaching slides; each slide has one bounded task |
 | Narrative coherence | Not applicable | Working session, not a teaching sequence |
 | Accuracy | Pass | Dates from Google Calendar; agenda from Byron on 14-Nov-2026 |
 | Cold comprehension | Fail | Not run |
 | Timing | Fail | Not rehearsed. Five 30-minute slots fill 1:20 to 3:50 PM with no slack |
-| Format verification | Fail | slide-test passes and slides 4 to 8 were inspected at 1440 by 900. Full-screen, phone width and an independent visual review were not run |
+| Format verification | Fail | slide-test passes and slides 4 to 7 were inspected at 1440 by 900. Full-screen, phone width and an independent visual review were not run |
 | Gateway verification | Fail | Copy has not gone through Clara or Delilah |
 
 ## Open questions for Byron
 
 - Slide 4 will show Brian's name, company and photo on a public deck. Confirm he is content with that before publishing.
-- Slide 6 is reference only. Cut it if the board is on screen the whole afternoon.
