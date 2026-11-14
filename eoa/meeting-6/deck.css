@@ -642,6 +642,12 @@
 #slide-unused-a .turn-smart { margin-top: 8px !important; font-weight: 700; }
 #slide-unused-a .slide-stage, #slide-unused-a .turn-flow, #slide-unused-a .turn-step { overflow: visible; }
 @media (max-width: 900px) { #slide-unused-a .turn-flow { grid-template-columns: 1fr; } }
+#slide-5 .board-link { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Meeting 6: wider first step */
+@media (min-width: 901px) { #slide-5 .present-check { grid-template-columns: minmax(0,1.05fr) minmax(0,1.7fr) minmax(0,0.7fr) minmax(0,0.7fr); } }
+#slide-5 .present-check > .pres-step:nth-child(1) p + p { margin-top: 10px; }
+
 /* Meeting 6: guest photo */
 #slide-4 .story-panel--art { padding: 0; overflow: hidden; width: fit-content; height: auto; min-height: 0; justify-self: center; align-self: center; }
 #slide-4 .guest-photo { display: block; height: min(54vh, 520px); width: auto; max-width: 100%; max-height: none; object-fit: cover; }
