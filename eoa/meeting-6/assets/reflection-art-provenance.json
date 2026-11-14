@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "ai-config/darlison/presentations/shared/references/character-style-reference.png",
+  "assets": [
+    {
+      "file": "one-word-reflection.png",
+      "source": "exec-50d81c6f-e275-4937-9be5-e0289c5752a2.png",
+      "prompt": "Generic featureless grey person seated on stool, hand on chest, empty blue speech bubble; fine grey outlines, minimal anatomy, white background, no text."
+    },
+    {
+      "file": "closing-reflection.png",
+      "source": "exec-5c45f0b1-a016-4efc-8da2-fcccb4da667e.png",
+      "prompt": "Two generic featureless grey people sharing brief closing reflection; empty blue and green speech bubbles, fine grey outlines, minimal anatomy, white background, no text."
+    }
+  ]
+}

@@ -1,529 +1,132 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EOA Meeting 6</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #FAFAFA; --bg-white: #FFFFFF; --text-primary: #1a1a1a; --text-secondary: #555555; --text-muted: #999999;
-            --accent-blue: #326AB5; --accent-green: #54B570; --accent-green-light: #f5faf6; --accent-green-border: #dceee0; --accent-green-text: #54B570;
-            --border-light: #e8e8e8; --font-main: 'IBM Plex Sans', sans-serif;
-            --title-size: clamp(1.75rem, 3.5vw, 2.5rem); --h2-size: clamp(1.375rem, 2.5vw, 1.875rem); --h3-size: clamp(1.125rem, 1.8vw, 1.5rem);
-            --body-size: clamp(1rem, 1.5vw, 1.25rem); --small-size: clamp(0.875rem, 1.2vw, 1.0625rem);
-            --slide-padding: clamp(2rem, 5vw, 5rem); --content-gap: clamp(0.75rem, 2vw, 1.5rem); --element-gap: clamp(0.25rem, 1vw, 0.75rem);
-            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1); --duration-normal: 0.6s;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { height: 100%; overflow-x: hidden; font-family: var(--font-main); color: var(--text-primary); background: var(--bg-primary); }
-        html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
-        .slide { width: 100vw; height: 100vh; height: 100dvh; overflow: hidden; scroll-snap-align: start; display: flex; flex-direction: column; position: relative; background: var(--bg-white); }
-        .slide-content { flex: 1; display: flex; flex-direction: column; justify-content: center; max-height: 100%; overflow: hidden; padding: var(--slide-padding); padding-left: clamp(3rem, 8vw, 8rem); padding-right: clamp(3rem, 8vw, 8rem); }
-        .slide::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--accent-blue) 60%, var(--accent-green) 60%); }
-        .slide-title { font-size: var(--title-size); font-weight: 700; color: var(--accent-blue); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: var(--content-gap); }
-        .slide-subtitle { font-size: var(--h3-size); font-weight: 400; color: var(--text-secondary); margin-bottom: var(--content-gap); }
-        .talking-points { list-style: none; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.2vh, 1rem); margin-bottom: var(--content-gap); }
-        .talking-points li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(1rem, 2vw, 1.5rem); position: relative; }
-        .talking-points li::before { content: ''; position: absolute; left: 0; top: clamp(6px, 0.8vh, 10px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
-        .talking-points strong { font-weight: 600; color: var(--accent-blue); }
-        .talking-points li ul { list-style: none; margin-top: clamp(0.3rem, 0.6vh, 0.5rem); display: flex; flex-direction: column; gap: clamp(0.15rem, 0.3vh, 0.3rem); padding-left: clamp(0.5rem, 1vw, 1rem); }
-        .talking-points li ul li { padding-left: 0; }
-        .talking-points li ul li::before { content: none; }
-        .symbol-badge { display: inline-flex; align-items: center; gap: clamp(4px, 0.5vw, 8px); font-size: var(--small-size); font-weight: 600; padding: clamp(2px, 0.3vw, 4px) clamp(8px, 1vw, 14px); border-radius: 4px; margin-bottom: var(--content-gap); }
-        .symbol-introduced { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
-        .symbol-coach { color: #54B570; background: rgba(84, 181, 112, 0.08); border: 1px solid rgba(84, 181, 112, 0.2); }
-        .symbol-review { color: #666666; background: rgba(102, 102, 102, 0.08); border: 1px solid rgba(102, 102, 102, 0.2); }
-        .symbol-rebuilt { color: var(--accent-blue); background: rgba(50, 106, 181, 0.08); border: 1px solid rgba(50, 106, 181, 0.2); }
-        .slide-links { display: flex; gap: clamp(6px, 1vw, 12px); align-items: center; flex-wrap: wrap; margin-top: auto; padding-top: var(--content-gap); }
-        .link-article { display: inline-flex; align-items: center; gap: 4px; font-size: var(--small-size); font-weight: 500; color: var(--accent-blue); text-decoration: none; padding: clamp(3px, 0.4vw, 6px) clamp(10px, 1.2vw, 16px); background: rgba(50, 106, 181, 0.06); border: 2px solid rgba(50, 106, 181, 0.25); border-radius: 4px; transition: background 0.2s, border-color 0.2s; }
-        .link-article:hover { background: rgba(50, 106, 181, 0.12); border-color: var(--accent-blue); }
-        .link-prompt { display: inline-flex; align-items: center; gap: 3px; font-size: var(--small-size); font-weight: 600; color: var(--accent-green-text); background: var(--accent-green-light); border: 2px solid var(--accent-green-border); border-radius: 3px; padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px); text-decoration: none; cursor: pointer; white-space: nowrap; transition: background 0.2s, border-color 0.2s; }
-        .link-prompt:hover { background: #edf7ef; border-color: var(--accent-green); }
-        .two-col { display: grid; grid-template-columns: 3fr 2fr; gap: clamp(1.5rem, 3vw, 3rem); align-items: center; flex: 1; }
-        .two-col .col-text { display: flex; flex-direction: column; }
-        .two-col .col-image { display: flex; align-items: center; justify-content: center; }
-        .two-col .col-image img { max-height: min(45vh, 380px); border-radius: 8px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06); }
-        @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } .two-col .col-image { display: none; } }
-        .homework-section { margin-bottom: clamp(0.8rem, 1.5vh, 1.2rem); }
-        .homework-section h3 { font-size: var(--h3-size); font-weight: 600; color: #333333; margin-bottom: clamp(0.3rem, 0.8vh, 0.6rem); }
-        .homework-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.3rem, 0.8vh, 0.6rem); }
-        .homework-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); padding-left: clamp(0.8rem, 1.5vw, 1.2rem); position: relative; }
-        .homework-list li::before { content: ''; position: absolute; left: 0; top: clamp(5px, 0.7vh, 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); }
-        .homework-list a { color: var(--accent-blue); text-decoration: none; font-weight: 500; }
-        .homework-list a:hover { text-decoration: underline; }
-        .homework-list .link-prompt { font-size: clamp(0.65rem, 1vw, 0.85rem); padding: 1px 6px; vertical-align: middle; margin-left: 4px; }
-        .homework-list li.homework-cta { background: var(--accent-blue); color: #ffffff; font-weight: 600; border-radius: 6px; padding: clamp(0.4rem, 0.9vh, 0.6rem) clamp(0.7rem, 1.2vw, 1rem); }
-        .homework-list li.homework-cta::before { display: none; }
-        .homework-list li.homework-cta a { color: #ffffff; text-decoration: underline; }
-        .rules-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.5vh, 1.2rem); }
-        .rules-list li { font-size: var(--body-size); line-height: 1.5; color: var(--text-primary); display: flex; align-items: flex-start; gap: clamp(8px, 1vw, 14px); }
-        .rule-icon { flex-shrink: 0; width: clamp(18px, 2vw, 24px); height: clamp(18px, 2vw, 24px); display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-        .rule-icon svg { width: 100%; height: 100%; }
-        .close-question { font-size: var(--h2-size); font-weight: 400; color: var(--text-secondary); margin-top: var(--element-gap); }
-        .close-instruction { font-size: var(--h3-size); font-weight: 500; color: var(--accent-green); margin-top: var(--content-gap); }
-        .slide-footer { position: absolute; bottom: clamp(12px, 2vh, 24px); left: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 400; color: var(--text-muted); }
-        .time-indicator { position: absolute; bottom: clamp(12px, 2vh, 24px); right: clamp(16px, 3vw, 32px); font-size: var(--small-size); font-weight: 500; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-        .reveal { opacity: 0; transform: translateY(20px); transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo); }
-        .slide.visible .reveal { opacity: 1; transform: translateY(0); }
-        .reveal:nth-child(1) { transition-delay: 0.05s; } .reveal:nth-child(2) { transition-delay: 0.12s; } .reveal:nth-child(3) { transition-delay: 0.19s; }
-        .reveal:nth-child(4) { transition-delay: 0.26s; } .reveal:nth-child(5) { transition-delay: 0.33s; } .reveal:nth-child(6) { transition-delay: 0.40s; }
-        .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent-blue); z-index: 1000; transition: width 0.3s ease; }
-        .nav-dots { position: fixed; right: clamp(12px, 2vw, 20px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 100; }
-        .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border-light); border: none; cursor: pointer; transition: background 0.3s, transform 0.3s; padding: 0; }
-        .nav-dot.active { background: var(--accent-blue); transform: scale(1.3); }
-        .nav-dot:hover { background: var(--accent-green); }
-        @media (max-height: 700px) { :root { --slide-padding: clamp(0.75rem, 3vw, 2rem); --content-gap: clamp(0.4rem, 1.5vw, 1rem); --title-size: clamp(1.25rem, 4.5vw, 2.5rem); } }
-        @media (max-height: 600px) { :root { --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem); --content-gap: clamp(0.3rem, 1vw, 0.75rem); --title-size: clamp(1.1rem, 4vw, 2rem); --body-size: clamp(0.7rem, 1.2vw, 0.95rem); } .nav-dots { display: none; } }
-        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; } html { scroll-behavior: auto; } }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>EOA Meeting 6</title>
+<link href="data:," rel="icon"/>
+<link as="font" crossorigin="" href="./fonts/geist-latin.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="./fonts/geist-mono-latin.woff2" rel="preload" type="font/woff2"/>
+<link href="./shell.css?v=eoa-standard-2-script" rel="stylesheet"/>
+<link href="deck.css?v=m6-20261114a" rel="stylesheet"/>
 </head>
 <body>
-    <div class="progress-bar" id="progressBar"></div>
-    <nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
-
-    <!-- SLIDE 1: TITLE -->
-    <section class="slide" aria-label="Title">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text" style="gap: clamp(0.75rem, 2vh, 1.5rem);">
-                    <h1 class="slide-title reveal" style="font-size: clamp(2.25rem, 5vw, 3.5rem); letter-spacing: -0.03em;">EOA Meeting 6</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">EO Accelerator</p>
-                    <hr class="reveal" style="width: clamp(60px, 10vw, 120px); height: 2px; background: var(--accent-green); border: none;">
-                    <div class="reveal" style="display: flex; align-items: center; gap: clamp(12px, 2vw, 24px);">
-                        <img src="assets/eoa-logo.png" alt="EO Accelerator" style="max-width: clamp(140px, 18vw, 220px); height: auto;">
-                        <img src="../../shared/assets/metronomics-logo.svg" alt="Metronomics" style="max-width: clamp(120px, 15vw, 180px); height: auto;">
-                    </div>
-                </div>
-                <div class="col-image reveal"><img src="assets/title-meeting6.png" alt="Meeting 6"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-    </section>
-
-    <!-- SLIDE 2: ONE WORD BAROMETER (5/5) -->
-    <section class="slide" aria-label="Opening">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">One Word Barometer</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">How are you feeling right now?</p>
-                    <ul class="talking-points reveal">
-                        <li>One word. An emotion. No wrong answers.</li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/one-word-barometer.png" alt="One Word Barometer"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 5)</span>
-    </section>
-
-    <!-- SLIDE 3: RULES OF ENGAGEMENT (3/8) -->
-    <section class="slide" aria-label="Rules of Engagement">
-        <div class="slide-content">
-            <div class="two-col">
-            <div class="col-text">
-            <h1 class="slide-title reveal">Rules of Engagement</h1>
-            <ul class="rules-list">
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 2L15 8.5L22 9.5L17 14.5L18 21.5L12 18.5L6 21.5L7 14.5L2 9.5L9 8.5Z"/></svg></span>
-                    Challenge yourself. Challenge each other.
+<button aria-controls="slideSidebar" aria-expanded="false" aria-label="Open slide navigation" class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+<div aria-hidden="true" class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside aria-label="Slide navigation" class="slide-sidebar" id="slideSidebar">
+<header class="sidebar-head">
+<h1>EOA Meeting 6</h1>
+<p>EO Accelerator</p>
+</header>
+<nav aria-label="Presentation slides" class="sidebar-nav" id="sidebarNav"></nav>
+<p class="sidebar-help">Arrow keys move. Press N for notes. Press F for full screen.<br/>Press S to hide the sidebar.</p>
+</aside>
+<main aria-label="EOA Meeting 6" id="presentation">
+<section aria-label="Title" class="slide layout-title" data-group="Opening" data-title="Meeting 6" id="slide-1">
+<div class="slide-content"><div class="title-opening"><div class="title-identity"><p class="eyebrow">Tuesday, December 1 · 12 to 4 PM · The Rose Room, National Club</p><h1 class="slide-title">EOA Meeting 6</h1>
+<hr aria-hidden="true" class="hairline"/></div><div class="title-art"><img alt="Three neutral grey figures build a shared plan around a table." src="assets/shared-plan.png"/></div></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>Today: lunch with our guest, then each of you presents your plan, BHAG to sprint lanes.</p></aside>
+</section>
+<section aria-label="Opening" class="slide original-copy reflection-slide" data-original-slide="3" data-source-slide="slide-3" data-title="Good News" id="slide-2">
+<div class="slide-content"><div class="reflection-frame"><div class="reflection-copy"><h1 class="slide-title">Good News</h1><div class="reflection-prompts">
+<p class="support">One personal, one business.</p>
+</div></div><div class="reflection-art"><img alt="A generic grey figure reflecting with an empty speech bubble" src="assets/one-word-reflection.png"/></div></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: 12:00 to 12:15 PM, over lunch. Go around the table; everyone answers.</p></aside>
+</section>
+<section aria-label="Rules of Engagement" class="slide original-copy" data-group="Accountability" data-original-slide="4" data-source-slide="slide-6" data-title="Rules of Engagement" id="slide-3">
+<div class="slide-content"><h1 class="slide-title">Rules of Engagement</h1><div class="slide-stage title-follow original-body">
+<ul class="rules-list original-rules">
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2L15 8.5L22 9.5L17 14.5L18 21.5L12 18.5L6 21.5L7 14.5L2 9.5L9 8.5Z"></path></svg></span>
+                  Challenge yourself. Challenge each other.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-                    Discussion and collaboration. Your best contribution.
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                  Discussion and collaboration. Your best contribution.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
-                    Be present in the room.
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></span>
+                  Be present in the room.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-                    No blame, no shame. No dumb questions.
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+                  No blame, no shame. No dumb questions.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
-                    Don't ignore the brutal facts. Bring them forward.
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                  Don't ignore the brutal facts. Bring them forward.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
-                    Confidentiality. What happens here stays here.
+<li>
+<span class="rule-icon"><svg fill="none" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
+                  Confidentiality. What happens here stays here.
                 </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-                    Feedback runs both ways. Tell me what didn't land.
-                </li>
-                <li class="reveal">
-                    <span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#326AB5" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
-                    Articles and prompts are living. Always pull the latest from darlison.com, not a saved copy.
-                </li>
-            </ul>
-            </div>
-            <div class="col-image reveal">
-                <img src="../../shared/assets/rules-of-engagement.png" alt="Rules of Engagement">
-            </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(3 min / 8)</span>
-    </section>
+</ul>
+</div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: 12:15 to 12:20 PM, before the guest arrives. The group constitution remains in force.</p></aside>
+</section>
+<section aria-label="Lunch guest" class="slide comp-story" data-group="Lunch guest" data-title="Brian Young" id="slide-4">
+<div class="slide-content">
+<div class="slide-stage">
+<div class="story-frame">
+<div class="story-copy">
+<p class="eyebrow">Lunch guest · Brian Young, Home Painters Toronto</p>
+<h1 class="story-title">How I am putting AI to work, and how I funded it</h1>
+</div>
+<div class="story-panel story-panel--art">
+<img alt="Two generic grey figures review a simple green chart on a laptop" src="assets/presenter-laptop.png"/>
+</div>
+</div>
+</div>
+<footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer>
+</div>
+<aside class="speaker-notes"><p>In the room: 12:20 to 1:20 PM. Brian talks, then takes questions. He leaves before the plan presentations.</p></aside>
+</section>
+<section aria-label="Present your plans" class="slide member-plans" data-group="Your plans" data-source-slide="member-planning-presentations" data-title="Present your plan" id="slide-5"><div class="slide-content"><h1 class="slide-title">Present for 15 minutes, then 15 minutes of feedback</h1><div class="slide-stage title-follow original-body"><div class="present-check">
+<article class="pres-step"><p class="pres-time"><span class="step">1</span>You</p><h2>Present your plan</h2><p>Open the board from the invite link. Present from your column, level by level, BHAG to sprint lanes. Say which numbers are on track.</p></article>
+<article class="pres-step check-step"><p class="pres-time"><span class="step">2</span>Everyone</p><h2>Check it: does the plan pass?</h2><div class="personal-review-questions check-list"><ol><li><span>Every <b>row on your board</b> has a <b>number and one owner</b></span></li><li><span><b>Ideally 3, up to 5 priorities</b>, <span class="smart-tip" tabindex="0">SMART<span class="tip" role="tooltip"><b>S</b>pecific. <b>M</b>easurable. <b>A</b>chievable. <b>R</b>ealistic. <b>T</b>ime-bound: a date.<br>Each priority has one owner. Say exactly what happens, so you can celebrate it.</span></span> and <b>ranked</b>, number one first</span></li><li><span>Each 1HAG priority <b>builds a 3HAG key capability</b>; each QHAG priority <b>advances a 1HAG priority</b></span></li><li><span>Question the math: do the <b>widget targets support the revenue</b>?</span></li><li><span>The <b>13-week sprint lanes</b> and <b>weekly widget forecast</b> reach the quarter&#39;s priorities and widget targets</span></li></ol></div></article>
+<article class="pres-step"><p class="pres-time"><span class="step">3</span>Group</p><h2>Experience shares</h2><p>Share from your experience, not advice. Use "I" and "did", not "you" and "should".</p></article>
+<article class="pres-step"><p class="pres-time"><span class="step">4</span>Coach</p><h2>Coach feedback</h2><p>Clarifying questions and direct feedback. You close with the one change you will make.</p></article>
+</div></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div><aside class="speaker-notes"><p>In the room: 1:20 to 3:50 PM. Five slots of 30 minutes: 15 to present, 15 for feedback. No break.</p><p>In the room: A member who is not prepared is skipped. They stay and give feedback.</p></aside>
+</section>
+<section aria-label="What each level is for" class="slide original-copy" data-title="What each level is for" id="slide-6">
+<div class="slide-content"><h1 class="slide-title">What each level is for</h1><div class="slide-stage title-follow cascade-levels"><table class="levels-table"><thead><tr><th>Level</th><th>What it is for</th></tr></thead><tbody><tr><th>BHAG<small>Big Hairy Audacious Goal</small><span class="hz">10 to 30 years</span></th><td>The company's <b>long-term ambition</b>. <b>No numbers.</b></td></tr><tr><th>3HAG<small>Three-Year Highly Achievable Goal</small><span class="hz">3 years</span></th><td>What the company will be and be <b>known for</b>, the <b>key capabilities</b> that get it there, and the numbers that prove it</td></tr><tr><th>1HAG<small>One-Year Highly Achievable Goal</small><span class="hz">This year</span></th><td>What must get done <b>this fiscal year</b>, ranked, and the numbers that prove it</td></tr><tr><th>QHAG<small>Quarterly Highly Achievable Goal</small><span class="hz">Next quarter</span></th><td>What must get done <b>this quarter</b> to move the year&#39;s priorities, and the numbers month by month</td></tr><tr><th>13-Week Sprint Lanes<span class="hz">Week by week</span></th><td>The <b>task each week</b> that hits each quarterly priority, and the <b>widget forecast</b> week by week</td></tr></tbody></table><p class="fva-sub" style="margin-top:20px">Your rows are on the board, with one owner each.</p></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: Keep this as the reference while members present.</p></aside>
+</section>
+<section aria-label="Four questions for a priority" class="slide original-copy" data-title="Four questions" id="slide-7">
+<div class="slide-content"><h1 class="slide-title">Test each priority with four questions</h1><div class="slide-stage title-follow business-update-grid review-grid"><article class="update-block"><h2><span class="step">1</span>What problem are we solving?</h2><ol class="update-questions single"><li>Find the cause, not the symptom.</li></ol></article><article class="update-block"><h2><span class="step">2</span>How do we measure success?</h2><ol class="update-questions single"><li>An outcome, not a task. Ideally one of your critical numbers.</li></ol></article><article class="update-block"><h2><span class="step">3</span>How badly could we mess this up?</h2><ol class="update-questions single"><li>Think through the second-order consequences.</li></ol></article><article class="update-block"><h2><span class="step">4</span>By when will we know if it worked?</h2><ol class="update-questions single"><li>If it takes a year to find out, it is not the first choice.</li></ol></article></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: Use these in coach feedback, on each member's number one priority.</p><p>Pick the priority that moves a critical number the most, for the lowest cost.</p></aside>
 
-    <!-- SLIDE 4: BUSINESS UPDATES (25/33) -->
-    <section class="slide" aria-label="Business Updates">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Business Updates</h1>
-                    <ul class="talking-points reveal">
-                        <li><strong>Last Month's Action</strong>
-                            <ul>
-                                <li>Its Measure of Success and Date</li>
-                                <li>Was it done?</li>
-                                <li>Did it achieve the Measure of Success?</li>
-                                <li>What did you learn?</li>
-                            </ul>
-                        </li>
-                        <li><strong>This Month's Action</strong>
-                            <ul>
-                                <li>Its Measure of Success and Date</li>
-                            </ul>
-                        </li>
-                        <li>Revenue: On Track / Off Track</li>
-                        <li>Cash: On Track / Off Track</li>
-                        <li>Widget (Profit / X): On Track / Off Track</li>
-                        <li>Best of the Month</li>
-                        <li>Worst of the Month</li>
-                        <li>Presentation Topic</li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/business-updates.png" alt="Business Updates"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(25 min / 33)</span>
-    </section>
-
-    <!-- SLIDE 5: PRESENTATIONS (75/108) -->
-    <section class="slide" aria-label="Presentations">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Presentations</h1>
-                    <p class="slide-subtitle reveal">15 minutes each. 5 members.</p>
-                    <ul class="talking-points reveal">
-                        <li>Headline: what is the issue?</li>
-                        <li>Significance: why does it matter?</li>
-                        <li>Background: what context does the group need?</li>
-                        <li>Options considered: what have you tried or thought about?</li>
-                        <li>Experience shares from the group (5 min)</li>
-                        <li>Coach feedback (5 min)</li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/personal-review-presentations.png" alt="Presentations"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(75 min / 108)</span>
-    </section>
-
-    <!-- SLIDE 6: BREAK (12/120) -->
-    <section class="slide" aria-label="Break">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text" style="align-items: center; text-align: center;">
-                    <h1 class="slide-title reveal" style="font-size: clamp(2rem, 4vw, 3rem);">Break</h1>
-                    <p class="slide-subtitle reveal" style="font-size: var(--h2-size);">12 minutes. Be back at 4:00 PM.</p>
-                </div>
-                <div class="col-image"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(12 min / 120)</span>
-    </section>
-
-    <!-- SLIDE 7: FUNCTION SCORECARDS COACH (80/200) -->
-    <!-- SLIDE 7: QHAG REBUILD (20 min / 140) -->
-    <section class="slide" aria-label="QHAG + Sprint Lanes Rebuild">
-        <div class="slide-content">
-            <div class="two-col"><div class="col-text">
-                <span class="symbol-badge symbol-rebuilt reveal">&#9632; Rebuilt</span>
-                <h1 class="slide-title reveal">QHAG + 13-Week Sprint Lanes</h1>
-                <p class="slide-subtitle reveal">Sprint 2 rebuild. Start fresh.</p>
-                <ul class="talking-points">
-                    <li class="reveal">Review last quarter: what landed, what slipped, what surprised you?</li>
-                    <li class="reveal">Set 3-5 new priorities for the coming quarter</li>
-                    <li class="reveal">Build fresh Sprint Lanes: one binary deliverable per priority per week, no gaps</li>
-                </ul>
-                <div class="slide-links reveal">
-                    <a href="https://www.darlison.com/where-are-you-going/" target="_blank" rel="noopener" class="link-article">Article</a>
-                    <a href="https://www.darlison.com/planning-cascade-prompt/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
-                </div>
-            </div></div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(20 min / 140)</span>
-    </section>
-
-    <!-- SLIDE 8: FUNCTION SCORECARDS COACH -->
-    <section class="slide" aria-label="Function Scorecards">
-        <div class="slide-content">
-            <div class="two-col"><div class="col-text">
-                <span class="symbol-badge symbol-coach reveal">&#9650; Coach and finalize</span>
-                <h1 class="slide-title reveal">Function Scorecards</h1>
-                <ul class="talking-points">
-                    <li class="reveal">Review the Head of Company scorecard. Does it capture the right accountabilities from the KFFM?</li>
-                    <li class="reveal">Are critical numbers from the FAC reflected in the scorecard?</li>
-                    <li class="reveal">Are Core Values built into the behavioral expectations?</li>
-                    <li class="reveal">Plan the cascade: which leaders get their scorecards next?</li>
-                </ul>
-                <div class="slide-links reveal">
-                    <a href="https://www.darlison.com/scorecards/" target="_blank" rel="noopener" class="link-article">Article</a>
-                    <a href="https://www.darlison.com/scorecards-tools/" target="_blank" rel="noopener" class="link-prompt">&#10022; AI Prompt</a>
-                </div>
-                <span class="reveal" style="display: inline-block; background: #f5faf6; border: 1px solid #dceee0; color: #54B570; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; margin-top: 10px; font-weight: 500;">&#8594; Move to Mural for this exercise</span>
-            </div>
-            <div class="col-image reveal"><img src="assets/title-meeting6.png" alt="Function Scorecards"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(60 min / 200)</span>
-    </section>
-
-    <!-- SLIDE 8: PERSONAL REVIEW (5/205) -->
-    <section class="slide" aria-label="Personal Review">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Personal Review</h1>
-                    <p class="slide-subtitle reveal">10 minutes. Work alone.</p>
-                    <ul class="talking-points reveal">
-                        <li>What are your key takeaways from today?</li>
-                        <li>What commitments are you making?</li>
-                        <li>What is your one big thing (OBT) for next month?
-                            <ul>
-                                <li>The action: what you will do</li>
-                                <li>The one Owner&#39;s Outcome measure it improves (from where it is now, toward its goal)</li>
-                                <li>Action done by (date) and improvement shows by (date)</li>
-                                <li>Pressure test: is the improvement worth the effort? how could it go wrong? does it cross a guardrail?</li>
-                            </ul>
-                        </li>
-                        <li>Update your EOA Prep document with your conclusions</li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/personal-review.png" alt="Personal Review"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 205)</span>
-    </section>
-
-    <!-- SLIDE 9: SHARE CONCLUSIONS (10/215) -->
-    <section class="slide" aria-label="Share Your Conclusions">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Share Your Conclusions</h1>
-                    <ul class="talking-points reveal">
-                        <li>5 minutes each</li>
-                        <li>Present your key takeaways</li>
-                        <li>State your OBT for next month</li>
-                        <li>What problem does it solve?</li>
-                        <li>How does it connect to your Owner's Outcome?</li>
-                        <li>Email your revised OBT for this month to byron@darlison.com from the meeting</li>
-                    </ul>
-                </div>
-                <div class="col-image reveal"><img src="../shared/personal-review-presentations.png" alt="Share Your Conclusions"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(10 min / 215)</span>
-    </section>
-
-    <!-- SLIDE 10: HOMEWORK (5/220) -->
-    <section class="slide" aria-label="Homework">
-        <div class="slide-content">
-            <ul class="homework-list reveal" style="margin: 0 0 clamp(0.6rem, 1.5vh, 1rem);">
-                <li class="homework-cta">Email all homework to byron@darlison.com at least five business days before next meeting</li>
-            </ul>
-            <div class="two-col">
-            <div class="col-text">
-            <h1 class="slide-title reveal">Homework</h1>
-
-            <div class="homework-section reveal">
-                <h3>&#9650; Review and Complete</h3>
-                <ul class="homework-list">
-                    <li><a href="https://www.darlison.com/scorecards/" target="_blank" rel="noopener">Function Scorecards</a></li>
-                </ul>
-            </div>
-
-            <div class="homework-section reveal">
-                <h3>&#9733; Read Ahead for M7</h3>
-                <ul class="homework-list">
-                    <li>Market Map</li>
-                </ul>
-            </div>
-
-            <div class="homework-section reveal">
-                <h3>EOA Prep Prompt</h3>
-                <ul class="homework-list">
-                    <li>Run the <a href="https://www.darlison.com/eoa-prep-prompt/" target="_blank" rel="noopener">EOA Prep Prompt</a></li>
-                </ul>
-            </div>
-
-            <div class="homework-section reveal">
-                <h3>Books</h3>
-                <ul class="homework-list">
-                    <li><a href="https://www.metronomics.com/books-by-shannon" target="_blank" rel="noopener">Metronomics</a> <span style="color: var(--text-secondary);">- Shannon Susko</span></li>
-                    <li><a href="https://simonsinek.com/books/start-with-why/" target="_blank" rel="noopener">Start with Why</a> <span style="color: var(--text-secondary);">- Simon Sinek</span></li>
-                    <li><a href="https://www.metronomics.com/books-by-shannon" target="_blank" rel="noopener">3HAG WAY</a> <span style="color: var(--text-secondary);">- Shannon Susko</span></li>
-                    <li><a href="https://storybrand.com/" target="_blank" rel="noopener">Building a StoryBrand</a> <span style="color: var(--text-secondary);">- Donald Miller</span></li>
-                    <li><a href="https://www.jimcollins.com/books.html#good-to-great" target="_blank" rel="noopener">Good to Great</a> <span style="color: var(--text-secondary);">- Jim Collins</span></li>
-                    <li><a href="https://www.franklincovey.com/books/the-speed-of-trust/" target="_blank" rel="noopener">The Speed of Trust</a> <span style="color: var(--text-secondary);">- Stephen M.R. Covey</span></li>
-                    <li><a href="https://www.penguinrandomhouse.com/books/557595/dare-to-lead-by-brene-brown-phd-msw/9780399592522/" target="_blank" rel="noopener">Dare to Lead</a> <span style="color: var(--text-secondary);">- Brene Brown</span></li>
-                </ul>
-            </div>
-            </div>
-            <div class="col-image reveal" style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
-                <img src="../../monthly/m1/assets/homework.png" alt="Homework">
-                                <p style="margin-top: 0.25rem; padding: 0.55rem 0.8rem; background: rgba(84, 181, 112, 0.08); border-left: 3px solid #54B570; border-radius: 4px; font-style: italic; font-size: var(--small-size); color: var(--text-primary); max-width: 90%;">Reminder: everything on darlison.com updates continuously. Pull the current version each time. Don't work from a saved copy.</p>
-            </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 220)</span>
-    </section>
-
-    <!-- SLIDE 11: HOUSEKEEPING (5/225) -->
-    <section class="slide" aria-label="Housekeeping">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Housekeeping</h1>
-                    <div class="homework-section reveal">
-                        <h3>Give / Take (out of 5)</h3>
-                    </div>
-                    <div class="homework-section reveal">
-                        <h3>Upcoming</h3>
-                        <ul class="homework-list">
-                            <li>February 10, 2027 - Accountability Meeting (M7)</li>
-                            <li>March 25, 2027 - Learning Day: People</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-image reveal"><img src="../shared/homework.png" alt="Housekeeping"></div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(5 min / 225)</span>
-    </section>
-
-    
-    <!-- =============================================
-         SLIDE: FEEDBACK (+3 min)
-         ============================================= -->
-    <section class="slide" aria-label="Feedback">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">Feedback</h1>
-                    <p class="slide-subtitle reveal">30 seconds each.</p>
-                    <ol class="reveal" style="padding-left: 1.5rem; display: flex; flex-direction: column; gap: clamp(0.6rem, 1.4vh, 1.1rem); margin-top: var(--content-gap); font-size: var(--body-size); line-height: 1.45; color: var(--text-primary);">
-                        <li>What landed today?</li>
-                        <li>What confused you, or where did the materials fail you?</li>
-                        <li>What would have made this session more useful?</li>
-                    </ol>
-                </div>
-                <div class="col-image reveal">
-                    <img src="../../shared/assets/feedback.png" alt="Feedback">
-                </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(3 min / 228)</span>
-    </section>
-
-    <!-- SLIDE 12: ONE PHRASE CLOSE (15/240) -->
-    <section class="slide" aria-label="One Phrase Close">
-        <div class="slide-content">
-            <div class="two-col">
-                <div class="col-text">
-                    <h1 class="slide-title reveal">One Phrase Close</h1>
-                    <p class="close-instruction reveal">5 words or less.</p>
-                    <p class="close-question reveal">How do you feel right now?</p>
-                </div>
-                <div class="col-image reveal">
-                    <img src="../../shared/assets/one-phrase-close.png" alt="One Phrase Close">
-                </div>
-            </div>
-        </div>
-        <span class="slide-footer">darlison.com | Metronomics&#8482; Coaching | EO Accelerator</span>
-        <span class="time-indicator">(12 min / 240)</span>
-    </section>
-
-    <script>
-        class SlidePresentation {
-            constructor() { this.slides = document.querySelectorAll('.slide'); this.currentSlide = 0; this.isScrolling = false; this.setupIntersectionObserver(); this.setupKeyboardNav(); this.setupTouchNav(); this.setupProgressBar(); this.setupNavDots(); this.setupWheelNav(); }
-            setupIntersectionObserver() { const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); const idx = Array.from(this.slides).indexOf(entry.target); if (idx !== -1) { this.currentSlide = idx; this.updateNavDots(); this.updateProgressBar(); } } }); }, { threshold: 0.5 }); this.slides.forEach(slide => observer.observe(slide)); }
-            setupKeyboardNav() { document.addEventListener('keydown', (e) => { switch(e.key) { case 'ArrowDown': case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); this.goToSlide(this.currentSlide + 1); break; case 'ArrowUp': case 'ArrowLeft': case 'PageUp': e.preventDefault(); this.goToSlide(this.currentSlide - 1); break; case 'Home': e.preventDefault(); this.goToSlide(0); break; case 'End': e.preventDefault(); this.goToSlide(this.slides.length - 1); break; } }); }
-            setupTouchNav() { let touchStartY = 0; document.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; }, { passive: true }); document.addEventListener('touchend', (e) => { const diff = touchStartY - e.changedTouches[0].clientY; if (Math.abs(diff) > 50) { if (diff > 0) this.goToSlide(this.currentSlide + 1); else this.goToSlide(this.currentSlide - 1); } }, { passive: true }); }
-            setupWheelNav() { document.addEventListener('wheel', (e) => { if (this.isScrolling) return; this.isScrolling = true; if (e.deltaY > 0) this.goToSlide(this.currentSlide + 1); else if (e.deltaY < 0) this.goToSlide(this.currentSlide - 1); setTimeout(() => { this.isScrolling = false; }, 800); }, { passive: true }); }
-            setupProgressBar() { this.progressBar = document.getElementById('progressBar'); this.updateProgressBar(); }
-            updateProgressBar() { if (!this.progressBar) return; this.progressBar.style.width = ((this.currentSlide + 1) / this.slides.length) * 100 + '%'; }
-            setupNavDots() { const nav = document.getElementById('navDots'); if (!nav) return; this.slides.forEach((_, i) => { const dot = document.createElement('button'); dot.className = 'nav-dot' + (i === 0 ? ' active' : ''); dot.setAttribute('aria-label', `Go to slide ${i + 1}`); dot.addEventListener('click', () => this.goToSlide(i)); nav.appendChild(dot); }); }
-            updateNavDots() { document.querySelectorAll('.nav-dot').forEach((dot, i) => { dot.classList.toggle('active', i === this.currentSlide); }); }
-            goToSlide(index) { if (index < 0 || index >= this.slides.length) return; this.currentSlide = index; this.slides[index].scrollIntoView({ behavior: 'smooth' }); this.updateNavDots(); this.updateProgressBar(); }
-        }
-        new SlidePresentation();
-    </script>
-    <script>
-    /* coaching-slides:deep-link v1 */
-    (function() {
-        const toSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-        const slides = document.querySelectorAll('section.slide');
-        if (!slides.length) return;
-
-        const seen = new Map();
-        slides.forEach(slide => {
-            if (slide.id) return;
-            const label = slide.getAttribute('aria-label') || 'slide';
-            let slug = toSlug(label) || 'slide';
-            const n = (seen.get(slug) || 0) + 1;
-            seen.set(slug, n);
-            slide.id = n > 1 ? `${slug}-${n}` : slug;
-        });
-
-        let suppress = false;
-        const io = new IntersectionObserver(entries => {
-            if (suppress) return;
-            for (const e of entries) {
-                if (e.isIntersecting && e.intersectionRatio >= 0.5) {
-                    const newHash = '#' + e.target.id;
-                    if (location.hash !== newHash) {
-                        history.replaceState(null, '', newHash);
-                    }
-                }
-            }
-        }, { threshold: 0.5 });
-        slides.forEach(s => io.observe(s));
-
-        function scrollToHash() {
-            const slug = decodeURIComponent(location.hash.slice(1));
-            if (!slug) return;
-            const target = document.getElementById(slug);
-            if (!target) return;
-            suppress = true;
-            target.scrollIntoView({ behavior: 'auto', block: 'start' });
-            setTimeout(() => { suppress = false; }, 700);
-        }
-
-        if (location.hash) {
-            window.addEventListener('load', () => setTimeout(scrollToHash, 60));
-        }
-        window.addEventListener('hashchange', scrollToHash);
-    })();
-    </script>
+</section>
+<section aria-label="Housekeeping" class="slide original-copy" data-original-slide="17" data-source-slide="slide-19" data-group="Close" data-title="Housekeeping" id="slide-8">
+<div class="slide-content"><h1 class="slide-title">Housekeeping</h1><div class="slide-stage title-follow original-body"><ul class="date-grid hk-grid"><li><em>Tonight</em><strong>EOA Holiday Celebration</strong><span>Patois, 4:30 PM: fireside chat with chef Craig Wong, then dinner<br/>We leave here at 4:00 PM</span></li><li><em>Meeting 7</em><strong>Friday, January 8, 2027</strong><span>1 to 6 PM, in person, National Club</span></li></ul></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: 3:50 to 3:55 PM.</p></aside>
+</section>
+<section aria-label="One Phrase Close" class="slide original-copy reflection-slide" data-original-slide="19" data-source-slide="slide-21" data-title="One Phrase Close" id="slide-9">
+<div class="slide-content"><div class="reflection-frame"><div class="reflection-copy"><h1 class="slide-title">One Phrase Close</h1><div class="reflection-prompts">
+<p class="action-line support">5 words or less.</p>
+<p class="close-question">How do you feel right now?</p>
+</div></div><div class="reflection-art"><img alt="Two generic grey figures sharing closing reflections" src="assets/closing-reflection.png"/></div></div><footer class="slide-footer"><span>darlison.com</span><span class="eoa-footer-logo"><img alt="EO Accelerator" src="assets/eoa-logo.png"/></span></footer></div>
+<aside class="speaker-notes"><p>In the room: 3:55 to 4:00 PM. Go around the table; everyone answers. Leave for Patois at 4:00 PM.</p></aside>
+</section>
+</main>
+<div aria-label="Presentation controls" class="controls">
+<button aria-controls="slideSidebar" aria-expanded="true" class="control-button control-button--wide" id="sidebarDesktopToggle" type="button">Hide sidebar</button>
+<button aria-label="Previous slide" class="control-button" id="previousButton" type="button">←</button>
+<div aria-live="polite" class="control-count" id="controlCount">1 / 14</div>
+<button aria-label="Enter full screen" aria-pressed="false" class="control-button control-button--wide" id="fullscreenButton" type="button">
+<span aria-hidden="true">⛶</span>
+<span id="fullscreenLabel">Full screen</span>
+</button>
+<button aria-label="Next slide" class="control-button" id="nextButton" type="button">→</button>
+</div>
+<aside aria-hidden="true" aria-label="Speaker notes" class="notes-panel" id="notesPanel">
+<div class="notes-header">
+<h2 id="notesTitle">Speaker notes</h2>
+<button aria-label="Close speaker notes" class="notes-close" id="notesClose" type="button">×</button>
+</div>
+<div class="notes-body" id="notesBody"></div>
+</aside>
+<script src="./shell.js?v=eoa-standard-1-script"></script>
 </body>
 </html>
