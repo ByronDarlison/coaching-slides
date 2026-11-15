@@ -1146,3 +1146,9 @@ body.template-review .slide-label { display: block; }
 .hotspot-i { position: absolute; transform: translate(-50%, -50%); width: 1.15em; height: 1.15em; border-radius: 50%; border: 1.5px solid var(--blue); color: var(--blue); background: #fff;
   font: italic 700 clamp(9px, .8vw, 13px)/1 Georgia, "Times New Roman", serif; display: grid; place-items: center; pointer-events: none; }
 .hotspot:hover .hotspot-i, .hotspot:focus-visible .hotspot-i { background: var(--blue); color: #fff; }
+
+/* Hotspots with targets dim the artwork except the parts they change. */
+.hot-dim { position: absolute; pointer-events: none; opacity: 0; transition: opacity .15s ease; overflow: visible; }
+.hot-dim rect[mask] { fill: #fff; fill-opacity: .78; }
+.hotspot:hover .hot-dim, .hotspot:focus-visible .hot-dim { opacity: 1; }
+.hotspot--targets { cursor: pointer; }
