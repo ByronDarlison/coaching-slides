@@ -1128,3 +1128,21 @@ body.template-review .slide-label { display: block; }
 
 /* A highlighted lead line above a list sits apart from the list. */
 .story-panel > .support:first-child:has(.hl):not(:only-child) { margin-bottom: 1.4em; padding-bottom: 1em; border-bottom: 1px solid var(--line); font-weight: 600; font-size: clamp(18px, 2.3vw, 32px); line-height: 1.25; color: var(--ink); }
+
+/* Hover definitions over artwork (artwork.hotspots). */
+.story-panel--art:has(> .art-hot) { container-type: size; display: grid; place-items: center; padding: clamp(0.5rem, 1vw, 1rem); }
+.art-hot { position: relative; display: block; aspect-ratio: var(--ar); width: min(100cqw, 100cqh * var(--ar)); max-width: 100%; }
+.story-frame .story-panel--art .art-hot > img,
+.art-hot > img { position: static; inset: auto; display: block; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+.hotspot { position: absolute; border-radius: 12px; cursor: help; outline: none; }
+.hotspot:hover, .hotspot:focus-visible { box-shadow: 0 0 0 3px var(--blue); }
+.hotspot-tip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); z-index: 5; width: max-content; max-width: min(26rem, 80vw);
+  padding: .7em .9em; border-radius: 10px; background: var(--ink); color: #fff; font-size: clamp(.9rem, 1.1vw, 1.1rem); line-height: 1.35; text-align: left;
+  opacity: 0; visibility: hidden; transition: opacity .15s; pointer-events: none; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.hotspot-tip strong { display: block; margin-bottom: .2em; color: #9fc2ef; }
+.hotspot--below .hotspot-tip { bottom: auto; top: calc(100% + 10px); }
+.hotspot:hover .hotspot-tip, .hotspot:focus-visible .hotspot-tip { opacity: 1; visibility: visible; }
+@media (max-width: 899px) { .story-panel--art:has(> .art-hot) { container-type: inline-size; } .art-hot { width: 100%; } }
+.hotspot-i { position: absolute; transform: translate(-50%, -50%); width: 1.15em; height: 1.15em; border-radius: 50%; border: 1.5px solid var(--blue); color: var(--blue); background: #fff;
+  font: italic 700 clamp(9px, .8vw, 13px)/1 Georgia, "Times New Roman", serif; display: grid; place-items: center; pointer-events: none; }
+.hotspot:hover .hotspot-i, .hotspot:focus-visible .hotspot-i { background: var(--blue); color: #fff; }
