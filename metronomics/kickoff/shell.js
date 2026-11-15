@@ -326,3 +326,129 @@
 
   new SlidePresentation();
 }());
+
+/* Scrolling timeline (about-timeline layout), ported from the approved About Me prototype.
+   The row in focus grows its picture under the text. Real mouse movement picks the row
+   under the pointer. Wheel, keys and touch scroll the list and pick the middle row.
+   After 5 s idle the list tours itself at 3.5 s per row and loops. Wheel events and
+   vertical scroll keys inside the list never change slides. */
+(function () {
+  "use strict";
+  const IDLE_MS = 5000, STEP_MS = 3500;
+  const SCROLL_KEYS = new Set(["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "]);
+
+  function setupTimeline(list) {
+    const items = Array.from(list.querySelectorAll(".timeline-item"));
+    if (!items.length) return;
+    const slide = list.closest(".slide") || list;
+    let cur = null, mode = "scroll", hoverTimer = 0, raf = 0, idleTimer = 0, stepTimer = 0;
+    let lastX = -1, lastY = -1;
+    const behavior = () => (window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth");
+
+    function set(item) {
+      if (item && item !== cur) {
+        if (cur) cur.classList.remove("active");
+        item.classList.add("active");
+        cur = item;
+      }
+    }
+    function reveal(item) {
+      const r = list.getBoundingClientRect(), b = item.getBoundingClientRect(), pad = r.height * 0.14;
+      if (b.bottom > r.bottom - pad) list.scrollBy({ top: b.bottom - (r.bottom - pad), behavior: behavior() });
+      else if (b.top < r.top + 8) list.scrollBy({ top: b.top - r.top - 8, behavior: behavior() });
+    }
+    function pickCentre() {
+      const r = list.getBoundingClientRect(), mid = r.top + r.height * 0.42;
+      let best = items[0], bestDistance = Infinity;
+      for (const item of items) {
+        const b = item.getBoundingClientRect();
+        const distance = Math.abs((b.top + b.bottom) / 2 - mid);
+        if (distance < bestDistance) { bestDistance = distance; best = item; }
+      }
+      set(best);
+    }
+    function centre(item) {
+      const r = list.getBoundingClientRect(), b = item.getBoundingClientRect();
+      list.scrollBy({ top: (b.top + b.bottom) / 2 - (r.top + r.height * 0.42), behavior: behavior() });
+    }
+    const onScreen = () => {
+      const r = slide.getBoundingClientRect();
+      return r.top < innerHeight * 0.5 && r.bottom > innerHeight * 0.5 && !document.hidden;
+    };
+    function step() {
+      if (mode !== "auto") return;
+      if (onScreen()) {
+        const next = items[(items.indexOf(cur) + 1) % items.length];
+        set(next);
+        if (next === items[0]) list.scrollTo({ top: 0, behavior: "instant" }); // loop: jump straight back to the start, no scroll up
+        // Wait for the row to finish growing (0.3 s transition) so the scroll targets its final position.
+        else setTimeout(() => { if (mode === "auto") centre(next); }, 380);
+      }
+      stepTimer = setTimeout(step, STEP_MS);
+    }
+    function wake() {
+      clearTimeout(idleTimer);
+      clearTimeout(stepTimer);
+      if (mode === "auto") mode = "scroll";
+      // Resume the tour from the row now in view, never from a row scrolled far away.
+      idleTimer = setTimeout(() => { pickCentre(); mode = "auto"; step(); }, IDLE_MS);
+    }
+
+    list.addEventListener("wheel", (event) => { event.stopPropagation(); mode = "scroll"; wake(); }, { passive: true });
+    list.addEventListener("keydown", (event) => {
+      if (SCROLL_KEYS.has(event.key)) event.stopPropagation();
+      mode = "scroll";
+      wake();
+    });
+    list.addEventListener("touchstart", () => { mode = "scroll"; wake(); }, { passive: true });
+    list.addEventListener("scroll", () => {
+      if (mode !== "scroll") return;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(pickCentre);
+    }, { passive: true });
+
+    // Only real mouse movement counts, so rows shifting under a still pointer never steal focus.
+    function onPointer(event) {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+      if (event.clientX === lastX && event.clientY === lastY) return;
+      lastX = event.clientX;
+      lastY = event.clientY;
+      mode = "hover";
+      wake();
+      const item = event.target.closest(".timeline-item");
+      clearTimeout(hoverTimer);
+      if (!item || item === cur) return;
+      hoverTimer = setTimeout(() => { set(item); setTimeout(() => reveal(item), 320); }, 40);
+    }
+    list.addEventListener("pointermove", onPointer);
+    list.addEventListener("pointerover", onPointer);
+    list.addEventListener("mousemove", onPointer);
+    list.addEventListener("pointerleave", () => { clearTimeout(hoverTimer); mode = "scroll"; wake(); });
+
+    document.addEventListener("visibilitychange", wake);
+    set(items[0]);
+    wake();
+  }
+
+  document.querySelectorAll(".timeline-list").forEach(setupTimeline);
+}());
+
+/* Replayable animations: an <img data-replay> SVG animation plays once each time its slide comes into view. */
+(function () {
+  "use strict";
+  const imgs = Array.from(document.querySelectorAll("img[data-replay]"));
+  if (!imgs.length || !("IntersectionObserver" in window)) return;
+  const base = new Map(imgs.map((img) => [img, img.getAttribute("src").split("?")[0]]));
+  const seen = new WeakSet();
+  const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      const img = entry.target;
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+        if (!seen.has(img)) { seen.add(img); img.setAttribute("src", base.get(img) + "?play=" + Date.now()); }
+      } else if (entry.intersectionRatio < 0.1) {
+        seen.delete(img);
+      }
+    }
+  }, { threshold: [0, 0.1, 0.6] });
+  imgs.forEach((img) => io.observe(img));
+})();
