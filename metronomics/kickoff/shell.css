@@ -622,6 +622,15 @@ body.dark-slide-controls .control-button:focus-visible {
     border-color: rgba(255, 255, 255, 0.16);
     background: var(--blue-deep);
   }
+
+  /* Balance: on the desktop stage, a slide whose content does not fill the page
+     centres its title and content together as one block above the footer. */
+  #presentation .comp-decision .slide-content,
+  #presentation .comp-causal .slide-content,
+  #presentation .comp-attempts .slide-content { justify-content: center; }
+  #presentation .comp-decision .slide-stage,
+  #presentation .comp-causal .slide-stage,
+  #presentation .comp-attempts .slide-stage { flex: 0 1 auto; }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1180px) and (min-height: 600px) {
@@ -973,3 +982,149 @@ body.template-review .slide-label { display: block; }
 .seq-4 > .panel:not(.mark-gap):nth-of-type(3) { border-top-color: #3b7da5; }
 .seq-4 > .panel:not(.mark-gap):nth-of-type(4) { border-top-color: #326ab6; }
 .panel .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; font-weight: 700; vertical-align: .15em; }
+
+/* about-timeline: identity column beside a scrolling list of dated moments.
+   Ported from the approved About Me prototype (records/kickoff/about-me-prototype). */
+.timeline-frame { height: 100%; min-height: 0; display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: clamp(24px, 3.5vw, 3.5rem); align-items: stretch; }
+.timeline-identity { display: flex; flex-direction: column; gap: clamp(10px, 1.6vh, 18px); padding-top: clamp(.5rem, 2vh, 1.5rem); min-height: 0; }
+.timeline-identity .identity-role { font-family: var(--font-body); font-size: clamp(18px, 1.8vw, 26px); font-weight: 600; color: var(--blue); }
+.timeline-identity .identity-hair { width: 64px; height: 3px; background: #54b570; border: 0; margin: 0; }
+.timeline-column { display: flex; flex-direction: column; min-height: 0; max-width: 860px; }
+.timeline-heading { flex: 0 0 auto; margin: 0 0 clamp(8px, 1.4vh, 14px); padding: clamp(.5rem, 2vh, 1.5rem) 0 clamp(8px, 1.2vh, 12px) 13px; border-bottom: 3px solid #54b570; font-size: clamp(1.05rem, 1.55vw, 1.5rem); font-weight: 600; line-height: 1.15; color: var(--ink); }
+.timeline-column .timeline-list { flex: 1 1 auto; }
+.timeline-list { overflow-anchor: none; list-style: none; margin: 0 0 clamp(1.6rem, 4vh, 2.6rem); padding: 4px 8px 45vh 0; overflow-y: auto; min-height: 0; display: flex; flex-direction: column; scrollbar-width: thin; scrollbar-color: #c9c4b8 transparent; overscroll-behavior: contain; max-width: 860px; -webkit-mask-image: linear-gradient(#000 0, #000 88%, transparent); mask-image: linear-gradient(#000 0, #000 88%, transparent); }
+.timeline-item { display: grid; grid-template-columns: clamp(46px, 3.8vw, 58px) clamp(52px, 4.2vw, 80px) minmax(0, 1fr); align-items: center; column-gap: 14px; padding: 5px 10px; border-bottom: 1px solid var(--line-soft); border-left: 3px solid transparent; flex-shrink: 0; transition: background .25s ease, border-color .25s ease, padding .25s ease; }
+.timeline-item.active { background: var(--surface); border-left-color: var(--blue); padding: 10px 12px; border-radius: 8px; }
+.timeline-year { grid-row: 1 / 3; align-self: start; padding-top: .15em; font-family: var(--font-mono); font-size: clamp(13px, 1.05vw, 17px); font-weight: 600; color: var(--ink); }
+.timeline-media { grid-column: 2; grid-row: 1; width: clamp(52px, 4.2vw, 80px); height: clamp(36px, 2.9vw, 56px); border-radius: 6px; background: #fff; border: 1px solid var(--line-soft); display: flex; align-items: center; justify-content: center; overflow: hidden; box-sizing: border-box; transition: width .3s ease, height .3s ease, padding .3s ease; }
+.timeline-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.timeline-logo { padding: 3px 5px; gap: 4px; }
+.timeline-logo img { max-width: 100%; max-height: 100%; object-fit: contain; min-width: 0; }
+.timeline-logo--illus { padding: 0; }
+.timeline-logo--illus img { width: 100%; height: 100%; object-fit: cover; }
+.timeline-logo--two img { max-width: 48%; }
+.timeline-text { grid-column: 3; grid-row: 1; margin: 0; font-size: clamp(14px, 1.2vw, 20px); line-height: 1.3; color: var(--ink); transition: font-size .25s ease; }
+.timeline-age { display: none; font-family: var(--font-mono); font-size: clamp(10px, .8vw, 11px); color: var(--muted); margin-top: 2px; }
+.timeline-item.active .timeline-media { grid-column: 3; grid-row: 2; margin-top: 10px; justify-self: start; }
+.timeline-item.active .timeline-photo { width: clamp(220px, 22vw, 320px); height: clamp(150px, 15vw, 220px); }
+.timeline-item.active .timeline-photo.timeline-portrait { width: clamp(170px, 16vw, 240px); height: clamp(226px, 21vw, 320px); }
+.timeline-item.active .timeline-photo.timeline-portrait img { object-position: center; }
+.timeline-item.active .timeline-logo { width: clamp(180px, 17vw, 240px); height: clamp(90px, 8.5vw, 120px); padding: 10px 14px; }
+.timeline-item.active .timeline-logo img { width: 100%; height: 100%; object-fit: contain; }
+.timeline-item.active .timeline-logo--two img { width: 48%; }
+.timeline-item.active .timeline-logo--illus { width: clamp(220px, 22vw, 320px); height: clamp(150px, 15vw, 220px); padding: 6px; }
+.timeline-item.active .timeline-logo--illus img { object-fit: contain; }
+.timeline-item.active .timeline-text { font-size: clamp(16px, 1.5vw, 24px); font-weight: 500; }
+.timeline-item.active .timeline-age { display: block; font-size: 13px; }
+
+/* comp-attempts: numbered attempt cards with an outcome; one card may be the win. */
+.title-accent { color: var(--blue); }
+.support .hl { color: var(--blue); font-weight: 700; }
+.comp-attempts .slide-title { max-width: none; }
+.attempts-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.75rem, 1.6vw, 1.25rem); min-height: clamp(13rem, 38vh, 24rem); }
+.attempts-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.attempts-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.attempts-1 { grid-template-columns: minmax(0, 1fr); }
+.attempt { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--gap); border-radius: .7rem; padding: clamp(16px, 2vw, 28px); }
+.attempt-year { display: flex; align-items: center; font-family: var(--font-mono); font-weight: 600; font-size: clamp(12px, 1.05vw, 15px); color: var(--ink); }
+.attempt h2 { margin: .5rem 0 0; font-size: clamp(1.2rem, 1.9vw, 1.85rem); font-weight: 600; line-height: 1.1; }
+.attempt p { margin: .6rem 0 1rem; color: var(--muted); font-size: clamp(14px, 1.35vw, 22px); line-height: 1.35; }
+.attempt-outcome { margin-top: auto; font-weight: 600; color: var(--gap); font-size: clamp(14px, 1.35vw, 22px); }
+.attempt-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; font-family: var(--font-mono); font-size: 14px; font-weight: 700; margin-right: .6rem; }
+.attempt--win { background: var(--blue); border-color: var(--blue); border-top-color: #54b570; color: #fff; }
+.attempt--win .attempt-year, .attempt--win h2, .attempt--win p, .attempt--win .attempt-outcome { color: #fff; }
+.attempt--win .attempt-badge { background: #fff; color: var(--blue); }
+
+/* comp-figure: one inline library SVG. Figure classes give it house colours and type. */
+.figure-svg { width: 100%; height: auto; max-height: min(66vh, 36rem); display: block; margin-top: .5rem; }
+.figure-svg .fig-lead { stroke: #bbb; stroke-width: 1.5; }
+.figure-svg .fig-lead--action { stroke: #54b570; }
+.figure-svg .fig-axis { stroke: #c9c4b8; stroke-width: 2; }
+.figure-svg .fig-zero { stroke: #8a939b; stroke-width: 1.5; stroke-dasharray: 6 6; }
+.figure-svg .fig-line { fill: none; stroke: #555; stroke-width: 4; stroke-linecap: round; }
+.figure-svg .fig-line--action { fill: none; stroke: #54b570; stroke-width: 6; stroke-linecap: round; }
+.figure-svg .fig-band { fill: #e5f4e4; opacity: .6; }
+.figure-svg .fig-dot { fill: #fff; stroke: #555; stroke-width: 3; }
+.figure-svg .fig-dot--action { stroke: #54b570; fill: #54b570; }
+.figure-svg .fig-label { font-family: var(--font-body); font-size: 22px; fill: #555; font-weight: 500; }
+.figure-svg .fig-label--action { fill: #2f7a45; font-weight: 700; }
+.figure-svg .fig-tick { font-family: var(--font-mono); font-size: 18px; fill: #66717a; }
+.figure-svg .fig-era { font-family: var(--font-body); font-size: 22px; fill: #66717a; }
+.figure-svg .fig-era--action { fill: #2f7a45; font-weight: 700; }
+
+/* Small or short screens: stack, keep the timeline scrollable inside a bounded box. */
+@media (max-width: 899px), (max-height: 599px) {
+  .timeline-frame { grid-template-columns: minmax(0, 1fr); height: auto; gap: 20px; }
+  .timeline-identity { padding-top: 0; }
+  .timeline-list { height: 70vh; max-height: 640px; margin-bottom: 8px; padding-bottom: 35vh; }
+  .attempts-grid, .attempts-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: 0; }
+  .figure-svg { max-height: none; }
+}
+@media (max-width: 600px) {
+  .attempts-grid, .attempts-3, .attempts-2 { grid-template-columns: minmax(0, 1fr); }
+  .timeline-item.active .timeline-photo { width: min(100%, 260px); height: 180px; }
+  .timeline-item.active .timeline-photo.timeline-portrait { width: 180px; height: 240px; }
+  .timeline-item.active .timeline-logo, .timeline-item.active .timeline-logo--illus { width: min(100%, 220px); height: 120px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item, .timeline-media, .timeline-text { transition: none; }
+}
+
+/* comp-figure with attempts: numbered badges on the figure, compact cards beneath. */
+.figure-svg .fig-badge { fill: var(--blue); }
+.figure-svg .fig-badge--action { fill: #54b570; }
+.figure-svg .fig-badge-num { font-family: var(--font-mono); font-size: 17px; font-weight: 700; fill: #fff; }
+.comp-figure .slide-title { max-width: none; }
+.comp-figure .figure-svg:has(+ .attempts-compact) { flex: 1 1 0; min-height: 0; height: auto; max-height: none; margin-top: 0; }
+.attempts-compact { flex: 0 0 auto; }
+.attempts-compact { min-height: 0; margin-top: clamp(14px, 2.6vh, 28px); }
+.comp-figure .slide-stage:has(.attempts-compact) { padding-bottom: clamp(20px, 4vh, 40px); }
+.attempts-compact.attempts-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.attempts-compact .attempt { padding: clamp(10px, 1.1vw, 16px) clamp(12px, 1.2vw, 18px); }
+.attempts-compact .attempt h2 { margin-top: .3rem; font-size: clamp(.9rem, 1.15vw, 1.25rem); line-height: 1.15; }
+.attempts-compact .attempt-year { font-size: clamp(11px, .9vw, 14px); }
+.attempts-compact .attempt p { margin: .3rem 0 0; font-size: clamp(12px, 1vw, 17px); line-height: 1.3; font-style: italic; }
+.attempts-compact .attempt-badge { width: 22px; height: 22px; font-size: 12px; margin-right: .45rem; }
+.attempts-compact .attempt-outcome { padding-top: .45rem; font-size: clamp(12px, 1vw, 17px); line-height: 1.25; }
+@media (max-width: 899px), (max-height: 599px) {
+  .attempts-compact.attempts-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .comp-figure .figure-svg:has(+ .attempts-compact) { flex: none; height: auto; aspect-ratio: 1180 / 460; }
+}
+@media (max-width: 600px) {
+  .attempts-compact.attempts-5 { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Six-card grid: two rows of three (for example three team systems over three business systems). */
+.grid-6 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: clamp(.75rem, 1.6vw, 1.25rem); }
+.grid-6 .panel { padding: clamp(12px, 1.5vw, 22px); }
+#presentation .grid-6 .panel h2 { font-size: clamp(1rem, 1.6vw, 1.55rem); line-height: 1.1; }
+#presentation .grid-6 .panel .support { margin-top: .5rem; font-size: clamp(13px, 1.2vw, 20px); line-height: 1.3; }
+@media (max-width: 600px) { .grid-6 { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 601px) and (max-width: 899px) { .grid-6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* comp-story with wide artwork (for example two charts side by side): the picture takes two thirds. */
+.story-frame--wide { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); }
+.story-frame--wide .story-title { font-size: clamp(1.7rem, 3vw, 3rem); }
+@media (max-width: 899px) { .story-frame--wide { grid-template-columns: minmax(0, 1fr); } }
+
+/* Full-width artwork: headline above, picture fills the rest of the stage. */
+.story-frame--full { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); align-items: stretch; gap: clamp(12px, 2vh, 24px); }
+.story-frame--full .story-title { font-size: clamp(1.6rem, 2.8vw, 2.8rem); }
+.story-frame--full .story-panel { min-height: 0; padding: clamp(0.5rem, 1vw, 1rem); }
+.story-frame--full .story-panel--art { position: relative; }
+.story-frame--full .story-panel--art img { position: absolute; inset: clamp(0.5rem, 1vw, 1rem); width: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); height: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); max-height: none; object-fit: contain; }
+
+/* Side layout: title and instruction on the left, artwork filling the right. */
+.story-frame--side { grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); align-items: stretch; }
+.story-frame--side .story-copy { display: grid; align-content: center; gap: clamp(14px, 2.4vh, 28px); }
+.story-frame--side .story-title { font-size: clamp(1.7rem, 3vw, 3rem); }
+.story-frame--side .story-copy .support { margin: 0; font-size: clamp(1rem, 1.5vw, 1.45rem); line-height: 1.35; }
+.story-frame--side .story-panel--art { position: relative; min-height: 0; }
+.story-frame--side .story-panel--art img { position: absolute; inset: clamp(0.5rem, 1vw, 1rem); width: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); height: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); max-height: none; object-fit: contain; }
+@media (max-width: 899px), (max-height: 599px) {
+  .story-frame--side { grid-template-columns: minmax(0, 1fr); }
+  .story-frame--side .story-panel--art img { position: static; width: 100%; height: auto; }
+}
+
+/* A highlighted lead line above a list sits apart from the list. */
+.story-panel > .support:first-child:has(.hl):not(:only-child) { margin-bottom: 1.4em; padding-bottom: 1em; border-bottom: 1px solid var(--line); font-weight: 600; font-size: clamp(18px, 2.3vw, 32px); line-height: 1.25; color: var(--ink); }
