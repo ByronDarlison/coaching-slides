@@ -619,7 +619,7 @@
       "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
       "artifact": "kffm",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "f0bb404c10dac89dabcd46f5752d6012226d349a3ee301acee5bec94f417d5c3"
+      "artwork_sha256": "1779ea43947b9326190aaeab8fb7754a40e95a1198a2d5288cbbc7c019066ddf"
     },
     {
       "reference": "kickoff:quarterly-kffm#map",
@@ -633,7 +633,7 @@
       "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
       "artifact": "kffm",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "0e382114f6dcc61d2042f37297d3776a158e918e968cfd83375a81c33e848c28"
+      "artwork_sha256": "d625a6cc97ff5ed894915a00e80127c7bb1a25b74a8435896fbc27718b129219"
     },
     {
       "reference": "kickoff:quarterly-kffm#widgets",
@@ -647,7 +647,7 @@
       "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
       "artifact": "kffm",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "6a554bd457228dec2708a70fff1c22d49f6afa7ea733d86f1937ac8bd1644555"
+      "artwork_sha256": "79cf593ad8bce0f55bdd9562b65b9cdeffb6de9a8154f02e7c580efcba8eeae9"
     },
     {
       "reference": "kickoff:quarterly-kffm#numbers",
@@ -661,7 +661,7 @@
       "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
       "artifact": "kffm",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "8da801a255865bd7d92f6408f148f1aceeaa5d137b7b200bf7ef7bdae1e2c5bb"
+      "artwork_sha256": "5bf2ed20f0771f1b6e3320dce5e0aa82a6d76268faa4358f951c55fe7d729499"
     },
     {
       "reference": "kickoff:quarterly-kffm#days",
@@ -682,7 +682,7 @@
       "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
       "artifact": "kffm",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "b2f79e38ad57976f53fb0e8be2d5d284dbe0f55e7789c079dea6724276b4ad01"
+      "artwork_sha256": "0d45c3b092221b45d1dd14a1b9822b63d936a60c602eabd5a24dc491df9143b8"
     },
     {
       "reference": "kickoff:quarterly-kffm#lever",
@@ -819,7 +819,7 @@
     },
     {
       "reference": "kickoff:three-year#read-back",
-      "sha256": "a58d5ce10e3bda04c7142ea6f4c3c869b92bff05b2d626b41b8ed590632aae2c",
+      "sha256": "cd47003b0f5671655cf16a5a1f9fa9077ef75d3945f944befc4d33506cda5beb",
       "artifact": "three-year",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "bffe84e4322cfc11d0f0ae9cbb55d4658463e66852b90fcd8cc11cce1654ac51"
@@ -833,31 +833,31 @@
     },
     {
       "reference": "kickoff:annual#1hag-check",
-      "sha256": "60f85789e3c1cc844aafaf318a6b0433e6a9a1f6ba52c6ce8397ff083532145f",
+      "sha256": "95f51699e2c162efa65396edb64b5e1e66ce19998929f570670f21a672c3f2c2",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "c9906e0018dccee3bbcc46267f397e2c853deec4fca560e4b437db267bf5a25e"
     },
     {
       "reference": "kickoff:quarterly#definition",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": "18beb8cd3b9cce2cb856a044969c741b647e3377b9c788c0a0443c2f33496970"
     },
     {
       "reference": "kickoff:quarterly#map",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "d505ec8727f7b038cdbe99389be108b381fff507f82dc784c04eb287a1c360ba"
+      "artwork_sha256": "20bbfa6d81154eaeb335847937e67c8c6a308dca75a8b5a83c9ea513e21d6522"
     },
     {
       "reference": "kickoff:quarterly#quarter-numbers",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "8637e46a646ad99cee6ee41ef9fdda4b8b7b82083fe5ed96a0fa52fe38736666"
+      "artwork_sha256": "5100f8b09d051fc31dea516dc761af07cfb75d0a9dd15b60566df02094ff1c3b"
     },
     {
       "reference": "kickoff:priorities#quality",
@@ -875,21 +875,21 @@
     },
     {
       "reference": "kickoff:quarterly#quarter-first",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "f160be00883ec81a10f8e45bcc8cc0f9ce4c381e3b5ad2596006214b46e78811"
+      "artwork_sha256": "555bd1b0acd5f4a609ed91bf2f9153f0b04ac3a24ac202e47d53b01f6df3cb7d"
     },
     {
       "reference": "kickoff:quarterly#quarter-rest",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "f020d8f88240d1f24321f0e6d6a37ce6de6053369c0b6e32a5b0f61428d4cfe3"
+      "artwork_sha256": "5321086edb43e52b8d2db7133588d33bdfa0f34c58d16bbc26b1a515f14b46a3"
     },
     {
       "reference": "kickoff:quarterly#qhag-check",
-      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "sha256": "74ec0435424d4deeaed3096783aecd7f898d137bb87311d11907a137171c7b93",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": "03e58cff5d406e92b46e47e6bcb086371aa331d69147fd20adb64b629d3e65eb"
@@ -948,7 +948,7 @@
       "sha256": "88d3f498dce466eef351239453411c0f755ae9a10a87b164325d2d3c8bc92ff2",
       "artifact": "cash-forecast",
       "seed": "Byron Darlison, Cash! Who Owns the Forecast? (darlison.com, 24 Aug 2026), and his EOA Cash Learning Day deck; Shannon Byrne Susko, CASH: Profit and Loss Cash Forecast, Metronomics.",
-      "artwork_sha256": "e6d82b47d6b3da88d9460bfa9ce4c489ae710d89b6bb754467d26491aed45ebc"
+      "artwork_sha256": "fb65ed2c061d9d7ebb17fdb41c7a0f2b4c61dce57c90037cdcfaea4057472d14"
     },
     {
       "reference": "kickoff:q1-cash#owners",
