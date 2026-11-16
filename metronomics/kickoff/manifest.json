@@ -77,7 +77,8 @@
     "plan-ready",
     "outcomes-check",
     "next-steps",
-    "one-phrase"
+    "one-phrase",
+    "deck-link"
   ],
   "slides": [
     {
@@ -454,6 +455,11 @@
       "number": 75,
       "name": "closing-one-phrase",
       "reference": "kickoff:closing#one-phrase"
+    },
+    {
+      "number": 76,
+      "name": "closing-deck-link",
+      "reference": "kickoff:closing#deck-link"
     }
   ],
   "sources": [
@@ -977,10 +983,17 @@
     },
     {
       "reference": "kickoff:closing#one-phrase",
-      "sha256": "103cebb1d00b0b90664d29730efe5cb83b3e7d9fac65101a186a8ee948addddc",
+      "sha256": "b0377955061a43d39eb4ccb58bf2cf2e596c51ac26baca3df6ba6dbc2bdab8ad",
       "artifact": "closing",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "3fed1eec553fd1fb4184252c9d98222bd6e2c862a6ba077bd2c3d54d1b91927a"
+    },
+    {
+      "reference": "kickoff:closing#deck-link",
+      "sha256": "b0377955061a43d39eb4ccb58bf2cf2e596c51ac26baca3df6ba6dbc2bdab8ad",
+      "artifact": "closing",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
     }
   ],
   "public_path": "metronomics/kickoff/",
