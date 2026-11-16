@@ -31,6 +31,32 @@
       this.setupNotes();
       this.setupFullscreen();
       this.goToHash();
+      this.settleDeepLink();
+    }
+
+    // A link to a later slide is followed before the pictures above it have loaded.
+    // Each picture that arrives moves the page, so keep the linked slide at the top
+    // until the page has loaded or the reader starts to move.
+    settleDeepLink() {
+      const target = this.currentSlide;
+      if (!target) return;
+      let settled = false;
+      const align = () => {
+        if (!settled) this.slides[target].scrollIntoView({ behavior: "instant", block: "start" });
+      };
+      const stop = () => {
+        if (settled) return;
+        settled = true;
+        this.viewportSettling = false;
+        document.removeEventListener("load", align, true);
+      };
+      this.viewportSettling = true;
+      document.addEventListener("load", align, true);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
+      window.addEventListener("load", () => { align(); requestAnimationFrame(() => { align(); stop(); }); });
+      ["wheel", "touchstart", "keydown", "pointerdown"].forEach((type) => {
+        window.addEventListener(type, stop, { once: true, passive: true, capture: true });
+      });
     }
 
     // A link names a slide (#bhag-what-is) so it survives slides being added or cut.
@@ -124,6 +150,7 @@
     setupKeyboardNavigation() {
       document.addEventListener("keydown", (event) => {
         if (event.target.closest("input, textarea, select, [contenteditable=true]")) return;
+        if (document.body.classList.contains("art-zoom-open")) return;
         if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "PageDown" || event.key === " ") {
           event.preventDefault();
           this.next();
@@ -158,7 +185,7 @@
         const dx = start.clientX - event.changedTouches[0].clientX;
         const dy = start.clientY - event.changedTouches[0].clientY;
         start = null;
-        if (event.target.closest(".notes-panel, .slide-sidebar, .controls")) return;
+        if (event.target.closest(".notes-panel, .slide-sidebar, .controls, .art-zoom")) return;
         // Vertical swipes scroll long mobile slides; horizontal swipes change slides.
         if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 2) {
           if (dx > 0) this.next(); else this.previous();
@@ -181,6 +208,13 @@
     }
 
     setupControls() {
+      // A finger or a pen never hovers, so the first touch keeps the controls on screen.
+      const touched = (event) => {
+        if (event.pointerType && event.pointerType === "mouse") return;
+        document.body.classList.add("touch-input");
+      };
+      document.addEventListener("touchstart", touched, { passive: true });
+      document.addEventListener("pointerdown", touched, { passive: true });
       document.addEventListener("pointermove", (event) => {
         document.body.classList.toggle(
           "controls-visible",
@@ -467,14 +501,120 @@
   imgs.forEach((img) => io.observe(img));
 })();
 
-// On a phone, a large drawing is too small to read in place. Tapping it opens
-// the drawing on its own, where the phone can pinch to zoom.
+// On a small screen a large drawing is too small to read in place. Tapping it opens
+// a zoom view inside the deck: the drawing at a readable width, scrolling in both
+// directions, with its definitions and a Close button. Photos and the deck QR code
+// are not drawings and do not zoom.
 (() => {
-  const phone = window.matchMedia("(max-width: 899px), (max-height: 599px)");
+  const small = window.matchMedia("(max-width: 899px), (max-height: 599px)");
+  let view = null;
+  let opener = null;
+
+  function drawing(target) {
+    // The whole panel is the tap target: definition areas cover much of a drawing.
+    const panel = target && target.closest ? target.closest(".story-panel--art") : null;
+    const img = panel ? panel.querySelector("img") : null;
+    if (!img) return null;
+    if (!/\.svg(\?|$)/.test(img.getAttribute("src") || "")) return null;
+    if (img.closest(".story-frame--fit") || img.closest("[data-deck-qr]")) return null;
+    return img;
+  }
+
+  function close() {
+    if (!view) return;
+    view.remove();
+    view = null;
+    document.body.classList.remove("art-zoom-open");
+    if (opener && opener.focus) opener.focus({ preventScroll: true });
+    opener = null;
+  }
+
+  function button(label, text, onClick) {
+    const control = document.createElement("button");
+    control.type = "button";
+    control.className = "art-zoom-button";
+    control.setAttribute("aria-label", label);
+    control.textContent = text;
+    control.addEventListener("click", onClick);
+    return control;
+  }
+
+  function open(img) {
+    close();
+    const slide = img.closest(".slide");
+    const source = img.closest(".art-hot") || img;
+    const copy = source.cloneNode(true);
+    // A copied dimming mask needs its own id, or two masks in the page share one.
+    copy.querySelectorAll("mask[id]").forEach((mask) => {
+      const id = mask.id + "-zoom";
+      copy.querySelectorAll('[mask="url(#' + mask.id + ')"]').forEach((user) => user.setAttribute("mask", "url(#" + id + ")"));
+      mask.id = id;
+    });
+    copy.querySelectorAll("img[data-replay]").forEach((picture) => picture.removeAttribute("data-replay"));
+    if (copy.matches && copy.matches("img[data-replay]")) copy.removeAttribute("data-replay");
+
+    view = document.createElement("div");
+    view.className = "art-zoom";
+    view.setAttribute("role", "dialog");
+    view.setAttribute("aria-modal", "true");
+    view.setAttribute("aria-label", "Drawing, enlarged");
+    const bar = document.createElement("div");
+    bar.className = "art-zoom-bar";
+    const title = document.createElement("p");
+    title.className = "art-zoom-title";
+    title.textContent = (slide && slide.dataset && slide.dataset.title) || "";
+    const scroll = document.createElement("div");
+    scroll.className = "art-zoom-scroll";
+    scroll.tabIndex = 0;
+    const canvas = document.createElement("div");
+    canvas.className = "art-zoom-canvas";
+    canvas.appendChild(copy);
+    scroll.appendChild(canvas);
+
+    // Start wide enough to read: about two thirds of the drawing's own size.
+    const natural = img.naturalWidth > 400 ? img.naturalWidth : window.innerWidth * 2.5;
+    const fit = Math.max(280, window.innerWidth - 24);
+    const most = Math.max(fit, natural * 2);
+    let width = Math.max(fit, Math.min(natural * 0.65, 1400));
+    const smaller = button("Zoom out", "\u2212", () => resize(width / 1.3));
+    const larger = button("Zoom in", "+", () => resize(width * 1.3));
+    const done = button("Close the enlarged drawing", "Close", close);
+    function resize(next) {
+      width = Math.min(most, Math.max(fit, next));
+      canvas.style.width = Math.round(width) + "px";
+      smaller.disabled = width <= fit;
+      larger.disabled = width >= most;
+    }
+    resize(width);
+
+    bar.append(title, smaller, larger, done);
+    view.append(bar, scroll);
+    document.body.appendChild(view);
+    document.body.classList.add("art-zoom-open");
+    opener = img.closest("[tabindex]") || document.activeElement;
+    done.focus({ preventScroll: true });
+  }
+
   document.addEventListener("click", (event) => {
-    if (!phone.matches) return;
-    const img = event.target.closest(".story-panel--art img");
-    if (!img || img.closest(".story-frame--fit")) return;
-    window.open(img.currentSrc || img.src, "_blank", "noopener");
+    if (!small.matches || (view && view.contains(event.target))) return;
+    const img = drawing(event.target);
+    if (img) open(img);
   });
+  document.addEventListener("keydown", (event) => {
+    if (view && event.key === "Escape") { event.stopPropagation(); close(); }
+  }, true);
+  // A definition opened by touch is a sheet fixed to the screen. Put it away when the
+  // reader scrolls or touches anything else, so it never follows them down the deck.
+  const putAway = (event) => {
+    if (!small.matches) return;
+    const holder = document.activeElement && document.activeElement.closest ? document.activeElement.closest(".hotspot, .term") : null;
+    if (!holder) return;
+    if (event.type === "touchstart" && event.target.closest && event.target.closest(".hotspot, .term") === holder) return;
+    holder.blur();
+  };
+  document.addEventListener("scroll", putAway, { passive: true, capture: true });
+  document.addEventListener("touchstart", putAway, { passive: true, capture: true });
+  // Leaving the small-screen layout closes the view, so it never covers the stage.
+  const leave = () => { if (!small.matches) close(); };
+  if (small.addEventListener) small.addEventListener("change", leave);
 })();
