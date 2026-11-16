@@ -1,0 +1,1241 @@
+/* House slideshow shell.
+   Contract: darlison/presentations/SLIDE-VISUAL-STANDARD.md
+   Behavior source: the EOA cash deck chrome, without the cash lesson. */
+
+@font-face {
+  font-family: "Geist";
+  src: url("./fonts/geist-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("./fonts/geist-mono-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+}
+
+:root {
+  --surround: #1b1f24;
+  --canvas: #f6f4ef;
+  --surface: #ffffff;
+  --ink: #20282f;
+  --ink-deep: #132f4a;
+  --muted: #66717a;
+  --line: #d6d3ca;
+  --line-soft: #e8e4db;
+  --paper-soft: #efede6;
+  --blue: #326ab6;
+  --blue-deep: #173f68;
+  --blue-soft: #e7eef8;
+  --artwork-blue: #326ab5;
+  --green: #54b570;
+  --green-text: #2e7d4f;
+  --green-soft: #e4f2e8;
+  --artwork-green: #54b570;
+  --gap: #a94f1f;
+  --gap-soft: #f6e8df;
+  --font-display: "Geist", sans-serif;
+  --font-body: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --sidebar-width: clamp(15rem, 19vw, 15.5rem);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --title-gap: clamp(24px, 2.4vh, 37px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  overscroll-behavior-y: none;
+}
+
+button { font: inherit; }
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  scroll-snap-align: start;
+  display: flex;
+  position: relative;
+  background: var(--canvas);
+}
+
+#presentation {
+  width: calc(100vw - var(--sidebar-width));
+  margin-left: var(--sidebar-width);
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  padding: clamp(1.35rem, 3.2vh, 2rem) clamp(1.5rem, 3vw, 3rem) clamp(1.25rem, 2.8vh, 1.85rem);
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+.eyebrow {
+  flex: 0 0 auto;
+  color: var(--blue-deep);
+  font-family: var(--font-mono);
+  font-size: clamp(0.64rem, 0.82vw, 0.75rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 { font-family: var(--font-display); }
+
+.slide-title {
+  flex: 0 0 auto;
+  max-width: min(100%, 58rem);
+  color: var(--ink);
+  font-size: clamp(1.85rem, 3.35vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+/* Title-to-content rhythm. Cap the gap at 37px so a tall window cannot open it. */
+.title-follow {
+  margin-top: var(--title-gap);
+}
+
+.slide-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.support {
+  color: var(--muted);
+  font-size: clamp(14px, 1.7vw, 24px);
+  font-weight: 500;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--blue);
+  border-radius: 0.7rem;
+  padding: clamp(16px, 2vw, 28px);
+}
+
+.mark-structure { border-top-color: var(--blue); }
+.mark-action { border-top-color: var(--green); }
+.mark-gap { border-top-color: var(--gap); }
+
+.role {
+  font-family: var(--font-mono);
+  font-size: clamp(0.75rem, 0.85vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.mark-action .role { color: var(--green-text); }
+.mark-gap .role { color: var(--gap); }
+.mark-structure .role { color: var(--blue); }
+
+.panel h2 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.35rem, 2.4vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.story-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 4rem);
+}
+
+.story-title {
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.story-panel {
+  display: grid;
+  align-content: center;
+  min-height: clamp(10rem, 32vh, 18rem);
+  padding: clamp(1rem, 2vw, 1.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 0.7rem;
+}
+
+.causal-row,
+.decision-row {
+  width: 100%;
+  display: grid;
+  align-items: stretch;
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.causal-row {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.decision-row {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.causal-arrow {
+  align-self: center;
+  color: var(--line);
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-weight: 600;
+}
+
+.comp-rule .slide-content {
+  justify-content: center;
+  background: var(--blue-deep);
+  color: var(--surface);
+}
+
+.comp-rule .slide-title { color: var(--surface); }
+
+.rule-stack { max-width: 52rem; }
+
+.rule-line {
+  padding-left: 1rem;
+  border-left: 0.35rem solid var(--green);
+  color: #dff4e5;
+}
+
+.slide-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sidebar-width);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 0.8rem;
+  padding: 1.15rem 0.9rem;
+  background: var(--paper-soft);
+  border-right: 1px solid var(--line);
+  z-index: 1100;
+}
+
+.sidebar-head {
+  display: grid;
+  gap: 0.35rem;
+  padding-inline: 0.4rem;
+}
+
+.sidebar-head::before {
+  content: "";
+  width: 3rem;
+  height: 0.24rem;
+  margin-bottom: 0.2rem;
+  background: var(--blue);
+}
+
+.sidebar-head h1 {
+  color: var(--ink-deep);
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+.sidebar-head p {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.sidebar-nav {
+  min-height: 0;
+  display: grid;
+  /* Rows grow with their label, so a three-line title never overlaps the next entry. */
+  grid-auto-rows: max-content;
+  align-content: start;
+  gap: 0.12rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.sidebar-group {
+  margin-top: 0.45rem;
+  padding: 0.15rem 0.55rem;
+  color: var(--blue-deep);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.sidebar-group:first-child { margin-top: 0; }
+
+.sidebar-link {
+  position: relative;
+  width: 100%;
+  min-height: 44px;
+  display: grid;
+  grid-template-columns: 1.7rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.6rem;
+  border: 0;
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar-link::before {
+  content: "";
+  position: absolute;
+  inset: 0.4rem auto 0.4rem 0;
+  width: 0.22rem;
+  border-radius: 0 0.2rem 0.2rem 0;
+  background: transparent;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus-visible {
+  background: var(--surface);
+  color: var(--blue-deep);
+  outline: none;
+}
+
+.sidebar-link.active {
+  background: var(--blue-soft);
+  color: var(--ink-deep);
+}
+
+.sidebar-link.active::before { background: var(--blue); }
+
+.sidebar-number {
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.sidebar-label {
+  color: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.sidebar-help {
+  padding-inline: 0.4rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  left: 0.7rem;
+  top: 0.7rem;
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: none;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 1.15rem;
+  z-index: 1150;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(27, 31, 36, 0.4);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  z-index: 1050;
+}
+
+.sidebar-backdrop.visible { opacity: 1; }
+
+.controls {
+  position: fixed;
+  left: auto;
+  right: clamp(0.7rem, 1.5vw, 1.15rem);
+  bottom: clamp(0.65rem, 1.4vh, 1rem);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.22rem;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  background: rgba(240, 241, 242, 0.82);
+  z-index: 1000;
+  backdrop-filter: blur(0.6rem);
+}
+
+.control-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #59636d;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.control-button--wide {
+  width: auto;
+  padding-inline: 0.7rem;
+  white-space: nowrap;
+  font-size: 0.75rem;
+}
+
+.control-button:hover,
+.control-button:focus-visible {
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+  outline: none;
+}
+
+.control-count {
+  display: none;
+  min-width: 3.2rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body.dark-slide-controls .controls {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(13, 39, 65, 0.78);
+}
+
+body.dark-slide-controls .control-button { color: rgba(255, 255, 255, 0.84); }
+
+body.dark-slide-controls .control-button:hover,
+body.dark-slide-controls .control-button:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.notes-panel {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: min(34rem, 92vw);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: var(--surface);
+  border-left: 1px solid var(--line);
+  transform: translateX(104%);
+  transition: transform 260ms var(--ease-out-expo);
+  z-index: 1200;
+}
+
+.notes-panel.open { transform: translateX(0); }
+
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.notes-header h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.notes-close {
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--paper-soft);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.notes-body {
+  overflow: auto;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.notes-body p + p { margin-top: 0.7rem; }
+.speaker-notes { display: none; }
+
+#sidebarDesktopToggle { display: none; }
+
+@media (hover: hover) and (pointer: fine) {
+  .controls {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+  }
+
+  body.controls-visible .controls,
+  .controls:has(:focus-visible) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 720px) {
+  .support { font-size: 24px; }
+}
+
+@media (max-width: 1180px) {
+  #presentation {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .slide-sidebar {
+    width: min(19rem, 88vw);
+    transform: translateX(-104%);
+    transition: transform 240ms var(--ease-out-expo);
+  }
+
+  .slide-sidebar.open { transform: translateX(0); }
+
+  .sidebar-toggle { display: grid; }
+  .sidebar-backdrop { display: block; pointer-events: none; }
+  .sidebar-backdrop.visible { pointer-events: auto; }
+  .control-count { display: block; }
+
+  body.sidebar-open { overflow: hidden; }
+}
+
+/* The menu button sits on the slide below 900px, where the 16:9 frame is not used. */
+@media (max-width: 899px) {
+  .eyebrow,
+  .slide-title,
+  .story-title {
+    margin-left: 3.5rem;
+    max-width: calc(100% - 3.5rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .slide-content { padding: 1.1rem 1rem 1.2rem; }
+
+  .story-frame,
+  .causal-row,
+  .decision-row { grid-template-columns: 1fr; }
+
+  .causal-arrow { display: none; }
+
+  .story-frame { gap: var(--title-gap); }
+}
+
+@media screen and (min-width: 900px) and (min-height: 600px) {
+  :root {
+    --deck-nav-space: var(--sidebar-width);
+    --deck-horizontal-clearance: clamp(2.5rem, 5vw, 4rem);
+    --deck-vertical-clearance: clamp(2.5rem, 6vh, 5rem);
+  }
+
+  body { background: var(--surround); }
+
+  #presentation { background: var(--surround); }
+
+  #presentation .slide {
+    display: grid;
+    place-items: center;
+    background: var(--surround);
+  }
+
+  #presentation .slide-content {
+    width: min(
+      calc(100vw - var(--deck-nav-space) - var(--deck-horizontal-clearance)),
+      calc((100dvh - var(--deck-vertical-clearance)) * 16 / 9)
+    );
+    height: auto;
+    max-height: calc(100dvh - var(--deck-vertical-clearance));
+    flex: none;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid rgba(31, 38, 45, 0.18);
+    border-radius: clamp(0.8rem, 1.25vw, 1.15rem);
+    background: var(--canvas);
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.28);
+  }
+
+  #presentation .comp-rule .slide-content {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: var(--blue-deep);
+  }
+
+  /* Balance: on the desktop stage, a slide whose content does not fill the page
+     centres its title and content together as one block above the footer. */
+  #presentation .comp-decision .slide-content,
+  #presentation .comp-causal .slide-content,
+  #presentation .comp-attempts .slide-content { justify-content: center; }
+  #presentation .comp-decision .slide-stage,
+  #presentation .comp-causal .slide-stage,
+  #presentation .comp-attempts .slide-stage { flex: 0 1 auto; }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1180px) and (min-height: 600px) {
+  :root { --deck-nav-space: 0px; }
+}
+
+@media (min-width: 1181px) {
+  #sidebarDesktopToggle { display: inline-flex; }
+
+  body.sidebar-hidden { --deck-nav-space: 0px; }
+
+  body.sidebar-hidden .slide-sidebar {
+    visibility: hidden;
+    transform: translateX(-104%);
+  }
+
+  body.sidebar-hidden #presentation {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
+:fullscreen body { --deck-nav-space: 0px; }
+:fullscreen #sidebarToggle { display: none; }
+:fullscreen body #sidebarDesktopToggle { display: inline-flex; }
+:fullscreen .controls { z-index: 1200; }
+:fullscreen body .slide-sidebar { visibility: hidden; transform: translateX(-104%); }
+:fullscreen body.fullscreen-sidebar-open .slide-sidebar { visibility: visible; transform: translateX(0); }
+:fullscreen #sidebarBackdrop { display: block; opacity: 0; pointer-events: none; }
+:fullscreen body.fullscreen-sidebar-open #sidebarBackdrop { opacity: 1; pointer-events: auto; }
+:fullscreen #presentation { width: 100vw; margin-left: 0; background: var(--surround); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html { scroll-behavior: auto; }
+  .controls { transition: none; }
+}
+
+/* Kick Off sample extras on shared shell: Ren chrome + layout helpers + shot mode. */
+
+/* Byron's review: domain bottom left, Metronomics logo bottom right. */
+.slide-content {
+  position: relative;
+  padding-bottom: clamp(2.4rem, 5vh, 3.2rem);
+}
+
+.slide-footer {
+  position: absolute;
+  bottom: clamp(12px, 2vh, 24px);
+  left: clamp(16px, 3vw, 32px);
+  right: clamp(16px, 3vw, 32px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 2;
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.05vw, 0.95rem);
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.footer-logo {
+  display: block;
+  width: clamp(130px, 16vw, 210px);
+  height: auto;
+}
+
+.comp-rule .footer-logo {
+  filter: brightness(0) invert(1);
+}
+
+.comp-rule .slide-footer {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Opening slide: title and a relevant illustration in the agreed character style. */
+.layout-title .slide-content {
+  justify-content: center;
+  gap: 0;
+}
+
+.title-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 2vh, 1.5rem);
+  max-width: min(100%, 42rem);
+}
+
+.layout-title .slide-title {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  letter-spacing: -0.03em;
+}
+
+.hairline {
+  width: clamp(60px, 10vw, 120px);
+  height: 2px;
+  border: none;
+  background: var(--green);
+}
+
+.metronomics-logo {
+  display: block;
+  max-width: clamp(160px, 20vw, 260px);
+  width: 100%;
+  height: auto;
+}
+
+/* Story bullet panel used in Kick Off mapped slides. */
+.bullet-panel {
+  display: grid;
+  gap: 0.55rem;
+  align-content: center;
+  min-height: clamp(10rem, 32vh, 18rem);
+  padding: clamp(1rem, 2vw, 1.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 0.7rem;
+}
+
+.bullet-panel p,
+.panel .support-list {
+  color: var(--muted);
+  font-size: clamp(14px, 1.55vw, 22px);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.bullet-panel p strong,
+.panel .support-list strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.stack-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.stack-3 .panel h2 {
+  font-size: clamp(1.1rem, 1.9vw, 1.65rem);
+}
+
+.stack-3 .panel .support {
+  margin-top: 0.55rem;
+  font-size: clamp(14px, 1.7vw, 24px);
+}
+
+.meet-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.meet-grid .panel h2 {
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+}
+
+.meet-grid .panel .support {
+  margin-top: 0.5rem;
+  font-size: clamp(14px, 1.7vw, 24px);
+}
+
+.slide-label {
+  display: none;
+  position: absolute;
+  top: 0.55rem;
+  right: 0.7rem;
+  z-index: 3;
+  padding: 0.22rem 0.45rem;
+  border-radius: 0.35rem;
+  background: rgba(27, 31, 36, 0.72);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.comp-rule .slide-label,
+.layout-title .slide-label {
+  /* label sits on stage; for dark rule use soft chip */
+}
+
+.comp-rule .slide-label {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 760px) {
+  .stack-3,
+  .meet-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Screenshot mode: one slide fills the viewport (used by capture-screenshots.mjs). */
+body.shot {
+  overflow: hidden;
+  background: var(--canvas);
+}
+
+body.shot .sidebar-toggle,
+body.shot .sidebar-backdrop,
+body.shot .slide-sidebar,
+body.shot .controls,
+body.shot .notes-panel,
+body.shot .slide-label,
+body.shot .slide:not(.active-shot) {
+  display: none !important;
+}
+
+body.shot #presentation {
+  width: 100vw;
+  margin-left: 0;
+  background: var(--canvas);
+}
+
+body.shot #presentation .slide.active-shot {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--canvas);
+  place-items: unset;
+}
+
+body.shot #presentation .slide.active-shot .slide-content {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  flex: 1;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* Title art in the story-panel frame (SLIDE-VISUAL-STANDARD). */
+.story-panel--art {
+  padding: clamp(0.55rem, 1.2vw, 0.9rem);
+  align-content: center;
+  justify-items: center;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.story-panel--art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(48vh, 22rem);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.35rem;
+}
+
+.title-opening {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  width: 100%;
+}
+.title-art {
+  display: block;
+  width: 100%;
+  max-height: 52vh;
+  object-fit: contain;
+}
+@media (max-width: 760px) {
+  .title-opening { grid-template-columns: 1fr; gap: 1.5rem; }
+  .title-art { max-height: 38vh; }
+}
+
+/* Audience view hides construction labels; ?review=template reveals them. */
+body.template-review .slide-label { display: block; }
+
+/* Keep the sequence visible on the card-based teaching slides. */
+.causal-arrow { color: var(--blue); }
+
+/* Shared title artwork and readable card variants. */
+.title-art img { display: block; width: 100%; max-height: 52vh; object-fit: contain; }
+.stack-3 .panel .support, .meet-grid .panel .support { font-size: clamp(14px, 1.7vw, 24px); }
+.sidebar-link { min-height: 44px; }
+
+/* Small screens use a readable page per slide, with natural vertical scrolling. */
+@media (max-width: 899px), (max-height: 599px) {
+  html { scroll-snap-type: y proximity; scroll-behavior: auto; }
+  .slide { height: auto; min-height: 100dvh; overflow: visible; }
+  #presentation .slide-content {
+    flex: none; width: 100%; height: auto; min-height: 100dvh; max-height: none;
+    aspect-ratio: auto; overflow: visible; padding: 76px 24px 88px;
+    border: 0; border-radius: 0; box-shadow: none;
+  }
+  .slide-stage { flex: 0 0 auto; overflow: visible; }
+  .eyebrow, .slide-title, .story-title { margin-left: 0; max-width: 100%; }
+  .slide-title, .story-title, .layout-title .slide-title { font-size: clamp(28px, 4vw, 36px); line-height: 1.12; }
+  .support, .stack-3 .panel .support, .meet-grid .panel .support { font-size: 18px; line-height: 1.4; }
+  .panel h2, .stack-3 .panel h2, .meet-grid .panel h2 { font-size: 24px; line-height: 1.15; }
+  .slide-footer { position: static; margin-top: auto; padding-top: 28px; flex-shrink: 0; align-items: center; }
+  .footer-logo { width: 145px; }
+  .story-frame { height: auto; gap: 24px; }
+  .story-panel--art img { max-height: 42vh; }
+  .controls { opacity: 1; pointer-events: auto; bottom: 8px; background: var(--surface); border-color: var(--line); }
+  .title-art img { max-height: 42vh; }
+  .panel { padding: 20px; }
+  .control-count { display: block; }
+}
+@media (max-width: 600px) {
+  .story-frame, .title-opening, .causal-row, .decision-row, .stack-3, .meet-grid { grid-template-columns: minmax(0, 1fr); }
+  .causal-arrow { display: block; justify-self: center; transform: rotate(90deg); line-height: 1; }
+  .title-opening { gap: 32px; }
+  .story-panel { min-height: 0; }
+  .story-panel--art img, .title-art img { max-height: 34vh; }
+  .panel .title-follow { margin-top: 12px; }
+}
+@media (min-width: 601px) and (max-width: 899px) {
+  .story-frame, .title-opening, .decision-row, .meet-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .causal-row { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); }
+  .causal-arrow { display: block; }
+  .stack-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+
+/* Sequences run green to blue (SLIDE-VISUAL-STANDARD, Sequences, cards, and emphasis). Gap cards keep orange. */
+.seq-2 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-2 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #326ab6; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #438f93; }
+.seq-3 > .panel:not(.mark-gap):nth-of-type(3) { border-top-color: #326ab6; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(1) { border-top-color: #54b570; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(2) { border-top-color: #4ca282; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(3) { border-top-color: #3b7da5; }
+.seq-4 > .panel:not(.mark-gap):nth-of-type(4) { border-top-color: #326ab6; }
+.panel .step { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 10px; border-radius: 50%; background: var(--blue); color: #fff; font-size: .7em; font-weight: 700; vertical-align: .15em; }
+
+/* about-timeline: identity column beside a scrolling list of dated moments.
+   Ported from the approved About Me prototype (records/kickoff/about-me-prototype). */
+.timeline-frame { height: 100%; min-height: 0; display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: clamp(24px, 3.5vw, 3.5rem); align-items: stretch; }
+.timeline-identity { display: flex; flex-direction: column; gap: clamp(10px, 1.6vh, 18px); padding-top: clamp(.5rem, 2vh, 1.5rem); min-height: 0; }
+.timeline-identity .identity-role { font-family: var(--font-body); font-size: clamp(18px, 1.8vw, 26px); font-weight: 600; color: var(--blue); }
+.timeline-identity .identity-hair { width: 64px; height: 3px; background: #54b570; border: 0; margin: 0; }
+.timeline-column { display: flex; flex-direction: column; min-height: 0; max-width: 860px; }
+.timeline-heading { flex: 0 0 auto; margin: 0 0 clamp(8px, 1.4vh, 14px); padding: clamp(.5rem, 2vh, 1.5rem) 0 clamp(8px, 1.2vh, 12px) 13px; border-bottom: 3px solid #54b570; font-size: clamp(1.05rem, 1.55vw, 1.5rem); font-weight: 600; line-height: 1.15; color: var(--ink); }
+.timeline-column .timeline-list { flex: 1 1 auto; }
+.timeline-list { overflow-anchor: none; list-style: none; margin: 0 0 clamp(1.6rem, 4vh, 2.6rem); padding: 4px 8px 45vh 0; overflow-y: auto; min-height: 0; display: flex; flex-direction: column; scrollbar-width: thin; scrollbar-color: #c9c4b8 transparent; overscroll-behavior: contain; max-width: 860px; -webkit-mask-image: linear-gradient(#000 0, #000 88%, transparent); mask-image: linear-gradient(#000 0, #000 88%, transparent); }
+.timeline-item { display: grid; grid-template-columns: clamp(46px, 3.8vw, 58px) clamp(52px, 4.2vw, 80px) minmax(0, 1fr); align-items: center; column-gap: 14px; padding: 5px 10px; border-bottom: 1px solid var(--line-soft); border-left: 3px solid transparent; flex-shrink: 0; transition: background .25s ease, border-color .25s ease, padding .25s ease; }
+.timeline-item.active { background: var(--surface); border-left-color: var(--blue); padding: 10px 12px; border-radius: 8px; }
+.timeline-year { grid-row: 1 / 3; align-self: start; padding-top: .15em; font-family: var(--font-mono); font-size: clamp(13px, 1.05vw, 17px); font-weight: 600; color: var(--ink); }
+.timeline-media { grid-column: 2; grid-row: 1; width: clamp(52px, 4.2vw, 80px); height: clamp(36px, 2.9vw, 56px); border-radius: 6px; background: #fff; border: 1px solid var(--line-soft); display: flex; align-items: center; justify-content: center; overflow: hidden; box-sizing: border-box; transition: width .3s ease, height .3s ease, padding .3s ease; }
+.timeline-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.timeline-logo { padding: 3px 5px; gap: 4px; }
+.timeline-logo img { max-width: 100%; max-height: 100%; object-fit: contain; min-width: 0; }
+.timeline-logo--illus { padding: 0; }
+.timeline-logo--illus img { width: 100%; height: 100%; object-fit: cover; }
+.timeline-logo--two img { max-width: 48%; }
+.timeline-text { grid-column: 3; grid-row: 1; margin: 0; font-size: clamp(14px, 1.2vw, 20px); line-height: 1.3; color: var(--ink); transition: font-size .25s ease; }
+.timeline-age { display: none; font-family: var(--font-mono); font-size: clamp(10px, .8vw, 11px); color: var(--muted); margin-top: 2px; }
+.timeline-item.active .timeline-media { grid-column: 3; grid-row: 2; margin-top: 10px; justify-self: start; }
+.timeline-item.active .timeline-photo { width: clamp(220px, 22vw, 320px); height: clamp(150px, 15vw, 220px); }
+.timeline-item.active .timeline-photo.timeline-portrait { width: clamp(170px, 16vw, 240px); height: clamp(226px, 21vw, 320px); }
+.timeline-item.active .timeline-photo.timeline-portrait img { object-position: center; }
+.timeline-item.active .timeline-logo { width: clamp(180px, 17vw, 240px); height: clamp(90px, 8.5vw, 120px); padding: 10px 14px; }
+.timeline-item.active .timeline-logo img { width: 100%; height: 100%; object-fit: contain; }
+.timeline-item.active .timeline-logo--two img { width: 48%; }
+.timeline-item.active .timeline-logo--illus { width: clamp(220px, 22vw, 320px); height: clamp(150px, 15vw, 220px); padding: 6px; }
+.timeline-item.active .timeline-logo--illus img { object-fit: contain; }
+.timeline-item.active .timeline-text { font-size: clamp(16px, 1.5vw, 24px); font-weight: 500; }
+.timeline-item.active .timeline-age { display: block; font-size: 13px; }
+
+/* comp-attempts: numbered attempt cards with an outcome; one card may be the win. */
+.title-accent { color: var(--blue); }
+.support .hl { color: var(--blue); font-weight: 700; }
+.comp-attempts .slide-title { max-width: none; }
+.attempts-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.75rem, 1.6vw, 1.25rem); min-height: clamp(13rem, 38vh, 24rem); }
+.attempts-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.attempts-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.attempts-1 { grid-template-columns: minmax(0, 1fr); }
+.attempt { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--gap); border-radius: .7rem; padding: clamp(16px, 2vw, 28px); }
+.attempt-year { display: flex; align-items: center; font-family: var(--font-mono); font-weight: 600; font-size: clamp(12px, 1.05vw, 15px); color: var(--ink); }
+.attempt h2 { margin: .5rem 0 0; font-size: clamp(1.2rem, 1.9vw, 1.85rem); font-weight: 600; line-height: 1.1; }
+.attempt p { margin: .6rem 0 1rem; color: var(--muted); font-size: clamp(14px, 1.35vw, 22px); line-height: 1.35; }
+.attempt-outcome { margin-top: auto; font-weight: 600; color: var(--gap); font-size: clamp(14px, 1.35vw, 22px); }
+.attempt-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; font-family: var(--font-mono); font-size: 14px; font-weight: 700; margin-right: .6rem; }
+.attempt--win { background: var(--blue); border-color: var(--blue); border-top-color: #54b570; color: #fff; }
+.attempt--win .attempt-year, .attempt--win h2, .attempt--win p, .attempt--win .attempt-outcome { color: #fff; }
+.attempt--win .attempt-badge { background: #fff; color: var(--blue); }
+
+/* comp-figure: one inline library SVG. Figure classes give it house colours and type. */
+.figure-svg { width: 100%; height: auto; max-height: min(66vh, 36rem); display: block; margin-top: .5rem; }
+.figure-svg .fig-lead { stroke: #bbb; stroke-width: 1.5; }
+.figure-svg .fig-lead--action { stroke: #54b570; }
+.figure-svg .fig-axis { stroke: #c9c4b8; stroke-width: 2; }
+.figure-svg .fig-zero { stroke: #8a939b; stroke-width: 1.5; stroke-dasharray: 6 6; }
+.figure-svg .fig-line { fill: none; stroke: #555; stroke-width: 4; stroke-linecap: round; }
+.figure-svg .fig-line--action { fill: none; stroke: #54b570; stroke-width: 6; stroke-linecap: round; }
+.figure-svg .fig-band { fill: #e5f4e4; opacity: .6; }
+.figure-svg .fig-dot { fill: #fff; stroke: #555; stroke-width: 3; }
+.figure-svg .fig-dot--action { stroke: #54b570; fill: #54b570; }
+.figure-svg .fig-label { font-family: var(--font-body); font-size: 22px; fill: #555; font-weight: 500; }
+.figure-svg .fig-label--action { fill: #2f7a45; font-weight: 700; }
+.figure-svg .fig-tick { font-family: var(--font-mono); font-size: 18px; fill: #66717a; }
+.figure-svg .fig-era { font-family: var(--font-body); font-size: 22px; fill: #66717a; }
+.figure-svg .fig-era--action { fill: #2f7a45; font-weight: 700; }
+
+/* Small or short screens: stack, keep the timeline scrollable inside a bounded box. */
+@media (max-width: 899px), (max-height: 599px) {
+  .timeline-frame { grid-template-columns: minmax(0, 1fr); height: auto; gap: 20px; }
+  .timeline-identity { padding-top: 0; }
+  .timeline-list { height: 70vh; max-height: 640px; margin-bottom: 8px; padding-bottom: 35vh; }
+  .attempts-grid, .attempts-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: 0; }
+  .figure-svg { max-height: none; }
+}
+@media (max-width: 600px) {
+  .attempts-grid, .attempts-3, .attempts-2 { grid-template-columns: minmax(0, 1fr); }
+  .timeline-item.active .timeline-photo { width: min(100%, 260px); height: 180px; }
+  .timeline-item.active .timeline-photo.timeline-portrait { width: 180px; height: 240px; }
+  .timeline-item.active .timeline-logo, .timeline-item.active .timeline-logo--illus { width: min(100%, 220px); height: 120px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item, .timeline-media, .timeline-text { transition: none; }
+}
+
+/* comp-figure with attempts: numbered badges on the figure, compact cards beneath. */
+.figure-svg .fig-badge { fill: var(--blue); }
+.figure-svg .fig-badge--action { fill: #54b570; }
+.figure-svg .fig-badge-num { font-family: var(--font-mono); font-size: 17px; font-weight: 700; fill: #fff; }
+.comp-figure .slide-title { max-width: none; }
+.comp-figure .figure-svg:has(+ .attempts-compact) { flex: 1 1 0; min-height: 0; height: auto; max-height: none; margin-top: 0; }
+.attempts-compact { flex: 0 0 auto; }
+.attempts-compact { min-height: 0; margin-top: clamp(14px, 2.6vh, 28px); }
+.comp-figure .slide-stage:has(.attempts-compact) { padding-bottom: clamp(20px, 4vh, 40px); }
+.attempts-compact.attempts-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.attempts-compact .attempt { padding: clamp(10px, 1.1vw, 16px) clamp(12px, 1.2vw, 18px); }
+.attempts-compact .attempt h2 { margin-top: .3rem; font-size: clamp(.9rem, 1.15vw, 1.25rem); line-height: 1.15; }
+.attempts-compact .attempt-year { font-size: clamp(11px, .9vw, 14px); }
+.attempts-compact .attempt p { margin: .3rem 0 0; font-size: clamp(12px, 1vw, 17px); line-height: 1.3; font-style: italic; }
+.attempts-compact .attempt-badge { width: 22px; height: 22px; font-size: 12px; margin-right: .45rem; }
+.attempts-compact .attempt-outcome { padding-top: .45rem; font-size: clamp(12px, 1vw, 17px); line-height: 1.25; }
+@media (max-width: 899px), (max-height: 599px) {
+  .attempts-compact.attempts-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .comp-figure .figure-svg:has(+ .attempts-compact) { flex: none; height: auto; aspect-ratio: 1180 / 460; }
+}
+@media (max-width: 600px) {
+  .attempts-compact.attempts-5 { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Six-card grid: two rows of three (for example three team systems over three business systems). */
+.grid-6 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: clamp(.75rem, 1.6vw, 1.25rem); }
+.grid-6 .panel { padding: clamp(12px, 1.5vw, 22px); }
+#presentation .grid-6 .panel h2 { font-size: clamp(1rem, 1.6vw, 1.55rem); line-height: 1.1; }
+#presentation .grid-6 .panel .support { margin-top: .5rem; font-size: clamp(13px, 1.2vw, 20px); line-height: 1.3; }
+@media (max-width: 600px) { .grid-6 { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 601px) and (max-width: 899px) { .grid-6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* comp-story with wide artwork (for example two charts side by side): the picture takes two thirds. */
+.story-frame--wide { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); }
+.story-frame--wide .story-title { font-size: clamp(1.7rem, 3vw, 3rem); }
+@media (max-width: 899px) { .story-frame--wide { grid-template-columns: minmax(0, 1fr); } }
+
+/* Full-width artwork: headline above, picture fills the rest of the stage. */
+.story-frame--full { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); align-items: stretch; gap: clamp(12px, 2vh, 24px); }
+.story-frame--full .story-title { font-size: clamp(1.6rem, 2.8vw, 2.8rem); }
+.story-frame--full .story-panel { min-height: 0; padding: clamp(0.5rem, 1vw, 1rem); }
+.story-frame--full .story-panel--art { position: relative; }
+.story-frame--full .story-panel--art img { position: absolute; inset: clamp(0.5rem, 1vw, 1rem); width: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); height: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); max-height: none; object-fit: contain; }
+/* A short, wide drawing (a stage map): the panel hugs the drawing instead of filling the slide. */
+.story-frame--full.story-frame--fit { grid-template-rows: auto auto; align-content: center; }
+.story-frame--fit .story-panel--art img { position: static; inset: auto; width: 100%; height: auto; }
+
+/* Side layout: title and instruction on the left, artwork filling the right. */
+.story-frame--side { grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); align-items: stretch; }
+.story-frame--side .story-copy { display: grid; align-content: center; gap: clamp(14px, 2.4vh, 28px); }
+.story-frame--side .story-title { font-size: clamp(1.7rem, 3vw, 3rem); }
+.story-frame--side .story-copy .support { margin: 0; font-size: clamp(1rem, 1.5vw, 1.45rem); line-height: 1.35; }
+.story-frame--side .story-panel--art { position: relative; min-height: 0; }
+.story-frame--side .story-panel--art img { position: absolute; inset: clamp(0.5rem, 1vw, 1rem); width: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); height: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); max-height: none; object-fit: contain; }
+@media (max-width: 899px), (max-height: 599px) {
+  .story-frame--side { grid-template-columns: minmax(0, 1fr); }
+  .story-frame--side .story-panel--art img { position: static; width: 100%; height: auto; }
+}
+
+/* A highlighted lead line above a list sits apart from the list. */
+.story-panel > .support:first-child:has(.hl):not(:only-child) { margin-bottom: 1.4em; padding-bottom: 1em; border-bottom: 1px solid var(--line); font-weight: 600; font-size: clamp(18px, 2.3vw, 32px); line-height: 1.25; color: var(--ink); }
+
+/* Hover definitions over artwork (artwork.hotspots). */
+.story-panel--art:has(> .art-hot) { container-type: size; display: grid; place-items: center; padding: clamp(0.5rem, 1vw, 1rem); }
+.art-hot { position: relative; display: block; aspect-ratio: var(--ar); width: min(100cqw, 100cqh * var(--ar)); max-width: 100%; }
+.story-frame .story-panel--art .art-hot > img,
+.art-hot > img { position: static; inset: auto; display: block; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+.hotspot { position: absolute; border-radius: 12px; cursor: help; outline: none; }
+.hotspot:hover, .hotspot:focus-visible { box-shadow: 0 0 0 3px var(--blue); }
+.hotspot-tip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); z-index: 5; width: max-content; max-width: min(26rem, 80vw);
+  padding: .7em .9em; border-radius: 10px; background: var(--ink); color: #fff; font-size: clamp(.9rem, 1.1vw, 1.1rem); line-height: 1.35; text-align: left;
+  opacity: 0; visibility: hidden; transition: opacity .15s; pointer-events: none; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.hotspot-tip strong { display: block; margin-bottom: .2em; color: #9fc2ef; }
+.hotspot--below .hotspot-tip { bottom: auto; top: calc(100% + 10px); }
+.hotspot:hover .hotspot-tip, .hotspot:focus-visible .hotspot-tip { opacity: 1; visibility: visible; }
+@media (max-width: 899px) { .story-panel--art:has(> .art-hot) { container-type: inline-size; } .art-hot { width: 100%; } }
+.hotspot-i { position: absolute; transform: translate(-50%, -50%); width: 1.15em; height: 1.15em; border-radius: 50%; border: 1.5px solid var(--blue); color: var(--blue); background: #fff;
+  font: italic 700 clamp(9px, .8vw, 13px)/1 Georgia, "Times New Roman", serif; display: grid; place-items: center; pointer-events: none; }
+.hotspot:hover .hotspot-i, .hotspot:focus-visible .hotspot-i { background: var(--blue); color: #fff; }
+
+/* Hotspots with targets dim the artwork except the parts they change. */
+.hot-dim { position: absolute; pointer-events: none; opacity: 0; transition: opacity .15s ease; overflow: visible; }
+.hot-dim rect[mask] { fill: #fff; fill-opacity: .78; }
+.hotspot:hover .hot-dim, .hotspot:focus-visible .hot-dim { opacity: 1; }
+.hotspot--targets { cursor: pointer; }
+
+/* Pass criteria: a green check before each line of a checklist slide. */
+.support.check-item { position: relative; padding-left: 1.6em; }
+.support.check-item::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 700; }
+
+/* Hover definitions on words in slide text (unit "terms"). */
+.term { position: relative; display: inline; border-bottom: 2px dotted var(--blue); cursor: help; outline: none; white-space: nowrap; }
+.term:hover, .term:focus-visible { color: var(--blue); }
+.term .hotspot-tip { font-weight: 400; white-space: normal; width: max-content; max-width: min(28rem, 80vw); }
+.term .term-line { display: block; }
+.term:hover .hotspot-tip, .term:focus-visible .hotspot-tip { opacity: 1; visibility: visible; }
+
+/* A checklist slide with no artwork: title and checks in one column, same type as the side layout. */
+.story-frame--copy { grid-template-columns: minmax(0, 1fr); }
+.story-frame--copy .story-copy { align-content: start; }
+
+/* Side layout with a long checklist: more room for the text, less for the art. */
+@media (min-width: 900px) { .story-frame--side.story-frame--art-narrow { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); } }
+.story-frame--art-narrow .story-copy { gap: clamp(8px, 1.4vh, 16px); }
+.story-frame--art-narrow .story-copy .support { font-size: clamp(.95rem, 1.25vw, 1.2rem); }
+
+/* A short numbered list inside a card, such as a meeting agenda (panel "items"). */
+.panel .panel-items { margin: .6em 0 0; padding-left: 1.4em; font-size: clamp(.95rem, 1.2vw, 1.15rem); line-height: 1.35; color: var(--ink); }
+.panel .panel-items li { margin: .15em 0; }
+
+/* A short statement slide with no artwork: centred, larger type. */
+.story-frame--copy.story-frame--short .story-copy { align-content: center; gap: clamp(18px, 3vh, 36px); }
+.story-frame--copy.story-frame--short .story-title { font-size: clamp(2rem, 4vw, 3.8rem); }
+.story-frame--copy.story-frame--short .story-copy .support { font-size: clamp(1.2rem, 2vw, 1.9rem); }
+
+/* A dark closing slide with artwork: words on the left, picture on a white card on the right. */
+.rule-frame { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 48px); align-items: center; width: 100%; }
+.rule-art { background: #fff; border-radius: 16px; padding: clamp(.5rem, 1vw, 1rem); }
+.rule-art img { display: block; width: 100%; height: auto; }
+@media (max-width: 899px) { .rule-frame { grid-template-columns: minmax(0, 1fr); } }
+
+.panel .panel-items li::marker { color: var(--green); font-weight: 700; }
+
+/* Side layouts: scale copy with the stage's height as well as its width, so dense checklists stay above the footer. */
+@media (min-width: 900px) {
+  .story-frame--side .story-copy { gap: clamp(6px, 1.5vh, 28px); }
+  .story-frame--side .story-copy .support { font-size: clamp(.85rem, min(1.4vw, 2.2vh), 1.45rem); }
+  .story-frame--side .story-title { font-size: clamp(1.4rem, min(3vw, 4.6vh), 3rem); }
+  .story-frame--art-narrow .story-copy { gap: clamp(5px, 1.2vh, 16px); }
+  .story-frame--art-narrow .story-copy .support { font-size: clamp(.8rem, min(1.2vw, 1.9vh), 1.2rem); line-height: 1.3; }
+  /* Pass checklists: readable from the back of the room; the cascade beside them is context only (Byron, 16-Nov-2026). */
+  .story-frame--side.story-frame--art-narrow { grid-template-columns: minmax(0, 1.6fr) minmax(0, .5fr); }
+  .story-frame--art-narrow .story-copy .support.check-item { font-size: clamp(1rem, min(1.75vw, 2.6vh), 1.45rem); line-height: 1.22; }
+}
+@media (min-width: 900px) and (max-height: 820px) {
+  .story-frame:not(.story-frame--side) .story-panel .support { font-size: clamp(.95rem, 1.5vw, 1.35rem); line-height: 1.3; }
+  .meet-grid .panel .support { font-size: clamp(13px, 1.35vw, 18px); line-height: 1.3; }
+}
+
+/* Full-width artwork on phones: let the picture set its own height (absolute positioning left it 0 tall). */
+@media (max-width: 899px) {
+  .story-frame--full .story-panel--art img { position: static; inset: auto; width: 100%; height: auto; max-height: none; }
+}
+
+/* Phones: leave room under the content for the floating previous/next bar. */
+@media (max-width: 899px) { .slide-content { padding-bottom: 5.5rem; } }
+
+/* Phone: large drawings open on their own when tapped (see shell.js). */
+@media (max-width: 899px), (max-height: 599px) {
+  .story-frame:not(.story-frame--fit) .story-panel--art img { cursor: zoom-in; }
+  .story-frame:not(.story-frame--fit) .story-panel--art::after {
+    content: "Tap the drawing to zoom";
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue-deep);
+    text-align: center;
+  }
+}
+
+/* A card slide may carry one ask line between its title and its cards. */
+.card-lede.title-follow { margin-top: 12px; }
+.card-lede { margin-bottom: 0; color: var(--ink); font-weight: 600; line-height: 1.2; }
+.card-lede + .slide-stage { margin-top: 12px; }
