@@ -33,17 +33,31 @@
       this.goToHash();
     }
 
+    // A link names a slide (#bhag-what-is) so it survives slides being added or cut.
+    // The older numeric form (#slide-30) still works.
+    hashIndex(hash) {
+      const match = hash.match(/^#slide-(\d+)$/);
+      if (match) return Math.max(0, Math.min(Number(match[1]) - 1, this.slides.length - 1));
+      const name = decodeURIComponent(hash.slice(1));
+      const found = name ? this.slides.findIndex((slide) => slide.dataset && slide.dataset.name === name) : -1;
+      return found < 0 ? 0 : found;
+    }
+
+    slideHash(index) {
+      const slide = this.slides[index];
+      const name = slide && slide.dataset && slide.dataset.name;
+      return "#" + (name || "slide-" + (index + 1));
+    }
+
     goToHash() {
-      const match = window.location.hash.match(/^#slide-(\d+)$/);
-      const target = match ? Number(match[1]) - 1 : 0;
-      this.goTo(Math.max(0, Math.min(target, this.slides.length - 1)), false);
+      this.goTo(this.hashIndex(window.location.hash), false);
     }
 
     goTo(index, smooth) {
       if (index < 0 || index >= this.slides.length) return;
       this.currentSlide = index;
       this.slides[index].scrollIntoView({ behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "instant", block: "start" });
-      history.replaceState(null, "", "#slide-" + (index + 1));
+      history.replaceState(null, "", this.slideHash(index));
       this.updateInterface();
     }
 
@@ -99,7 +113,7 @@
           });
           if (selected !== this.currentSlide) {
             this.currentSlide = selected;
-            history.replaceState(null, "", "#slide-" + (selected + 1));
+            history.replaceState(null, "", this.slideHash(selected));
             this.updateInterface();
           }
         });
