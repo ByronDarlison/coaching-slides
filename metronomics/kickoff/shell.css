@@ -1113,6 +1113,9 @@ body.template-review .slide-label { display: block; }
 .story-frame--full .story-panel { min-height: 0; padding: clamp(0.5rem, 1vw, 1rem); }
 .story-frame--full .story-panel--art { position: relative; }
 .story-frame--full .story-panel--art img { position: absolute; inset: clamp(0.5rem, 1vw, 1rem); width: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); height: calc(100% - 2 * clamp(0.5rem, 1vw, 1rem)); max-height: none; object-fit: contain; }
+/* A short, wide drawing (a stage map): the panel hugs the drawing instead of filling the slide. */
+.story-frame--full.story-frame--fit { grid-template-rows: auto auto; align-content: center; }
+.story-frame--fit .story-panel--art img { position: static; inset: auto; width: 100%; height: auto; }
 
 /* Side layout: title and instruction on the left, artwork filling the right. */
 .story-frame--side { grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); align-items: stretch; }
@@ -1210,3 +1213,19 @@ body.template-review .slide-label { display: block; }
 
 /* Phones: leave room under the content for the floating previous/next bar. */
 @media (max-width: 899px) { .slide-content { padding-bottom: 5.5rem; } }
+
+/* Phone: large drawings open on their own when tapped (see shell.js). */
+@media (max-width: 899px), (max-height: 599px) {
+  .story-frame:not(.story-frame--fit) .story-panel--art img { cursor: zoom-in; }
+  .story-frame:not(.story-frame--fit) .story-panel--art::after {
+    content: "Tap the drawing to zoom";
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue-deep);
+    text-align: center;
+  }
+}

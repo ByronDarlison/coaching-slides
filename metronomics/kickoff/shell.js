@@ -452,3 +452,15 @@
   }, { threshold: [0, 0.1, 0.6] });
   imgs.forEach((img) => io.observe(img));
 })();
+
+// On a phone, a large drawing is too small to read in place. Tapping it opens
+// the drawing on its own, where the phone can pinch to zoom.
+(() => {
+  const phone = window.matchMedia("(max-width: 899px), (max-height: 599px)");
+  document.addEventListener("click", (event) => {
+    if (!phone.matches) return;
+    const img = event.target.closest(".story-panel--art img");
+    if (!img || img.closest(".story-frame--fit")) return;
+    window.open(img.currentSrc || img.src, "_blank", "noopener");
+  });
+})();
