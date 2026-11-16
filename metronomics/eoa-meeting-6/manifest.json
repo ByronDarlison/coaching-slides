@@ -1,0 +1,357 @@
+{
+  "generator": "darlison-slides",
+  "playlist": "eoa-meeting-6",
+  "title": "EOA Meeting 6",
+  "unit_ids": [
+    "welcome",
+    "good-news",
+    "engagement",
+    "brian",
+    "flow-intro",
+    "example-map",
+    "widgets",
+    "levers",
+    "ladder",
+    "definition",
+    "test",
+    "at-3hag",
+    "map",
+    "at-1hag",
+    "map",
+    "at-qhag",
+    "map",
+    "at-sprint",
+    "sprint-lanes",
+    "four-questions",
+    "worked-priority",
+    "present",
+    "feedback",
+    "housekeeping",
+    "one-phrase",
+    "deck-link"
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "name": "meeting-6-welcome",
+      "reference": "eoa:meeting-6#welcome"
+    },
+    {
+      "number": 2,
+      "name": "opening-good-news",
+      "reference": "kickoff:opening#good-news"
+    },
+    {
+      "number": 3,
+      "name": "opening-engagement",
+      "reference": "kickoff:opening#engagement"
+    },
+    {
+      "number": 4,
+      "name": "meeting-6-brian",
+      "reference": "eoa:meeting-6#brian"
+    },
+    {
+      "number": 5,
+      "name": "kffm-flow-intro",
+      "reference": "kickoff:kffm#flow-intro"
+    },
+    {
+      "number": 6,
+      "name": "kffm-example-map",
+      "reference": "kickoff:kffm#example-map"
+    },
+    {
+      "number": 7,
+      "name": "kffm-widgets",
+      "reference": "kickoff:kffm#widgets"
+    },
+    {
+      "number": 8,
+      "name": "kffm-levers",
+      "reference": "kickoff:kffm#levers"
+    },
+    {
+      "number": 9,
+      "name": "meeting-6-ladder",
+      "reference": "eoa:meeting-6#ladder"
+    },
+    {
+      "number": 10,
+      "name": "bhag-definition",
+      "reference": "kickoff:bhag#definition"
+    },
+    {
+      "number": 11,
+      "name": "bhag-test",
+      "reference": "kickoff:bhag#test"
+    },
+    {
+      "number": 12,
+      "name": "meeting-6-at-3hag",
+      "reference": "eoa:meeting-6#at-3hag"
+    },
+    {
+      "number": 13,
+      "name": "three-year-map",
+      "reference": "kickoff:three-year#map"
+    },
+    {
+      "number": 14,
+      "name": "meeting-6-at-1hag",
+      "reference": "eoa:meeting-6#at-1hag"
+    },
+    {
+      "number": 15,
+      "name": "annual-map",
+      "reference": "kickoff:annual#map"
+    },
+    {
+      "number": 16,
+      "name": "meeting-6-at-qhag",
+      "reference": "eoa:meeting-6#at-qhag"
+    },
+    {
+      "number": 17,
+      "name": "quarterly-map",
+      "reference": "kickoff:quarterly#map"
+    },
+    {
+      "number": 18,
+      "name": "meeting-6-at-sprint",
+      "reference": "eoa:meeting-6#at-sprint"
+    },
+    {
+      "number": 19,
+      "name": "meeting-6-sprint-lanes",
+      "reference": "eoa:meeting-6#sprint-lanes"
+    },
+    {
+      "number": 20,
+      "name": "priorities-four-questions",
+      "reference": "kickoff:priorities#four-questions"
+    },
+    {
+      "number": 21,
+      "name": "priorities-worked-priority",
+      "reference": "kickoff:priorities#worked-priority"
+    },
+    {
+      "number": 22,
+      "name": "meeting-6-present",
+      "reference": "eoa:meeting-6#present"
+    },
+    {
+      "number": 23,
+      "name": "meeting-6-feedback",
+      "reference": "eoa:meeting-6#feedback"
+    },
+    {
+      "number": 24,
+      "name": "meeting-6-housekeeping",
+      "reference": "eoa:meeting-6#housekeeping"
+    },
+    {
+      "number": 25,
+      "name": "closing-one-phrase",
+      "reference": "kickoff:closing#one-phrase"
+    },
+    {
+      "number": 26,
+      "name": "closing-deck-link",
+      "reference": "kickoff:closing#deck-link"
+    }
+  ],
+  "sources": [
+    {
+      "reference": "eoa:meeting-6#welcome",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "80bee556c2dbac5c92a161eb9214007b5300f5536dbadad274024ce2c9325b9d"
+    },
+    {
+      "reference": "kickoff:opening#good-news",
+      "sha256": "78aa363f907bb956b88e665329d70887ab9c6fd293cf25ee8bda9d72dc675ecb",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "bb1cd3f9d4e6b7f9b911ae7ffc806231fd2e23dcdd5df605fd4ad9f5a77aec28"
+    },
+    {
+      "reference": "kickoff:opening#engagement",
+      "sha256": "78aa363f907bb956b88e665329d70887ab9c6fd293cf25ee8bda9d72dc675ecb",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "eoa:meeting-6#brian",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "a2b2aadaba2d4545d6403aa735d402b404f21c205f5c47015dd0dd8055b6ddc3"
+    },
+    {
+      "reference": "kickoff:kffm#flow-intro",
+      "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
+      "artifact": "kffm",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "7848f4dc55779e5cdafb955d45e0533e6b17553e00c312514a6629313f6d4470"
+    },
+    {
+      "reference": "kickoff:kffm#example-map",
+      "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
+      "artifact": "kffm",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "f0bb404c10dac89dabcd46f5752d6012226d349a3ee301acee5bec94f417d5c3"
+    },
+    {
+      "reference": "kickoff:kffm#widgets",
+      "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
+      "artifact": "kffm",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "0e382114f6dcc61d2042f37297d3776a158e918e968cfd83375a81c33e848c28"
+    },
+    {
+      "reference": "kickoff:kffm#levers",
+      "sha256": "33481c49e71c367a1e1c3ce5514d95024d851b3a611f04e1e3dfe865e27ff026",
+      "artifact": "kffm",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "b2f79e38ad57976f53fb0e8be2d5d284dbe0f55e7789c079dea6724276b4ad01"
+    },
+    {
+      "reference": "eoa:meeting-6#ladder",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "784fc79fcae164ce980edbe5782d92ba9aa655d0e46b6c4aee0b64934a52984f"
+    },
+    {
+      "reference": "kickoff:bhag#definition",
+      "sha256": "4f25c2d94602f803126518605f05415accc765010f233123074c91aab05d28ad",
+      "artifact": "bhag",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "52bb00bc05012e216c34dfdd7e2186e20b9b1adabf3de69a818ecd2741d9614c"
+    },
+    {
+      "reference": "kickoff:bhag#test",
+      "sha256": "4f25c2d94602f803126518605f05415accc765010f233123074c91aab05d28ad",
+      "artifact": "bhag",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "eoa:meeting-6#at-3hag",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "3a3d1fc0a6ea9f6745fa2807b97e265890b61d15101f0e4258b6fd412f8201fa"
+    },
+    {
+      "reference": "kickoff:three-year#map",
+      "sha256": "a58d5ce10e3bda04c7142ea6f4c3c869b92bff05b2d626b41b8ed590632aae2c",
+      "artifact": "three-year",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "27d1e082a488d762622ea6d783c33cf431537953468565cdc3353dfde5645a7f"
+    },
+    {
+      "reference": "eoa:meeting-6#at-1hag",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "eb398d0538ae3e813aebd3cf3a24e2308941b978f494f1daa9505451939fb4f5"
+    },
+    {
+      "reference": "kickoff:annual#map",
+      "sha256": "60f85789e3c1cc844aafaf318a6b0433e6a9a1f6ba52c6ce8397ff083532145f",
+      "artifact": "annual",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "cb21a67997aabc590b876b20bd825c7ec7b1f9b6715464f1e7a1b2ac0f2e798a"
+    },
+    {
+      "reference": "eoa:meeting-6#at-qhag",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "57ae89a55421de7762929ab19173a7b46a671181a1185857aa59b6774179c22f"
+    },
+    {
+      "reference": "kickoff:quarterly#map",
+      "sha256": "2a46b8bd749b4964b60b462aead0f2f6bc5a81c9bca45ec1505aebbab1c0da17",
+      "artifact": "quarterly",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+      "artwork_sha256": "d505ec8727f7b038cdbe99389be108b381fff507f82dc784c04eb287a1c360ba"
+    },
+    {
+      "reference": "eoa:meeting-6#at-sprint",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": "9d997cff0b70f7de427c42bdcb21b884991a8681a125997fe6f76b31f4a20f61"
+    },
+    {
+      "reference": "eoa:meeting-6#sprint-lanes",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:priorities#four-questions",
+      "sha256": "b63449318fad9b4eb38904d063abc1c7aee7f88a1fcef4ef21c99d88f6834225",
+      "artifact": "priorities",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:priorities#worked-priority",
+      "sha256": "b63449318fad9b4eb38904d063abc1c7aee7f88a1fcef4ef21c99d88f6834225",
+      "artifact": "priorities",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "b33a2468db743b529a67d99dfdc5791fb93b82ab5589e159d97e53e00ae22c1d"
+    },
+    {
+      "reference": "eoa:meeting-6#present",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "eoa:meeting-6#feedback",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "eoa:meeting-6#housekeeping",
+      "sha256": "1babf82635dafdb0dc2c2ba03764aebc36851d51339a7ab96c027fbb247b69fc",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:closing#one-phrase",
+      "sha256": "82e48f316336987871fda94e9762f0890cfe4997ac3a7f1daaa301fabe93d1e6",
+      "artifact": "closing",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "3fed1eec553fd1fb4184252c9d98222bd6e2c862a6ba077bd2c3d54d1b91927a"
+    },
+    {
+      "reference": "kickoff:closing#deck-link",
+      "sha256": "82e48f316336987871fda94e9762f0890cfe4997ac3a7f1daaa301fabe93d1e6",
+      "artifact": "closing",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    }
+  ],
+  "public_path": "metronomics/eoa-meeting-6/",
+  "public_url": "https://byrondarlison.github.io/coaching-slides/metronomics/eoa-meeting-6/",
+  "shell": [
+    "shell.css",
+    "shell.js",
+    "fonts/",
+    "assets/"
+  ]
+}
