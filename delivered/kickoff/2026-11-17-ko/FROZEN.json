@@ -1,0 +1,10 @@
+{
+  "deck": "kickoff",
+  "label": "2026-11-17-ko",
+  "frozen_on": "2026-11-17",
+  "copied_from": "metronomics/kickoff/",
+  "master_manifest_sha256": "3b63cc7e9d36c7abe5707029eac16e594e5581a3aee81d73d094749270f7b405",
+  "replaced": [],
+  "qr_opens": "https://byrondarlison.github.io/coaching-slides/delivered/kickoff/2026-11-17-ko/",
+  "rule": "Frozen after delivery. Rebuilds and publishes never touch it. Replace only when Byron asks."
+}
