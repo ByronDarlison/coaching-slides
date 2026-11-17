@@ -1205,6 +1205,9 @@ body.template-review .slide-label { display: block; }
 .term .hotspot-tip { font-weight: 400; white-space: normal; width: max-content; max-width: min(28rem, 80vw); }
 .term .term-line { display: block; }
 .term:hover .hotspot-tip, .term:focus-visible .hotspot-tip { opacity: 1; visibility: visible; }
+/* A definition box may be taller than the room above its word: let it leave the stage, never the slide. */
+.slide-stage:has(.term:hover), .slide-stage:has(.term:focus-visible),
+.slide-content:has(.term:hover), .slide-content:has(.term:focus-visible) { overflow: visible; }
 
 /* A checklist slide with no artwork: title and checks in one column, same type as the side layout. */
 .story-frame--copy { grid-template-columns: minmax(0, 1fr); }

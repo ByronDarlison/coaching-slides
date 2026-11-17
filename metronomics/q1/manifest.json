@@ -574,14 +574,14 @@
     },
     {
       "reference": "kickoff:q1-functions#team-view",
-      "sha256": "aa6d4359cb5a162df53c8384c5c6e1d9e5ab4c8a0392aa3fbc0ef6ed6cec18bf",
+      "sha256": "ff07a4fdda707517527dde8d52b9318ef4f9a215dbc868c940e2a8d14938d53f",
       "artifact": "team-view",
       "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
       "artwork_sha256": "995954d6832aee9646221684772e67706eab0618e8d6643f79a4ddf9e2082371"
     },
     {
       "reference": "kickoff:q1-functions#numbers",
-      "sha256": "aa6d4359cb5a162df53c8384c5c6e1d9e5ab4c8a0392aa3fbc0ef6ed6cec18bf",
+      "sha256": "ff07a4fdda707517527dde8d52b9318ef4f9a215dbc868c940e2a8d14938d53f",
       "artifact": "team-view",
       "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
       "artwork_sha256": null
@@ -595,14 +595,14 @@
     },
     {
       "reference": "kickoff:q1-functions#scorecard-intro",
-      "sha256": "aa6d4359cb5a162df53c8384c5c6e1d9e5ab4c8a0392aa3fbc0ef6ed6cec18bf",
+      "sha256": "ff07a4fdda707517527dde8d52b9318ef4f9a215dbc868c940e2a8d14938d53f",
       "artifact": "team-view",
       "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
       "artwork_sha256": "283b08dbf4c4e9358bfd6bae8f109778f7937dee4da931cd5f4b35da3337ed6c"
     },
     {
       "reference": "kickoff:q1-functions#scorecard",
-      "sha256": "aa6d4359cb5a162df53c8384c5c6e1d9e5ab4c8a0392aa3fbc0ef6ed6cec18bf",
+      "sha256": "ff07a4fdda707517527dde8d52b9318ef4f9a215dbc868c940e2a8d14938d53f",
       "artifact": "team-view",
       "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
       "artwork_sha256": "37aca8113d12bf863ac4181f95cddd3d088acfd0d7d7f834c8c78b7e8df7cec6"
