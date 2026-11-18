@@ -51,6 +51,7 @@
     "good-news",
     "sunday-dinner",
     "reflection",
+    "outcome-check",
     "engagement-day-two",
     "definition",
     "map",
@@ -323,141 +324,146 @@
     },
     {
       "number": 49,
+      "name": "day-two-opening-outcome-check",
+      "reference": "kickoff:day-two-opening#outcome-check"
+    },
+    {
+      "number": 50,
       "name": "day-two-opening-engagement-day-two",
       "reference": "kickoff:day-two-opening#engagement-day-two"
     },
     {
-      "number": 50,
+      "number": 51,
       "name": "annual-definition",
       "reference": "kickoff:annual#definition"
     },
     {
-      "number": 51,
+      "number": 52,
       "name": "annual-map",
       "reference": "kickoff:annual#map"
     },
     {
-      "number": 52,
+      "number": 53,
       "name": "annual-annual-numbers",
       "reference": "kickoff:annual#annual-numbers"
     },
     {
-      "number": 53,
+      "number": 54,
       "name": "annual-annual-first",
       "reference": "kickoff:annual#annual-first"
     },
     {
-      "number": 54,
+      "number": 55,
       "name": "priorities-quality",
       "reference": "kickoff:priorities#quality"
     },
     {
-      "number": 55,
+      "number": 56,
       "name": "priorities-worked-priority",
       "reference": "kickoff:priorities#worked-priority"
     },
     {
-      "number": 56,
+      "number": 57,
       "name": "annual-1hag-check",
       "reference": "kickoff:annual#1hag-check"
     },
     {
-      "number": 57,
+      "number": 58,
       "name": "quarterly-definition",
       "reference": "kickoff:quarterly#definition"
     },
     {
-      "number": 58,
+      "number": 59,
       "name": "quarterly-map",
       "reference": "kickoff:quarterly#map"
     },
     {
-      "number": 59,
+      "number": 60,
       "name": "quarterly-quarter-numbers",
       "reference": "kickoff:quarterly#quarter-numbers"
     },
     {
-      "number": 60,
+      "number": 61,
       "name": "quarterly-quarter-first",
       "reference": "kickoff:quarterly#quarter-first"
     },
     {
-      "number": 61,
+      "number": 62,
       "name": "quarterly-quarter-rest",
       "reference": "kickoff:quarterly#quarter-rest"
     },
     {
-      "number": 62,
+      "number": 63,
       "name": "quarterly-qhag-check",
       "reference": "kickoff:quarterly#qhag-check"
     },
     {
-      "number": 63,
+      "number": 64,
       "name": "individual-definition",
       "reference": "kickoff:individual#definition"
     },
     {
-      "number": 64,
+      "number": 65,
       "name": "individual-my-priorities",
       "reference": "kickoff:individual#my-priorities"
     },
     {
-      "number": 65,
+      "number": 66,
       "name": "individual-read-back",
       "reference": "kickoff:individual#read-back"
     },
     {
-      "number": 66,
+      "number": 67,
       "name": "individual-plan-check",
       "reference": "kickoff:individual#plan-check"
     },
     {
-      "number": 67,
+      "number": 68,
       "name": "rhythm-teaching-rhythm-purpose",
       "reference": "kickoff:rhythm-teaching#rhythm-purpose"
     },
     {
-      "number": 68,
+      "number": 69,
       "name": "rhythm-teaching-daily-weekly",
       "reference": "kickoff:rhythm-teaching#daily-weekly"
     },
     {
-      "number": 69,
+      "number": 70,
       "name": "meeting-rhythm-book",
       "reference": "kickoff:meeting-rhythm#book"
     },
     {
-      "number": 70,
+      "number": 71,
       "name": "meeting-rhythm-scoreboard",
       "reference": "kickoff:meeting-rhythm#scoreboard"
     },
     {
-      "number": 71,
+      "number": 72,
       "name": "cascade-messages-three-messages",
       "reference": "kickoff:cascade-messages#three-messages"
     },
     {
-      "number": 72,
+      "number": 73,
       "name": "follow-through-plan-ready",
       "reference": "kickoff:follow-through#plan-ready"
     },
     {
-      "number": 73,
+      "number": 74,
       "name": "follow-through-outcomes-check",
       "reference": "kickoff:follow-through#outcomes-check"
     },
     {
-      "number": 74,
+      "number": 75,
       "name": "follow-through-next-steps",
       "reference": "kickoff:follow-through#next-steps"
     },
     {
-      "number": 75,
+      "number": 76,
       "name": "closing-one-phrase",
       "reference": "kickoff:closing#one-phrase"
     },
     {
-      "number": 76,
+      "number": 77,
       "name": "closing-deck-link",
       "reference": "kickoff:closing#deck-link"
     }
@@ -773,35 +779,42 @@
     },
     {
       "reference": "kickoff:day-two-opening#day-two",
-      "sha256": "1a1deb871b071b675dbb8e95b37595aa454e8979749bce8191c224dc41146987",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
       "artifact": "day-two-opening",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "4341796144455dd5e663f04c0e0cde169dbd8e4cad52b85e50423c45efc44194"
     },
     {
       "reference": "kickoff:day-two-opening#good-news",
-      "sha256": "1a1deb871b071b675dbb8e95b37595aa454e8979749bce8191c224dc41146987",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
       "artifact": "day-two-opening",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "bb1cd3f9d4e6b7f9b911ae7ffc806231fd2e23dcdd5df605fd4ad9f5a77aec28"
     },
     {
       "reference": "kickoff:day-two-opening#sunday-dinner",
-      "sha256": "1a1deb871b071b675dbb8e95b37595aa454e8979749bce8191c224dc41146987",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
       "artifact": "day-two-opening",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "9f589133669acebbd4d335dd2eeb3eee4e1f88933a734a4958533ba02db4dfb0"
     },
     {
       "reference": "kickoff:day-two-opening#reflection",
-      "sha256": "1a1deb871b071b675dbb8e95b37595aa454e8979749bce8191c224dc41146987",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
       "artifact": "day-two-opening",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "8eac3f4c06dcd0c8f74b68749abe874012456956f3f2cd391167c0b07e9d1ddc"
     },
     {
+      "reference": "kickoff:day-two-opening#outcome-check",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
+      "artifact": "day-two-opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
       "reference": "kickoff:day-two-opening#engagement-day-two",
-      "sha256": "1a1deb871b071b675dbb8e95b37595aa454e8979749bce8191c224dc41146987",
+      "sha256": "9fdd4e6a187826ee4376e17db81d141a8d8dadb8e3edbc95883fc2c1bd4091cb",
       "artifact": "day-two-opening",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
