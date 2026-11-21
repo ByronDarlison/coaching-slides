@@ -1,0 +1,210 @@
+{
+  "id": "q2-path",
+  "artifact": "path",
+  "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "status",
+      "title": "First, how last quarter went.",
+      "headline": "First, how last quarter went.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Q2 has ten steps. Review last quarter, check who owns what, name the Core Customer, then plan the quarter week by week."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-status.svg",
+        "alt": "Q2 path: Status next, then Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "functions",
+      "title": "Next, who owns each function.",
+      "headline": "Next, who owns each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "The same checks as last quarter. Change only what is no longer true."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-functions.svg",
+        "alt": "Q2 path: Status done. Functions next, then Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "scorecards",
+      "title": "Next, what success looks like in each function.",
+      "headline": "Next, what success looks like in each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "A check-in. The Head of Company shares their scorecard, then each leader says where theirs stands."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-scorecards.svg",
+        "alt": "Q2 path: Status, Functions done. Scorecards next, then KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "kffm",
+      "title": "Then, how the work turns into cash.",
+      "headline": "Then, how the work turns into cash.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Walk the KFFM again, part by part. The widgets confirmed here are the ones the team forecasts week by week this afternoon."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-kffm.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards done. KFFM next, then Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "culture",
+      "title": "Next, confirm who you are.",
+      "headline": "Next, confirm who you are.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Core Purpose, core values and the BHAG. Quick passes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-culture.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM done. Culture next, then Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "customer",
+      "title": "Then, name your Core Customer.",
+      "headline": "Then, name your Core Customer.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "This is the main new work of the day. The Market Map from last quarter is the starting point."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-customer.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture done. Core Customer next, then 3HAG, Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "strategy",
+      "title": "Next, confirm where you’re going.",
+      "headline": "Next, confirm where you’re going.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Test the 3HAG against the Core Customer the team has just named."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-strategy.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer done. 3HAG next, then Plan, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "plan",
+      "title": "Next, plan the next quarter.",
+      "headline": "Next, plan the next quarter.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Start from the 1HAG, then build the new QHAG from it. Never leave a quarterly without a quarterly plan."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-plan.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG done. Plan next, then Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "lanes",
+      "title": "Then, plan it week by week.",
+      "headline": "Then, plan it week by week.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "New today: each company priority gets a sprint lane, and each company widget gets a weekly forecast."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-lanes.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan done. Sprint Lanes next, then Individual Priorities."
+      }
+    },
+    {
+      "id": "priorities",
+      "title": "Last, your own priorities.",
+      "headline": "Last, your own priorities.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Each leader sets individual priorities that line up with the QHAG and its sprint lanes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-priorities.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes done. Individual Priorities next."
+      }
+    }
+  ]
+}

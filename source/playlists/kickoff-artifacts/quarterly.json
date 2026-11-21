@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-quarterly",
+  "title": "Metronomics Kickoff: quarterly",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "quarterly",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:quarterly"
+  ]
+}

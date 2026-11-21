@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-strategy",
+  "title": "Metronomics Kickoff: strategy",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "strategy",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:strategy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-meeting-rhythm",
+  "title": "Metronomics Kickoff: meeting rhythm",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "meeting rhythm",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:meeting-rhythm"
+  ]
+}

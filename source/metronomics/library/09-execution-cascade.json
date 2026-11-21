@@ -1,0 +1,33 @@
+{
+  "id": "09-execution-cascade",
+  "title": "Three-year aim becomes this year’s plan, then this quarter’s.",
+  "headline": "Three-year aim becomes this year’s plan, then this quarter’s.",
+  "layout": "comp-causal",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Execution system · Kick Off",
+  "panels": [
+    {
+      "role": "Cause",
+      "heading": "3HAG",
+      "support": "Three-year step and key capabilities.",
+      "mark": "structure"
+    },
+    {
+      "role": "Action",
+      "heading": "1HAG + QHAG",
+      "support": "Annual results, then quarterly priorities and monthly targets.",
+      "mark": "action"
+    },
+    {
+      "role": "Result",
+      "heading": "Owned priorities",
+      "support": "Individual priorities and 3 key messages leave with names on them.",
+      "mark": "structure"
+    }
+  ],
+  "arrows": true
+}

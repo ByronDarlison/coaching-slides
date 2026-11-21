@@ -1,0 +1,524 @@
+{
+  "id": "kffm",
+  "artifact": "kffm",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "flow-intro",
+      "title": "Key Function Flow Map (KFFM)",
+      "headline": "Key Function Flow Map (KFFM)",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "notes": [
+        "Watch one widget travel: each function adds days, and the counter shows time to cash. At the end the widget becomes money in the bank.",
+        "Pick them from the Function Chart. Shannon calls them primary functions; everything else is supporting.",
+        "Same definition as the intro text on the board."
+      ],
+      "artwork": {
+        "src": "assets/kffm-flow.svg",
+        "alt": "Animated KFFM example. A widget enters Marketing, then moves through Sales, Operations and Finance, each function lighting up in turn, and becomes cash in the bank. A Time to cash counter climbs from 0 to 72 days as it moves.",
+        "replay": true,
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": [
+          {
+            "x": 175,
+            "y": 326,
+            "w": 300,
+            "h": 160,
+            "term": "Profit per X",
+            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+          }
+        ]
+      },
+      "support": "The 3 to 5 functions that make the company money.",
+      "body": [
+        "If we didn’t do them, no cash would reach the bank."
+      ],
+      "art_side": true
+    },
+    {
+      "id": "example-map",
+      "title": "KFFM Example",
+      "headline": "KFFM Example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/kffm-example.svg",
+        "alt": "KFFM example. Subscription leads enter Marketing (Chris, 14 days, critical number sales qualified subscription leads, yellow), which hands marketing qualified subscription leads to Sales (Andrew, 21 days, critical number new MRR, red), which hands new subscriptions to Operations (Jen, 7 days, critical number time to subscription activation, red), which hands activated subscriptions to Finance (Allison, 30 days to collect, critical number average days to collect, green), which hands collected payments to cash. Profit per subscription is the Profit per X: target $300 a year, owned by Allison. Time to cash is 72 days. Supporting functions: Development (yellow, critical number releases on time), IT (green, system uptime) and People (red, days to fill a role). A legend shows green as on track, yellow as at risk, red as needs attention, and brackets as the critical number.",
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": [
+          {
+            "x": 175,
+            "y": 326,
+            "w": 300,
+            "h": 160,
+            "term": "Profit per X",
+            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+          }
+        ]
+      },
+      "notes": [
+        "Walk one customer through it, left to right, ending at cash.",
+        "Each box: function, one owner, days it adds, its critical number, status. Finance’s 30 days is days to collect.",
+        "Each arrow is a widget. Profit per subscription sits at the end, with a target and an owner. It is Jim Collins’s economic engine from Good to Great: the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
+        "Time to cash adds the days: 72 from raw lead to cash.",
+        "Shannon’s subscription example; days are illustrative.",
+        "Marketing hands Sales marketing qualified leads. Its critical number is sales qualified leads: the ones Sales has reviewed and agreed are good.",
+        "Finance’s critical number, average days to collect, is days sales outstanding (some call it average AR days)."
+      ],
+      "art_full": true
+    },
+    {
+      "id": "widgets",
+      "title": "Widgets",
+      "headline": "Widgets",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "notes": [
+        "A widget is a countable, non-financial thing one function receives and then hands to the next. Point to each highlighted label on the map: subscription leads, marketing qualified subscription leads, new subscriptions, activated subscriptions, collected payments.",
+        "The owner of each function must control the widget they hand on.",
+        "Not revenue or cash: those are outcomes of the whole flow.",
+        "Label the widget on every hand-off between functions."
+      ],
+      "artwork": {
+        "src": "assets/kffm-widgets.svg",
+        "alt": "The KFFM example with every widget highlighted: subscription leads into Marketing, marketing qualified subscription leads to Sales, new subscriptions to Operations, activated subscriptions to Finance, and collected payments to cash. A widget is a countable, non-financial thing one function receives and then hands to the next.",
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": []
+      },
+      "art_full": true
+    },
+    {
+      "id": "status",
+      "title": "How well is each function working?",
+      "headline": "How well is each function working?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/kffm-status.svg",
+        "alt": "The KFFM example with everything dimmed except the function boxes and their colours. A callout reads: rated by the critical number. On track, at risk, needs attention.",
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": []
+      },
+      "notes": [
+        "At the Kick Off, every box starts grey. At a quarterly, each owner re-rates their function. Each owner colours their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red.",
+        "Then ask: what would it take to turn it green?",
+        "Red is a conversation, not a verdict on the person."
+      ],
+      "art_full": true
+    },
+    {
+      "id": "days-to-cash",
+      "title": "How many days to cash?",
+      "headline": "How many days to cash?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/kffm-days.svg",
+        "alt": "The KFFM example with everything dimmed except the days each function takes and the time to cash. Marketing 14 days, Sales 21, Operations 7, Finance 30. A callout reads: days to cash. Add the days each function takes: 14 + 21 + 7 + 30 = 72 days from subscription lead to cash.",
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": []
+      },
+      "art_full": true,
+      "notes": [
+        "Each owner writes how many days a widget spends in their function. Add them up: that is the time to cash.",
+        "Cutting days anywhere on the map brings cash in sooner. That is the timing lever."
+      ]
+    },
+    {
+      "id": "draw-map",
+      "title": "Build your map in 8 steps.",
+      "headline": "Build your map in 8 steps.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "body": [
+        "1. Choose 3 to 5 functions that make the money.",
+        "2. Put them in the order work flows.",
+        "3. Name 1 “Accountable Owner” each.",
+        "4. Connect the flow to cash in the bank.",
+        "5. Label the widget between each function.",
+        "6. Add the days each function takes.",
+        "7. Give each function its critical number.",
+        "8. Colour each one: green, yellow or red."
+      ],
+      "notes": [
+        "Good enough today beats perfect later. We finish a first version before we leave, then revisit the map at every quarterly planning session and improve it.",
+        "Build it live on the board. Supporting functions go in their own row below.",
+        "Finish with Profit per X at the end of the flow and the total time to cash.",
+        "Read one customer through the finished map, ending at collected cash.",
+        "A critical number can be financial, like new MRR. The widgets that move between functions cannot."
+      ],
+      "support": "Get version 1 done **today**. Improve it **every quarter**."
+    },
+    {
+      "id": "levers",
+      "title": "KFFM: 6 levers to move more cash faster",
+      "headline": "KFFM: 6 levers to move more cash faster",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "notes": [
+        "Point each lever at the example map. Once the team can see the flow, these are the ways to improve it.",
+        "The map’s quantities, conversion rates, price, timing, capacity and cost are the levers the owner uses to manage cash.",
+        "Timing is how long one widget takes to get through. Capacity is how many widgets a function can handle in a month. A function can be fast and still too small."
+      ],
+      "art_full": true,
+      "artwork": {
+        "src": "assets/kffm-levers.svg",
+        "alt": "The KFFM example on the left. On the right, six levers to move more cash faster: Quantity, more widgets into the first function; Conversion, more widgets pass each hand-off; Price, raise the price customers pay; Timing, fewer days from first widget to cash; Capacity, each function handles more widgets a month; Cost, lower what each function costs to run.",
+        "viewbox": [
+          2200,
+          936
+        ],
+        "hotspots": [
+          {
+            "x": 177.4,
+            "y": 466.5,
+            "w": 304.2,
+            "h": 162.2,
+            "term": "Profit per X",
+            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+          },
+          {
+            "x": 1500,
+            "y": 96,
+            "w": 660,
+            "h": 120,
+            "term": "Quantity",
+            "tip": "Subscription leads coming into Marketing.",
+            "targets": [
+              [
+                14.2,
+                199.9,
+                185.5,
+                80.1
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          },
+          {
+            "x": 1500,
+            "y": 232,
+            "w": 660,
+            "h": 120,
+            "term": "Conversion",
+            "tip": "The widgets passed at each hand-off after subscription leads.",
+            "targets": [
+              [
+                459.3,
+                199.9,
+                227.1,
+                80.1
+              ],
+              [
+                946.0,
+                199.9,
+                227.1,
+                80.1
+              ],
+              [
+                1166.0,
+                366.2,
+                147.0,
+                86.2
+              ],
+              [
+                905.4,
+                481.7,
+                267.7,
+                78.1
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          },
+          {
+            "x": 1500,
+            "y": 368,
+            "w": 660,
+            "h": 120,
+            "term": "Price",
+            "tip": "Profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
+            "targets": [
+              [
+                169.3,
+                458.4,
+                320.4,
+                178.4
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          },
+          {
+            "x": 1500,
+            "y": 504,
+            "w": 660,
+            "h": 120,
+            "term": "Timing",
+            "tip": "Time to cash.",
+            "targets": [
+              [
+                1107.2,
+                718.0,
+                330.5,
+                121.7
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          },
+          {
+            "x": 1500,
+            "y": 640,
+            "w": 660,
+            "h": 120,
+            "term": "Capacity",
+            "tip": "All the functions.",
+            "targets": [
+              [
+                194.7,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                681.3,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                1168.0,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                1168.0,
+                446.2,
+                269.7,
+                202.8
+              ],
+              [
+                12.2,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                245.4,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                478.6,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          },
+          {
+            "x": 1500,
+            "y": 776,
+            "w": 660,
+            "h": 120,
+            "term": "Cost",
+            "tip": "All the functions.",
+            "targets": [
+              [
+                194.7,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                681.3,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                1168.0,
+                168.4,
+                269.7,
+                202.8
+              ],
+              [
+                1168.0,
+                446.2,
+                269.7,
+                202.8
+              ],
+              [
+                12.2,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                245.4,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                478.6,
+                730.1,
+                229.1,
+                113.6
+              ],
+              [
+                724.9,
+                456.4,
+                182.5,
+                182.5
+              ]
+            ],
+            "dim": [
+              0,
+              0,
+              1480,
+              936
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-roadmap",
+      "title": "KFFM: your AI roadmap",
+      "headline": "KFFM: your AI roadmap",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/kffm-ai.svg",
+        "alt": "The KFFM example dimmed except Operations and the widgets in and out of it. A callout reads: every function already defines what AI needs. Receives: new subscriptions. Produces: activated subscriptions. Critical number: time to activation. Days: 7. Start with the smallest, lowest-risk piece. The critical number tells you if it worked.",
+        "viewbox": [
+          1440,
+          710
+        ],
+        "hotspots": []
+      },
+      "art_full": true,
+      "notes": [
+        "Every box on the map already states what it receives, what it produces, its critical number and its days. Those are the tests for whether an AI agent could do that work.",
+        "If a person activates 10 subscriptions a day and an agent handles 100, around the clock, days to cash drops and volume rises for every function downstream.",
+        "Do not automate work that depends on judgment, relationships or trust. The critical number will punish a bad automation quickly.",
+        "Keep the map current: it is the roadmap for where AI goes next."
+      ]
+    }
+  ]
+}

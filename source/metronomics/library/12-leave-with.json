@@ -1,0 +1,33 @@
+{
+  "id": "12-leave-with",
+  "title": "Artifacts named. Priorities owned. Cadence booked.",
+  "headline": "Artifacts named. Priorities owned. Cadence booked.",
+  "layout": "comp-causal",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "What leaves the Kick Off",
+  "panels": [
+    {
+      "role": "Human + Cultural",
+      "heading": "Chart, KFFM, ideology",
+      "support": "Org Function Chart, KFFM Level 1, Core Purpose, Values, BHAG.",
+      "mark": "structure"
+    },
+    {
+      "role": "Strategy + Execution",
+      "heading": "3HAG to QHAG",
+      "support": "Key capabilities, 1HAG, QHAG, individual priorities, 3 key messages.",
+      "mark": "action"
+    },
+    {
+      "role": "Rhythm",
+      "heading": "Meetings live",
+      "support": "Daily and weekly booked. Coach and CEO 1:1 recurring.",
+      "mark": "structure"
+    }
+  ],
+  "arrows": false
+}

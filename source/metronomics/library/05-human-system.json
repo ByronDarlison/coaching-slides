@@ -1,0 +1,33 @@
+{
+  "id": "05-human-system",
+  "title": "Functions claim owners. The map shows how cash is made.",
+  "headline": "Functions claim owners. The map shows how cash is made.",
+  "layout": "comp-causal",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Human system · Kick Off",
+  "panels": [
+    {
+      "role": "Cause",
+      "heading": "Org Function Chart",
+      "support": "Owner, mission, and critical number for each function.",
+      "mark": "structure"
+    },
+    {
+      "role": "Action",
+      "heading": "KFFM Level 1",
+      "support": "How functions turn inputs into results and cash.",
+      "mark": "action"
+    },
+    {
+      "role": "Result",
+      "heading": "Shared picture",
+      "support": "Team View and flow feed 3HAG, scoreboard, and forecast.",
+      "mark": "structure"
+    }
+  ],
+  "arrows": true
+}

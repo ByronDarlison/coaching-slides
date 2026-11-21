@@ -1,0 +1,27 @@
+{
+  "id": "06-cultural",
+  "title": "Name the ideology in the room, or leave it vague.",
+  "headline": "Name the ideology in the room, or leave it vague.",
+  "layout": "comp-decision",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Cultural system · Kick Off",
+  "panels": [
+    {
+      "role": "Action",
+      "heading": "Core Purpose, Core Values, BHAG",
+      "support": "Why you exist, how you behave, and the long-term ambition the 3HAG steps toward.",
+      "mark": "action"
+    },
+    {
+      "role": "Gap",
+      "heading": "Skip culture and chase numbers",
+      "support": "Goals without purpose and values give the team nowhere honest to stand.",
+      "mark": "gap"
+    }
+  ],
+  "arrows": false
+}

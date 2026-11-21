@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-follow-through",
+  "title": "Metronomics Kickoff: follow through",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "follow through",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:follow-through"
+  ]
+}

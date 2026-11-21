@@ -1,0 +1,49 @@
+{
+  "id": "q2-opening",
+  "artifact": "opening",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-2 (Quarter 2 checklist) and Road Map Q-2, Metronomics.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "Metronomics Q2",
+      "headline": "Metronomics Q2",
+      "layout": "title",
+      "group": "Q2",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "The second quarterly planning day after the Kick Off. The objective is planning and executing with increasing momentum, and validating the 3HAG.",
+        "This reusable deck needs no company-specific edits."
+      ],
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      }
+    },
+    {
+      "id": "valuable",
+      "title": "What would make today valuable?",
+      "headline": "What would make today valuable?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Ask each person to write an answer and share it. Agree on the outcomes. Return to them at the close. Allow 10 minutes.",
+        "Byron’s note shows the purpose of Q2: planning and executing with increasing momentum."
+      ],
+      "support": "Write your answer, then share it with the team.",
+      "artwork": {
+        "src": "assets/q2-sticky.jpg",
+        "alt": "Byron’s sticky note, handwritten with: Planning and executing with increasing momentum."
+      }
+    }
+  ]
+}

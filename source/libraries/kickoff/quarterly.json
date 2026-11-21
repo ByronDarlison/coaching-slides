@@ -1,0 +1,236 @@
+{
+  "id": "quarterly",
+  "artifact": "quarterly",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "definition",
+      "title": "QHAG: Quarterly Highly Achievable Goal",
+      "headline": "QHAG: Quarterly Highly Achievable Goal",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "The QHAG turns the 1HAG into this quarter’s targets and priorities.",
+        "Individual quarterly priorities come from the QHAG next."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "This quarter’s step toward the 1HAG.",
+      "body": [
+        "Set this quarter’s targets, month by month, and the priorities that deliver the annual plan."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/hag-ladder-at-qhag.svg",
+        "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. QHAG is highlighted: this is where we are."
+      },
+      "art_side": true
+    },
+    {
+      "id": "map",
+      "title": "Your QHAG on one page.",
+      "headline": "Your QHAG on one page.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/qhag-map.svg",
+        "alt": "Example QHAG page for the same subscription business, Q1 January to March 2027. 1, Numbers for the quarter and each month, each with an owner: gross revenue $1.2 million, Andrew; profit margin 5%, Allison; cash $1.0 million, Allison; widgets: 2,100 subscription leads and 840 marketing qualified subscription leads, Chris; 210 new subscriptions, Andrew; 195 activated subscriptions, Jen; 4,800 collected payments, Allison; profit per subscription $38 for the quarter ($10, $13 and $15 by month), Allison; head count 32, Pat. 2, Priorities, each supporting an annual priority: #1 remove the first 2 days of activation, Jen, done by February 28, success: days to activate 5 or fewer achieved by March 31; #2 hire the first account executive, Andrew, done by March 15, success: new MRR at or above $25K a month achieved by June 30; #3 move the 100 largest customers to automatic billing, Allison, done by March 31, success: days to collect 20 or fewer achieved by June 30.",
+        "viewbox": [
+          1800,
+          880
+        ],
+        "hotspots": [
+          {
+            "x": 35,
+            "y": 646,
+            "w": 1092.5,
+            "h": 46,
+            "term": "Profit per X",
+            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "icon": [
+              402.5,
+              668
+            ]
+          }
+        ]
+      },
+      "art_full": true,
+      "notes": [
+        "Same page again, for the next quarter, month by month. Every number has an owner.",
+        "Don’t just divide the year by four. Ask how the quarter really builds, month by month.",
+        "Each quarterly priority moves an annual priority forward."
+      ]
+    },
+    {
+      "id": "quarter-numbers",
+      "title": "What are your quarterly targets?",
+      "headline": "What are your quarterly targets?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Ask for the quarter’s numbers. Each leader can post theirs in private mode first.",
+        "Ask questions about the math rather than telling them it is wrong. Ask who owns each number.",
+        "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count, month by month.",
+        "Use the same widget definitions as the three-year plan. Distinguish new activity from cumulative totals.",
+        "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
+        "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
+        "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
+        "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If Q1 is a quarter of the way or less, ask what makes the later quarters steeper.",
+        "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the 1HAG’s $300 a year."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/qhag-numbers-crop.svg",
+        "alt": "The QHAG page’s block 1, Numbers: gross revenue, profit margin, cash, the widgets, profit per subscription and head count, for the quarter and each month, each with an owner.",
+        "viewbox": [
+          1150,
+          790
+        ],
+        "hotspots": [
+          {
+            "x": 22.5,
+            "y": 566,
+            "w": 1092.5,
+            "h": 46,
+            "term": "Profit per X",
+            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "icon": [
+              390,
+              588
+            ]
+          }
+        ]
+      },
+      "art_side": true,
+      "support": "Confirm the quarter and its end date.",
+      "body": [
+        "Gross revenue, margin and ending cash, month by month.",
+        "Each widget and head count, month by month.",
+        "Name an owner for every number.",
+        "Is each target big enough to keep you on track for your 1HAG?"
+      ]
+    },
+    {
+      "id": "quarter-first",
+      "title": "What is the #1 priority for the quarter?",
+      "headline": "What is the #1 priority for the quarter?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
+        "At a quarterly, add the worries and opportunities circled on the Market Map to the candidates.",
+        "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
+        "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
+        "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
+        "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
+        "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
+        "Agree on the done-by date, the measure of success and the date it will be achieved by."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "What must be accomplished now to deliver the annual plan?",
+      "eyebrow": "",
+      "body": [
+        "List candidates from your 1HAG priorities. Test each with the six questions, then rank.",
+        "Agree on the owner, done-by date, measure of success and achieved-by date."
+      ],
+      "artwork": {
+        "src": "assets/qhag-p1-crop.svg",
+        "alt": "The QHAG page’s block 2, Priorities, with priority #1 highlighted: remove the first 2 days of activation, owner Jen, done by February 28, success days to activate 5 or fewer by March 31."
+      },
+      "art_side": true,
+      "terms": [
+        {
+          "term": "six questions",
+          "tip": [
+            "What does it build or move?",
+            "How much will it move a critical number?",
+            "How soon will we see it?",
+            "Who can own it and succeed?",
+            "What will it cost?",
+            "What could go wrong?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quarter-rest",
+      "title": "What else must be accomplished this quarter?",
+      "headline": "What else must be accomplished this quarter?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "At a quarterly, list last quarter’s open priorities first. They stay on the new QHAG until their number has moved.",
+        "Take the next candidates in rank order from the same list.",
+        "Discuss disagreement, tradeoffs, dependencies and capacity; agree on the rank together.",
+        "An owner claims the priority aloud. Agree on the done-by date, the measure and the achieved-by date.",
+        "The achieved-by date can fall after the quarter ends. The work is done this quarter; the priority stays open on the next QHAG until the number has moved.",
+        "Repeat for priorities 2 to 5 in order. Five is a ceiling; stop when the critical work is covered."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "Ideally 3, up to 5 company priorities in total, including #1.",
+      "body": [
+        "Connect each to an annual priority. Give each an owner, a done-by date and a measure of success."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/qhag-priorities-crop.svg",
+        "alt": "The QHAG page’s block 2, Priorities, all three shown. #1 is above; the others are hire the first account executive, Andrew, done by March 15, success new MRR of $25K a month or more by June 30; move the 100 largest customers to automatic billing, Allison, done by March 31, success days to collect 20 or fewer by June 30."
+      },
+      "art_side": true
+    },
+    {
+      "id": "qhag-check",
+      "title": "Does your QHAG pass?",
+      "headline": "Does your QHAG pass?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Read the QHAG aloud, top to bottom, then run the seven checks.",
+        "Revenue and each widget add up: the three months equal the quarter. Cash and head count are balances: the quarter ends at month 3’s number. Margin is a percentage. Check it against the quarter’s revenue and profit.",
+        "Anything that fails goes on the homework list with an owner."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "Read it aloud before you move on.",
+      "body": [
+        "Every number and priority has one owner with capacity.",
+        "Each priority advances a 1HAG priority, with success measured by a critical number, preferably.",
+        "Each priority is done by quarter end, with a target and an achieved-by date.",
+        "Each priority moves its number enough, and soon enough to see.",
+        "The targets are big enough to stay on track for the 1HAG.",
+        "The three months build to the quarter.",
+        "Head count is set."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/hag-ladder-checked-qhag.svg",
+        "alt": "The planning cascade with the 3HAG, 1HAG and QHAG checked; individual priorities are still to come."
+      },
+      "art_side": true,
+      "checklist": true,
+      "art_narrow": true
+    }
+  ]
+}

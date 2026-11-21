@@ -1,0 +1,49 @@
+{
+  "id": "q1-opening",
+  "artifact": "q1-opening",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "Metronomics Q1",
+      "headline": "Metronomics Q1",
+      "layout": "title",
+      "group": "Q1",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The first quarterly planning day after the Kick Off. The objective is functional clarity with team accountability, and better execution.",
+        "This reusable deck needs no company-specific edits."
+      ],
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      }
+    },
+    {
+      "id": "valuable",
+      "title": "What would make today valuable?",
+      "headline": "What would make today valuable?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Ask each person to write an answer and share it. Agree on the outcomes. Return to them at the close. Allow 10 minutes.",
+        "Byron’s note shows the purpose of Q1: functional clarity with team accountability."
+      ],
+      "support": "Write your answer, then share it with the team.",
+      "artwork": {
+        "src": "assets/q1-sticky.jpg",
+        "alt": "Byron’s sticky note, handwritten with: Functional clarity with team accountability."
+      }
+    }
+  ]
+}

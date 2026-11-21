@@ -1,0 +1,15 @@
+{
+  "id": "02-engagement-shape",
+  "title": "One engagement. Three things fixed.",
+  "headline": "One engagement. Three things fixed.",
+  "layout": "comp-story",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "artwork": {
+    "src": "assets/engagement.png",
+    "alt": "Faceless leader faces three fixed posts labeled Shape, Sequence, and Terms with soft green accents."
+  }
+}

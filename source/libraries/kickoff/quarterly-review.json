@@ -1,0 +1,71 @@
+{
+  "id": "quarterly-review",
+  "artifact": "confirm-evolve",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics. Confirm and evolve.",
+  "tags": [
+    "quarterly"
+  ],
+  "slides": [
+    {
+      "id": "function-chart",
+      "title": "Is your Function Chart still right?",
+      "headline": "Is your Function Chart still right?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Put the current Function Chart on the screen. Ask where ownership was unclear last quarter, then fix the chart.",
+        "Allow about 25 minutes, with the Team View after it."
+      ],
+      "checklist": true,
+      "support": "Test it against how the quarter really went.",
+      "body": [
+        "Every function has one owner who said yes out loud.",
+        "New or planned functions are on the chart."
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "purpose",
+      "title": "Does your Core Purpose still hold?",
+      "headline": "Does your Core Purpose still hold?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Change only what needs changing. Allow 5 to 10 minutes."
+      ],
+      "support": "Read it aloud. Is it still true? What changes?",
+      "copy_stack": true
+    },
+    {
+      "id": "values",
+      "title": "Do your core values still hold?",
+      "headline": "Do your core values still hold?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "If the team has no core values yet, skip this slide.",
+        "Change only what needs changing. Allow 5 to 10 minutes."
+      ],
+      "support": "If you have core values, read them aloud and test each one:",
+      "copy_stack": true,
+      "body": [
+        "Is it a value you hire and fire on, or a brand value?",
+        "When did you last let someone go for not living it?",
+        "Does someone who keeps breaching it belong here?",
+        "Would you build a new company around it, in any industry?"
+      ]
+    }
+  ]
+}

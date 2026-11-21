@@ -1,0 +1,34 @@
+{
+  "id": "quarterly-meetings",
+  "artifact": "meeting-check-in",
+  "seed": "Verified note: meetings (Shannon).",
+  "tags": [
+    "quarterly"
+  ],
+  "slides": [
+    {
+      "id": "check-in",
+      "title": "Are your meetings running and working?",
+      "headline": "Are your meetings running and working?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "At a quarterly from Q2 on, all five meetings should be running.",
+        "The five: daily huddle, weekly 1:1s, weekly leadership team meeting, monthly town hall and quarterly planning.",
+        "Rate every meeting that is running."
+      ],
+      "copy_stack": true,
+      "support": "Go down each meeting together, in about 10 minutes.",
+      "body": [
+        "Running? Yes or no, with the date.",
+        "Working? Is the time, the length and the agenda right?",
+        "Write what to change, or no change.",
+        "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "id": "q1",
+  "title": "Metronomics Q1",
+  "sidebar_title": "Metronomics Q1",
+  "sidebar_blurb": "Quarterly planning day",
+  "sources": {
+    "kickoff": "../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    {
+      "id": "kickoff:q1-opening",
+      "slides": [
+        "welcome"
+      ]
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "good-news",
+        "engagement",
+        "mirror"
+      ]
+    },
+    {
+      "id": "kickoff:q1-opening",
+      "slides": [
+        "valuable"
+      ]
+    },
+    "kickoff:q1-workstyles",
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "status"
+      ]
+    },
+    "kickoff:quarterly-status",
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "functions"
+      ]
+    },
+    {
+      "id": "kickoff:function-chart",
+      "slides": [
+        "ownership",
+        "gaps"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "function-chart"
+      ]
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
+        "team-view",
+        "numbers"
+      ]
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "scorecards"
+      ]
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
+        "scorecard-intro",
+        "scorecard"
+      ]
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "kffm"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "example-map"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "map"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "widgets"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "widgets"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "status"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "days-to-cash"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "days",
+        "profit-x"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "levers"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "lever"
+      ]
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "culture"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "purpose",
+        "values"
+      ]
+    },
+    {
+      "id": "kickoff:bhag",
+      "slides": [
+        "test"
+      ],
+      "override": {
+        "headline": "Does your BHAG still hold?",
+        "title": "Does your BHAG still hold?"
+      }
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "market-map"
+      ]
+    },
+    "kickoff:q1-market-map",
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "strategy"
+      ]
+    },
+    {
+      "id": "kickoff:three-year",
+      "slides": [
+        "read-back"
+      ]
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "plan"
+      ]
+    },
+    {
+      "id": "kickoff:annual",
+      "slides": [
+        "1hag-check"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "definition",
+        "map",
+        "quarter-numbers"
+      ]
+    },
+    {
+      "id": "kickoff:priorities",
+      "slides": [
+        "quality",
+        "worked-priority"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-first",
+        "quarter-rest",
+        "qhag-check"
+      ]
+    },
+    "kickoff:individual",
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "cash"
+      ]
+    },
+    {
+      "id": "kickoff:q1-cash",
+      "slides": [
+        "objective",
+        "why",
+        "chain",
+        "owners",
+        "columns",
+        "miss",
+        "act",
+        "build",
+        "examples"
+      ]
+    },
+    {
+      "id": "kickoff:rhythm-teaching",
+      "slides": [
+        "daily-weekly"
+      ],
+      "override": {
+        "headline": "How are your meetings going?",
+        "title": "How are your meetings going?",
+        "panels": [
+          {
+            "role": "Daily",
+            "heading": "Daily huddle",
+            "support": "7 to 10 minutes, every day. The facilitator rotates.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Metrics: yesterday’s widget actual and today’s forecast",
+              "The #1 thing to get done today",
+              "Stucks, and anything that can’t wait"
+            ]
+          },
+          {
+            "role": "Weekly",
+            "heading": "Weekly 1:1",
+            "support": "15 to 30 minutes. Each leader with each direct report, led by the direct report.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Metrics",
+              "Top 3 priorities for the week",
+              "Feedback both ways",
+              "Dynamic"
+            ]
+          },
+          {
+            "role": "Weekly",
+            "heading": "Weekly leadership meeting",
+            "support": "60 minutes. The CEO owns it.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Values recognition",
+              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+              "QHAG status",
+              "Priority status",
+              "Stucks, asks and offers"
+            ]
+          }
+        ],
+        "notes": [
+          "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
+          "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
+          "Quarterly Planning is running too: today is the first one the Kick Off booked.",
+          "The Monthly Town Hall starts this quarter. Book it before you leave, with its standing agenda, a year ahead."
+        ],
+        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2."
+      }
+    },
+    "kickoff:cascade-messages",
+    "kickoff:q1-close",
+    "kickoff:closing"
+  ]
+}

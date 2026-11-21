@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-kffm",
+  "title": "Metronomics Kickoff: kffm",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "kffm",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:kffm"
+  ]
+}

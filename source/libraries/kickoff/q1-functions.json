@@ -1,0 +1,102 @@
+{
+  "id": "q1-functions",
+  "artifact": "team-view",
+  "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "team-view",
+      "title": "Your Team View shows every function and its owner in one place.",
+      "headline": "Your Team View shows every function and its owner in one place.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The Team View shows each function, the person who volunteered to own it, and their title. It is all in one view.",
+        "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
+        "Show it to the whole team at a town hall whenever it changes."
+      ],
+      "artwork": {
+        "src": "assets/team-view-example.svg",
+        "alt": "The Team View for the example subscription company, matching the Function Chart’s agreed owners. Head of Company: Pat, CEO. Below: Marketing, Chris; Sales, Andrew; Operations, Jen; Development, Jen; Finance, Allison; People, Pat. Pat and Jen each own two functions, so their cards are red. A dashed, planned Customer Success function sits below Sales, for next year."
+      },
+      "art_full": true
+    },
+    {
+      "id": "numbers",
+      "title": "Does every function have a critical number?",
+      "headline": "Does every function have a critical number?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
+        "Each owner says their critical number out loud. It is the number they look at every day."
+      ],
+      "checklist": true,
+      "support": "Check the Team View in Metronome against your chart.",
+      "body": [
+        "Every function on the chart is in the Team View, with its owner.",
+        "Each owner names one critical number for the function.",
+        "The number can be financial or not. Listen for widgets."
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "scorecard-intro",
+      "title": "Every function owner has a scorecard, reviewed every 90 days.",
+      "headline": "Every function owner has a scorecard, reviewed every 90 days.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "artwork": {
+        "src": "assets/scorecard-review.png",
+        "alt": "A team member and their team lead sit at a table with one scorecard between them, each speaking in turn."
+      },
+      "art_side": true,
+      "body": [
+        "What: one page per function, saying what success looks like.",
+        "Why: everyone knows what they own and how we measure it.",
+        "How often: every 90 days, scored 0, 1 or 2.",
+        "Who: the owner, then their team lead. Then they compare."
+      ],
+      "notes": [
+        "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+        "A scorecard is not a job description or a list of priorities. It belongs to a function on the KFFM.",
+        "The review is a two-way conversation. The learning is where the two scores differ. At the end, the team member gives their leader feedback.",
+        "First time, keep it to the team member and their team lead. Metronome runs the reviews."
+      ]
+    },
+    {
+      "id": "scorecard",
+      "title": "A scorecard says what success looks like in a function.",
+      "headline": "A scorecard says what success looks like in a function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Purpose in one sentence. Three to five functional accountabilities, each starting Owns, including execution. Exactly two metrics: one widget the owner controls and one fiscal metric the role owns. Six to eight key competencies. The company’s core values.",
+        "Scorecards live in Metronome. The homework starts with the Head of Company scorecard, shared with the team."
+      ],
+      "artwork": {
+        "src": "assets/scorecard-example.svg",
+        "alt": "An example Operations scorecard for the subscription company, owned by Jen, laid out as Metronome lays out a scorecard. Purpose: turn every new subscription into an active customer, fast. Core Values: your company’s core values, in this role. Functional Accountabilities: four, each starting with Owns. Key Competencies: six. Metrics Owned by the Function: activated subscriptions a week, and cost per activation."
+      },
+      "art_full": true
+    }
+  ]
+}

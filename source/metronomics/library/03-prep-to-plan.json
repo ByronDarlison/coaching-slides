@@ -1,0 +1,33 @@
+{
+  "id": "03-prep-to-plan",
+  "title": "Prep lands in the room. The plan lands in Metronome.",
+  "headline": "Prep lands in the room. The plan lands in Metronome.",
+  "layout": "comp-causal",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Kick Off column",
+  "panels": [
+    {
+      "role": "Cause",
+      "heading": "Homework done",
+      "support": "Metronomics book, demo video, prep survey, Mural login.",
+      "mark": "structure"
+    },
+    {
+      "role": "Action",
+      "heading": "Two-day Kick Off",
+      "support": "Opens the first quarter in place of the first call.",
+      "mark": "action"
+    },
+    {
+      "role": "Result",
+      "heading": "Plan entered",
+      "support": "Core Purpose through QHAG and owned priorities in Metronome.",
+      "mark": "structure"
+    }
+  ],
+  "arrows": true
+}

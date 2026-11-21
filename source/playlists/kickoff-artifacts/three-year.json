@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-three-year",
+  "title": "Metronomics Kickoff: three year",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "three year",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:three-year"
+  ]
+}

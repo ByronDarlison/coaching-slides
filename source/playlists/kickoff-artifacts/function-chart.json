@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-function-chart",
+  "title": "Metronomics Kickoff: function chart",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "function chart",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:function-chart"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "values",
+  "artifact": "values",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "values-meaning",
+      "title": "Core values guide everyday behavior.",
+      "headline": "Core values guide everyday behavior.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Values are the team’s handful of behavioral rules. They remain useful when decisions are difficult.",
+        "Review established values today. If none exist, do not create them today.",
+        "Shannon describes values as alive, constant behavioral rules with consequences for violations.",
+        "Review where values shape real decisions. Address repeated violations through the company’s established people process.",
+        "This workshop reviews existing values; it does not create a new dismissal process."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "eyebrow": "",
+      "support": "Core values remain consistent as the business grows.",
+      "body": [
+        "Use them in decisions. Hold one another accountable for the behavior."
+      ]
+    },
+    {
+      "id": "values-example",
+      "title": "A value becomes useful when behavior is clear.",
+      "headline": "A value becomes useful when behavior is clear.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "These are historical examples from Shannon’s businesses. Do not recommend adopting them as the client’s values."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Shannon’s company",
+          "heading": "Happy",
+          "support": "Happy to come to work. Happy to leave.",
+          "mark": "structure"
+        },
+        {
+          "role": "Shannon’s company",
+          "heading": "Hungry",
+          "support": "Hungry enough to make a difference every day.",
+          "mark": "structure"
+        },
+        {
+          "role": "Shannon’s company",
+          "heading": "Humble",
+          "support": "Humble enough to learn every day.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "review-values",
+      "title": "What are your organization’s core values?",
+      "headline": "What are your organization’s core values?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Circle’s Kick Off checklist calls for reviewing values when they already exist. Ask for concrete behaviors. If the company has no established values, do not create them here."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "Not aspirational. How your best people already act.",
+      "body": [
+        "Test each one:",
+        "Is it a value you hire and fire on, or a brand value?",
+        "When did you last let someone go for not living it?",
+        "Does someone who keeps breaching it belong here?",
+        "Would you build a new company around it, in any industry?",
+        "Preferably 3, definitely no more than 5."
+      ],
+      "eyebrow": ""
+    }
+  ]
+}

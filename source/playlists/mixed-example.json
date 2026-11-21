@@ -1,0 +1,14 @@
+{
+  "id": "mixed-example",
+  "title": "Shared planning",
+  "sidebar_title": "Shared planning",
+  "sources": {
+    "common": "../libraries/common",
+    "workshop": "../libraries/workshop"
+  },
+  "units": [
+    "common:opening",
+    "workshop:shared-plan",
+    "metronomics:13-rule"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cascade-messages",
+  "artifact": "cascade-messages",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "three-messages",
+      "title": "What 3 messages will you share with the wider team?",
+      "headline": "What 3 messages will you share with the wider team?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Write the messages together and read them aloud. Keep them specific to the agreed plan. Prepare leaders to deliver a consistent message to the wider team.",
+        "Every leader shares the messages with their team the day after."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/three-messages.jpg",
+        "alt": "A leader holds up a card with three numbered lines and talks to three seated team members."
+      },
+      "art_side": true
+    }
+  ]
+}

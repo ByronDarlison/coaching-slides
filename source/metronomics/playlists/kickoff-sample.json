@@ -1,0 +1,22 @@
+{
+  "id": "kickoff-sample",
+  "title": "Metronomics Kick Off",
+  "sidebar_title": "Metronomics Kick Off",
+  "sidebar_blurb": "Shared visual standard sample.",
+  "description": "Approved visual reference; coaching content is illustrative.",
+  "units": [
+    "01-title",
+    "02-engagement-shape",
+    "03-prep-to-plan",
+    "04-cohesive-open",
+    "05-human-system",
+    "06-cultural",
+    "07-purpose-bhag",
+    "08-3hag",
+    "09-execution-cascade",
+    "10-meeting-rhythm",
+    "11-meeting-pulse",
+    "12-leave-with",
+    "13-rule"
+  ]
+}

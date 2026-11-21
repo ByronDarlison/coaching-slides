@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-priorities",
+  "title": "Metronomics Kickoff: priorities",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "priorities",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:priorities"
+  ]
+}

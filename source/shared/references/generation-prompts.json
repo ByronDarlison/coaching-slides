@@ -1,0 +1,31 @@
+{
+  "tool": "Built-in image generation",
+  "date": "2026-09-30",
+  "reference": "shared/references/character-style-reference.png",
+  "jobs": [
+    {
+      "key": "engagement",
+      "path": "assets/generated/engagement.png",
+      "prompt": "Create a polished replacement illustration for a coaching slide. Use case: style-transfer. Image 1 is the overriding CHARACTER STYLE reference: rounded anonymous featureless oval heads, no nose/chin/ears, simple softly curved grey bodies, minimal anatomy, light grey flat fill and clean thin medium-grey contours, no clothing seams, no gender cues. Image 2 is the old illustration: preserve its conceptual scene but REDESIGN it in the simpler character style of Image 1. Elegant restrained editorial line illustration, generous whitespace, pure #FFFFFF background edge to edge. Small flat green #54B570 accents only where meaningful. No 3D, no realism, no texture, no gradients, no frames, no decorative scenery. Wide 16:9 composition, comfortably contained with 8% margins. Scene: a single generic figure at the left calmly considering three simple equal-height pillars, representing three fixed commitments. Retain the three exact labels 'Shape', 'Sequence', 'Terms', each directly centered over its own pillar and clearly separated. Pale grey pillars, restrained green cap accents. Figure has a relaxed open hand gesture. Keep airy balanced spacing.",
+      "output": "metronomics/library/assets/engagement.png"
+    },
+    {
+      "key": "cohesive-open",
+      "path": "assets/generated/cohesive-open.png",
+      "prompt": "Create a polished replacement illustration for a coaching slide. Use case: style-transfer. Image 1 is the overriding CHARACTER STYLE reference: rounded anonymous featureless oval heads, no nose/chin/ears, simple softly curved grey bodies, minimal anatomy, light grey flat fill and clean thin medium-grey contours, no clothing seams, no gender cues. Image 2 is the old illustration: preserve its conceptual scene but REDESIGN it in the simpler character style of Image 1. Elegant restrained editorial line illustration, generous whitespace, pure #FFFFFF background edge to edge. Small flat green #54B570 accents only where meaningful. No 3D, no realism, no texture, no gradients, no frames, no decorative scenery. Wide 16:9 composition, comfortably contained with 8% margins. Scene: four generic figures grouped in a welcoming open semicircle on the left and center, one gently gesturing as the others listen. A small clean green checkmark in an unfilled speech bubble above them suggests sharing good news. One small simple chart board rests to the far right, secondary and clearly separated, with a grey chart and one green line. Remove the old distracting perspective rays and duplicated translucent chart panels. Communicate human connection before reviewing charts.",
+      "output": "metronomics/library/assets/cohesive-open.png"
+    },
+    {
+      "key": "purpose-bhag",
+      "path": "assets/generated/purpose-bhag.png",
+      "prompt": "Create a polished replacement illustration for a coaching slide. Use case: style-transfer. Image 1 is the overriding CHARACTER STYLE reference: rounded anonymous featureless oval heads, no nose/chin/ears, simple softly curved grey bodies, minimal anatomy, light grey flat fill and clean thin medium-grey contours, no clothing seams, no gender cues. Image 2 is the old illustration: preserve its conceptual scene but REDESIGN it in the simpler character style of Image 1. Elegant restrained editorial line illustration, generous whitespace, pure #FFFFFF background edge to edge. Small flat green #54B570 accents only where meaningful. No 3D, no realism, no texture, no gradients, no frames, no decorative scenery. Wide 16:9 composition, comfortably contained with 8% margins. Scene: one generic figure on the left, a simple lightbulb beside them suggesting purpose, and a restrained path rising toward a simple outlined mountain on the right. One small green flag marks the summit and two small grey milestone flags lie along the approach. Use a tiny pale green detail in the lightbulb. No text. A hopeful, clear, extremely simple composition.",
+      "output": "metronomics/library/assets/purpose-bhag.png"
+    },
+    {
+      "key": "3hag",
+      "path": "assets/shared/3hag.png",
+      "prompt": "Create a polished replacement illustration for a coaching slide. Use case: style-transfer. Image 1 is the overriding CHARACTER STYLE reference: rounded anonymous featureless oval heads, no nose/chin/ears, simple softly curved grey bodies, minimal anatomy, light grey flat fill and clean thin medium-grey contours, no clothing seams, no gender cues. Image 2 is the old illustration: preserve its conceptual scene but REDESIGN it in the simpler character style of Image 1. Elegant restrained editorial line illustration, generous whitespace, pure #FFFFFF background edge to edge. Small flat green #54B570 accents only where meaningful. No 3D, no realism, no texture, no gradients, no frames, no decorative scenery. Wide 16:9 composition, comfortably contained with 8% margins. Scene: one generic figure at left looking down a simple gently rising path toward exactly three milestone flags. First two flags are light grey; the third destination flag is green. Space the milestones distinctly along the path into the distance. Give the figure a natural ready-to-step posture rather than a rigid realistic silhouette. No text.",
+      "output": "metronomics/library/assets/3hag.png"
+    }
+  ]
+}

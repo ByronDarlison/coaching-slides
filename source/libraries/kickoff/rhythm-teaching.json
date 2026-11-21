@@ -1,0 +1,105 @@
+{
+  "id": "rhythm-teaching",
+  "artifact": "rhythm-teaching",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "rhythm-purpose",
+      "title": "Communication rhythm keeps the plan moving.",
+      "headline": "Communication rhythm keeps the plan moving.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Communication rhythm is one of three execution disciplines, with priorities and keeping score.",
+        "It is how the team adjusts on real information, not stale reports. The daily and weekly meetings keep priorities, numbers and decisions moving between planning sessions.",
+        "Use the standing agendas as they are. The team can adjust the time to suit them."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/meeting-rhythm.png",
+        "alt": "Generic leaders meet around a table beside a calendar of recurring meetings."
+      },
+      "eyebrow": "",
+      "art_side": true,
+      "body": [
+        "Daily, weekly and quarterly.",
+        "Run them in Metronome, using the standing agendas."
+      ]
+    },
+    {
+      "id": "daily-weekly",
+      "title": "Your meetings",
+      "headline": "Your meetings",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Daily huddle agenda: good news, metrics (each leader says yesterday’s widget actual and today’s forecast), the number one thing to get done today, then stucks and what cannot wait. Keep problem-solving out of the huddle.",
+        "Weekly 1:1 agenda: good news, metrics, top 3 priorities for the week, feedback both ways, then dynamic. The direct report leads it.",
+        "Weekly leadership meeting agenda: good news, values recognition, scoreboard review (last week’s widget forecast, where it landed and this week’s forecast), QHAG status, priority status, then dynamic: stucks, asks, offers. Protect it; do not cancel when busy.",
+        "Leaders carry the agreed rhythm into their own teams."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Daily",
+          "heading": "Daily huddle",
+          "support": "7 to 10 minutes, every day. The facilitator rotates.",
+          "mark": "structure",
+          "items": [
+            "Good news",
+            "Metrics: yesterday’s widget actual and today’s forecast",
+            "The #1 thing to get done today",
+            "Stucks, and anything that can’t wait"
+          ]
+        },
+        {
+          "role": "Weekly",
+          "heading": "Weekly 1:1",
+          "support": "15 to 30 minutes. Each leader with each direct report, led by the direct report.",
+          "mark": "structure",
+          "items": [
+            "Good news",
+            "Metrics",
+            "Top 3 priorities for the week",
+            "Feedback both ways",
+            "Dynamic"
+          ]
+        },
+        {
+          "role": "Weekly",
+          "heading": "Weekly leadership meeting",
+          "support": "60 minutes. The CEO owns it.",
+          "mark": "structure",
+          "items": [
+            "Good news",
+            "Values recognition",
+            "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+            "QHAG status",
+            "Priority status",
+            "Stucks, asks and offers"
+          ]
+        }
+      ],
+      "arrows": false,
+      "eyebrow": "",
+      "terms": [
+        {
+          "term": "Dynamic",
+          "tip": [
+            "Stucks, important information, things to mention that cannot wait.",
+            "The direct report leads it. The leader will usually have a few topics."
+          ]
+        }
+      ]
+    }
+  ]
+}

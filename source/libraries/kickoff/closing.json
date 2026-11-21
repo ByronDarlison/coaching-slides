@@ -1,0 +1,51 @@
+{
+  "id": "closing",
+  "artifact": "closing",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "one-phrase",
+      "title": "How do you feel right now?",
+      "headline": "How do you feel right now?",
+      "layout": "comp-rule",
+      "group": "",
+      "notes": [
+        "Close the session. Recap verbally how the plan connects, from the 3HAG capabilities to this quarter’s priorities, and when the next daily huddle is. Then invite everyone to answer."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "One phrase. 5 words or fewer.",
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/one-phrase-close.jpg",
+        "alt": "Four team members stand together talking, each with a speech bubble; one bubble is green."
+      }
+    },
+    {
+      "id": "deck-link",
+      "title": "Take these slides with you.",
+      "headline": "Take these slides with you.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Leave this up as people pack up. The code opens the full deck on any phone, for reference after today."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "Scan the code to open the full deck on your phone.",
+      "eyebrow": "",
+      "art_side": true,
+      "body": [
+        "{deck_url}"
+      ],
+      "deck_qr": true
+    }
+  ]
+}

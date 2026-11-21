@@ -1,0 +1,15 @@
+{
+  "id": "01-title",
+  "title": "Metronomics Kick Off",
+  "headline": "Metronomics Kick Off",
+  "layout": "title",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "artwork": {
+    "src": "assets/kickoff-title.png",
+    "alt": "Three simple grey figures build a shared plan around a table, with green milestones leading to a goal."
+  }
+}

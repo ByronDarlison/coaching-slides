@@ -1,0 +1,14 @@
+{
+  "id": "blank-template",
+  "artifact": null,
+  "title": "",
+  "tags": [
+    "kickoff"
+  ],
+  "layout": "title",
+  "headline": "",
+  "support": "",
+  "body": [],
+  "notes": [],
+  "seed": "shared/deck empty shell template"
+}

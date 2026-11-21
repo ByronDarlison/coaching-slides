@@ -24,6 +24,22 @@ The [`eoa`](eoa/) directory contains:
 
 These decks are designed for Byron's Entrepreneurs' Organization Accelerator accountability group. They include organization-specific meeting instructions and should be adapted before use in another setting.
 
+### Metronomics session decks
+
+The [`metronomics`](metronomics/) directory contains the two-day Kick Off, Quarter 1 and Quarter 2 decks, and EOA Meeting 6. They are built from the slide library in [`source`](source/).
+
+### Slide library and build tools
+
+The [`source`](source/) directory holds everything needed to build a deck:
+
+- `libraries/` and `metronomics/library/`: the slides, one file per topic, with their artwork;
+- `playlists/`: each deck as an ordered list of slides;
+- `shared/deck/`: the stage, type, colors and controls every deck uses;
+- `tools/`: the command that builds a deck from a playlist, with its tests; and
+- [`SLIDE-VISUAL-STANDARD.md`](source/SLIDE-VISUAL-STANDARD.md): the design rules.
+
+Start with [`source/README.md`](source/README.md).
+
 ### Coaching deliverables
 
 [`metronomics-deliverables.html`](metronomics-deliverables.html) presents the coaching sequence and shows when each deliverable is introduced, coached, reviewed, or rebuilt.
@@ -35,6 +51,16 @@ These decks are designed for Byron's Entrepreneurs' Organization Accelerator acc
 - [`scripts/slide-test.py`](scripts/slide-test.py) checks rendered deck structure and content rules.
 - [`scripts/audit-decks.py`](scripts/audit-decks.py) checks source and sequence consistency.
 - [`tests/visual`](tests/visual/) contains the browser-based visual-regression suite.
+
+## Building your own deck
+
+You need Python 3 and nothing else. From the repository root:
+
+```bash
+./source/tools/compile-deck --playlist-file source/playlists/kickoff.json --out ~/my-deck --check
+```
+
+Open `~/my-deck/index.html` in a browser. To make your own deck, copy a playlist, change its list of slides, and build again. To change a slide, edit its file in a library. To change the look of every slide, edit `source/shared/deck/shell.css`.
 
 ## Viewing the slides locally
 
@@ -65,6 +91,12 @@ coaching-slides/
 │   ├── onboarding/
 │   ├── owners-outcome-primer/
 │   └── meeting-1/ ... meeting-10/
+├── metronomics/
+│   └── kickoff/ q1/ q2/ eoa-meeting-6/
+├── source/
+│   ├── libraries/ playlists/ metronomics/
+│   ├── shared/deck/
+│   └── tools/
 ├── shared/
 │   ├── assets/
 │   └── shell/
@@ -81,7 +113,7 @@ coaching-slides/
 
 Read [`SLIDE-RULES.md`](SLIDE-RULES.md) before changing a deck and [`PACING.md`](PACING.md) before changing the coaching sequence.
 
-Visual appearance follows [`darlison/presentations/SLIDE-VISUAL-STANDARD.md`](https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/SLIDE-VISUAL-STANDARD.md) in ByronDarlison/ai-config.
+Visual appearance follows [`source/SLIDE-VISUAL-STANDARD.md`](source/SLIDE-VISUAL-STANDARD.md).
 
 New EOA meeting decks copy the vendored shell in [`shared/shell/`](shared/shell/). EOA Meeting 4 is the first deck on that shell.
 

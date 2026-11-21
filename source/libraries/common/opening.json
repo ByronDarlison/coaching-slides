@@ -1,0 +1,14 @@
+{
+  "id": "opening",
+  "layout": "title",
+  "title": "Working together",
+  "headline": "Working together",
+  "tags": [
+    "opening"
+  ],
+  "artwork": {
+    "src": "assets/title.png",
+    "alt": "Three grey figures work on a shared plan."
+  },
+  "seed": "Byron-approved title artwork, 30 September 2026"
+}

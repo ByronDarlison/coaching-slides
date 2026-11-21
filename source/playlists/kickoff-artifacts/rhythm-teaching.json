@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-rhythm-teaching",
+  "title": "Metronomics Kickoff: rhythm teaching",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "rhythm teaching",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:rhythm-teaching"
+  ]
+}

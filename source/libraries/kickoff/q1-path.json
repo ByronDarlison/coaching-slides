@@ -1,0 +1,191 @@
+{
+  "id": "q1-path",
+  "artifact": "q1-path",
+  "seed": "Byron's Q1 day structure, 16-Nov-2026.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "status",
+      "title": "First, how last quarter went.",
+      "headline": "First, how last quarter went.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Q1 has nine steps. Review last quarter, clarify who owns what, then plan the quarter and forecast its cash."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-status.svg",
+        "alt": "Q1 path: Status next, then Functions, Scorecards, KFFM, Culture, Market Map, 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "functions",
+      "title": "Next, who owns each function.",
+      "headline": "Next, who owns each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "With last quarter’s facts on the table, we check that every function has one owner and one number."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-functions.svg",
+        "alt": "Q1 path: Status done. Functions next, then Scorecards, KFFM, Culture, Market Map, 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "scorecards",
+      "title": "Next, what success looks like in each function.",
+      "headline": "Next, what success looks like in each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Every function now has an owner. A scorecard says what success looks like for that owner."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-scorecards.svg",
+        "alt": "Q1 path: Status, Functions done. Scorecards next, then KFFM, Culture, Market Map, 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "kffm",
+      "title": "Then, how the work turns into cash.",
+      "headline": "Then, how the work turns into cash.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "A quarter of real data now sits behind the map. We look for what to clarify and which lever to pull."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-kffm.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards done. KFFM next, then Culture, Market Map, 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "culture",
+      "title": "Next, confirm who you are.",
+      "headline": "Next, confirm who you are.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Quick passes. Read each one aloud, ask if it is still true, and change only what needs changing."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-culture.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards, KFFM done. Culture next, then Market Map, 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "strategy",
+      "title": "Next, confirm where you’re going.",
+      "headline": "Next, confirm where you’re going.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "A quick pass on the 3HAG, with its check, tested against what the Market Map showed."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-strategy.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards, KFFM, Culture, Market Map done. 3HAG next, then Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "market-map",
+      "title": "Then, map your market.",
+      "headline": "Then, map your market.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The Market Map is the new piece for this quarter: a picture of the arena you play in. What it shows tests the 3HAG next."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-market-map.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards, KFFM, Culture done. Market Map next, then 3HAG, Plan, Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "plan",
+      "title": "Next, plan the next quarter.",
+      "headline": "Next, plan the next quarter.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Start from the 1HAG, then build the new QHAG from it. Everything so far feeds the plan. Never leave a quarterly without a quarterly plan."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-plan.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards, KFFM, Culture, Market Map, 3HAG done. Plan next, then Cash."
+      },
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "cash",
+      "title": "Next, forecast your cash.",
+      "headline": "Next, forecast your cash.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The plan is set. Now see what it does to cash.",
+        "The forecast uses the same widgets the team just planned around."
+      ],
+      "artwork": {
+        "src": "assets/q1-path-cash.svg",
+        "alt": "Q1 path: Status, Functions, Scorecards, KFFM, Culture, Market Map, 3HAG, Plan done. Cash next."
+      },
+      "art_full": true,
+      "art_fit": true
+    }
+  ]
+}

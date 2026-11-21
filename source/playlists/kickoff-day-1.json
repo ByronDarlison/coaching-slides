@@ -1,0 +1,23 @@
+{
+  "id": "kickoff-day-1",
+  "title": "Metronomics Kickoff \u00b7 Day 1",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "Day 1",
+  "sources": {
+    "kickoff": "../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:opening",
+    "kickoff:function-chart",
+    "kickoff:kffm",
+    "kickoff:purpose",
+    "kickoff:values",
+    "kickoff:bhag",
+    "kickoff:three-year",
+    "kickoff:day-one-close"
+  ]
+}

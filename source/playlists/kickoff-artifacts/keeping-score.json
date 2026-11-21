@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-keeping-score",
+  "title": "Metronomics Kickoff: keeping score",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "keeping score",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:keeping-score"
+  ]
+}

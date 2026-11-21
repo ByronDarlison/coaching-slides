@@ -1,0 +1,27 @@
+{
+  "id": "10-meeting-rhythm",
+  "title": "Book the rhythm now, or wait until the quarter cools.",
+  "headline": "Book the rhythm now, or wait until the quarter cools.",
+  "layout": "comp-decision",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Meetings · set up at Kick Off",
+  "panels": [
+    {
+      "role": "Action",
+      "heading": "Set up and book at Kick Off",
+      "support": "Daily, weekly, and monthly meetings plus the recurring coach and CEO 1:1. Run through Metronome from Q2.",
+      "mark": "action"
+    },
+    {
+      "role": "Gap",
+      "heading": "Leave cadence for later",
+      "support": "Without a booked pulse, priorities fade between planning days.",
+      "mark": "gap"
+    }
+  ],
+  "arrows": false
+}

@@ -1,0 +1,219 @@
+{
+  "id": "overview",
+  "artifact": "overview",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "system",
+      "title": "A winning team needs a shared way to work.",
+      "headline": "A winning team needs a shared way to work.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Keep the overview brief. Metronomics connects the team, strategy, execution and cash. The workshop starts putting that shared way of working into practice.",
+        "On the Coach card, explain your role: guide the method, challenge assumptions and reveal blind spots. The team owns the plan; the CEO and leaders make the business decisions and own their commitments."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Playbook",
+          "heading": "A repeatable system",
+          "support": "A common way to build and execute the plan.",
+          "mark": "structure"
+        },
+        {
+          "role": "Playing field",
+          "heading": "A visible scoreboard",
+          "support": "The team can see the plan and its progress.",
+          "mark": "action"
+        },
+        {
+          "role": "Coach",
+          "heading": "An outside perspective",
+          "support": "Challenge assumptions and uncover blind spots.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "systems",
+      "title": "The team and the plan must develop together.",
+      "headline": "The team and the plan must develop together.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Three systems build the team. Three systems run the business. Develop both together; people work is not a warm-up to the real work.",
+        "Introduce roles now."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Team",
+          "heading": "Cohesive",
+          "support": "Trust, constructive conflict and commitment to team results.",
+          "mark": "structure"
+        },
+        {
+          "role": "Team",
+          "heading": "Human",
+          "support": "Clear roles, expectations and accountability.",
+          "mark": "structure"
+        },
+        {
+          "role": "Team",
+          "heading": "Cultural",
+          "support": "Shared purpose, values and long-term ambition.",
+          "mark": "structure"
+        },
+        {
+          "role": "Business",
+          "heading": "Strategy",
+          "support": "Where we will compete and how we will achieve our goals.",
+          "mark": "action"
+        },
+        {
+          "role": "Business",
+          "heading": "Execution",
+          "support": "Owned priorities, visible measures and a meeting rhythm.",
+          "mark": "action"
+        },
+        {
+          "role": "Business",
+          "heading": "Cash",
+          "support": "Understand cash needs and forecast through widgets.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "growth-constraints",
+      "title": "What could limit your growth?",
+      "headline": "What could limit your growth?",
+      "layout": "comp-decision",
+      "group": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Leadership",
+          "heading": "Leadership capacity",
+          "support": "Can leaders grow the team as the business grows?",
+          "mark": "structure"
+        },
+        {
+          "role": "Market",
+          "heading": "Market expertise",
+          "support": "Do you understand the market you intend to serve?",
+          "mark": "structure"
+        },
+        {
+          "role": "Operations",
+          "heading": "Scalable infrastructure and processes",
+          "support": "Can your systems support the next stage of growth?",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "Shannon names leadership, market expertise, and scalable infrastructure and process as growth constraints.",
+        "Ask which constraint the team sees today. Use this to frame the following readiness diagnosis."
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Growth builds on the foundation.",
+      "headline": "Growth builds on the foundation.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "These are readiness conditions, not guaranteed calendar stages. Teams can move backward as conditions change.",
+        "Connect A-player to the later question: would you fight to keep each member of your team?",
+        "Momentum adds Team Trust 2.0, validated strategy and Coach Cascade turned on. Compounding sustains these with Coach Cascade flowing.",
+        "Ask out loud, no slide: Is your cash system working? Does execution work without you? Would you fight to keep everyone on your team? Do you have a clear, mapped strategy? A no marks unfinished foundation work, not a grade."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Ease",
+          "heading": "Foundation",
+          "support": "Working cash and execution; an A-player, cohesive leadership team; mapped strategy.",
+          "mark": "structure"
+        },
+        {
+          "role": "Speed",
+          "heading": "Momentum",
+          "support": "Keep the foundation. Validate strategy, deepen trust and begin coaching others.",
+          "mark": "structure"
+        },
+        {
+          "role": "Confidence",
+          "heading": "Compounding",
+          "support": "Sustain the systems. Coaching flows throughout the organization.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "team-development",
+      "title": "Teams learn to work through disagreement.",
+      "headline": "Teams learn to work through disagreement.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Shannon connects the growth phases to Bruce Tuckman’s team-development model.",
+        "Do not promise a linear path or equate disagreement with failure. Healthy conflict helps build commitment.",
+        "Close by asking: does the leadership team put team results first?",
+        "Invite leaders to describe current behavior rather than give a polished answer.",
+        "What would need to change for the whole team to own the outcome?",
+        "Leaders develop from doing expert work themselves to coaching others who own team results. This develops over time."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Foundation",
+          "heading": "Forming and storming",
+          "support": "Build trust and learn to raise difficult issues.",
+          "mark": "structure"
+        },
+        {
+          "role": "Momentum",
+          "heading": "Norming",
+          "support": "Establish shared expectations and accountability.",
+          "mark": "structure"
+        },
+        {
+          "role": "Compounding",
+          "heading": "Performing",
+          "support": "Work together effectively toward shared results.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

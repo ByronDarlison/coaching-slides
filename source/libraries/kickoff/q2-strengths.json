@@ -1,0 +1,78 @@
+{
+  "id": "q2-strengths",
+  "artifact": "strengthsfinder",
+  "seed": "Shannon Byrne Susko, COHESIVE: StrengthFinders 2.0 Assessment, Metronomics.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "domains",
+      "title": "Strengths fall into four domains.",
+      "headline": "Strengths fall into four domains.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Domain",
+          "heading": "Executing",
+          "support": "Making things happen.",
+          "mark": "structure"
+        },
+        {
+          "role": "Domain",
+          "heading": "Influencing",
+          "support": "Taking charge and speaking up.",
+          "mark": "structure"
+        },
+        {
+          "role": "Domain",
+          "heading": "Relationship Building",
+          "support": "Holding the team together.",
+          "mark": "structure"
+        },
+        {
+          "role": "Domain",
+          "heading": "Strategic Thinking",
+          "support": "Taking in information and deciding what to do.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "This is the cohesive exercise for the day. StrengthsFinder 2.0 has 34 themes across these four domains.",
+        "Each leader read the book and completed the assessment before today.",
+        "Allow about 25 minutes for both slides."
+      ]
+    },
+    {
+      "id": "exercise",
+      "title": "What are your top five strengths?",
+      "headline": "What are your top five strengths?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_side": true,
+      "support": "Post your top five strengths, in the order the assessment ranks them.",
+      "body": [
+        "Share your strengths with the team.",
+        "Then talk about what the team’s mix shows across the four domains."
+      ],
+      "notes": [
+        "The view of the whole team matters as much as each person’s list.",
+        "Homework: each leader does the same with their own team, and builds one view of every team member."
+      ],
+      "artwork": {
+        "src": "assets/strengths-cards.jpg",
+        "alt": "Four neutral grey figures stand around a table, each holding a fan of cards. More cards lie on the table in four groups, one of them green."
+      }
+    }
+  ]
+}

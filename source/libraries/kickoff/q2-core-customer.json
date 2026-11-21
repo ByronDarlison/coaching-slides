@@ -1,0 +1,277 @@
+{
+  "id": "q2-core-customer",
+  "artifact": "core-customer",
+  "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "objective",
+      "title": "Your Core Customer is the one decision that makes many others.",
+      "headline": "Your Core Customer is the one decision that makes many others.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_side": true,
+      "support": "Most companies serve anyone who will pay. The result:",
+      "body": [
+        "A mediocre product.",
+        "Special to no one.",
+        "Nothing sets you apart.",
+        "No idea when to say yes, and when to say no."
+      ],
+      "notes": [
+        "The Core Customer is the foundation of the strategy. It simplifies everything after it.",
+        "Serve everyone and you specialize in nothing. The product is average for all of them, and you cannot differentiate.",
+        "The hard part is not finding the right customer. Most founders can point to them. The hard part is choosing one.",
+        "Choosing does not mean refusing everyone else. It means the Core Customer wins the trade-offs."
+      ],
+      "artwork": {
+        "src": "assets/core-customer-one.jpg",
+        "alt": "Three neutral grey figures look toward a crowd of grey figures. One figure in the crowd is green, and one of the three gestures toward it."
+      }
+    },
+    {
+      "id": "story",
+      "title": "Choosing one changed the company",
+      "headline": "We served over 100 industries. Choosing one changed the company.",
+      "layout": "comp-causal",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "panels": [
+        {
+          "role": "Before",
+          "heading": "Anyone who needed a screen",
+          "support": "Over 100 industries in 110 countries. Average at everything.",
+          "mark": "gap"
+        },
+        {
+          "role": "The choice",
+          "heading": "K-12 schools in North America",
+          "support": "One buyer. The whole strategy built around them.",
+          "mark": "structure"
+        },
+        {
+          "role": "After",
+          "heading": "20% net profit, five years running",
+          "support": "Up from break-even. Growth rose to 20% a year.",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "Byron’s story from Rise Vision, a digital signage company.",
+        "The most important decision was who the company was building for and, equally, who it was not.",
+        "The company later sold at more than five times its recurring revenue."
+      ]
+    },
+    {
+      "id": "buyer",
+      "title": "The Core Customer is the person who decides to buy.",
+      "headline": "The Core Customer is the person who decides to buy.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "01",
+          "heading": "One individual",
+          "support": "The person who makes the buying decision.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Served at a profit",
+          "support": "We can meet their needs and make money.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Not a recommender",
+          "support": "Someone who can say no but not yes is not the Core Customer.",
+          "mark": "gap"
+        }
+      ],
+      "notes": [
+        "Ask: is this the decision maker or a user? Is it our customer, or our channel’s customer?",
+        "The buyer is whoever pays and keeps paying. That can be a distributor.",
+        "In a company with divisions, do the Core Customer for the root company."
+      ]
+    },
+    {
+      "id": "example",
+      "title": "Core Customer example",
+      "headline": "Core Customer example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "The same subscription company as the Market Map example. Small businesses are 55% of its revenue.",
+        "Walk the page once. Start with who they are, then the ranked needs and benefits. End with the persona and their share of revenue and profit.",
+        "Need #1 is why QHAG priority #1 removes two days from activation."
+      ],
+      "artwork": {
+        "src": "assets/core-customer-example.svg",
+        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff, who decides alone, pays by card, and wants it working this month without an IT person. Prioritized needs: 1, up and running in days; 2, a cost they can predict; 3, a person to call when stuck. Prioritized benefits: 1, active in 5 days or fewer; 2, one flat monthly price; 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
+      }
+    },
+    {
+      "id": "candidates",
+      "title": "Who should we analyze?",
+      "headline": "Who should we analyze?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "Name every customer you think matters. Do this before you look at the Market Map.",
+      "body": [
+        "Then check the Market Map for a customer you missed.",
+        "Add any future customer the map shows."
+      ],
+      "notes": [
+        "Ask the question before showing the map. The answers double-check the map.",
+        "Do not discount any customer the team names."
+      ]
+    },
+    {
+      "id": "each-view",
+      "title": "Describe each customer you think matters.",
+      "headline": "Describe each customer you think matters.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "Work on your own first. For each customer, write:",
+      "body": [
+        "Description: who makes the buying decision, and can we serve their needs at a profit? 50 words or fewer.",
+        "Core need: their primary reason for buying from us.",
+        "Benefits: the key benefits we offer to satisfy that need."
+      ],
+      "notes": [
+        "Each person fills in their own column in private. Reveal when everyone is done.",
+        "Shannon’s worksheet calls the benefits drivers.",
+        "Allow about 15 minutes."
+      ]
+    },
+    {
+      "id": "choose",
+      "title": "Choose one Core Customer.",
+      "headline": "Choose one Core Customer.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "Cluster everyone’s answers into possible customers. For each one:",
+      "body": [
+        "Brainstorm 5 to 8 needs, then rank the top 3. Needs, not wants.",
+        "Rank the top 3 benefits you offer that meet those needs.",
+        "Note their share of revenue and profit.",
+        "Then compare the number one needs across the customers.",
+        "Choose the one you would keep if you could serve only one."
+      ],
+      "notes": [
+        "If the number one needs all differ, the company is spread too thin.",
+        "Do not skip the ranking.",
+        "Settle differences with a decision, not a compromise.",
+        "A team that cannot choose today ranks its candidates. Choosing then becomes homework, with an owner and a date.",
+        "Expect a couple of rounds before it is right. Allow about 40 minutes."
+      ]
+    },
+    {
+      "id": "persona",
+      "title": "Give your Core Customer a name and a face.",
+      "headline": "Give your Core Customer a name and a face.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_side": true,
+      "support": "Then bring them into every meeting.",
+      "body": [
+        "A first name.",
+        "A job title.",
+        "Their daily reality."
+      ],
+      "notes": [
+        "Test the persona: what are they doing on a Tuesday at 7 AM?",
+        "At Rise Vision the persona was Clay, a K-12 IT administrator.",
+        "Put the persona on every meeting agenda."
+      ],
+      "artwork": {
+        "src": "assets/core-customer-persona.jpg",
+        "alt": "Three neutral grey figures sit at a table. A portrait card of a green-outlined figure with a blank name tag stands on the table, and the three turn toward it."
+      }
+    },
+    {
+      "id": "apply",
+      "title": "What does your Core Customer change?",
+      "headline": "What does your Core Customer change?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "body": [
+        "3HAG: does each capability serve their three ranked needs?",
+        "KFFM: does a widget, a function or a critical number change?",
+        "1HAG and QHAG: does a priority change?",
+        "Marketing: does your message speak to this customer? A StoryBrand BrandScript can help you craft it.",
+        "Would you turn away revenue that does not fit?"
+      ],
+      "notes": [
+        "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG.",
+        "A BrandScript tells the company’s story with the customer as the hero and the company as the guide. It comes from Donald Miller’s book Building a StoryBrand.",
+        "Homework: add the Core Customer to the War Room in Metronome."
+      ]
+    },
+    {
+      "id": "go-deeper",
+      "title": "Go deeper before the next session.",
+      "headline": "Go deeper before the next session.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "Scan to open each page on darlison.com.",
+        "The article explains the full profile. It covers what drives the buyer, how they buy and how to reach them.",
+        "The prompt is a 30-minute interview that builds the profile and a Core Customer statement."
+      ],
+      "artwork": {
+        "src": "assets/core-customer-links.svg",
+        "alt": "Two QR codes. Read the article: Who Is Your Most Valuable Customer? Run the prompt: Core Customer Discovery. Both open on darlison.com."
+      }
+    }
+  ]
+}

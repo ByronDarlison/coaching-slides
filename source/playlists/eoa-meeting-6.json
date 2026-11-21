@@ -1,0 +1,196 @@
+{
+  "id": "eoa-meeting-6",
+  "title": "EOA Meeting 6",
+  "sidebar_title": "EOA Meeting 6",
+  "sidebar_blurb": "EO Accelerator",
+  "sources": {
+    "kickoff": "../libraries/kickoff",
+    "eoa": "../libraries/eoa"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "welcome"
+      ]
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "good-news"
+      ],
+      "override": {
+        "title": "Good news",
+        "headline": "Share your good news.",
+        "notes": [
+          "12:00 to 12:20 PM, over lunch. One piece of good news each, personal or professional."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "engagement"
+      ],
+      "override": {
+        "notes": [
+          "Confirm agreement on how the group will work. Invite difficult facts and constructive disagreement."
+        ]
+      }
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "brian"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "flow-intro"
+      ],
+      "override": {
+        "group": "How you make money",
+        "notes": [
+          "1:20 to 1:50 PM. Thirty minutes on how to use your plan, then the plan presentations.",
+          "Start with how the business makes money today. The plan comes next.",
+          "Watch one widget travel: each function adds days, and the counter shows time to cash. At the end the widget becomes money in the bank."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "example-map",
+        "widgets",
+        "levers"
+      ]
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "ladder"
+      ]
+    },
+    {
+      "id": "kickoff:bhag",
+      "slides": [
+        "definition"
+      ],
+      "override": {
+        "notes": [
+          "Where we are: the top of the cascade. The numbers start at the 3HAG."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:bhag",
+      "slides": [
+        "test"
+      ]
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "at-3hag"
+      ]
+    },
+    {
+      "id": "kickoff:three-year",
+      "slides": [
+        "map"
+      ],
+      "override": {
+        "notes": [
+          "One page, four blocks. Check your own 3HAG against it.",
+          "Same subscription business as the KFFM example. The five widgets are the five hand-offs on that map, counted for Year 3.",
+          "Every number has an owner, the same owner it will have in the 1HAG and QHAG.",
+          "The numbers hang together: about 4,000 subscribers at roughly $250 a month is $12 million, and 4,000 subscribers paying monthly is 48,000 collected payments.",
+          "The statement has no numbers. Each capability strengthens one function on the map. Known for is what customers would say."
+        ]
+      }
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "at-1hag"
+      ]
+    },
+    {
+      "id": "kickoff:annual",
+      "slides": [
+        "map"
+      ],
+      "override": {
+        "notes": [
+          "Same page as the 3HAG, one year out. Every number keeps its owner.",
+          "The widget owners come straight from the KFFM: Chris owns the leads Marketing hands on, Andrew new subscriptions, Jen activations, Allison collected payments.",
+          "Then 3 to 5 company priorities, each with one owner, a done-by date and a measure of success."
+        ]
+      }
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "at-qhag"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "map"
+      ]
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "at-sprint",
+        "sprint-lanes"
+      ]
+    },
+    {
+      "id": "kickoff:priorities",
+      "slides": [
+        "four-questions"
+      ],
+      "override": {
+        "group": "Your priorities"
+      }
+    },
+    {
+      "id": "kickoff:priorities",
+      "slides": [
+        "worked-priority"
+      ]
+    },
+    {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "present",
+        "feedback",
+        "housekeeping"
+      ]
+    },
+    {
+      "id": "kickoff:closing",
+      "slides": [
+        "one-phrase"
+      ],
+      "override": {
+        "notes": [
+          "3:55 to 4:00 PM. Go around the table. Everyone answers. Leave for Patois at 4:00 PM."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:closing",
+      "slides": [
+        "deck-link"
+      ]
+    }
+  ]
+}

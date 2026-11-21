@@ -1,8 +1,8 @@
 # Shared slideshow shell
 
-Vendored from [ByronDarlison/ai-config](https://github.com/ByronDarlison/ai-config) `darlison/presentations/shared/deck` at `efd9a15` (the shared shell landing on main).
+An earlier copy of the shell in [`source/shared/deck`](../../source/shared/deck/), used by the EOA meeting decks.
 
-GitHub Pages serves this copy with the coaching decks. A deck does not request ai-config at runtime.
+GitHub Pages serves this copy with the coaching decks. A deck loads nothing from another repository at runtime.
 
 ## Files
 
@@ -31,11 +31,11 @@ Set `data-title` on every slide. Set `data-group` on the first slide of each sec
 
 Appearance follows the house standard:
 
-https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/SLIDE-VISUAL-STANDARD.md
+[`source/SLIDE-VISUAL-STANDARD.md`](../../source/SLIDE-VISUAL-STANDARD.md)
 
 Shell how-to:
 
-https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/shared/README.md
+[`source/shared/README.md`](../../source/shared/README.md)
 
 Do not load fonts from the network.
 

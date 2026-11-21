@@ -1,0 +1,24 @@
+{
+  "id": "shared-plan",
+  "artifact": "shared-plan-example",
+  "seed": "Illustrative playlist example, not a production artifact mapping",
+  "slides": [
+    {
+      "id": "choose",
+      "layout": "comp-rule",
+      "title": "Choose one outcome.",
+      "headline": "Choose one outcome.",
+      "support": "Agree what this session should achieve.",
+      "notes": [
+        "Invite each participant to describe the outcome."
+      ]
+    },
+    {
+      "id": "commit",
+      "layout": "comp-rule",
+      "title": "Leave with an owner and a next step.",
+      "headline": "Leave with an owner and a next step.",
+      "support": "Make the next action clear."
+    }
+  ]
+}

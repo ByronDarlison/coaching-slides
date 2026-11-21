@@ -1,0 +1,281 @@
+{
+  "id": "meeting-6",
+  "artifact": "eoa-meeting-6",
+  "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+  "tags": [
+    "eoa",
+    "meeting-6"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "EOA Meeting 6",
+      "headline": "EOA Meeting 6",
+      "layout": "title",
+      "group": "Opening",
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      },
+      "notes": [
+        "Tuesday, December 1, 12 to 4 PM, the Rose Room, National Club.",
+        "12:00 lunch and good news. 12:20 Brian Young. 1:20 how to use your plan. 1:50 plan presentations. 3:50 housekeeping and close. Leave at 4:00 PM."
+      ]
+    },
+    {
+      "id": "brian",
+      "title": "Brian Young",
+      "headline": "Brian Young",
+      "layout": "comp-story",
+      "group": "Lunch guest",
+      "eyebrow": "",
+      "support": "Lunch guest. Home Painters Toronto.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/brian-young.jpg",
+        "alt": "Brian Young"
+      },
+      "notes": [
+        "12:20 to 1:20 PM. Brian talks, then takes questions. He leaves before the plan presentations."
+      ]
+    },
+    {
+      "id": "ladder",
+      "title": "From BHAG to sprint lanes",
+      "headline": "From your BHAG to this week’s work.",
+      "layout": "comp-story",
+      "group": "Your plan",
+      "eyebrow": "",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/hag-ladder-sprint.svg",
+        "alt": "A cascade of five levels. BHAG, Big Hairy Audacious Goal, 10 to 30 years. 3HAG, 3 Year Highly Achievable Goal, 3 years. 1HAG, 1 Year Highly Achievable Goal, this year. QHAG, Quarterly Highly Achievable Goal, this quarter. Sprint Lanes, 13-Week Sprint Lanes, week by week. Each level is built from the one above it and directs the one below."
+      },
+      "notes": [
+        "Where we are: the KFFM shows how the business makes money. The plan says where to take it.",
+        "The next slides take each level in turn, from the BHAG to the sprint lanes. Every level from the 3HAG down counts the KFFM widgets."
+      ]
+    },
+    {
+      "id": "at-3hag",
+      "title": "3HAG: 3 Year Highly Achievable Goal",
+      "headline": "3HAG: 3 Year Highly Achievable Goal",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "support": "A three-year stepping stone toward the BHAG.",
+      "body": [
+        "Connect the future company to the capabilities and targets needed to get there."
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/hag-ladder-sprint-at-3hag.svg",
+        "alt": "The cascade from BHAG to sprint lanes: BHAG, 3HAG, 1HAG, QHAG, then 13-week sprint lanes. 3HAG is highlighted: this is where we are."
+      },
+      "notes": [
+        "Where we are: the 3HAG. The next slide shows what it holds."
+      ]
+    },
+    {
+      "id": "at-1hag",
+      "title": "1HAG: 1 Year Highly Achievable Goal",
+      "headline": "1HAG: 1 Year Highly Achievable Goal",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "support": "This year’s step toward the 3HAG.",
+      "body": [
+        "Set this year’s targets and the few priorities that move the 3HAG forward."
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/hag-ladder-sprint-at-1hag.svg",
+        "alt": "The cascade from BHAG to sprint lanes: BHAG, 3HAG, 1HAG, QHAG, then 13-week sprint lanes. 1HAG is highlighted: this is where we are."
+      },
+      "notes": [
+        "Where we are: the 1HAG. Every number and priority comes from the 3HAG above it."
+      ]
+    },
+    {
+      "id": "at-qhag",
+      "title": "QHAG: Quarterly Highly Achievable Goal",
+      "headline": "QHAG: Quarterly Highly Achievable Goal",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "support": "This quarter’s step toward the 1HAG.",
+      "body": [
+        "Set this quarter’s targets, month by month, and the priorities that deliver the 1HAG."
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/hag-ladder-sprint-at-qhag.svg",
+        "alt": "The cascade from BHAG to sprint lanes: BHAG, 3HAG, 1HAG, QHAG, then 13-week sprint lanes. QHAG is highlighted: this is where we are."
+      },
+      "notes": [
+        "Where we are: the QHAG. The sprint lanes come next."
+      ]
+    },
+    {
+      "id": "at-sprint",
+      "title": "13-Week Sprint Lanes",
+      "headline": "13-Week Sprint Lanes",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "support": "The weekly steps that deliver the QHAG.",
+      "body": [
+        "Plan each quarterly priority week by week, with a weekly widget forecast."
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/hag-ladder-sprint-at-sprint.svg",
+        "alt": "The cascade from BHAG to sprint lanes: BHAG, 3HAG, 1HAG, QHAG, then 13-week sprint lanes. Sprint lanes is highlighted: this is where we are."
+      },
+      "notes": [
+        "Where we are: the sprint lanes, the last level of the cascade. Every week traces back to the BHAG."
+      ]
+    },
+    {
+      "id": "sprint-lanes",
+      "title": "What a sprint lane holds",
+      "headline": "What a sprint lane holds.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "01",
+          "heading": "One lane for each quarterly priority",
+          "support": "Each lane has the same owner as its priority.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "One step each week",
+          "support": "The step that week that moves the priority toward its measure of success.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "A widget forecast, week by week",
+          "support": "The weekly forecast adds up to the quarter’s widget targets.",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "Update the lanes every week. Red means needs attention. A red week is a prompt to act.",
+        "The lanes are on the Mural board, under each QHAG."
+      ]
+    },
+    {
+      "id": "present",
+      "title": "Present your plan",
+      "headline": "Present your plan in 12 minutes.",
+      "layout": "comp-decision",
+      "group": "Plan presentations",
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Walk your plan",
+          "support": "From your column on the Mural board, BHAG to sprint lanes. Say which numbers are on track.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Convince us",
+          "support": "Why is this going to work?",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Finish with your team",
+          "support": "How will you present this plan to your company and get everyone on side?",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "1:50 to 3:50 PM. Five slots of 24 minutes: 12 to present, 12 for feedback. No break.",
+        "The coach skips a member who is not prepared. That member stays and gives feedback.",
+        "Open the board from the Mural invite. The board link stays off the slides, because the deck is public."
+      ]
+    },
+    {
+      "id": "feedback",
+      "title": "Feedback",
+      "headline": "Then 12 minutes of feedback.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "01",
+          "heading": "First, check the plan",
+          "support": "The group checks it against these 5 points.",
+          "items": [
+            "Every row on the board has a number and one owner.",
+            "Ideally 3, up to 5 priorities, ranked, number one first.",
+            "Each 1HAG priority builds a 3HAG key capability. Each QHAG priority advances a 1HAG priority.",
+            "The widget targets support the revenue.",
+            "The 13-week sprint lanes and weekly widget forecast reach the quarter’s priorities and widget targets."
+          ],
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Then give feedback",
+          "support": "In this order.",
+          "items": [
+            "Group: experience shares. Use “I” and “did”, not “you” and “should”.",
+            "Coach: questions and direct feedback.",
+            "Presenter: name the one thing you will change in your plan."
+          ],
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "Experience shares come from your own experience. They are not advice.",
+        "Coach: test each member’s number one priority with the four questions.",
+        "The presenter closes the slot by naming one change to their plan.",
+        "Leave this up while each member presents."
+      ]
+    },
+    {
+      "id": "housekeeping",
+      "title": "Housekeeping",
+      "headline": "Housekeeping",
+      "layout": "comp-decision",
+      "group": "Close",
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Tonight",
+          "heading": "EOA Holiday Celebration",
+          "support": "Patois, 4:30 PM: fireside chat with chef Craig Wong, then dinner. We leave here at 4:00 PM.",
+          "mark": "action"
+        },
+        {
+          "role": "Before Christmas",
+          "heading": "A virtual session?",
+          "support": "Would you like one before Christmas?",
+          "mark": "structure"
+        },
+        {
+          "role": "Meeting 7",
+          "heading": "Friday, January 8, 2027",
+          "support": "1 to 6 PM. In person or virtual?",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "3:50 to 3:55 PM. Ask both questions. Take a show of hands for each. The National Club has Meeting 7 booked in person."
+      ]
+    }
+  ]
+}

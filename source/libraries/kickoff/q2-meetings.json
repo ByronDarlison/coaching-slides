@@ -1,0 +1,36 @@
+{
+  "id": "q2-meetings",
+  "artifact": "meetings",
+  "seed": "Byron Darlison, The Eight Meetings That Run Your Company (darlison.com): Monthly Town Hall.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "town-hall",
+      "title": "The Monthly Town Hall connects everyone to the plan.",
+      "headline": "The Monthly Town Hall connects everyone to the plan.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "30 to 45 minutes. Everyone. The CEO owns it.",
+      "body": [
+        "Good news, then values recognition",
+        "QHAG progress: where are we on the #1 priority, and what can everyone do to help?",
+        "Financial transparency: what is working and what is not",
+        "One thing we can do as a company to improve our financial health"
+      ],
+      "notes": [
+        "Rate the Town Hall too: is it running, is it working, and what would you change?",
+        "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
+        "This is the only meeting where the whole company hears the same thing at the same time.",
+        "Financial transparency builds the financial literacy of the whole team.",
+        "Show the Team View at a Town Hall only when it changes."
+      ]
+    }
+  ]
+}
