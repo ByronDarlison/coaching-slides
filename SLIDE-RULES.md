@@ -4,7 +4,7 @@ Rules for building monthly Metronomics coaching slideshows.
 
 ## Where the rules live
 
-Visual appearance follows the house standard in [ByronDarlison/ai-config](https://github.com/ByronDarlison/ai-config) at [`darlison/presentations/SLIDE-VISUAL-STANDARD.md`](https://github.com/ByronDarlison/ai-config/blob/main/darlison/presentations/SLIDE-VISUAL-STANDARD.md). That standard covers the 16:9 stage, colors, fonts, layout rhythm, controls, and hosting.
+Visual appearance follows the house standard at [`source/SLIDE-VISUAL-STANDARD.md`](source/SLIDE-VISUAL-STANDARD.md). That standard covers the 16:9 stage, colors, fonts, layout rhythm, controls, and hosting.
 
 This file remains the content and session structure standard for monthly Metronomics decks. It covers blocks, badges, order, and timing.
 
