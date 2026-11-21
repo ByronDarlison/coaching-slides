@@ -57,7 +57,9 @@ Start with [`source/README.md`](source/README.md).
 You need Python 3 and nothing else. From the repository root:
 
 ```bash
-./source/tools/compile-deck --playlist-file source/playlists/kickoff.json --out ~/my-deck --check
+./source/tools/compile-deck \
+  --playlist-file source/playlists/kickoff.json \
+  --out ~/my-deck --check
 ```
 
 That builds the two-day Kick Off deck. Open it with `open ~/my-deck/index.html` on a Mac, or open that file from your browser on any system.
