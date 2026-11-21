@@ -419,5 +419,8 @@ def sticky():
         'stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/></svg>', encoding="utf-8")
 
 
-sticky()
+# Pillow draws the handwriting a little differently from one version to the next,
+# so keep the approved image. Delete q2-sticky.jpg to redraw it.
+if not (OUT / "q2-sticky.jpg").exists():
+    sticky()
 print("wrote the Q2 drawings to", OUT)

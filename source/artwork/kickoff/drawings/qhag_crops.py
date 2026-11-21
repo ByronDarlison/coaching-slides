@@ -11,9 +11,10 @@ from pathlib import Path
 import re
 
 A = Path(__file__).resolve().parents[3] / "libraries" / "kickoff" / "assets"
-CROPS = [("qhag-map-numbers.svg", "qhag-numbers-crop.svg", (10, 80, 920, 790)),
-         ("qhag-map-p1.svg", "qhag-p1-crop.svg", (936, 86, 490, 780)),
-         ("qhag-map-priorities.svg", "qhag-priorities-crop.svg", (936, 86, 490, 780))]
+CROPS = [("qhag-map-numbers.svg", "qhag-numbers-crop.svg", (12.5, 80, 1150, 790)),
+         ("qhag-map-p1.svg", "qhag-p1-crop.svg", (1170, 86, 612.5, 780)),
+         ("qhag-map-priorities.svg", "qhag-priorities-crop.svg", (1170, 86, 612.5, 780))]
+# Coordinates match the maps after they were widened on 16-Nov-2026.
 
 for src, dst, (x, y, w, h) in CROPS:
     s = (A / src).read_text(encoding="utf-8")

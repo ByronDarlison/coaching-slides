@@ -182,3 +182,10 @@ for i,(r,h,s) in enumerate(L):
 W,H=2200,936
 svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{style}<rect width="{W}" height="{H}" fill="white"/><g><svg x="0" y="{MY}" width="1460" height="{MH}" viewBox="0 0 1440 {EH}">{inner}</svg></g>'+''.join(o)+'</svg>'
 open(A+'kffm-levers.svg','w').write(svg)
+
+# ---- projector type (16-Nov-2026): raise the smallest type in every KFFM drawing ----
+# Only font sizes change, so no shape moves and the hotspot boxes stay valid.
+TYPE={'17':'21','18':'20','19':'21','20':'22','21':'22'}
+for f in sorted(Path(A).glob('kffm-*.svg')):
+    s=f.read_text(); cut=s.index('</style>')+8
+    f.write_text(s[:cut]+re.sub(r'font-size="([\d.]+)"',lambda g:f'font-size="{TYPE.get(g.group(1),g.group(1))}"',s[cut:]))
