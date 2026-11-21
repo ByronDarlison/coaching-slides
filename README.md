@@ -60,7 +60,19 @@ You need Python 3 and nothing else. From the repository root:
 ./source/tools/compile-deck --playlist-file source/playlists/kickoff.json --out ~/my-deck --check
 ```
 
-Open `~/my-deck/index.html` in a browser. To make your own deck, copy a playlist, change its list of slides, and build again. To change a slide, edit its file in a library. To change the look of every slide, edit `source/shared/deck/shell.css`.
+That builds the two-day Kick Off deck. Open it with `open ~/my-deck/index.html` on a Mac, or open that file from your browser on any system.
+
+Each playlist in `source/playlists/` is one deck:
+
+| Playlist | Deck |
+| --- | --- |
+| `kickoff.json` | The two-day Kick Off |
+| `kickoff-day-1.json`, `kickoff-day-2.json` | Each Kick Off day on its own |
+| `q1.json`, `q2.json` | The Quarter 1 and Quarter 2 sessions |
+| `eoa-meeting-6.json` | EOA Meeting 6 |
+| `mixed-example.json` | A small example that draws on three libraries |
+
+To make your own deck, copy a playlist, change its list of slides, and build again. To change a slide, edit its file in a library. To change the look of every slide, edit `source/shared/deck/shell.css`.
 
 ## Viewing the slides locally
 
