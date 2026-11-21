@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-values",
+  "title": "Metronomics Kickoff: values",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "values",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:values"
+  ]
+}

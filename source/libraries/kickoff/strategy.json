@@ -1,0 +1,121 @@
+{
+  "id": "strategy",
+  "artifact": "strategy",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "one-word",
+      "title": "One word for your company’s strategy?",
+      "headline": "One word for your company’s strategy?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Preserve the template’s one-word strategy exercise. Ask what differences reveal about the team’s shared picture. Transition into a clearer three-year destination, not a full competitive-analysis workshop."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/independent-thinking.png",
+        "alt": "Three leaders write independently before comparing their answers."
+      },
+      "eyebrow": ""
+    },
+    {
+      "id": "definition",
+      "title": "Strategy creates a unique and valuable position.",
+      "headline": "Strategy creates a unique and valuable position.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Ask how the company creates value differently. A financial target alone does not describe a strategy.",
+        "Connect to the source’s confidently differentiated teaching."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "A different set of activities makes that position possible.",
+      "body": [
+        "Michael Porter’s definition, as taught by Shannon."
+      ],
+      "eyebrow": ""
+    },
+    {
+      "id": "unique",
+      "title": "Compete to be unique.",
+      "headline": "Compete to be unique.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Ask what would make the customer choose this company for a different reason.",
+        "Do not start the later-quarter market and differentiation workshops here.",
+        "Choosing a valuable position means choosing what not to do. Different activities must reinforce one another.",
+        "Better operations alone do not establish a differentiated position. Later workshops test customers, competition and activity fit."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Comparison",
+          "heading": "Best on the same dimensions",
+          "support": "Try to outperform rivals at the same activities.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategic choice",
+          "heading": "Unique value",
+          "support": "Choose a valuable position supported by different activities.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "development",
+      "title": "Build a strategy you can test and refine.",
+      "headline": "Build a strategy you can test and refine.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Shannon connects external and internal analysis to strategy and execution.",
+        "The kickoff sets a starting direction. Later quarters validate customers, market position and differentiating activities.",
+        "Internal analysis examines the company and how its work flows. External analysis examines customers, competitors and the market.",
+        "Kickoff capabilities are a starting hypothesis. Market Map, Core Customer, Attribution and Activity Fit workshops validate it later."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Analysis",
+          "heading": "Understand",
+          "support": "Study the market and the business.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategy",
+          "heading": "Choose",
+          "support": "Define position, scope and connected activities.",
+          "mark": "structure"
+        },
+        {
+          "role": "Execution",
+          "heading": "Learn",
+          "support": "Execute, observe results and test assumptions.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

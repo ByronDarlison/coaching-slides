@@ -1,0 +1,47 @@
+{
+  "id": "kickoff",
+  "title": "Metronomics Kick Off",
+  "sidebar_title": "Metronomics Kick Off",
+  "sidebar_blurb": "Two-day workshop",
+  "sources": {
+    "kickoff": "../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:opening",
+    "kickoff:function-chart",
+    "kickoff:kffm",
+    "kickoff:purpose",
+    "kickoff:values",
+    "kickoff:bhag",
+    "kickoff:three-year",
+    "kickoff:day-one-close",
+    {"id": "kickoff:day-two-opening", "slides": ["day-two", "good-news", "sunday-dinner", "reflection", "outcome-check", "engagement-day-two"]},
+    {
+      "id": "kickoff:annual",
+      "slides": [
+        "definition",
+        "map",
+        "annual-numbers",
+        "annual-first"
+      ]
+    },
+    {"id": "kickoff:priorities", "slides": ["quality", "worked-priority"]},
+    {
+      "id": "kickoff:annual",
+      "slides": [
+        "1hag-check"
+      ]
+    },
+    "kickoff:quarterly",
+    "kickoff:individual",
+    "kickoff:rhythm-teaching",
+    "kickoff:meeting-rhythm",
+    "kickoff:cascade-messages",
+    "kickoff:follow-through",
+    "kickoff:closing"
+  ]
+}

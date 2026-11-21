@@ -1,0 +1,40 @@
+{
+  "id": "q2-time",
+  "artifact": "leadership-time-assessment",
+  "seed": "Byron's facilitation note: Leadership Time Assessment. Rollout chart ruling, 26 October and 16 November 2026.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "assessment",
+      "title": "Where does your time go?",
+      "headline": "Where does your time go?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_side": true,
+      "support": "What percentage of your time goes to each category? Your four numbers total 100%.",
+      "body": [
+        "Execution",
+        "Strategy",
+        "Coaching",
+        "Professional and personal development"
+      ],
+      "notes": [
+        "Each leader enters their current allocation. Record how the time is really spent, not an ideal split.",
+        "Then talk about what the allocations show. The founder compares with the baseline from the call before Q1.",
+        "Keep the completed assessment. The next review compares against it.",
+        "When the leadership team is the whole company, skip this slide and ask the owner privately.",
+        "Allow about 10 minutes."
+      ],
+      "artwork": {
+        "src": "assets/time-allocation.jpg",
+        "alt": "One neutral grey figure, hand on chin, studies a circle divided into four unequal slices: one green, one blue and two grey."
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "function-chart",
+  "artifact": "function-chart",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "path-functions",
+      "title": "First, how the business works today.",
+      "headline": "First, how the business works today.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/day1-path-functions.svg",
+        "alt": "Day 1 path: Functions next, then KFFM, Purpose, Values, BHAG and 3HAG."
+      },
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "Day 1 has six steps. We start with the work: who owns each function, then how the work turns into cash."
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "What functions does the business need?",
+      "headline": "What functions does the business need?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Each leader lists the functions the business needs. Use the following example as a starting point. Agree on functions that describe the current business. Do not start with reporting lines or individual job titles."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "List the work the company must perform to operate successfully.",
+      "body": [],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/function-chart-mural.svg",
+        "alt": "Mock of the Function Chart. Functions down the left: Head of Company, Marketing, Sales, Operations, Development, Finance, People. Each team member, Pat, Chris, Andrew, Jen and Allison, posts on their own coloured sticky who holds each function. Most agree; Development and People show different answers and gaps. A green column on the right records the one agreed owner for each function."
+      },
+      "art_full": true
+    },
+    {
+      "id": "traditional",
+      "title": "Start with the work, not the people.",
+      "headline": "Start with the work, not the people.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "A traditional chart starts with people and titles. A Function Chart starts with the work, then names who owns it.",
+        "Use the source example excerpt. The same person may appear in more than one role.",
+        "This view shows people and reporting positions. The next view makes functions explicit.",
+        "Show the same example with the function first and accountable person second.",
+        "Shannon owns both Head of Company and Sales in the historical example. This makes load visible."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/traditional-vs-functional.svg",
+        "alt": "Left: a traditional hierarchy of people and job titles. Right: the same organisation as a Function Chart, starting with Head of company, Marketing, Sales and Finance, then naming their owners."
+      },
+      "eyebrow": "",
+      "art_wide": true
+    },
+    {
+      "id": "ownership",
+      "title": "Give every function one accountable owner.",
+      "headline": "Give every function one accountable owner.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Restate the rule: one accountable owner for each function; others can contribute.",
+        "At the Kick Off: have leaders list every required function. Include support functions, not only the cash-producing flow. Agree on one accountable owner for each function. Capture current reality before resolving gaps."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "One person is **accountable** for the work. Others may be **responsible** to contribute to the work.",
+      "eyebrow": ""
+    },
+    {
+      "id": "gaps",
+      "title": "Where is ownership unclear?",
+      "headline": "Where is ownership unclear?",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "In private mode, each person writes who holds each function; reveal, then agree. Add any missing functions. Resolve differences about current accountability. At the Kick Off, do not design the future organization here. At a quarterly, add any planned functions in the next step."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "One person",
+          "heading": "Several functions?",
+          "support": "Make the load visible.",
+          "mark": "gap"
+        },
+        {
+          "role": "One function",
+          "heading": "Several owners?",
+          "support": "Agree who is accountable.",
+          "mark": "gap"
+        },
+        {
+          "role": "A gap",
+          "heading": "No owner?",
+          "support": "Name the person who will own it.",
+          "mark": "gap"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "11-meeting-pulse",
+  "title": "The same beat for the leadership team and every team under them.",
+  "headline": "The same beat for the leadership team and every team under them.",
+  "layout": "comp-decision",
+  "tags": [
+    "kickoff-sample"
+  ],
+  "seed": "Byron-reviewed local Kick Off visual sample, 30 September 2026",
+  "notes": [],
+  "eyebrow": "Meeting rhythm",
+  "panels": [
+    {
+      "role": "Daily",
+      "heading": "Daily Huddle",
+      "support": "15 minutes or less. Good News, metrics, the one thing, stuck.",
+      "mark": "structure"
+    },
+    {
+      "role": "Weekly",
+      "heading": "Weekly Tactical",
+      "support": "60 minutes or less. Round robin, feedback, then dynamic issues.",
+      "mark": "structure"
+    },
+    {
+      "role": "Monthly",
+      "heading": "Confirm Strategy",
+      "support": "Confirm the quarterly plan and the top 3 for the month.",
+      "mark": "action"
+    },
+    {
+      "role": "Quarterly",
+      "heading": "Planning day",
+      "support": "Status, strategy check, then QHAG priorities with the coach.",
+      "mark": "action"
+    }
+  ],
+  "arrows": false
+}

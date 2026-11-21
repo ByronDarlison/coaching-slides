@@ -1,0 +1,198 @@
+{
+  "id": "q2-sprint",
+  "artifact": "sprint-lanes",
+  "seed": "Shannon Byrne Susko, EXECUTION: 13 Week Sprint Lanes, and the 13 Week Sprint Lanes template, Metronomics. Byron Darlison, Where Are You Going? (darlison.com): The QHAG and 13-Week Sprint.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "example",
+      "title": "Sprint lanes example",
+      "headline": "Sprint lanes example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "The same subscription company and the same QHAG as the Kick Off example.",
+        "This slide shows the shape of the whole page. The next slides take each block up close.",
+        "Priority #1 is done in week 8, so its lane shows Complete from week 9. Its measure of success stays on the QHAG."
+      ],
+      "artwork": {
+        "src": "assets/sprint-lanes-example.svg",
+        "alt": "An example 13-Week Sprint Lanes page for the subscription company, weeks 1 to 13 under January, February and March. Company widgets, week by week, each with an owner: subscription leads and marketing qualified subscription leads, Chris; new subscriptions, Andrew; activated subscriptions, Jen; collected payments, Allison. Company priorities, week by week: #1 remove the first 2 days of activation, Jen, done by February 28, eight weekly steps then complete; #2 hire the first account executive, Andrew, done by March 15, ten weekly steps then complete; #3 move the 100 largest customers to automatic billing, Allison, done by March 31, thirteen weekly steps."
+      }
+    },
+    {
+      "id": "weekly-number",
+      "title": "Split each month’s number across its weeks.",
+      "headline": "Split each month’s number across its weeks.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "The month’s numbers come from the QHAG the team has just set.",
+        "The 13 weeks split 4, 4 and 5 across the three months.",
+        "March is the highest month in the example, yet its weekly number is the lowest. Five weeks carry it."
+      ],
+      "artwork": {
+        "src": "assets/weekly-number.svg",
+        "alt": "Three rows. A produced number divides: January’s 65 new subscriptions become 16, 16, 16 and 17 across four weeks. A longer month spreads further: March’s 75 become 15 a week across five weeks. A held number does not divide: a head count of 30 shows 30 in every week."
+      }
+    },
+    {
+      "id": "widgets",
+      "title": "Forecast each company widget, week by week.",
+      "headline": "Forecast each company widget, week by week.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "Each widget keeps its owner from the QHAG. The weekly numbers add up to the quarter’s targets.",
+        "A weekly number makes the quarter’s target achievable, not just aspirational."
+      ],
+      "artwork": {
+        "src": "assets/sprint-lanes-widgets.svg",
+        "alt": "The company widgets block of the sprint lanes example on its own, weeks 1 to 13, each widget with its owner. Callout: Why: a weekly number shows a miss while there is time to act. Ask: can each owner reach this week’s number?"
+      }
+    },
+    {
+      "id": "lanes",
+      "title": "Give each company priority one lane.",
+      "headline": "Give each company priority one lane.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "The lane keeps the owner its priority has on the QHAG.",
+        "Lanes belong to company priorities. They never become lanes for a function."
+      ],
+      "artwork": {
+        "src": "assets/sprint-lanes-lanes.svg",
+        "alt": "The company priorities block of the sprint lanes example on its own: three lanes, weeks 1 to 13. Callout: Why: the team sees each week how the priority gets done. Ask: what must be done this week to finish on time?"
+      }
+    },
+    {
+      "id": "lane-one",
+      "title": "Write one step for every active week.",
+      "headline": "Write one step for every active week.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "A step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable.",
+        "Avoid blank weeks while the priority is active. Mark a priority complete when it finishes early.",
+        "A live priority that cannot name its weekly work is too vague, or too small for a lane."
+      ],
+      "artwork": {
+        "src": "assets/sprint-lane-one.svg",
+        "alt": "Lane #1 on its own: remove the first 2 days of activation, owner Jen, done by February 28. January: week 1, steps mapped; week 2, slowest 2 days found; week 3, fix chosen; week 4, welcome flow drafted. February: week 5, tested with 5 accounts; week 6, team trained; week 7, new flow live; week 8, old flow switched off. March: priority complete. Weeks 9 to 13 need no steps."
+      }
+    },
+    {
+      "id": "rocks",
+      "title": "Rocks only, no sand.",
+      "headline": "Rocks only, no sand.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "A step",
+          "heading": "“Welcome flow drafted”",
+          "support": "It is real, and anyone can check it.",
+          "mark": "action"
+        },
+        {
+          "role": "Not a step",
+          "heading": "“Continue working on activation”",
+          "support": "If the work would happen anyway, it does not belong in a lane.",
+          "mark": "gap"
+        },
+        {
+          "role": "In time",
+          "heading": "A rock becomes sand",
+          "support": "Once the new way is just how you work, it is no longer a priority.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "At Rise Vision we called this rocks only, no sand. There, “Homepage wireframe approved” was a rock. “Continue working on the new website” was sand.",
+        "Read each step in your lane and ask: could someone else check that this is done?",
+        "Building something new is a rock. Once it is built and running, it is part of how the company operates. It leaves the lanes and makes room for the next rock."
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build your sprint lanes.",
+      "headline": "Build your sprint lanes.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "Work on one page together.",
+      "body": [
+        "Forecast each company widget for all 13 weeks.",
+        "Give each company priority one lane. It keeps its owner.",
+        "Write one step for every active week."
+      ],
+      "notes": [
+        "Start with the widgets, then take the priorities in rank order. The owner of each lane drafts it and the team questions it.",
+        "Building the plan together develops the team as much as the plan.",
+        "Allow about 45 minutes.",
+        "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome."
+      ]
+    },
+    {
+      "id": "check",
+      "title": "Is the whole plan achievable?",
+      "headline": "Is the whole plan achievable?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "checklist": true,
+      "support": "Step back and look at every lane together.",
+      "body": [
+        "You have the people to do it.",
+        "You have the cash to do it.",
+        "The weekly forecasts add up to the quarter’s targets."
+      ],
+      "notes": [
+        "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",
+        "Lanes show the work. They are not the measure of success. That stays on the QHAG.",
+        "From this week, the weekly leadership meeting reviews sprint lane status."
+      ]
+    }
+  ]
+}

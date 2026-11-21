@@ -1,0 +1,31 @@
+{
+  "id": "cascade",
+  "artifact": "cascade",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "levels",
+      "title": "What each level holds.",
+      "headline": "What each level holds.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "art_full": true,
+      "artwork": {
+        "src": "assets/hag-levels.svg",
+        "alt": "BHAG, 10 to 30 years: the long-term ambition, no numbers. 3HAG, 3 years: year-3 revenue, cash and widgets; what you will be; 3 to 5 key capabilities; what you are known for. 1HAG, this year: revenue, cash, widgets and head count; ideally 3, up to 5 ranked priorities. QHAG, this quarter: the same numbers month by month; ideally 3, up to 5 ranked priorities. Individual priorities, this quarter: up to 5 work priorities including company priorities you own, and your critical number. One owner for every number and every priority."
+      },
+      "notes": [
+        "Keep this up as the reference for today. We fill in the 1HAG, QHAG and individual priorities on the board in that order.",
+        "Each 1HAG priority builds a 3HAG capability. Each QHAG priority advances a 1HAG priority. Each person’s priorities deliver the QHAG."
+      ]
+    }
+  ]
+}

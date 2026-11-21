@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-bhag",
+  "title": "Metronomics Kickoff: bhag",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "bhag",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:bhag"
+  ]
+}

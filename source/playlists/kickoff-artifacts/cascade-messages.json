@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-cascade-messages",
+  "title": "Metronomics Kickoff: cascade messages",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "cascade messages",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:cascade-messages"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "keeping-score",
+  "artifact": "keeping-score",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "fiscal-widgets",
+      "title": "Use financial numbers and operating measures together.",
+      "headline": "Use financial numbers and operating measures together.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Use operating measures to understand what produces the financial result.",
+        "Some measures predict outcomes; others confirm them. Define each measure rather than calling every widget a leading indicator."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Results",
+          "heading": "Financial numbers",
+          "support": "Gross revenue and cash balance.",
+          "mark": "structure"
+        },
+        {
+          "role": "Business activity",
+          "heading": "Widgets",
+          "support": "Leads, subscriptions, merchants or other operating units.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "metric-quality",
+      "title": "A useful measure supports a decision.",
+      "headline": "A useful measure supports a decision.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Ask what action the team would take if a measure moved off track.",
+        "Agree on the definition, owner and update rhythm so everyone reads the same score."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Align",
+          "support": "Connect team measures with company targets.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "See progress",
+          "support": "Predict problems and check actual results.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Test priorities",
+          "support": "Show whether the work delivers its intended outcome.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

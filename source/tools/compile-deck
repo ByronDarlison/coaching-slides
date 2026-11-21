@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Reusable compile-deck command.
+set -euo pipefail
+exec python3 "$(dirname "$0")/compile_deck.py" "$@"

@@ -1,0 +1,142 @@
+{
+  "id": "quarterly-kffm",
+  "artifact": "kffm-review",
+  "seed": "Verified note: kffm (Shannon). Byron, 16-Nov-2026: KFFM deep dive.",
+  "tags": [
+    "quarterly"
+  ],
+  "slides": [
+    {
+      "id": "map",
+      "title": "Is your KFFM still right?",
+      "headline": "Is your KFFM still right?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "If the KFFM is not in Metronome yet, show the Kick Off picture.",
+        "Ask each owner: what do you need to do to turn it green?"
+      ],
+      "checklist": true,
+      "support": "Put your current KFFM on the screen.",
+      "body": [
+        "The 3 to 5 key functions are still the right ones.",
+        "Each function has one owner.",
+        "Each function is rated red, yellow or green."
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "widgets",
+      "title": "Can you count each widget every week?",
+      "headline": "Can you count each widget every week?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Confirm each output widget and input widget. If the team does not yet forecast the company widget week over week, start now."
+      ],
+      "checklist": true,
+      "support": "Work from the end of the flow back to the start.",
+      "body": [
+        "Every hand-off has a named widget.",
+        "Each widget is countable. It is not revenue or cash.",
+        "Its owner controls it and counts it every week."
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "numbers",
+      "title": "Does each critical number tell you the function is working?",
+      "headline": "Does each critical number tell you the function is working?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Focus on a few critical numbers, at most four, on the KFFM."
+      ],
+      "checklist": true,
+      "support": "Look at the number beside each function.",
+      "body": [
+        "The number moves when the work gets better or worse.",
+        "Its owner looks at it every day."
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "days",
+      "title": "What are your real days to cash?",
+      "headline": "What are your real days to cash?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Compare with the days the team estimated last time."
+      ],
+      "support": "Add the days each function really took last quarter.",
+      "body": [
+        "Where did the work wait?",
+        "Which function added the most days?"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "profit-x",
+      "title": "Has a good X emerged?",
+      "headline": "Has a good X emerged?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "It is optional at Q1. If no good X has emerged, leave it blank."
+      ],
+      "support": "Name Profit per X only if a good X has emerged.",
+      "body": [
+        "X is usually a widget from the KFFM.",
+        "In the example, X is a subscription: $300 profit per subscription a year."
+      ],
+      "terms": [
+        {
+          "term": "Profit per X",
+          "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+        }
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "lever",
+      "title": "Which lever moves cash fastest this quarter?",
+      "headline": "Which lever moves cash fastest this quarter?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "quarterly"
+      ],
+      "notes": [
+        "Take the chosen lever into the QHAG as a priority candidate."
+      ],
+      "support": "Pick one lever. It feeds your QHAG priorities.",
+      "body": [
+        "Quantity, conversion, price, timing, capacity or cost.",
+        "Name the function, the widget and the owner."
+      ],
+      "copy_stack": true
+    }
+  ]
+}

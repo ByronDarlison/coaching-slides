@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-cascade",
+  "title": "Metronomics Kickoff: cascade",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "cascade",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:cascade"
+  ]
+}

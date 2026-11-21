@@ -1,0 +1,1151 @@
+{
+  "id": "opening",
+  "artifact": "opening",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "Metronomics Kick Off",
+      "headline": "Metronomics Kick Off",
+      "layout": "title",
+      "group": "Day 1",
+      "notes": [
+        "Two-day workshop for the CEO and leadership team. Establish functional ownership and shared direction before annual and quarterly commitments. This reusable deck needs no company-specific edits."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      },
+      "eyebrow": ""
+    },
+    {
+      "id": "byron",
+      "title": "Byron Darlison",
+      "headline": "Byron Darlison",
+      "layout": "about-timeline",
+      "group": "",
+      "eyebrow": "",
+      "role": "Metronomics Coach",
+      "body": [
+        "I built and sold a technology company after scaling it with the Metronomics operating system.",
+        "Now I coach founders to do in 3 years what took me 33."
+      ],
+      "notes": [
+        "Scroll the timeline on the right. The moment in focus grows its photo or logo.",
+        "Leave it alone for 5 seconds and it tours itself, one moment every 3.5 seconds."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "timeline_label": "Life timeline, scrollable",
+      "timeline": [
+        {
+          "year": 1962,
+          "age": 0,
+          "text": "Born in Australia",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/map-australia.svg",
+              "alt": "Map of Australia"
+            }
+          ]
+        },
+        {
+          "year": 1964,
+          "age": 2,
+          "text": "Moved to Canada. Grew up in Markham.",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/map-canada.svg",
+              "alt": "Map of Canada"
+            }
+          ]
+        },
+        {
+          "year": 1976,
+          "age": 14,
+          "text": "Moved to Mississauga",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/mississauga.svg",
+              "alt": "City of Mississauga logo"
+            }
+          ]
+        },
+        {
+          "year": 1981,
+          "age": 19,
+          "text": "Finished high school with HAIR!",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/highschool1981.jpg",
+              "alt": "Finished high school with HAIR!"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 1981,
+          "age": 19,
+          "text": "Struck out on my own and took a gap year",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-home.jpg",
+              "alt": "A figure sets out from home"
+            }
+          ]
+        },
+        {
+          "year": 1982,
+          "age": 20,
+          "text": "Ryerson, 1982 to 1986: studied business, student union treasurer then vice president, ran the school newspaper",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/ryerson-old.png",
+              "alt": "Ryerson shield"
+            }
+          ]
+        },
+        {
+          "year": 1987,
+          "age": 25,
+          "text": "Travelled in Central America",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/map-central-america.svg",
+              "alt": "Map of Central America"
+            }
+          ]
+        },
+        {
+          "year": 1988,
+          "age": 26,
+          "text": "Ran IT at a computer rental company",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/vernon-computer-rentals.png",
+              "alt": "Vernon Computer Rentals logo"
+            }
+          ]
+        },
+        {
+          "year": 1989,
+          "age": 27,
+          "text": "Married for the first time",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-heart.jpg",
+              "alt": "A heart"
+            }
+          ]
+        },
+        {
+          "year": 1989,
+          "age": 27,
+          "text": "Started a software company that in time became Rise Vision",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/rise-vision.svg",
+              "alt": "Rise Vision logo"
+            }
+          ]
+        },
+        {
+          "year": 1991,
+          "age": 29,
+          "text": "Unfortunately the marriage didn’t work. Divorced.",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-broken.jpg",
+              "alt": "A broken heart"
+            }
+          ]
+        },
+        {
+          "year": 1994,
+          "age": 32,
+          "text": "Met my wife. Got it right the second time.",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/daina.jpg",
+              "alt": "Met my wife. Got it right the second time."
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 1995,
+          "age": 33,
+          "text": "First child born",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/kid-first.jpg",
+              "alt": "First child born"
+            }
+          ]
+        },
+        {
+          "year": 1996,
+          "age": 34,
+          "text": "First attempt to scale the company: raised venture capital",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-up.jpg",
+              "alt": "An arrow climbing"
+            }
+          ]
+        },
+        {
+          "year": 1997,
+          "age": 35,
+          "text": "Second child born",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/kid-second.jpg",
+              "alt": "Second child born"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 1997,
+          "age": 35,
+          "text": "Joined Strategic Coach",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/strategic-coach.png",
+              "alt": "Strategic Coach logo"
+            }
+          ]
+        },
+        {
+          "year": 1997,
+          "age": 35,
+          "text": "Venture capital didn’t scale us. That attempt failed within a year.",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-down.jpg",
+              "alt": "An arrow falling"
+            }
+          ]
+        },
+        {
+          "year": 1997,
+          "age": 35,
+          "text": "Sold the healthcare software business to a Winnipeg company",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-money.jpg",
+              "alt": "Money changing hands"
+            }
+          ]
+        },
+        {
+          "year": 1997,
+          "age": 35,
+          "text": "Kept the trading-floor display software, which became Rise Vision",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/rise-vision.svg",
+              "alt": "Rise Vision logo"
+            }
+          ]
+        },
+        {
+          "year": 1998,
+          "age": 36,
+          "text": "Was meant to run the healthcare company. A disaster. Resigned, wrote off my stake and took a year off.",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-down.jpg",
+              "alt": "An arrow falling"
+            }
+          ]
+        },
+        {
+          "year": 1999,
+          "age": 37,
+          "text": "Turned the display software into its own business",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/rise-vision.svg",
+              "alt": "Rise Vision logo"
+            }
+          ]
+        },
+        {
+          "year": 2000,
+          "age": 38,
+          "text": "Third child born",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/kid-third.jpg",
+              "alt": "Third child born"
+            }
+          ]
+        },
+        {
+          "year": 2000,
+          "age": 38,
+          "text": "Took on a minority partner",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-handshake.jpg",
+              "alt": "Two figures shake hands"
+            }
+          ]
+        },
+        {
+          "year": 2001,
+          "age": 39,
+          "text": "Second attempt to scale: sold 49% of the company to Adaptive Micro Systems, a Milwaukee LED sign maker",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/adaptive.png",
+              "alt": "Adaptive Micro Systems logo"
+            }
+          ]
+        },
+        {
+          "year": 2003,
+          "age": 41,
+          "text": "The partnership didn’t scale us either. Bought back the 49%.",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/adaptive.png",
+              "alt": "Adaptive Micro Systems logo"
+            }
+          ]
+        },
+        {
+          "year": 2004,
+          "age": 42,
+          "text": "Third attempt to scale: hired a president to run the company",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-president.jpg",
+              "alt": "A figure at the head of a table"
+            }
+          ]
+        },
+        {
+          "year": 2005,
+          "age": 43,
+          "text": "Hiring a president failed within a year. There was no system for a president to run.",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-failure.jpg",
+              "alt": "A figure with nothing to run"
+            }
+          ]
+        },
+        {
+          "year": 2008,
+          "age": 46,
+          "text": "Company went fully remote, years before it was standard practice",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-remote.jpg",
+              "alt": "Figures working from separate homes"
+            }
+          ]
+        },
+        {
+          "year": 2008,
+          "age": 46,
+          "text": "Started trail riding",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/trail-riding.jpg",
+              "alt": "Started trail riding"
+            }
+          ]
+        },
+        {
+          "year": 2009,
+          "age": 47,
+          "text": "Camp Wanapitei, 2009 to 2016: all three kids went, and my oldest son did a 52-day Arctic canoe trip in 2013",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/wanapitei.png",
+              "alt": "Camp Wanapitei logo"
+            }
+          ]
+        },
+        {
+          "year": 2009,
+          "age": 47,
+          "text": "Running software development with Scrum",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/scrum-inc.svg",
+              "alt": "Scrum Inc. logo"
+            }
+          ]
+        },
+        {
+          "year": 2009,
+          "age": 47,
+          "text": "Planning with Robert Fritz’s structural tension model",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/robert-fritz.png",
+              "alt": "Robert Fritz logo"
+            }
+          ]
+        },
+        {
+          "year": 2010,
+          "age": 48,
+          "text": "Started ski racing. Way too late in life.",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/skirace-matterhorn.jpg",
+              "alt": "Ski racing"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "age": 53,
+          "text": "My oldest son joined. Became Product Owner, later Head of Marketing, then CRO.",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/rise-vision.svg",
+              "alt": "Rise Vision logo"
+            }
+          ]
+        },
+        {
+          "year": 2016,
+          "age": 54,
+          "text": "Selling to anyone with a screen: over 110 countries and 100 industries",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-screens.jpg",
+              "alt": "Many display screens"
+            }
+          ]
+        },
+        {
+          "year": 2016,
+          "age": 54,
+          "text": "Scrum Inc. training in Boston for me and the team",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/scrum-inc.svg",
+              "alt": "Scrum Inc. logo"
+            }
+          ]
+        },
+        {
+          "year": 2017,
+          "age": 55,
+          "text": "Fourth attempt to scale: tried to implement Scaling Up and Topgrading on our own. Partially successful.",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/scaling-up.svg",
+              "alt": "Scaling Up logo"
+            },
+            {
+              "src": "assets/about-me/logos/topgrading.png",
+              "alt": "Topgrading logo"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "age": 56,
+          "text": "Fifth attempt: gave up doing it on my own, hired a coach and installed Metronomics. This one worked.",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/metronomics.png",
+              "alt": "Metronomics logo"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "age": 56,
+          "text": "Finally got focused: only K-12 schools in North America",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-target.jpg",
+              "alt": "A target with one arrow"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "age": 56,
+          "text": "Canoe trip: Kukagami Lake loop, with my wife",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/kukagami2018.jpg",
+              "alt": "Canoe trip: Kukagami Lake loop, with my wife"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "age": 57,
+          "text": "Took up whitewater canoeing with my wife, after the kids’ years at Camp Wanapitei",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/whitewater.jpg",
+              "alt": "Took up whitewater canoeing with my wife, after the kids’ years at Camp Wanapitei"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "age": 57,
+          "text": "Canoe trip: Algonquin, from Lake Opeongo",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/opeongo2019.jpg",
+              "alt": "Canoe trip: Algonquin, from Lake Opeongo"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "age": 57,
+          "text": "Canoe trip: Temagami, with my wife and friends",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/temagami2019b.jpg",
+              "alt": "Canoe trip: Temagami, with my wife and friends"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "age": 58,
+          "text": "Bought out the minority partner, because we could not agree on a singular customer focus",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-fork.jpg",
+              "alt": "A road splitting in two"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "age": 58,
+          "text": "Joined EO Toronto",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/eo.svg",
+              "alt": "Entrepreneurs’ Organization logo"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "age": 58,
+          "text": "Built a cash reserve of one year of operating expenses",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-coins.jpg",
+              "alt": "A stack of coins"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "age": 58,
+          "text": "Adopted StoryBrand: brandscripts for our one customer",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/storybrand.svg",
+              "alt": "StoryBrand logo"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "age": 58,
+          "text": "Adopted Basecamp’s Shape Up for software development",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/shape-up.svg",
+              "alt": "Shape Up logo"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "age": 59,
+          "text": "Stepped down as CEO and handed day-to-day operations to my COO",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-handoff.jpg",
+              "alt": "A figure handing over a baton"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "age": 59,
+          "text": "Canoe trip: Dumoine",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/dumoine2021.jpg",
+              "alt": "Canoe trip: Dumoine"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "age": 59,
+          "text": "Canoe trip: Algonquin, with my EO forum",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/eo-algonquin2021.jpg",
+              "alt": "Canoe trip: Algonquin, with my EO forum"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2022,
+          "age": 60,
+          "text": "Sold Rise Vision to a global display manufacturer, after profits grew 10x",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/rise-vision.svg",
+              "alt": "Rise Vision logo"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "age": 60,
+          "text": "Took the next 2 years off",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-pause.jpg",
+              "alt": "A pause sign"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "age": 60,
+          "text": "Canoe trip: Upper Missinaibi",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/missinaibi2022.jpg",
+              "alt": "Canoe trip: Upper Missinaibi"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "age": 60,
+          "text": "Canoe trip: Petawawa with family",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/petawawa2022.jpg",
+              "alt": "Canoe trip: Petawawa with family"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "age": 60,
+          "text": "Canoe trip: French River, with my EO forum",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/french-forum2022.jpg",
+              "alt": "Canoe trip: French River, with my EO forum"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "age": 61,
+          "text": "Took up gravel biking",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/gravel2023.jpg",
+              "alt": "Took up gravel biking"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "age": 61,
+          "text": "Canoe trip: Keele River, Northwest Territories",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/keele2023.jpg",
+              "alt": "Canoe trip: Keele River, Northwest Territories"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2023,
+          "age": 61,
+          "text": "Canoe trip: Lower Madawaska, with family",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/madawaska2023.jpg",
+              "alt": "Canoe trip: Lower Madawaska, with family"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "age": 62,
+          "text": "Did not like retirement. Started coaching founders and the Entrepreneurs’ Organization Accelerator program.",
+          "kind": "illustration",
+          "media": [
+            {
+              "src": "assets/about-me/logos/gen-hammock-empty.jpg",
+              "alt": "An empty hammock between two trees"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "age": 62,
+          "text": "My oldest son married",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/wedding2024.jpg",
+              "alt": "My oldest son married"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2024,
+          "age": 62,
+          "text": "Took up golf. What a disaster.",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/golf2.jpg",
+              "alt": "Took up golf. What a disaster."
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2024,
+          "age": 62,
+          "text": "Canoe trip: Snake River, Yukon",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/snake2.jpg",
+              "alt": "Canoe trip: Snake River, Yukon"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2026,
+          "age": 64,
+          "text": "Metronomics Coach",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/metronomics.png",
+              "alt": "Metronomics logo"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "age": 64,
+          "text": "EO Toronto Accelerator Coach and Mentorship Chair",
+          "kind": "logo",
+          "media": [
+            {
+              "src": "assets/about-me/logos/eo.svg",
+              "alt": "Entrepreneurs’ Organization logo"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "age": 64,
+          "text": "Canoe trip: Temagami fly-in with my wife",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/temagami2026-flyin.jpg",
+              "alt": "Canoe trip: Temagami fly-in with my wife"
+            }
+          ],
+          "portrait": true
+        },
+        {
+          "year": 2026,
+          "age": 64,
+          "text": "Went to the home of golf in Scotland. Still a disaster.",
+          "kind": "photo",
+          "media": [
+            {
+              "src": "assets/about-me/me/scotland2026.jpg",
+              "alt": "Went to the home of golf in Scotland. Still a disaster."
+            }
+          ]
+        }
+      ],
+      "timeline_title": "64 years: turning points and favorite moments"
+    },
+    {
+      "id": "scaling-tries",
+      "title": "I tried to scale five times. Only one worked.",
+      "headline": "I tried to scale five times.",
+      "headline_accent": "Only one worked.",
+      "layout": "comp-figure",
+      "group": "",
+      "eyebrow": "",
+      "figure": {
+        "src": "assets/about-me/cash-shape.svg",
+        "alt": "Cash from 1989 to 2022: flat with small bumps through four attempts to scale, then a steep climb after the fifth, in 2018, ending at a 270 times return on coaching"
+      },
+      "attempts": [
+        {
+          "year": "1996",
+          "heading": "Raised venture capital",
+          "outcome": "Failed in a year",
+          "support": "I thought money was the problem."
+        },
+        {
+          "year": "2001",
+          "heading": "Sold 49% to a bigger company",
+          "outcome": "Bought back in 2003",
+          "support": "I thought they would know how."
+        },
+        {
+          "year": "2004",
+          "heading": "Hired a president",
+          "outcome": "Failed in a year",
+          "support": "I thought someone else could do it better."
+        },
+        {
+          "year": "2017",
+          "heading": "Tried to self-implement Scaling Up",
+          "outcome": "Partially successful",
+          "support": "I thought I could do it on my own."
+        },
+        {
+          "year": "2018",
+          "heading": "Hired a coach. Installed Metronomics.",
+          "outcome": "Profits up 10x. Sold in 2022.",
+          "win": true,
+          "support": "I stopped doing it alone."
+        }
+      ],
+      "notes": [
+        "Four tries on my own fell short. The fifth added a coach, a system and one customer.",
+        "1996: more money, same founder doing everything. 2001: an LED sign maker took a stake, same problem, no system. 2004: a new leader with no system to run. 2017: Scaling Up and Topgrading without a coach. 2018: one customer, K-12 schools in North America, and a year of cash in the bank by 2020.",
+        "Every try without a system made a bump, then fell back. The line only turned when we installed the system and picked one customer.",
+        "270x: the increase in enterprise value from 2018 to the sale, divided by everything I paid my coach. It includes the two and a half years after the formal engagement ended, while the system kept running."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ]
+    },
+    {
+      "id": "good-news",
+      "title": "Share professional good news.",
+      "headline": "Share professional good news.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Ask everyone for one piece of good news. Keep each contribution to 5 to 10 seconds. Coach models the pace.",
+        "At the Kick Off, use professional good news on Day 1 and personal good news on Day 2. At a quarterly, use professional good news.",
+        "Build positive connection and recognize progress. Explain the purpose before the round."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/cohesive-open.png",
+        "alt": "Simple grey figures share positive news around a table."
+      },
+      "eyebrow": ""
+    },
+    {
+      "id": "introductions",
+      "title": "Introduce yourself.",
+      "headline": "Introduce yourself.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Go around the team. Surface different interpretations without trying to solve the Function Chart yet."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Time here",
+          "support": "How long have you been with the company?",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Function",
+          "support": "What is your functional role?",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Accountability",
+          "support": "What is the #1 thing you are accountable for?",
+          "mark": "action"
+        },
+        {
+          "role": "04",
+          "heading": "Success",
+          "support": "How do you measure success in your role numerically?",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "cohesive",
+      "title": "Tell me about yourself.",
+      "headline": "Tell me about yourself.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Coach shares first, then CEO, then the team. Invite people to share only what they are comfortable sharing. Allow room for listening."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Where?",
+          "support": "Where were you born?",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Family",
+          "support": "What number child are you, out of how many?",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "A memory",
+          "support": "Describe a memorable event from before age 12.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "engagement",
+      "title": "Today, let’s:",
+      "headline": "Today, let’s:",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Engage",
+          "heading": "Be present",
+          "support": "Discuss, collaborate and listen.",
+          "mark": "structure"
+        },
+        {
+          "role": "Challenge",
+          "heading": "Challenge yourself and each other",
+          "support": "Bring the difficult facts forward.",
+          "mark": "structure"
+        },
+        {
+          "role": "Trust",
+          "heading": "No blame. No shame.",
+          "support": "Make it safe to speak honestly.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "mirror",
+      "title": "Survey review",
+      "headline": "Survey review",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "panels": [
+        {
+          "role": "Agree",
+          "heading": "Where you agree",
+          "support": "Confirm it and move on.",
+          "mark": "action"
+        },
+        {
+          "role": "Differ",
+          "heading": "Where you differ",
+          "support": "Hear each view. Decide later in the agenda.",
+          "mark": "structure"
+        },
+        {
+          "role": "Missing",
+          "heading": "What no one said",
+          "support": "Name the gap.",
+          "mark": "gap"
+        }
+      ],
+      "arrows": false,
+      "notes": [
+        "Everyone read the compiled survey answers 2 to 5 days ago. Hand them back now, printed or on the board, question by question, everyone’s words side by side.",
+        "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate. Park each difference on the board against the agenda block that will resolve it, such as the Function Chart, the KFFM, purpose or the targets.",
+        "Allow about 15 minutes. Today is for decisions, not data gathering."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ]
+    },
+    {
+      "id": "outcome",
+      "title": "What would make these 2 days valuable?",
+      "headline": "What would make these 2 days valuable?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Ask each person to write an answer on a sticky note and share it. An example answer: team clarity and commitment. Agree on the outcomes. Return to these at the close. Allow 10 minutes."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "Write your answer, then share it with the team.",
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/two-days-sticky.jpg",
+        "alt": "Byron’s sticky note, handwritten with: Team clarity and commitment."
+      }
+    },
+    {
+      "id": "two-days",
+      "title": "Agree on the direction. Then commit to the work.",
+      "headline": "Agree on the direction. Then commit to the work.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "This is a working session. Protect time for the team to make decisions and capture its own plan.",
+        "Metronomics grows the team and the plan together: a shared playbook, a visible scoreboard and an outside coach."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Day 1",
+          "heading": "Shared direction",
+          "support": "Functions, purpose, values, ambition and the three-year plan.",
+          "mark": "structure"
+        },
+        {
+          "role": "Day 2",
+          "heading": "Shared commitments",
+          "support": "Annual and quarterly priorities, individual ownership and meeting rhythm.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Copy a compiled Metronomics deck into a local coaching-slides checkout.
+# Uses ordinary filesystem copy. No extra credentials.
+set -euo pipefail
+exec python3 "$(dirname "$0")/compile_deck.py" publish "$@"

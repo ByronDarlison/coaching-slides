@@ -1,0 +1,323 @@
+{
+  "id": "q1-cash",
+  "artifact": "cash-forecast",
+  "seed": "Byron Darlison, Cash! Who Owns the Forecast? (darlison.com, 24 Aug 2026), and his EOA Cash Learning Day deck; Shannon Byrne Susko, CASH: Profit and Loss Cash Forecast, Metronomics.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "objective",
+      "title": "A widget-based forecast shows where your cash is heading.",
+      "headline": "A widget-based forecast shows where your cash is heading.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "support": "Your budget and statements look back. This forecast looks ahead:",
+      "body": [
+        "Cash in the bank, month by month, for the year.",
+        "Built from the KFFM widgets that drive cash, each owned by a leader.",
+        "A missed widget shows up months before the bank balance does."
+      ],
+      "notes": [
+        "This quarter, finance builds the annual forecast from the KFFM widgets.",
+        "Next: why a budget can’t do this, how widgets drive cash, who owns what, and reading a miss.",
+        "Then the team agrees how to build it."
+      ],
+      "artwork": {
+        "src": "assets/cash-rolling.svg",
+        "alt": "A small copy of the cash chart: actual cash for January and February, then the approved and rolling forecasts to December."
+      },
+      "art_side": true
+    },
+    {
+      "id": "why",
+      "title": "A budget can’t tell you where cash is heading.",
+      "headline": "A budget can’t tell you where cash is heading.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "panels": [
+        {
+          "role": "Budget",
+          "heading": "A wish with a number on it",
+          "support": "Last year plus a growth target, spread over 12 months. It rarely reflects how work and money move.",
+          "mark": "gap"
+        },
+        {
+          "role": "Financial statements",
+          "heading": "Two to ten weeks late",
+          "support": "They confirm what already happened, too late to change it. A miss could have a dozen causes.",
+          "mark": "gap"
+        },
+        {
+          "role": "Finance alone",
+          "heading": "Answers for cash it can’t move",
+          "support": "Leads, closes, activations and collections move cash. The leaders own that work.",
+          "mark": "gap"
+        }
+      ],
+      "arrows": false,
+      "notes": [
+        "Ask: who in this room could tell you today what cash will be in the bank in December?",
+        "The person accountable for cash and the people doing the work that produces it are usually different people. That is why cash problems surface late and land on the wrong desk."
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "Forecast cash from the widgets you own.",
+      "headline": "Forecast cash from the widgets you own.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "This is the KFFM the team has worked on all day, with January’s numbers from the QHAG.",
+        "Every widget answers two questions: how much cash, and when it arrives. Volumes and rates set the amount. Days set the timing.",
+        "Finance turns the widgets into the model: revenue, cost of goods and expenses, each in the month it happens.",
+        "Then finance adds the cash no widget drives: hires by role and month, tax, equipment, debt and distributions.",
+        "Growth arrives only through a widget someone owns. It pays its way in widgets, or it waits."
+      ],
+      "artwork": {
+        "src": "assets/kffm-forecast.svg",
+        "alt": "The KFFM example from the Kick Off, with the supporting functions dimmed. Subscription leads flow to Marketing, Chris, 14 days; Sales, Andrew, 21 days; Operations, Jen, 7 days; Finance, Allison, 30 days to collect; then Cash. The days and the time-to-cash sticky, 72 days, are highlighted. A callout reads: One month of widgets. 650 subscription leads in January become 65 new subscriptions, worth $16,250 a month, collected about 72 days later, in March."
+      },
+      "art_full": true
+    },
+    {
+      "id": "owners",
+      "title": "Who owns the forecast? Nobody owns all of it.",
+      "headline": "Who owns the forecast? Nobody owns all of it.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "panels": [
+        {
+          "role": "Finance",
+          "heading": "Owns the model",
+          "support": "Allison builds it and keeps it honest. She answers for cash collected and for how accurate the forecast is.",
+          "mark": "structure"
+        },
+        {
+          "role": "Each leader",
+          "heading": "Owns their assumptions",
+          "support": "Chris owns the leads, Andrew the closes, Jen the activations. Each checks their number every week.",
+          "mark": "action"
+        },
+        {
+          "role": "CEO",
+          "heading": "Owns the total",
+          "support": "Cash is every trade-off between growth and profit. Pat makes those trade-offs, so Pat owns the total.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "notes": [
+        "In a small company, finance may be the CEO and a bookkeeper. The role matters, not the title.",
+        "When the forecast is wrong, the team can see which assumption moved and who owns it. Fix it with that owner, that week."
+      ]
+    },
+    {
+      "id": "columns",
+      "title": "Every month has three numbers.",
+      "headline": "Every month has three numbers.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Approved is the plan the team locks at annual planning. It does not change during the year.",
+        "Actual replaces the plan as each month closes. Finance enters it.",
+        "The model calculates Rolling: Actual to date plus forecasted Approved. Any difference carries forward into every later month.",
+        "Never rewrite Approved mid-year. The gap between Rolling and Approved is information, not embarrassment."
+      ],
+      "artwork": {
+        "src": "assets/cash-rolling.svg",
+        "alt": "Cash in the bank by month for the subscription company, January to December, $0.8 to $1.6 million. January and February are closed and shown in green as Actual. The Approved plan, a dashed blue line, eases from $1.1 million in January to $1.0 million in March, then rises to $1.5 million in December. Rolling, in orange, is Actual to date plus forecasted Approved, finishing near $1.19 million in December."
+      },
+      "art_full": true
+    },
+    {
+      "id": "miss",
+      "title": "A missed widget shows the cash gap months early.",
+      "headline": "A missed widget shows the cash gap months early.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "February’s bank balance is on plan. Andrew’s widget is not: 42 new subscriptions against 70.",
+        "The weekly scoreboard caught it within days. At month-end, Rolling shows what it does to December if nothing changes.",
+        "The monthly review looks forward only. Which widget started the gap? Who owns it? What changes now, while there is time for it to work?",
+        "This is why the QHAG’s #2 priority, Andrew’s first account executive, matters to cash."
+      ],
+      "artwork": {
+        "src": "assets/cash-rolling-miss.svg",
+        "alt": "The same cash chart, with Approved dimmed. February is circled: 42 new subscriptions, not 70. Close rate 15%, not 25%. If it holds: $315,000 less cash by December. A line marks the gap between Approved at $1.5 million and Rolling at about $1.19 million in December."
+      },
+      "art_full": true
+    },
+    {
+      "id": "situation",
+      "title": "A red critical number triggers a Situation Report.",
+      "headline": "A red critical number triggers a Situation Report.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "support": "The owner writes it the week the number turns red. Andrew’s, for February:",
+      "panels": [
+        {
+          "role": "Situation",
+          "heading": "Close rate 15%, target 25%",
+          "support": "New subscriptions are running well behind plan.",
+          "mark": "gap"
+        },
+        {
+          "role": "Cause",
+          "heading": "Andrew runs every demo",
+          "support": "Demos wait a week, and qualified leads go cold.",
+          "mark": "structure"
+        },
+        {
+          "role": "Correction",
+          "heading": "Demos within two days",
+          "support": "Andrew blocks demo time daily until the first account executive starts.",
+          "mark": "action"
+        },
+        {
+          "role": "Follow-up",
+          "heading": "Report each week",
+          "support": "Andrew reports the close rate weekly until it is back at 25%.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "notes": [
+        "The weekly scoreboard caught the red close rate early in February. The team did not change Rolling that week.",
+        "Situation, Cause, Correction, Follow-up. One short report, from the widget’s owner.",
+        "The cause points straight at the QHAG’s #2 priority: Andrew’s first account executive."
+      ]
+    },
+    {
+      "id": "act",
+      "title": "Act on the widget while there is time for it to work.",
+      "headline": "Act on the widget while there is time for it to work.",
+      "layout": "comp-causal",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "panels": [
+        {
+          "role": "Weekly",
+          "heading": "Caught early",
+          "support": "The scoreboard shows the close rate red in February.",
+          "mark": "gap"
+        },
+        {
+          "role": "Same week",
+          "heading": "Corrected",
+          "support": "Andrew fixes the cause: demos within two days. The forecast stays as it is.",
+          "mark": "action"
+        },
+        {
+          "role": "Month-end",
+          "heading": "Rolling updated",
+          "support": "The monthly review checks the widget, then reads where cash is heading.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": true,
+      "notes": [
+        "Tracking did not fix the close rate. Action did.",
+        "If the close rate recovers, Rolling moves back toward Approved. If it doesn’t, the team decides early: slow a hire, or find cash, months before December.",
+        "That is the point of the system: act before the bank balance forces the decision."
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build this year’s forecast from your widgets.",
+      "headline": "Build this year’s forecast from your widgets.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Start from the KFFM",
+          "support": "Quantities, conversion rates, price and timing in days, from this year’s 1HAG numbers.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Leaders commit",
+          "support": "Each leader owns the assumptions for their widgets and a weekly target for this quarter.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Finance builds it",
+          "support": "Add the widgets to this year’s budget, or start from the template. Add the cash no widget drives.",
+          "mark": "structure"
+        },
+        {
+          "role": "04",
+          "heading": "Review it monthly",
+          "support": "Enter Actual, read Rolling, then decide what changes now.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "notes": [
+        "At the Kick Off, the finance leader added the primary widgets to this year’s forecast. Ask how that went.",
+        "If there is no budget model, use the 12-month template. Extend it to 36 months once the monthly review runs well.",
+        "Weekly targets come from the QHAG the team set today. The scoreboard shows them each week.",
+        "Build the review into a monthly meeting you already hold. A meeting with discipline makes the forecast stick. A forecast cannot make a meeting stick.",
+        "Homework: the finance leader builds the model with each leader’s assumptions."
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "Start from the worked examples.",
+      "headline": "Start from the worked examples.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Scan to open each template’s Example tab. In Google Sheets, choose File, then Make a copy.",
+        "Finance builds this year’s forecast in the 12-month template. The 36-month template extends it to three years."
+      ],
+      "artwork": {
+        "src": "assets/cash-forecast-examples.svg",
+        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the three-year view: opens the Example tab of the 36-month template."
+      },
+      "art_full": true,
+      "art_fit": true
+    }
+  ]
+}

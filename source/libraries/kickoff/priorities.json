@@ -1,0 +1,133 @@
+{
+  "id": "priorities",
+  "artifact": "priorities",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "quality",
+      "title": "Pick the priorities that contribute most to success.",
+      "headline": "Pick the priorities that contribute most to success.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Ask these six questions of every candidate. Keep the few that contribute most: ideally 3, up to 5. A routine task list is not a set of company priorities.",
+        "Builds: fix the cause, not the symptom. A quarterly priority advances a 1HAG priority.",
+        "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
+        "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
+        "Risk: ask how badly we could mess this up.",
+        "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. The next slide shows why done and success are different dates."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Builds",
+          "heading": "What does it build or move?",
+          "support": "A 3HAG capability, or a KFFM lever that brings cash in faster.",
+          "mark": "structure"
+        },
+        {
+          "role": "Impact",
+          "heading": "How much will it move a critical number?",
+          "support": "Name the number and the target. If it barely moves, think twice.",
+          "mark": "structure"
+        },
+        {
+          "role": "Speed",
+          "heading": "How soon will we see it?",
+          "support": "Name the date the measure of success will be achieved by. If it takes a long time to show, think twice.",
+          "mark": "structure"
+        },
+        {
+          "role": "Owner",
+          "heading": "Who can own it and succeed?",
+          "support": "One person, with the capacity and the skills to deliver it.",
+          "mark": "action"
+        },
+        {
+          "role": "Cost",
+          "heading": "What will it cost?",
+          "support": "Money, time and attention. Choose the most impact for the least cost.",
+          "mark": "action"
+        },
+        {
+          "role": "Risk",
+          "heading": "What could go wrong?",
+          "support": "Think through the second-order consequences.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "four-questions",
+      "title": "Test each priority with four questions.",
+      "headline": "Test each priority with four questions.",
+      "layout": "comp-decision",
+      "group": "",
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "01",
+          "heading": "What problem are we solving?",
+          "support": "Find the cause, not the symptom.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "How do we measure success?",
+          "support": "An outcome, not a task. Preferably a critical number the company already watches.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "How badly could we mess this up?",
+          "support": "Think through the second-order consequences.",
+          "mark": "structure"
+        },
+        {
+          "role": "04",
+          "heading": "By when will we know if it worked?",
+          "support": "Set the achieved-by date now. If it takes a year to find out, it is not the first choice.",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "Pick the priority that moves a critical number the most, for the lowest cost."
+      ]
+    },
+    {
+      "id": "worked-priority",
+      "title": "Done is not the same as success.",
+      "headline": "Done is not the same as success.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "The owner commits to the done date. The achieved-by date is when the number must have moved.",
+        "Hiring is done when the people are selling. It succeeds when new MRR moves.",
+        "If the number has not moved by then, find out why and fix the cause."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/priority-done-vs-success.svg",
+        "alt": "Annual priority #2: hire and ramp 2 account executives. Owner Andrew. It builds a sales team that adds new MRR every month and moves the Sales critical number, new MRR. Done by September 30, 2027: both hired, trained and selling. Success achieved by December 31, 2027: new MRR at or above $50K a month. The priority closes on the achieved-by date, not the done date."
+      },
+      "art_full": true
+    }
+  ]
+}

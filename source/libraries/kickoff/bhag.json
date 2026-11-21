@@ -1,0 +1,207 @@
+{
+  "id": "bhag",
+  "artifact": "bhag",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "path-bhag",
+      "title": "From who we are to where we’re going.",
+      "headline": "From who we are to where we’re going.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/day1-path-bhag.svg",
+        "alt": "Day 1 path: Functions, KFFM, Purpose and Values done. BHAG next, then 3HAG."
+      },
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "We know why we exist and how we behave. Now: how far do we want to go, and what does the next three years look like?"
+      ]
+    },
+    {
+      "id": "ladder",
+      "title": "From your BHAG to this quarter’s priorities.",
+      "headline": "From your BHAG to this quarter’s priorities.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "art_full": true,
+      "artwork": {
+        "src": "assets/hag-ladder-anim.svg",
+        "alt": "Animated cascade, dimmed except the active level. BHAG lights up, then a marker moves down to 3HAG, 1HAG, QHAG and Individual Quarterly Priorities in turn. At the end every level lights together: each level is built from the one above it and directs the one below.",
+        "replay": true
+      },
+      "notes": [
+        "This is where the two days are going. Today: BHAG and 3HAG. Tomorrow: 1HAG, QHAG and each leader’s priorities.",
+        "Each level is built from the one above it and directs the one below."
+      ]
+    },
+    {
+      "id": "definition",
+      "title": "BHAG: Big Hairy Audacious Goal",
+      "headline": "BHAG: Big Hairy Audacious Goal",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "BHAG: Big Hairy Audacious Goal (Jim Collins).",
+        "It should need the company to grow well beyond what it can do today.",
+        "The 3HAG carries the numbers. The BHAG carries the ambition."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "Your company’s ambition for the next 10 to 30 years.",
+      "body": [
+        "Big enough to stretch everyone.",
+        "Tied to why you exist.",
+        "Words only. No numbers, no dates."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/bhag-mountain.jpg",
+        "alt": "Three people look up at a huge mountain rising above the clouds, a green flag at its summit."
+      },
+      "art_side": true
+    },
+    {
+      "id": "examples",
+      "title": "BHAGs that worked.",
+      "headline": "BHAGs that worked.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "None has a number or a date. Each one you can picture.",
+        "Ask: which one would you get out of bed for? Why?",
+        "Historical statements, not current company goals."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Microsoft",
+          "heading": "“A computer on every desk and in every home.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "Ford",
+          "heading": "“Democratize the automobile.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "Nike",
+          "heading": "“Crush Adidas.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "Paradata (Shannon’s company)",
+          "heading": "“Leading Global Payment Service Provider.”",
+          "support": "",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "ambition",
+      "title": "What is your BHAG?",
+      "headline": "What is your BHAG?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Everyone writes before anyone reads theirs out.",
+        "No numbers, no dates. Wrong but aligned beats no BHAG."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "Write it in one sentence.",
+      "body": [
+        "Share, discuss, then agree on a good-enough version."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/bhag-mountain-yours.svg",
+        "alt": "The BHAG mountain with its summit flag. Beside the flag: BHAG. Write it in one sentence. Share, discuss, then agree on a good-enough version."
+      },
+      "art_full": true
+    },
+    {
+      "id": "test",
+      "title": "Is the ambition clear, connected and exciting?",
+      "headline": "Is the ambition clear, connected and exciting?",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Use Jim Collins’s tests as presented in Shannon’s source. Distinguish the 10 to 30 year horizon from this specific 25-year test.",
+        "Test leader enthusiasm separately from wider-team enthusiasm.",
+        "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
+        "At a quarterly, change only what fails or is no longer true."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Clear and compelling?",
+          "support": "Can people understand the ambition?",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Connected to purpose?",
+          "support": "Does it express why you exist?",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Can we recognize success?",
+          "support": "Could you tell whether you had achieved it in 25 years?",
+          "mark": "structure"
+        },
+        {
+          "role": "04",
+          "heading": "Exciting to you?",
+          "support": "Does it create energy among the leaders?",
+          "mark": "structure"
+        },
+        {
+          "role": "05",
+          "heading": "Exciting to the wider team?",
+          "support": "Would others want to pursue it?",
+          "mark": "structure"
+        },
+        {
+          "role": "06",
+          "heading": "A big step in capability?",
+          "support": "What would you need to become able to do?",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "follow-through",
+  "artifact": "follow-through",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "plan-ready",
+      "title": "Leave with one shared plan.",
+      "headline": "Leave with one shared plan.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Check that the financial and operating targets reconcile across the three-year, annual and quarterly plans.",
+        "Confirm every commitment and metric has an owner. Everything is on the board. Entering it in Metronome is homework.",
+        "Record the widget-based company metric and its definition. Keep the scoreboard accessible to the team."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Accountability",
+          "heading": "Function Chart + KFFM",
+          "support": "Keep the maps, owners, handoffs and measures.",
+          "mark": "structure"
+        },
+        {
+          "role": "Direction",
+          "heading": "Purpose, values and ambition",
+          "support": "Capture the agreed purpose, values and BHAG.",
+          "mark": "structure"
+        },
+        {
+          "role": "Plan",
+          "heading": "3HAG, 1HAG and QHAG",
+          "support": "Targets with owners, 3HAG capabilities, and priorities with a done-by date and a measure of success.",
+          "mark": "structure"
+        },
+        {
+          "role": "Ownership",
+          "heading": "Individual commitments",
+          "support": "Each person’s critical number, priorities and professional development.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "outcomes-check",
+      "title": "Did we get what we came for?",
+      "headline": "Did we get what we came for?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Read back the outcomes the team agreed at the start.",
+        "For each one, ask for a show of hands: answered, partly or still open.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/two-days-sticky-checked.svg",
+        "alt": "Byron’s sticky note from the start of Day 1, handwritten with: Team clarity and commitment, now with a large green check mark beside it."
+      }
+    },
+    {
+      "id": "next-steps",
+      "title": "What is the homework?",
+      "headline": "What is the homework?",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Circle’s Kick Off guidance also assigns CEO/coach preparation: team assessment, Head of Company scorecard preparation and review before the next session. Confirm these privately with the CEO. Add any outcomes still open from the previous check, with owners.",
+        "Agree on an owner and completion date for each follow-through action. Confirm when the team will review completion.",
+        "In Metronome: Core Purpose, Core Values, BHAG, 3HAG, 1HAG, QHAG and individual priorities; each leader adds the priorities they own; the widget-based company metric, if defined; the Team View, built from the function chart.",
+        "Finance leader: add the primary widgets to this year’s forecast (Shannon’s Kick Off company homework).",
+        "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area. Review completion at the next agreed meeting."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Metronome",
+          "heading": "Enter the plan",
+          "support": "The whole plan, each leader’s critical number and priorities, and the Team View from the function chart.",
+          "mark": "structure"
+        },
+        {
+          "role": "Finance",
+          "heading": "Widgets in the forecast",
+          "support": "Add the primary widgets to this year’s forecast.",
+          "mark": "structure"
+        },
+        {
+          "role": "Meetings",
+          "heading": "Messages and huddles",
+          "support": "Share the 3 messages with your team the day after. Run the first daily huddle.",
+          "mark": "structure"
+        },
+        {
+          "role": "Before Q1",
+          "heading": "Prepare",
+          "support": "Read The 3HAG Way. Complete the Q1 prep survey.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

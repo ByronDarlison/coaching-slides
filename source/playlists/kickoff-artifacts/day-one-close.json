@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-day-one-close",
+  "title": "Metronomics Kickoff: day one close",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "day one close",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:day-one-close"
+  ]
+}

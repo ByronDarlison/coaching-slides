@@ -1,0 +1,72 @@
+{
+  "id": "q1-close",
+  "artifact": "q1-homework",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "homework",
+      "title": "What is the homework?",
+      "headline": "What is the homework?",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Also: share the 3 key messages with your team the day after. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
+        "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area."
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Metronome",
+          "heading": "Update the plan",
+          "support": "3HAG, 1HAG, QHAG and priorities. Each leader adds their critical number and priorities.",
+          "mark": "structure"
+        },
+        {
+          "role": "Scorecards",
+          "heading": "Start with the Head of Company",
+          "support": "Create the function scorecards, Head of Company first.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategy and cash",
+          "heading": "Market Map and worksheet",
+          "support": "Add the Market Map to the War Room in Metronome. Finance creates the widget worksheet.",
+          "mark": "structure"
+        },
+        {
+          "role": "Before Q2",
+          "heading": "Prepare",
+          "support": "Read The Four Obsessions of an Extraordinary Executive. Do StrengthsFinder 2.0. Complete the prep survey.",
+          "mark": "structure"
+        }
+      ]
+    },
+    {
+      "id": "outcomes-check",
+      "title": "Did we get what we came for?",
+      "headline": "Did we get what we came for?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Read back the outcomes the team agreed at the start.",
+        "For each one, ask for a show of hands: answered, partly or still open.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+      ],
+      "tags": [
+        "q1"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/q1-sticky-checked.svg",
+        "alt": "Byron’s sticky note from the start of the day, handwritten with: Functional clarity with team accountability, now with a large green check mark beside it."
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "kickoff",
+  "title": "",
+  "sidebar_title": "",
+  "sidebar_blurb": "",
+  "sidebar_help": "Arrow keys move. Press N for notes. Press F for full screen.",
+  "description": "Single empty template unit. No session titles.",
+  "stage": "kickoff",
+  "seed": "shared/deck empty shell template",
+  "units": [
+    "blank-template"
+  ]
+}

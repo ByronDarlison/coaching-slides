@@ -1,0 +1,75 @@
+{
+  "id": "q1-workstyles",
+  "artifact": "workstyles",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "styles",
+      "title": "Four workstyles. No right or wrong.",
+      "headline": "Four workstyles. No right or wrong.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "This is the cohesive exercise for the day. The aim is to work well with each style, not to label anyone.",
+        "Allow about 25 minutes for both slides."
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Driver",
+          "heading": "Action oriented",
+          "support": "Decisive, practical, efficient.",
+          "mark": "structure"
+        },
+        {
+          "role": "Expressive",
+          "heading": "Intuition oriented",
+          "support": "Enthusiastic, inspiring, confident.",
+          "mark": "structure"
+        },
+        {
+          "role": "Amiable",
+          "heading": "Relationship oriented",
+          "support": "Patient, dependable, empathetic.",
+          "mark": "structure"
+        },
+        {
+          "role": "Analytical",
+          "heading": "Thinking oriented",
+          "support": "Orderly, persistent, cautious.",
+          "mark": "structure"
+        }
+      ]
+    },
+    {
+      "id": "exercise",
+      "title": "What is your workstyle?",
+      "headline": "What is your workstyle?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Print one worksheet per leader: Shannon’s Professional Workstyles worksheet, stored in coaching-references downloads.",
+        "Each leader fills in Team Member, Workstyle and Work With Me By.",
+        "Then talk about how to work well with each style. Keep it light. There is no right or wrong style."
+      ],
+      "copy_stack": true,
+      "support": "Complete the Professional Workstyles worksheet. In each set of four words, pick the one that fits how you are at work.",
+      "body": [
+        "Count your a, b, c and d answers. Your highest total is your style.",
+        "Share your style, then how others get the best from you.",
+        "Write it under Work With Me By."
+      ]
+    }
+  ]
+}

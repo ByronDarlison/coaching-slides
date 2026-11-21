@@ -1,0 +1,156 @@
+{
+  "id": "individual",
+  "artifact": "individual",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "definition",
+      "title": "Priorities: Individual Quarterly Priorities",
+      "headline": "Priorities: Individual Quarterly Priorities",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Individual priorities turn the QHAG into each person’s commitments for the quarter.",
+        "This is the last step of the cascade: every priority traces back to the BHAG."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "support": "Each person’s step toward the QHAG.",
+      "body": [
+        "Commit to the few priorities that deliver the QHAG. Each has an owner, a done-by date and a measure of success."
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/hag-ladder-at-priorities.svg",
+        "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. Priorities is highlighted: this is where we are."
+      },
+      "art_side": true
+    },
+    {
+      "id": "my-priorities",
+      "title": "What are your priorities for the quarter?",
+      "headline": "What are your priorities for the quarter?",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Start with the owner of company priority #1, then the other company-priority owners.",
+        "Each owner places that commitment first in their individual plan. Add other aligned work and a development commitment.",
+        "Allow up to five work priorities and one development priority. Protect enough time for real discussion.",
+        "Include every company priority you own. Do not drop one because you own several.",
+        "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
+        "Run the six questions from the “Pick the priorities that contribute most to success” slide on each individual priority. Hover over “six questions” to show them.",
+        "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Listen for widgets. Don’t make a big deal of it; one is enough.",
+        "At a quarterly, start from the critical number you named for your function on the Team View.",
+        "At a quarterly, list your open priorities from last quarter first. They stay until their number has moved."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Measure",
+          "heading": "Critical number",
+          "support": "One number you own in your function and look at every day.",
+          "mark": "structure"
+        },
+        {
+          "role": "Commitment",
+          "heading": "Ideally 3, up to 5 work priorities",
+          "support": "If you own a company priority, it goes first. Test each with the six questions. Each gets a done-by date and a measure of success.",
+          "mark": "action"
+        },
+        {
+          "role": "Development",
+          "heading": "Professional development",
+          "support": "Add a skill or behavior to develop, beyond the 5 work priorities.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": "",
+      "terms": [
+        {
+          "term": "six questions",
+          "tip": [
+            "What does it build or move?",
+            "How much will it move a critical number?",
+            "How soon will we see it?",
+            "Who can own it and succeed?",
+            "What will it cost?",
+            "What could go wrong?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-back",
+      "title": "Read your commitments to the team.",
+      "headline": "Read your commitments to the team.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Each person reads their critical number, then each priority with its done-by date, measure and achieved-by date, then their professional development.",
+        "Peers ask about missing work, dependencies and assumed handoffs. Resolve gaps and overlaps.",
+        "Challenge whether the commitments fit the quarter’s capacity. This exercise can take an hour."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/team-ownership.png",
+        "alt": "A leader presents commitments while peers review the shared plan."
+      },
+      "eyebrow": "",
+      "body": [
+        "The owner of company priority #1 goes first.",
+        "Read your critical number, priorities and professional development.",
+        "Peers ask: can you get all that done?"
+      ],
+      "art_side": true
+    },
+    {
+      "id": "plan-check",
+      "title": "Does your plan pass?",
+      "headline": "Does your plan pass?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "body": [
+        "Every number and priority has one owner with capacity.",
+        "The 1HAG, the QHAG and each person have ideally 3, up to 5 priorities.",
+        "Every priority has a done-by date and a measure of success.",
+        "Each 1HAG priority builds a 3HAG capability or moves a KFFM lever.",
+        "Each QHAG priority advances a 1HAG priority.",
+        "Each individual priority supports a QHAG priority or the owner’s critical number.",
+        "Each priority moves its number enough, and soon enough to see.",
+        "The 1HAG targets reach the 3HAG, and the QHAG targets keep the 1HAG on track.",
+        "The widget targets support the revenue.",
+        "Head count is set on the 1HAG and QHAG."
+      ],
+      "notes": [
+        "Run this as the final read-back, top of the board to bottom.",
+        "Question the math: do the widgets add up to the revenue?",
+        "Anything that fails goes on the homework list with an owner.",
+        "At a quarterly, check that each Market Map circle has a home. It becomes a 3HAG capability, a KFFM change or a priority, or the team drops it. Check that last quarter’s open priorities are on the new QHAG."
+      ],
+      "checklist": true,
+      "artwork": {
+        "src": "assets/hag-ladder-checked.svg",
+        "alt": "The planning cascade: BHAG, 3HAG, 1HAG, QHAG and Individual Quarterly Priorities, each feeding the next. A green check sits beside the 3HAG, 1HAG, QHAG and Individual Quarterly Priorities."
+      },
+      "art_side": true,
+      "art_narrow": true
+    }
+  ]
+}

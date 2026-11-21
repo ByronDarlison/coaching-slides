@@ -1,0 +1,74 @@
+{
+  "id": "q2-close",
+  "artifact": "close",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-2 (Quarter 2 checklist) and Road Map Q-2, Metronomics.",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "homework",
+      "title": "What is the homework?",
+      "headline": "What is the homework?",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Metronome",
+          "heading": "Update the plan",
+          "support": "The growth plan and each leader’s priorities. Add each lane’s steps under its company priority.",
+          "mark": "structure"
+        },
+        {
+          "role": "Metronome",
+          "heading": "KFFM and scorecards",
+          "support": "Put the KFFM into Metronome. Complete the function scorecards for all leaders.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategy and cash",
+          "heading": "Core Customer and forecast",
+          "support": "Update the Market Map and add the Core Customer to the War Room. Finance works the widgets back into this year’s forecast.",
+          "mark": "structure"
+        },
+        {
+          "role": "Before next session",
+          "heading": "Prepare",
+          "support": "Read The Five Dysfunctions of a Team. Have your own team take StrengthsFinder 2.0. Complete the prep survey.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "Also: share the 3 key messages with your team the day after. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
+        "Finance works month by month.",
+        "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area."
+      ]
+    },
+    {
+      "id": "outcomes-check",
+      "title": "Did we get what we came for?",
+      "headline": "Did we get what we came for?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "support": "For each outcome: answered, partly or still open?",
+      "notes": [
+        "Read back the outcomes the team agreed at the start.",
+        "Ask for a show of hands on each one.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+      ],
+      "artwork": {
+        "src": "assets/q2-sticky-checked.svg",
+        "alt": "Byron’s sticky note from the start of the day, handwritten with: Planning and executing with increasing momentum, now with a large green check mark beside it."
+      }
+    }
+  ]
+}

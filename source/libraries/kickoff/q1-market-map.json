@@ -1,0 +1,261 @@
+{
+  "id": "q1-market-map",
+  "artifact": "market-map",
+  "seed": "Shannon Byrne Susko, STRATEGY: Market Map, Metronomics. Verified note: market-map.",
+  "tags": [
+    "q1"
+  ],
+  "slides": [
+    {
+      "id": "objective",
+      "title": "The Market Map shows your whole arena in one picture.",
+      "headline": "The Market Map shows your whole arena in one picture.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Power: who can say yes or no to your growth. Open space: customers you reach that competitors don’t. Reachable: can you reach your target at a profit?",
+        "Coach’s prompts from Shannon: whom can we make happy, annoy and leverage to scale quickly? Where does cash come in, and what share from each source? Can our current channels get us to our 3HAG?",
+        "Over time the map shows shifts in the market. It is the first step of the strategy build."
+      ],
+      "support": "Each leader sees only their slice of the market. The map shows the whole field:",
+      "body": [
+        "Where the power sits.",
+        "Where the open space is.",
+        "Whether your target is reachable."
+      ],
+      "artwork": {
+        "src": "assets/market-map-example.svg",
+        "alt": "A small copy of the example Market Map: customers and channels on the left, the company in the centre with associations above and competitors below, suppliers and a paid partner on the right, with money-in and money-out bands."
+      },
+      "art_side": true
+    },
+    {
+      "id": "example",
+      "title": "Market Map example",
+      "headline": "Market Map example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The same subscription company as the KFFM example. Walk the whole map once, then each part in turn.",
+        "The dashed boxes are players we don’t reach yet. Schools is a segment nobody here serves. App marketplaces is a channel only Competitor A uses. The red letters show which competitor also works with a player."
+      ],
+      "artwork": {
+        "src": "assets/market-map-example.svg",
+        "alt": "The example subscription company in the centre. On the left, customers (small businesses 55%, mid-size companies 35%, non-profits 10%, and schools, dashed, not served yet) buy through channels (resellers 30%, direct website 70%, and app marketplaces, dashed, not used). Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands to suppliers (contract developers 45%, cloud hosting 30%, payment processor 10%) and a paid partner (implementation partner 15%). Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with: A on app marketplaces, B on resellers and the implementation partner, C on cloud hosting and the industry association."
+      },
+      "art_full": true
+    },
+    {
+      "id": "customers",
+      "title": "Who are your customers?",
+      "headline": "Who are your customers?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Group customers into segments, eight or fewer. Include segments you don’t serve yet."
+      ],
+      "artwork": {
+        "src": "assets/market-map-customers.svg",
+        "alt": "The example map dimmed except the customers: small businesses, mid-size companies, non-profits and schools (not served yet). Callout: Why: find where your revenue concentrates, including segments you don’t serve yet. Ask: what share comes from each?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "channels",
+      "title": "How do you reach them?",
+      "headline": "How do you reach them?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Include anyone who refers business to you, the channels your competitors use, and any nobody has claimed."
+      ],
+      "artwork": {
+        "src": "assets/market-map-channels.svg",
+        "alt": "The example map dimmed except the channels: resellers (Competitor B sells there too), direct website, and app marketplaces (not used; Competitor A sells there). Callout: Why: find the gatekeepers, and the channels your competitors use. Ask: can these get you to your 3HAG?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "associations",
+      "title": "Which associations matter?",
+      "headline": "Which associations matter?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "List the associations your customers and your company belong to."
+      ],
+      "artwork": {
+        "src": "assets/market-map-associations.svg",
+        "alt": "The example map dimmed except the associations: industry association and chamber of commerce. Callout: Why: they shape how buyers think before you ever meet them. Ask: whom can you leverage to grow?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "suppliers",
+      "title": "Where does the money go out?",
+      "headline": "Where does the money go out?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The supply chain where the company spends money. Keep it to the ten biggest."
+      ],
+      "artwork": {
+        "src": "assets/market-map-suppliers.svg",
+        "alt": "The example map dimmed except the suppliers: contract developers, cloud hosting and payment processor. Callout: Why: find the dependency that could switch you off tomorrow. Ask: where does the most money go?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "partners",
+      "title": "Whom do you pay to sell or deliver?",
+      "headline": "Whom do you pay to sell or deliver?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "A player can sit in two places, for example a supplier that is also a channel."
+      ],
+      "artwork": {
+        "src": "assets/market-map-partners.svg",
+        "alt": "The example map dimmed except the paid partners: implementation partner. Callout: Why: see whom you rely on to reach or serve your customers. Ask: is any player in two places?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "competitors",
+      "title": "Who do you compete with?",
+      "headline": "Who do you compete with?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Start with the top three direct competitors, then add the substitutes.",
+        "Mark every channel, supplier, association and paid partner each competitor also works with. If a competitor could block you from one, that is a serious risk: circle it.",
+        "Then the reverse: which player could you win that a competitor depends on? Capturing it is an opportunity: circle that too.",
+        "Add the substitutes teams forget: doing nothing, and building it in-house. Most lost deals go to these, not to a rival."
+      ],
+      "artwork": {
+        "src": "assets/market-map-competitors.svg",
+        "alt": "The example map dimmed except the competitors A, B and C, the dashed substitutes box (do nothing, or build in-house), and the red letter badges on every player a competitor also works with. Callout: Why: overlap is a head-on fight; gaps may be open space. Ask: could one block us anywhere?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "money",
+      "title": "Where does the cash come in, and go out?",
+      "headline": "Where does the cash come in, and go out?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "The team draws the money lines last, with the share for each. Note any supplier used but not paid."
+      ],
+      "artwork": {
+        "src": "assets/market-map-money.svg",
+        "alt": "The example map with every money line drawn: green lines from customers and channels into the company with their shares, blue lines out to suppliers and the paid partner with their shares. Callout: Why: look for concentration, not precision; rough shares are enough. Ask: where does cash come in?"
+      },
+      "art_full": true
+    },
+    {
+      "id": "circles",
+      "title": "Circle what worries you, and what excites you.",
+      "headline": "Circle what worries you, and what excites you.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Look for concentrations, dependencies, gatekeepers and gaps.",
+        "Any player a competitor could close to you is a worry. Any player a competitor relies on that you could win is an opportunity."
+      ],
+      "artwork": {
+        "src": "assets/market-map-circles.svg",
+        "alt": "The example map dimmed except the customers, channels and associations. Dashed red rings around small businesses (worry: 55% of money from one segment) and resellers (worry: Competitor B could block resellers). Green rings around schools (open space: a segment nobody serves yet) and the industry association (opportunity: win Competitor C’s association first)."
+      },
+      "art_full": true
+    },
+    {
+      "id": "build",
+      "title": "Build your Market Map.",
+      "headline": "Build your Market Map.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "notes": [
+        "Before anyone draws, each leader lists the players in silence. Compare the lists: the differences are the first finding.",
+        "Break up the map, not the team. Each pair presents back, then everyone weighs in.",
+        "If a player would not change a decision you make, leave it off. The first map often feels flat. Accept good enough and improve it each quarter. Allow about 40 minutes.",
+        "Homework: add the Market Map to the War Room in Metronome."
+      ],
+      "copy_stack": true,
+      "support": "Build one map together.",
+      "body": [
+        "Money comes in from the left and goes out to the right.",
+        "Keep it small: up to eight customer segments, the ten biggest suppliers, the top three competitors.",
+        "Circle what worries you and what excites you.",
+        "Then ask what each circle changes."
+      ]
+    },
+    {
+      "id": "apply",
+      "title": "What does the map change?",
+      "headline": "What does the map change?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q1"
+      ],
+      "copy_stack": true,
+      "support": "The Market Map is the outside view. The KFFM is the inside view. Take each circle and ask:",
+      "body": [
+        "3HAG: does it change a capability, or add one?",
+        "KFFM: does it change a widget, a function or a critical number?",
+        "1HAG and QHAG: does a priority change?"
+      ],
+      "notes": [
+        "In the example, the open space is schools, a segment nobody serves yet. Reaching them could mean a capability to build, a new widget to track, and a priority this quarter.",
+        "When the map and the KFFM disagree, one of them is wrong. Finding out which is the real work of strategy.",
+        "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG."
+      ]
+    }
+  ]
+}

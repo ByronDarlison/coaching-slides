@@ -1,0 +1,47 @@
+{
+  "id": "execution",
+  "artifact": "execution",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "disciplines",
+      "title": "Execution needs 3 disciplines working together.",
+      "headline": "Execution needs 3 disciplines working together.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Open with one honest question, out loud: how often do we hit the numbers we set?",
+        "Teach all three disciplines before asking the team to create annual and quarterly plans."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "01",
+          "heading": "Priorities",
+          "support": "Choose the work that advances the longer-term plan.",
+          "mark": "structure"
+        },
+        {
+          "role": "02",
+          "heading": "Keeping score",
+          "support": "Use measures to see progress and anticipate problems.",
+          "mark": "structure"
+        },
+        {
+          "role": "03",
+          "heading": "Communication rhythm",
+          "support": "Meet regularly to make better, faster decisions.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    }
+  ]
+}

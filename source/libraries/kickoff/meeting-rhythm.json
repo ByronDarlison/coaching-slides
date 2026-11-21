@@ -1,0 +1,80 @@
+{
+  "id": "meeting-rhythm",
+  "artifact": "meeting-rhythm",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "book",
+      "title": "Set up your meetings in Metronome before you leave.",
+      "headline": "Set up your meetings in Metronome before you leave.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Set up each meeting in Metronome with its standing agenda, then book it a year ahead: the daily huddle, the weekly 1:1s, the weekly leadership meeting, and the quarterly and annual planning sessions.",
+        "Confirm participants, standing agendas, preparation, meeting owners and invitation responsibility.",
+        "Privately with the CEO, agree on the recurring coach and CEO meeting (not on the client slide). The team should be able to run its next daily huddle without the coach."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Daily",
+          "heading": "Daily huddle",
+          "support": "Set the time and start date. Book it every workday for a year. Name who sends the invite.",
+          "mark": "structure"
+        },
+        {
+          "role": "Weekly",
+          "heading": "Weekly 1:1s",
+          "support": "Each leader sets a time with each direct report. Book it every week for a year.",
+          "mark": "structure"
+        },
+        {
+          "role": "Weekly",
+          "heading": "Weekly leadership meeting",
+          "support": "Set the day, time and start date. Book it every week for a year.",
+          "mark": "structure"
+        },
+        {
+          "role": "Planning",
+          "heading": "Quarterly and annual",
+          "support": "Book the year’s quarterly and annual planning sessions now.",
+          "mark": "action"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "scoreboard",
+      "title": "Update Metronome before every meeting.",
+      "headline": "Update Metronome before every meeting.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Each owner updates their own numbers and priorities in Metronome before the deadline, and everyone reads them before the meeting starts. Status is quick, which leaves the weekly leadership meeting time to solve problems.",
+        "A priority’s status shows whether the work is on track for its done-by date, and whether its measure is on track for its achieved-by date."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/meeting-rhythm.png",
+        "alt": "Generic leaders meet around a table beside a calendar of recurring meetings."
+      },
+      "eyebrow": "",
+      "art_side": true,
+      "body": [
+        "Each owner updates their numbers and priorities in Metronome.",
+        "Agree on the deadline, such as the day before.",
+        "Everyone reviews the updates before the meeting starts."
+      ]
+    }
+  ]
+}

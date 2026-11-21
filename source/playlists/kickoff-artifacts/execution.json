@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-execution",
+  "title": "Metronomics Kickoff: execution",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "execution",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:execution"
+  ]
+}

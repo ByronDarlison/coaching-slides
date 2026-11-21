@@ -1,0 +1,91 @@
+{
+  "id": "purpose",
+  "artifact": "purpose",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "path-purpose",
+      "title": "From how we work to why we exist.",
+      "headline": "From how we work to why we exist.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "artwork": {
+        "src": "assets/day1-path-purpose.svg",
+        "alt": "Day 1 path: Functions and KFFM done. Purpose next, then Values, BHAG and 3HAG."
+      },
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "We’ve mapped who owns what and how cash flows today. Now we step back: why does this company exist, and what does it stand for?"
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "A purpose expresses a contribution.",
+      "headline": "A purpose expresses a contribution.",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "These are historical examples reproduced from Shannon’s master deck, slide 82. Use them to discuss the contribution each purpose describes. Do not present them as newly verified current corporate statements."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "panels": [
+        {
+          "role": "Walt Disney",
+          "heading": "“To make people happy.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "Nike",
+          "heading": "“To experience the emotion of competition, winning, and crushing competitors.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "3M",
+          "heading": "“To solve unsolved problems innovatively.”",
+          "support": "",
+          "mark": "structure"
+        },
+        {
+          "role": "Patagonia",
+          "heading": "“We’re in business to save our home planet.”",
+          "support": "",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "agree-purpose",
+      "title": "Why does your organization exist?",
+      "headline": "Why does your organization exist?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Ask for initial reflections. Explain that the team will draft its statement after reviewing the examples.",
+        "Have every leader write before discussion. Ask what contribution remains meaningful beyond making money.",
+        "Explore differences. Agree on a useful statement without prolonged wordsmithing."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "What would be missed if you disappeared? Write independently. Share your answers. Agree on a working statement.",
+      "eyebrow": ""
+    }
+  ]
+}

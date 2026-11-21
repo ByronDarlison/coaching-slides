@@ -1,0 +1,16 @@
+{
+  "id": "kickoff-purpose",
+  "title": "Metronomics Kickoff: purpose",
+  "sidebar_title": "Metronomics Kickoff",
+  "sidebar_blurb": "purpose",
+  "sources": {
+    "kickoff": "../../libraries/kickoff"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    "kickoff:purpose"
+  ]
+}

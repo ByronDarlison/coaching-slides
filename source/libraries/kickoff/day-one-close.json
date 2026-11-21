@@ -1,0 +1,30 @@
+{
+  "id": "day-one-close",
+  "artifact": "day-one-close",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "close",
+      "title": "How do you feel right now?",
+      "headline": "How do you feel right now?",
+      "layout": "comp-rule",
+      "group": "",
+      "notes": [
+        "Close Day 1. Recap the agreed purpose, ambition and 3HAG verbally. Note unresolved questions to revisit tomorrow."
+      ],
+      "tags": [
+        "kickoff",
+        "day-1"
+      ],
+      "support": "One phrase. 5 words or fewer.",
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/one-phrase-close.jpg",
+        "alt": "Four team members stand together talking, each with a speech bubble; one bubble is green."
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "day-two-opening",
+  "artifact": "day-two-opening",
+  "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+  "tags": [
+    "kickoff"
+  ],
+  "slides": [
+    {
+      "id": "day-two",
+      "title": "Yesterday, where we’re going. Today, how we get there.",
+      "headline": "Yesterday, where we’re going. Today, how we get there.",
+      "layout": "comp-story",
+      "group": "Day 2",
+      "notes": [
+        "Open Day 2. Yesterday set the direction: functions, purpose, values, BHAG and 3HAG.",
+        "Today turns that into this year, this quarter and each leader’s priorities, with an owner on every number and priority."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/day2-path.svg",
+        "alt": "Day 1, where we’re going, done: Functions, KFFM, Purpose, Values, BHAG and 3HAG. Day 2, how we get there: 1HAG (next), QHAG, Your priorities and Communication rhythm. By end of day: this year’s plan, this quarter’s plan and each leader’s priorities, all with owners."
+      },
+      "eyebrow": "",
+      "art_full": true,
+      "art_fit": true
+    },
+    {
+      "id": "good-news",
+      "title": "Share personal good news.",
+      "headline": "Share personal good news.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Use a separate round. Each person shares personal good news in 5 to 10 seconds."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "artwork": {
+        "src": "assets/cohesive-open.png",
+        "alt": "Generic figures share good news around a table."
+      },
+      "eyebrow": ""
+    },
+    {
+      "id": "sunday-dinner",
+      "title": "What’s something about you that would surprise this team?",
+      "headline": "What’s something about you that would surprise this team?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Coach goes first, then the CEO, then the team. Keep it light and quick.",
+        "Adapted from Shannon’s Sunday dinner question (Master 129) so no one is left out."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/surprise-reveal.jpg",
+        "alt": "A person opens a box and a green star pops out while two teammates react."
+      }
+    },
+    {
+      "id": "reflection",
+      "title": "What stayed with you from Day 1?",
+      "headline": "What stayed with you from Day 1?",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Invite one reflection from each person. Capture questions that affect today’s planning."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "artwork": {
+        "src": "assets/reflection-thinking.jpg",
+        "alt": "A person sits with chin in hand, thinking, with a thought cloud above."
+      }
+    },
+    {
+      "id": "outcome-check",
+      "title": "Are we on track for what you came for?",
+      "headline": "Are we on track for what you came for?",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Read back the Day 1 answers to “What would make these 2 days valuable?” The team sorts each one. Coach-led and quick, not another round.",
+        "For anything at risk, agree where today it gets covered before moving on."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Done",
+          "heading": "We got it on Day 1",
+          "support": "Check it off.",
+          "mark": "action"
+        },
+        {
+          "role": "Today",
+          "heading": "Today’s plan covers it",
+          "support": "Name where it comes up.",
+          "mark": "structure"
+        },
+        {
+          "role": "At risk",
+          "heading": "Not on today’s plan",
+          "support": "Decide now how we cover it.",
+          "mark": "gap"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "engagement-day-two",
+      "title": "Today, let’s:",
+      "headline": "Today, let’s:",
+      "layout": "comp-decision",
+      "group": "",
+      "notes": [
+        "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "panels": [
+        {
+          "role": "Engage",
+          "heading": "Be present",
+          "support": "Discuss, collaborate and listen.",
+          "mark": "structure"
+        },
+        {
+          "role": "Challenge",
+          "heading": "Challenge yourself and each other",
+          "support": "Bring the difficult facts forward.",
+          "mark": "action"
+        },
+        {
+          "role": "Trust",
+          "heading": "No blame. No shame.",
+          "support": "Make it safe to speak honestly.",
+          "mark": "structure"
+        }
+      ],
+      "arrows": false,
+      "eyebrow": ""
+    },
+    {
+      "id": "objectives",
+      "title": "Where we are in the cascade.",
+      "headline": "Where we are in the cascade.",
+      "layout": "comp-story",
+      "group": "",
+      "notes": [
+        "Each level is built from the one above it and directs the one below.",
+        "Point to the 3HAG we finished yesterday, then to the 1HAG we build next."
+      ],
+      "tags": [
+        "kickoff",
+        "day-2"
+      ],
+      "eyebrow": "",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/hag-ladder-day2.svg",
+        "alt": "The cascade: BHAG and 3HAG done on Day 1. Today: 1HAG, QHAG and Individual Quarterly Priorities."
+      }
+    }
+  ]
+}
