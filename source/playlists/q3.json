@@ -197,14 +197,13 @@
       "override": {
         "title": "Test your top three.",
         "headline": "Test your top three.",
-        "support": "Test each one:",
+        "support": "Is it a value you hire and fire on, or a brand value?",
         "notes": [
           "A value that fails the tests is a brand value or a wish, not a Core Value.",
           "A fourth or fifth value can earn its place here.",
           "Allow about 10 minutes."
         ],
         "body": [
-          "Is it a value you hire and fire on, or a brand value?",
           "When did you last let someone go for not living it?",
           "Does someone who keeps breaching it belong here?",
           "Would you build a new company around it, in any industry?",
