@@ -32,7 +32,12 @@
         "valuable"
       ]
     },
-    "kickoff:q3-appreciation",
+    {
+      "id": "kickoff:q3-appreciation",
+      "slides": [
+        "exercise"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [

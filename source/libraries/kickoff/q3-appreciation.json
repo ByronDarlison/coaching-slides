@@ -17,16 +17,12 @@
         "q3"
       ],
       "art_side": true,
-      "support": "Feedback between peers starts with appreciation.",
-      "body": [
-        "It is easy to say on a sports field.",
-        "It is harder to say in business.",
-        "Today we start with what we appreciate."
-      ],
+      "support": "It starts with appreciation.",
+      "body": [],
       "notes": [
         "This is the cohesive exercise for the day.",
         "Feedback between peers is a key part of a high-performing team. Leaders need practice to give it well.",
-        "Appreciation is the easy first step."
+        "Appreciation is the easy first step. It is easy to say on a sports field and harder to say in business."
       ],
       "artwork": {
         "src": "assets/left-right-appreciation.jpg",
@@ -43,19 +39,25 @@
       "tags": [
         "q3"
       ],
-      "copy_stack": true,
-      "support": "Write it down first. Then say it to them, and hand them the note.",
+      "support": "A strong team gives each other feedback. It starts with appreciation.",
       "body": [
-        "Start with the person on your left. Write what you appreciate about them.",
-        "The CEO goes first. Go around the table to the left.",
-        "Then do the same for the person on your right, around to the right."
+        "Write it down.",
+        "Say it to them, then hand them the note.",
+        "Go left first, starting with the CEO. Then go right."
       ],
       "notes": [
+        "This is the cohesive exercise for the day.",
+        "Feedback between peers is a key part of a high-performing team. Leaders need practice to give it well. Appreciation is the easy first step.",
         "Everyone writes before anyone speaks. Each person looks at their neighbour while they say it.",
         "The note is theirs to keep.",
         "Suggest the leadership team repeats this monthly, and that leaders take it to their own teams.",
         "Allow about 15 minutes."
-      ]
+      ],
+      "artwork": {
+        "src": "assets/left-right-appreciation.jpg",
+        "alt": "Five neutral grey figures sit in a row on stools. One turns to the figure beside it and hands over a small green note."
+      },
+      "art_side": true
     }
   ]
 }
