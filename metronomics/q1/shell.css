@@ -1202,7 +1202,7 @@ body.template-review .slide-label { display: block; }
 /* Hover definitions on words in slide text (unit "terms"). */
 .term { position: relative; display: inline; border-bottom: 2px dotted var(--blue); cursor: help; outline: none; white-space: nowrap; }
 .term:hover, .term:focus-visible { color: var(--blue); }
-.term .hotspot-tip { font-weight: 400; white-space: normal; width: max-content; max-width: min(28rem, 80vw); }
+.term .hotspot-tip { font-weight: 400; white-space: normal; width: max-content; max-width: min(28rem, 80vw); transform: translateX(calc(-50% + var(--tip-dx, 0px))); }
 .term .term-line { display: block; }
 .term:hover .hotspot-tip, .term:focus-visible .hotspot-tip { opacity: 1; visibility: visible; }
 /* A definition box may be taller than the room above its word: let it leave the stage, never the slide. */
