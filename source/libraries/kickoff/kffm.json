@@ -100,21 +100,21 @@
       ],
       "notes": [
         "A widget is a countable, non-financial thing one function receives and then hands to the next. Point to each highlighted label on the map: subscription leads, marketing qualified subscription leads, new subscriptions, activated subscriptions, collected payments.",
+        "Widgets drive cash. Name each one with the company’s unit: subscription leads, new subscriptions.",
         "The owner of each function must control the widget they hand on.",
         "Not revenue or cash: those are outcomes of the whole flow.",
         "Label the widget on every hand-off between functions."
       ],
       "artwork": {
         "src": "assets/kffm-widgets.svg",
-        "alt": "The KFFM example with every widget highlighted: subscription leads into Marketing, marketing qualified subscription leads to Sales, new subscriptions to Operations, activated subscriptions to Finance, and collected payments to cash. A widget is a countable, non-financial thing one function receives and then hands to the next.",
+        "alt": "The KFFM example with every widget highlighted: subscription leads into Marketing, marketing qualified subscription leads to Sales, new subscriptions to Operations, activated subscriptions to Finance, and collected payments to cash. A widget is a countable, non-financial thing one function receives and then hands to the next. Widgets drive cash.",
         "viewbox": [
           1440,
           710
         ],
         "hotspots": []
       },
-      "art_full": true,
-      "support": "A widget is what one function hands to the next, and what drives cash. Name each with your unit: subscription leads, new subscriptions."
+      "art_full": true
     },
     {
       "id": "status",
