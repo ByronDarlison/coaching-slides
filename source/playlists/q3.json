@@ -186,8 +186,7 @@
     {
       "id": "kickoff:q3-values",
       "slides": [
-        "results",
-        "vote"
+        "review"
       ]
     },
     {
@@ -198,9 +197,9 @@
       "override": {
         "title": "Test your top three.",
         "headline": "Test your top three.",
-        "support": "Take the three clusters with the most votes. Test each one:",
+        "support": "Test each one:",
         "notes": [
-          "A cluster that fails the tests is a brand value or a wish, not a Core Value.",
+          "A value that fails the tests is a brand value or a wish, not a Core Value.",
           "A fourth or fifth value can earn its place here.",
           "Allow about 10 minutes."
         ],

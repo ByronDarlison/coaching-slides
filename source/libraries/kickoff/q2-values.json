@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "setup",
-      "title": "Run Mission to Mars with your team before the next session.",
-      "headline": "Run Mission to Mars with your team before the next session.",
+      "title": "Run Mission to Mars with your wider team before the next session.",
+      "headline": "Run Mission to Mars with your wider team before the next session.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,15 +17,17 @@
         "q2"
       ],
       "copy_stack": true,
-      "support": "Each leader runs the five steps with their own team.",
+      "support": "The leadership team runs one session, with the whole company if you can.",
       "body": [
-        "Book 60 minutes with your team.",
-        "Bring your team’s top three values to the next session, with the behaviour behind each."
+        "Everyone votes for the top three.",
+        "A small group drafts a name and a descriptor for each.",
+        "Bring the draft to the next session."
       ],
       "notes": [
-        "The values come from the whole company, not only the leadership team. Then the language belongs to everyone.",
+        "The values come from the wider team, not only the leadership team. Then the language belongs to everyone.",
+        "The CEO and every leader take part in the session.",
         "A company that already has Core Values runs the same exercise to confirm them.",
-        "Homework: each leader runs Mission to Mars with their team and brings the results to the next session."
+        "Homework: run the session, draft the names and descriptors, and bring the draft to the next session."
       ]
     }
   ]
