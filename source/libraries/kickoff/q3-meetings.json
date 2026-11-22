@@ -1,0 +1,33 @@
+{
+  "id": "q3-meetings",
+  "artifact": "meetings",
+  "seed": "Shannon Byrne Susko, Meeting By Meeting (master deck, pages 357 to 372): Weekly Email, as recorded on the strategy site’s Meetings page.",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "weekly-email",
+      "title": "The weekly email keeps the whole company on the plan.",
+      "headline": "The weekly email keeps the whole company on the plan.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "From the CEO to everyone. One page, by Friday noon.",
+      "body": [
+        "Good news",
+        "Metrics or the critical number",
+        "Priority status",
+        "Close on a positive note"
+      ],
+      "notes": [
+        "New today: the CEO starts the weekly email this week.",
+        "Team members send their status by Thursday noon."
+      ]
+    }
+  ]
+}

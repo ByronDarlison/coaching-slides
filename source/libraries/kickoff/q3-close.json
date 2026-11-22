@@ -1,0 +1,75 @@
+{
+  "id": "q3-close",
+  "artifact": "close",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "homework",
+      "title": "What is the homework?",
+      "headline": "What is the homework?",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Metronome",
+          "heading": "Update the plan",
+          "support": "The growth plan and each leader’s priorities. Add each lane’s steps under its company priority.",
+          "mark": "structure"
+        },
+        {
+          "role": "People",
+          "heading": "Values and A-Players",
+          "support": "Share the Core Values with the whole team. Plan and act on any C player. Complete annual reviews on the function scorecards.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategy and cash",
+          "heading": "War Room and forecast",
+          "support": "Update the Market Map and Core Customer. Add the Attribution Framework. Finance builds the 12-month forecast.",
+          "mark": "structure"
+        },
+        {
+          "role": "Before next session",
+          "heading": "Prepare",
+          "support": "Read Beyond Entrepreneurship 2.0. Take the Five Dysfunctions team assessment. Complete the checklist and prep surveys.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
+        "The two surveys are the Metronomics Checklist Survey and the Kick-Off and Annual prep survey.",
+        "The CEO starts the weekly email this week.",
+        "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area."
+      ]
+    },
+    {
+      "id": "outcomes-check",
+      "title": "Did we get what we came for?",
+      "headline": "Did we get what we came for?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "support": "For each outcome: answered, partly or still open?",
+      "notes": [
+        "Read back the outcomes the team agreed at the start.",
+        "Ask for a show of hands on each one.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+      ],
+      "artwork": {
+        "src": "assets/q3-sticky-checked.svg",
+        "alt": "Byron’s sticky note from the start of the day, handwritten with: 3HAG validation, now with a large green check mark beside it."
+      }
+    }
+  ]
+}

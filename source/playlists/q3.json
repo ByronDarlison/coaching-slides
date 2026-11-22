@@ -1,0 +1,486 @@
+{
+  "id": "q3",
+  "title": "Metronomics Q3",
+  "sidebar_title": "Metronomics Q3",
+  "sidebar_blurb": "Quarterly planning day",
+  "sources": {
+    "kickoff": "../libraries/kickoff",
+    "eoa": "../libraries/eoa"
+  },
+  "branding": {
+    "domain": "darlison.com",
+    "logo": "metronomics"
+  },
+  "units": [
+    {
+      "id": "kickoff:q3-opening",
+      "slides": [
+        "welcome"
+      ]
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "good-news",
+        "engagement",
+        "mirror"
+      ]
+    },
+    {
+      "id": "kickoff:q3-opening",
+      "slides": [
+        "valuable"
+      ]
+    },
+    "kickoff:q3-appreciation",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "status"
+      ]
+    },
+    "kickoff:quarterly-status",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "functions"
+      ]
+    },
+    {
+      "id": "kickoff:function-chart",
+      "slides": [
+        "ownership",
+        "gaps"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "function-chart"
+      ]
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
+        "team-view",
+        "numbers"
+      ]
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "scorecards"
+      ]
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
+        "scorecard-intro"
+      ],
+      "override": {
+        "notes": [
+          "At this session it is a check-in. Every leader completed their function scorecard in Metronome as homework.",
+          "Ask each leader where their scorecard stands, and which of its two metrics sits on the KFFM.",
+          "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "Homework: complete the annual reviews on the function scorecards in Metronome."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
+        "scorecard"
+      ],
+      "override": {
+        "notes": [
+          "Purpose in one sentence. Three to five functional accountabilities, each starting Owns. Exactly two metrics: one widget the owner controls and one fiscal metric the role owns. Six to eight key competencies. The company’s core values.",
+          "The team agrees its Core Values later today. They then go on every scorecard."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "kffm"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "example-map"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "map"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "widgets"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "widgets"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "status"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "days-to-cash"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "days",
+        "profit-x"
+      ]
+    },
+    {
+      "id": "kickoff:kffm",
+      "slides": [
+        "levers"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-kffm",
+      "slides": [
+        "lever"
+      ]
+    },
+    "kickoff:q3-kffm",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "values"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "purpose"
+      ]
+    },
+    {
+      "id": "kickoff:q3-values",
+      "slides": [
+        "scenario",
+        "steps",
+        "pick",
+        "cluster",
+        "vote"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "values"
+      ],
+      "override": {
+        "title": "Test your top three.",
+        "headline": "Test your top three.",
+        "support": "Take the three clusters with the most votes. Test each one:",
+        "notes": [
+          "This is step 4. A cluster that fails the tests is a brand value or a wish, not a Core Value.",
+          "A fourth or fifth value can earn its place here.",
+          "Allow about 10 minutes."
+        ],
+        "body": [
+          "Is it a value you hire and fire on, or a brand value?",
+          "When did you last let someone go for not living it?",
+          "Does someone who keeps breaching it belong here?",
+          "Would you build a new company around it, in any industry?",
+          "Then talk about anything important that was left out."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q3-values",
+      "slides": [
+        "example",
+        "agree",
+        "go-deeper"
+      ]
+    },
+    {
+      "id": "kickoff:bhag",
+      "slides": [
+        "test"
+      ],
+      "override": {
+        "headline": "Does your BHAG still hold?",
+        "title": "Does your BHAG still hold?"
+      }
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "people"
+      ]
+    },
+    "kickoff:q3-aplayer",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "attribution"
+      ]
+    },
+    {
+      "id": "kickoff:q1-market-map",
+      "slides": [
+        "example"
+      ],
+      "override": {
+        "title": "Is your Market Map still right?",
+        "headline": "Is your Market Map still right?",
+        "notes": [
+          "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
+          "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
+          "Homework: update the Market Map in the War Room in Metronome."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q3-attribution",
+      "slides": [
+        "objective",
+        "example",
+        "attributes",
+        "us",
+        "competitors",
+        "white-space",
+        "line",
+        "brainstorm",
+        "score"
+      ]
+    },
+    {
+      "id": "kickoff:q2-core-customer",
+      "slides": [
+        "example"
+      ],
+      "override": {
+        "title": "Is this still your Core Customer?",
+        "headline": "Is this still your Core Customer?",
+        "notes": [
+          "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
+          "Read the three ranked needs aloud. The team tests the white space against them next.",
+          "Change only what is no longer true.",
+          "Homework: update the Core Customer in the War Room in Metronome."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q3-attribution",
+      "slides": [
+        "draw",
+        "apply"
+      ]
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "strategy"
+      ]
+    },
+    {
+      "id": "kickoff:three-year",
+      "slides": [
+        "read-back"
+      ],
+      "override": {
+        "notes": [
+          "Ask a leader to read the plan aloud. Invite the team to identify contradictions and untested assumptions.",
+          "Test it against the 3HAG line: does each capability build an attribute where the company will lead?",
+          "Question the math: do the five widget targets add up to the revenue?",
+          "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
+        ],
+        "support": "Read it aloud. Then test it against your 3HAG line."
+      }
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "plan"
+      ]
+    },
+    {
+      "id": "kickoff:annual",
+      "slides": [
+        "1hag-check"
+      ],
+      "override": {
+        "notes": [
+          "Read the 1HAG aloud, top to bottom, then run the six checks.",
+          "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
+          "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
+        ],
+        "support": "Read it aloud. Then test it against your 3HAG line."
+      }
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "definition",
+        "map",
+        "quarter-numbers"
+      ]
+    },
+    {
+      "id": "kickoff:priorities",
+      "slides": [
+        "quality",
+        "worked-priority"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-first",
+        "quarter-rest",
+        "qhag-check"
+      ]
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "lanes"
+      ]
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "example",
+        "widgets",
+        "lanes",
+        "lane-one",
+        "build"
+      ]
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "check"
+      ],
+      "override": {
+        "notes": [
+          "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",
+          "Lanes show the work. They are not the measure of success. That stays on the QHAG.",
+          "The weekly leadership meeting reviews sprint lane status."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "priorities"
+      ]
+    },
+    "kickoff:individual",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "forecast"
+      ]
+    },
+    {
+      "id": "kickoff:q1-cash",
+      "slides": [
+        "owners"
+      ],
+      "override": {
+        "notes": [
+          "The team learned these roles at Q1. They now apply to next year’s forecast.",
+          "Finance builds the model. Each leader owns the numbers for their widgets. The CEO owns the total.",
+          "When the forecast is wrong, the first question is which widget moved, not who to blame."
+        ]
+      }
+    },
+    "kickoff:q3-cash",
+    {
+      "id": "kickoff:rhythm-teaching",
+      "slides": [
+        "daily-weekly"
+      ],
+      "override": {
+        "headline": "How are your meetings going?",
+        "title": "How are your meetings going?",
+        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "panels": [
+          {
+            "role": "Daily",
+            "heading": "Daily huddle",
+            "support": "7 to 10 minutes, every day. The facilitator rotates.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Metrics: yesterday’s widget actual and today’s forecast",
+              "The #1 thing to get done today",
+              "Stucks, and anything that can’t wait"
+            ]
+          },
+          {
+            "role": "Weekly",
+            "heading": "Weekly 1:1",
+            "support": "15 to 30 minutes. Each leader with each direct report, led by the direct report.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Metrics",
+              "Top 3 priorities for the week",
+              "Feedback both ways",
+              "Dynamic"
+            ]
+          },
+          {
+            "role": "Weekly",
+            "heading": "Weekly leadership meeting",
+            "support": "60 minutes. The CEO owns it.",
+            "mark": "structure",
+            "items": [
+              "Good news",
+              "Values recognition",
+              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+              "Review the KFFM",
+              "QHAG, priority and sprint lane status",
+              "Stucks, asks and offers"
+            ]
+          }
+        ],
+        "notes": [
+          "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
+          "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
+          "All five meetings should be running: the three here, the Monthly Town Hall and Quarterly Planning.",
+          "New today: the KFFM review joins the weekly leadership meeting."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q2-meetings",
+      "slides": [
+        "town-hall"
+      ]
+    },
+    "kickoff:q3-meetings",
+    "kickoff:cascade-messages",
+    "kickoff:q3-close",
+    "kickoff:closing"
+  ]
+}
