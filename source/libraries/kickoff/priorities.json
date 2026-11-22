@@ -18,7 +18,8 @@
         "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
         "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
         "Risk: ask how badly we could mess this up.",
-        "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. The next slide shows why done and success are different dates."
+        "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. The next slide shows why done and success are different dates.",
+        "Hover over “KFFM lever” to show the six levers."
       ],
       "tags": [
         "kickoff",
@@ -63,7 +64,20 @@
         }
       ],
       "arrows": false,
-      "eyebrow": ""
+      "eyebrow": "",
+      "terms": [
+        {
+          "term": "KFFM lever",
+          "tip": [
+            "Quantity: more widgets into the first function.",
+            "Conversion: more widgets pass each hand-off.",
+            "Price: raise the price customers pay.",
+            "Timing: fewer days from first widget to cash.",
+            "Capacity: each function handles more widgets a month.",
+            "Cost: lower what each function costs to run."
+          ]
+        }
+      ]
     },
     {
       "id": "four-questions",

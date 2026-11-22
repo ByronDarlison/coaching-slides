@@ -1,0 +1,33 @@
+{
+  "id": "q3-kffm",
+  "artifact": "kffm-weekly",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics. Byron Darlison, The Eight Meetings That Run Your Company (darlison.com).",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "weekly",
+      "title": "The KFFM joins your weekly leadership meeting.",
+      "headline": "The KFFM joins your weekly leadership meeting.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "From this week, review the KFFM together every week.",
+      "body": [
+        "Put the KFFM on the weekly agenda in Metronome.",
+        "Each owner reports their critical number: green, yellow or red.",
+        "A red number arrives with its correction: what is being done, by whom and by when."
+      ],
+      "notes": [
+        "The KFFM is in Metronome with its metrics, from last quarter’s homework.",
+        "The weekly meeting reviews the numbers. It does not redraw the map. The map changes at the quarterly.",
+        "Homework: review the KFFM in every weekly leadership meeting."
+      ]
+    }
+  ]
+}

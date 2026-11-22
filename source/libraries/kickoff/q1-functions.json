@@ -39,14 +39,14 @@
       ],
       "notes": [
         "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
-        "Each owner says their critical number out loud. It is the number they look at every day."
+        "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each."
       ],
       "checklist": true,
       "support": "Check the Team View in Metronome against your chart.",
       "body": [
         "Every function on the chart is in the Team View, with its owner.",
-        "Each owner names one critical number for the function.",
-        "The number can be financial or not. Listen for widgets."
+        "Each owner names one critical number for the function: the one number that tells them whether they had a good day.",
+        "The number can be financial or not. Start with what your function hands to the next one."
       ],
       "copy_stack": true
     },

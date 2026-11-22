@@ -1,0 +1,38 @@
+{
+  "id": "q3-cash",
+  "artifact": "cash-forecast",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics. Byron Darlison, Cash! Who Owns the Forecast? (darlison.com).",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "template",
+      "title": "Finance builds next year’s forecast from your widgets.",
+      "headline": "Finance builds next year’s forecast from your widgets.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_side": true,
+      "support": "The finance leader builds it in the 12-month template, before the annual.",
+      "body": [
+        "Start from the KFFM widgets.",
+        "Each leader gives the numbers for their own widgets.",
+        "Put a name on every line of the profit and loss."
+      ],
+      "notes": [
+        "The team already forecasts its widgets week by week. Next year’s forecast uses the same widgets, month by month.",
+        "Scan the code, then choose File and Make a copy in Google Sheets.",
+        "The forecast is not a budget. It shows where cash is heading.",
+        "Homework: the finance leader builds the 12-month forecast before the annual."
+      ],
+      "artwork": {
+        "src": "assets/cash-12-month.svg",
+        "alt": "One QR code. 12-month forecast: the finance leader builds next year in this. It opens the Example tab of the 12-month cash forecast template in Google Sheets."
+      }
+    }
+  ]
+}

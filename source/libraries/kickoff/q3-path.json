@@ -1,0 +1,252 @@
+{
+  "id": "q3-path",
+  "artifact": "path",
+  "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "status",
+      "title": "First, how last quarter went.",
+      "headline": "First, how last quarter went.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Q3 has twelve steps. Review last quarter, agree the Core Values, assess the team, find the white space, then plan the quarter."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-status.svg",
+        "alt": "Q3 path: Status next, then Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "functions",
+      "title": "Next, who owns each function.",
+      "headline": "Next, who owns each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "The same checks as last quarter. Change only what is no longer true."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-functions.svg",
+        "alt": "Q3 path: Status done. Functions next, then Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "scorecards",
+      "title": "Next, what success looks like in each function.",
+      "headline": "Next, what success looks like in each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "A check-in. Every leader has a function scorecard in Metronome by now."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-scorecards.svg",
+        "alt": "Q3 path: Status, Functions done. Scorecards next, then KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "kffm",
+      "title": "Then, how the work turns into cash.",
+      "headline": "Then, how the work turns into cash.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Walk the KFFM again, part by part. New today: the KFFM joins the weekly leadership meeting."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-kffm.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards done. KFFM next, then Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "values",
+      "title": "Next, agree what you stand for.",
+      "headline": "Next, agree what you stand for.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "A quick pass on the Core Purpose. Then the team brings together what its teams discovered and agrees its Core Values.",
+        "The BHAG pass follows the values."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-values.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM done. Core Values next, then A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "people",
+      "title": "Then, who lives the values and delivers.",
+      "headline": "Then, who lives the values and delivers.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "New today: each leader assesses their direct reports against the Core Values the team has just agreed."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-people.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values done. A-Player Team next, then Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "attribution",
+      "title": "Next, find the white space in your market.",
+      "headline": "Next, find the white space in your market.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "The Attribution Framework is the main new work of the afternoon. It takes time.",
+        "Do not review the Core Customer first. The attributes describe the whole market."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-attribution.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team done. Attribution Framework next, then 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "strategy",
+      "title": "Then, confirm where you’re going.",
+      "headline": "Then, confirm where you’re going.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Test the 3HAG against the 3HAG line the team has just drawn."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-strategy.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework done. 3HAG next, then Plan, Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "plan",
+      "title": "Next, plan the next quarter.",
+      "headline": "Next, plan the next quarter.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Start from the 1HAG, then build the new QHAG from it. Never leave a quarterly without a quarterly plan."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-plan.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG done. Plan next, then Sprint Lanes, Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "lanes",
+      "title": "Then, plan it week by week.",
+      "headline": "Then, plan it week by week.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "The team built sprint lanes last quarter. Today it builds them again for the new QHAG."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-lanes.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan done. Sprint Lanes next, then Individual Priorities, Forecast."
+      }
+    },
+    {
+      "id": "priorities",
+      "title": "Next, your own priorities.",
+      "headline": "Next, your own priorities.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Each leader sets individual priorities that line up with the QHAG and its sprint lanes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-priorities.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes done. Individual Priorities next, then Forecast."
+      }
+    },
+    {
+      "id": "forecast",
+      "title": "Then, next year’s forecast.",
+      "headline": "Then, next year’s forecast.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "The plan is set. Now the finance leader hears what to build before the annual."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q3-path-forecast.svg",
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities done. Forecast next."
+      }
+    }
+  ]
+}

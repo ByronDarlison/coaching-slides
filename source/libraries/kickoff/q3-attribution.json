@@ -1,0 +1,270 @@
+{
+  "id": "q3-attribution",
+  "artifact": "attribution-framework",
+  "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "objective",
+      "title": "The Attribution Framework shows where the white space is.",
+      "headline": "The Attribution Framework shows where the white space is.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_side": true,
+      "support": "It compares your whole company with your competitors, across your market.",
+      "body": [
+        "Where does everyone compete on the same thing?",
+        "Where is the white space?",
+        "Where will you be in three years?"
+      ],
+      "notes": [
+        "Strategy is a unique and valuable position. You get there by moving into white space that matters to your Core Customer.",
+        "This is about the company, not a product.",
+        "It is a key strategic picture. Give it time, and let the team sleep on it.",
+        "Allow about 60 minutes."
+      ],
+      "artwork": {
+        "src": "assets/attribution-team.jpg",
+        "alt": "Three neutral grey figures stand at a wall chart of crossing lines. One points at the chart. The empty upper left of the chart is shaded green."
+      }
+    },
+    {
+      "id": "example",
+      "title": "Attribution Framework example",
+      "headline": "Attribution Framework example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "The same subscription company, with three competitors from its Market Map.",
+        "Competitor A sells through app marketplaces. Competitor B sells to larger companies through resellers. Competitor C is the low-cost option.",
+        "Walk the graph once. The next slides take each part in turn.",
+        "The scores are directional. Do not argue a 3 against a 4."
+      ],
+      "artwork": {
+        "src": "assets/attribution-example.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Five lines: Us today, Competitor A, Competitor B, Competitor C and the 3HAG line. Us today runs from 4 on the left to 2 on the right. The 3HAG line rises to 5 on speed of setup, price predictability and support from a person, and drops on reporting and customization."
+      }
+    },
+    {
+      "id": "attributes",
+      "title": "Attributes describe the whole market.",
+      "headline": "Attributes describe the whole market.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "An attribute is something the market compares companies on.",
+        "Anyone with power on your Market Map weighs attributes: buyers, channels, influencers and acquirers.",
+        "Include attributes nobody competes on yet. No customer can ask for those.",
+        "Keep it at company level. Do not list product features.",
+        "Aim for 12 to 15 attributes."
+      ],
+      "artwork": {
+        "src": "assets/attribution-attributes.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed and the attribute names are bright. Callout: Why: the market sets the attributes, not our product. Ask: what describes the whole market?"
+      }
+    },
+    {
+      "id": "us",
+      "title": "Score your company, then order the attributes.",
+      "headline": "Score your company, then order the attributes.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Score how well the company serves each attribute today, from 1 to 5.",
+        "Order the attributes from best to worst. The line then falls from left to right.",
+        "Score today honestly. A company with no 5s has room to grow."
+      ],
+      "artwork": {
+        "src": "assets/attribution-us.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except Us today, which falls from 4 on the left to 2 on the right. Callout: Why: an honest score shows where we stand today. Ask: how well do we serve each attribute, 1 to 5?"
+      }
+    },
+    {
+      "id": "competitors",
+      "title": "Add your top competitors.",
+      "headline": "Add your top competitors.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Score two or three competitors on the same attributes, in the same order.",
+        "If the team cannot score a competitor with confidence, stop. Assign the research as homework.",
+        "Look for where every line bunches together. That is where everyone competes on the same thing."
+      ],
+      "artwork": {
+        "src": "assets/attribution-competitors.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Us today and the 3HAG line are dimmed. The three competitor lines are bright: A is strongest on integrations, B on feature breadth, customization and partner network, C is low almost everywhere. Callout: Why: the lines show where everyone competes. Ask: how would each competitor score?"
+      }
+    },
+    {
+      "id": "white-space",
+      "title": "White space is where nothing is drawn.",
+      "headline": "White space is where nothing is drawn.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "White space is any part of the graph with nothing in it. It can sit above the lines or below them.",
+        "In the example, nobody scores a 5 on speed of setup, price predictability or support from a person.",
+        "Ask the team where the white space is before you point at it."
+      ],
+      "artwork": {
+        "src": "assets/attribution-white-space.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed. The empty area above them is shaded green. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
+      }
+    },
+    {
+      "id": "line",
+      "title": "The 3HAG line is where you will be in three years.",
+      "headline": "The 3HAG line is where you will be in three years.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Decide what to maintain, what to improve and what to let drop.",
+        "A good 3HAG line gives something up. If every score goes up, go again. Do not force it on the first round.",
+        "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
+        "In the example, reporting and customization drop, so that setup, price and support can lead."
+      ],
+      "artwork": {
+        "src": "assets/attribution-3hag.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
+      }
+    },
+    {
+      "id": "brainstorm",
+      "title": "What are the attributes of your market?",
+      "headline": "What are the attributes of your market?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "Work on your own first. Write 5 to 7 attributes of your market.",
+      "body": [
+        "A small team writes 7 to 10 each.",
+        "Then share them. Group similar ones and name each group.",
+        "Aim for 12 to 15 attributes."
+      ],
+      "notes": [
+        "Each leader works in private. Reveal when everyone is done.",
+        "Keep the attributes about the whole market, not one customer.",
+        "Think beyond the buyer. Channels, influencers and acquirers weigh attributes too.",
+        "Allow about 20 minutes."
+      ]
+    },
+    {
+      "id": "score",
+      "title": "Score your company and your competitors.",
+      "headline": "Score your company and your competitors.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_side": true,
+      "support": "Open your copy of the Attribution Map sheet.",
+      "body": [
+        "Enter your attributes.",
+        "Score your company and two or three competitors, 1 to 5.",
+        "Everyone scores alone first. The CEO shares last.",
+        "Enter the agreed scores. The chart sorts itself."
+      ],
+      "notes": [
+        "Scan the code, then choose File and Make a copy in Google Sheets. One person shares the copy on screen.",
+        "Each leader writes scores in private. Then compare them, and the CEO shares last.",
+        "The spread between scores is where the discussion is.",
+        "Enter scores in any order. The sheet orders the attributes from best to worst.",
+        "The first pass is directional. Do not argue decimals.",
+        "Then ask: where is the white space?",
+        "Allow about 25 minutes."
+      ],
+      "artwork": {
+        "src": "assets/attribution-sheet.svg",
+        "alt": "One QR code. Attribution Map sheet: make a copy, then enter your scores. It opens the Attribution Map master sheet in Google Sheets."
+      }
+    },
+    {
+      "id": "draw",
+      "title": "Draw your 3HAG line.",
+      "headline": "Draw your 3HAG line.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "Now bring your Core Customer back. Test the white space against their three ranked needs.",
+      "body": [
+        "Decide what to maintain, what to improve and what to let drop.",
+        "Enter a 3HAG score for each attribute.",
+        "Ask: what will we be worse at in three years?"
+      ],
+      "notes": [
+        "The white space only counts if it matters to the Core Customer.",
+        "In the example, Dana needs fast setup, a predictable cost and a person to call. The 3HAG line leads on all three.",
+        "Let the team sleep on it. The line can change before the annual.",
+        "Homework: add the Attribution Framework to the War Room in Metronome."
+      ]
+    },
+    {
+      "id": "apply",
+      "title": "What does the white space change?",
+      "headline": "What does the white space change?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "body": [
+        "3HAG: do the capabilities build the attributes where you will lead?",
+        "1HAG and QHAG: does a priority change?",
+        "What will you stop doing, because the 3HAG line lets it drop?"
+      ],
+      "notes": [
+        "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG.",
+        "A team that runs out of time finishes the Attribution Framework in an extra session before the annual."
+      ],
+      "support": "Look at the finished graph together. Then ask:"
+    }
+  ]
+}

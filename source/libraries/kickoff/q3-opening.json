@@ -1,0 +1,49 @@
+{
+  "id": "q3-opening",
+  "artifact": "opening",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "Metronomics Q3",
+      "headline": "Metronomics Q3",
+      "layout": "title",
+      "group": "Q3",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "The third quarterly planning day after the Kick Off. The objective is planning and executing with increasing momentum, and validating the 3HAG.",
+        "This reusable deck needs no company-specific edits."
+      ],
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      }
+    },
+    {
+      "id": "valuable",
+      "title": "What would make today valuable?",
+      "headline": "What would make today valuable?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "notes": [
+        "Ask each person to write an answer and share it. Agree on the outcomes. Return to them at the close. Allow 10 minutes.",
+        "Byron’s note shows the purpose of Q3: validating the 3HAG."
+      ],
+      "support": "Write your answer, then share it with the team.",
+      "artwork": {
+        "src": "assets/q3-sticky.jpg",
+        "alt": "Byron’s sticky note, handwritten with: 3HAG validation."
+      }
+    }
+  ]
+}

@@ -137,8 +137,8 @@
       "art_side": true,
       "support": "Pick the Year 3 end date.",
       "body": [
-        "Gross revenue, margin and year-end cash.",
-        "One widget for each hand-off on your KFFM.",
+        "Gross revenue, margin and year-end cash, for Year 3 alone.",
+        "Name the widget for each hand-off on your KFFM. Estimate the quantity where you can.",
         "Name an owner for every number."
       ]
     },
@@ -216,7 +216,9 @@
       "eyebrow": "",
       "art_side": true,
       "support": "What must be in place to make the numbers and the statement true?",
-      "body": []
+      "body": [
+        "If revenue tripled, what would we need to be able to do?"
+      ]
     },
     {
       "id": "known-for",

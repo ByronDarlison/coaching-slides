@@ -1,0 +1,226 @@
+{
+  "id": "q3-aplayer",
+  "artifact": "a-player-assessment",
+  "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+  "tags": [
+    "q3"
+  ],
+  "slides": [
+    {
+      "id": "objective",
+      "title": "An A-Player lives the values and delivers.",
+      "headline": "An A-Player lives the values and delivers.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_side": true,
+      "support": "A-Players are the goal: 90% or more of the team.",
+      "body": [
+        "A leader with A-Players has time to work on the business.",
+        "A leader without them is stuck in execution.",
+        "Today each leader assesses their direct reports, together."
+      ],
+      "notes": [
+        "Most leaders can name their best people. It is harder to say why, and harder still to defend it to their peers.",
+        "The team asks two questions. Does this person live the Core Values? Do they deliver on their scorecard?",
+        "The CEO’s own assessment of the leadership team stays private. It is not part of this exercise."
+      ],
+      "artwork": {
+        "src": "assets/a-player-team.jpg",
+        "alt": "Three neutral grey figures stand at a wall grid of three rows and three columns, placing sticky notes. The note in the top right box is green."
+      }
+    },
+    {
+      "id": "grid",
+      "title": "Assess each person on two questions.",
+      "headline": "Assess each person on two questions.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Core Values first: how often does this person live every value? The lowest value sets the row.",
+        "Then performance: where do they stand against their function scorecard?",
+        "Ahead does not mean above target. It means the person meets or exceeds every part of the scorecard."
+      ],
+      "artwork": {
+        "src": "assets/a-player-grid.svg",
+        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom: Being Carried, not meeting most of the scorecard; Behind, meets most of the scorecard; Ahead, meets or exceeds all of the scorecard. The grid is empty."
+      }
+    },
+    {
+      "id": "evidence",
+      "title": "Use the evidence you have.",
+      "headline": "Use the evidence you have.",
+      "layout": "comp-decision",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Stage 1",
+          "heading": "No scorecards yet",
+          "support": "Use what you have observed, the current job description and your judgment.",
+          "mark": "structure"
+        },
+        {
+          "role": "Stage 2",
+          "heading": "Scorecards in place",
+          "support": "Use what you have observed, with the scorecard as the guide.",
+          "mark": "structure"
+        },
+        {
+          "role": "Stage 3",
+          "heading": "Scorecards and reviews",
+          "support": "Use the evidence recorded in each person’s coaching reviews.",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "Do not wait for scorecards before the first assessment. Start with the evidence the team has.",
+        "Record the date, the teams you assessed and the stage of evidence.",
+        "If most people land on Behind, check the scorecards before you blame the people. Vague scorecards produce B-Players."
+      ]
+    },
+    {
+      "id": "place",
+      "title": "Place each of your direct reports.",
+      "headline": "Place each of your direct reports.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "Write each person on a note, in your own colour. Place every note on the grid.",
+      "body": [
+        "Then present your team, one leader at a time.",
+        "Peers say whether they see each person the same way."
+      ],
+      "notes": [
+        "Place everyone before you show anything else.",
+        "The first time takes longer. Most leaders have never discussed their people with this group.",
+        "Peers add what they have seen. A note can move while the leader presents.",
+        "Allow about 30 minutes."
+      ]
+    },
+    {
+      "id": "placed",
+      "title": "A-Player assessment example",
+      "headline": "A-Player assessment example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "The same subscription company. Jen places her six direct reports in Operations and Development.",
+        "Each leader presents in turn. The example shows one leader’s team so the notes can be read."
+      ],
+      "artwork": {
+        "src": "assets/a-player-placed.svg",
+        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom: Being Carried, not meeting most of the scorecard; Behind, meets most of the scorecard; Ahead, meets or exceeds all of the scorecard. Jen’s direct reports are placed. Most of the time and Ahead: Maya, Omar and Priya. Most of the time and Behind: Leo. Most of the time and Being Carried: Nora. Some of the time and Ahead: Ravi."
+      }
+    },
+    {
+      "id": "zones",
+      "title": "Only one box holds A-Players.",
+      "headline": "Only one box holds A-Players.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Show the zones only after the team has placed everyone. Once they show, nobody moves a note.",
+        "A: most of the time, and Ahead. B: most of the time, and Behind. Every other box is a C.",
+        "In the example, three of six are A-Players. The goal is 90% or more."
+      ],
+      "artwork": {
+        "src": "assets/a-player-zones.svg",
+        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom: Being Carried, not meeting most of the scorecard; Behind, meets most of the scorecard; Ahead, meets or exceeds all of the scorecard. The zones are shown. Most of the time and Ahead is A, with Maya, Omar and Priya. Most of the time and Behind is B, with Leo. The other seven boxes are C, with Nora and Ravi."
+      }
+    },
+    {
+      "id": "toxic",
+      "title": "A high performer who breaks the values is still a C.",
+      "headline": "A high performer who breaks the values is still a C.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "notes": [
+        "Ravi delivers, but lives the values only some of the time.",
+        "You cannot coach Core Values. Ask which value this person does not live.",
+        "Then ask the hard question: would you lower the bar and give up that value?"
+      ],
+      "artwork": {
+        "src": "assets/a-player-ravi.svg",
+        "alt": "The same grid with the zones shown and everyone dimmed except Ravi, in some of the time and Ahead, a C box. Callout beside Ravi: Still a C. A high performer who breaks a Core Value."
+      }
+    },
+    {
+      "id": "plans",
+      "title": "Everyone below A gets a plan.",
+      "headline": "Everyone below A gets a plan.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "Rank the Bs: B1, B2 and so on. Agree each one’s path back to A within 90 days.",
+        "A C needs a plan right away. Do not wait for the next quarterly.",
+        "For a values gap, the decision is about fit. For a performance gap, it is about improving.",
+        "Review every plan at the agreed check-ins, and again next quarter.",
+        "Homework: each leader makes a plan and takes action on any C player."
+      ],
+      "artwork": {
+        "src": "assets/a-player-plans.svg",
+        "alt": "Plans for everyone below A, with columns for person, plan, accountable leader, next check-in and decision or completion date. Leo, B: close the gap to Ahead on the scorecard; Jen; weekly 1:1; within 90 days. Ravi, C: name the value and the behaviour, decide whether Ravi fits; Jen; weekly 1:1; within 30 days. Nora, C: set the scorecard standard, decide to improve or move on; Jen; weekly 1:1; within 30 days."
+      }
+    },
+    {
+      "id": "go-deeper",
+      "title": "Go deeper on A-Players before the next session.",
+      "headline": "Go deeper on A-Players before the next session.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "notes": [
+        "Scan to open each page on darlison.com.",
+        "The article explains each zone and what to do about it.",
+        "The prompt helps a leader prepare an honest assessment before the next quarterly."
+      ],
+      "artwork": {
+        "src": "assets/a-player-links.svg",
+        "alt": "Two QR codes. Read the article: Who On Your Team Is An A-Player? Run the prompt: A-Player Team Assessment Prep. Both open on darlison.com."
+      }
+    }
+  ]
+}

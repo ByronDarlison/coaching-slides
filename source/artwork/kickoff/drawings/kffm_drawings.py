@@ -67,13 +67,14 @@ pre=f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="HH" viewBox="0
 def lab(ls,lx,ly,a): return ''.join(f'<text x="{lx}" y="{ly+k*21}" font-size="17" font-weight="600" fill="{B}" text-anchor="{a}">{z}</text>' for k,z in enumerate(ls))
 hl=''.join(AR)+''.join(lab(ls,lx,ly,a) for x,y,w,h,ls,lx,ly,a in WL)
 dim=f'<rect width="{W}" height="{H}" fill="white" opacity=".8"/>'
-cx0,cy0,cw,ch=40,cy2-118,600,236
+cx0,cy0,cw,ch=40,cy2-136,600,272
 call=(f'<rect x="{cx0+6}" y="{cy0+8}" width="{cw}" height="{ch}" rx="16" fill="#000" opacity=".12"/>'
  f'<rect x="{cx0}" y="{cy0}" width="{cw}" height="{ch}" rx="16" fill="white" stroke="{B}" stroke-width="4"/>'
  f'<text x="{cx0+32}" y="{cy0+62}" font-size="36" font-weight="700" fill="{B}">Widgets</text>'
  f'<text x="{cx0+32}" y="{cy0+112}" font-size="27" font-weight="500" fill="{INK}">A countable, non-financial thing</text>'
  f'<text x="{cx0+32}" y="{cy0+148}" font-size="27" font-weight="500" fill="{INK}">one function receives and then</text>'
- f'<text x="{cx0+32}" y="{cy0+184}" font-size="27" font-weight="500" fill="{INK}">hands to the next.</text>')
+ f'<text x="{cx0+32}" y="{cy0+184}" font-size="27" font-weight="500" fill="{INK}">hands to the next.</text>'
+ f'<text x="{cx0+32}" y="{cy0+226}" font-size="27" font-weight="700" fill="{INK}">Widgets drive cash.</text>')
 open(A+'kffm-widgets.svg','w').write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{style}<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="{B}"/></marker></defs><rect width="{W}" height="{H}" fill="white"/>'+''.join(o)+dim+hl+call+'</svg>')
 
 def callout(title,lines,h):

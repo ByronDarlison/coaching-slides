@@ -86,7 +86,8 @@
         "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
         "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
         "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If Q1 is a quarter of the way or less, ask what makes the later quarters steeper.",
-        "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the 1HAG’s $300 a year."
+        "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the 1HAG’s $300 a year.",
+        "When the team has no data for a number, set a best estimate and track it. The next status review asks where the estimate was wrong."
       ],
       "tags": [
         "kickoff",
@@ -118,9 +119,9 @@
       "art_side": true,
       "support": "Confirm the quarter and its end date.",
       "body": [
-        "Gross revenue, margin and ending cash, month by month.",
-        "Each widget and head count, month by month.",
+        "Gross revenue, margin, ending cash, each widget and head count, month by month.",
         "Name an owner for every number.",
+        "No data yet? Set your best estimate, then track it.",
         "Is each target big enough to keep you on track for your 1HAG?"
       ]
     },

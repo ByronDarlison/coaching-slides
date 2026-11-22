@@ -614,6 +614,23 @@
   };
   document.addEventListener("scroll", putAway, { passive: true, capture: true });
   document.addEventListener("touchstart", putAway, { passive: true, capture: true });
+  // Keep a term's definition inside the slide: shift it sideways when the term sits near an edge.
+  const fitTip = (event) => {
+    if (small.matches) return;
+    const term = event.target && event.target.closest ? event.target.closest(".term") : null;
+    if (!term) return;
+    const tip = term.querySelector(".hotspot-tip");
+    const frame = term.closest(".slide-content") || term.closest(".slide");
+    if (!tip || !frame) return;
+    tip.style.setProperty("--tip-dx", "0px");
+    const box = frame.getBoundingClientRect(), r = tip.getBoundingClientRect(), pad = 12;
+    let dx = 0;
+    if (r.left < box.left + pad) dx = box.left + pad - r.left;
+    else if (r.right > box.right - pad) dx = box.right - pad - r.right;
+    tip.style.setProperty("--tip-dx", dx + "px");
+  };
+  document.addEventListener("mouseover", fitTip, true);
+  document.addEventListener("focusin", fitTip, true);
   // Leaving the small-screen layout closes the view, so it never covers the stage.
   const leave = () => { if (!small.matches) close(); };
   if (small.addEventListener) small.addEventListener("change", leave);

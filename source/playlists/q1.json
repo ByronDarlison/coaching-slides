@@ -255,7 +255,7 @@
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -280,7 +280,7 @@
           {
             "role": "Weekly",
             "heading": "Weekly leadership meeting",
-            "support": "60 minutes. The CEO owns it.",
+            "support": "60 minutes or less. The CEO owns it.",
             "mark": "structure",
             "items": [
               "Good news",
