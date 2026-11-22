@@ -43,7 +43,8 @@
       "artwork": {
         "src": "assets/q1-sticky.jpg",
         "alt": "Byron’s sticky note, handwritten with: Functional clarity with team accountability."
-      }
+      },
+      "art_side": true
     }
   ]
 }

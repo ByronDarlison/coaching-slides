@@ -1122,7 +1122,8 @@
       "artwork": {
         "src": "assets/two-days-sticky.jpg",
         "alt": "Byron’s sticky note, handwritten with: Team clarity and commitment."
-      }
+      },
+      "art_side": true
     },
     {
       "id": "two-days",

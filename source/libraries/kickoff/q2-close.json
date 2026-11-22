@@ -68,7 +68,8 @@
       "artwork": {
         "src": "assets/q2-sticky-checked.svg",
         "alt": "Byron’s sticky note from the start of the day, handwritten with: Planning and executing with increasing momentum, now with a large green check mark beside it."
-      }
+      },
+      "art_side": true
     }
   ]
 }

@@ -43,7 +43,8 @@
       "artwork": {
         "src": "assets/q2-sticky.jpg",
         "alt": "Byron’s sticky note, handwritten with: Planning and executing with increasing momentum."
-      }
+      },
+      "art_side": true
     }
   ]
 }

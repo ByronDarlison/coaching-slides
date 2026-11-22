@@ -69,7 +69,8 @@
       "artwork": {
         "src": "assets/q3-sticky-checked.svg",
         "alt": "Byron’s sticky note from the start of the day, handwritten with: 3HAG validation, now with a large green check mark beside it."
-      }
+      },
+      "art_side": true
     }
   ]
 }

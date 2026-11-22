@@ -43,7 +43,8 @@
       "artwork": {
         "src": "assets/q3-sticky.jpg",
         "alt": "Byron’s sticky note, handwritten with: 3HAG validation."
-      }
+      },
+      "art_side": true
     }
   ]
 }
