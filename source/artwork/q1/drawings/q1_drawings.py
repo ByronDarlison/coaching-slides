@@ -58,8 +58,7 @@ def path_svg(current):
         cx = x + w / 2
         if now:
             o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="16" fill="{B}"/>')
-            o.append(t(cx, 166, label, 23, 700, "white"))
-            o.append(t(cx, 204, "Next", 22, 700, "white"))
+            o.append(t(cx, 178, label, 23, 700, "white"))
         elif done:
             o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="{GFILL}" stroke="{G}" stroke-width="3"/>')
             o.append(t(cx, 164, label, 21, 700, INK))

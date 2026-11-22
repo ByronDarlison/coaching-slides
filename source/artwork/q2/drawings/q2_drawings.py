@@ -84,8 +84,7 @@ def path_svg(current):
         top = y + (58 if len(two) == 1 else 44)
         if now:
             o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{B}"/>')
-            o.append(lines(cx, top, two, 30, 34, 700, "white"))
-            o.append(t(cx, y + 122, "Next", 27, 700, "white"))
+            o.append(lines(cx, y + (86 if len(two) == 1 else 68), two, 30, 34, 700, "white"))
         elif done:
             o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{GFILL}" stroke="{G}" stroke-width="3"/>')
             o.append(lines(cx, top, two, 28, 34, 700, INK))
