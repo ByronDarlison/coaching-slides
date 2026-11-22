@@ -130,7 +130,9 @@
       "layout": "comp-decision",
       "group": "",
       "notes": [
-        "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement."
+        "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
+        "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
+        "Disagree and commit: the disagreement is said in the room. Once the team decides, everyone backs the decision outside it."
       ],
       "tags": [
         "kickoff",
@@ -146,7 +148,7 @@
         {
           "role": "Challenge",
           "heading": "Challenge yourself and each other",
-          "support": "Bring the difficult facts forward.",
+          "support": "Strong convictions, loosely held.",
           "mark": "action"
         },
         {
@@ -154,6 +156,12 @@
           "heading": "No blame. No shame.",
           "support": "Make it safe to speak honestly.",
           "mark": "structure"
+        },
+        {
+          "role": "Commit",
+          "heading": "Disagree and commit",
+          "support": "Say it in the room, then back the decision.",
+          "mark": "action"
         }
       ],
       "arrows": false,

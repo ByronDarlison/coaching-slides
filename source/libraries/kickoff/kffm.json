@@ -113,7 +113,8 @@
         ],
         "hotspots": []
       },
-      "art_full": true
+      "art_full": true,
+      "support": "A widget is what one function hands to the next, and what drives cash. Name each with your unit: subscription leads, new subscriptions."
     },
     {
       "id": "status",

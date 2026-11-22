@@ -25,8 +25,8 @@
       ],
       "notes": [
         "This is the Mission to Mars exercise. It discovers the values the company already lives.",
-        "The team does it together, in the room, today.",
-        "Allow about 60 minutes for the whole exercise."
+        "At Q2, teach the exercise so each leader can run it with their own team before the next session.",
+        "In a small company, where the leadership team is most of the company, the team runs it together in the room. Allow about 60 minutes."
       ],
       "artwork": {
         "src": "assets/mission-to-mars.jpg",
@@ -46,8 +46,8 @@
       "art_full": true,
       "art_fit": true,
       "notes": [
-        "Walk the five steps once, so the team sees where the exercise ends.",
-        "The next slides take each step in turn."
+        "Walk the five steps once, so each leader sees where the exercise ends.",
+        "A leader runs the same five steps with their team: pick, share and cluster, vote, test, agree."
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
@@ -96,6 +96,29 @@
       "notes": [
         "The coach groups the notes as each leader presents.",
         "A few words that describe the behaviour are enough for now. The names come at the end."
+      ]
+    },
+    {
+      "id": "results",
+      "title": "Bring your teams’ values together.",
+      "headline": "Bring your teams’ values together.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "Each leader shares their team’s top three values, and the behaviour behind each.",
+      "body": [
+        "Move similar values together.",
+        "Name each cluster with a word or a phrase."
+      ],
+      "notes": [
+        "Each leader ran Mission to Mars with their own team as homework. This is where the results meet.",
+        "The coach groups the notes as each leader presents. Values that came from several teams are the strongest signal.",
+        "If a leader did not run the exercise, say so and carry on with the results the team has.",
+        "Allow about 20 minutes for this slide and the three that follow."
       ]
     },
     {
@@ -151,7 +174,7 @@
       ],
       "notes": [
         "These are the example company’s Core Values. Use them to show the form: a short name, then the behaviour.",
-        "Do not recommend adopting them. The team’s values come from the people it just named.",
+        "Do not recommend adopting them. The team’s values come from the people named in the exercise.",
         "Watch for a value with no clear behaviour behind it."
       ]
     },

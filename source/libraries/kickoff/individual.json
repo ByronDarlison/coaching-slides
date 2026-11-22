@@ -40,11 +40,11 @@
       "notes": [
         "Start with the owner of company priority #1, then the other company-priority owners.",
         "Each owner places that commitment first in their individual plan. Add other aligned work and a development commitment.",
-        "Allow up to five work priorities and one development priority. Protect enough time for real discussion.",
+        "Allow up to five work priorities and one development priority. Two that are delivered beat five that are started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
         "Include every company priority you own. Do not drop one because you own several.",
         "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
         "Run the six questions from the “Pick the priorities that contribute most to success” slide on each individual priority. Hover over “six questions” to show them.",
-        "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Listen for widgets. Don’t make a big deal of it; one is enough.",
+        "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Ask: did I have a good day? A person who owns two functions has one for each.",
         "At a quarterly, start from the critical number you named for your function on the Team View.",
         "At a quarterly, list your open priorities from last quarter first. They stay until their number has moved."
       ],
@@ -56,13 +56,13 @@
         {
           "role": "Measure",
           "heading": "Critical number",
-          "support": "One number you own in your function and look at every day.",
+          "support": "The one number you own that tells you whether you had a good day. One for each function you own.",
           "mark": "structure"
         },
         {
           "role": "Commitment",
-          "heading": "Ideally 3, up to 5 work priorities",
-          "support": "If you own a company priority, it goes first. Test each with the six questions. Each gets a done-by date and a measure of success.",
+          "heading": "Up to 5 work priorities",
+          "support": "Two delivered beat five started. Your company priority goes first, and wins if time runs short. Test each with the six questions. Each gets a done-by date and a measure of success.",
           "mark": "action"
         },
         {
@@ -95,6 +95,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
+        "Before the read-back starts, the team names company priority #1 and its owner. If it is not named, go back to the “What is the #1 priority for the quarter?” slide.",
         "Each person reads their critical number, then each priority with its done-by date, measure and achieved-by date, then their professional development.",
         "Peers ask about missing work, dependencies and assumed handoffs. Resolve gaps and overlaps.",
         "Challenge whether the commitments fit the quarter’s capacity. This exercise can take an hour."
@@ -109,7 +110,7 @@
       },
       "eyebrow": "",
       "body": [
-        "The owner of company priority #1 goes first.",
+        "Name company priority #1 and its owner. They go first.",
         "Read your critical number, priorities and professional development.",
         "Peers ask: can you get all that done?"
       ],

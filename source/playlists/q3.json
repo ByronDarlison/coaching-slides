@@ -181,10 +181,7 @@
     {
       "id": "kickoff:q3-values",
       "slides": [
-        "scenario",
-        "steps",
-        "pick",
-        "cluster",
+        "results",
         "vote"
       ]
     },
@@ -198,7 +195,7 @@
         "headline": "Test your top three.",
         "support": "Take the three clusters with the most votes. Test each one:",
         "notes": [
-          "This is step 4. A cluster that fails the tests is a brand value or a wish, not a Core Value.",
+          "A cluster that fails the tests is a brand value or a wish, not a Core Value.",
           "A fourth or fifth value can earn its place here.",
           "Allow about 10 minutes."
         ],
@@ -427,7 +424,7 @@
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -452,7 +449,7 @@
           {
             "role": "Weekly",
             "heading": "Weekly leadership meeting",
-            "support": "60 minutes. The CEO owns it.",
+            "support": "60 minutes or less. The CEO owns it.",
             "mark": "structure",
             "items": [
               "Good news",

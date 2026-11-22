@@ -40,6 +40,7 @@
       "group": "",
       "notes": [
         "Daily huddle agenda: good news, metrics (each leader says yesterday’s widget actual and today’s forecast), the number one thing to get done today, then stucks and what cannot wait. Keep problem-solving out of the huddle.",
+        "On the day of the weekly leadership meeting, the weekly replaces the huddle. Every other day the huddle runs, whoever is in.",
         "Weekly 1:1 agenda: good news, metrics, top 3 priorities for the week, feedback both ways, then dynamic. The direct report leads it.",
         "Weekly leadership meeting agenda: good news, values recognition, scoreboard review (last week’s widget forecast, where it landed and this week’s forecast), QHAG status, priority status, then dynamic: stucks, asks, offers. Protect it; do not cancel when busy.",
         "Leaders carry the agreed rhythm into their own teams."
@@ -52,7 +53,7 @@
         {
           "role": "Daily",
           "heading": "Daily huddle",
-          "support": "7 to 10 minutes, every day. The facilitator rotates.",
+          "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
           "mark": "structure",
           "items": [
             "Good news",
@@ -77,7 +78,7 @@
         {
           "role": "Weekly",
           "heading": "Weekly leadership meeting",
-          "support": "60 minutes. The CEO owns it.",
+          "support": "60 minutes or less. The CEO owns it.",
           "mark": "structure",
           "items": [
             "Good news",
@@ -97,6 +98,14 @@
           "tip": [
             "Stucks, important information, things to mention that cannot wait.",
             "The direct report leads it. The leader will usually have a few topics."
+          ]
+        },
+        {
+          "term": "Stucks, asks and offers",
+          "tip": [
+            "Stucks: what is blocked.",
+            "Asks: help I need.",
+            "Offers: help I can give."
           ]
         }
       ]

@@ -1,0 +1,32 @@
+{
+  "id": "q2-values",
+  "artifact": "core-values",
+  "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins’ Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
+  "tags": [
+    "q2"
+  ],
+  "slides": [
+    {
+      "id": "setup",
+      "title": "Run Mission to Mars with your team before the next session.",
+      "headline": "Run Mission to Mars with your team before the next session.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "copy_stack": true,
+      "support": "Each leader runs the five steps with their own team.",
+      "body": [
+        "Book 60 minutes with your team.",
+        "Bring your team’s top three values to the next session, with the behaviour behind each."
+      ],
+      "notes": [
+        "The values come from the whole company, not only the leadership team. Then the language belongs to everyone.",
+        "A company that already has Core Values runs the same exercise to confirm them.",
+        "Homework: each leader runs Mission to Mars with their team and brings the results to the next session."
+      ]
+    }
+  ]
+}
