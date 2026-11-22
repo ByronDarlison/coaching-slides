@@ -17,11 +17,10 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "From this week, review the KFFM together every week.",
+      "support": "Put the KFFM on the weekly agenda in Metronome.",
       "body": [
-        "Put the KFFM on the weekly agenda in Metronome.",
         "Each owner reports their critical number: green, yellow or red.",
-        "A red number arrives with its correction: what is being done, by whom and by when."
+        "A red number comes with a written plan: situation, cause, correction, follow-up."
       ],
       "notes": [
         "The KFFM is in Metronome with its metrics, from last quarter’s homework.",
