@@ -50,7 +50,16 @@
     {
       "id": "kickoff:function-chart",
       "slides": [
-        "ownership",
+        "ownership"
+      ],
+      "override": {
+        "title": "Your Function Chart gives every function one accountable owner.",
+        "headline": "Your Function Chart gives every function one accountable owner."
+      }
+    },
+    {
+      "id": "kickoff:function-chart",
+      "slides": [
         "gaps"
       ]
     },
