@@ -98,9 +98,16 @@
     {
       "id": "kickoff:q1-functions",
       "slides": [
-        "team-view",
         "numbers"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
+          "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
+          "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
+          "Show the Team View to the whole team at a town hall whenever it changes."
+        ]
+      }
     },
     {
       "id": "kickoff:q3-path",
