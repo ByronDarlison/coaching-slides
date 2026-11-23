@@ -74,7 +74,10 @@
       "id": "kickoff:quarterly-review",
       "slides": [
         "function-chart"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open Function Chart. Test it against how the quarter really went."
+      }
     },
     {
       "id": "kickoff:q1-functions",
@@ -100,6 +103,13 @@
           "Ask each leader where their scorecard stands, and which of its two metrics sits on the KFFM.",
           "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: complete the annual reviews on the function scorecards in Metronome."
+        ],
+        "body": [
+          "What: one page per function, saying what success looks like.",
+          "Why: everyone knows what they own and how we measure it.",
+          "How often: every 90 days, scored 0, 1 or 2.",
+          "Who: the owner, then their team lead. Then they compare.",
+          "In Metronome: open Scorecards."
         ]
       }
     },
@@ -131,7 +141,10 @@
       "id": "kickoff:quarterly-kffm",
       "slides": [
         "map"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open KFFM and put it on the screen."
+      }
     },
     {
       "id": "kickoff:kffm",
@@ -193,7 +206,10 @@
       "id": "kickoff:quarterly-review",
       "slides": [
         "purpose"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
+      }
     },
     {
       "id": "kickoff:q3-values",
@@ -238,7 +254,8 @@
       ],
       "override": {
         "headline": "Does your BHAG still hold?",
-        "title": "Does your BHAG still hold?"
+        "title": "Does your BHAG still hold?",
+        "support": "In Metronome: open One Page Plans and read your BHAG aloud."
       }
     },
     {
@@ -324,7 +341,7 @@
           "Question the math: do the five widget targets add up to the revenue?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
         ],
-        "support": "Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open One Page Plans. Read it aloud. Then test it against your 3HAG line."
       }
     },
     {
@@ -344,7 +361,7 @@
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
           "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
         ],
-        "support": "Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open Annual Priorities. Read it aloud. Then test it against your 3HAG line."
       }
     },
     {
@@ -365,10 +382,23 @@
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "quarter-first",
-        "quarter-rest",
-        "qhag-check"
+        "quarter-first"
       ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-rest"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "qhag-check"
+      ],
+      "override": {
+        "support": "In Metronome: open Quarterly Priorities. Read it aloud before you move on."
+      }
     },
     {
       "id": "kickoff:q3-path",
@@ -434,7 +464,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2.",
         "panels": [
           {
             "role": "Daily",

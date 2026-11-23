@@ -88,6 +88,10 @@ Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 21. **A path map with more than eight stages uses two rows.** One row of ten shrinks the labels below what a projector shows.
 22. **A new meeting gets its own agenda slide.** The meeting check holds three cards. A fourth card does not fit: put the added meeting on the next slide.
 
+Learned reviewing the Q3 deck (Byron, 23-Nov-2026):
+
+23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use it in the quarterly decks only, as a playlist `override`: a Kick Off team has no account yet. Use text, never a screenshot of Metronome. A full-width drawing slide cannot show the line yet.
+
 ## Layouts
 
 - `title`: opening headline and relevant illustration.

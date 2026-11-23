@@ -68,7 +68,10 @@
       "id": "kickoff:quarterly-review",
       "slides": [
         "function-chart"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open Function Chart. Test it against how the quarter really went."
+      }
     },
     {
       "id": "kickoff:q1-functions",
@@ -86,7 +89,21 @@
     {
       "id": "kickoff:q1-functions",
       "slides": [
-        "scorecard-intro",
+        "scorecard-intro"
+      ],
+      "override": {
+        "body": [
+          "What: one page per function, saying what success looks like.",
+          "Why: everyone knows what they own and how we measure it.",
+          "How often: every 90 days, scored 0, 1 or 2.",
+          "Who: the owner, then their team lead. Then they compare.",
+          "In Metronome: open Scorecards."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q1-functions",
+      "slides": [
         "scorecard"
       ]
     },
@@ -106,7 +123,10 @@
       "id": "kickoff:quarterly-kffm",
       "slides": [
         "map"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open KFFM and put it on the screen."
+      }
     },
     {
       "id": "kickoff:kffm",
@@ -166,9 +186,20 @@
     {
       "id": "kickoff:quarterly-review",
       "slides": [
-        "purpose",
+        "purpose"
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
+      }
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
         "values"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. If you have core values, read them aloud and test each one:"
+      }
     },
     {
       "id": "kickoff:bhag",
@@ -177,7 +208,8 @@
       ],
       "override": {
         "headline": "Does your BHAG still hold?",
-        "title": "Does your BHAG still hold?"
+        "title": "Does your BHAG still hold?",
+        "support": "In Metronome: open One Page Plans and read your BHAG aloud."
       }
     },
     {
@@ -197,7 +229,10 @@
       "id": "kickoff:three-year",
       "slides": [
         "read-back"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. Read it aloud before you move on."
+      }
     },
     {
       "id": "kickoff:q1-path",
@@ -209,7 +244,10 @@
       "id": "kickoff:annual",
       "slides": [
         "1hag-check"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open Annual Priorities. Read it aloud before you move on."
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -229,10 +267,23 @@
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "quarter-first",
-        "quarter-rest",
-        "qhag-check"
+        "quarter-first"
       ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-rest"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "qhag-check"
+      ],
+      "override": {
+        "support": "In Metronome: open Quarterly Priorities. Read it aloud before you move on."
+      }
     },
     "kickoff:individual",
     {
@@ -310,7 +361,7 @@
           "Quarterly Planning is running too: today is the first one the Kick Off booked.",
           "The Monthly Town Hall starts this quarter. Book it before you leave, with its standing agenda, a year ahead."
         ],
-        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2."
+        "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2."
       }
     },
     "kickoff:cascade-messages",
