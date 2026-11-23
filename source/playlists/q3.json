@@ -58,7 +58,10 @@
       ],
       "override": {
         "title": "Your Function Chart gives every function one accountable owner.",
-        "headline": "Your Function Chart gives every function one accountable owner."
+        "headline": "Your Function Chart gives every function one accountable owner.",
+        "body": [
+          "In Metronome: open Function Chart and confirm each owner."
+        ]
       }
     },
     {
