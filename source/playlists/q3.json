@@ -54,29 +54,45 @@
     {
       "id": "kickoff:function-chart",
       "slides": [
-        "ownership"
-      ],
-      "override": {
-        "title": "Your Function Chart gives every function one accountable owner.",
-        "headline": "Your Function Chart gives every function one accountable owner.",
-        "body": [
-          "In Metronome: open Function Chart and confirm each owner."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:function-chart",
-      "slides": [
         "gaps"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-review",
-      "slides": [
-        "function-chart"
       ],
       "override": {
-        "support": "In Metronome: open Function Chart. Test it against how the quarter really went."
+        "title": "Is your Function Chart still right?",
+        "headline": "Is your Function Chart still right?",
+        "support": "In Metronome: open Function Chart. Test it against how the quarter really went.",
+        "panels": [
+          {
+            "role": "One person",
+            "heading": "Several functions?",
+            "support": "Make the load visible.",
+            "mark": "gap"
+          },
+          {
+            "role": "One function",
+            "heading": "Several owners?",
+            "support": "Agree who is accountable.",
+            "mark": "gap"
+          },
+          {
+            "role": "A gap",
+            "heading": "No owner?",
+            "support": "Name the person who will own it.",
+            "mark": "gap"
+          },
+          {
+            "role": "A new function",
+            "heading": "Not on the chart?",
+            "support": "Add it.",
+            "mark": "gap"
+          }
+        ],
+        "notes": [
+          "At a quarterly, put the current Function Chart on the screen. Ask where ownership was unclear last quarter, then fix the chart.",
+          "Restate the rule: every function has one accountable owner. One person is accountable for the work. Others may be responsible to contribute to the work.",
+          "In private mode, each person writes who holds each function; reveal, then agree. Resolve differences about current accountability. Add any new or planned functions.",
+          "Finish when every function has one owner who said yes out loud.",
+          "Allow about 25 minutes, with the Team View after it."
+        ]
       }
     },
     {
