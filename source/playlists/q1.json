@@ -328,7 +328,7 @@
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -358,7 +358,7 @@
             "items": [
               "Good news",
               "Values recognition",
-              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+              "Widget scoreboard",
               "QHAG status",
               "Priority status",
               "Stucks, asks and offers"
@@ -369,7 +369,9 @@
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "Quarterly Planning is running too: today is the first one the Kick Off booked.",
-          "The Monthly Town Hall starts this quarter. Book it before you leave, with its standing agenda, a year ahead."
+          "The Monthly Town Hall starts this quarter. Book it before you leave, with its standing agenda, a year ahead.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ],
         "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2."
       }

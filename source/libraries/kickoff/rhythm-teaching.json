@@ -43,7 +43,8 @@
         "On the day of the weekly leadership meeting, the weekly replaces the huddle. Every other day the huddle runs, whoever is in.",
         "Weekly 1:1 agenda: good news, metrics, top 3 priorities for the week, feedback both ways, then dynamic. The direct report leads it.",
         "Weekly leadership meeting agenda: good news, values recognition, scoreboard review (last week’s widget forecast, where it landed and this week’s forecast), QHAG status, priority status, then dynamic: stucks, asks, offers. Protect it; do not cancel when busy.",
-        "Leaders carry the agreed rhythm into their own teams."
+        "Leaders carry the agreed rhythm into their own teams.",
+        "The daily huddle’s facilitator rotates."
       ],
       "tags": [
         "kickoff",
@@ -53,7 +54,7 @@
         {
           "role": "Daily",
           "heading": "Daily huddle",
-          "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
+          "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
           "mark": "structure",
           "items": [
             "Good news",

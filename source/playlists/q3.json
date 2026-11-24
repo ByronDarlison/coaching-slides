@@ -308,8 +308,8 @@
         "example"
       ],
       "override": {
-        "title": "Is your Market Map still right? Are your top competitors on it?",
-        "headline": "Is your Market Map still right? Are your top competitors on it?",
+        "title": "Are your top competitors on your Market Map?",
+        "headline": "Are your top competitors on your Market Map?",
         "notes": [
           "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
           "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
@@ -572,8 +572,8 @@
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "All five meetings should be running: the three here, the Monthly Town Hall and Quarterly Planning.",
           "New today: the KFFM review joins the weekly leadership meeting.",
-          "The daily huddle’s facilitator rotates.",
-          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast.",
+          "The daily huddle’s facilitator rotates."
         ]
       }
     },

@@ -454,7 +454,7 @@
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -484,7 +484,7 @@
             "items": [
               "Good news",
               "Values recognition",
-              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+              "Widget scoreboard",
               "QHAG status",
               "Priority and sprint lane status",
               "Stucks, asks and offers"
@@ -495,7 +495,9 @@
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "All five meetings should be running by now: the three here, the Monthly Town Hall and Quarterly Planning.",
-          "New today: sprint lane status joins the weekly leadership meeting."
+          "New today: sprint lane status joins the weekly leadership meeting.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
       }
     },
