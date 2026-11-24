@@ -16,7 +16,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q4-day1-path-team.svg",
-        "alt": "Q4 Day 1 path. Team next, then Functions, KFFM, A-Player Team, Purpose and Values, Hedgehog and BHAG, Market, Customer, Attribution, New 3HAG, Differentiators and Swim Lanes."
+        "alt": "Q4 Day 1 path. Day 1 starts with Team, Functions, KFFM and A-Player Team. Then come Purpose and Values, Hedgehog and BHAG, and Market, Customer, Attribution. It ends with New 3HAG, Differentiators and Swim Lanes. Team is next."
       },
       "headline": "First, the team.",
       "layout": "comp-story",
@@ -110,7 +110,7 @@
       "id": "hedgehog",
       "title": "Next, your BHAG.",
       "notes": [
-        "The Core Purpose is confirmed. Now agree the core business and the economic engine, and test the BHAG against all three."
+        "Read back the Core Purpose the team agreed. Then agree the core business and the economic engine, and test the BHAG against all three."
       ],
       "art_full": true,
       "art_fit": true,
@@ -150,7 +150,7 @@
       "id": "threehag",
       "title": "Next, your new 3HAG.",
       "notes": [
-        "A year has passed. The 3HAG moves out one year and every question is answered again."
+        "A year has passed. The 3HAG moves out one year. Each leader answers every question again."
       ],
       "art_full": true,
       "art_fit": true,
@@ -190,7 +190,7 @@
       "id": "lanes",
       "title": "Last today, your swim lanes.",
       "notes": [
-        "One swim lane for each differentiator. If time runs out today, the swim lanes open Day 2. They are never skipped."
+        "One swim lane for each differentiator. If time runs out today, the swim lanes open Day 2. Never skip them."
       ],
       "art_full": true,
       "art_fit": true,
@@ -230,7 +230,7 @@
       "id": "day2-forecast",
       "title": "Then, next year’s forecast.",
       "notes": [
-        "Finance built the 12-month forecast before today. The team reviews it before it sets the year’s targets."
+        "Building the 12-month forecast was Finance’s Q3 homework. The team reviews it before it sets the year’s targets."
       ],
       "art_full": true,
       "art_fit": true,
@@ -250,7 +250,7 @@
       "id": "day2-annual",
       "title": "Next, your new 1HAG.",
       "notes": [
-        "The first year of the new 3HAG. The team has built a 1HAG once, a year ago."
+        "The 1HAG is the first year of the new 3HAG."
       ],
       "art_full": true,
       "art_fit": true,
@@ -290,7 +290,7 @@
       "id": "day2-sprint",
       "title": "Next, your sprint lanes.",
       "notes": [
-        "The team has built sprint lanes for two quarters. Build them for the new QHAG."
+        "Build sprint lanes for the new QHAG. The annual has no refresher."
       ],
       "art_full": true,
       "art_fit": true,
@@ -310,7 +310,7 @@
       "id": "day2-close",
       "title": "Last, your meetings and the close.",
       "notes": [
-        "The plan is set. Check the meetings that keep it alive, agree the messages and the homework, and close."
+        "Read back the plan the team agreed. Then check the meetings that keep it alive, agree the messages and the homework, and close."
       ],
       "art_full": true,
       "art_fit": true,

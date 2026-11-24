@@ -1,7 +1,7 @@
 {
   "id": "q4-people",
   "artifact": "team-assessment",
-  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and training of 26-Sep-2026; Byron, 24-Nov-2026.",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and training of 26-Sep-2026; Byron, 24-Nov-2026; facilitation note team-assessment (accountable leader, next check-in, decision date).",
   "tags": [
     "q4"
   ],
@@ -14,12 +14,14 @@
       "body": [
         "For each B: how are you coaching them to A?",
         "Has any A fallen back to B?",
-        "For each C: what action have you taken?"
+        "For each C: what action have you taken, and when is the decision due?",
+        "No plan yet? Agree the action, the accountable leader and the date now."
       ],
       "notes": [
-        "The team placed every direct report last quarter and wrote a plan for everyone below A. This is the check on those plans.",
+        "A plan for everyone below A was Q3 homework. This checks those plans.",
         "A leader scores no higher than the lowest person on their team. Leave a B in place and you become one.",
-        "Talk about the Bs and how each is being coached to A, and any A who has slipped. For each C, the leader says what has been done.",
+        "For each B, ask what shows progress toward A within 90 days. Ask about any A who has slipped.",
+        "For each C, the leader says what they did, the next check-in and the decision date.",
         "The company will not reach its goals if leaders do not act on people. Any plan without movement goes on the homework list with a date.",
         "The CEO’s own assessment of the leadership team stays private."
       ],

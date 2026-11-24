@@ -1,7 +1,7 @@
 {
   "id": "q4-kffm",
   "artifact": "kffm",
-  "seed": "Shannon Byrne Susko, Road Map Q-3 and Q-4, Metronomics; Byron, 24-Nov-2026: a check asks whether the tool is being used.",
+  "seed": "Shannon Byrne Susko, Road Map Q-3 and Q-4, Metronomics; Byron, 24-Nov-2026: a check asks whether the tool is being used, and the team names the function, the widget and the owner of the lever it picks.",
   "tags": [
     "q4"
   ],
@@ -14,10 +14,11 @@
       "body": [
         "The KFFM is on the agenda every week.",
         "Every red number has a written plan: situation, cause, correction, follow-up.",
-        "Which lever moves cash fastest now? Make it a candidate for a QHAG priority."
+        "Which lever moves cash fastest now? Name the function, the widget and the owner.",
+        "Make it a candidate for a QHAG priority."
       ],
       "notes": [
-        "The weekly KFFM review started last quarter. This checks that it is running.",
+        "The weekly KFFM review was set to start at Q3. Check whether it is running.",
         "Whatever is burning on the KFFM today must show up in tomorrow’s priorities. Note each red or yellow function the team wants to move.",
         "Tomorrow’s 1HAG and QHAG take their candidates from the swim lanes and from this list."
       ],

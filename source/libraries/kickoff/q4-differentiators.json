@@ -1,7 +1,7 @@
 {
   "id": "q4-differentiators",
   "artifact": "activity-fit-map",
-  "seed": "Shannon Byrne Susko, System by System post Build Up Your 3-5 Differentiators and worksheet; training of 27-Sep-2026; Byron Darlison, How I Create Strategy.",
+  "seed": "Shannon Byrne Susko, System by System post Build Up Your 3-5 Differentiators and worksheet; training of 27-Sep-2026; Byron Darlison, How I Create Strategy; Activity Fit Map playbook, Byron’s rulings of 27-Sep, 30-Sep and 9-Oct-2026 (most connected first, a group with no lines, descriptor, sleep on it).",
   "tags": [
     "q4"
   ],
@@ -16,7 +16,7 @@
         "Present your activities. Put them all on the board."
       ],
       "notes": [
-        "The objective is to build the company’s 3 to 5 differentiators from the ground up. Do not start from the attributes at the top of the line and work down: that gives generic answers.",
+        "The objective is to build the company’s 3 to 5 differentiators from the ground up. Do not start from the attributes at the top of the line and work down. That gives generic answers.",
         "Keep asking the one question: what activities need to be in place to make the whole 3HAG line true?",
         "Each leader presents their activities. Start grouping similar ones as they go up."
       ],
@@ -40,8 +40,8 @@
       ],
       "notes": [
         "Name each group together. The name says what will be true when that group of activities is in place.",
-        "Expect to ask about five times before the team finds its own language and the real reason the group matters.",
-        "Do not skip this step, and take the time it needs."
+        "Ask why the group matters. Expect to ask about five times before the name tells the team’s own story.",
+        "Do not skip this step. Take the time it needs."
       ],
       "headline": "Group the activities. Name each group.",
       "layout": "comp-story",
@@ -59,12 +59,13 @@
       "art_full": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "An example Activity Fit Map: four groups of three activities, with arrows showing that A Named Person for 90 Days depends on Live in a Day, and Live in a Day and One Flat Price both depend on Standard, Not Custom."
+        "alt": "An example Activity Fit Map. Four groups each hold three activities. A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom."
       },
       "notes": [
-        "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person, and lets reporting and customization drop.",
-        "Live in a Day and One Flat Price each depend on Standard, Not Custom: one product for everyone is what makes setup fast and the price flat. A Named Person for 90 Days depends on Live in a Day: when setup is fast, the contact has time for the customer.",
-        "Standard, Not Custom is the group that says what the company will be worse at. Every strategy needs one.",
+        "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
+        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
+        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer.",
+        "In this example, Standard, Not Custom explains the lower reporting and customization scores.",
         "This is an example. Do not recommend these groups to a team."
       ],
       "headline": "Example: an Activity Fit Map.",
@@ -78,7 +79,7 @@
     {
       "id": "connect",
       "title": "Which groups depend on each other?",
-      "support": "Draw an arrow for each dependency. Start with the group that depends on the most other groups.",
+      "support": "Draw an arrow from each group to the group it depends on. Start with the most connected group.",
       "art_side": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-groups.svg",
@@ -86,14 +87,15 @@
       },
       "body": [
         "A group can depend on more than one other group.",
-        "A group with no arrows may be a task, not part of your strategy.",
+        "A group with no arrows is either what sets you apart or a task. Ask which.",
         "Test: tell your strategy using only the group names."
       ],
       "notes": [
-        "Take one group and ask of each other group: does this depend on that? Draw the arrow when the team agrees.",
+        "Take the most connected group first. Ask of each other group: does this depend on that? Draw the arrow when the team agrees.",
         "It is rare to get this far and find the groups are not connected. The connections are what make the strategy hard to copy.",
         "If the team cannot tell the company’s strategy using only the names, the names are too generic. Rename.",
-        "Check each group back against the Attribution Framework: does it move an attribute where the team decided to lead, for the Core Customer? A group that connects to nothing the market values is a task, not a differentiator."
+        "Check each group back against the Attribution Framework. Which chosen attribute does it move? Which Core Customer need does it serve?",
+        "A group that connects to nothing the market values is a task, not a differentiator."
       ],
       "headline": "Which groups depend on each other?",
       "layout": "comp-story",
@@ -108,13 +110,16 @@
       "title": "Agree your 3 to 5 differentiators.",
       "support": "The strongest groups. Each one heads a swim lane.",
       "body": [
-        "Together they make the whole 3HAG line true.",
+        "Check back against your 3HAG line: every place you will lead has a group behind it.",
         "Each one serves a need of your Core Customer.",
+        "Give each a short descriptor: what is true when it is achieved.",
         "Then take a break."
       ],
       "notes": [
-        "Most teams end up with 4 to 6 groups. Agree the 3 to 5 that carry the strategy.",
-        "Take a break here. The team comes back to the map with fresh eyes before it lays the differentiators over time."
+        "Most teams end up with 4 to 6 groups. Agree the 3 to 5 that carry the strategy. The rest can stay as supporting activities.",
+        "The descriptor heads the swim lane. It keeps the team aligned when the workshop is forgotten.",
+        "Take a break here. The team comes back to the map with fresh eyes before it lays the differentiators over time.",
+        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
       ],
       "headline": "Agree your 3 to 5 differentiators.",
       "layout": "comp-story",

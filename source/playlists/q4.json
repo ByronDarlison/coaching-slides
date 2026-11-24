@@ -21,10 +21,42 @@
     {
       "id": "kickoff:opening",
       "slides": [
-        "good-news",
-        "engagement",
+        "good-news"
+      ],
+      "override": {
+        "notes": [
+          "Ask everyone for one piece of professional good news. Keep each contribution to 5 to 10 seconds. Model the pace.",
+          "At the annual, use professional good news on Day 1 and personal good news on Day 2.",
+          "Build positive connection and recognize progress. Explain the purpose before the round."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "engagement"
+      ],
+      "override": {
+        "notes": [
+          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
+          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
+          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
         "mirror"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Hand back the compiled survey answers now, printed or on the board. Go question by question, with everyone’s words side by side. Do not assume everyone has read them.",
+          "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate.",
+          "Park each difference on the board against the agenda block that will resolve it. Examples are the Function Chart, the KFFM, purpose or the targets.",
+          "Allow about 15 minutes. Today is for decisions, not data gathering."
+        ]
+      }
     },
     {
       "id": "kickoff:opening",
@@ -62,10 +94,13 @@
         "assessment"
       ],
       "override": {
-        "support": "Enter today’s split across the four. It totals 100%. Compare it with your last entry.",
+        "support": "Enter today’s split across the four. It totals 100%. Compare it with your last entry, if you have one.",
         "notes": [
-          "The team reviews this every second quarter. Each leader enters today’s split, then compares it with the last one.",
+          "The team reviews this every second quarter. Each leader enters today’s split. Record how the time is really spent, not an ideal split.",
+          "Compare with the last entry where there is one. The founder also has the baseline from the call before Q1.",
           "As leaders hand off functions and hire A-Players, the CEO’s time in execution should fall first.",
+          "Keep today’s entry. The next review compares against it.",
+          "When the leadership team is the whole company, skip this slide and ask the owner privately.",
           "Allow about 10 minutes."
         ]
       }
@@ -88,12 +123,13 @@
         "title": "Who owns each function now?",
         "headline": "Who owns each function now?",
         "body": [
-          "Start a fresh Function Chart. In private mode, each person writes who owns each function.",
-          "Reveal, then agree one owner for each. The owner says yes aloud.",
-          "Add any function the business now needs."
+          "Start a fresh Function Chart. Agree the functions: add, rename or remove.",
+          "In private mode, each person writes who owns each function.",
+          "Reveal, then agree one owner for each. Each owner says yes aloud."
         ],
         "notes": [
           "At the annual, build the Function Chart again on a fresh page. A year of growth changes who does what.",
+          "Agree the functions first. Add new or planned functions, rename any that changed and remove any that ended.",
           "One person is accountable for each function. Others may be responsible for part of the work.",
           "Finish when every function has one owner who said yes out loud.",
           "Allow about 25 minutes, with the Team View after it."
@@ -173,7 +209,16 @@
       "id": "kickoff:q3-values",
       "slides": [
         "review"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "At the annual, the team arrives in one of three places. It has agreed Core Values, a draft from a Mission to Mars session, or neither.",
+          "With agreed values, read them from the One Page Plan and go straight to the test.",
+          "With a draft, the leadership team reviews it, changes what needs changing and confirms it today.",
+          "With neither, say so. Agree a date for the Mission to Mars session and move on.",
+          "The Core Values are what each leader rates their direct reports against on the A-Player grid."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly-review",
@@ -219,7 +264,8 @@
           "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
           "Test leader enthusiasm separately from the whole company’s.",
           "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
-          "At the annual, the team has just agreed the BHAG. If a test fails, go back to the circle it fails on."
+          "At the annual, test the BHAG the team agreed in the Hedgehog. If a test fails, revise the statement and test it again.",
+          "Go back to a circle only when the discussion shows the team disagrees about it."
         ]
       }
     },
@@ -246,7 +292,7 @@
         "headline": "Is your Market Map still right?",
         "notes": [
           "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
-          "Ask what changed in the market this year: a new competitor, a channel that grew, a supplier that gained power.",
+          "Ask what changed in the market this year. Look for a new competitor, a channel that grew or a supplier that gained power.",
           "Update the map now, or put the update on the homework list."
         ],
         "support": "In Metronome: open War Room. Put your Market Map on the screen. What changed this year?"
@@ -285,8 +331,12 @@
         "title": "Start from your 3HAG line.",
         "headline": "Start from your 3HAG line.",
         "support": "Put your own agreed line on the screen. This one is the example.",
+        "artwork": {
+          "src": "assets/q4-attribution-3hag.svg",
+          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. The white space above the other lines is left white on a grey ground, and the part the 3HAG line moves into is shaded green. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
+        },
         "notes": [
-          "At the annual, this is a reminder. The line is agreed. The example shows the line that the next slides make true.",
+          "At the annual, this is a reminder. Read back the line you agreed. The example shows the line that the next slides make true.",
           "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
           "In the example, reporting and customization drop, so that setup, price and support can lead."
         ]
@@ -321,7 +371,7 @@
       "id": "kickoff:day-one-close",
       "override": {
         "notes": [
-          "Close Day 1. Recap the Core Purpose, the BHAG, the new 3HAG, its differentiators and the swim lanes. Note open questions for tomorrow."
+          "Close Day 1. Read back what the team finished today. Name what is still open and when it comes up tomorrow. Then invite everyone to answer."
         ]
       }
     },
@@ -335,10 +385,33 @@
       "id": "kickoff:day-two-opening",
       "slides": [
         "good-news",
-        "reflection",
-        "outcome-check",
-        "engagement-day-two"
+        "reflection"
       ]
+    },
+    {
+      "id": "kickoff:day-two-opening",
+      "slides": [
+        "outcome-check"
+      ],
+      "override": {
+        "notes": [
+          "Read back the Day 1 answers to “What would make these 2 days valuable?” The team sorts each one. Coach-led and quick, not another round.",
+          "For anything at risk, name when you will address it today before moving on."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:day-two-opening",
+      "slides": [
+        "engagement-day-two"
+      ],
+      "override": {
+        "notes": [
+          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
+          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
+          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
+        ]
+      }
     },
     {
       "id": "kickoff:q4-path",
@@ -352,11 +425,18 @@
         "title": "How did the year go?",
         "headline": "How did the year go?",
         "support": "In Metronome: open One Page Plans. Review the 1HAG, then the last QHAG.",
+        "body": [
+          "Fiscal numbers: gross revenue, margin and ending cash.",
+          "Non-fiscal numbers: widgets and head count.",
+          "Each priority: was it done, and did it succeed?",
+          "Where was your estimate wrong, and what did you learn?",
+          "Bring the brutal facts."
+        ],
         "notes": [
           "At the annual, the 1HAG is closing. Review the whole year first, then the last quarter.",
-          "Everyone updated their status in Metronome before today.",
+          "Updating status in Metronome was prep for today. Confirm it is current before you read the numbers. Record any gap.",
           "Close each priority on two questions: was it done, and did it succeed?",
-          "Ask where the estimates were wrong and what the team learned. That is what next year’s numbers are built on.",
+          "Ask where the estimates were wrong and what the team learned. Use that evidence to set next year’s numbers.",
           "Allow about 40 minutes."
         ]
       }
@@ -444,7 +524,7 @@
           "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
           "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
           "Risk: ask how badly this could go wrong.",
-          "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The work is done by one date. The number has moved by a later one.",
+          "Once chosen, ask an owner to claim each priority aloud. Agree the done-by date, the measure and its achieved-by date. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The work is done by one date. The number reaches its target by its own date, often later.",
           "Hover over “KFFM lever” to show the six levers."
         ]
       }
@@ -457,8 +537,9 @@
       "override": {
         "notes": [
           "Read the new 1HAG aloud, top to bottom, then run the six checks. Each priority must move its number enough, and soon enough to see.",
-          "Check the priorities against the first four quarters of the swim lanes and against what was burning on the KFFM yesterday.",
-          "Change only what fails. Anything that cannot be fixed now goes on the homework list with an owner."
+          "Check each priority against the first four quarters of its swim lane. Check the lever the team picked on the KFFM.",
+          "Check that the approved forecast carries the people and cash the first four quarters need.",
+          "Fix what you can now. Give each open item an owner and a date on the homework list."
         ],
         "support": "Read your new 1HAG aloud from the board before you move on.",
         "body": [
@@ -481,7 +562,28 @@
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-numbers"
-      ]
+      ],
+      "override": {
+        "support": "Take the first three months of your agreed forecast.",
+        "body": [
+          "Gross revenue, margin, ending cash, each widget, Profit per X and head count, month by month.",
+          "Name an owner for every number.",
+          "If a number differs from the forecast, say why.",
+          "Is each target big enough to keep you on track for your 1HAG?"
+        ],
+        "notes": [
+          "At the annual, the quarter’s numbers start from the first three months of the forecast the team agreed. Confirm them. Do not rebuild them.",
+          "Ask questions about the math rather than telling them it is wrong. Ask who owns each number.",
+          "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count, month by month.",
+          "Use the same widget definitions as the three-year plan. Distinguish new activity from cumulative totals.",
+          "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
+          "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
+          "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
+          "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If Q1 is a quarter of the way or less, ask what makes the later quarters steeper.",
+          "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the 1HAG’s $300 a year.",
+          "If the team changes a number, say why and keep the approved forecast as it was agreed. The next status review asks where the estimate was wrong."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -491,7 +593,7 @@
       "override": {
         "notes": [
           "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
-          "At the annual, the candidates include last quarter’s open priorities, the first quarter of each swim lane, and anything burning on the KFFM.",
+          "At the annual, start with last quarter’s open priorities and the new 1HAG priorities. Add the lever the team picked and the first quarter of each swim lane.",
           "Done is not the same as success. Each priority has a done-by date for the work and an achieved-by date for the result.",
           "Run the six questions on each candidate. Hover over “six questions” to show them.",
           "The team ranks the survivors together. Pick the #1 priority first. Give it one owner."
@@ -612,8 +714,8 @@
         ],
         "notes": [
           "Give it about 10 minutes. For each meeting ask: is it running, is it working, and what should change?",
-          "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
-          "Quarterly Planning is the fifth meeting. The team is in it now.",
+          "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations.",
+          "Today is the annual. This check covers the meetings that run between planning sessions.",
           "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
           "Weekly 1:1: Good news; Metrics; Top 3 priorities for the week; Feedback both ways; Dynamic.",
           "Weekly leadership meeting: Good news; Values recognition; Widget scoreboard; KFFM critical numbers; QHAG: numbers, priorities, sprint lanes; Stucks, asks and offers.",
@@ -655,7 +757,7 @@
       ],
       "override": {
         "notes": [
-          "Close the session. Recap how the plan connects, from the 3HAG differentiators to this quarter’s priorities, and when the next daily huddle is. Then invite everyone to answer."
+          "Close the session. Trace this quarter’s priorities back to the differentiators. Confirm when the next daily huddle is. Then invite everyone to answer."
         ]
       }
     },

@@ -9,19 +9,19 @@
     {
       "id": "circle",
       "title": "Why does the company do what it does?",
-      "support": "Each leader answers all three alone. Share one question at a time, starting with What. Does your Why match your Core Purpose?",
+      "support": "Each leader answers all three alone. Share one question at a time, starting with What. Then read your Core Purpose aloud. Does your Why match it?",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-golden-circle.svg",
-        "alt": "Three rings: Why at the center, then How, then What, each joined to its question: why, how and what does the company do."
+        "alt": "Three rings run from Why at the center through How to What. Each ring has its own question: why, how and what does the company do."
       },
       "notes": [
         "Once a year, test the Core Purpose with the Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
-        "Read the Core Purpose aloud from the One Page Plan. Then confirm it or change it.",
-        "Each leader writes their answers alone, then the team shares one by one, question by question, starting with What.",
-        "If the team’s Why no longer matches the Core Purpose on the One Page Plan, that is not a failure. It is a signal the foundation needs attention.",
+        "Each leader writes their answers alone. Then the team shares one by one, question by question, starting with What.",
+        "Only then read the Core Purpose aloud from the One Page Plan. Compare it with the team’s Why.",
+        "If the team’s Why no longer matches the Core Purpose, that is not a failure. It is a signal the foundation needs attention.",
         "The discussion creates a new Core Purpose, adjusts the current one or confirms it. A purpose that describes what the company does, not why, needs work.",
-        "The confirmed Core Purpose goes into the top circle when the team tests its BHAG."
+        "The agreed Core Purpose goes into the top circle when the team tests its BHAG."
       ],
       "headline": "Why does the company do what it does?",
       "layout": "comp-story",

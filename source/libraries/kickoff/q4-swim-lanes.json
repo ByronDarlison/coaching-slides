@@ -1,7 +1,7 @@
 {
   "id": "q4-swim-lanes",
   "artifact": "swimlanes",
-  "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron’s master board, Swim Lanes; Byron, 26-Sep-2026.",
+  "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron’s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
   "tags": [
     "q4"
   ],
@@ -16,8 +16,8 @@
         "Each quarter, the lanes feed your QHAG priorities and sprint lanes."
       ],
       "notes": [
-        "Each lane takes one differentiator and stretches it over the twelve quarters to the 3HAG.",
-        "The lanes show the few things that must happen, and in what order. They give the best view of next year: the milestones in the first four quarters are where tomorrow’s 1HAG starts.",
+        "Each lane takes one differentiator and stretches it over the 12 quarters to the 3HAG. Head each lane with the differentiator’s name and its descriptor.",
+        "The lanes show the few things that must happen, and in what order. They give the best view of next year. Use the first four quarters to build the new 1HAG.",
         "A lane with something in every quarter has become a project plan. Fewer milestones show a clearer path."
       ],
       "headline": "Swim lanes: one lane for each differentiator, over 12 quarters.",
@@ -32,11 +32,11 @@
     {
       "id": "outcomes",
       "title": "Start at the end: what is true at Q12, Q8 and Q4?",
-      "support": "For each lane, first agree the outcome at the end of year three (3HAG), year two (2HAG) and year one (1HAG).",
+      "support": "Agree these as a team. Year three (3HAG) first, then year two (2HAG), then year one (1HAG).",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-outcomes.svg",
-        "alt": "An example table of four swim lanes, one per differentiator, each with its 3HAG outcome at Q12, 2HAG outcome at Q8 and 1HAG outcome at Q4."
+        "alt": "An example table of four swim lanes, one for each differentiator. Each lane shows a 3HAG outcome at Q12, a 2HAG outcome at Q8 and a 1HAG outcome at Q4."
       },
       "terms": [
         {
@@ -45,8 +45,9 @@
         }
       ],
       "notes": [
-        "Beside each differentiator, agree what is true when it is achieved, at the 3HAG. Then work back: what is true at the end of year two, and at the end of year one?",
-        "Fix those three outcomes in each lane before anyone writes a milestone. Do not move them.",
+        "Beside each differentiator, agree what is true when it is achieved, at the 3HAG. Then work back. What is true at the end of year two, and at the end of year one?",
+        "Each outcome says what will be true and how the team will know.",
+        "Fix those three outcomes in each lane before anyone writes a milestone. Do not move them to fit the milestones.",
         "The same subscription company as the earlier examples. This is an example, not a recommendation."
       ],
       "headline": "Start at the end: what is true at Q12, Q8 and Q4?",
@@ -64,10 +65,11 @@
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-example.svg",
-        "alt": "An example swim lane map: four lanes across twelve quarters from Q12 down to Q1, an outcome marker at Q12, Q8 and Q4, and three milestone stickies in each lane."
+        "alt": "An example swim lane map. Four lanes run from Q12 on the left to Q1 on the right. Each lane has an outcome marker at Q12, Q8 and Q4, and three milestone stickies."
       },
       "notes": [
         "Start at the 3HAG and work back toward today.",
+        "Write each milestone as what will be true by that quarter, not as a task.",
         "Three milestones in a lane is usually enough. Five is the limit.",
         "In the example each lane has three milestones and nine empty quarters."
       ],
@@ -82,17 +84,17 @@
     {
       "id": "build",
       "title": "Build your swim lanes.",
-      "support": "Split into pairs or threes, one lane each.",
+      "support": "Split into small groups, one lane each.",
       "body": [
         "Give each lane to people who are not its expert. An expert fills the first quarters with detail.",
-        "Agree the three outcomes, then place 3 to 5 milestones.",
-        "Each pair or three presents its lane to the team."
+        "Work back from the agreed outcomes. Place 3 to 5 milestones.",
+        "Each group presents its lane to the team."
       ],
       "notes": [
         "An expert fills the first six quarters with detail and cannot see beyond them. Someone further from the work sees the milestones.",
         "Allow about 25 minutes.",
         "Start with three sticky notes in each lane. Be stingy.",
-        "If the day has run out, stop here and open tomorrow with the swim lanes. Never skip them: they make tomorrow’s plan faster and better."
+        "If the day has run out, stop here and open tomorrow with the swim lanes. Never skip them. They make the 1HAG and the QHAG faster and better."
       ],
       "headline": "Build your swim lanes.",
       "layout": "comp-story",
@@ -109,13 +111,17 @@
       "support": "Look at all the lanes together.",
       "checklist": true,
       "body": [
-        "Every lane has an outcome at Q4, Q8 and Q12.",
-        "Every lane has 3 to 5 milestones, and empty quarters.",
+        "Every lane has an outcome at Q4, Q8 and Q12. You can tell when each is true.",
+        "Every lane serves a top need of your Core Customer.",
+        "Every lane has 3 to 5 milestones, each with an owner, and empty quarters.",
         "Where one lane waits on another, the order works.",
         "The first four quarters show next year’s milestones."
       ],
       "notes": [
-        "Discuss the critical path across the lanes. Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",
+        "Discuss the critical path across the lanes. Start with the lanes that depend on each other most.",
+        "Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",
+        "A lane or milestone that serves none of the Core Customer’s top needs is a question to ask.",
+        "A lane can be a team goal. Each milestone still has one accountable owner.",
         "Homework: add the differentiators and swim lanes to the War Room in Metronome."
       ],
       "headline": "Do your swim lanes pass?",

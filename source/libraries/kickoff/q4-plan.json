@@ -1,7 +1,7 @@
 {
   "id": "q4-plan",
   "artifact": "aligned-priorities",
-  "seed": "Shannon Byrne Susko, training of 26-Sep-2026 (individual priorities outside the meeting from the annual); Byron, 17-Nov-2026 (weekly CEO email).",
+  "seed": "Shannon Byrne Susko, training of 26-Sep-2026 (individual priorities outside the meeting from the annual); Byron, 30-Sep-2026 (new 1HAG beside the previous one with its results); Byron, 17-Nov-2026 (weekly CEO email).",
   "tags": [
     "q4"
   ],
@@ -11,13 +11,15 @@
       "title": "What are your annual targets?",
       "support": "Take the numbers from the forecast you just agreed. Confirm the fiscal year and its end date.",
       "body": [
+        "Show last year’s 1HAG and its results beside the new one.",
         "Gross revenue, margin and ending cash.",
-        "One widget for each hand-off on your KFFM, plus head count.",
+        "One widget for each hand-off on your KFFM, plus Profit per X and head count.",
         "Name an owner for every number.",
         "Is each target big enough to keep you on track for your new 3HAG?"
       ],
       "notes": [
         "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
+        "Put last year’s 1HAG, with its results, beside the new one.",
         "Each number gets one owner.",
         "The 1HAG is the first year of the new 3HAG. Check each number against the three-year targets the team set yesterday."
       ],
@@ -37,13 +39,15 @@
       "body": [
         "For each differentiator: what must this year deliver to build it?",
         "Add a priority that moves a KFFM lever if cash needs it.",
-        "List every candidate. Then pick ideally 3, up to 5.",
+        "Each leader writes candidates alone. Then share. List every candidate.",
+        "Test each with the six questions. Then pick ideally 3, up to 5.",
         "Give each an owner, a done-by date, a measure of success and an achieved-by date."
       ],
       "notes": [
         "At the Kick Off the team started from its key capabilities. The differentiators have taken their place.",
         "The big moves in the first four quarters of the swim lanes are the natural candidates. Add anything burning on the KFFM.",
-        "List every candidate before choosing. Ideally 3, up to 5 priorities for the year, each with one owner, a done-by date and a measure of success."
+        "List every candidate before choosing. Do not filter yet. The six questions pick the few that contribute most.",
+        "Once chosen, each priority gets one owner, a done-by date and a measure of success with an achieved-by date."
       ],
       "headline": "What must you build this year?",
       "layout": "comp-story",
@@ -57,16 +61,17 @@
     {
       "id": "individual",
       "title": "Set your own priorities with your own team.",
-      "support": "This week, outside this session.",
+      "support": "Outside this session. Agree the date before you leave.",
       "body": [
-        "Start from the new QHAG and your critical number.",
-        "Up to 5 work priorities. Two delivered beat five started.",
-        "Enter them in Metronome."
+        "Start from the new QHAG and your critical number, one for each function you own.",
+        "Up to 5 work priorities. A company priority you own goes first.",
+        "Add one skill or behavior to develop.",
+        "Enter them in Metronome by that date."
       ],
       "notes": [
-        "The team has set individual priorities in the room four times. From the annual on, each leader sets theirs outside the session, with their own team.",
-        "A company priority you own goes first and wins if time runs short.",
-        "Each leader’s priorities are in Metronome before the first weekly meeting of the quarter."
+        "Until now the team set individual priorities in the room. From the annual on, each leader sets theirs outside the session, with their own team.",
+        "Two delivered beat five started. A company priority you own wins if time runs short.",
+        "Before the session ends, agree the date by which each leader’s priorities are in Metronome."
       ],
       "headline": "Set your own priorities with your own team.",
       "layout": "comp-story",
@@ -84,11 +89,12 @@
       "checklist": true,
       "body": [
         "Running: has it gone out every week?",
-        "Working: does it carry good news, the numbers and priority status?",
+        "Working: does it carry good news, the numbers, priority status and a positive close?",
         "What to change? Rate it 0 to 2."
       ],
       "notes": [
-        "The weekly email started last quarter. Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",
+        "The CEO’s weekly email was set to start at Q3. Check whether it is going out.",
+        "Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",
         "Team members send their status to the CEO by Thursday noon."
       ],
       "headline": "Is the CEO’s weekly email going out?",

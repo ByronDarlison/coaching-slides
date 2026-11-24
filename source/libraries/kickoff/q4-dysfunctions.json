@@ -1,27 +1,27 @@
 {
   "id": "q4-dysfunctions",
   "artifact": "five-dysfunctions",
-  "seed": "Shannon Byrne Susko, System by System post Five Dysfunctions Assessment and training of 26-Sep-2026; Patrick Lencioni, The Five Dysfunctions of a Team.",
+  "seed": "Shannon Byrne Susko, System by System post Five Dysfunctions Assessment, Cohesive 90 Day Plan example and training of 26-Sep-2026; Patrick Lencioni, The Five Dysfunctions of a Team.",
   "tags": [
     "q4"
   ],
   "slides": [
     {
       "id": "model",
-      "title": "A cohesive team is built in five levels, from trust up.",
+      "title": "A team builds cohesion in five levels, from trust up.",
       "support": "Each level rests on the one below it. Your Five Dysfunctions assessment scored each level.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-five-dysfunctions.svg",
-        "alt": "A five-level pyramid, from the bottom: Trust, Conflict, Commitment, Accountability, Results, with a team score key: high is 4 and above, medium is 3 to 3.99, low is under 3."
+        "alt": "A five-level pyramid rises from Trust through Conflict, Commitment and Accountability to Results. A team score key: high is 4 and above, medium is 3 to 3.99, low is under 3."
       },
       "notes": [
-        "This is the model from The Five Dysfunctions of a Team. The team read the book after Q2 and took the team assessment as homework.",
+        "This is the model from The Five Dysfunctions of a Team. The book was the Q2 reading. The team assessment was Q3 homework.",
         "The five levels, from the bottom: trust, conflict, commitment, accountability, results. A team that does not trust each other will not have honest conflict. Without honest conflict nobody truly commits. Without commitment nobody holds each other accountable. Without accountability the team’s results come second to each person’s own.",
         "The assessment scores each level. High is 4 and above. Medium is 3 to 3.99. Low is under 3.",
-        "Do the assessment at least once a year. It shows where the team should work on its cohesiveness next quarter and next year, and it sets a benchmark to grow from."
+        "Do the assessment at least once a year. Use the scores to choose where the team works on its cohesiveness next. Keep them as the benchmark for next year."
       ],
-      "headline": "A cohesive team is built in five levels, from trust up.",
+      "headline": "A team builds cohesion in five levels, from trust up.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -39,7 +39,7 @@
         "Say what you observe. No blame. No shame."
       ],
       "notes": [
-        "Show the scores and pick out what is working and what is not. Do not hand out the full report first: it is long, and people read ahead instead of talking.",
+        "Show the scores and pick out what is working and what is not. Do not hand out the full report first. It is long, and people read ahead instead of talking.",
         "Ask for the team’s observations and lead the discussion level by level, from trust up.",
         "Hand out the full report after the discussion.",
         "Allow about 45 minutes with the next slide. The first time takes longer because it is uncomfortable."
@@ -59,12 +59,14 @@
       "support": "Each action gets an owner.",
       "body": [
         "Trust. Conflict. Commitment. Accountability. Results.",
+        "These five actions start your 90-day cohesiveness plan.",
         "Start all five this quarter."
       ],
       "notes": [
         "Write what the team sees and one action beside each level, with an owner.",
-        "Keep the actions small and regular. Three examples other teams use follow.",
-        "Open the daily huddle with a Core Value story from yesterday. Ask one personal question in the weekly meeting, and the CEO answers first. Once a month, each leader shares a timeline of five significant life events.",
+        "Keep the actions small and regular. One example plan follows.",
+        "Daily: open the huddle with a Core Value story from yesterday. Weekly: ask one personal question, and the CEO answers first.",
+        "In month one of that example, each leader shares a timeline of five significant life events. The CEO goes first.",
         "The actions go on the homework list. The team reviews them at the next quarterly."
       ],
       "headline": "Agree one action for each level.",

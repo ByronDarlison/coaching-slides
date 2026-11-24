@@ -11,6 +11,7 @@
       "title": "What is the homework?",
       "layout": "comp-decision",
       "arrows": false,
+      "support": "Give every item an owner and a date.",
       "panels": [
         {
           "role": "Metronome",
@@ -21,7 +22,7 @@
         {
           "role": "Strategy and cash",
           "heading": "War Room and forecast",
-          "support": "War Room: add the differentiators and swim lanes. Finance enters the 12-month forecast in Metronome.",
+          "support": "War Room: add the differentiators and swim lanes. Finance enters the 12-month widget forecast as rolling metrics.",
           "mark": "structure"
         },
         {
@@ -40,8 +41,8 @@
       "notes": [
         "Enter any change to the Core Purpose, Core Values or BHAG. On the One Page Plan, the differentiators replace the key capabilities. Keep the Market Map, Core Customer and Attribution Framework current in the War Room.",
         "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
-        "If the Painted Picture wording was not finished in the room, finishing it is homework.",
-        "Add any scorecard review not done, with its date.",
+        "If the team did not finish the Painted Picture wording in the room, finishing it is homework.",
+        "Add any scorecard review still open, with its date.",
         "Give every item an owner and a date: what, owner, by when."
       ],
       "headline": "What is the homework?",
@@ -63,8 +64,8 @@
       "notes": [
         "Read back the outcomes the team agreed at the start of Day 1.",
         "Ask for a show of hands on each one.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
-        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+        "Still open is fine. Add each open outcome to the homework list now. Read back its owner and date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether they achieved it, along with their own."
       ],
       "headline": "Did we get what we came for?",
       "layout": "comp-story",

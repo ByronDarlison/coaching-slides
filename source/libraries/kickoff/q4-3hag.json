@@ -1,15 +1,15 @@
 {
   "id": "q4-3hag",
   "artifact": "3hag",
-  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 (3HAG: Evolve out + 1 Year); Byron Darlison, Where Are You Going?; Byron’s master board, 3HAG, Q4.",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 (3HAG: Evolve out + 1 Year); Byron Darlison, Where Are You Going?; Byron’s master board, 3HAG, Q4 (rows: numbers, Profit per X, head count, statement, differentiators, known for); 3HAG playbook (fiscal year-end; keep supported choices).",
   "tags": [
     "q4"
   ],
   "slides": [
     {
       "id": "fresh",
-      "title": "Write your new 3HAG: 3 years from today.",
-      "support": "Move the end date out one year. Then answer three questions again: the numbers, the statement and what you want to be known for.",
+      "title": "Write your new 3HAG: one year further out.",
+      "support": "Set the end date to your new Year 3 fiscal year-end. Then answer three questions again: the numbers, the statement and what you want to be known for.",
       "body": [
         "Keep last year’s numbers, statement and “known for” out of sight until you reveal your answers.",
         "Each leader answers alone. Reveal, then agree.",
@@ -18,10 +18,12 @@
       "notes": [
         "Rebuild the forward plan each year. Do not roll it forward. Each leader answers on a blank sheet, using what the year taught them.",
         "After each reveal, put last year’s answer beside the new ones. Ask what changed and why.",
-        "Work down the same questions as the Kick Off: the date, the numbers and their owners, the statement and what you want to be known for.",
+        "Keep the choices the evidence still supports. Rebuild what the evidence changes.",
+        "The end date is the fiscal year-end three years after the current one.",
+        "Work down the same questions as the Kick Off. Agree the date, the numbers and their owners. Then write the statement and what you want to be known for.",
         "The key capabilities are not on the list this time. The team builds its differentiators next and they take that place."
       ],
-      "headline": "Write your new 3HAG: 3 years from today.",
+      "headline": "Write your new 3HAG: one year further out.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -34,14 +36,21 @@
       "id": "numbers",
       "title": "What are your new three-year targets?",
       "support": "Each leader writes the numbers alone. Reveal, then agree.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-3hag-focus-numbers.svg",
+        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Differentiators and Known for. Numbers is highlighted."
+      },
       "body": [
         "Gross revenue, margin and ending cash, for Year 3 alone.",
         "Name the widget for each hand-off on your KFFM. Estimate the quantity where you can.",
+        "Add your Profit per X target and head count.",
         "Name an owner for every number."
       ],
       "notes": [
-        "Each leader writes their own numbers in private mode, then reveal and agree. Estimate, then track. A good estimate today beats a perfect number next month.",
-        "Use the widgets on the current KFFM. Finance’s 12-month forecast, reviewed tomorrow, covers the first of the three years."
+        "Each leader writes their own numbers in private mode. Then reveal and agree. Estimate, then track. A good estimate today beats a perfect number next month.",
+        "Use the widgets on the current KFFM, and the Profit per X from the Hedgehog.",
+        "Finance’s 12-month forecast, reviewed tomorrow, covers the first of the three years."
       ],
       "headline": "What are your new three-year targets?",
       "layout": "comp-story",
@@ -49,20 +58,24 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "statement",
       "title": "What will the company be in 3 years?",
       "support": "Write one sentence that describes the company you will become.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-3hag-focus-statement.svg",
+        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Differentiators and Known for. Statement is highlighted."
+      },
       "body": [
         "Keep numbers in the targets.",
         "Your core business describes the company today. This describes where it is going."
       ],
       "notes": [
-        "One sentence, with no numbers or dates: the BHAG scaled down to three years, sharp enough to say no to a choice that does not fit.",
-        "It must differ from the core business the team agreed this morning."
+        "Write the BHAG scaled down to three years, in one sentence. Leave out dates and numbers. It should be sharp enough to say no to a choice that does not fit.",
+        "It must differ from the core business the team agreed in the Hedgehog."
       ],
       "headline": "What will the company be in 3 years?",
       "layout": "comp-story",
@@ -70,13 +83,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "known-for",
       "title": "What do you want to be known for?",
       "support": "In 3 years, when someone says your company name, what should people think?",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-3hag-focus-known-for.svg",
+        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Differentiators and Known for. Known for is highlighted."
+      },
       "notes": [
         "Use the customer’s words, not a claim about yourselves: what they would tell a friend when they recommend you."
       ],
@@ -86,18 +103,23 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "differentiators-in",
       "title": "Put your differentiators in your 3HAG.",
-      "support": "This finishes your 3HAG. They take the place of last year’s key capabilities.",
+      "support": "They take the place of last year’s key capabilities.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-3hag-focus-differentiators.svg",
+        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Differentiators and Known for. Differentiators is highlighted."
+      },
       "body": [
         "Do they make the numbers and the statement true?"
       ],
       "notes": [
         "Until today the 3HAG named 3 to 5 key capabilities. They were a first sketch of the strategy. The differentiators are the strategy the team built from its market.",
+        "The team sleeps on the differentiators. Day 2 opens by asking what anyone would change.",
         "Homework: in Metronome, the differentiators replace the key capabilities on the One Page Plan."
       ],
       "headline": "Put your differentiators in your 3HAG.",
@@ -106,8 +128,7 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "pass",
@@ -115,7 +136,7 @@
       "support": "Read it aloud before you move on.",
       "checklist": true,
       "body": [
-        "The numbers are set: date, revenue, margin, cash and widgets.",
+        "The numbers are set: date, revenue, margin, cash, widgets, Profit per X and head count.",
         "Every number has an owner, and the widgets support the revenue.",
         "The statement and the “known for” describe the future company.",
         "3 to 5 differentiators make the whole 3HAG line true.",
@@ -123,7 +144,7 @@
       ],
       "notes": [
         "Ask a leader to read the whole 3HAG aloud. Invite the team to find contradictions and untested assumptions.",
-        "Anything that fails is fixed now or goes on the homework list with an owner."
+        "Fix what you can now. Give each open item an owner and a date on the homework list."
       ],
       "headline": "Does your new 3HAG pass?",
       "layout": "comp-story",
