@@ -1340,3 +1340,46 @@ body.art-zoom-open { overflow: hidden; }
 .card-lede.title-follow { margin-top: 12px; }
 .card-lede { margin-bottom: 0; color: var(--ink); font-weight: 600; line-height: 1.2; }
 .card-lede + .slide-stage { margin-top: 12px; }
+
+/* Full-width artwork with one instruction line between the title and the picture (comp-story art_full "support"). */
+.story-frame--full.story-frame--lede { grid-template-rows: auto auto minmax(0, 1fr); }
+.story-frame--full.story-frame--fit.story-frame--lede { grid-template-rows: auto auto auto; }
+.story-frame--full .story-lede { margin: calc(-0.5 * clamp(12px, 2vh, 24px)) 0 0; color: var(--ink); font-size: clamp(1rem, 1.5vw, 1.45rem); font-weight: 500; line-height: 1.3; }
+
+/* Links a person can click (artwork "links", and the address beside a deck QR code). */
+.deck-link { color: var(--blue-deep, var(--blue)); text-decoration: underline; text-underline-offset: .18em; }
+.deck-link:hover { color: var(--blue); }
+.deck-link:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; border-radius: 6px; }
+.art-link { position: absolute; display: block; border-radius: 10px; }
+.art-link:hover { box-shadow: 0 0 0 3px var(--blue); }
+.art-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .1rem 1.6rem; min-height: var(--links-h); font-size: clamp(.85rem, 1.1vw, 1.1rem); line-height: 1.2; }
+.art-link-text { white-space: nowrap; }
+.story-panel--links { --links-h: 2.2rem; }
+.story-panel--art.story-panel--links:has(> .art-hot) { grid-template-rows: auto auto; align-content: center; }
+.story-panel--links > .art-hot { width: min(100cqw, (100cqh - var(--links-h)) * var(--ar)); }
+/* The deck's own QR code is a link: the whole picture opens the deck. */
+.art-link-img { display: block; }
+.story-frame--side .art-link-img, .story-frame--full:not(.story-frame--fit) .art-link-img { position: absolute; inset: 0; }
+
+/* A hover term that shows a picture (a "terms" entry with "image"), and terms in a slide title. */
+.term .term-image { display: block; margin-top: .5em; width: min(30rem, 56vw, min(42vh, 19rem, var(--img-room, 100vh)) * var(--ar)); aspect-ratio: var(--ar); height: auto; max-width: 100%; object-fit: contain; background: #fff; border-radius: 6px; }
+/* The box is as wide as its picture; long text wraps under it (--ar sits on the box, so both can use it). */
+.term--image .hotspot-tip { max-width: none; }
+.term--image .hotspot-tip strong, .term--image .term-line { max-width: min(30rem, 56vw, min(42vh, 19rem, var(--img-room, 100vh)) * var(--ar)); }
+.term--below .hotspot-tip { bottom: auto; top: calc(100% + 10px); }
+h1 .term .hotspot-tip { letter-spacing: normal; text-wrap: wrap; }
+
+@media (max-width: 899px), (max-height: 599px) {
+  .story-frame--side .art-link-img, .story-frame--full:not(.story-frame--fit) .art-link-img { position: static; }
+  .story-panel--links > .art-hot { width: 100%; }
+  .art-links { margin-top: .6rem; font-size: 16px; gap: .5rem 1.4rem; }
+  .art-link-text { min-height: 44px; display: inline-flex; align-items: center; max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  /* The sheet rules above this block set top:auto; a title term keeps the sheet at the bottom of the screen. */
+  .term--below .hotspot-tip { top: auto; bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+  .term .term-image { width: 100%; max-height: 46vh; max-height: 46dvh; aspect-ratio: auto; }
+  .term--image .hotspot-tip strong, .term--image .term-line { max-width: none; }
+}
+
+/* Titles balance their lines. Supporting text, list lines and the ask line on a card slide fill the
+   line and break at its end, so a two-line item is as wide as the one-line items around it (Byron, 24-Nov-2026). */
+.story-frame .support, .card-lede { text-wrap: pretty; }
