@@ -148,56 +148,17 @@
       ]
     },
     {
-      "id": "kickoff:kffm",
-      "slides": [
-        "example-map"
-      ]
-    },
-    {
       "id": "kickoff:quarterly-kffm",
       "slides": [
         "map"
       ],
       "override": {
-        "support": "In Metronome: open KFFM and put it on the screen."
+        "support": "In Metronome: open KFFM and put it on the screen.",
+        "notes": [
+          "If the KFFM is not in Metronome yet, use the example drawing on the next slide.",
+          "Ask each owner: what do you need to do to turn it green?"
+        ]
       }
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "widgets"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "widgets"
-      ]
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "status"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "numbers"
-      ]
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "days-to-cash"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "days",
-        "profit-x"
-      ]
     },
     {
       "id": "kickoff:kffm",
@@ -209,9 +170,13 @@
         "headline": "Are you pushing all six levers? What moved last quarter?",
         "notes": [
           "At a quarterly, the six levers are the check on the KFFM. The map is only right if the team is using it to move more cash faster.",
-          "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever: quantity, conversion, price, timing, capacity, cost. For each one, ask its owner what they did to push it last quarter and what moved.",
-          "A lever nobody is pushing is a finding. Write it down.",
-          "Timing is how long one widget takes to get through. Capacity is how many widgets a function can handle in a month. A function can be fast and still too small."
+          "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
+          "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
+          "Price: has a good Profit per X emerged? If not, leave it blank.",
+          "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
+          "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
+          "Cost: what each function costs to run.",
+          "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
         ]
       }
     },
