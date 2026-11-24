@@ -1,0 +1,1033 @@
+{
+  "generator": "darlison-slides",
+  "playlist": "q3",
+  "title": "Metronomics Q3",
+  "unit_ids": [
+    "welcome",
+    "good-news",
+    "engagement",
+    "mirror",
+    "valuable",
+    "exercise",
+    "status",
+    "review",
+    "functions",
+    "gaps",
+    "numbers",
+    "scorecards",
+    "scorecard-intro",
+    "kffm",
+    "map",
+    "levers",
+    "weekly",
+    "values",
+    "review",
+    "values",
+    "example",
+    "agree",
+    "go-deeper",
+    "purpose",
+    "test",
+    "people",
+    "objective",
+    "grid",
+    "evidence",
+    "place",
+    "placed",
+    "zones",
+    "toxic",
+    "plans",
+    "go-deeper",
+    "attribution",
+    "objective",
+    "example",
+    "attributes",
+    "us",
+    "competitors",
+    "white-space",
+    "line",
+    "example",
+    "brainstorm",
+    "score",
+    "sheet-example",
+    "core-customer",
+    "draw",
+    "apply",
+    "strategy",
+    "read-back",
+    "plan",
+    "1hag-check",
+    "quarter-numbers",
+    "quarter-first",
+    "quarter-rest",
+    "qhag-check",
+    "lanes",
+    "sprint-lanes",
+    "example",
+    "build",
+    "check",
+    "priorities",
+    "my-priorities",
+    "read-back",
+    "plan-check",
+    "forecast",
+    "owners",
+    "template",
+    "close",
+    "daily-weekly",
+    "weekly-email",
+    "three-messages",
+    "homework",
+    "outcomes-check",
+    "one-phrase",
+    "deck-link"
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "name": "q3-opening-welcome",
+      "reference": "kickoff:q3-opening#welcome"
+    },
+    {
+      "number": 2,
+      "name": "opening-good-news",
+      "reference": "kickoff:opening#good-news"
+    },
+    {
+      "number": 3,
+      "name": "opening-engagement",
+      "reference": "kickoff:opening#engagement"
+    },
+    {
+      "number": 4,
+      "name": "opening-mirror",
+      "reference": "kickoff:opening#mirror"
+    },
+    {
+      "number": 5,
+      "name": "q3-opening-valuable",
+      "reference": "kickoff:q3-opening#valuable"
+    },
+    {
+      "number": 6,
+      "name": "q3-appreciation-exercise",
+      "reference": "kickoff:q3-appreciation#exercise"
+    },
+    {
+      "number": 7,
+      "name": "q3-path-status",
+      "reference": "kickoff:q3-path#status"
+    },
+    {
+      "number": 8,
+      "name": "quarterly-status-review",
+      "reference": "kickoff:quarterly-status#review"
+    },
+    {
+      "number": 9,
+      "name": "q3-path-functions",
+      "reference": "kickoff:q3-path#functions"
+    },
+    {
+      "number": 10,
+      "name": "function-chart-gaps",
+      "reference": "kickoff:function-chart#gaps"
+    },
+    {
+      "number": 11,
+      "name": "q1-functions-numbers",
+      "reference": "kickoff:q1-functions#numbers"
+    },
+    {
+      "number": 12,
+      "name": "q3-path-scorecards",
+      "reference": "kickoff:q3-path#scorecards"
+    },
+    {
+      "number": 13,
+      "name": "q1-functions-scorecard-intro",
+      "reference": "kickoff:q1-functions#scorecard-intro"
+    },
+    {
+      "number": 14,
+      "name": "q3-path-kffm",
+      "reference": "kickoff:q3-path#kffm"
+    },
+    {
+      "number": 15,
+      "name": "quarterly-kffm-map",
+      "reference": "kickoff:quarterly-kffm#map"
+    },
+    {
+      "number": 16,
+      "name": "kffm-levers",
+      "reference": "kickoff:kffm#levers"
+    },
+    {
+      "number": 17,
+      "name": "q3-kffm-weekly",
+      "reference": "kickoff:q3-kffm#weekly"
+    },
+    {
+      "number": 18,
+      "name": "q3-path-values",
+      "reference": "kickoff:q3-path#values"
+    },
+    {
+      "number": 19,
+      "name": "q3-values-review",
+      "reference": "kickoff:q3-values#review"
+    },
+    {
+      "number": 20,
+      "name": "quarterly-review-values",
+      "reference": "kickoff:quarterly-review#values"
+    },
+    {
+      "number": 21,
+      "name": "q3-values-example",
+      "reference": "kickoff:q3-values#example"
+    },
+    {
+      "number": 22,
+      "name": "q3-values-agree",
+      "reference": "kickoff:q3-values#agree"
+    },
+    {
+      "number": 23,
+      "name": "q3-values-go-deeper",
+      "reference": "kickoff:q3-values#go-deeper"
+    },
+    {
+      "number": 24,
+      "name": "quarterly-review-purpose",
+      "reference": "kickoff:quarterly-review#purpose"
+    },
+    {
+      "number": 25,
+      "name": "bhag-test",
+      "reference": "kickoff:bhag#test"
+    },
+    {
+      "number": 26,
+      "name": "q3-path-people",
+      "reference": "kickoff:q3-path#people"
+    },
+    {
+      "number": 27,
+      "name": "q3-aplayer-objective",
+      "reference": "kickoff:q3-aplayer#objective"
+    },
+    {
+      "number": 28,
+      "name": "q3-aplayer-grid",
+      "reference": "kickoff:q3-aplayer#grid"
+    },
+    {
+      "number": 29,
+      "name": "q3-aplayer-evidence",
+      "reference": "kickoff:q3-aplayer#evidence"
+    },
+    {
+      "number": 30,
+      "name": "q3-aplayer-place",
+      "reference": "kickoff:q3-aplayer#place"
+    },
+    {
+      "number": 31,
+      "name": "q3-aplayer-placed",
+      "reference": "kickoff:q3-aplayer#placed"
+    },
+    {
+      "number": 32,
+      "name": "q3-aplayer-zones",
+      "reference": "kickoff:q3-aplayer#zones"
+    },
+    {
+      "number": 33,
+      "name": "q3-aplayer-toxic",
+      "reference": "kickoff:q3-aplayer#toxic"
+    },
+    {
+      "number": 34,
+      "name": "q3-aplayer-plans",
+      "reference": "kickoff:q3-aplayer#plans"
+    },
+    {
+      "number": 35,
+      "name": "q3-aplayer-go-deeper",
+      "reference": "kickoff:q3-aplayer#go-deeper"
+    },
+    {
+      "number": 36,
+      "name": "q3-path-attribution",
+      "reference": "kickoff:q3-path#attribution"
+    },
+    {
+      "number": 37,
+      "name": "q3-attribution-objective",
+      "reference": "kickoff:q3-attribution#objective"
+    },
+    {
+      "number": 38,
+      "name": "q3-attribution-example",
+      "reference": "kickoff:q3-attribution#example"
+    },
+    {
+      "number": 39,
+      "name": "q3-attribution-attributes",
+      "reference": "kickoff:q3-attribution#attributes"
+    },
+    {
+      "number": 40,
+      "name": "q3-attribution-us",
+      "reference": "kickoff:q3-attribution#us"
+    },
+    {
+      "number": 41,
+      "name": "q3-attribution-competitors",
+      "reference": "kickoff:q3-attribution#competitors"
+    },
+    {
+      "number": 42,
+      "name": "q3-attribution-white-space",
+      "reference": "kickoff:q3-attribution#white-space"
+    },
+    {
+      "number": 43,
+      "name": "q3-attribution-line",
+      "reference": "kickoff:q3-attribution#line"
+    },
+    {
+      "number": 44,
+      "name": "q1-market-map-example",
+      "reference": "kickoff:q1-market-map#example"
+    },
+    {
+      "number": 45,
+      "name": "q3-attribution-brainstorm",
+      "reference": "kickoff:q3-attribution#brainstorm"
+    },
+    {
+      "number": 46,
+      "name": "q3-attribution-score",
+      "reference": "kickoff:q3-attribution#score"
+    },
+    {
+      "number": 47,
+      "name": "q3-attribution-sheet-example",
+      "reference": "kickoff:q3-attribution#sheet-example"
+    },
+    {
+      "number": 48,
+      "name": "q3-attribution-core-customer",
+      "reference": "kickoff:q3-attribution#core-customer"
+    },
+    {
+      "number": 49,
+      "name": "q3-attribution-draw",
+      "reference": "kickoff:q3-attribution#draw"
+    },
+    {
+      "number": 50,
+      "name": "q3-attribution-apply",
+      "reference": "kickoff:q3-attribution#apply"
+    },
+    {
+      "number": 51,
+      "name": "q3-path-strategy",
+      "reference": "kickoff:q3-path#strategy"
+    },
+    {
+      "number": 52,
+      "name": "three-year-read-back",
+      "reference": "kickoff:three-year#read-back"
+    },
+    {
+      "number": 53,
+      "name": "q3-path-plan",
+      "reference": "kickoff:q3-path#plan"
+    },
+    {
+      "number": 54,
+      "name": "annual-1hag-check",
+      "reference": "kickoff:annual#1hag-check"
+    },
+    {
+      "number": 55,
+      "name": "quarterly-quarter-numbers",
+      "reference": "kickoff:quarterly#quarter-numbers"
+    },
+    {
+      "number": 56,
+      "name": "quarterly-quarter-first",
+      "reference": "kickoff:quarterly#quarter-first"
+    },
+    {
+      "number": 57,
+      "name": "quarterly-quarter-rest",
+      "reference": "kickoff:quarterly#quarter-rest"
+    },
+    {
+      "number": 58,
+      "name": "quarterly-qhag-check",
+      "reference": "kickoff:quarterly#qhag-check"
+    },
+    {
+      "number": 59,
+      "name": "q3-path-lanes",
+      "reference": "kickoff:q3-path#lanes"
+    },
+    {
+      "number": 60,
+      "name": "meeting-6-sprint-lanes",
+      "reference": "eoa:meeting-6#sprint-lanes"
+    },
+    {
+      "number": 61,
+      "name": "q2-sprint-example",
+      "reference": "kickoff:q2-sprint#example"
+    },
+    {
+      "number": 62,
+      "name": "q2-sprint-build",
+      "reference": "kickoff:q2-sprint#build"
+    },
+    {
+      "number": 63,
+      "name": "q2-sprint-check",
+      "reference": "kickoff:q2-sprint#check"
+    },
+    {
+      "number": 64,
+      "name": "q3-path-priorities",
+      "reference": "kickoff:q3-path#priorities"
+    },
+    {
+      "number": 65,
+      "name": "individual-my-priorities",
+      "reference": "kickoff:individual#my-priorities"
+    },
+    {
+      "number": 66,
+      "name": "individual-read-back",
+      "reference": "kickoff:individual#read-back"
+    },
+    {
+      "number": 67,
+      "name": "individual-plan-check",
+      "reference": "kickoff:individual#plan-check"
+    },
+    {
+      "number": 68,
+      "name": "q3-path-forecast",
+      "reference": "kickoff:q3-path#forecast"
+    },
+    {
+      "number": 69,
+      "name": "q1-cash-owners",
+      "reference": "kickoff:q1-cash#owners"
+    },
+    {
+      "number": 70,
+      "name": "q3-cash-template",
+      "reference": "kickoff:q3-cash#template"
+    },
+    {
+      "number": 71,
+      "name": "q3-path-close",
+      "reference": "kickoff:q3-path#close"
+    },
+    {
+      "number": 72,
+      "name": "rhythm-teaching-daily-weekly",
+      "reference": "kickoff:rhythm-teaching#daily-weekly"
+    },
+    {
+      "number": 73,
+      "name": "q3-meetings-weekly-email",
+      "reference": "kickoff:q3-meetings#weekly-email"
+    },
+    {
+      "number": 74,
+      "name": "cascade-messages-three-messages",
+      "reference": "kickoff:cascade-messages#three-messages"
+    },
+    {
+      "number": 75,
+      "name": "q3-close-homework",
+      "reference": "kickoff:q3-close#homework"
+    },
+    {
+      "number": 76,
+      "name": "q3-close-outcomes-check",
+      "reference": "kickoff:q3-close#outcomes-check"
+    },
+    {
+      "number": 77,
+      "name": "closing-one-phrase",
+      "reference": "kickoff:closing#one-phrase"
+    },
+    {
+      "number": 78,
+      "name": "closing-deck-link",
+      "reference": "kickoff:closing#deck-link"
+    }
+  ],
+  "sources": [
+    {
+      "reference": "kickoff:q3-opening#welcome",
+      "sha256": "34b3ef7839750720e3d39691af98f28bed2338051766c92a808d279c1d1eb1bc",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+      "artwork_sha256": "80bee556c2dbac5c92a161eb9214007b5300f5536dbadad274024ce2c9325b9d"
+    },
+    {
+      "reference": "kickoff:opening#good-news",
+      "sha256": "af3c97ad192850d57462f856ae161f7f3ecea248edb69a1d9b684f3f438e121a",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "bb1cd3f9d4e6b7f9b911ae7ffc806231fd2e23dcdd5df605fd4ad9f5a77aec28"
+    },
+    {
+      "reference": "kickoff:opening#engagement",
+      "sha256": "af3c97ad192850d57462f856ae161f7f3ecea248edb69a1d9b684f3f438e121a",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:opening#mirror",
+      "sha256": "af3c97ad192850d57462f856ae161f7f3ecea248edb69a1d9b684f3f438e121a",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-opening#valuable",
+      "sha256": "34b3ef7839750720e3d39691af98f28bed2338051766c92a808d279c1d1eb1bc",
+      "artifact": "opening",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+      "artwork_sha256": "6d86b1fb151ee474fea98f1db69519a93be32c16d0272918b8c292354c778394"
+    },
+    {
+      "reference": "kickoff:q3-appreciation#exercise",
+      "sha256": "324e69a09398311b181b1099c3012047b9a1e789ad81d6f996497d17ea4eb2cf",
+      "artifact": "left-and-right",
+      "seed": "Shannon Byrne Susko, COHESIVE: Left and Right: Appreciation, and the Left and Right Appreciation instructions, Metronomics.",
+      "artwork_sha256": "fcd169baa0d34b68edf9eeea9c233a3f4361bc94919888ff3d8a1c41f077d868"
+    },
+    {
+      "reference": "kickoff:q3-path#status",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "ea97b1a02b7de158cd57bc2fa87c9842a55965483fa354673cb4c49c6622080a"
+    },
+    {
+      "reference": "kickoff:quarterly-status#review",
+      "sha256": "2f2adce77341f6c98700f5f86ad6f3dce36e3d5225fcdaca30cf0453d9699130",
+      "artifact": "status-review",
+      "seed": "Verified note: qhag, Steps 1 (Shannon).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#functions",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "5d429d4f2794810220fa2dcbfed3b7c05c94c5be60eb896fd6fb08ba619d76ff"
+    },
+    {
+      "reference": "kickoff:function-chart#gaps",
+      "sha256": "654c2bcf51d361ea1be59e652b4b0336ed8fbdcc2b894b6057bc427dbfdd162e",
+      "artifact": "function-chart",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q1-functions#numbers",
+      "sha256": "c21abbc5c842495360c5d0134eaea29095e527d14279607f297c4eb30b3266ef",
+      "artifact": "team-view",
+      "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#scorecards",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "bb0cb0b65f669311775debc5624ea14ccc262283671006b55dffd547e54a4381"
+    },
+    {
+      "reference": "kickoff:q1-functions#scorecard-intro",
+      "sha256": "c21abbc5c842495360c5d0134eaea29095e527d14279607f297c4eb30b3266ef",
+      "artifact": "team-view",
+      "seed": "Shannon Byrne Susko, HUMAN: Team View - Functional and HUMAN: Function Scorecard, Metronomics.",
+      "artwork_sha256": "283b08dbf4c4e9358bfd6bae8f109778f7937dee4da931cd5f4b35da3337ed6c"
+    },
+    {
+      "reference": "kickoff:q3-path#kffm",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "a3abcc7c11742c61686151647ed9a62b44b70868f61c95052f30ffeadd84921d"
+    },
+    {
+      "reference": "kickoff:quarterly-kffm#map",
+      "sha256": "60cba34d7401f3edfcbb35d184998a131b1013a3d0fb090db319730e78dfed74",
+      "artifact": "kffm-review",
+      "seed": "Verified note: kffm (Shannon). Byron, 16-Nov-2026: KFFM deep dive.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:kffm#levers",
+      "sha256": "c78037587610ab7379a9a79226ec91610142a4a77d6a660e1faf20e29711dd5d",
+      "artifact": "kffm",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "ad2be628798dd8b404519b2d05e7d212a31d81308c4a018426da54dbcf3d66f0"
+    },
+    {
+      "reference": "kickoff:q3-kffm#weekly",
+      "sha256": "a76d5884e637a7e85828c4e46eba18fd3beba25e02342932fd76b0226bd22c54",
+      "artifact": "kffm-weekly",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics. Byron Darlison, The Eight Meetings That Run Your Company (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#values",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "acb6fac61a710526e60689c7219b4d9d07f2910e25ad64b25c7c01025738a0c3"
+    },
+    {
+      "reference": "kickoff:q3-values#review",
+      "sha256": "a58a58478259e2e445f6492dcdfad4c9bf2bee59e8939d6fb43ea8b745aa5f63",
+      "artifact": "core-values",
+      "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:quarterly-review#values",
+      "sha256": "edbdbd7545f10ecc61dc8f9cbab9205bb562f807a1741025141b0f6739adb93e",
+      "artifact": "confirm-evolve",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics. Confirm and evolve.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-values#example",
+      "sha256": "a58a58478259e2e445f6492dcdfad4c9bf2bee59e8939d6fb43ea8b745aa5f63",
+      "artifact": "core-values",
+      "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-values#agree",
+      "sha256": "a58a58478259e2e445f6492dcdfad4c9bf2bee59e8939d6fb43ea8b745aa5f63",
+      "artifact": "core-values",
+      "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-values#go-deeper",
+      "sha256": "a58a58478259e2e445f6492dcdfad4c9bf2bee59e8939d6fb43ea8b745aa5f63",
+      "artifact": "core-values",
+      "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
+      "artwork_sha256": "43c74df3a7a7d1ede92010432e38a243cfa353f487cdd437295bd65583610164"
+    },
+    {
+      "reference": "kickoff:quarterly-review#purpose",
+      "sha256": "edbdbd7545f10ecc61dc8f9cbab9205bb562f807a1741025141b0f6739adb93e",
+      "artifact": "confirm-evolve",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-1 (Quarter 1 checklist), Metronomics. Confirm and evolve.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:bhag#test",
+      "sha256": "35913169d08d511bf0eaff5c185ba3a27e31a9260d350c09227d7d4e4c97284b",
+      "artifact": "bhag",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#people",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "493a821cdc37ebeeb6bce2020000546ac2221a22d81931bdf5a3c29b768bf790"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#objective",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "fc0d09d2c70c07176ce780a17f92abab015c518b651804a0048cbd08cf35cd6e"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#grid",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "b663564bec798f02092566c9f6a92a880e2cab8bb9dddb058bab4a232bf31051"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#evidence",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-aplayer#place",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-aplayer#placed",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "3619f60582689d36d1b7c80b34f028281bdcee162aeaa152cc5c1d594348c95b"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#zones",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "af2c13387d314abf01b5d8215ef54650f04f48b3120878782b0b8e8ac150ac7a"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#toxic",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "833a8d8c42b0c412802cb66952d25ee98a22a1ddb52bf507e7c3d4c0ad06003f"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#plans",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "5c04ae29445a125c334b63e6d61dc11ffdbae0b7488aef004c46ea6fe99a6822"
+    },
+    {
+      "reference": "kickoff:q3-aplayer#go-deeper",
+      "sha256": "2726ce1400a0c29d3bc67d2e39c0b059c3eb8f1d06738f2f7e310b8f567a0d22",
+      "artifact": "a-player-assessment",
+      "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
+      "artwork_sha256": "cf0bc2069e7771d6d59d02e6fd1bf5263f6cef199d15fe54f2e5056d4da7d6db"
+    },
+    {
+      "reference": "kickoff:q3-path#attribution",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "0a5ec680cec3963d23a17b2c100f2024c9863205a70699ffea024d3f8862962e"
+    },
+    {
+      "reference": "kickoff:q3-attribution#objective",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "6d4a628404c801f91d1e3f7c53c1437261cea0fa0155ab49f5d4665f376e39da"
+    },
+    {
+      "reference": "kickoff:q3-attribution#example",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "869bcedfbe973d2b1fed813802ccf6037bf978f729a2a33709f16c115f4bb467"
+    },
+    {
+      "reference": "kickoff:q3-attribution#attributes",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "59dee377e5cac8c510092fc0719b4e272c6dd40e9e8693902262b8d042e93547"
+    },
+    {
+      "reference": "kickoff:q3-attribution#us",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "b61f4b48e0c6dea931ed3ddedeec987d1a3bab8d71a6fac5972ce5df7bc33129"
+    },
+    {
+      "reference": "kickoff:q3-attribution#competitors",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "b4036bfc8b373038d320a869818511b3befc2130992e9f3a87b8bff446823781"
+    },
+    {
+      "reference": "kickoff:q3-attribution#white-space",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "d85e9aebf62c61e35c0f338b50c43750d5790f8ed8702a25e3cdbf8f410cfdc4"
+    },
+    {
+      "reference": "kickoff:q3-attribution#line",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "87ddf5822e74883f13ff21fb6655d06eefefa43d3a4b550ebfb2a0d0e9948023"
+    },
+    {
+      "reference": "kickoff:q1-market-map#example",
+      "sha256": "d0be38750b4bd7cb6b9c2629bfdff31834b14ea41e58d01549be55f2792d228d",
+      "artifact": "market-map",
+      "seed": "Shannon Byrne Susko, STRATEGY: Market Map, Metronomics. Verified note: market-map.",
+      "artwork_sha256": "b679e4beef1d7d5d5d4a77ebacdd30de5453c6942e31ca658e34c8520f723fc4"
+    },
+    {
+      "reference": "kickoff:q3-attribution#brainstorm",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-attribution#score",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "4996c3665641c2b4999819fbec4f2a482cd744cc91818b0bcd9905629397295e"
+    },
+    {
+      "reference": "kickoff:q3-attribution#sheet-example",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "089019d91587078bd1e2799209a60f6e290073222530ff474b99c2bc527dddd3"
+    },
+    {
+      "reference": "kickoff:q3-attribution#core-customer",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-attribution#draw",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-attribution#apply",
+      "sha256": "18e4be1e01f8a12064b1d4abfe5583cb53e3bcc5e52a59987f334bfa4c529fee",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#strategy",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "cc430e0c44e95029732e41ea426b9963dacda204673cafb883e7570aa8ba6a36"
+    },
+    {
+      "reference": "kickoff:three-year#read-back",
+      "sha256": "ee0d15fbbfead83a002ba20b46ff24eb1be1b3e75307dfafde15ebb0e8503bff",
+      "artifact": "three-year",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "a53ad6cf775010e326b9d599177eca003ce364ccbd7d7d9165e74eede7bea10b"
+    },
+    {
+      "reference": "kickoff:q3-path#plan",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "5d750d74082b0e29ec708b18a0e3fbb968e23e13c28e9f855028b4760f97de1d"
+    },
+    {
+      "reference": "kickoff:annual#1hag-check",
+      "sha256": "4199d689e3d907db8a3dd0b82015c5d66bd37272466a3b93c06f66e2001d0174",
+      "artifact": "annual",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "dab56d70bb3b10a541a3a5a94a6c0ae57ac96f2c088bee886b4a01d5144f231e"
+    },
+    {
+      "reference": "kickoff:quarterly#quarter-numbers",
+      "sha256": "8a267391a67780020696402b2f829c8a6cac52ffbd57919d3d674938ec170e92",
+      "artifact": "quarterly",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+      "artwork_sha256": "5100f8b09d051fc31dea516dc761af07cfb75d0a9dd15b60566df02094ff1c3b"
+    },
+    {
+      "reference": "kickoff:quarterly#quarter-first",
+      "sha256": "8a267391a67780020696402b2f829c8a6cac52ffbd57919d3d674938ec170e92",
+      "artifact": "quarterly",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+      "artwork_sha256": "555bd1b0acd5f4a609ed91bf2f9153f0b04ac3a24ac202e47d53b01f6df3cb7d"
+    },
+    {
+      "reference": "kickoff:quarterly#quarter-rest",
+      "sha256": "8a267391a67780020696402b2f829c8a6cac52ffbd57919d3d674938ec170e92",
+      "artifact": "quarterly",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+      "artwork_sha256": "5321086edb43e52b8d2db7133588d33bdfa0f34c58d16bbc26b1a515f14b46a3"
+    },
+    {
+      "reference": "kickoff:quarterly#qhag-check",
+      "sha256": "8a267391a67780020696402b2f829c8a6cac52ffbd57919d3d674938ec170e92",
+      "artifact": "quarterly",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
+      "artwork_sha256": "f476ab36869dc2e6a82634e245dbaa3fd833d589ed1ec0f8f67ecfe479485bff"
+    },
+    {
+      "reference": "kickoff:q3-path#lanes",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "b58ad886fa583c7c8f2b95ee4a28d447d221e62dc0a326deff87fe9cc2900a49"
+    },
+    {
+      "reference": "eoa:meeting-6#sprint-lanes",
+      "sha256": "eecc2b06fa6c453fd4dfe943639acb8dce7bdc6dc90cdd9ae143ef6bccbccca4",
+      "artifact": "eoa-meeting-6",
+      "seed": "Byron Darlison, EO Accelerator Meeting 6, December 2026.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q2-sprint#example",
+      "sha256": "9bb87413bb7302bc245a8038cf43f9cc4b02bcc118465abaa9e88d12880776a1",
+      "artifact": "sprint-lanes",
+      "seed": "Shannon Byrne Susko, EXECUTION: 13 Week Sprint Lanes, and the 13 Week Sprint Lanes template, Metronomics. Byron Darlison, Where Are You Going? (darlison.com): The QHAG and 13-Week Sprint.",
+      "artwork_sha256": "53624697304feb9d06df2f65ea50b450962901e24a2b136fba6e69fff1707070"
+    },
+    {
+      "reference": "kickoff:q2-sprint#build",
+      "sha256": "9bb87413bb7302bc245a8038cf43f9cc4b02bcc118465abaa9e88d12880776a1",
+      "artifact": "sprint-lanes",
+      "seed": "Shannon Byrne Susko, EXECUTION: 13 Week Sprint Lanes, and the 13 Week Sprint Lanes template, Metronomics. Byron Darlison, Where Are You Going? (darlison.com): The QHAG and 13-Week Sprint.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q2-sprint#check",
+      "sha256": "9bb87413bb7302bc245a8038cf43f9cc4b02bcc118465abaa9e88d12880776a1",
+      "artifact": "sprint-lanes",
+      "seed": "Shannon Byrne Susko, EXECUTION: 13 Week Sprint Lanes, and the 13 Week Sprint Lanes template, Metronomics. Byron Darlison, Where Are You Going? (darlison.com): The QHAG and 13-Week Sprint.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#priorities",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "9fcf368f93e6bc01d246cae7b1f02367ca240895f86fe9c05ab1b1ff5588a3c9"
+    },
+    {
+      "reference": "kickoff:individual#my-priorities",
+      "sha256": "7a2c6ebc4c4bc26a2469a9e2d0f6a795b61b4277fedb20ded07f81639e465d93",
+      "artifact": "individual",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:individual#read-back",
+      "sha256": "7a2c6ebc4c4bc26a2469a9e2d0f6a795b61b4277fedb20ded07f81639e465d93",
+      "artifact": "individual",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "8a28b04e80c4e1adcf813cdec0bc5a9f1dd3e4003db64528735211cc5c577dbf"
+    },
+    {
+      "reference": "kickoff:individual#plan-check",
+      "sha256": "7a2c6ebc4c4bc26a2469a9e2d0f6a795b61b4277fedb20ded07f81639e465d93",
+      "artifact": "individual",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "7642da4e2d780659aa171b7d58d151997dddd071d157fbd3657ca321e2976d3f"
+    },
+    {
+      "reference": "kickoff:q3-path#forecast",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "50b2b88296e53729d5e410001b55624d99d06838923ac63b4f76539aa03ed766"
+    },
+    {
+      "reference": "kickoff:q1-cash#owners",
+      "sha256": "66942fa732af9af59b63946ebfb3ddb5415e322a1f70ba701eb0cb38479d6d15",
+      "artifact": "cash-forecast",
+      "seed": "Byron Darlison, Cash! Who Owns the Forecast? (darlison.com, 24 Aug 2026), and his EOA Cash Learning Day deck; Shannon Byrne Susko, CASH: Profit and Loss Cash Forecast, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-cash#template",
+      "sha256": "a3fddc183e921a7d1a729ae549edb459c4d4c97ef6a8a0e2ba3329afac1df4b3",
+      "artifact": "cash-forecast",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics. Byron Darlison, Cash! Who Owns the Forecast? (darlison.com).",
+      "artwork_sha256": "761b76ff6c3eaedc59aa70c6a32be9cf603992becbe32fcf0974ed1bc86fa91d"
+    },
+    {
+      "reference": "kickoff:q3-path#close",
+      "sha256": "b2825e45c9e1e5e6e8c9ba7fc9af82f945780c19264efaff15c55f03bb0f86fe",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "4bf38be16997cee24c11579efe3617728fab724bb207c7cc506983993efef089"
+    },
+    {
+      "reference": "kickoff:rhythm-teaching#daily-weekly",
+      "sha256": "d946e3bab0b6b5fd0b860a170cf5670bb215fa799d8ecdfa43274046089c6c7e",
+      "artifact": "rhythm-teaching",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-meetings#weekly-email",
+      "sha256": "8d80c0f237b6edf78db23ce4f7e9d1ec20a4ceb1704e321a9695452c16242fb4",
+      "artifact": "meetings",
+      "seed": "Shannon Byrne Susko, Meeting By Meeting (master deck, pages 357 to 372): Weekly Email, as recorded on the strategy site\u2019s Meetings page.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:cascade-messages#three-messages",
+      "sha256": "603973ed252517a7f64fec5af277b5ad88f3ff2b664ab730a1b6e11a3d83e610",
+      "artifact": "cascade-messages",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "9576d76aac38cb0b675e576261d09908b23c3d0c7701ff00356285f979ccbff4"
+    },
+    {
+      "reference": "kickoff:q3-close#homework",
+      "sha256": "af0ca5beab0f81ccdd4b99bb72f35a2774191274196b8a7b9246d514a1c5a8c5",
+      "artifact": "close",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-close#outcomes-check",
+      "sha256": "af0ca5beab0f81ccdd4b99bb72f35a2774191274196b8a7b9246d514a1c5a8c5",
+      "artifact": "close",
+      "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
+      "artwork_sha256": "ecc3a169341b2fdef2ddaf18aba4aeb16e0b2ce47ac2be787f529896ec466f9b"
+    },
+    {
+      "reference": "kickoff:closing#one-phrase",
+      "sha256": "9f7275038d5259305465a765f0946a884895db8b39e757a712a2d54bdf49e09c",
+      "artifact": "closing",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": "3fed1eec553fd1fb4184252c9d98222bd6e2c862a6ba077bd2c3d54d1b91927a"
+    },
+    {
+      "reference": "kickoff:closing#deck-link",
+      "sha256": "9f7275038d5259305465a765f0946a884895db8b39e757a712a2d54bdf49e09c",
+      "artifact": "closing",
+      "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
+      "artwork_sha256": null
+    }
+  ],
+  "public_path": "metronomics/q3/",
+  "public_url": "https://byrondarlison.github.io/coaching-slides/metronomics/q3/",
+  "shell": [
+    "shell.css",
+    "shell.js",
+    "fonts/",
+    "assets/"
+  ]
+}
