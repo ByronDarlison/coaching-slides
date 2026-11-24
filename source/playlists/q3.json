@@ -452,6 +452,40 @@
       ]
     },
     {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "sprint-lanes"
+      ],
+      "override": {
+        "headline": "What the sprint lanes page holds.",
+        "title": "What the sprint lanes page holds",
+        "panels": [
+          {
+            "role": "01",
+            "heading": "A widget forecast, week by week",
+            "support": "The weekly forecast adds up to the quarter’s widget targets.",
+            "mark": "action"
+          },
+          {
+            "role": "02",
+            "heading": "One lane for each company priority",
+            "support": "Each lane has the same owner as its priority.",
+            "mark": "structure"
+          },
+          {
+            "role": "03",
+            "heading": "One step each week",
+            "support": "The step that week that moves the priority toward its measure of success.",
+            "mark": "structure"
+          }
+        ],
+        "notes": [
+          "A reminder before the team builds again. Every team started sprint lanes at Q2.",
+          "Update the page every week. A week that slips is a prompt to act."
+        ]
+      }
+    },
+    {
       "id": "kickoff:q2-sprint",
       "slides": [
         "example"
@@ -607,7 +641,7 @@
               "Values recognition",
               "Widget scoreboard",
               "KFFM critical numbers",
-              "QHAG: numbers and priorities",
+              "QHAG: numbers, priorities, sprint lanes",
               "Stucks, asks and offers"
             ]
           }
