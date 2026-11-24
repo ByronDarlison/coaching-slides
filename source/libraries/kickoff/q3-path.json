@@ -88,8 +88,8 @@
     },
     {
       "id": "values",
-      "title": "Next, agree what you stand for.",
-      "headline": "Next, agree what you stand for.",
+      "title": "Next, what you stand for.",
+      "headline": "Next, what you stand for.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -97,7 +97,7 @@
         "q3"
       ],
       "notes": [
-        "A quick pass on the Core Purpose. Then the team reviews the draft Core Values from its Mission to Mars session and agrees them.",
+        "A quick pass on the Core Purpose. Then the team reads its Core Values, tests them and confirms them.",
         "The BHAG pass follows the values."
       ],
       "art_full": true,
