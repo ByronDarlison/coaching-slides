@@ -64,11 +64,12 @@
       "notes": [
         "Read back the outcomes the team agreed at the start.",
         "Ask for a show of hands on each one.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
       "artwork": {
-        "src": "assets/q3-sticky-checked.svg",
-        "alt": "Byron’s sticky note from the start of the day, handwritten with: 3HAG validation, now with a large green check mark beside it."
+        "src": "assets/q3-sticky.jpg",
+        "alt": "Byron’s sticky note, handwritten with: 3HAG validation."
       },
       "art_side": true
     }

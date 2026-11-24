@@ -37,12 +37,12 @@
       ],
       "notes": [
         "Ask each person to write an answer and share it. Agree on the outcomes. Return to them at the close. Allow 10 minutes.",
-        "Byron’s note shows the purpose of Q3: validating the 3HAG."
+        "The coach’s own outcome is “3HAG validation”. Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the closing slide."
       ],
       "support": "Write your answer, then share it with the team.",
       "artwork": {
-        "src": "assets/q3-sticky.jpg",
-        "alt": "Byron’s sticky note, handwritten with: 3HAG validation."
+        "src": "assets/valuable-sticky-question.svg",
+        "alt": "A blank sticky note with a large question mark on it."
       },
       "art_side": true
     }

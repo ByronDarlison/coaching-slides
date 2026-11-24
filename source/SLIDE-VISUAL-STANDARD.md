@@ -76,7 +76,7 @@ Learned editing the Metronomics Kick Off. They apply to every deck.
 
 Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 
-12. **Open with the session's purpose.** The "What would make today valuable?" slide shows the session's objective on a sticky, such as "Functional clarity with team accountability" at Q1. The close shows the same sticky checked.
+12. **Hold the session’s purpose until the close (Byron, 24-Nov-2026).** The “What would make today valuable?” slide shows a sticky with a question mark, so the coach’s answer does not lead the room. The close shows the coach’s purpose on the sticky, such as “Functional clarity with team accountability” at Q1, with no check mark: the team decides whether it was met.
 13. **One continuing example in every deck.** Use our own subscription company everywhere: the same people, functions and numbers. Shannon's examples are a source to check against, not to copy. A person who holds two functions shows in red. The Kick Off's Function Chart and example pages are the canon for names, owners and numbers: check a later deck's example against them before adding a person or a figure (Byron, 16-Nov-2026: the Q1 Team View had invented a CEO, "Sam", where the Kick Off has Pat).
 14. **Teach why, not only what.** Each part of a tool says on screen why it matters, then the question to ask. End each tool by asking what it changes: the 3HAG capabilities, the KFFM, the 1HAG and the QHAG.
 15. **Build a picture before the plan it tests.** At Q1, the Market Map comes before the 3HAG pass. Its findings then test the 3HAG, the 1HAG and the QHAG.

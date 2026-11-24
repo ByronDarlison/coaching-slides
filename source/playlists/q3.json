@@ -512,6 +512,12 @@
     },
     "kickoff:q3-cash",
     {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "close"
+      ]
+    },
+    {
       "id": "kickoff:rhythm-teaching",
       "slides": [
         "daily-weekly"
@@ -554,9 +560,9 @@
             "items": [
               "Good news",
               "Values recognition",
-              "Scoreboard: widget forecast and actual",
-              "KFFM and QHAG status",
-              "Priority status",
+              "Widget scoreboard",
+              "KFFM critical numbers",
+              "QHAG: numbers and priorities",
               "Stucks, asks and offers"
             ]
           }
