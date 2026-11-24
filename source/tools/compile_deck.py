@@ -1178,7 +1178,7 @@ def point_qr_at_copy(target: Path, source_url: str | None, copy_url: str) -> str
         found = re.search(r'alt="QR code that opens these slides at ([^"]+)\."', sections[0])
         if not found:
             raise CompileError("cannot find the address the QR slide shows")
-        old = "https://" + found.group(1) + "/"
+        old = "https://" + html.unescape(found.group(1)) + "/"  # the page holds the address escaped
     write_deck_qr(target, copy_url)
     for section in sections:
         new = section.replace(escape(deck_qr_alt(old)), escape(deck_qr_alt(copy_url))).replace(escape(display_url(old)), escape(display_url(copy_url)))
