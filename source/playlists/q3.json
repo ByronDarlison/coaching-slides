@@ -623,75 +623,42 @@
             "role": "Daily",
             "heading": "Daily huddle",
             "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Metrics: yesterday’s widget actual and today’s forecast",
-              "The #1 thing to get done today",
-              "Stucks, and anything that can’t wait"
-            ]
+            "mark": "structure"
           },
           {
             "role": "Weekly",
             "heading": "Weekly 1:1",
             "support": "15 to 30 minutes. Each leader with each direct report, led by the direct report.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Metrics",
-              "Top 3 priorities for the week",
-              "Feedback both ways",
-              "Dynamic"
-            ]
+            "mark": "structure"
           },
           {
             "role": "Weekly",
             "heading": "Weekly leadership meeting",
             "support": "60 minutes or less. The CEO owns it.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Values recognition",
-              "Widget scoreboard",
-              "KFFM critical numbers",
-              "QHAG: numbers, priorities, sprint lanes",
-              "Stucks, asks and offers"
-            ]
+            "mark": "structure"
+          },
+          {
+            "role": "Monthly",
+            "heading": "Monthly Town Hall",
+            "support": "30 to 45 minutes. Everyone. The CEO owns it.",
+            "mark": "structure"
           }
         ],
         "notes": [
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
-          "All five meetings should be running: the three here, the Monthly Town Hall and Quarterly Planning.",
-          "New today: the KFFM review joins the weekly leadership meeting.",
-          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast.",
-          "The daily huddle’s facilitator rotates."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q2-meetings",
-      "slides": [
-        "town-hall"
-      ],
-      "override": {
-        "title": "Is your Monthly Town Hall working?",
-        "headline": "Is your Monthly Town Hall working?",
-        "support": "In Metronome: open Meetings.",
-        "notes": [
-          "Rate the Town Hall the same way as the other meetings: 0 below, 1 meets, 2 exceeds.",
-          "It runs 30 to 45 minutes, with everyone. The CEO owns it.",
+          "Quarterly Planning is the fifth meeting. The team is in it now.",
+          "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
+          "Weekly 1:1: Good news; Metrics; Top 3 priorities for the week; Feedback both ways; Dynamic.",
+          "Weekly leadership meeting: Good news; Values recognition; Widget scoreboard; KFFM critical numbers; QHAG: numbers, priorities, sprint lanes; Stucks, asks and offers.",
+          "Monthly Town Hall: Good news, then values recognition; QHAG progress on the #1 priority, and how everyone can help; Financial transparency: what is working and what is not; One thing we can do as a company to improve our financial health.",
           "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
           "This is the only meeting where the whole company hears the same thing at the same time.",
           "Financial transparency builds the financial literacy of the whole team.",
-          "Show the Team View at a Town Hall only when it changes."
-        ],
-        "body": [
-          "Running? Working? What to change? Rate it 0, 1 or 2.",
-          "Good news, then values recognition",
-          "QHAG progress on the #1 priority, and how everyone can help",
-          "Financial transparency: what is working and what is not",
-          "One thing we can do as a company to improve our financial health"
+          "Show the Team View at a Town Hall only when it changes.",
+          "New today: the KFFM review joins the weekly leadership meeting.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
       }
     },

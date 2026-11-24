@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "weekly-email",
-      "title": "The weekly email keeps the whole company on the plan.",
-      "headline": "The weekly email keeps the whole company on the plan.",
+      "title": "New today: the CEO’s weekly email.",
+      "headline": "New today: the CEO’s weekly email.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,16 +17,15 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "From the CEO to everyone, by Friday noon.",
+      "support": "It keeps the whole company on the plan.",
       "body": [
-        "One page. The first one goes this week.",
-        "Good news",
-        "Metrics or the critical number",
-        "Priority status",
-        "A positive close"
+        "One page, from the CEO to everyone, by Friday noon.",
+        "In it: good news, the numbers, priority status and a positive close.",
+        "The first one goes this week."
       ],
       "notes": [
         "New today: the CEO starts the weekly email this week.",
+        "The numbers are the company metrics or the critical number.",
         "Team members send their status by Thursday noon."
       ]
     }
