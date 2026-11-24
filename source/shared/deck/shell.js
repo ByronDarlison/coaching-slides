@@ -512,6 +512,8 @@
 
   function drawing(target) {
     // The whole panel is the tap target: definition areas cover much of a drawing.
+    // A link on the drawing opens its address; it never opens the zoom view as well.
+    if (target && target.closest && target.closest("a[href]")) return null;
     const panel = target && target.closest ? target.closest(".story-panel--art") : null;
     const img = panel ? panel.querySelector("img") : null;
     if (!img) return null;
@@ -623,7 +625,25 @@
     const frame = term.closest(".slide-content") || term.closest(".slide");
     if (!tip || !frame) return;
     tip.style.setProperty("--tip-dx", "0px");
-    const box = frame.getBoundingClientRect(), r = tip.getBoundingClientRect(), pad = 12;
+    // Open above the word when there is room, and below it when there is not (a title has none above).
+    // A picture in the box shrinks to the room on the side it opens, so the box never leaves the slide.
+    term.classList.remove("term--below");
+    tip.style.removeProperty("--img-room");
+    const box = frame.getBoundingClientRect(), pad = 12, gap = 10;
+    const word = term.getBoundingClientRect(), full = tip.getBoundingClientRect().height;
+    const above = word.top - box.top - pad - gap, below = box.bottom - word.bottom - pad - gap;
+    const under = full > above && below > above;
+    if (under) term.classList.add("term--below");
+    const picture = tip.querySelector(".term-image");
+    const room = under ? below : above;
+    // A smaller picture makes a narrower box, whose text may wrap onto more lines: measure again, a few times at most.
+    for (let pass = 0; picture && pass < 4; pass += 1) {
+      const tall = tip.getBoundingClientRect().height;
+      if (tall <= room) break;
+      const chrome = tall - picture.getBoundingClientRect().height;
+      tip.style.setProperty("--img-room", Math.max(80, Math.floor(room - chrome)) + "px");
+    }
+    const r = tip.getBoundingClientRect();
     let dx = 0;
     if (r.left < box.left + pad) dx = box.left + pad - r.left;
     else if (r.right > box.right - pad) dx = box.right - pad - r.right;

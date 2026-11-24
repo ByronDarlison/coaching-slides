@@ -15,13 +15,16 @@ import html
 import json
 import hashlib
 import itertools
+import math
 import re
+import struct
 import tempfile
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 TOOLS = Path(__file__).resolve().parent
 PRESENTATIONS = TOOLS.parent
@@ -50,6 +53,72 @@ FONT_NAMES = (
 
 class CompileError(ValueError):
     """Fail closed on a missing unit, playlist, or invalid field."""
+
+
+# Text a layout cannot show. A warning for now, because two published slides still carry
+# such text; --fail-on-dropped-text turns each one into a build failure.
+WARNINGS: list[str] = []
+
+
+def dropped_text(unit: dict[str, Any], message: str) -> None:
+    where = unit.get("_name") or unit.get("_source") or unit.get("id") or "slide"
+    if unit.get("_fail_on_dropped_text") is True:
+        raise CompileError(f"{where}: {message}")
+    WARNINGS.append(f"{where}: {message}")
+
+
+def number(value: Any) -> bool:
+    """A real, finite number of a sane size. JSON true and false are not numbers here."""
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return False
+    if isinstance(value, float) and not math.isfinite(value):
+        return False
+    return -1e9 <= value <= 1e9
+
+
+# The only network address a compiled deck may carry: a link a person chooses to click.
+# The pattern admits only what link_tag writes, so no other text can hide an address inside it.
+DECK_LINK = re.compile(r'<a class="deck-link(?: [a-z-]+)*" href="https://[^"\s<>()\\]*" target="_blank" rel="noopener"')
+LINK_HOST = re.compile(r"[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+")
+
+
+def safe_link(value: Any) -> str:
+    """Return an https address fit to print in an href, or fail closed."""
+    if not isinstance(value, str) or not value.startswith("https://") or not value.isascii():
+        raise CompileError("a link needs an https address")
+    # One spelling of an address everywhere (href, text, frozen copy): nothing is re-encoded on the way out.
+    if re.search(r"[\s\"'<>()\\`{}|^\x00-\x1f\x7f]", value):
+        raise CompileError(f"a link address cannot contain spaces, quotes or brackets; write ( and ) as %28 and %29: {value!r}")
+    try:
+        parts = urlsplit(value)
+        port = parts.port
+    except ValueError as exc:
+        raise CompileError(f"not a valid link address: {value!r}") from exc
+    host = parts.hostname or ""
+    if "@" in parts.netloc or port is not None or not LINK_HOST.fullmatch(host):
+        raise CompileError(f"a link needs a plain https host name, with no sign-in part or port: {value!r}")
+    return value
+
+
+MISSING = object()  # a field that was not written, as distinct from one written as null
+
+
+def link_label(value: Any, href: str) -> str:
+    if not isinstance(value, str) and value is not MISSING:
+        raise CompileError("a link label is a line of text")
+    label = (visible_text(value) if value is not MISSING else "") or display_url(href)
+    if "://" in label:
+        raise CompileError("a link label shows the address without https://")
+    return label
+
+
+def link_tag(href: str, extra: str = "") -> str:
+    """The opening tag of every link the compiler writes. DECK_LINK must match it.
+
+    Every address is checked here as well as where it is read, so no caller can skip the check.
+    """
+    css = f"deck-link {extra}".strip()
+    return f'<a class="{css}" href="{escape(safe_link(href))}" target="_blank" rel="noopener"'
 
 
 def repo_root() -> Path:
@@ -151,6 +220,8 @@ def resolve_playlist(playlist: dict[str, Any], library: Path | None = None) -> l
             if not isinstance(slide, dict):
                 raise CompileError("slide must be an object")
             sid = identifier(slide.get("id"), "slide id")
+            if any(str(key).startswith("_") for key in slide):
+                raise CompileError(f"slide {ref}#{sid} sets a build-only field; names starting with _ belong to the compiler")
             if sid in by_id:
                 raise CompileError(f"duplicate slide id: {sid}")
             by_id[sid] = slide
@@ -214,7 +285,10 @@ def bundle_asset(root: Path, src: Any, dest: Path) -> tuple[str, str]:
     """Copy one library image into the build under a content hash. Fail closed."""
     if not isinstance(src, str) or not src:
         raise CompileError("an image needs a local src")
-    source = (root / src).resolve()
+    try:
+        source = (root / src).resolve()
+    except (OSError, ValueError, RuntimeError) as exc:  # RuntimeError: a link that points at itself
+        raise CompileError("artwork must be an image inside its library") from exc
     if not source.is_relative_to(root) or source.suffix.lower() not in IMAGE_SUFFIXES:
         raise CompileError("artwork must be an image inside its library")
     if not source.is_file():
@@ -248,18 +322,38 @@ def inline_svg(root: Path, figure: Any) -> str:
 _HOT_IDS = itertools.count(1)
 
 
-def hotspot_wrap(image: str, art: dict[str, Any]) -> str:
-    """Overlay hover definitions on artwork. Boxes are in the artwork's viewBox units."""
+def view_box(art: dict[str, Any], what: str) -> tuple[float, float]:
     box = art.get("viewbox")
+    if not (isinstance(box, list) and len(box) == 2 and all(number(v) and v > 0 for v in box)):
+        raise CompileError(f"{what} need a viewbox of [width, height]")
+    return box[0], box[1]
+
+
+def target_hole(target: Any) -> str:
+    """One bright area in a hotspot's dim mask: an [x, y, w, h] box, or a line along points."""
+    if isinstance(target, list) and len(target) == 4 and all(number(v) for v in target):
+        tx, ty, tw, th = target
+        return f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="black"/>'
+    if isinstance(target, dict) and set(target) == {"points", "width"}:
+        points, stroke = target["points"], target["width"]
+        if not (isinstance(points, list) and len(points) >= 2
+                and all(isinstance(p, list) and len(p) == 2 and all(number(v) for v in p) for p in points)):
+            raise CompileError("a line target needs at least two [x, y] points in viewBox units")
+        if not (number(stroke) and stroke > 0):
+            raise CompileError("a line target needs a width above zero")
+        path = " ".join(f"{x},{y}" for x, y in points)
+        return (f'<polyline points="{path}" fill="none" stroke="black" stroke-width="{stroke}" '
+                'stroke-linecap="round" stroke-linejoin="round"/>')
+    raise CompileError('hotspot targets are [x, y, w, h] boxes or {"points": [[x, y], ...], "width": n} lines in viewBox units')
+
+
+def hotspot_parts(art: dict[str, Any], width: float, height: float) -> list[str]:
     spots = art.get("hotspots")
-    if not (isinstance(box, list) and len(box) == 2 and all(isinstance(v, (int, float)) and v > 0 for v in box)):
-        raise CompileError("hotspots need a viewbox of [width, height]")
     if not isinstance(spots, list):
         raise CompileError("hotspots must be a list")
-    width, height = box
     parts = []
     for spot in spots:
-        if not isinstance(spot, dict) or not all(isinstance(spot.get(k), (int, float)) for k in ("x", "y", "w", "h")):
+        if not isinstance(spot, dict) or not all(number(spot.get(k)) for k in ("x", "y", "w", "h")) or not (spot["w"] and spot["h"]):
             raise CompileError("each hotspot needs numeric x, y, w and h")
         term, tip = visible_text(spot.get("term")), visible_text(spot.get("tip"))
         if not term or not tip:
@@ -268,18 +362,21 @@ def hotspot_wrap(image: str, art: dict[str, Any]) -> str:
                f'width:{spot["w"] / width * 100:.3f}%;height:{spot["h"] / height * 100:.3f}%')
         below = " hotspot--below" if spot["y"] / height < 0.3 else ""
         icon = spot.get("icon", [spot["x"] + spot["w"] - 26, spot["y"] + 26])
-        if not (isinstance(icon, list) and len(icon) == 2 and all(isinstance(v, (int, float)) for v in icon)):
-            raise CompileError("a hotspot icon is [x, y] in viewBox units")
-        mark = (f'<span class="hotspot-i" aria-hidden="true" style="left:{(icon[0] - spot["x"]) / spot["w"] * 100:.3f}%;'
-                f'top:{(icon[1] - spot["y"]) / spot["h"] * 100:.3f}%">i</span>')
+        if icon is False:
+            mark = ""  # "icon": false hides the info mark; the area still answers hover, focus and tap.
+        elif not (isinstance(icon, list) and len(icon) == 2 and all(number(v) for v in icon)):
+            raise CompileError("a hotspot icon is [x, y] in viewBox units, or false for no mark")
+        else:
+            mark = (f'<span class="hotspot-i" aria-hidden="true" style="left:{(icon[0] - spot["x"]) / spot["w"] * 100:.3f}%;'
+                    f'top:{(icon[1] - spot["y"]) / spot["h"] * 100:.3f}%">i</span>')
         targets = spot.get("targets", [])
-        if not (isinstance(targets, list) and all(isinstance(t, list) and len(t) == 4 and all(isinstance(v, (int, float)) for v in t) for t in targets)):
-            raise CompileError("hotspot targets are [x, y, w, h] boxes in viewBox units")
+        if not isinstance(targets, list):
+            raise CompileError("hotspot targets must be a list")
         if targets:
             # Dim the artwork (or the spot's "dim" box) except the targets, which stay in full colour.
+            holes = "".join(target_hole(target) for target in targets)
             dx, dy, dw, dh = spot.get("dim", [0, 0, width, height])
             mask_id = f"hotdim{next(_HOT_IDS)}"
-            holes = "".join(f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="black"/>' for tx, ty, tw, th in targets)
             mark += (f'<svg class="hot-dim" aria-hidden="true" viewBox="0 0 {width} {height}" preserveAspectRatio="none" '
                      f'style="left:{-spot["x"] / spot["w"] * 100:.3f}%;top:{-spot["y"] / spot["h"] * 100:.3f}%;'
                      f'width:{width / spot["w"] * 100:.3f}%;height:{height / spot["h"] * 100:.3f}%">'
@@ -288,7 +385,94 @@ def hotspot_wrap(image: str, art: dict[str, Any]) -> str:
             below += " hotspot--targets"
         parts.append(f'<span class="hotspot{below}" tabindex="0" style="{pos}" aria-label="{escape(term)}: {escape(tip)}">{mark}'
                      + (f'<span class="hotspot-tip" role="tooltip"><strong>{escape(term)}</strong>{escape(tip)}</span>' if not targets else "") + '</span>')
-    return f'<span class="art-hot" style="--ar:{width}/{height}">{image}{"".join(parts)}</span>'
+    return parts
+
+
+def link_parts(art: dict[str, Any], width: float, height: float) -> tuple[list[str], str]:
+    """Clickable areas over a picture, and the same links as a row of text beneath it."""
+    links = art.get("links")
+    if not isinstance(links, list) or not links:
+        raise CompileError("links must be a non-empty list")
+    areas, texts = [], []
+    for link in links:
+        if not isinstance(link, dict) or set(link) - {"x", "y", "w", "h", "href", "label"}:
+            raise CompileError("each link takes x, y, w, h, href and an optional label")
+        if not all(number(link.get(k)) for k in ("x", "y", "w", "h")):
+            raise CompileError("each link needs numeric x, y, w and h in viewBox units")
+        x, y, w, h = (link[k] for k in ("x", "y", "w", "h"))
+        if w <= 0 or h <= 0 or x < 0 or y < 0 or x + w > width or y + h > height:
+            raise CompileError("a link area must sit inside the picture's viewbox")
+        href = safe_link(link.get("href"))
+        label = link_label(link.get("label", MISSING), href)
+        pos = f"left:{x / width * 100:.3f}%;top:{y / height * 100:.3f}%;width:{w / width * 100:.3f}%;height:{h / height * 100:.3f}%"
+        areas.append(f'{link_tag(href, "art-link")} style="{pos}" aria-label="{escape(label)}, opens in a new tab"></a>')
+        texts.append(f'{link_tag(href, "art-link-text")}>{escape(label)}</a>')
+    return areas, f'<span class="art-links">{"".join(texts)}</span>'
+
+
+def art_overlay(image: str, art: dict[str, Any]) -> tuple[str, str]:
+    """Overlay hover definitions and links on artwork. Boxes are in the artwork's viewBox units.
+
+    Returns the wrapped picture and the row of text links that goes beneath it.
+    """
+    has_spots, has_links = bool(art.get("hotspots")), "links" in art
+    if "qr" in art and not isinstance(art["qr"], bool):
+        raise CompileError('artwork "qr" is true or false')
+    if art.get("qr") is True and not has_links:
+        raise CompileError('a picture marked "qr": true must record a link for each code in "links"')
+    if not has_spots and not has_links:
+        return image, ""
+    width, height = view_box(art, "links" if has_links and not has_spots else "hotspots")
+    parts = hotspot_parts(art, width, height) if has_spots else []
+    row = ""
+    if has_links:
+        areas, row = link_parts(art, width, height)
+        parts += areas
+    return f'<span class="art-hot" style="--ar:{width}/{height}">{image}{"".join(parts)}</span>', row
+
+
+def hotspot_wrap(image: str, art: dict[str, Any]) -> str:
+    """Overlay hover definitions on artwork. Kept for callers that only need the picture."""
+    view_box(art, "hotspots")
+    if not isinstance(art.get("hotspots"), list):
+        raise CompileError("hotspots must be a list")
+    return art_overlay(image, art)[0]
+
+
+def image_ratio(path: Path) -> float:
+    """Width over height of a library picture, so a hover picture has its size before it loads."""
+    ratio = None
+    try:
+        if path.suffix.lower() == ".svg":
+            head = path.read_text(encoding="utf-8", errors="replace")[:4000]
+            found = re.search(r'viewBox="\s*-?[\d.]+[\s,]+-?[\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"', head)
+            if found and float(found.group(2)) > 0:
+                ratio = float(found.group(1)) / float(found.group(2))
+        elif path.suffix.lower() == ".png":
+            data = path.read_bytes()[:24]
+            if data[:8] == b"\x89PNG\r\n\x1a\n":
+                wide, tall = struct.unpack(">II", data[16:24])
+                ratio = wide / tall if tall else None
+    except (OSError, ValueError, struct.error):
+        ratio = None
+    return round(min(4.0, max(0.4, ratio)), 4) if ratio else 1.6
+
+
+def prepare_terms(unit: dict[str, Any], root: Path, dest: Path) -> None:
+    """Bundle the picture a hover term shows ("image" on a "terms" entry)."""
+    terms = unit.get("terms")
+    if not isinstance(terms, list):
+        return
+    prepared = []
+    for entry in terms:
+        if isinstance(entry, dict) and "image" in entry:
+            image = entry["image"]
+            if not isinstance(image, dict) or set(image) - {"src", "alt"} or not isinstance(image.get("alt"), str) or not visible_text(image["alt"]):
+                raise CompileError("a term image needs a local src and descriptive alt text")
+            relative, _ = bundle_asset(root, image.get("src"), dest)
+            entry = {**entry, "_image": {"src": relative, "alt": visible_text(image["alt"]), "ratio": image_ratio((root / image["src"]).resolve())}}
+        prepared.append(entry)
+    unit["terms"] = prepared
 
 
 DECK_QR = "assets/deck-qr.svg"
@@ -320,7 +504,12 @@ def prepare_artwork(units: list[dict[str, Any]], dest: Path, deck_url: str | Non
                 raise CompileError("a deck_qr slide needs the deck's public URL")
             write_deck_qr(dest, deck_url)
             unit["artwork"] = {"src": DECK_QR, "alt": deck_qr_alt(deck_url)}
+            # Freezing rewrites this address by its folder form, so a query or fragment would be left behind.
+            if not deck_url.endswith("/") or "?" in deck_url or "#" in deck_url:
+                raise CompileError("a deck's public address is a folder address ending in /, with no ? or #")
+            unit["_deck_url"] = safe_link(deck_url)
             unit["body"] = [display_url(deck_url) if item == "{deck_url}" else item for item in unit.get("body") or []]
+            prepare_terms(unit, root, dest)
             continue
         art = unit.get("artwork")
         if art:
@@ -328,6 +517,7 @@ def prepare_artwork(units: list[dict[str, Any]], dest: Path, deck_url: str | Non
                 raise CompileError("artwork needs a local src and descriptive alt text")
             relative, digest = bundle_asset(root, art["src"], dest)
             unit["artwork"] = {**art, "src": relative, "sha256": digest}
+        prepare_terms(unit, root, dest)
         if unit.get("layout") == "about-timeline":
             rows = unit.get("timeline")
             if not isinstance(rows, list) or not rows:
@@ -385,23 +575,56 @@ def emphasis(text: str) -> str:
     return re.sub(r"\*\*(.+?)\*\*", r'<strong class="hl">\1</strong>', escape(text))
 
 
-def term_tips(html: str, unit: dict[str, Any]) -> str:
-    """Wrap each listed term in already-escaped text with a hover definition (unit "terms")."""
+def term_tips(html: str, unit: dict[str, Any], below: bool = False) -> str:
+    """Wrap each listed term in already-escaped text with a hover definition (unit "terms").
+
+    A term may show text lines ("tip"), a library picture ("image"), or both. "below" opens the
+    box under the word, for a title at the top of a slide. Terms are matched against the text
+    as written, never inside a tag or inside another term's box, and matches cannot overlap.
+    """
     terms = unit.get("terms") or []
     if not isinstance(terms, list):
         raise CompileError("terms must be a list")
+    tokens = re.split(r"(<[^>]*>)", html)  # even places are text, odd places are tags
+    claimed: dict[int, list[tuple[int, int, str]]] = {}
     for entry in terms:
         term, tip = visible_text(entry.get("term")) if isinstance(entry, dict) else "", entry.get("tip") if isinstance(entry, dict) else None
         lines = tip if isinstance(tip, list) else [tip]
         lines = [visible_text(line) for line in lines if visible_text(line)]
-        if not term or not lines:
-            raise CompileError("each term needs a term and a tip")
+        wants_image = isinstance(entry, dict) and "image" in entry
+        picture = entry.get("_image") if wants_image else None
+        if wants_image and not picture:
+            raise CompileError("a term image needs preparing before the slide renders")
+        if not term or not (lines or picture):
+            raise CompileError("each term needs a term and a tip or an image")
         label = escape(term)
         body = "".join(f'<span class="term-line">{escape(line)}</span>' for line in lines)
-        span = (f'<span class="term" tabindex="0" aria-label="{label}: {escape(" ".join(lines))}">{label}'
-                f'<span class="hotspot-tip" role="tooltip"><strong>{label}</strong>{body}</span></span>')
-        html = html.replace(label, span, 1)
-    return html
+        spoken = " ".join(lines)
+        css, ratio = "term", ""
+        if picture:
+            body += (f'<img class="term-image" src="./{escape(picture["src"])}" alt="{escape(picture["alt"])}" '
+                     f'style="--ar:{picture["ratio"]}">')
+            ratio = f' style="--ar:{picture["ratio"]}"'
+            spoken = f'{spoken} {picture["alt"]}'.strip()
+            css += " term--image"
+        if below:
+            css += " term--below"
+        span = (f'<span class="{css}" tabindex="0" aria-label="{label}: {escape(spoken)}">{label}'
+                f'<span class="hotspot-tip" role="tooltip"{ratio}><strong>{label}</strong>{body}</span></span>')
+        for place in range(0, len(tokens), 2):
+            taken = claimed.get(place, [])
+            start = tokens[place].find(label)
+            while start != -1 and any(start < end and begin < start + len(label) for begin, end, _ in taken):
+                start = tokens[place].find(label, start + 1)
+            if start != -1:
+                claimed.setdefault(place, []).append((start, start + len(label), span))
+                break
+    for place, matches in claimed.items():
+        text = tokens[place]
+        for begin, end, span in sorted(matches, reverse=True):
+            text = text[:begin] + span + text[end:]
+        tokens[place] = text
+    return "".join(tokens)
 
 
 def support_paragraphs(unit: dict[str, Any]) -> str:
@@ -414,7 +637,11 @@ def support_paragraphs(unit: dict[str, Any]) -> str:
     if isinstance(body, list):
         for item in body:
             text = visible_text(item)
-            if text:
+            deck_url = unit.get("_deck_url")
+            if text and deck_url and text == display_url(deck_url):
+                # The address beside a deck QR code is a real link. Freezing a copy rewrites it.
+                blocks.append(f"          <p class=\"{item_class}\">{link_tag(deck_url)}>{escape(text)}</a></p>")
+            elif text:
                 blocks.append(f"          <p class=\"{item_class}\">{term_tips(escape(text), unit)}</p>")
     return "\n".join(blocks)
 
@@ -427,10 +654,12 @@ def panel_items(unit: dict[str, Any]) -> list[str]:
     return items
 
 
-def heading_html(text: str, css_class: str, indent: str = "        ") -> str:
+def heading_html(text: str, css_class: str, indent: str = "        ", unit: dict[str, Any] | None = None) -> str:
+    """A slide title. With its unit, listed "terms" in the title get their hover definition."""
     if not text:
         return ""
-    return f"{indent}<h1 class=\"{css_class}\">{escape(text)}</h1>\n"
+    inner = term_tips(escape(text), unit, below=True) if unit else escape(text)
+    return f"{indent}<h1 class=\"{css_class}\">{inner}</h1>\n"
 
 
 def eyebrow_html(text: str) -> str:
@@ -445,8 +674,8 @@ def accent_heading_html(unit: dict[str, Any], css_class: str) -> str:
     accent = visible_text(unit.get("headline_accent"))
     if not headline:
         return ""
-    tail = f' <span class="title-accent">{escape(accent)}</span>' if accent else ""
-    return f'        <h1 class="{css_class}">{escape(headline)}{tail}</h1>\n'
+    tail = f' <span class="title-accent">{term_tips(escape(accent), unit, below=True)}</span>' if accent else ""
+    return f'        <h1 class="{css_class}">{term_tips(escape(headline), unit, below=True)}{tail}</h1>\n'
 
 
 def timeline_html(unit: dict[str, Any]) -> str:
@@ -496,27 +725,46 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
     art = unit.get("artwork")
     replay = " data-replay" if art and art.get("replay") is True else ""
     image = f'<img src="./{escape(art["src"])}" alt="{escape(art["alt"])}"{replay}>' if art else ""
-    if art and art.get("hotspots"):
-        image = hotspot_wrap(image, art)
+    links_row = ""
+    if art:
+        image, links_row = art_overlay(image, art)
+        if links_row and layout != "comp-story":
+            raise CompileError("artwork links are supported on comp-story slides only")
+    if unit.get("_deck_url") and image:
+        # The deck's own QR code is itself a link to the deck.
+        image = f'{link_tag(unit["_deck_url"], "art-link-img")} aria-label="{escape(display_url(unit["_deck_url"]))}, opens in a new tab">{image}</a>'
+    title_of = lambda css: heading_html(headline, css, unit=unit)
     if layout == "title":
         if headline and not image:
             raise CompileError("a populated opening slide requires artwork")
-        inner = f'<div class="title-opening"><div class="title-identity">{heading_html(headline, "slide-title")}<hr class="hairline" aria-hidden="true"></div><div class="title-art">{image}</div></div>' if headline else ""
+        inner = f'<div class="title-opening"><div class="title-identity">{title_of("slide-title")}<hr class="hairline" aria-hidden="true"></div><div class="title-art">{image}</div></div>' if headline else ""
     elif layout == "comp-story":
-        panel = image or support_paragraphs(unit)
-        art_class = " story-panel--art" if image else ""
+        panel = (image + links_row) if image else support_paragraphs(unit)
+        art_class = (" story-panel--art" + (" story-panel--links" if links_row else "")) if image else ""
         fit = " story-frame--fit" if image and unit.get("art_fit") is True else ""
         wide = (" story-frame--full" + fit) if image and unit.get("art_full") is True else (" story-frame--wide" if image and unit.get("art_wide") is True else "")
         if image and unit.get("art_side") is True:
-            copy = f'<div class="story-copy">{heading_html(headline, "story-title")}{support_paragraphs(unit)}</div>'
+            copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
             narrow = " story-frame--art-narrow" if unit.get("art_narrow") is True else ""
-            inner = f'<div class="slide-stage"><div class="story-frame story-frame--side{narrow}">{copy}<div class="story-panel story-panel--art">{image}</div></div></div>'
+            inner = f'<div class="slide-stage"><div class="story-frame story-frame--side{narrow}">{copy}<div class="story-panel{art_class}">{panel}</div></div></div>'
         elif not image and (unit.get("checklist") is True or unit.get("copy_stack") is True):
-            copy = f'<div class="story-copy">{heading_html(headline, "story-title")}{support_paragraphs(unit)}</div>'
+            copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
             short = " story-frame--short" if unit.get("copy_stack") is True else ""
             inner = f'<div class="slide-stage"><div class="story-frame story-frame--side story-frame--copy{short}">{copy}</div></div>'
         else:
-            inner = f'<div class="slide-stage"><div class="story-frame{wide}">{heading_html(headline, "story-title")}<div class="story-panel{art_class}">{panel}</div></div></div>'
+            lede = ""
+            if image:
+                support = visible_text(unit.get("support"))
+                if unit.get("art_full") is True:
+                    # One instruction line under the title. Body text has no place on this layout.
+                    if support:
+                        lede = f'<p class="support story-lede">{term_tips(emphasis(support), unit)}</p>'
+                        wide += " story-frame--lede"
+                    if panel_items(unit):
+                        dropped_text(unit, 'a full-width drawing slide (art_full) cannot show "body" text; move one line to "support" or use art_side')
+                elif support or panel_items(unit):
+                    dropped_text(unit, 'a drawing slide shows only its title and picture; "support" and "body" are dropped. Use art_full for one line or art_side for more')
+            inner = f'<div class="slide-stage"><div class="story-frame{wide}">{heading_html(headline, "story-title", unit=unit)}{lede}<div class="story-panel{art_class}">{panel}</div></div></div>'
     elif layout in {"comp-causal", "comp-decision"}:
         panels = unit.get("panels")
         if panels is None:
@@ -553,11 +801,11 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
             row += f" seq seq-{len(panels)}"
         lede_text = visible_text(unit.get("support"))
         lede = f'<p class="support card-lede title-follow">{escape(lede_text)}</p>' if lede_text else ""
-        inner = eyebrow + heading_html(headline, "slide-title") + lede + f'<div class="slide-stage title-follow"><div class="{row}">{"".join(cells)}</div></div>'
+        inner = eyebrow + title_of("slide-title") + lede + f'<div class="slide-stage title-follow"><div class="{row}">{"".join(cells)}</div></div>'
     elif layout == "about-timeline":
         role = visible_text(unit.get("role"))
         role_html = f'<p class="identity-role">{escape(role)}</p>' if role else ""
-        identity = f'<div class="timeline-identity">{eyebrow}{heading_html(headline, "story-title")}{role_html}<hr class="identity-hair" aria-hidden="true">{support_paragraphs(unit)}</div>'
+        identity = f'<div class="timeline-identity">{eyebrow}{title_of("story-title")}{role_html}<hr class="identity-hair" aria-hidden="true">{support_paragraphs(unit)}</div>'
         inner = f'<div class="slide-stage"><div class="timeline-frame">{identity}{timeline_html(unit)}</div></div>'
     elif layout == "comp-attempts":
         inner = eyebrow + accent_heading_html(unit, "slide-title") + f'<div class="slide-stage title-follow">{attempts_html(unit)}</div>'
@@ -566,7 +814,7 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
             raise CompileError("a figure slide needs its svg prepared")
         inner = eyebrow + accent_heading_html(unit, "slide-title") + f'<div class="slide-stage title-follow">{unit["_figure_svg"]}{attempts_html(unit, limit=5, compact=True) if unit.get("attempts") is not None else ""}</div>'
     else:
-        inner = f'<div class="rule-stack">{heading_html(headline, "slide-title")}<p class="rule-line support title-follow">{escape(unit.get("support", ""))}</p></div>'
+        inner = f'<div class="rule-stack">{title_of("slide-title")}<p class="rule-line support title-follow">{escape(unit.get("support", ""))}</p></div>'
         if image:
             inner = f'<div class="rule-frame">{inner}<div class="rule-art">{image}</div></div>'
     brand = branding or {}
@@ -665,10 +913,14 @@ def copy_shell(dest: Path) -> None:
         shutil.copy2(source, fonts_dest / name)
 
 
-def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_file: Path | None = None) -> Path:
+def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_file: Path | None = None,
+                     fail_on_dropped_text: bool = False) -> Path:
     playlist = load_playlist_file(playlist_file) if playlist_file else load_playlist(playlist_id)
     playlist_id = identifier(playlist["id"], "playlist id")
     units = resolve_playlist(playlist)
+    WARNINGS.clear()
+    for unit in units:
+        unit["_fail_on_dropped_text"] = fail_on_dropped_text
     requested = out_dir or (COMPILED / playlist_id)
     if any(part.is_symlink() for part in [requested, *requested.parents]):
         raise CompileError("output cannot traverse a symlink")
@@ -694,8 +946,7 @@ def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_fil
         prepare_artwork(units, stage, playlist.get("public_url") or public_url(playlist_id))
         html_text = render_deck(playlist, units)
         check_no_dashes(html_text)
-        if "http://" in html_text.lower() or "https://" in html_text.lower():
-            raise CompileError("compiled HTML requests a network URL")
+        check_no_network(html_text)
         (stage / "index.html").write_text(html_text, encoding="utf-8")
         manifest = {
             "generator": "darlison-slides",
@@ -712,7 +963,17 @@ def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_fil
         if dest.exists():
             shutil.rmtree(dest)
         shutil.copytree(stage, dest)
+    # Every route that builds a deck (compile, publish) reports dropped text, once.
+    for warning in WARNINGS:
+        print(f"WARNING: {warning}", file=sys.stderr)
     return dest
+
+
+def check_no_network(html_text: str) -> None:
+    """Nothing in a deck loads from the network. A link a person clicks is the one address allowed."""
+    lowered = DECK_LINK.sub("<a", html_text).lower()
+    if "http://" in lowered or "https://" in lowered:
+        raise CompileError("compiled HTML requests a network URL")
 
 
 def check_no_dashes(html_text: str) -> None:
@@ -903,6 +1164,9 @@ def freeze_copy(dest_root: Path, playlist_id: str, label: str, replace: bool, so
     return target
 
 
+QR_SLIDE_LINK = re.compile(r'<a class="deck-link art-link-img" href="([^"]*)"')
+
+
 def point_qr_at_copy(target: Path, source_url: str | None, copy_url: str) -> str | None:
     """Make the deck's own QR code open the frozen copy instead of the live master."""
     page = target / "index.html"
@@ -912,20 +1176,54 @@ def point_qr_at_copy(target: Path, source_url: str | None, copy_url: str) -> str
         return None
     if not (target / DECK_QR).is_file():
         raise CompileError("the deck has a QR slide but no QR image to rewrite")
-    old = source_url
-    if old is None:
-        found = re.search(r'alt="QR code that opens these slides at ([^"]+)\."', sections[0])
-        if not found:
-            raise CompileError("cannot find the address the QR slide shows")
-        old = "https://" + found.group(1) + "/"
     write_deck_qr(target, copy_url)
     for section in sections:
-        new = section.replace(escape(deck_qr_alt(old)), escape(deck_qr_alt(copy_url))).replace(escape(display_url(old)), escape(display_url(copy_url)))
-        if new == section:
-            raise CompileError("the QR slide does not show the master address it should")
+        linked = QR_SLIDE_LINK.search(section)
+        new = requote_qr_slide(section, html.unescape(linked.group(1)), copy_url) if linked else legacy_requote(section, source_url, copy_url)
         text = text.replace(section, new, 1)
     page.write_text(text, encoding="utf-8")
     return copy_url
+
+
+def requote_qr_slide(section: str, master: str, copy_url: str) -> str:
+    """Repoint a QR slide whose code and address are links.
+
+    The master address is read from the slide's own link, never guessed. Each place that holds it
+    is replaced whole and once, then the result is checked: both links, the address shown and the
+    picture's description must all name the copy.
+    """
+    swaps = [
+        ('href="%s"' % escape(master), 'href="%s"' % escape(copy_url)),
+        ('alt="%s"' % escape(deck_qr_alt(master)), 'alt="%s"' % escape(deck_qr_alt(copy_url))),
+        ('aria-label="%s, opens in a new tab"' % escape(display_url(master)), 'aria-label="%s, opens in a new tab"' % escape(display_url(copy_url))),
+        ('rel="noopener">%s</a>' % escape(display_url(master)), 'rel="noopener">%s</a>' % escape(display_url(copy_url))),
+    ]
+    marks = [f"\x00{index}\x00" for index in range(len(swaps))]
+    new = section
+    for (old, _), mark in zip(swaps, marks):  # two steps, so a copy address that contains the master is not replaced twice
+        new = new.replace(old, mark)
+    for (_, fresh), mark in zip(swaps, marks):
+        new = new.replace(mark, fresh)
+    hrefs = [html.unescape(h) for h in re.findall(r'<a class="deck-link[^"]*" href="([^"]*)"', new)]
+    shown = 'rel="noopener">%s</a>' % escape(display_url(copy_url))
+    described = 'alt="%s"' % escape(deck_qr_alt(copy_url))
+    if len(hrefs) < 2 or any(h != copy_url for h in hrefs) or shown not in new or described not in new:
+        raise CompileError("the QR slide's links, address and picture do not all open the frozen copy")
+    return new
+
+
+def legacy_requote(section: str, source_url: str | None, copy_url: str) -> str:
+    """Repoint a QR slide published before its code and address became links."""
+    old = source_url
+    if old is None:
+        found = re.search(r'alt="QR code that opens these slides at ([^"]+)\."', section)
+        if not found:
+            raise CompileError("cannot find the address the QR slide shows")
+        old = "https://" + html.unescape(found.group(1)) + "/"
+    new = section.replace(escape(deck_qr_alt(old)), escape(deck_qr_alt(copy_url))).replace(escape(display_url(old)), escape(display_url(copy_url)))
+    if new == section:
+        raise CompileError("the QR slide does not show the master address it should")
+    return new
 
 
 def frozen_url(playlist_id: str, label: str) -> str:
@@ -961,6 +1259,11 @@ def build_compile_parser() -> argparse.ArgumentParser:
         "--list",
         action="store_true",
         help="List playlist ids and exit",
+    )
+    parser.add_argument(
+        "--fail-on-dropped-text",
+        action="store_true",
+        help="Fail the build when a slide carries text its layout cannot show (default: warn)",
     )
     return parser
 
@@ -1042,7 +1345,7 @@ def main(argv: list[str] | None = None) -> int:
             for name in list_playlists():
                 print(name)
             return 0
-        dest = compile_playlist(args.playlist, args.out, args.playlist_file)
+        dest = compile_playlist(args.playlist, args.out, args.playlist_file, args.fail_on_dropped_text)
         playlist = load_playlist_file(args.playlist_file) if args.playlist_file else load_playlist(args.playlist)
         units = resolve_playlist(playlist)
         print(f"Compiled {playlist['id']} -> {dest}")

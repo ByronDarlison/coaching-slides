@@ -1,0 +1,12 @@
+{
+  "id": "deck-builder-fixture",
+  "title": "Deck builder fixtures",
+  "sidebar_title": "Builder fixtures",
+  "public_url": "https://example.com/decks/fixture/",
+  "sources": {
+    "fx": "library"
+  },
+  "units": [
+    "fx:features"
+  ]
+}
