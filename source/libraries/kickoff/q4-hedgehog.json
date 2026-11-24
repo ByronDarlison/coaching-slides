@@ -33,6 +33,11 @@
       "id": "business",
       "title": "What is your core business?",
       "support": "Each leader writes an answer alone. Then share.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-business.svg",
+        "alt": "The three Hedgehog circles with the Core business circle highlighted."
+      },
       "body": [
         "It is what you can be best in the world at, not what you want to be best at.",
         "Which answer says it most clearly? Stay with it until the team agrees."
@@ -48,13 +53,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "engine",
       "title": "What is your Profit per X?",
       "support": "Your economic engine. X is a widget from your KFFM.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-engine.svg",
+        "alt": "The three Hedgehog circles with the Economic engine circle highlighted."
+      },
       "body": [
         "If you have agreed your X, read it aloud and confirm it.",
         "If not, each leader writes an answer. Share, then agree."
@@ -70,13 +79,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "goal",
       "title": "What is your 10 to 30 year goal?",
       "support": "Each leader writes it alone. No numbers. Then share.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-goal.svg",
+        "alt": "The three Hedgehog circles with the BHAG at the center highlighted."
+      },
       "body": [
         "Which one is the BHAG?",
         "Stay with it until the team agrees.",
@@ -93,8 +106,7 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     }
   ]
 }

@@ -9,20 +9,15 @@
     {
       "id": "circle",
       "title": "Why does the company do what it does?",
-      "support": "Once a year, test your Core Purpose with three questions.",
-      "art_side": true,
+      "support": "Each leader answers all three alone. Share one question at a time, starting with What. Does your Why match your Core Purpose?",
+      "art_full": true,
       "artwork": {
         "src": "assets/q4-golden-circle.svg",
         "alt": "Three rings: Why at the center, then How, then What, each joined to its question: why, how and what does the company do."
       },
-      "body": [
-        "Each leader answers all three alone.",
-        "Share one question at a time, starting with What.",
-        "Read your Core Purpose aloud. Does your Why match it?",
-        "Confirm it or change it."
-      ],
       "notes": [
-        "This is the Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
+        "Once a year, test the Core Purpose with the Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
+        "Read the Core Purpose aloud from the One Page Plan. Then confirm it or change it.",
         "Each leader writes their answers alone, then the team shares one by one, question by question, starting with What.",
         "If the team’s Why no longer matches the Core Purpose on the One Page Plan, that is not a failure. It is a signal the foundation needs attention.",
         "The discussion creates a new Core Purpose, adjusts the current one or confirms it. A purpose that describes what the company does, not why, needs work.",

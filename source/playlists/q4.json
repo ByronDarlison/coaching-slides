@@ -583,7 +583,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate each: 0 below, 1 meets, 2 exceeds.",
+        "support": "In Metronome: open Meetings. Rate each: 0 below, 1 meets, 2 exceeds.",
         "panels": [
           {
             "role": "Daily",
@@ -611,7 +611,7 @@
           }
         ],
         "notes": [
-          "Give it about 10 minutes.",
+          "Give it about 10 minutes. For each meeting ask: is it running, is it working, and what should change?",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "Quarterly Planning is the fifth meeting. The team is in it now.",
           "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",

@@ -19,16 +19,17 @@ LANES = [("Live in a Day", ["Live in a Day"], ["Live in", "a Day"],
          ("Standard, Not Custom", ["Standard,", "Not Custom"], ["Standard,", "Not", "Custom"],
           {12: "One product, one setup, for everyone", 8: "Existing custom work retired", 4: "No new custom work sold"},
           {1: ["Custom", "work off", "the price", "list"], 4: ["Fixed", "report", "set"], 8: ["Last", "custom", "build", "retired"]})]
-corner = text(24, 44, "Example", 28, 700, MID, "start", ' letter-spacing="2"')
+corner = lambda x: text(x, 44, "Example", 28, 700, MID, "start", ' letter-spacing="2"')
+HEAD = {12: BLUE, 8: "#2f7377", 4: "#318549"}  # darker than the sequence colours, so type on or in them reads
 
 # 1. The outcomes table
 REGIONS_OUTCOMES = {}
 X0, NAMEW, CW, HY, HH, RH = 20, 290, 370, 64, 64, 128
 H1 = HY + HH + 4 * RH + 20
-out = [corner]
+out = [corner(X0 + 20)]
 for c, q in enumerate([12, 8, 4]):
     x = X0 + NAMEW + c * CW
-    out.append(f'<rect x="{x+4}" y="{HY}" width="{CW-8}" height="{HH-8}" rx="10" fill="{OUTCOME[q]}"/>')
+    out.append(f'<rect x="{x+4}" y="{HY}" width="{CW-8}" height="{HH-8}" rx="10" fill="{HEAD[q]}"/>')
     out.append(text(x + CW / 2, HY + 38, f"{HAG[q]} outcome (Q{q})", 27, 700, "white"))
 for r, (name, wide, _, outcomes, _) in enumerate(LANES):
     y = HY + HH + r * RH
@@ -44,7 +45,7 @@ write("q4-swim-lanes-outcomes.svg", svg(W, H1, "".join(out)))
 
 # 2. The full map: lane name, then each outcome marker followed by its four quarters, Q12 down to Q1
 REGIONS_MAP = {}
-X0, NAMEW, MW, HY, HH, RH = 4, 108, 54, 62, 62, 116
+X0, NAMEW, MW, HY, HH, RH = 4, 108, 46, 62, 62, 116
 QW = (W - 2 * X0 - NAMEW - 3 * MW) / 12
 H2 = HY + HH + 4 * RH + 12
 cols, x = [], X0 + NAMEW  # (kind, quarter, x, width)
@@ -52,11 +53,11 @@ for q in range(12, 0, -1):
     if q in HAG:
         cols.append(("marker", q, x, MW)); x += MW
     cols.append(("quarter", q, x, QW)); x += QW
-out = [corner]
+out = [corner(X0 + 8)]
 for kind, q, x, w in cols:
     if kind == "marker":
-        out.append(text(x + w / 2, HY + 22, HAG[q], 18, 700, OUTCOME[q] if q != 4 else "#318549"))
-        out.append(text(x + w / 2, HY + 46, f"(Q{q})", 18, 700, OUTCOME[q] if q != 4 else "#318549"))
+        out.append(text(x + w / 2, HY + 22, HAG[q], 18, 700, HEAD[q]))
+        out.append(text(x + w / 2, HY + 46, f"(Q{q})", 18, 700, HEAD[q]))
     else:
         out.append(text(x + w / 2, HY + 36, f"Q{q}", 22, 700, GREY))
 for r, (name, _, narrow, _, stickies) in enumerate(LANES):
@@ -72,7 +73,7 @@ for r, (name, _, narrow, _, stickies) in enumerate(LANES):
         out.append(f'<rect x="{x+1:g}" y="{y+4}" width="{w-2:g}" height="{RH-16}" rx="7" fill="white" stroke="{LINE}" stroke-width="1.5"/>')
         if q in stickies:
             out.append(f'<rect x="{x+1:g}" y="{y+4}" width="{w-2:g}" height="{RH-16}" rx="7" fill="{NOTE}" stroke="{NOTE_EDGE}" stroke-width="2"/>')
-            out.append(block(x + w / 2, y + (RH - 8) / 2, stickies[q], 17, 21, weight=600, fill=INK))
+            out.append(block(x + w / 2, y + (RH - 8) / 2, stickies[q], 18, 22, weight=600, fill=INK))
             REGIONS_MAP[f"{name}: Q{q} {' '.join(stickies[q])}"] = [round(x + 1), y + 4, round(w - 2), RH - 16]
 write("q4-swim-lanes-example.svg", svg(W, H2, "".join(out)))
 print("wrote q4-swim-lanes-outcomes.svg and q4-swim-lanes-example.svg")

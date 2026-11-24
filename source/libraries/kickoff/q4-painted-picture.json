@@ -54,11 +54,12 @@
     {
       "id": "three-year",
       "title": "Now paint your 3HAG picture.",
-      "support": "The same twelve prompts, 3 years from now. Your coach shows them again.",
-      "body": [
-        "Each leader writes alone, in the present tense.",
-        "Reveal, read aloud, then write one picture together."
-      ],
+      "support": "Each leader writes alone, in the present tense. Reveal, read aloud, then write one picture together.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-painted-picture-3hag.svg",
+        "alt": "The question, 3 years from now, what do you see, hear and feel, above the same twelve numbered prompts."
+      },
       "notes": [
         "Once the BHAG picture is agreed, the 3HAG picture goes fast, because the team already has clarity and confidence.",
         "Skip this if the team did not paint the BHAG picture. It is homework when the day runs long."
@@ -69,8 +70,7 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     }
   ]
 }

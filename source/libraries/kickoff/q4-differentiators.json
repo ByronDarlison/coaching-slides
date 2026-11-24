@@ -79,6 +79,11 @@
       "id": "connect",
       "title": "Which groups depend on each other?",
       "support": "Draw an arrow for each dependency. Start with the group that depends on the most other groups.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-activity-fit-map-groups.svg",
+        "alt": "The four example groups by name, with arrows showing which group depends on which."
+      },
       "body": [
         "A group can depend on more than one other group.",
         "A group with no arrows may be a task, not part of your strategy.",
@@ -96,8 +101,7 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ],
-      "copy_stack": true
+      ]
     },
     {
       "id": "agree",
