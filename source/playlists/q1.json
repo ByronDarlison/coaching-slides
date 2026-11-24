@@ -125,7 +125,7 @@
         "map"
       ],
       "override": {
-        "support": "In Metronome: open KFFM and put it on the screen."
+        "support": "Put your KFFM on the screen."
       }
     },
     {
@@ -208,7 +208,7 @@
         "values"
       ],
       "override": {
-        "support": "In Metronome: open One Page Plans. If you have core values, read them aloud and test each one:"
+        "support": "In Metronome: open One Page Plans. If you have Core Values, read them aloud and test each one:"
       }
     },
     {
@@ -373,7 +373,7 @@
           "The daily huddle’s facilitator rotates.",
           "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ],
-        "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2."
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2."
       }
     },
     "kickoff:cascade-messages",

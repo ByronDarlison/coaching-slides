@@ -19,7 +19,7 @@
       "art_side": true,
       "support": "The goal: 90% or more of your people are A-Players.",
       "body": [
-        "Today each leader assesses their direct reports, with their peers.",
+        "Today each leader assesses their direct reports. Peers weigh in.",
         "The CEO’s assessment of the leadership team stays private."
       ],
       "notes": [
@@ -68,7 +68,7 @@
       "panels": [
         {
           "role": "Stage 1",
-          "heading": "No scorecards yet",
+          "heading": "Scorecards missing",
           "support": "Use what you have observed, the current job description and your judgment.",
           "mark": "action"
         },
@@ -194,12 +194,12 @@
         "A C needs a plan right away. Do not wait for the next quarterly.",
         "For a values gap, the decision is about fit. For a performance gap, it is about improving.",
         "Review every plan at the agreed check-ins, and again next quarter.",
-        "Homework: each leader makes a plan and takes action on any C player.",
-        "A leader with B players who stay at B for too long drops to that same level. The leader ends up doing the team’s work, not coaching the team to do it. Moving Bs back to As is not optional."
+        "Homework: each leader makes a plan and takes action on any C-Player.",
+        "A leader with B-Players who stay at B for too long drops to that same level. The leader ends up doing the team’s work, not coaching the team to do it. Moving Bs back to As is not optional."
       ],
       "artwork": {
         "src": "assets/a-player-plans.svg",
-        "alt": "Plans for everyone below A, with columns for person, plan, accountable leader, next check-in and decision or completion date. Leo, B: close the gap to Ahead on the scorecard; Jen; weekly 1:1; within 90 days. Ravi, C: name the value and the behaviour, decide whether Ravi fits; Jen; weekly 1:1; within 30 days. Nora, C: set the scorecard standard, decide to improve or move on; Jen; weekly 1:1; within 30 days."
+        "alt": "Plans for everyone below A, with columns for person, plan, accountable leader, next check-in and decision or completion date. Leo, B: close the gap to Ahead on the scorecard; Jen; weekly 1:1; within 90 days. Ravi, C: name the value and the behavior, decide whether Ravi fits; Jen; weekly 1:1; within 30 days. Nora, C: set the scorecard standard, decide to improve or move on; Jen; weekly 1:1; within 30 days."
       }
     },
     {

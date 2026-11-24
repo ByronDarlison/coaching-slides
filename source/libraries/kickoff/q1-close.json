@@ -56,7 +56,7 @@
       "group": "",
       "notes": [
         "Read back the outcomes the team agreed at the start.",
-        "For each one, ask for a show of hands: answered, partly or still open.",
+        "For each one, ask for a show of hands: met, partly met or still open.",
         "Still open is fine. Add each open outcome to the homework with an owner and a date.",
         "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
@@ -67,7 +67,9 @@
       "artwork": {
         "src": "assets/q1-sticky-purpose.svg",
         "alt": "A sticky note with the coach’s outcome for the session: Functional clarity with team accountability."
-      }
+      },
+      "support": "For each outcome: met, partly met or still open?",
+      "art_side": true
     }
   ]
 }

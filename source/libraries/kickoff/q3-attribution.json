@@ -36,8 +36,8 @@
     },
     {
       "id": "example",
-      "title": "Attribution Framework example",
-      "headline": "Attribution Framework example",
+      "title": "Example: the Attribution Framework.",
+      "headline": "Example: the Attribution Framework.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -353,7 +353,7 @@
       "body": [
         "On your own, write 5 to 7 things your market compares companies on.",
         "Share them. Group the ones that mean the same thing, and name each group.",
-        "Finish with 12 to 15 attributes for the whole team."
+        "Finish with 12 to 15 attributes as a team."
       ],
       "notes": [
         "Each leader works in private. Reveal when everyone is done.",
@@ -409,8 +409,8 @@
     },
     {
       "id": "sheet-example",
-      "title": "Attribution Map sheet example",
-      "headline": "Attribution Map sheet example",
+      "title": "Example: the Attribution Map sheet.",
+      "headline": "Example: the Attribution Map sheet.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -488,7 +488,7 @@
       ],
       "copy_stack": true,
       "body": [
-        "What should become a priority next quarter?",
+        "What should become a priority this quarter?",
         "What will you stop doing because the 3HAG line drops it?"
       ],
       "notes": [

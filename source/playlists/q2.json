@@ -155,7 +155,7 @@
         "map"
       ],
       "override": {
-        "support": "In Metronome: open KFFM and put it on the screen."
+        "support": "Put your KFFM on the screen."
       }
     },
     {
@@ -238,7 +238,7 @@
         "values"
       ],
       "override": {
-        "support": "In Metronome: open One Page Plans. If you have core values, read them aloud and test each one:"
+        "support": "In Metronome: open One Page Plans. If you have Core Values, read them aloud and test each one:"
       }
     },
     {
@@ -396,7 +396,7 @@
         ],
         "notes": [
           "New today. The sprint lanes are the last level of the cascade: every week traces back to the BHAG.",
-          "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle (Byron, 24-Nov-2026)."
+          "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle."
         ]
       }
     },
@@ -449,7 +449,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2.",
         "panels": [
           {
             "role": "Daily",

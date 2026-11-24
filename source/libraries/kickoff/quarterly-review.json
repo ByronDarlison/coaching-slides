@@ -46,8 +46,8 @@
     },
     {
       "id": "values",
-      "title": "Do your core values still hold?",
-      "headline": "Do your core values still hold?",
+      "title": "Do your Core Values still hold?",
+      "headline": "Do your Core Values still hold?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -55,15 +55,15 @@
         "quarterly"
       ],
       "notes": [
-        "If the team has no core values yet, skip this slide.",
+        "If the team has no Core Values yet, skip this slide.",
         "Change only what needs changing. Allow 5 to 10 minutes."
       ],
-      "support": "If you have core values, read them aloud and test each one:",
+      "support": "If you have Core Values, read them aloud and test each one:",
       "copy_stack": true,
       "body": [
         "Is it a value you hire and fire on, or a brand value?",
         "When did you last let someone go for not living it?",
-        "Does someone who keeps breaching it belong here?",
+        "Does someone who keeps breaking it belong here?",
         "Would you build a new company around it, in any industry?"
       ]
     }

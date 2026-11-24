@@ -81,7 +81,7 @@
           },
           {
             "role": "A new function",
-            "heading": "Not listed?",
+            "heading": "Not on the chart?",
             "support": "Add it.",
             "mark": "gap"
           }
@@ -111,7 +111,7 @@
         "title": "Check your Team View and critical numbers.",
         "headline": "Check your Team View and critical numbers.",
         "body": [
-          "Every function and its owner is in the Team View.",
+          "Every function is in the Team View, with its owner.",
           "Each owner says their critical number: the one number that tells them whether they had a good day."
         ],
         "support": "In Metronome: open Team View. Check it against your Function Chart."
@@ -136,7 +136,7 @@
         "body": [
           "Is your own scorecard complete?",
           "Does each of your direct reports have one?",
-          "If not, name the date."
+          "If not, say by when."
         ],
         "notes": [
           "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
@@ -204,7 +204,7 @@
         "support": "In Metronome: open KFFM. Which lever moves cash fastest?",
         "body": [
           "Make that lever a candidate for a QHAG priority.",
-          "In Meetings, add a KFFM item to the weekly leadership meeting.",
+          "Then open Meetings. Add a KFFM item to the weekly leadership meeting.",
           "Each week, look at the flow: where is it stuck?",
           "A red number needs a written plan: situation, cause, correction, follow-up."
         ],
@@ -265,7 +265,10 @@
         "purpose"
       ],
       "override": {
-        "support": "In Metronome: open One Page Plans. Read your Core Purpose aloud. What needs to change?"
+        "support": "In Metronome: open One Page Plans.",
+        "body": [
+          "Read your Core Purpose aloud. What needs to change?"
+        ]
       }
     },
     {
@@ -411,7 +414,7 @@
         "notes": [
           "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
           "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the white space changed.",
-          "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
+          "Run the six questions on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
           "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
           "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
           "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
@@ -435,7 +438,9 @@
       "override": {
         "body": [
           "Connect each to a 1HAG priority. Give each an owner, a done-by date, a measure of success and an achieved-by date."
-        ]
+        ],
+        "title": "What else must you get done this quarter?",
+        "headline": "What else must you get done this quarter?"
       }
     },
     {
@@ -477,7 +482,7 @@
           {
             "role": "03",
             "heading": "One step each week",
-            "support": "The step that week that moves the priority toward its measure of success.",
+            "support": "Each week’s step moves the priority toward its measure of success.",
             "mark": "structure"
           }
         ],
@@ -491,7 +496,16 @@
       "id": "kickoff:q2-sprint",
       "slides": [
         "example"
-      ]
+      ],
+      "override": {
+        "title": "Example: sprint lanes.",
+        "headline": "Example: sprint lanes.",
+        "notes": [
+          "The same subscription company and the same QHAG as the Kick Off example.",
+          "This slide shows the shape of the whole page.",
+          "Priority #1 is done in week 8, so its lane shows Complete from week 9. Its measure of success stays on the QHAG."
+        ]
+      }
     },
     {
       "id": "kickoff:q2-sprint",
@@ -540,13 +554,13 @@
           {
             "role": "Measure",
             "heading": "Critical number",
-            "support": "The one you named this morning. One for each function you own.",
+            "support": "The one you named on the Team View. One for each function you own.",
             "mark": "structure"
           },
           {
             "role": "Commitment",
             "heading": "Up to 5 work priorities",
-            "support": "Two delivered beat five started. A company priority you own goes first and wins if time runs short. Test each with the six questions. Add a done-by date and a measure of success.",
+            "support": "Two delivered beat five started. A company priority you own goes first. Test each with the six questions.",
             "mark": "action"
           },
           {
@@ -578,9 +592,8 @@
         ],
         "notes": [
           "Run this as the final read-back, top of the board to bottom.",
-          "Question the math: do the widgets add up to the revenue?",
           "Anything that fails goes on the homework list with an owner.",
-          "At a quarterly, check that each Market Map circle has a home. It becomes a 3HAG capability, a KFFM change or a priority, or the team drops it. Check that last quarter’s open priorities are on the new QHAG.",
+          "Check that last quarter’s open priorities are on the new QHAG.",
           "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
         ]
       }
@@ -619,7 +632,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "In Metronome: open Meetings. For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2.",
         "panels": [
           {
             "role": "Daily",

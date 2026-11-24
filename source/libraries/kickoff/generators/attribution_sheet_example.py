@@ -35,7 +35,7 @@ for c in range(len(COLS) + 1):
     x = X0 + CW0 + c * CW
     out.append(f'<line x1="{x}" y1="{Y0}" x2="{x}" y2="{bottom}" stroke="#d5d9dd" stroke-width="2"/>')
 out.append(f'<rect x="{X0}" y="{Y0}" width="{CW0+CW*len(COLS)}" height="{bottom-Y0}" fill="none" stroke="#9aa3ab" stroke-width="2"/>')
-out.append(f'<text x="{X0+CW0+4*CW+CW/2}" y="{Y0+HH+6*RH+8}" font-size="22" font-weight="500" fill="#9aa3ab" text-anchor="middle" transform="rotate(-90 {X0+CW0+4*CW+CW/2} {Y0+HH+6*RH})">filled in later</text>')
+out.append(f'<text x="{X0+CW0+4*CW+CW/2}" y="{Y0+HH+6*RH+8}" font-size="24" font-weight="500" fill="#5b6670" text-anchor="middle">later</text>')
 out.append("</svg>")
 (A / "attribution-sheet-example.svg").write_text("".join(out))
 print("wrote attribution-sheet-example.svg", [[score(v) for v in l] for l in lines[:4]])

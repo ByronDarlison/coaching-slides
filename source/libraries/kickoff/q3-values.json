@@ -52,7 +52,7 @@
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people: each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behaviour it means."
+        "alt": "Five steps in a row. 1, pick three people: each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
       }
     },
     {
@@ -75,7 +75,7 @@
       "notes": [
         "Each leader works in private. Reveal when everyone is done.",
         "The people must be outside the room, so nobody picks a colleague at the table.",
-        "Ask for behaviour the leader has seen, not a quality they admire in general."
+        "Ask for behavior the leader has seen, not a quality they admire in general."
       ]
     },
     {
@@ -96,7 +96,7 @@
       ],
       "notes": [
         "The coach groups the notes as each leader presents.",
-        "A few words that describe the behaviour are enough for now. The names come at the end."
+        "A few words that describe the behavior are enough for now. The names come at the end."
       ]
     },
     {
@@ -129,8 +129,10 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "In Metronome: open One Page Plans. Read each value and the behavior it means.",
-      "body": [],
+      "support": "In Metronome: open One Page Plans.",
+      "body": [
+        "Read each value and the behavior it means."
+      ],
       "notes": [
         "At a quarterly, the team arrives in one of three places: agreed Core Values, a draft from a Mission to Mars session, or neither.",
         "With agreed values, read them from the One Page Plan and go straight to the test.",
@@ -195,8 +197,8 @@
       ],
       "notes": [
         "A team with agreed values changes only what failed the test.",
-        "A team with a draft agrees the name and the behaviour today. The wording does not have to be perfect. Refine the words as homework.",
-        "Homework: share the Core Values with the whole team."
+        "A team with a draft agrees on the name and the behavior today. The wording does not have to be perfect. Refine the words as homework.",
+        "Homework: share the Core Values with the whole company."
       ]
     },
     {
