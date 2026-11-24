@@ -123,30 +123,21 @@
         "scorecard-intro"
       ],
       "override": {
-        "notes": [
-          "At this session it is a check-in. Every leader completed their function scorecard in Metronome as homework.",
-          "Ask each leader where their scorecard stands, and which of its two metrics sits on the KFFM.",
-          "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
-          "Homework: complete the annual reviews on the function scorecards in Metronome."
-        ],
+        "title": "Where does your scorecard stand?",
+        "headline": "Where does your scorecard stand?",
+        "support": "In Metronome: open Scorecards. Each leader answers in turn.",
+        "checklist": true,
         "body": [
-          "What: one page per function, saying what success looks like.",
-          "Why: everyone knows what they own and how we measure it.",
-          "How often: every 90 days, scored 0, 1 or 2.",
-          "Who: the owner, then their team lead. Then they compare.",
-          "In Metronome: open Scorecards."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q1-functions",
-      "slides": [
-        "scorecard"
-      ],
-      "override": {
+          "Is yours complete?",
+          "Do your direct reports each have one?"
+        ],
         "notes": [
-          "Purpose in one sentence. Three to five functional accountabilities, each starting Owns. Exactly two metrics: one widget the owner controls and one fiscal metric the role owns. Six to eight key competencies. The company’s core values.",
-          "The team agrees its Core Values later today. They then go on every scorecard."
+          "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
+          "By this session, each leader's direct reports have a scorecard too. Each leader rates their direct reports against it on the A-Player grid. If any are missing, say so now and agree a date.",
+          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's core values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
+          "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "Homework: complete the annual reviews on the function scorecards in Metronome."
         ]
       }
     },
