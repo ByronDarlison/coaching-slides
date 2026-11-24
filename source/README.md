@@ -20,7 +20,7 @@ Every compiled slide has a name: `<unit>-<slide>`, or just `<unit>` when the two
 
 ### Deck QR codes
 
-A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
+A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. The code and the address beside it are both real links to the deck. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
 
 ### Impact report
 
@@ -54,6 +54,49 @@ A populated title requires artwork.
 `about-timeline` takes `role`, `body`, `timeline_label` and `timeline`, a list of rows with `year`, `age`, `text`, `kind` (photo, logo or illustration), optional `portrait`, and `media` (one or two images, each with `src` and `alt`).
 `comp-attempts` takes `attempts`: one to four objects with `year`, `heading`, `support`, `outcome` and optional `win`.
 `comp-figure` takes `figure` with a library-relative `.svg` `src` and descriptive `alt`.
+
+### Drawing slides, hotspots, links and hover terms
+
+A `comp-story` slide with artwork shows its title and picture. `art_side: true` puts the title, `support` and `body` beside the picture. `art_full: true` gives the picture the full width, and `art_fit: true` lets a short wide drawing set its own height.
+
+**Instruction line.** An `art_full` slide shows `support` as one line under the title, above the drawing. It cannot show `body`. Text a drawing slide cannot show prints a `WARNING` naming the slide. Pass `--fail-on-dropped-text` to make it stop the build; that becomes the default once the two published slides that still carry such text are fixed.
+
+```json
+{"layout": "comp-story", "art_full": true, "headline": "Does every function have an owner?",
+ "support": "In Metronome: open Team View. Check it against your chart.",
+ "artwork": {"src": "assets/team-view.svg", "alt": "The Team View page."}}
+```
+
+**Hotspots.** `artwork.hotspots` is a list of hover areas. All positions are in the picture's own units, so `artwork.viewbox` (`[width, height]`) is required. Each hotspot takes `x`, `y`, `w`, `h`, `term` and `tip`. Optional fields:
+
+- `icon`: `[x, y]` moves the small "i" mark. `false` hides the mark; the area still answers hover, focus and tap.
+- `targets`: the parts that stay bright while the rest of the picture dims. A target is a box `[x, y, w, h]`, or a line `{"points": [[x, y], ...], "width": 16}` with at least two points and a width above zero. Use a line to keep one line of a chart bright.
+- `dim`: `[x, y, w, h]`, the part of the picture that dims. The default is the whole picture.
+
+```json
+{"x": 90, "y": 520, "w": 250, "h": 56, "term": "Line A", "tip": "Line A stays bright.", "icon": false,
+ "targets": [{"points": [[80, 420], [300, 330], [920, 90]], "width": 22}, [90, 520, 250, 56]]}
+```
+
+**Links and QR codes.** `artwork.links` makes parts of a picture clickable. Each link takes `x`, `y`, `w`, `h` (same units as hotspots, inside the viewbox), `href`, and an optional `label`. The compiler draws a real link over that part of the picture and a text link under the picture. The text shows `label`, or the address without `https://` when there is no label. Only plain `https` addresses are allowed: no other scheme, no sign-in part, no port, no spaces or quotes. Every link opens in a new tab. Links work on `comp-story` slides.
+
+Mark a picture that holds a QR code with `"qr": true`. The compiler cannot see inside a picture, so this mark is how it knows. A picture marked `qr` with no `links` fails the build. Record one link per code.
+
+```json
+"artwork": {"src": "assets/cash-links.svg", "alt": "Two QR codes for the cash templates.", "viewbox": [1200, 520], "qr": true,
+  "links": [{"x": 40, "y": 40, "w": 520, "h": 440, "href": "https://example.com/templates/one", "label": "12 month template"}]}
+```
+
+A compiled deck still loads nothing from the network. These links are the one place an address may appear, and `check-shell.py` enforces that.
+
+**Hover terms.** `terms` on a slide is a list of words that show a definition box on hover, on keyboard focus, and as a tap-to-open sheet on a small screen. Each entry takes `term` and `tip` (one line or a list of lines). The first match in the slide title, in `support`, in each `body` line and in card text is wrapped. A term can also show a library picture with `image`, which takes a library-relative `src` and descriptive `alt`. With `image`, `tip` is optional. The picture is sized to stay inside the slide.
+
+```json
+"terms": [{"term": "Market Map", "tip": "Where each competitor sits.",
+           "image": {"src": "assets/market-map-example.svg", "alt": "An example Market Map with four competitors."}}]
+```
+
+A worked example of every field above is in `tools/fixtures/deck-builder/`.
 
 An artifact bundle inherits `artifact`, `seed`, and `tags` into its slides.
 Source names qualify IDs, so different libraries can reuse a short ID without collisions.

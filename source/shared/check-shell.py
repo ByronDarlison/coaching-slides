@@ -2,6 +2,7 @@
 """Check the shared slideshow shell against the house visual standard."""
 
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parent
@@ -46,6 +47,15 @@ LAYOUT_SHELL_TOKENS = {
     'class="slide comp-attempts"': (("css", ".attempts-grid"), ("css", ".attempt--win")),
     'class="slide comp-figure"': (("css", ".figure-svg"),),
 }
+# A deck that uses one of these features needs the shell styles for it.
+FEATURE_SHELL_TOKENS = {
+    'class="deck-link': (("css", ".deck-link"),),
+    'class="art-links"': (("css", ".art-links"), ("css", ".story-panel--links")),
+    'class="term-image"': (("css", ".term-image"),),
+    'story-frame--lede': (("css", ".story-frame--lede"),),
+    'term--below': (("css", ".term--below"),),
+}
+DECK_LINK = re.compile(r'<a class="deck-link[^"]*" href="https://[^"]*" target="_blank" rel="noopener"')
 REMOTE_FONT_HOSTS = (
     "fonts.googleapis",
     "fonts.gstatic",
@@ -87,12 +97,13 @@ def check_deck(deck: Path, standard_text: str) -> list[str]:
         for token in SAMPLE_LAYOUT_HTML:
             if token not in html:
                 failures.append(f"index.html missing {token}")
-    for marker, tokens in LAYOUT_SHELL_TOKENS.items():
+    for marker, tokens in {**LAYOUT_SHELL_TOKENS, **FEATURE_SHELL_TOKENS}.items():
         if marker in html:
             for kind, token in tokens:
                 if token not in (css if kind == "css" else js):
                     failures.append(f"shell.{kind} missing {token} for {marker}")
-    lowered = bundle.lower()
+    # A link a person clicks is the one network address a deck may carry (compile_deck.DECK_LINK).
+    lowered = DECK_LINK.sub("<a", bundle).lower()
     for host in REMOTE_FONT_HOSTS:
         if host in lowered:
             failures.append(f"remote font host found: {host}")

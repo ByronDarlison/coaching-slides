@@ -1,0 +1,324 @@
+{
+  "id": "features",
+  "title": "Deck builder feature fixtures",
+  "tags": [
+    "fixture"
+  ],
+  "slides": [
+    {
+      "id": "lede-tall",
+      "layout": "comp-story",
+      "title": "Instruction line, tall drawing",
+      "headline": "Does every function have an owner?",
+      "support": "In Metronome: open **Team View**. Check it against your chart.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/tall.svg",
+        "alt": "A tall test drawing with six stacked bars."
+      }
+    },
+    {
+      "id": "lede-wide",
+      "layout": "comp-story",
+      "title": "Instruction line, short wide drawing",
+      "headline": "Five stages on one line",
+      "support": "In Metronome: open Stage Map. Find the stage you are in.",
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/wide.svg",
+        "alt": "A short wide test drawing with five blocks."
+      }
+    },
+    {
+      "id": "links-full",
+      "layout": "comp-story",
+      "title": "Links beside QR codes",
+      "headline": "Take the templates with you",
+      "support": "Scan a code, or click it.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/qr-cards.svg",
+        "alt": "Two cards, each with a QR code for a template.",
+        "viewbox": [
+          1200,
+          520
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 40,
+            "y": 40,
+            "w": 520,
+            "h": 440,
+            "href": "https://example.com/templates/one",
+            "label": "example.com/templates/one"
+          },
+          {
+            "x": 640,
+            "y": 40,
+            "w": 520,
+            "h": 440,
+            "href": "https://example.com/templates/two?view=1&copy=2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "links-side",
+      "layout": "comp-story",
+      "title": "Links on a side picture",
+      "headline": "Two templates",
+      "support": "The codes and the text links open the same pages.",
+      "body": [
+        "Use the first for a 12 month view.",
+        "Use the second for 36 months."
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/qr-cards.svg",
+        "alt": "Two cards, each with a QR code for a template.",
+        "viewbox": [
+          1200,
+          520
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 40,
+            "y": 40,
+            "w": 520,
+            "h": 440,
+            "href": "https://example.com/templates/one",
+            "label": "Template one"
+          },
+          {
+            "x": 640,
+            "y": 40,
+            "w": 520,
+            "h": 440,
+            "href": "https://example.com/templates/two",
+            "label": "Template two"
+          }
+        ]
+      }
+    },
+    {
+      "id": "deck-qr",
+      "layout": "comp-story",
+      "title": "Deck QR code",
+      "headline": "These slides are yours",
+      "support": "Scan the code or click the address.",
+      "body": [
+        "{deck_url}"
+      ],
+      "art_side": true,
+      "deck_qr": true
+    },
+    {
+      "id": "term-title",
+      "layout": "comp-story",
+      "title": "Picture in a hover term, in a title",
+      "headline": "Which attributes win on your Market Map?",
+      "copy_stack": true,
+      "support": "Hover the words Market Map in the title.",
+      "body": [
+        "A White Space is where no competitor sits.",
+        "Your Market Map shows it."
+      ],
+      "terms": [
+        {
+          "term": "Market Map",
+          "image": {
+            "src": "assets/market-map.svg",
+            "alt": "An example Market Map with four competitors and us in the top right."
+          }
+        },
+        {
+          "term": "White Space",
+          "tip": [
+            "An open area of the map.",
+            "No competitor serves it today."
+          ],
+          "image": {
+            "src": "assets/market-map.svg",
+            "alt": "The example Market Map, with open space at the top left."
+          }
+        }
+      ]
+    },
+    {
+      "id": "term-cards",
+      "layout": "comp-decision",
+      "title": "Hover term in a card slide title",
+      "headline": "Score each attribute on the Market Map",
+      "support": "One line per competitor.",
+      "panels": [
+        {
+          "role": "Us",
+          "heading": "Score 1 to 5",
+          "support": "Be honest.",
+          "mark": "action"
+        },
+        {
+          "role": "Them",
+          "heading": "Score 1 to 5",
+          "support": "Use what customers say.",
+          "mark": "gap"
+        }
+      ],
+      "terms": [
+        {
+          "term": "Market Map",
+          "tip": "The picture of where each competitor sits.",
+          "image": {
+            "src": "assets/market-map.svg",
+            "alt": "An example Market Map with four competitors and us in the top right."
+          }
+        }
+      ]
+    },
+    {
+      "id": "line-targets",
+      "layout": "comp-story",
+      "title": "Line highlights and no info mark",
+      "headline": "Hover a legend box to follow one line",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/chart.svg",
+        "alt": "A chart with three lines and a three box legend.",
+        "viewbox": [
+          1000,
+          600
+        ],
+        "hotspots": [
+          {
+            "x": 90,
+            "y": 520,
+            "w": 250,
+            "h": 56,
+            "term": "Line A",
+            "tip": "Line A stays bright; the rest dims.",
+            "targets": [
+              {
+                "points": [
+                  [
+                    80,
+                    420
+                  ],
+                  [
+                    300,
+                    330
+                  ],
+                  [
+                    520,
+                    300
+                  ],
+                  [
+                    740,
+                    180
+                  ],
+                  [
+                    920,
+                    90
+                  ]
+                ],
+                "width": 22
+              },
+              [
+                90,
+                520,
+                250,
+                56
+              ]
+            ],
+            "icon": false
+          },
+          {
+            "x": 380,
+            "y": 520,
+            "w": 250,
+            "h": 56,
+            "term": "Line B",
+            "tip": "Line B stays bright; the rest dims.",
+            "targets": [
+              {
+                "points": [
+                  [
+                    80,
+                    380
+                  ],
+                  [
+                    300,
+                    390
+                  ],
+                  [
+                    520,
+                    340
+                  ],
+                  [
+                    740,
+                    330
+                  ],
+                  [
+                    920,
+                    300
+                  ]
+                ],
+                "width": 22
+              },
+              [
+                380,
+                520,
+                250,
+                56
+              ]
+            ],
+            "icon": false
+          },
+          {
+            "x": 670,
+            "y": 520,
+            "w": 250,
+            "h": 56,
+            "term": "Line C",
+            "tip": "Line C stays bright; the rest dims.",
+            "targets": [
+              {
+                "points": [
+                  [
+                    80,
+                    460
+                  ],
+                  [
+                    300,
+                    440
+                  ],
+                  [
+                    520,
+                    450
+                  ],
+                  [
+                    740,
+                    410
+                  ],
+                  [
+                    920,
+                    420
+                  ]
+                ],
+                "width": 22
+              },
+              [
+                670,
+                520,
+                250,
+                56
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

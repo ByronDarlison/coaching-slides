@@ -88,3 +88,13 @@ test('links open a slide by name, and the old numeric links still work',()=>{
   assert.equal(controller.slideHash(1),'#bhag-path-bhag');
   assert.equal(controller.slideHash(2),'#slide-3');
 });
+
+test('a link on a drawing opens its address and never the zoom view',()=>{
+  const {events,document}=fixture();
+  const made=[];
+  document.createElement=(tag)=>{made.push(tag);return {};};
+  const img={naturalWidth:1800,getAttribute:(k)=>k==='src'?'./assets/a.svg':null,closest:()=>null};
+  const link={closest:(sel)=>sel==='a[href]'?{}:sel==='.story-panel--art'?{querySelector:()=>img}:null};
+  events.click.fn({target:link});
+  assert.deepEqual(made,[]);
+});
