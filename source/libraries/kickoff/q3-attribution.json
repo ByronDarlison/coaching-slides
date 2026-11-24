@@ -5422,7 +5422,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-3hag.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. The white space above the other lines is left white on a grey ground, and the part the 3HAG line moves into is shaded green. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
       }
     },
     {
