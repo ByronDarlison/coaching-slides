@@ -189,7 +189,8 @@
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
           "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
-        ]
+        ],
+        "support": "In Metronome: open KFFM. Go lever by lever."
       }
     },
     {
@@ -315,7 +316,8 @@
           "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
           "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
           "Homework: update the Market Map in the War Room in Metronome."
-        ]
+        ],
+        "support": "Put your own Market Map on the screen. What changed last quarter?"
       }
     },
     {

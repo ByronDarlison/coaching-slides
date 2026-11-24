@@ -213,7 +213,6 @@
         "q3"
       ],
       "art_full": true,
-      "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
         "The article explains each zone and what to do about it.",
@@ -221,7 +220,30 @@
       ],
       "artwork": {
         "src": "assets/a-player-links.svg",
-        "alt": "Two QR codes. Read the article: Who On Your Team Is An A-Player? Run the prompt: A-Player Team Assessment Prep. Both open on darlison.com."
+        "alt": "Two QR codes. Read the article: Who On Your Team Is An A-Player? Run the prompt: A-Player Team Assessment Prep. Both open on darlison.com.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 161,
+            "y": 20,
+            "w": 436,
+            "h": 600,
+            "href": "https://www.darlison.com/a-player-team-assessment/",
+            "label": "Article: Who On Your Team Is An A-Player?"
+          },
+          {
+            "x": 841,
+            "y": 20,
+            "w": 436,
+            "h": 600,
+            "href": "https://www.darlison.com/a-player-team-assessment-prompt/",
+            "label": "Prompt: A-Player Team Assessment Prep"
+          }
+        ]
       }
     }
   ]

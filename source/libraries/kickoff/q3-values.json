@@ -210,7 +210,6 @@
         "q3"
       ],
       "art_full": true,
-      "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
         "The article shows how to describe each value at three levels of behavior. It also shows how to hire on the values.",
@@ -218,7 +217,30 @@
       ],
       "artwork": {
         "src": "assets/values-links.svg",
-        "alt": "Two QR codes. Read the article: Values: How Not To Chase Your Tail. Run the prompt: Values Discovery. Both open on darlison.com."
+        "alt": "Two QR codes. Read the article: Values: How Not To Chase Your Tail. Run the prompt: Values Discovery. Both open on darlison.com.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 284,
+            "y": 20,
+            "w": 396,
+            "h": 600,
+            "href": "https://www.darlison.com/values-how-not-to-chase-your-tail/",
+            "label": "Article: Values: How Not To Chase Your Tail"
+          },
+          {
+            "x": 760,
+            "y": 20,
+            "w": 397,
+            "h": 600,
+            "href": "https://www.darlison.com/values-discovery-prompt/",
+            "label": "Prompt: Values Discovery"
+          }
+        ]
       }
     }
   ]

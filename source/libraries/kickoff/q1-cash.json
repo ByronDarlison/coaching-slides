@@ -314,10 +314,32 @@
       ],
       "artwork": {
         "src": "assets/cash-forecast-examples.svg",
-        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the three-year view: opens the Example tab of the 36-month template."
+        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the three-year view: opens the Example tab of the 36-month template.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 157,
+            "y": 20,
+            "w": 444,
+            "h": 600,
+            "href": "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209",
+            "label": "12-month forecast template"
+          },
+          {
+            "x": 837,
+            "y": 20,
+            "w": 446,
+            "h": 600,
+            "href": "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588",
+            "label": "36-month forecast template"
+          }
+        ]
       },
-      "art_full": true,
-      "art_fit": true
+      "art_full": true
     }
   ]
 }

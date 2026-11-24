@@ -31,7 +31,22 @@
       ],
       "artwork": {
         "src": "assets/cash-12-month.svg",
-        "alt": "One QR code. 12-month forecast: the finance leader builds next year in this. It opens the Example tab of the 12-month cash forecast template in Google Sheets."
+        "alt": "One QR code. 12-month forecast: the finance leader builds next year in this. It opens the Example tab of the 12-month cash forecast template in Google Sheets.",
+        "viewbox": [
+          660,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 141,
+            "y": 20,
+            "w": 378,
+            "h": 600,
+            "href": "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209",
+            "label": "12-month forecast template"
+          }
+        ]
       }
     }
   ]
