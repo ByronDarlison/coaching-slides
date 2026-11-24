@@ -203,15 +203,16 @@
         "support": "In Metronome: open KFFM. Which lever moves cash fastest?",
         "body": [
           "Make that lever a candidate for a QHAG priority.",
-          "Add the KFFM to the weekly leadership meeting.",
-          "Every week, each owner reports their critical number: red, yellow or green.",
+          "In Meetings, add a KFFM item to the weekly leadership meeting.",
+          "Each week, look at the flow: where is it stuck?",
           "A red number needs a written plan: situation, cause, correction, follow-up."
         ],
         "notes": [
           "The team picks the lever that moves cash fastest this quarter. Take it into the QHAG as a priority candidate.",
           "New at this session: the KFFM joins the weekly leadership meeting. That is where the team watches the lever it picked.",
           "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the KFFM. The KFFM changes at the quarterly.",
-          "Homework: review the KFFM in every weekly leadership meeting."
+          "Homework: review the KFFM in every weekly leadership meeting.",
+          "In Metronome, the weekly leadership meeting takes an agenda item of type KFFM. It shows the key functions and their flow inside the meeting. The scoreboard already reviews the numbers. The KFFM item shows the same numbers in flow order, so the team sees what a red function is holding up."
         ]
       }
     },
