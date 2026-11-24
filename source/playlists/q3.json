@@ -205,23 +205,39 @@
         "levers"
       ],
       "override": {
-        "title": "Are you pushing all six levers?",
-        "headline": "Are you pushing all six levers?",
+        "title": "Are you pushing all six levers? What moved last quarter?",
+        "headline": "Are you pushing all six levers? What moved last quarter?",
         "notes": [
           "At a quarterly, the six levers are the check on the KFFM. The map is only right if the team is using it to move more cash faster.",
-          "The levers are quantity, conversion, price, timing, capacity and cost. They are the ways the owner manages cash.",
-          "Timing is how long one widget takes to get through. Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
-          "Use the example to name each lever. Then go to the team's own KFFM on the next slide."
+          "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever: quantity, conversion, price, timing, capacity, cost. For each one, ask its owner what they did to push it last quarter and what moved.",
+          "A lever nobody is pushing is a finding. Write it down.",
+          "Timing is how long one widget takes to get through. Capacity is how many widgets a function can handle in a month. A function can be fast and still too small."
         ]
       }
     },
     {
-      "id": "kickoff:quarterly-kffm",
+      "id": "kickoff:q3-kffm",
       "slides": [
-        "lever"
-      ]
+        "weekly"
+      ],
+      "override": {
+        "title": "Pick one lever, then review the KFFM every week.",
+        "headline": "Pick one lever, then review the KFFM every week.",
+        "support": "In Metronome: open KFFM.",
+        "body": [
+          "Which lever moves cash fastest? Bring it to your quarterly priorities.",
+          "Put the KFFM on the weekly agenda in Metronome.",
+          "Each owner reports their critical number: green, yellow or red.",
+          "Red needs a written plan: situation, cause, correction, follow-up."
+        ],
+        "notes": [
+          "The team picks the lever that moves cash fastest this quarter. Take it into the QHAG as a priority candidate.",
+          "New at this session: the KFFM joins the weekly leadership meeting. That is where the team watches the lever it picked.",
+          "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the map. The map changes at the quarterly.",
+          "Homework: review the KFFM in every weekly leadership meeting."
+        ]
+      }
     },
-    "kickoff:q3-kffm",
     {
       "id": "kickoff:q3-path",
       "slides": [
