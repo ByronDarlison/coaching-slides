@@ -101,6 +101,9 @@ Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 28. **Trace what each exercise needs.** When an exercise needs something the team must bring, an earlier session sets it as homework and this session checks it before the exercise starts. The A-Player grid needs a scorecard for every direct report, so direct reports have scorecards by Q3.
 29. **Fix the pattern, not the slide.** When one slide is wrong, sweep the whole deck and its sister decks for the same fault. Bring Byron the full list before he finds the next one.
 30. **A check asks whether the tool is being used, not only whether it is right.** Before removing a slide as a replay, ask what check it carries. The KFFM check walks all six levers every quarter: is each one being pushed, and what moved.
+31. **Read the whole deck, then have three outsiders read it, before Byron sees it.** Read every slide in order, following the thread from each slide to the next. Then give the built deck to a cold reader, a copywriter and a visual designer who do not know what changed. Fix what they find. Bring Byron one list, with every new line marked, not one slide at a time.
+32. **Measure drawing type the way it is presented.** Check the smallest label in every drawing with the sidebar hidden at 1280 by 720 and 1366 by 768. The floor is 13 pixels. A drawing inside a narrow side panel needs names only.
+33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it.
 
 ## Layouts
 
