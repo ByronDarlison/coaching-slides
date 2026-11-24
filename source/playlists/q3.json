@@ -59,7 +59,7 @@
       "override": {
         "title": "Is your Function Chart still right?",
         "headline": "Is your Function Chart still right?",
-        "support": "In Metronome: open Function Chart. Test it against how the quarter really went.",
+        "support": "In Metronome: open Function Chart. Test it against how last quarter went.",
         "panels": [
           {
             "role": "One person",
@@ -81,7 +81,7 @@
           },
           {
             "role": "A new function",
-            "heading": "Not on the chart?",
+            "heading": "Not listed?",
             "support": "Add it.",
             "mark": "gap"
           }
@@ -111,9 +111,10 @@
         "title": "Check your Team View and critical numbers.",
         "headline": "Check your Team View and critical numbers.",
         "body": [
-          "Every function on the chart is in the Team View, with its owner.",
-          "Each owner says their critical number: the one number that shows whether they had a good day."
-        ]
+          "Every function and its owner is in the Team View.",
+          "Each owner says their critical number: the one number that tells them whether they had a good day."
+        ],
+        "support": "In Metronome: open Team View. Check it against your Function Chart."
       }
     },
     {
@@ -128,18 +129,19 @@
         "scorecard-intro"
       ],
       "override": {
-        "title": "Where does your scorecard stand?",
-        "headline": "Where does your scorecard stand?",
+        "title": "Are your scorecards complete?",
+        "headline": "Are your scorecards complete?",
         "support": "In Metronome: open Scorecards. Each leader answers in turn.",
         "checklist": true,
         "body": [
-          "Is yours complete?",
-          "Do your direct reports each have one?"
+          "Is your own scorecard complete?",
+          "Does each of your direct reports have one?",
+          "If not, name the date."
         ],
         "notes": [
           "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
           "By this session, each leader's direct reports have a scorecard too. Each leader rates their direct reports against it on the A-Player grid. If any are missing, say so now and agree a date.",
-          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's core values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's Core Values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
           "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
           "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: complete the annual reviews on the function scorecards in Metronome."
@@ -158,10 +160,15 @@
         "map"
       ],
       "override": {
-        "support": "In Metronome: open KFFM and put it on the screen.",
+        "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
           "If the KFFM is not in Metronome yet, use the example drawing on the next slide.",
-          "Ask each owner: what do you need to do to turn it green?"
+          "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
+        ],
+        "body": [
+          "The 3 to 5 key functions are still the right ones.",
+          "Each owner rates their function red, yellow or green, by its critical number.",
+          "What will it take to turn it green?"
         ]
       }
     },
@@ -171,10 +178,10 @@
         "levers"
       ],
       "override": {
-        "title": "Are you pushing all six levers? What moved last quarter?",
-        "headline": "Are you pushing all six levers? What moved last quarter?",
+        "title": "For each lever: did you push it? What moved?",
+        "headline": "For each lever: did you push it? What moved?",
         "notes": [
-          "At a quarterly, the six levers are the check on the KFFM. The map is only right if the team is using it to move more cash faster.",
+          "At a quarterly, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
           "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
           "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
           "Price: has a good Profit per X emerged? If not, leave it blank.",
@@ -193,17 +200,17 @@
       "override": {
         "title": "Pick one lever, then review the KFFM every week.",
         "headline": "Pick one lever, then review the KFFM every week.",
-        "support": "In Metronome: open KFFM.",
+        "support": "In Metronome: open KFFM. Which lever moves cash fastest?",
         "body": [
-          "Which lever moves cash fastest? Bring it to your quarterly priorities.",
-          "Put the KFFM on the weekly agenda in Metronome.",
-          "Each owner reports their critical number: green, yellow or red.",
-          "Red needs a written plan: situation, cause, correction, follow-up."
+          "Make that lever a candidate for a QHAG priority.",
+          "Add the KFFM to the weekly leadership meeting.",
+          "Every week, each owner reports their critical number: red, yellow or green.",
+          "A red number needs a written plan: situation, cause, correction, follow-up."
         ],
         "notes": [
           "The team picks the lever that moves cash fastest this quarter. Take it into the QHAG as a priority candidate.",
           "New at this session: the KFFM joins the weekly leadership meeting. That is where the team watches the lever it picked.",
-          "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the map. The map changes at the quarterly.",
+          "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the KFFM. The KFFM changes at the quarterly.",
           "Homework: review the KFFM in every weekly leadership meeting."
         ]
       }
@@ -236,9 +243,9 @@
         ],
         "body": [
           "When did you last let someone go for not living it?",
-          "Does someone who keeps breaching it belong here?",
+          "Does someone who keeps breaking it belong here?",
           "Would you build a new company around it, in any industry?",
-          "Then talk about anything important that was left out."
+          "Then ask: is an important value missing?"
         ]
       }
     },
@@ -256,7 +263,7 @@
         "purpose"
       ],
       "override": {
-        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
+        "support": "In Metronome: open One Page Plans. Read your Core Purpose aloud. What needs to change?"
       }
     },
     {
@@ -267,7 +274,7 @@
       "override": {
         "headline": "Does your BHAG still hold?",
         "title": "Does your BHAG still hold?",
-        "support": "In Metronome: open One Page Plans and read your BHAG aloud."
+        "support": "In Metronome: open One Page Plans. Read your BHAG aloud."
       }
     },
     {
@@ -301,8 +308,8 @@
         "example"
       ],
       "override": {
-        "title": "Is your Market Map still right?",
-        "headline": "Is your Market Map still right?",
+        "title": "Is your Market Map still right? Are your top competitors on it?",
+        "headline": "Is your Market Map still right? Are your top competitors on it?",
         "notes": [
           "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
           "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
@@ -323,8 +330,8 @@
         "example"
       ],
       "override": {
-        "title": "Is your Core Customer still right?",
-        "headline": "Is your Core Customer still right?",
+        "title": "Is your Core Customer still right? Read their needs aloud.",
+        "headline": "Is your Core Customer still right? Read their needs aloud.",
         "notes": [
           "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
           "Read the three ranked needs aloud. The team tests the white space against them next.",
@@ -353,12 +360,20 @@
       ],
       "override": {
         "notes": [
-          "Ask a leader to read the plan aloud. Invite the team to identify contradictions and untested assumptions.",
+          "Ask a leader to read the 3HAG aloud. Invite the team to identify contradictions and untested assumptions.",
           "Test it against the 3HAG line: does each capability build an attribute where the company will lead?",
-          "Question the math: do the five widget targets add up to the revenue?",
-          "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
+          "Question the math: do the widget targets add up to the revenue?",
+          "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner.",
+          "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?"
         ],
-        "support": "In Metronome: open One Page Plans. Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open One Page Plans. Read your 3HAG aloud. Then test it against your 3HAG line.",
+        "body": [
+          "Each capability builds an attribute where you will lead.",
+          "The statement and the “known for” describe the future company.",
+          "The numbers are set: date, revenue, cash and widgets.",
+          "Every number has an owner, and the widgets support the revenue.",
+          "Decide: what in the 3HAG changes?"
+        ]
       }
     },
     {
@@ -378,7 +393,7 @@
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
           "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
         ],
-        "support": "In Metronome: open Annual Priorities. Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud. Then test it against your 3HAG line."
       }
     },
     {
@@ -401,7 +416,7 @@
       "override": {
         "notes": [
           "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
-          "At a quarterly, add the worries and opportunities circled on the Market Map to the candidates.",
+          "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the white space changed.",
           "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
           "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
           "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
@@ -409,6 +424,12 @@
           "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
           "Agree on the done-by date, the measure of success and the date it will be achieved by.",
           "Done is not the same as success. The owner commits to the done-by date. The achieved-by date is when the number must have moved. If it has not moved by then, find out why and fix the cause."
+        ],
+        "support": "What must you get done now to deliver the 1HAG?",
+        "body": [
+          "List candidates: last quarter’s open priorities, your 1HAG priorities, the lever you picked and what the white space changed.",
+          "Test each with the six questions, then rank.",
+          "Agree on the owner, done-by date, measure of success and achieved-by date."
         ]
       }
     },
@@ -424,7 +445,7 @@
         "qhag-check"
       ],
       "override": {
-        "support": "In Metronome: open Quarterly Priorities. Read it aloud before you move on."
+        "support": "In Metronome: open Quarterly Priorities. Read your QHAG aloud before you move on."
       }
     },
     {
@@ -570,7 +591,12 @@
       }
     },
     "kickoff:q3-meetings",
-    "kickoff:cascade-messages",
+    {
+      "id": "kickoff:cascade-messages",
+      "override": {
+        "support": "Write them together now. Each leader shares them with their team tomorrow."
+      }
+    },
     "kickoff:q3-close",
     "kickoff:closing"
   ]

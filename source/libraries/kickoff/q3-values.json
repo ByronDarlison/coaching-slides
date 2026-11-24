@@ -129,7 +129,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "In Metronome: open One Page Plans. Read each value and the behaviour it means.",
+      "support": "In Metronome: open One Page Plans. Read each value and the behavior it means.",
       "body": [],
       "notes": [
         "At a quarterly, the team arrives in one of three places: agreed Core Values, a draft from a Mission to Mars session, or neither.",
@@ -141,8 +141,8 @@
     },
     {
       "id": "example",
-      "title": "A value is a name and the behaviour it means.",
-      "headline": "A value is a name and the behaviour it means.",
+      "title": "A Core Value is a name and the behavior it means.",
+      "headline": "A Core Value is a name and the behavior it means.",
       "layout": "comp-decision",
       "group": "",
       "eyebrow": "",
@@ -187,10 +187,11 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Name each value. Write the behaviour it means.",
+      "support": "Change only what failed the test.",
       "body": [
-        "Preferably 3, definitely no more than 5.",
-        "Not aspirational. How your best people already act."
+        "Each value has a name and the behavior it means.",
+        "Ideally 3, up to 5.",
+        "They describe how your best people already act."
       ],
       "notes": [
         "A team with agreed values changes only what failed the test.",

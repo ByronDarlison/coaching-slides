@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "template",
-      "title": "Finance builds next year’s forecast from your widgets.",
-      "headline": "Finance builds next year’s forecast from your widgets.",
+      "title": "Your finance leader builds next year’s forecast from your widgets.",
+      "headline": "Your finance leader builds next year’s forecast from your widgets.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,7 +17,7 @@
         "q3"
       ],
       "art_side": true,
-      "support": "The finance leader builds it in the 12-month template, before the annual.",
+      "support": "Use the 12-month template. Finish before the annual.",
       "body": [
         "Start from the KFFM widgets.",
         "Each leader gives the numbers for their own widgets.",

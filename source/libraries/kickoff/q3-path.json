@@ -77,7 +77,7 @@
         "q3"
       ],
       "notes": [
-        "Check the map, then walk all six levers. New today: the KFFM joins the weekly leadership meeting."
+        "Check the KFFM, then walk all six levers. New today: the KFFM joins the weekly leadership meeting."
       ],
       "art_full": true,
       "art_fit": true,
@@ -109,8 +109,8 @@
     },
     {
       "id": "people",
-      "title": "Then, who lives the values and delivers.",
-      "headline": "Then, who lives the values and delivers.",
+      "title": "Then, who lives the Core Values and delivers.",
+      "headline": "Then, who lives the Core Values and delivers.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -170,8 +170,8 @@
     },
     {
       "id": "plan",
-      "title": "Next, check the year and plan the quarter.",
-      "headline": "Next, check the year and plan the quarter.",
+      "title": "Next, test the 1HAG and build the QHAG.",
+      "headline": "Next, test the 1HAG and build the QHAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

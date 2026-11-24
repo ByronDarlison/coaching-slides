@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "objective",
-      "title": "The Attribution Framework shows where the white space is.",
-      "headline": "The Attribution Framework shows where the white space is.",
+      "title": "The Attribution Framework shows the white space.",
+      "headline": "The Attribution Framework shows the white space.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -20,7 +20,7 @@
       "support": "It compares your whole company with your competitors, across your market.",
       "body": [
         "Where does everyone compete on the same thing?",
-        "Where is the white space?",
+        "Where is the white space: the part of the graph where nobody is?",
         "Where will you be in three years?"
       ],
       "notes": [
@@ -81,8 +81,8 @@
     },
     {
       "id": "us",
-      "title": "Score your company, then order the attributes.",
-      "headline": "Score your company, then order the attributes.",
+      "title": "Example: the company scores itself, 1 to 5.",
+      "headline": "Example: the company scores itself, 1 to 5.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -102,8 +102,8 @@
     },
     {
       "id": "competitors",
-      "title": "Add your top competitors.",
-      "headline": "Add your top competitors.",
+      "title": "Example: the top competitors, on the same attributes.",
+      "headline": "Example: the top competitors, on the same attributes.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -199,12 +199,12 @@
         "q3"
       ],
       "art_side": true,
-      "support": "Open your copy of the Attribution Map sheet.",
+      "support": "One person copies the Attribution Map sheet and enters your attributes.",
       "body": [
-        "Enter your attributes.",
         "Score your company and two or three competitors, 1 to 5.",
         "Everyone scores alone first. The CEO shares last.",
-        "Enter the agreed scores. The chart sorts itself."
+        "Enter the agreed scores. The graph sorts itself.",
+        "Then ask: where is the white space?"
       ],
       "notes": [
         "Scan the code, then choose File and Make a copy in Google Sheets. One person shares the copy on screen.",
@@ -231,7 +231,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Now bring your Core Customer back. Test the white space against their three ranked needs.",
+      "support": "Test the white space against your Core Customer’s three ranked needs.",
       "body": [
         "Decide what to maintain, what to improve and what to let drop.",
         "Enter a 3HAG score for each attribute.",
@@ -256,11 +256,11 @@
       ],
       "copy_stack": true,
       "body": [
-        "3HAG: do the capabilities build the attributes where you will lead?",
-        "1HAG and QHAG: does a priority change?",
-        "What will you stop doing, because the 3HAG line lets it drop?"
+        "What should become a priority next quarter?",
+        "What will you stop doing because the 3HAG line drops it?"
       ],
       "notes": [
+        "Write the answers on the board. They become candidates when the team builds the QHAG.",
         "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG.",
         "A team that runs out of time finishes the Attribution Framework in an extra session before the annual."
       ],

@@ -21,13 +21,13 @@
         {
           "role": "Metronome",
           "heading": "Update the plan",
-          "support": "The growth plan and each leader’s priorities. Add each lane’s steps under its company priority. Put the KFFM on the weekly agenda.",
+          "support": "The growth plan and each leader’s priorities. Add each lane’s steps under its company priority. Start the weekly KFFM review and the CEO’s weekly email.",
           "mark": "structure"
         },
         {
           "role": "People",
           "heading": "Values and A-Players",
-          "support": "Share the Core Values with the whole team. Plan and act on any C player. Complete annual reviews on the function scorecards.",
+          "support": "Share the Core Values with the whole company. Write a plan for everyone below A, and act on any C-Player. Complete annual reviews on the function scorecards.",
           "mark": "structure"
         },
         {
@@ -60,7 +60,7 @@
       "tags": [
         "q3"
       ],
-      "support": "For each outcome: answered, partly or still open?",
+      "support": "For each outcome: met, partly met or still open?",
       "notes": [
         "Read back the outcomes the team agreed at the start.",
         "Ask for a show of hands on each one.",

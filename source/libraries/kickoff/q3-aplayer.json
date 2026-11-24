@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "objective",
-      "title": "An A-Player lives the values and delivers.",
-      "headline": "An A-Player lives the values and delivers.",
+      "title": "An A-Player lives the Core Values and delivers.",
+      "headline": "An A-Player lives the Core Values and delivers.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,9 +17,10 @@
         "q3"
       ],
       "art_side": true,
-      "support": "The goal: 90% or more of the team are A-Players.",
+      "support": "The goal: 90% or more of your people are A-Players.",
       "body": [
-        "Today each leader assesses their direct reports, together."
+        "Today each leader assesses their direct reports, with their peers.",
+        "The CEO’s assessment of the leadership team stays private."
       ],
       "notes": [
         "A leader with A-Players has time to work on the business. A leader without them is stuck in execution.",
@@ -34,8 +35,8 @@
     },
     {
       "id": "grid",
-      "title": "Two questions: do they live the values? Do they deliver?",
-      "headline": "Two questions: do they live the values? Do they deliver?",
+      "title": "Do they live the Core Values? Do they deliver?",
+      "headline": "Do they live the Core Values? Do they deliver?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -69,7 +70,7 @@
           "role": "Stage 1",
           "heading": "No scorecards yet",
           "support": "Use what you have observed, the current job description and your judgment.",
-          "mark": "structure"
+          "mark": "action"
         },
         {
           "role": "Stage 2",
@@ -81,19 +82,20 @@
           "role": "Stage 3",
           "heading": "Scorecards and reviews",
           "support": "Use the evidence recorded in each person’s coaching reviews.",
-          "mark": "action"
+          "mark": "structure"
         }
       ],
       "notes": [
         "Do not wait for scorecards before the first assessment. Start with the evidence the team has.",
         "Record the date, the teams you assessed and the stage of evidence.",
         "If most people land on Behind, check the scorecards before you blame the people. Vague scorecards produce B-Players."
-      ]
+      ],
+      "support": "Say which stage you are at. Then use that evidence."
     },
     {
       "id": "place",
-      "title": "Place each of your direct reports.",
-      "headline": "Place each of your direct reports.",
+      "title": "Place each direct report on the grid.",
+      "headline": "Place each direct report on the grid.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -101,7 +103,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Write each person on a note, in your own colour. Place every note on the grid.",
+      "support": "Write each name on a note, in your own color. Place every note on the grid.",
       "body": [
         "Then present your team, one leader at a time.",
         "Peers say whether they see each person the same way."
@@ -115,8 +117,8 @@
     },
     {
       "id": "placed",
-      "title": "A-Player assessment example",
-      "headline": "A-Player assessment example",
+      "title": "Example: Jen places her six direct reports.",
+      "headline": "Example: Jen places her six direct reports.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -135,8 +137,8 @@
     },
     {
       "id": "zones",
-      "title": "Only one box holds A-Players.",
-      "headline": "Only one box holds A-Players.",
+      "title": "Only one box holds A-Players. What share of yours are in it?",
+      "headline": "Only one box holds A-Players. What share of yours are in it?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -156,8 +158,8 @@
     },
     {
       "id": "toxic",
-      "title": "A high performer who breaks the values is still a C.",
-      "headline": "A high performer who breaks the values is still a C.",
+      "title": "A high performer who breaks a Core Value is still a C.",
+      "headline": "A high performer who breaks a Core Value is still a C.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
