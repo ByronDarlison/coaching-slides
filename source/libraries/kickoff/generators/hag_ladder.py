@@ -20,14 +20,14 @@ def draw(checked_to):
                        f'<path d="M{W/2-10},{y+BH+GAP-13} L{W/2},{y+BH+GAP-1} L{W/2+10},{y+BH+GAP-13} Z" fill="{col}"/>')
         if checked:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="16" fill="#e7f2ea" stroke="#318549" stroke-width="4"/>')
-            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="40" font-weight="700" fill="#20282f">{name}</text>')
+            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="37" font-weight="700" fill="#20282f">{name}</text>')
             out.append(f'<text x="{x+BW-26}" y="{cy+15}" font-size="42" font-weight="700" fill="#318549" text-anchor="end">✓</text>')
         elif i == 0:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="16" fill="white" stroke="#326ab6" stroke-width="4"/>')
-            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="40" font-weight="700" fill="#326ab6">{name}</text>')
+            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="37" font-weight="700" fill="#326ab6">{name}</text>')
         else:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="16" fill="white" stroke="#9aa3ab" stroke-width="3"/>')
-            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="40" font-weight="600" fill="#5b6670">{name}</text>')
+            out.append(f'<text x="{x+26}" y="{cy+14}" font-size="37" font-weight="600" fill="#5b6670">{name}</text>')
     out.append("</svg>")
     return "".join(out)
 

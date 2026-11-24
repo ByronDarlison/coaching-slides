@@ -32,14 +32,14 @@ def draw(current):
             out.append(f'<line x1="{x+BW}" y1="{cy}" x2="{x+BW+GAP}" y2="{cy}" stroke="{line}" stroke-width="5"/>')
         if now:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="18" fill="{BLUE}"/>')
-            fill, weight, size, top = "white", 700, 27, cy
+            fill, weight, size, top = "white", 700, 25, cy
         elif done:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="18" fill="#e7f2ea" stroke="{GREEN}" stroke-width="3"/>')
-            fill, weight, size, top = "#20282f", 700, 26, cy - 28
+            fill, weight, size, top = "#20282f", 700, 24, cy - 28
             out.append(f'<text x="{cx}" y="{y+122}" font-size="23" font-weight="700" fill="{GREEN}" text-anchor="middle">✓ Done</text>')
         else:
             out.append(f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="18" fill="white" stroke="{GREY}" stroke-width="3"/>')
-            fill, weight, size, top = "#5b6670", 600, 26, cy
+            fill, weight, size, top = "#5b6670", 600, 25, cy
         lh = 33
         y0 = top - (len(label) - 1) * lh / 2 + 10
         for k, t in enumerate(label):

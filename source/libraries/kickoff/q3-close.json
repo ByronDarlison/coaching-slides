@@ -68,8 +68,8 @@
         "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
       "artwork": {
-        "src": "assets/q3-sticky.jpg",
-        "alt": "Byron’s sticky note, handwritten with: 3HAG validation."
+        "src": "assets/q3-sticky-purpose.svg",
+        "alt": "A sticky note with the coach’s outcome for the session: 3HAG validation."
       },
       "art_side": true
     }
