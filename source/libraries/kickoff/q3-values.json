@@ -213,12 +213,12 @@
       "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
-        "The first article shows how to describe each value at three levels of behaviour. It also shows how to hire on the values.",
-        "The second article and the prompt pressure-test each value against real stories."
+        "The article shows how to describe each value at three levels of behavior. It also shows how to hire on the values.",
+        "The prompt pressure-tests each value against real stories. Its page is for members. The article How to Discover Your Company’s Values Using AI explains the prompt and is open to everyone."
       ],
       "artwork": {
         "src": "assets/values-links.svg",
-        "alt": "Three QR codes. Read the article: Values: How Not To Chase Your Tail. Read the article: How to Discover Your Company’s Values Using AI. Run the prompt: Values Discovery. All three open on darlison.com."
+        "alt": "Two QR codes. Read the article: Values: How Not To Chase Your Tail. Run the prompt: Values Discovery. Both open on darlison.com."
       }
     }
   ]
