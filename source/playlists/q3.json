@@ -105,10 +105,15 @@
           "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
           "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
           "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
-          "Show the Team View to the whole team at a town hall whenever it changes."
+          "Show the Team View to the whole team at a town hall whenever it changes.",
+          "The critical number can be financial or not. A good place to start is what the function hands to the next one."
         ],
         "title": "Check your Team View and critical numbers.",
-        "headline": "Check your Team View and critical numbers."
+        "headline": "Check your Team View and critical numbers.",
+        "body": [
+          "Every function on the chart is in the Team View, with its owner.",
+          "Each owner says their critical number: the one number that shows whether they had a good day."
+        ]
       }
     },
     {
@@ -210,15 +215,6 @@
       ]
     },
     {
-      "id": "kickoff:quarterly-review",
-      "slides": [
-        "purpose"
-      ],
-      "override": {
-        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
-      }
-    },
-    {
       "id": "kickoff:q3-values",
       "slides": [
         "review"
@@ -255,6 +251,15 @@
       ]
     },
     {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "purpose"
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
+      }
+    },
+    {
       "id": "kickoff:bhag",
       "slides": [
         "test"
@@ -279,6 +284,18 @@
       ]
     },
     {
+      "id": "kickoff:q3-attribution",
+      "slides": [
+        "objective",
+        "example",
+        "attributes",
+        "us",
+        "competitors",
+        "white-space",
+        "line"
+      ]
+    },
+    {
       "id": "kickoff:q1-market-map",
       "slides": [
         "example"
@@ -296,13 +313,6 @@
     {
       "id": "kickoff:q3-attribution",
       "slides": [
-        "objective",
-        "example",
-        "attributes",
-        "us",
-        "competitors",
-        "white-space",
-        "line",
         "brainstorm",
         "score"
       ]
@@ -313,8 +323,8 @@
         "example"
       ],
       "override": {
-        "title": "Is this still your Core Customer?",
-        "headline": "Is this still your Core Customer?",
+        "title": "Is your Core Customer still right?",
+        "headline": "Is your Core Customer still right?",
         "notes": [
           "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
           "Read the three ranked needs aloud. The team tests the white space against them next.",
@@ -374,23 +384,33 @@
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "definition",
-        "map",
         "quarter-numbers"
       ]
     },
     {
       "id": "kickoff:priorities",
       "slides": [
-        "quality",
-        "worked-priority"
+        "quality"
       ]
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-first"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
+          "At a quarterly, add the worries and opportunities circled on the Market Map to the candidates.",
+          "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
+          "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
+          "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
+          "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
+          "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
+          "Agree on the done-by date, the measure of success and the date it will be achieved by.",
+          "Done is not the same as success. The owner commits to the done-by date. The achieved-by date is when the number must have moved. If it has not moved by then, find out why and fix the cause."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -416,12 +436,25 @@
     {
       "id": "kickoff:q2-sprint",
       "slides": [
-        "example",
-        "widgets",
-        "lanes",
-        "lane-one",
-        "build"
+        "example"
       ]
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "build"
+      ],
+      "override": {
+        "notes": [
+          "Start with the widgets, then take the priorities in rank order. The owner of each lane drafts it and the team questions it.",
+          "Building the plan together develops the team as much as the plan.",
+          "Allow about 45 minutes.",
+          "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
+          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers add up to the quarter’s targets.",
+          "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
+          "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
+        ]
+      }
     },
     {
       "id": "kickoff:q2-sprint",
@@ -442,25 +475,19 @@
         "priorities"
       ]
     },
-    "kickoff:individual",
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "my-priorities",
+        "read-back",
+        "plan-check"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
         "forecast"
       ]
-    },
-    {
-      "id": "kickoff:q1-cash",
-      "slides": [
-        "owners"
-      ],
-      "override": {
-        "notes": [
-          "The team learned these roles at Q1. They now apply to next year’s forecast.",
-          "Finance builds the model. Each leader owns the numbers for their widgets. The CEO owns the total.",
-          "When the forecast is wrong, the first question is which widget moved, not who to blame."
-        ]
-      }
     },
     "kickoff:q3-cash",
     {
@@ -476,7 +503,7 @@
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -506,9 +533,9 @@
             "items": [
               "Good news",
               "Values recognition",
-              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
-              "Review the KFFM",
-              "QHAG, priority and sprint lane status",
+              "Scoreboard: widget forecast and actual",
+              "KFFM and QHAG status",
+              "Priority status",
               "Stucks, asks and offers"
             ]
           }
@@ -517,7 +544,9 @@
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "All five meetings should be running: the three here, the Monthly Town Hall and Quarterly Planning.",
-          "New today: the KFFM review joins the weekly leadership meeting."
+          "New today: the KFFM review joins the weekly leadership meeting.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
       }
     },
@@ -525,7 +554,20 @@
       "id": "kickoff:q2-meetings",
       "slides": [
         "town-hall"
-      ]
+      ],
+      "override": {
+        "title": "Is your Monthly Town Hall working?",
+        "headline": "Is your Monthly Town Hall working?",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate it 0, 1 or 2.",
+        "notes": [
+          "Rate the Town Hall the same way as the other meetings: 0 below, 1 meets, 2 exceeds.",
+          "It runs 30 to 45 minutes, with everyone. The CEO owns it.",
+          "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
+          "This is the only meeting where the whole company hears the same thing at the same time.",
+          "Financial transparency builds the financial literacy of the whole team.",
+          "Show the Team View at a Town Hall only when it changes."
+        ]
+      }
     },
     "kickoff:q3-meetings",
     "kickoff:cascade-messages",

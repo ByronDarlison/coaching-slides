@@ -130,10 +130,7 @@
       ],
       "copy_stack": true,
       "support": "In Metronome: open One Page Plans. Read each value and the behaviour it means.",
-      "body": [
-        "No values there yet? Read the draft from your Mission to Mars session.",
-        "No draft either? Set a date for Mission to Mars and move on."
-      ],
+      "body": [],
       "notes": [
         "At a quarterly, the team arrives in one of three places: agreed Core Values, a draft from a Mission to Mars session, or neither.",
         "With agreed values, read them from the One Page Plan and go straight to the test.",
@@ -175,7 +172,7 @@
       ],
       "notes": [
         "These are the example company’s Core Values. Use them to show the form: a short name, then the behaviour.",
-        "Do not recommend adopting them. The team’s values come from the people named in the exercise.",
+        "Do not recommend adopting them. The team’s values are its own.",
         "Watch for a value with no clear behaviour behind it."
       ]
     },

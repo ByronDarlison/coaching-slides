@@ -17,7 +17,7 @@
         "q3"
       ],
       "notes": [
-        "Q3 has twelve steps. Review last quarter, agree the Core Values, assess the team, find the white space, then plan the quarter."
+        "Q3 has twelve steps. Review last quarter, confirm the Core Values, assess the team, find the white space, then plan the quarter."
       ],
       "art_full": true,
       "art_fit": true,
@@ -57,7 +57,7 @@
         "q3"
       ],
       "notes": [
-        "A check-in. Every leader has a function scorecard in Metronome by now."
+        "A check-in on the scorecards: each leader's own, and their direct reports'."
       ],
       "art_full": true,
       "art_fit": true,
@@ -77,7 +77,7 @@
         "q3"
       ],
       "notes": [
-        "Walk the KFFM again, part by part. New today: the KFFM joins the weekly leadership meeting."
+        "Check the map, then walk all six levers. New today: the KFFM joins the weekly leadership meeting."
       ],
       "art_full": true,
       "art_fit": true,
@@ -97,8 +97,8 @@
         "q3"
       ],
       "notes": [
-        "A quick pass on the Core Purpose. Then the team reads its Core Values, tests them and confirms them.",
-        "The BHAG pass follows the values."
+        "The team reads its Core Values, tests them and confirms them.",
+        "The Core Purpose and BHAG checks follow the values."
       ],
       "art_full": true,
       "art_fit": true,
@@ -118,7 +118,7 @@
         "q3"
       ],
       "notes": [
-        "New today: each leader assesses their direct reports against the Core Values the team has just agreed."
+        "New today: each leader assesses their direct reports against the Core Values and their scorecard."
       ],
       "art_full": true,
       "art_fit": true,
@@ -170,8 +170,8 @@
     },
     {
       "id": "plan",
-      "title": "Next, plan the next quarter.",
-      "headline": "Next, plan the next quarter.",
+      "title": "Next, check the year and plan the quarter.",
+      "headline": "Next, check the year and plan the quarter.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -199,7 +199,8 @@
         "q3"
       ],
       "notes": [
-        "The team built sprint lanes last quarter. Today it builds them again for the new QHAG."
+        "Today the team builds sprint lanes for the new QHAG.",
+        "A team building them for the first time takes the example slowly."
       ],
       "art_full": true,
       "art_fit": true,
