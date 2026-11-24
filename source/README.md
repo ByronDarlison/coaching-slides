@@ -20,7 +20,7 @@ Every compiled slide has a name: `<unit>-<slide>`, or just `<unit>` when the two
 
 ### Deck QR codes
 
-A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. The deck's address must be a plain folder address: `https`, ending in `/`, with no `?`, `#` or brackets. The code and the address beside it are both real links to the deck. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
+A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. The deck's address must be a plain folder address: `https`, ending in `/`, with no `?` or `#`, and no parentheses, angle brackets or braces. The code and the address beside it are both real links to the deck. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
 
 ### Impact report
 
@@ -78,7 +78,7 @@ A `comp-story` slide with artwork shows its title and picture. `art_side: true` 
  "targets": [{"points": [[80, 420], [300, 330], [920, 90]], "width": 22}, [90, 520, 250, 56]]}
 ```
 
-**Links and QR codes.** `artwork.links` makes parts of a picture clickable. Each link takes `x`, `y`, `w`, `h` (same units as hotspots, inside the viewbox), `href`, and an optional `label`. The compiler draws a real link over that part of the picture and a text link under the picture. The text shows `label`, or the address without `https://` when there is no label. Only plain `https` addresses are allowed: no other scheme, no sign-in part, no port, no spaces, quotes or brackets (write `(` and `)` as `%28` and `%29`). Every link opens in a new tab. Links work on `comp-story` slides.
+**Links and QR codes.** `artwork.links` makes parts of a picture clickable. Each link takes `x`, `y`, `w`, `h` (same units as hotspots, inside the viewbox), `href`, and an optional `label`. The compiler draws a real link over that part of the picture and a text link under the picture. The text shows `label`, or the address without `https://` when there is no label. Only plain `https` addresses are allowed: no other scheme, no sign-in part, no port, no spaces, quotes, backslashes, parentheses, angle brackets or braces (write `(` and `)` as `%28` and `%29`; square brackets in the path are fine). Every link opens in a new tab. Links work on `comp-story` slides.
 
 Mark a picture that holds a QR code with `"qr": true`. The compiler cannot see inside a picture, so this mark is how it knows. A picture marked `qr` with no `links` fails the build. Record one link per code.
 
