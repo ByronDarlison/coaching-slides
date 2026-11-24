@@ -58,8 +58,8 @@
     },
     {
       "id": "attributes",
-      "title": "Attributes describe the whole market.",
-      "headline": "Attributes describe the whole market.",
+      "title": "Attributes are what everyone on your Market Map compares companies on.",
+      "headline": "Attributes are what everyone on your Market Map compares companies on.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -175,8 +175,9 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Work on your own first. Write 5 to 7 attributes of your market.",
+      "support": "Start from your Market Map: buyers, channels, influencers and acquirers.",
       "body": [
+        "Work on your own first. Write 5 to 7 attributes of your market.",
         "A small team writes 7 to 10 each.",
         "Then share them. Group similar ones and name each group.",
         "Aim for 12 to 15 attributes."
