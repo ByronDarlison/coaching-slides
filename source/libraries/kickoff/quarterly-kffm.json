@@ -120,8 +120,8 @@
     },
     {
       "id": "lever",
-      "title": "Which lever moves cash fastest this quarter?",
-      "headline": "Which lever moves cash fastest this quarter?",
+      "title": "Go through all six levers on your KFFM.",
+      "headline": "Go through all six levers on your KFFM.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -129,14 +129,19 @@
         "quarterly"
       ],
       "notes": [
+        "Go lever by lever: quantity, conversion, price, timing, capacity, cost. For each one, ask its owner what they did to push it last quarter and what moved.",
+        "A lever nobody is pushing is a finding. Write it down.",
+        "Then the team picks the lever that moves cash fastest this quarter. Name the function, the widget and the owner.",
         "Take the chosen lever into the QHAG as a priority candidate."
       ],
-      "support": "Pick one lever. It feeds your QHAG priorities.",
+      "support": "In Metronome: open KFFM. Take one lever at a time.",
       "body": [
-        "Quantity, conversion, price, timing, capacity or cost.",
+        "Are you pushing it? What moved last quarter?",
+        "Then: which lever moves cash fastest this quarter?",
         "Name the function, the widget and the owner."
       ],
-      "copy_stack": true
+      "copy_stack": true,
+      "checklist": true
     }
   ]
 }
