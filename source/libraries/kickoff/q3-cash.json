@@ -24,7 +24,6 @@
         "Put a name on every line of the profit and loss."
       ],
       "notes": [
-        "Finance builds the model. Each leader owns the numbers for their own widgets. The CEO owns the total. When the forecast is wrong, the first question is which widget moved, not who to blame.",
         "The team already forecasts its widgets week by week. Next year’s forecast uses the same widgets, month by month.",
         "Scan the code, then choose File and Make a copy in Google Sheets.",
         "The forecast is not a budget. It shows where cash is heading.",

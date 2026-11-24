@@ -589,6 +589,19 @@
         "forecast"
       ]
     },
+    {
+      "id": "kickoff:q1-cash",
+      "slides": [
+        "owners"
+      ],
+      "override": {
+        "notes": [
+          "The team learned these roles at Q1. They now apply to next year’s forecast, which is new today.",
+          "Finance builds the model. Each leader owns the numbers for their widgets. The CEO owns the total.",
+          "When the forecast is wrong, the first question is which widget moved, not who to blame."
+        ]
+      }
+    },
     "kickoff:q3-cash",
     {
       "id": "kickoff:q3-path",
