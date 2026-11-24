@@ -68,12 +68,17 @@ def dropped_text(unit: dict[str, Any], message: str) -> None:
 
 
 def number(value: Any) -> bool:
-    """A real, finite number. JSON true and false are not numbers here."""
-    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+    """A real, finite number of a sane size. JSON true and false are not numbers here."""
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return False
+    if isinstance(value, float) and not math.isfinite(value):
+        return False
+    return -1e9 <= value <= 1e9
 
 
 # The only network address a compiled deck may carry: a link a person chooses to click.
-DECK_LINK = re.compile(r'<a class="deck-link[^"]*" href="https://[^"]*" target="_blank" rel="noopener"')
+# The pattern admits only what link_tag writes, so no other text can hide an address inside it.
+DECK_LINK = re.compile(r'<a class="deck-link(?: [a-z-]+)*" href="https://[^"\s<>()\\]*" target="_blank" rel="noopener"')
 LINK_HOST = re.compile(r"[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+")
 
 
@@ -95,6 +100,8 @@ def safe_link(value: Any) -> str:
 
 
 def link_label(value: Any, href: str) -> str:
+    if value is not None and not isinstance(value, str):
+        raise CompileError("a link label is a line of text")
     label = visible_text(value) or display_url(href)
     if "://" in label:
         raise CompileError("a link label shows the address without https://")
@@ -102,9 +109,12 @@ def link_label(value: Any, href: str) -> str:
 
 
 def link_tag(href: str, extra: str = "") -> str:
-    """The opening tag of every link the compiler writes. DECK_LINK must match it."""
+    """The opening tag of every link the compiler writes. DECK_LINK must match it.
+
+    Every address is checked here as well as where it is read, so no caller can skip the check.
+    """
     css = f"deck-link {extra}".strip()
-    return f'<a class="{css}" href="{escape(href)}" target="_blank" rel="noopener"'
+    return f'<a class="{css}" href="{escape(safe_link(href))}" target="_blank" rel="noopener"'
 
 
 def repo_root() -> Path:
@@ -206,6 +216,8 @@ def resolve_playlist(playlist: dict[str, Any], library: Path | None = None) -> l
             if not isinstance(slide, dict):
                 raise CompileError("slide must be an object")
             sid = identifier(slide.get("id"), "slide id")
+            if any(str(key).startswith("_") for key in slide):
+                raise CompileError(f"slide {ref}#{sid} sets a build-only field; names starting with _ belong to the compiler")
             if sid in by_id:
                 raise CompileError(f"duplicate slide id: {sid}")
             by_id[sid] = slide
@@ -269,7 +281,10 @@ def bundle_asset(root: Path, src: Any, dest: Path) -> tuple[str, str]:
     """Copy one library image into the build under a content hash. Fail closed."""
     if not isinstance(src, str) or not src:
         raise CompileError("an image needs a local src")
-    source = (root / src).resolve()
+    try:
+        source = (root / src).resolve()
+    except (OSError, ValueError) as exc:
+        raise CompileError("artwork must be an image inside its library") from exc
     if not source.is_relative_to(root) or source.suffix.lower() not in IMAGE_SUFFIXES:
         raise CompileError("artwork must be an image inside its library")
     if not source.is_file():
@@ -305,14 +320,14 @@ _HOT_IDS = itertools.count(1)
 
 def view_box(art: dict[str, Any], what: str) -> tuple[float, float]:
     box = art.get("viewbox")
-    if not (isinstance(box, list) and len(box) == 2 and all(isinstance(v, (int, float)) and v > 0 for v in box)):
+    if not (isinstance(box, list) and len(box) == 2 and all(number(v) and v > 0 for v in box)):
         raise CompileError(f"{what} need a viewbox of [width, height]")
     return box[0], box[1]
 
 
 def target_hole(target: Any) -> str:
     """One bright area in a hotspot's dim mask: an [x, y, w, h] box, or a line along points."""
-    if isinstance(target, list) and len(target) == 4 and all(isinstance(v, (int, float)) for v in target):
+    if isinstance(target, list) and len(target) == 4 and all(number(v) for v in target):
         tx, ty, tw, th = target
         return f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="black"/>'
     if isinstance(target, dict) and set(target) == {"points", "width"}:
@@ -334,7 +349,7 @@ def hotspot_parts(art: dict[str, Any], width: float, height: float) -> list[str]
         raise CompileError("hotspots must be a list")
     parts = []
     for spot in spots:
-        if not isinstance(spot, dict) or not all(isinstance(spot.get(k), (int, float)) for k in ("x", "y", "w", "h")):
+        if not isinstance(spot, dict) or not all(number(spot.get(k)) for k in ("x", "y", "w", "h")) or not (spot["w"] and spot["h"]):
             raise CompileError("each hotspot needs numeric x, y, w and h")
         term, tip = visible_text(spot.get("term")), visible_text(spot.get("tip"))
         if not term or not tip:
@@ -397,7 +412,7 @@ def art_overlay(image: str, art: dict[str, Any]) -> tuple[str, str]:
     Returns the wrapped picture and the row of text links that goes beneath it.
     """
     has_spots, has_links = bool(art.get("hotspots")), art.get("links") is not None
-    if art.get("qr") not in (None, True, False):
+    if art.get("qr") is not None and not isinstance(art.get("qr"), bool):
         raise CompileError('artwork "qr" is true or false')
     if art.get("qr") is True and not has_links:
         raise CompileError('a picture marked "qr": true must record a link for each code in "links"')
@@ -434,7 +449,7 @@ def image_ratio(path: Path) -> float:
             if data[:8] == b"\x89PNG\r\n\x1a\n":
                 wide, tall = struct.unpack(">II", data[16:24])
                 ratio = wide / tall if tall else None
-    except (OSError, ValueError):
+    except (OSError, ValueError, struct.error):
         ratio = None
     return round(min(4.0, max(0.4, ratio)), 4) if ratio else 1.6
 
@@ -448,7 +463,7 @@ def prepare_terms(unit: dict[str, Any], root: Path, dest: Path) -> None:
     for entry in terms:
         if isinstance(entry, dict) and entry.get("image") is not None:
             image = entry["image"]
-            if not isinstance(image, dict) or set(image) - {"src", "alt"} or not visible_text(image.get("alt")):
+            if not isinstance(image, dict) or set(image) - {"src", "alt"} or not isinstance(image.get("alt"), str) or not visible_text(image["alt"]):
                 raise CompileError("a term image needs a local src and descriptive alt text")
             relative, _ = bundle_asset(root, image.get("src"), dest)
             entry = {**entry, "_image": {"src": relative, "alt": visible_text(image["alt"]), "ratio": image_ratio((root / image["src"]).resolve())}}
@@ -557,11 +572,14 @@ def term_tips(html: str, unit: dict[str, Any], below: bool = False) -> str:
     """Wrap each listed term in already-escaped text with a hover definition (unit "terms").
 
     A term may show text lines ("tip"), a library picture ("image"), or both. "below" opens the
-    box under the word, for a title at the top of a slide.
+    box under the word, for a title at the top of a slide. Terms are matched against the text
+    as written, never inside a tag or inside another term's box, and matches cannot overlap.
     """
     terms = unit.get("terms") or []
     if not isinstance(terms, list):
         raise CompileError("terms must be a list")
+    tokens = re.split(r"(<[^>]*>)", html)  # even places are text, odd places are tags
+    claimed: dict[int, list[tuple[int, int, str]]] = {}
     for entry in terms:
         term, tip = visible_text(entry.get("term")) if isinstance(entry, dict) else "", entry.get("tip") if isinstance(entry, dict) else None
         lines = tip if isinstance(tip, list) else [tip]
@@ -585,8 +603,20 @@ def term_tips(html: str, unit: dict[str, Any], below: bool = False) -> str:
             css += " term--below"
         span = (f'<span class="{css}" tabindex="0" aria-label="{label}: {escape(spoken)}">{label}'
                 f'<span class="hotspot-tip" role="tooltip"><strong>{label}</strong>{body}</span></span>')
-        html = html.replace(label, span, 1)
-    return html
+        for place in range(0, len(tokens), 2):
+            taken = claimed.get(place, [])
+            start = tokens[place].find(label)
+            while start != -1 and any(start < end and begin < start + len(label) for begin, end, _ in taken):
+                start = tokens[place].find(label, start + 1)
+            if start != -1:
+                claimed.setdefault(place, []).append((start, start + len(label), span))
+                break
+    for place, matches in claimed.items():
+        text = tokens[place]
+        for begin, end, span in sorted(matches, reverse=True):
+            text = text[:begin] + span + text[end:]
+        tokens[place] = text
+    return "".join(tokens)
 
 
 def support_paragraphs(unit: dict[str, Any]) -> str:
@@ -636,7 +666,7 @@ def accent_heading_html(unit: dict[str, Any], css_class: str) -> str:
     accent = visible_text(unit.get("headline_accent"))
     if not headline:
         return ""
-    tail = f' <span class="title-accent">{escape(accent)}</span>' if accent else ""
+    tail = f' <span class="title-accent">{term_tips(escape(accent), unit, below=True)}</span>' if accent else ""
     return f'        <h1 class="{css_class}">{term_tips(escape(headline), unit, below=True)}{tail}</h1>\n'
 
 

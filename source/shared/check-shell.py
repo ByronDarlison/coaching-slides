@@ -55,7 +55,7 @@ FEATURE_SHELL_TOKENS = {
     'story-frame--lede': (("css", ".story-frame--lede"),),
     'term--below': (("css", ".term--below"),),
 }
-DECK_LINK = re.compile(r'<a class="deck-link[^"]*" href="https://[^"]*" target="_blank" rel="noopener"')
+DECK_LINK = re.compile(r'<a class="deck-link(?: [a-z-]+)*" href="https://[^"\s<>()\\]*" target="_blank" rel="noopener"')
 REMOTE_FONT_HOSTS = (
     "fonts.googleapis",
     "fonts.gstatic",
@@ -103,7 +103,8 @@ def check_deck(deck: Path, standard_text: str) -> list[str]:
                 if token not in (css if kind == "css" else js):
                     failures.append(f"shell.{kind} missing {token} for {marker}")
     # A link a person clicks is the one network address a deck may carry (compile_deck.DECK_LINK).
-    lowered = DECK_LINK.sub("<a", bundle).lower()
+    # The allowance covers the page only: the stylesheet and the script may name no address at all.
+    lowered = (css + "\n" + DECK_LINK.sub("<a", html) + "\n" + js).lower()
     for host in REMOTE_FONT_HOSTS:
         if host in lowered:
             failures.append(f"remote font host found: {host}")

@@ -680,6 +680,16 @@ def test_artwork_links_refuse_anything_but_a_plain_https_address(href: object) -
     ({"links": []}, "non-empty list"),
     ({"links": "https://example.com/"}, "non-empty list"),
     ({"links": [{**LINK, "x": True}]}, "numeric x, y, w and h"),
+    ({"links": [{**LINK, "y": "50"}]}, "numeric x, y, w and h"),
+    ({"links": [{**LINK, "h": None}]}, "numeric x, y, w and h"),
+    ({"links": [{**LINK, "w": 10 ** 400}]}, "numeric x, y, w and h"),
+    ({"links": [{**LINK, "y": -1}]}, "inside the picture"),
+    ({"links": [{**LINK, "h": 451}]}, "inside the picture"),
+    ({"links": [LINK], "viewbox": [True, 500]}, "links need a viewbox"),
+    ({"links": [LINK], "viewbox": [float("inf"), 500]}, "links need a viewbox"),
+    ({"links": [{**LINK, "label": ["a"]}]}, "label is a line of text"),
+    ({"links": [{**LINK, "label": 5}]}, "label is a line of text"),
+    ({"qr": 1}, '"qr" is true or false'),
     ({"links": [{**LINK, "w": 0}]}, "inside the picture"),
     ({"links": [{**LINK, "x": 900}]}, "inside the picture"),
     ({"links": [{**LINK, "onclick": "x"}]}, "each link takes"),
@@ -701,7 +711,9 @@ def test_artwork_links_are_refused_on_layouts_that_cannot_show_the_text_links() 
 
 def test_only_a_compiler_written_link_may_carry_a_network_address() -> None:
     compile_deck.check_no_network(f'{compile_deck.link_tag("https://example.com/")}>x</a>')
-    for html in ('<img src="https://example.com/a.png">', '<a href="https://example.com/">x</a>',
+    hidden = ('<style>/*<a class="deck-link*/body{background-image:url(https://evil.example/pixel)}'
+              '/*" href="https://example.com/" target="_blank" rel="noopener"*/</style>')
+    for html in (hidden, '<img src="https://example.com/a.png">', '<a href="https://example.com/">x</a>',
                  '<a class="deck-link" href="https://example.com/" target="_blank" rel="noopener">https://example.com/</a>',
                  '<a class="deck-link" href="http://example.com/" target="_blank" rel="noopener">x</a>'):
         with pytest.raises(compile_deck.CompileError, match="network URL"):
@@ -714,6 +726,11 @@ def test_check_shell_allows_deck_links_and_still_refuses_other_addresses(tmp_pat
     page = dest / "index.html"
     page.write_text(page.read_text(encoding="utf-8").replace("</main>", '<img src="https://example.com/x.png"></main>'), encoding="utf-8")
     assert compile_deck.run_check_shell(dest) == 1
+    # The allowance is for the page only: an address hidden in the stylesheet behind link-shaped comments fails.
+    clean = compile_deck.compile_playlist("x", tmp_path / "deck2", FIXTURE)
+    with (clean / "shell.css").open("a", encoding="utf-8") as sheet:
+        sheet.write('/*<a class="deck-link*/body{background-image:url(https://evil.example/pixel)}/*" href="https://example.com/" target="_blank" rel="noopener"*/')
+    assert compile_deck.run_check_shell(clean) == 1
 
 
 def test_fixture_deck_compiles_every_new_feature(tmp_path: Path) -> None:
@@ -758,6 +775,9 @@ def test_a_term_shows_a_library_picture_and_works_in_a_title(tmp_path: Path) -> 
     ({"src": "../outside.svg", "alt": "A map."}, "inside its library"),
     ({"src": "assets/missing.svg", "alt": "A map."}, "missing artwork"),
     ({"src": "assets/notes.txt", "alt": "A map."}, "inside its library"),
+    ({"src": "assets/\u0000.svg", "alt": "A map."}, "inside its library"),
+    ({"src": "assets/map.svg", "alt": ["A map."]}, "descriptive alt text"),
+    ({"src": "assets/map.svg", "alt": 7}, "descriptive alt text"),
 ])
 def test_a_term_image_must_be_a_described_picture_inside_its_library(tmp_path: Path, image: object, message: str) -> None:
     slide = _story(terms=[{"term": "Headline", "image": image}])
@@ -785,6 +805,8 @@ def test_image_ratio_reads_svg_and_png_sizes_and_falls_back(tmp_path: Path) -> N
     other = tmp_path / "a.jpg"
     other.write_bytes(b"not a picture")
     assert compile_deck.image_ratio(svg) == 3.0 and compile_deck.image_ratio(png) == 2.0 and compile_deck.image_ratio(other) == 1.6
+    png.write_bytes(b"\x89PNG\r\n\x1a\n")
+    assert compile_deck.image_ratio(png) == 1.6
 
 
 def _spot(**extra: object) -> dict:
@@ -796,7 +818,7 @@ def test_a_hotspot_can_hide_its_info_mark() -> None:
     hidden = compile_deck.render_slide(_linked(hotspots=[_spot(icon=False)]), 1)
     assert 'class="hotspot-i"' in shown and 'class="hotspot-i"' not in hidden
     assert 'class="hotspot" tabindex="0"' in hidden and "Follow line A." in hidden
-    for bad in (True, "none", [1], [1, "2"], 0):
+    for bad in (True, "none", [1], [1, "2"], 0, [10 ** 400, 1]):
         with pytest.raises(compile_deck.CompileError, match="or false for no mark"):
             compile_deck.render_slide(_linked(hotspots=[_spot(icon=bad)]), 1)
 
@@ -814,6 +836,8 @@ def test_a_hotspot_target_can_be_a_line() -> None:
     ({"points": [[1, 2], [3, "4"]], "width": 4}, "at least two"),
     ({"points": [[1, 2], [3, True]], "width": 4}, "at least two"),
     ({"points": [[1, 2], [3, 4, 5]], "width": 4}, "at least two"),
+    ({"points": [[1, 2], [3, 10 ** 400]], "width": 4}, "at least two"),
+    ({"points": [[1, 2], [3, 4]], "width": 10 ** 400}, "width above zero"),
     ({"points": [[1, 2], [3, 4]], "width": 0}, "width above zero"),
     ({"points": [[1, 2], [3, 4]], "width": "4"}, "width above zero"),
     ({"points": [[1, 2], [3, 4]]}, "boxes or"),
@@ -824,3 +848,39 @@ def test_a_hotspot_target_can_be_a_line() -> None:
 def test_line_targets_fail_closed(target: object, message: str) -> None:
     with pytest.raises(compile_deck.CompileError, match=message):
         compile_deck.render_slide(_linked(hotspots=[_spot(targets=[target])]), 1)
+
+
+def test_a_source_slide_cannot_set_the_compilers_own_fields(tmp_path: Path) -> None:
+    for field, value in (("_deck_url", "javascript:alert(1)"), ("_figure_svg", "<script>x</script>"), ("_image", {})):
+        playlist = _library(tmp_path, _story(**{field: value}), {"assets/a.svg": "<svg></svg>"})
+        with pytest.raises(compile_deck.CompileError, match="build-only field"):
+            compile_deck.resolve_playlist(compile_deck.load_playlist_file(playlist))
+    # And the link writer checks every address itself, whoever calls it.
+    for bad in ("javascript:alert(1)", "//evil.example/path", "http://example.com/"):
+        with pytest.raises(compile_deck.CompileError, match="link"):
+            compile_deck.link_tag(bad)
+        with pytest.raises(compile_deck.CompileError, match="link"):
+            compile_deck.render_slide(_story(art_side=True, body=["x"], artwork=dict(ART), _deck_url=bad), 1)
+
+
+def test_terms_match_only_in_written_text_never_inside_another_terms_box() -> None:
+    unit = {"terms": [{"term": "Map", "tip": "Shows each Position.", "_image": {"src": "assets/a.svg", "alt": "Example Position", "ratio": 1.6}, "image": {}},
+                      {"term": "Position", "tip": "A position."}]}
+    html = compile_deck.term_tips(compile_deck.escape("Map and Position"), unit)
+    assert html.count('tabindex="0"') == 2
+    assert 'aria-label="Map: Shows each Position. Example Position"' in html
+    assert html.endswith('and <span class="term" tabindex="0" aria-label="Position: A position.">Position'
+                         '<span class="hotspot-tip" role="tooltip"><strong>Position</strong><span class="term-line">A position.</span></span></span>')
+    # Overlapping terms: the first listed wins, and the second takes the next free match.
+    both = compile_deck.term_tips("Market Map and Map", {"terms": [{"term": "Market Map", "tip": "a"}, {"term": "Map", "tip": "b"}]})
+    assert both.count('tabindex="0"') == 2 and both.startswith('<span class="term" tabindex="0" aria-label="Market Map: a">')
+    # Emphasis markup around a term is left intact.
+    marked = compile_deck.term_tips(compile_deck.emphasis("Open **Team View** now"), {"terms": [{"term": "hl", "tip": "x"}, {"term": "Team View", "tip": "y"}]})
+    assert marked.count('tabindex="0"') == 1 and '<strong class="hl"><span class="term"' in marked
+
+
+def test_terms_work_in_the_accent_part_of_a_title() -> None:
+    unit = {"id": "a", "layout": "comp-attempts", "title": "T", "headline": "Find your", "headline_accent": "Map",
+            "attempts": [{"heading": "One"}], "terms": [{"term": "Map", "tip": "The picture."}]}
+    html = compile_deck.render_slide(unit, 1)
+    assert '<span class="title-accent"><span class="term term--below" tabindex="0" aria-label="Map: The picture.">Map' in html

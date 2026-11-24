@@ -59,7 +59,7 @@ A populated title requires artwork.
 
 A `comp-story` slide with artwork shows its title and picture. `art_side: true` puts the title, `support` and `body` beside the picture. `art_full: true` gives the picture the full width, and `art_fit: true` lets a short wide drawing set its own height.
 
-**Instruction line.** An `art_full` slide shows `support` as one line under the title, above the drawing. It cannot show `body`. Text a drawing slide cannot show prints a `WARNING` naming the slide. Pass `--fail-on-dropped-text` to make it stop the build; that becomes the default once the two published slides that still carry such text are fixed.
+**Instruction line.** An `art_full` slide shows `support` as one line under the title, above the drawing. It cannot show `body`. Text a drawing slide cannot show prints a `WARNING` naming the slide. Pass `--fail-on-dropped-text` to make it stop the build. Stopping is the intended default; it is a switch for now only because published slides still carry such text.
 
 ```json
 {"layout": "comp-story", "art_full": true, "headline": "Does every function have an owner?",
@@ -89,7 +89,7 @@ Mark a picture that holds a QR code with `"qr": true`. The compiler cannot see i
 
 A compiled deck still loads nothing from the network. These links are the one place an address may appear, and `check-shell.py` enforces that.
 
-**Hover terms.** `terms` on a slide is a list of words that show a definition box on hover, on keyboard focus, and as a tap-to-open sheet on a small screen. Each entry takes `term` and `tip` (one line or a list of lines). The first match in the slide title, in `support`, in each `body` line and in card text is wrapped. A term can also show a library picture with `image`, which takes a library-relative `src` and descriptive `alt`. With `image`, `tip` is optional. The picture is sized to stay inside the slide.
+**Hover terms.** `terms` on a slide is a list of words that show a definition box on hover, on keyboard focus, and as a tap-to-open sheet on a small screen. Each entry takes `term` and `tip` (one line or a list of lines). The first match is wrapped in each of these places: the slide title (and its `headline_accent`), `support` and each `body` line on a `comp-story` or `about-timeline` slide, and each card's `support` and `items`. The line under a card slide's title and the line on a `comp-rule` slide are not wrapped. A term is matched in the text as written, never inside another term's box. A term can also show a library picture with `image`, which takes a library-relative `src` and descriptive `alt`. With `image`, `tip` is optional. The picture is sized to stay inside the slide.
 
 ```json
 "terms": [{"term": "Market Map", "tip": "Where each competitor sits.",
