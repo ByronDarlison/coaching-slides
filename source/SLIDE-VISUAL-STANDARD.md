@@ -92,6 +92,15 @@ Learned reviewing the Q3 deck (Byron, 23-Nov-2026):
 
 23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use it in the quarterly decks only, as a playlist `override`: a Kick Off team has no account yet. Use text, never a screenshot of Metronome. A full-width drawing slide cannot show the line yet.
 
+Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
+
+24. **A later session checks. It does not teach again.** Once the team has the tool, one slide checks it: a title that asks, the ask on screen, and the teaching in the notes. Drop the example slide. The Function Chart check at Q2 and Q3 is the model. The session that first teaches the tool keeps its teaching slides.
+25. **The check is on the screen.** A reused slide whose `override` changes only the notes still shows the old teaching. Change the title and the ask as well.
+26. **Never assume where the team is.** One team arrives with the work finished, another with a draft, another with nothing. Write each slide so it is true for all three. Keep "draft", "later today" and "once we agree" off the screen.
+27. **Every line on screen earns its place.** A person reading it cold must know why it is asked. Test a line before lifting it from the notes.
+28. **Trace what each exercise needs.** When an exercise needs something the team must bring, an earlier session sets it as homework and this session checks it before the exercise starts. The A-Player grid needs a scorecard for every direct report, so direct reports have scorecards by Q3.
+29. **Fix the pattern, not the slide.** When one slide is wrong, sweep the whole deck and its sister decks for the same fault. Bring Byron the full list before he finds the next one.
+
 ## Layouts
 
 - `title`: opening headline and relevant illustration.
