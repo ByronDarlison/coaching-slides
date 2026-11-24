@@ -86,8 +86,9 @@ def safe_link(value: Any) -> str:
     """Return an https address fit to print in an href, or fail closed."""
     if not isinstance(value, str) or not value.startswith("https://") or not value.isascii():
         raise CompileError("a link needs an https address")
-    if re.search(r"[\s\"'<>\\`{}|^\x00-\x1f\x7f]", value):
-        raise CompileError(f"a link address cannot contain spaces, quotes or brackets: {value!r}")
+    # One spelling of an address everywhere (href, text, frozen copy): nothing is re-encoded on the way out.
+    if re.search(r"[\s\"'<>()\\`{}|^\x00-\x1f\x7f]", value):
+        raise CompileError(f"a link address cannot contain spaces, quotes or brackets; write ( and ) as %28 and %29: {value!r}")
     try:
         parts = urlsplit(value)
         port = parts.port
@@ -117,9 +118,7 @@ def link_tag(href: str, extra: str = "") -> str:
     Every address is checked here as well as where it is read, so no caller can skip the check.
     """
     css = f"deck-link {extra}".strip()
-    # Parentheses are legal in an address; written as %28 and %29 they cannot read as a CSS url().
-    address = safe_link(href).replace("(", "%28").replace(")", "%29")
-    return f'<a class="{css}" href="{escape(address)}" target="_blank" rel="noopener"'
+    return f'<a class="{css}" href="{escape(safe_link(href))}" target="_blank" rel="noopener"'
 
 
 def repo_root() -> Path:
@@ -505,6 +504,9 @@ def prepare_artwork(units: list[dict[str, Any]], dest: Path, deck_url: str | Non
                 raise CompileError("a deck_qr slide needs the deck's public URL")
             write_deck_qr(dest, deck_url)
             unit["artwork"] = {"src": DECK_QR, "alt": deck_qr_alt(deck_url)}
+            # Freezing rewrites this address by its folder form, so a query or fragment would be left behind.
+            if not deck_url.endswith("/") or "?" in deck_url or "#" in deck_url:
+                raise CompileError("a deck's public address is a folder address ending in /, with no ? or #")
             unit["_deck_url"] = safe_link(deck_url)
             unit["body"] = [display_url(deck_url) if item == "{deck_url}" else item for item in unit.get("body") or []]
             prepare_terms(unit, root, dest)

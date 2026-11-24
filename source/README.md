@@ -78,7 +78,7 @@ A `comp-story` slide with artwork shows its title and picture. `art_side: true` 
  "targets": [{"points": [[80, 420], [300, 330], [920, 90]], "width": 22}, [90, 520, 250, 56]]}
 ```
 
-**Links and QR codes.** `artwork.links` makes parts of a picture clickable. Each link takes `x`, `y`, `w`, `h` (same units as hotspots, inside the viewbox), `href`, and an optional `label`. The compiler draws a real link over that part of the picture and a text link under the picture. The text shows `label`, or the address without `https://` when there is no label. Only plain `https` addresses are allowed: no other scheme, no sign-in part, no port, no spaces or quotes. Every link opens in a new tab. Links work on `comp-story` slides.
+**Links and QR codes.** `artwork.links` makes parts of a picture clickable. Each link takes `x`, `y`, `w`, `h` (same units as hotspots, inside the viewbox), `href`, and an optional `label`. The compiler draws a real link over that part of the picture and a text link under the picture. The text shows `label`, or the address without `https://` when there is no label. Only plain `https` addresses are allowed: no other scheme, no sign-in part, no port, no spaces, quotes or brackets (write `(` and `)` as `%28` and `%29`). Every link opens in a new tab. Links work on `comp-story` slides.
 
 Mark a picture that holds a QR code with `"qr": true`. The compiler cannot see inside a picture, so this mark is how it knows. A picture marked `qr` with no `links` fails the build. Record one link per code.
 

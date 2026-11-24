@@ -666,8 +666,8 @@ def test_artwork_links_render_as_real_links_over_the_picture_and_as_text() -> No
     assert 'class="story-panel story-panel--art story-panel--links"' in html
     assert html.index("art-hot") < html.index('class="art-links"')
     compile_deck.check_no_network(html)
-    # Parentheses are legal in an address and are written encoded, so the network check still passes.
-    wiki = compile_deck.render_slide(_linked(links=[{**LINK, "href": "https://example.com/guide_(overview)"}]), 1)
+    # An address is written exactly as given, so parentheses arrive already encoded and pass both checks.
+    wiki = compile_deck.render_slide(_linked(links=[{**LINK, "href": "https://example.com/guide_%28overview%29"}]), 1)
     assert 'href="https://example.com/guide_%28overview%29"' in wiki
     compile_deck.check_no_network(wiki)
 
@@ -675,7 +675,7 @@ def test_artwork_links_render_as_real_links_over_the_picture_and_as_text() -> No
 @pytest.mark.parametrize("href", [
     "http://example.com/", "javascript:alert(1)", "//example.com/", "mailto:a@example.com", "https://", "https://localhost/",
     "https://user@example.com/", "https://example.com:8443/", 'https://example.com/"onmouseover="x', "https://example.com/a b",
-    "https://example.com/<script>", "HTTPS://example.com/", " https://example.com/", "https://ex\u00e4mple.com/", 7, None,
+    "https://example.com/<script>", "https://example.com/guide_(overview)", "https://example.com/?q=(a)", "HTTPS://example.com/", " https://example.com/", "https://ex\u00e4mple.com/", 7, None,
 ])
 def test_artwork_links_refuse_anything_but_a_plain_https_address(href: object) -> None:
     with pytest.raises(compile_deck.CompileError, match="link"):
@@ -908,3 +908,35 @@ def test_titles_balance_and_supporting_text_fills_the_line() -> None:
     # The last text-wrap rule that reaches a story or card support line must not be balance.
     assert ".story-frame .support, .card-lede { text-wrap: pretty; }" in css
     assert css.rindex(".story-frame .support, .card-lede { text-wrap: pretty; }") > css.rindex("text-wrap: balance")
+
+
+@pytest.mark.parametrize("master", [
+    "https://example.com/decks/probe/",
+    "https://example.com/deck_%28overview%29/",
+    "https://example.com/a&b/decks/",
+])
+def test_freezing_rewrites_every_link_on_the_qr_slide(tmp_path: Path, master: str) -> None:
+    slide = _story(id="qr", art_side=True, deck_qr=True, body=["{deck_url}"])
+    playlist = _library(tmp_path, slide, {"assets/a.svg": "<svg></svg>"})
+    data = json.loads(playlist.read_text(encoding="utf-8"))
+    playlist.write_text(json.dumps({**data, "id": "probe", "public_url": master}), encoding="utf-8")
+    site = tmp_path / "site"
+    compile_deck.compile_playlist("probe", site / "custom", playlist)
+    built = (site / "custom" / "index.html").read_text(encoding="utf-8")
+    assert built.count(f'href="{compile_deck.escape(master)}"') == 2
+    target = compile_deck.freeze_copy(site, "probe", "2026-11-24", False, source_rel="custom", today="2026-11-24")
+    page = (target / "index.html").read_text(encoding="utf-8")
+    copy_url = compile_deck.frozen_url("probe", "2026-11-24")
+    assert page.count(f'href="{copy_url}"') == 2
+    assert compile_deck.escape(master) not in page and compile_deck.escape(compile_deck.display_url(master)) not in page
+    assert f">{compile_deck.display_url(copy_url)}</a></p>" in page
+
+
+def test_a_deck_address_with_brackets_is_refused_before_anything_is_built(tmp_path: Path) -> None:
+    playlist = _library(tmp_path, _story(id="qr", art_side=True, deck_qr=True, body=["{deck_url}"]), {"assets/a.svg": "<svg></svg>"})
+    data = json.loads(playlist.read_text(encoding="utf-8"))
+    for address, message in (("https://example.com/deck_(overview)/", "%28"), ("https://example.com/deck/?v=1", "folder address"),
+                             ("https://example.com/deck/#top", "folder address"), ("https://example.com/deck", "folder address")):
+        playlist.write_text(json.dumps({**data, "public_url": address}), encoding="utf-8")
+        with pytest.raises(compile_deck.CompileError, match=message):
+            compile_deck.compile_playlist("about", tmp_path / "out", playlist)
