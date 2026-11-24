@@ -179,8 +179,8 @@
     },
     {
       "id": "plans",
-      "title": "Everyone below A gets a plan.",
-      "headline": "Everyone below A gets a plan.",
+      "title": "Everyone below A gets a plan. Leave a B in place and you become one.",
+      "headline": "Everyone below A gets a plan. Leave a B in place and you become one.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -194,7 +194,8 @@
         "A C needs a plan right away. Do not wait for the next quarterly.",
         "For a values gap, the decision is about fit. For a performance gap, it is about improving.",
         "Review every plan at the agreed check-ins, and again next quarter.",
-        "Homework: each leader makes a plan and takes action on any C player."
+        "Homework: each leader makes a plan and takes action on any C player.",
+        "A leader with B players who stay at B for too long drops to that same level. The leader ends up doing the team’s work, not coaching the team to do it. Moving Bs back to As is not optional."
       ],
       "artwork": {
         "src": "assets/a-player-plans.svg",
