@@ -397,9 +397,9 @@
         "qr": true,
         "links": [
           {
-            "x": 141,
+            "x": 40,
             "y": 20,
-            "w": 378,
+            "w": 580,
             "h": 600,
             "href": "https://docs.google.com/spreadsheets/d/1U7ezTJPoIBdC1HR5Z2H_XcRE0TcOxMHL4_XNJET0j3A/edit",
             "label": "Attribution Map sheet"

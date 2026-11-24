@@ -225,17 +225,17 @@
         "qr": true,
         "links": [
           {
-            "x": 284,
+            "x": 258,
             "y": 20,
-            "w": 396,
+            "w": 444,
             "h": 600,
             "href": "https://www.darlison.com/values-how-not-to-chase-your-tail/",
             "label": "Article: Values: How Not To Chase Your Tail"
           },
           {
-            "x": 760,
+            "x": 738,
             "y": 20,
-            "w": 397,
+            "w": 444,
             "h": 600,
             "href": "https://www.darlison.com/values-discovery-prompt/",
             "label": "Prompt: Values Discovery"

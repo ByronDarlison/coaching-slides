@@ -228,17 +228,17 @@
         "qr": true,
         "links": [
           {
-            "x": 161,
+            "x": 90,
             "y": 20,
-            "w": 436,
+            "w": 580,
             "h": 600,
             "href": "https://www.darlison.com/a-player-team-assessment/",
             "label": "Article: Who On Your Team Is An A-Player?"
           },
           {
-            "x": 841,
+            "x": 770,
             "y": 20,
-            "w": 436,
+            "w": 580,
             "h": 600,
             "href": "https://www.darlison.com/a-player-team-assessment-prompt/",
             "label": "Prompt: A-Player Team Assessment Prep"

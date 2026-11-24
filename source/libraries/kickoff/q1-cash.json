@@ -322,17 +322,17 @@
         "qr": true,
         "links": [
           {
-            "x": 157,
+            "x": 130,
             "y": 20,
-            "w": 444,
+            "w": 500,
             "h": 600,
             "href": "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209",
             "label": "12-month forecast template"
           },
           {
-            "x": 837,
+            "x": 810,
             "y": 20,
-            "w": 446,
+            "w": 500,
             "h": 600,
             "href": "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588",
             "label": "36-month forecast template"

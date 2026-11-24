@@ -277,17 +277,17 @@
         "qr": true,
         "links": [
           {
-            "x": 161,
+            "x": 110,
             "y": 20,
-            "w": 436,
+            "w": 540,
             "h": 600,
             "href": "https://www.darlison.com/who-is-your-most-valuable-customer/",
             "label": "Article: Who Is Your Most Valuable Customer?"
           },
           {
-            "x": 841,
+            "x": 790,
             "y": 20,
-            "w": 436,
+            "w": 540,
             "h": 600,
             "href": "https://www.darlison.com/core-customer-discovery-prompt/",
             "label": "Prompt: Core Customer Discovery"
