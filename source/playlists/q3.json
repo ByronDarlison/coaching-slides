@@ -351,14 +351,15 @@
           "Test it against the 3HAG line: does each capability build an attribute where the company will lead?",
           "Question the math: do the widget targets add up to the revenue?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner.",
-          "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?"
+          "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?",
+          "The 3HAG line gives things up. Check the other side too: if a capability still invests in an attribute the team chose to let drop, the 3HAG has not caught up with the line."
         ],
         "support": "In Metronome: open One Page Plans. Read your 3HAG aloud. Then test it against your 3HAG line.",
         "body": [
           "Each capability builds an attribute where you will lead.",
+          "No capability builds an attribute you chose to let drop.",
           "The statement and the “known for” describe the future company.",
-          "The numbers are set: date, revenue, cash and widgets.",
-          "Every number has an owner, and the widgets support the revenue.",
+          "The numbers are set, each with an owner, and the widgets support the revenue.",
           "Decide: what in the 3HAG changes?"
         ]
       }
