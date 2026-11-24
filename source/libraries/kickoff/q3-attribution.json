@@ -5504,6 +5504,30 @@
       ]
     },
     {
+      "id": "core-customer",
+      "title": "Which white space matters to your Core Customer?",
+      "headline": "Which white space matters to your Core Customer?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "In Metronome: open War Room. Read your Core Customer’s three ranked needs aloud.",
+      "body": [
+        "For each patch of white space, ask: does it serve one of those needs?",
+        "Keep the white space that does. Set the rest aside."
+      ],
+      "notes": [
+        "The white space only counts if it matters to the Core Customer.",
+        "Put the team’s own Core Customer on the screen and read the three ranked needs aloud.",
+        "Hold each patch of white space against the needs. The ones that serve a need are where the 3HAG line can lead.",
+        "Change only what is no longer true about the Core Customer.",
+        "Homework: update the Core Customer in the War Room in Metronome."
+      ]
+    },
+    {
       "id": "draw",
       "title": "Draw your 3HAG line.",
       "headline": "Draw your 3HAG line.",

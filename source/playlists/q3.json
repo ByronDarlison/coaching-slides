@@ -323,25 +323,9 @@
       "slides": [
         "brainstorm",
         "score",
-        "sheet-example"
+        "sheet-example",
+        "core-customer"
       ]
-    },
-    {
-      "id": "kickoff:q2-core-customer",
-      "slides": [
-        "example"
-      ],
-      "override": {
-        "title": "Which white space matters to your Core Customer?",
-        "headline": "Which white space matters to your Core Customer?",
-        "notes": [
-          "The white space only counts if it matters to the Core Customer.",
-          "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
-          "Read the three ranked needs aloud. Hold each piece of white space against them.",
-          "Change only what is no longer true about the Core Customer.",
-          "Homework: update the Core Customer in the War Room in Metronome."
-        ]
-      }
     },
     {
       "id": "kickoff:q3-attribution",
