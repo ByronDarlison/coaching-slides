@@ -8,20 +8,20 @@
   "slides": [
     {
       "id": "fresh",
-      "title": "Write your new 3HAG: three years from today.",
-      "support": "Move the end date out one year. Then answer every question again.",
+      "title": "Write your new 3HAG: 3 years from today.",
+      "support": "Move the end date out one year. Then answer three questions again: the numbers, the statement and what you want to be known for.",
       "body": [
-        "Last year’s 3HAG stays out of sight until each reveal.",
+        "Keep last year’s numbers, statement and “known for” out of sight until you reveal your answers.",
         "Each leader answers alone. Reveal, then agree.",
         "Start from what the year taught you."
       ],
       "notes": [
-        "Rebuild the forward plan each year. Do not roll it forward. Start from a blank sheet, backed by what the year taught you, not a light edit of last year’s answers.",
-        "It is not starting over. The team builds on what it has earned: a year of running the plan.",
+        "Rebuild the forward plan each year. Do not roll it forward. Each leader answers on a blank sheet, using what the year taught them.",
+        "After each reveal, put last year’s answer beside the new ones. Ask what changed and why.",
         "Work down the same questions as the Kick Off: the date, the numbers and their owners, the statement and what you want to be known for.",
         "The key capabilities are not on the list this time. The team builds its differentiators next and they take that place."
       ],
-      "headline": "Write your new 3HAG: three years from today.",
+      "headline": "Write your new 3HAG: 3 years from today.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -33,9 +33,9 @@
     {
       "id": "numbers",
       "title": "What are your new three-year targets?",
-      "support": "Set the new Year 3 end date.",
+      "support": "Each leader writes the numbers alone. Reveal, then agree.",
       "body": [
-        "Gross revenue, margin and year-end cash, for Year 3 alone.",
+        "Gross revenue, margin and ending cash, for Year 3 alone.",
         "Name the widget for each hand-off on your KFFM. Estimate the quantity where you can.",
         "Name an owner for every number."
       ],
@@ -92,9 +92,9 @@
     {
       "id": "differentiators-in",
       "title": "Put your differentiators in your 3HAG.",
-      "support": "They take the place of last year’s key capabilities.",
+      "support": "This finishes your 3HAG. They take the place of last year’s key capabilities.",
       "body": [
-        "Which agreed differentiators make the numbers and the statement true?"
+        "Do they make the numbers and the statement true?"
       ],
       "notes": [
         "Until today the 3HAG named 3 to 5 key capabilities. They were a first sketch of the strategy. The differentiators are the strategy the team built from its market.",

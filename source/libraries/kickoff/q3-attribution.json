@@ -307,7 +307,7 @@
       ],
       "art_full": true,
       "notes": [
-        "White space is any part of the graph with nothing in it. It can sit above the lines or below them.",
+        "Look for a gap above or below the competitors’ lines on an attribute. Then test whether occupying that position would matter to the Core Customer.",
         "In the example, nobody scores a 5 on speed of setup, price predictability or support from a person.",
         "Ask the team where the white space is before you point at it."
       ],
@@ -470,7 +470,6 @@
         "Ask: what will we be worse at in three years?"
       ],
       "notes": [
-        "The white space only counts if it matters to the Core Customer.",
         "In the example, Dana needs fast setup, a predictable cost and a person to call. The 3HAG line leads on all three.",
         "Let the team sleep on it. The line can change before the annual.",
         "Homework: add the Attribution Framework to the War Room in Metronome."

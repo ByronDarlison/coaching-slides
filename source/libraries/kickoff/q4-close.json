@@ -15,13 +15,13 @@
         {
           "role": "Metronome",
           "heading": "Update the plan",
-          "support": "The new 3HAG, 1HAG and QHAG. Each leader’s priorities. Each lane’s steps under its company priority. The Team View.",
+          "support": "The new 3HAG, 1HAG and QHAG. Any change to your Core Purpose, Core Values or BHAG. Each leader’s priorities. Each sprint lane’s steps. The Team View.",
           "mark": "structure"
         },
         {
           "role": "Strategy and cash",
           "heading": "War Room and forecast",
-          "support": "War Room: add the differentiators and swim lanes. Finance enters the 12-month forecast as rolling metrics.",
+          "support": "War Room: add the differentiators and swim lanes. Finance enters the 12-month forecast in Metronome.",
           "mark": "structure"
         },
         {
@@ -41,6 +41,7 @@
         "On the One Page Plan, the differentiators replace the key capabilities. Keep the Market Map, Core Customer and Attribution Framework current in the War Room.",
         "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
         "If the Painted Picture wording was not finished in the room, finishing it is homework.",
+        "Add any scorecard review not done, with its date.",
         "Give every item an owner and a date: what, owner, by when."
       ],
       "headline": "What is the homework?",

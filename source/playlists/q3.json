@@ -162,7 +162,7 @@
       "override": {
         "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
-          "If the KFFM is not in Metronome yet, use the example drawing on the next slide.",
+          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board and agree a date to enter it.",
           "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
         ],
         "body": [
@@ -354,7 +354,7 @@
         "notes": [
           "Ask a leader to read the 3HAG aloud. Invite the team to identify contradictions and untested assumptions.",
           "Test it against the 3HAG line: does each capability build an attribute where the company will lead?",
-          "Question the math: do the widget targets add up to the revenue?",
+          "Do the widget volumes, conversion rates and prices support the revenue target? Which assumption explains any gap?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner.",
           "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?",
           "The 3HAG line gives things up. Check the other side too: if a capability still invests in an attribute the team chose to let drop, the 3HAG has not caught up with the line."
@@ -569,6 +569,17 @@
             "support": "Add a skill or behavior to develop, beyond the 5 work priorities.",
             "mark": "structure"
           }
+        ],
+        "notes": [
+          "Start with the owner of company priority #1, then the other company-priority owners.",
+          "Each owner places that commitment first in their individual plan. Add other aligned work and a development commitment.",
+          "Allow up to five work priorities and one development priority. Two that are delivered beat five that are started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
+          "Include every company priority you own. Do not drop one because you own several.",
+          "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
+          "Hover over “six questions” and use them to test each individual priority.",
+          "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Ask: did I have a good day? A person who owns two functions has one for each.",
+          "At a quarterly, start from the critical number you named for your function on the Team View.",
+          "At a quarterly, list your open priorities from last quarter first. They stay until their number has moved."
         ]
       }
     },

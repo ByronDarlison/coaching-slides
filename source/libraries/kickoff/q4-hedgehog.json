@@ -9,15 +9,15 @@
     {
       "id": "circles",
       "title": "Your BHAG sits where three circles meet.",
-      "support": "Agree each circle in turn. The BHAG comes last.",
+      "support": "This is the Hedgehog. Agree each circle in turn. The BHAG comes last.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-hedgehog.svg",
         "alt": "Three overlapping circles, Core Purpose, Core Business and Economic Engine, each with its question, and the BHAG where all three meet: a 10 to 30 year goal with no numbers."
       },
       "notes": [
-        "This is Jim Collins’s Hedgehog Concept. The BHAG sits where three things meet: why the company exists, what its core business is, and how it makes money.",
-        "The BHAG the team gutted out at the Kick Off was good enough to build execution momentum. A year on, the team has the confidence for a full discussion about it.",
+        "This is the Hedgehog Concept. The BHAG sits where three things meet: why the company exists, what its core business is, and how it makes money.",
+        "The BHAG the team wrote at the Kick Off was good enough to build execution momentum. A year on, the team has the confidence for a full discussion about it.",
         "The Hedgehog is about focus, not fantasy.",
         "The Core Purpose the team just confirmed goes in the top circle. Then work through the other two circles in order."
       ],
@@ -35,8 +35,7 @@
       "support": "Each leader writes an answer alone. Then share.",
       "body": [
         "It is what you can be best in the world at, not what you want to be best at.",
-        "Which answer says it most clearly? Stay with it until the team agrees.",
-        "It describes the company today. Your 3HAG statement describes what it will become."
+        "Which answer says it most clearly? Stay with it until the team agrees."
       ],
       "notes": [
         "Many leadership teams find it hard to say what business they are in. Give it time.",
@@ -86,7 +85,7 @@
       "notes": [
         "Only start this step when the team agrees on all three circles.",
         "Each leader writes what they think the company’s 10 to 30 year goal is, and all share. Ask which one is the BHAG, then wait for a leader to make a stand.",
-        "The outcome is a new BHAG or a well-validated one. Either is a good result."
+        "The team leaves with a new BHAG or the same BHAG, well tested. Either is a good result."
       ],
       "headline": "What is your 10 to 30 year goal?",
       "layout": "comp-story",

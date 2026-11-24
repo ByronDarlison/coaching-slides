@@ -11,9 +11,9 @@
       "title": "What must we do to make the whole 3HAG line true?",
       "support": "Each leader writes 5 to 7 activities alone, one on each sticky note.",
       "body": [
-        "The whole line: where you lead, what you maintain and what you let drop.",
+        "The whole line: where you will lead, what you will maintain and what you will let drop.",
         "An activity can be something to stop doing.",
-        "Present your activities. Put them all on the wall."
+        "Present your activities. Put them all on the board."
       ],
       "notes": [
         "The objective is to build the company’s 3 to 5 differentiators from the ground up. Do not start from the attributes at the top of the line and work down: that gives generic answers.",
@@ -36,7 +36,7 @@
       "body": [
         "Put similar activities together.",
         "Name each group for exactly what it will accomplish.",
-        "A generic name such as “Support” is not a name. Ask again."
+        "“Support” is too generic. Ask again: what will this group accomplish?"
       ],
       "notes": [
         "Name each group together. The name says what will be true when that group of activities is in place.",
@@ -64,7 +64,7 @@
       "notes": [
         "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person, and lets reporting and customization drop.",
         "Live in a Day and One Flat Price each depend on Standard, Not Custom: one product for everyone is what makes setup fast and the price flat. A Named Person for 90 Days depends on Live in a Day: when setup is fast, the contact has time for the customer.",
-        "Standard, Not Custom is the group that says what the company will be worse at. A strategy needs one.",
+        "Standard, Not Custom is the group that says what the company will be worse at. Every strategy needs one.",
         "This is an example. Do not recommend these groups to a team."
       ],
       "headline": "Example: an Activity Fit Map.",
@@ -78,17 +78,17 @@
     {
       "id": "connect",
       "title": "Which groups depend on each other?",
-      "support": "Draw a line for each dependency. Start with the group that depends on the most.",
+      "support": "Draw an arrow for each dependency. Start with the group that depends on the most other groups.",
       "body": [
         "A group can depend on more than one other group.",
-        "A group with no lines may be a task, not a differentiator.",
+        "A group with no arrows may be a task, not part of your strategy.",
         "Test: tell your strategy using only the group names."
       ],
       "notes": [
-        "Take one group and ask of each other group: does this depend on that? Draw the line when the team agrees.",
+        "Take one group and ask of each other group: does this depend on that? Draw the arrow when the team agrees.",
         "It is rare to get this far and find the groups are not connected. The connections are what make the strategy hard to copy.",
         "If the team cannot tell the company’s strategy using only the names, the names are too generic. Rename.",
-        "Check each group back against the Attribution Framework: does it move an attribute where the team decided to lead, for the Core Customer? A group that connects to nothing the market values is operational work, not a differentiator."
+        "Check each group back against the Attribution Framework: does it move an attribute where the team decided to lead, for the Core Customer? A group that connects to nothing the market values is a task, not a differentiator."
       ],
       "headline": "Which groups depend on each other?",
       "layout": "comp-story",
@@ -106,10 +106,10 @@
       "body": [
         "Together they make the whole 3HAG line true.",
         "Each one serves a need of your Core Customer.",
-        "Take a break before the swim lanes."
+        "Then take a break."
       ],
       "notes": [
-        "This is the first level of the Activity Fit Map. Most teams land on three to six groups; agree the 3 to 5 that carry the strategy.",
+        "Most teams end up with 4 to 6 groups. Agree the 3 to 5 that carry the strategy.",
         "Take a break here. The team comes back to the map with fresh eyes before it lays the differentiators over time."
       ],
       "headline": "Agree your 3 to 5 differentiators.",

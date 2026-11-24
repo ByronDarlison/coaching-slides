@@ -13,7 +13,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-golden-circle.svg",
-        "alt": "Three rings: Why at the centre, then How, then What, each joined to its question: why, how and what does the company do."
+        "alt": "Three rings: Why at the center, then How, then What, each joined to its question: why, how and what does the company do."
       },
       "body": [
         "Each leader answers all three alone.",
@@ -22,11 +22,11 @@
         "Confirm it or change it."
       ],
       "notes": [
-        "This is Simon Sinek’s Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
+        "This is the Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
         "Each leader writes their answers alone, then the team shares one by one, question by question, starting with What.",
-        "If the team’s Why no longer matches the Core Purpose on the wall, that is not a failure. It is a signal the foundation needs attention.",
+        "If the team’s Why no longer matches the Core Purpose on the One Page Plan, that is not a failure. It is a signal the foundation needs attention.",
         "The discussion creates a new Core Purpose, adjusts the current one or confirms it. A purpose that describes what the company does, not why, needs work.",
-        "The confirmed Core Purpose goes into the top circle on the next exercise."
+        "The confirmed Core Purpose goes into the top circle when the team tests its BHAG."
       ],
       "headline": "Why does the company do what it does?",
       "layout": "comp-story",

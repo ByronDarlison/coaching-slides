@@ -23,9 +23,20 @@
       "slides": [
         "good-news",
         "engagement",
-        "mirror",
-        "outcome"
+        "mirror"
       ]
+    },
+    {
+      "id": "kickoff:opening",
+      "slides": [
+        "outcome"
+      ],
+      "override": {
+        "notes": [
+          "Ask each person to write an answer on a sticky note and share it. Agree on the outcomes. Return to these at the close. Allow 10 minutes.",
+          "The coach’s own outcome is “Strategy mapped out. New 3HAG.” Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
+        ]
+      }
     },
     {
       "id": "kickoff:q4-opening",
@@ -51,7 +62,7 @@
         "assessment"
       ],
       "override": {
-        "support": "Your four numbers total 100%. Compare them with what you entered two quarters ago.",
+        "support": "Enter today’s split across the four. It totals 100%. Compare it with your last entry.",
         "notes": [
           "The team reviews this every second quarter. Each leader enters today’s split, then compares it with the last one.",
           "As leaders hand off functions and hire A-Players, the CEO’s time in execution should fall first.",
@@ -77,8 +88,8 @@
         "title": "Who owns each function now?",
         "headline": "Who owns each function now?",
         "body": [
-          "In private mode, each person writes who holds each function.",
-          "Reveal, then agree one owner for each.",
+          "Start a fresh Function Chart. In private mode, each person writes who owns each function.",
+          "Reveal, then agree one owner for each. The owner says yes aloud.",
           "Add any function the business now needs."
         ],
         "notes": [
@@ -106,7 +117,7 @@
       "override": {
         "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
-          "If the KFFM is not in Metronome yet, use the example drawing on the next slide.",
+          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board and agree a date to enter it.",
           "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
         ],
         "body": [
@@ -203,7 +214,13 @@
       "override": {
         "title": "Does your BHAG pass?",
         "headline": "Does your BHAG pass?",
-        "support": "Read the agreed BHAG aloud. Test it."
+        "support": "Read your BHAG aloud. Test it.",
+        "notes": [
+          "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
+          "Test leader enthusiasm separately from the whole company’s.",
+          "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
+          "At the annual, the team has just agreed the BHAG. If a test fails, go back to the circle it fails on."
+        ]
       }
     },
     {
@@ -225,14 +242,14 @@
         "example"
       ],
       "override": {
-        "title": "Are your top competitors on your Market Map?",
-        "headline": "Are your top competitors on your Market Map?",
+        "title": "Is your Market Map still right?",
+        "headline": "Is your Market Map still right?",
         "notes": [
           "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
           "Ask what changed in the market this year: a new competitor, a channel that grew, a supplier that gained power.",
           "Update the map now, or put the update on the homework list."
         ],
-        "support": "Put your own Market Map on the screen. What changed this year?"
+        "support": "In Metronome: open War Room. Put your Market Map on the screen. What changed this year?"
       }
     },
     {
@@ -263,7 +280,17 @@
       "id": "kickoff:q3-attribution",
       "slides": [
         "line"
-      ]
+      ],
+      "override": {
+        "title": "Start from your 3HAG line.",
+        "headline": "Start from your 3HAG line.",
+        "support": "Put your own agreed line on the screen. This one is the example.",
+        "notes": [
+          "At the annual, this is a reminder. The line is agreed. The example shows the line that the next slides make true.",
+          "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
+          "In the example, reporting and customization drop, so that setup, price and support can lead."
+        ]
+      }
     },
     {
       "id": "kickoff:q4-differentiators"
@@ -291,7 +318,12 @@
       "id": "kickoff:q4-swim-lanes"
     },
     {
-      "id": "kickoff:day-one-close"
+      "id": "kickoff:day-one-close",
+      "override": {
+        "notes": [
+          "Close Day 1. Recap the Core Purpose, the BHAG, the new 3HAG, its differentiators and the swim lanes. Note open questions for tomorrow."
+        ]
+      }
     },
     {
       "id": "kickoff:q4-day-two",
@@ -351,22 +383,10 @@
       ]
     },
     {
-      "id": "kickoff:annual",
+      "id": "kickoff:q4-plan",
       "slides": [
         "annual-numbers"
-      ],
-      "override": {
-        "body": [
-          "Gross revenue, margin and ending cash.",
-          "One widget for each hand-off on your KFFM, plus head count.",
-          "Name an owner for every number.",
-          "Is each target big enough to reach the first year of your new 3HAG?"
-        ],
-        "notes": [
-          "The numbers come from the forecast the team just agreed. Confirm them; do not rebuild them.",
-          "Each number gets one owner."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:q4-plan",
@@ -417,6 +437,15 @@
             "support": "Think through the second-order consequences.",
             "mark": "action"
           }
+        ],
+        "notes": [
+          "Ask these six questions of every candidate. Keep the few that contribute most: ideally 3, up to 5. A routine task list is not a set of company priorities.",
+          "Builds: fix the cause, not the symptom. An annual priority builds a differentiator or moves a KFFM lever.",
+          "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
+          "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
+          "Risk: ask how badly this could go wrong.",
+          "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The work is done by one date. The number has moved by a later one.",
+          "Hover over “KFFM lever” to show the six levers."
         ]
       }
     },
@@ -427,7 +456,7 @@
       ],
       "override": {
         "notes": [
-          "Read the new 1HAG aloud, top to bottom, then run the six checks.",
+          "Read the new 1HAG aloud, top to bottom, then run the six checks. Each priority must move its number enough, and soon enough to see.",
           "Check the priorities against the first four quarters of the swim lanes and against what was burning on the KFFM yesterday.",
           "Change only what fails. Anything that cannot be fixed now goes on the homework list with an owner."
         ],
@@ -437,8 +466,8 @@
           "Each priority builds a differentiator or moves a KFFM lever.",
           "No priority invests in an attribute you chose to let drop.",
           "Each measure has a target and an achieved-by date.",
-          "Each priority moves its number enough, and soon enough to see.",
-          "The targets reach the first year of the 3HAG, the widgets support the revenue, and head count is set."
+          "The targets keep you on track for the 3HAG.",
+          "The widgets support the revenue, and head count is set."
         ]
       }
     },
@@ -464,11 +493,12 @@
           "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
           "At the annual, the candidates include last quarter’s open priorities, the first quarter of each swim lane, and anything burning on the KFFM.",
           "Done is not the same as success. Each priority has a done-by date for the work and an achieved-by date for the result.",
-          "Pick the #1 priority first. Give it one owner."
+          "Run the six questions on each candidate. Hover over “six questions” to show them.",
+          "The team ranks the survivors together. Pick the #1 priority first. Give it one owner."
         ],
         "support": "What must you get done now to deliver the 1HAG?",
         "body": [
-          "List candidates: last quarter’s open priorities, your 1HAG priorities, the lever you picked and the first quarter of your swim lanes.",
+          "List candidates: open priorities, 1HAG priorities, the lever you picked and Q1 of your swim lanes.",
           "Test each with the six questions, then rank.",
           "Agree on the owner, done-by date, measure of success and achieved-by date."
         ]
@@ -493,7 +523,7 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your QHAG aloud from the board before you move on."
+        "support": "Read your new QHAG aloud from the board before you move on."
       }
     },
     {
@@ -553,7 +583,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2.",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate each: 0 below, 1 meets, 2 exceeds.",
         "panels": [
           {
             "role": "Daily",
@@ -581,7 +611,7 @@
           }
         ],
         "notes": [
-          "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
+          "Give it about 10 minutes.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "Quarterly Planning is the fifth meeting. The team is in it now.",
           "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
@@ -590,9 +620,8 @@
           "Monthly Town Hall: Good news, then values recognition; QHAG progress on the #1 priority, and how everyone can help; Financial transparency: what is working and what is not; One thing we can do as a company to improve our financial health.",
           "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
           "This is the only meeting where the whole company hears the same thing at the same time.",
-          "Financial transparency builds the financial literacy of the whole team.",
+          "Financial transparency builds the financial literacy of the whole company.",
           "Show the Team View at a Town Hall only when it changes.",
-          "New today: the KFFM review joins the weekly leadership meeting.",
           "The daily huddle’s facilitator rotates.",
           "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
@@ -609,14 +638,32 @@
       "override": {
         "support": "Write them together now. Each leader shares them with their team tomorrow.",
         "title": "What 3 messages will you share with the whole company?",
-        "headline": "What 3 messages will you share with the whole company?"
+        "headline": "What 3 messages will you share with the whole company?",
+        "notes": [
+          "Write the messages together and read them aloud. Keep them specific to the agreed plan. Prepare leaders to deliver a consistent message to the whole company.",
+          "Every leader shares the messages with their team the day after."
+        ]
       }
     },
     {
       "id": "kickoff:q4-close"
     },
     {
-      "id": "kickoff:closing"
+      "id": "kickoff:closing",
+      "slides": [
+        "one-phrase"
+      ],
+      "override": {
+        "notes": [
+          "Close the session. Recap how the plan connects, from the 3HAG differentiators to this quarter’s priorities, and when the next daily huddle is. Then invite everyone to answer."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:closing",
+      "slides": [
+        "deck-link"
+      ]
     }
   ]
 }

@@ -8,19 +8,19 @@
   "slides": [
     {
       "id": "definition",
-      "title": "Swim Lanes: one lane for each differentiator, over 12 quarters.",
+      "title": "Swim lanes: one lane for each differentiator, over 12 quarters.",
       "support": "What are the big things we must get done in each lane?",
       "body": [
-        "3 to 5 big moves in a lane. No more.",
+        "3 to 5 big milestones in a lane. No more.",
         "Most quarters stay empty. This is not a project plan.",
         "Each quarter, the lanes feed your QHAG priorities and sprint lanes."
       ],
       "notes": [
         "Each lane takes one differentiator and stretches it over the twelve quarters to the 3HAG.",
-        "The lanes show the critical path. They give the best view of next year: the big moves in the first four quarters are where tomorrow’s 1HAG starts.",
+        "The lanes show the few things that must happen, and in what order. They give the best view of next year: the milestones in the first four quarters are where tomorrow’s 1HAG starts.",
         "A lane with something in every quarter has become a project plan. Fewer milestones show a clearer path."
       ],
-      "headline": "Swim Lanes: one lane for each differentiator, over 12 quarters.",
+      "headline": "Swim lanes: one lane for each differentiator, over 12 quarters.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -32,7 +32,7 @@
     {
       "id": "outcomes",
       "title": "Start at the end: what is true at Q12, Q8 and Q4?",
-      "support": "For each lane, agree the outcome at the 3HAG, the 2HAG and the 1HAG first.",
+      "support": "For each lane, first agree the outcome at the end of year three (3HAG), year two (2HAG) and year one (1HAG).",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-outcomes.svg",
@@ -45,7 +45,7 @@
         }
       ],
       "notes": [
-        "Beside each differentiator, agree what is true when it is achieved. Then say what will be true at the end of year one, year two and year three.",
+        "Beside each differentiator, agree what is true when it is achieved, at the 3HAG. Then work back: what is true at the end of year two, and at the end of year one?",
         "Fix those three outcomes in each lane before anyone writes a milestone. Do not move them.",
         "The same subscription company as the earlier examples. This is an example, not a recommendation."
       ],
@@ -59,8 +59,8 @@
     },
     {
       "id": "milestones",
-      "title": "Then work back: 3 to 5 big moves in each lane.",
-      "support": "Place each big move in the quarter it lands. Leave the other quarters empty.",
+      "title": "Then work back: 3 to 5 milestones in each lane.",
+      "support": "Q1, on the right, is next quarter. Place each milestone in the quarter it lands. Leave the rest empty.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-example.svg",
@@ -68,10 +68,10 @@
       },
       "notes": [
         "Start at the 3HAG and work back toward today.",
-        "Three big moves in a lane is usually enough. Five is the limit.",
-        "In the example each lane has three big moves and nine empty quarters."
+        "Three milestones in a lane is usually enough. Five is the limit.",
+        "In the example each lane has three milestones and nine empty quarters."
       ],
-      "headline": "Then work back: 3 to 5 big moves in each lane.",
+      "headline": "Then work back: 3 to 5 milestones in each lane.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -82,14 +82,15 @@
     {
       "id": "build",
       "title": "Build your swim lanes.",
-      "support": "Work in small groups, one lane to a group.",
+      "support": "Split into pairs or threes, one lane each.",
       "body": [
-        "Give each lane to people who are not its expert.",
-        "Agree the three outcomes, then place 3 to 5 big moves.",
-        "Each group presents its lane to the team."
+        "Give each lane to people who are not its expert. An expert fills the first quarters with detail.",
+        "Agree the three outcomes, then place 3 to 5 milestones.",
+        "Each pair or three presents its lane to the team."
       ],
       "notes": [
-        "An expert fills the first six quarters with detail and cannot see beyond them. Someone further from the work sees the big moves.",
+        "An expert fills the first six quarters with detail and cannot see beyond them. Someone further from the work sees the milestones.",
+        "Allow about 25 minutes.",
         "Start with three sticky notes in each lane. Be stingy.",
         "If the day has run out, stop here and open tomorrow with the swim lanes. Never skip them: they make tomorrow’s plan faster and better."
       ],
@@ -109,9 +110,9 @@
       "checklist": true,
       "body": [
         "Every lane has an outcome at Q4, Q8 and Q12.",
-        "Every lane has 3 to 5 big moves, and empty quarters.",
+        "Every lane has 3 to 5 milestones, and empty quarters.",
         "Where one lane waits on another, the order works.",
-        "The first four quarters show next year’s big moves."
+        "The first four quarters show next year’s milestones."
       ],
       "notes": [
         "Discuss the critical path across the lanes. Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",

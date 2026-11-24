@@ -12,14 +12,14 @@
       "support": "In Metronome: open Team View. Check it against the Function Chart you just agreed.",
       "checklist": true,
       "body": [
-        "Which functions are missing, or planned for growth?",
+        "Which functions are missing or planned?",
         "Who owns too many functions?",
-        "Is every function owned by an A-Player?"
+        "Does an A-Player own every function?"
       ],
       "notes": [
         "Put today’s Team View on the screen. Fix any difference from the new Function Chart now, or put it on the homework list.",
         "A person who owns several functions carries a load to watch. A planned function shows where the company will hire or where someone can grow.",
-        "The third question connects to the A-Player check later this morning. A function owned by someone below A needs a plan.",
+        "The third question connects to the A-Player check that follows the KFFM. A function owned by someone below A needs a plan.",
         "Homework: update the Team View in Metronome."
       ],
       "headline": "Is your Team View still right?",
@@ -37,7 +37,7 @@
       "support": "Each leader answers in turn.",
       "checklist": true,
       "body": [
-        "Has your leader reviewed you against your scorecard?",
+        "Has your team lead reviewed you against your scorecard?",
         "Have you reviewed each of your direct reports against theirs?",
         "If not, say by when."
       ],

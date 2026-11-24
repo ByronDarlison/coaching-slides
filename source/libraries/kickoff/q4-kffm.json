@@ -8,20 +8,20 @@
   "slides": [
     {
       "id": "weekly-check",
-      "title": "Is the KFFM in your weekly meeting?",
+      "title": "Is the KFFM in your weekly leadership meeting?",
       "support": "In Metronome: open Meetings. Open your weekly leadership meeting.",
       "checklist": true,
       "body": [
         "The KFFM is on the agenda every week.",
         "Every red number has a written plan: situation, cause, correction, follow-up.",
-        "Which lever moves cash fastest now? Make it a candidate for a priority tomorrow."
+        "Which lever moves cash fastest now? Make it a candidate for a QHAG priority."
       ],
       "notes": [
         "The weekly KFFM review started last quarter. This checks that it is running.",
         "Whatever is burning on the KFFM today must show up in tomorrow’s priorities. Note each red or yellow function the team wants to move.",
         "Tomorrow’s 1HAG and QHAG take their candidates from the swim lanes and from this list."
       ],
-      "headline": "Is the KFFM in your weekly meeting?",
+      "headline": "Is the KFFM in your weekly leadership meeting?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

@@ -9,14 +9,14 @@
     {
       "id": "model",
       "title": "A cohesive team is built in five levels, from trust up.",
-      "support": "Each level rests on the one below it.",
+      "support": "Each level rests on the one below it. Your Five Dysfunctions assessment scored each level.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-five-dysfunctions.svg",
         "alt": "A five-level pyramid, from the bottom: Trust, Conflict, Commitment, Accountability, Results, with a team score key: high is 4 and above, medium is 3 to 3.99, low is under 3."
       },
       "notes": [
-        "This is Patrick Lencioni’s model from The Five Dysfunctions of a Team. The team read the book after Q2 and took the team assessment as homework.",
+        "This is the model from The Five Dysfunctions of a Team. The team read the book after Q2 and took the team assessment as homework.",
         "The five levels, from the bottom: trust, conflict, commitment, accountability, results. A team that does not trust each other will not have honest conflict. Without honest conflict nobody truly commits. Without commitment nobody holds each other accountable. Without accountability the team’s results come second to each person’s own.",
         "The assessment scores each level. High is 4 and above. Medium is 3 to 3.99. Low is under 3.",
         "Do the assessment at least once a year. It shows where the team should work on its cohesiveness next quarter and next year, and it sets a benchmark to grow from."
@@ -31,11 +31,11 @@
     },
     {
       "id": "review",
-      "title": "What does your assessment say?",
+      "title": "What does your Five Dysfunctions assessment say?",
       "support": "Your coach shows the team’s score for each level.",
       "body": [
         "What is working? What is not?",
-        "Start at the bottom. For each level: what do we see in how we work together?",
+        "Start at the bottom. For each level: what do you see in how you work together?",
         "Say what you observe. No blame. No shame."
       ],
       "notes": [
@@ -44,7 +44,7 @@
         "Hand out the full report after the discussion.",
         "Allow about 45 minutes with the next slide. The first time takes longer because it is uncomfortable."
       ],
-      "headline": "What does your assessment say?",
+      "headline": "What does your Five Dysfunctions assessment say?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -59,11 +59,12 @@
       "support": "Each action gets an owner.",
       "body": [
         "Trust. Conflict. Commitment. Accountability. Results.",
-        "Together the five actions start your 90-day plan for the team."
+        "Start all five this quarter."
       ],
       "notes": [
         "Write what the team sees and one action beside each level, with an owner.",
-        "Keep the actions small and regular. Examples other teams use: open the daily huddle with a Core Value story from yesterday; ask one personal question in the weekly meeting, and the CEO answers first; once a month, each leader shares a timeline of five significant life events.",
+        "Keep the actions small and regular. Three examples other teams use follow.",
+        "Open the daily huddle with a Core Value story from yesterday. Ask one personal question in the weekly meeting, and the CEO answers first. Once a month, each leader shares a timeline of five significant life events.",
         "The actions go on the homework list. The team reviews them at the next quarterly."
       ],
       "headline": "Agree one action for each level.",

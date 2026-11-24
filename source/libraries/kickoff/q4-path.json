@@ -28,7 +28,7 @@
     },
     {
       "id": "functions",
-      "title": "Next, who owns what.",
+      "title": "Next, who owns each function.",
       "notes": [
         "The business has changed in a year. Build the Function Chart again, then check the Team View and the scorecard reviews."
       ],
@@ -38,7 +38,7 @@
         "src": "assets/q4-day1-path-functions.svg",
         "alt": "Q4 Day 1 path. Team done. Functions next."
       },
-      "headline": "Next, who owns what.",
+      "headline": "Next, who owns each function.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -48,7 +48,7 @@
     },
     {
       "id": "kffm",
-      "title": "Next, how the business makes money.",
+      "title": "Next, how the work turns into cash.",
       "notes": [
         "Check the KFFM, walk all six levers, and check the weekly review."
       ],
@@ -58,7 +58,7 @@
         "src": "assets/q4-day1-path-kffm.svg",
         "alt": "Q4 Day 1 path. Team and Functions done. KFFM next."
       },
-      "headline": "Next, how the business makes money.",
+      "headline": "Next, how the work turns into cash.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -108,7 +108,7 @@
     },
     {
       "id": "hedgehog",
-      "title": "Next, test your BHAG.",
+      "title": "Next, your BHAG.",
       "notes": [
         "The Core Purpose is confirmed. Now agree the core business and the economic engine, and test the BHAG against all three."
       ],
@@ -118,7 +118,7 @@
         "src": "assets/q4-day1-path-hedgehog.svg",
         "alt": "Q4 Day 1 path. Through Purpose and Values done. Hedgehog and BHAG next."
       },
-      "headline": "Next, test your BHAG.",
+      "headline": "Next, your BHAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -128,9 +128,9 @@
     },
     {
       "id": "market",
-      "title": "Next, the pictures your strategy rests on.",
+      "title": "Next, what your strategy rests on.",
       "notes": [
-        "The afternoon is strategy. Check the Market Map, the Core Customer and the Attribution Framework before you plan from them."
+        "Check the Market Map, the Core Customer and the Attribution Framework before you plan from them."
       ],
       "art_full": true,
       "art_fit": true,
@@ -138,7 +138,7 @@
         "src": "assets/q4-day1-path-market.svg",
         "alt": "Q4 Day 1 path. Through Hedgehog and BHAG done. Market, Customer, Attribution next."
       },
-      "headline": "Next, the pictures your strategy rests on.",
+      "headline": "Next, what your strategy rests on.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -188,7 +188,7 @@
     },
     {
       "id": "lanes",
-      "title": "Last today, 12 quarters of big moves.",
+      "title": "Last today, your swim lanes.",
       "notes": [
         "One swim lane for each differentiator. If time runs out today, the swim lanes open Day 2. They are never skipped."
       ],
@@ -198,7 +198,7 @@
         "src": "assets/q4-day1-path-lanes.svg",
         "alt": "Q4 Day 1 path. Through Differentiators done. Swim Lanes next."
       },
-      "headline": "Last today, 12 quarters of big moves.",
+      "headline": "Last today, your swim lanes.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -228,7 +228,7 @@
     },
     {
       "id": "day2-forecast",
-      "title": "Next, next year’s forecast.",
+      "title": "Then, next year’s forecast.",
       "notes": [
         "Finance built the 12-month forecast before today. The team reviews it before it sets the year’s targets."
       ],
@@ -238,7 +238,7 @@
         "src": "assets/q4-day2-path-forecast.svg",
         "alt": "Q4 Day 2 path. Status done. Forecast next."
       },
-      "headline": "Next, next year’s forecast.",
+      "headline": "Then, next year’s forecast.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

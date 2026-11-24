@@ -7,13 +7,38 @@
   ],
   "slides": [
     {
+      "id": "annual-numbers",
+      "title": "What are your annual targets?",
+      "support": "Take the numbers from the forecast you just agreed. Confirm the fiscal year and its end date.",
+      "body": [
+        "Gross revenue, margin and ending cash.",
+        "One widget for each hand-off on your KFFM, plus head count.",
+        "Name an owner for every number.",
+        "Is each target big enough to keep you on track for your new 3HAG?"
+      ],
+      "notes": [
+        "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
+        "Each number gets one owner.",
+        "The 1HAG is the first year of the new 3HAG. Check each number against the three-year targets the team set yesterday."
+      ],
+      "headline": "What are your annual targets?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
       "id": "annual-first",
       "title": "What must you build this year?",
       "support": "Start from your differentiators and the first four quarters of your swim lanes.",
       "body": [
         "For each differentiator: what must this year deliver to build it?",
         "Add a priority that moves a KFFM lever if cash needs it.",
-        "List every candidate."
+        "List every candidate. Then pick ideally 3, up to 5.",
+        "Give each an owner, a done-by date, a measure of success and an achieved-by date."
       ],
       "notes": [
         "At the Kick Off the team started from its key capabilities. The differentiators have taken their place.",
@@ -31,7 +56,7 @@
     },
     {
       "id": "individual",
-      "title": "Set your individual priorities with your own team.",
+      "title": "Set your own priorities with your own team.",
       "support": "This week, outside this session.",
       "body": [
         "Start from the new QHAG and your critical number.",
@@ -43,7 +68,7 @@
         "A company priority you own goes first and wins if time runs short.",
         "Each leader’s priorities are in Metronome before the first weekly meeting of the quarter."
       ],
-      "headline": "Set your individual priorities with your own team.",
+      "headline": "Set your own priorities with your own team.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -60,7 +85,7 @@
       "body": [
         "Running: has it gone out every week?",
         "Working: does it carry good news, the numbers and priority status?",
-        "What to change?"
+        "What to change? Rate it 0 to 2."
       ],
       "notes": [
         "The weekly email started last quarter. Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",

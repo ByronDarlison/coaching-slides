@@ -12,6 +12,7 @@
       "layout": "comp-decision",
       "arrows": false,
       "group": "Day 2",
+      "support": "If your swim lanes are not finished, finish them first.",
       "panels": [
         {
           "role": "Yesterday",
@@ -40,15 +41,17 @@
     {
       "id": "checklist",
       "title": "What did the checklist survey tell us?",
-      "support": "Twenty statements, each true or false, answered before today.",
+      "support": "The yearly checklist: twenty statements, each true or false, answered before today.",
       "body": [
-        "Where do we all agree?",
-        "Where do our answers differ?"
+        "Where do you all agree?",
+        "Where do your answers differ?",
+        "Carry anything that needs action into today’s priorities."
       ],
       "notes": [
         "The Metronomics Checklist Survey is done once a year, before the annual. The leadership team answers it first, then the whole company.",
         "Show the results. Where everyone says true, the habit is in place. Where answers differ, people are seeing different things: talk about why.",
-        "The results show the team how far it has come in a year and where to work next. Carry anything that needs action into today’s priorities."
+        "The results show the team how far it has come in a year and where to work next. Carry anything that needs action into today’s priorities.",
+        "Allow about 15 minutes."
       ],
       "headline": "What did the checklist survey tell us?",
       "layout": "comp-story",

@@ -86,11 +86,11 @@ Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 19. **A reused slide names its subject (Byron, 17-Nov-2026).** A slide moved out of its home section loses the slides that introduced it. Give it a title that names the thing: "Does your BHAG still hold?", not "Is the ambition clear, connected and exciting?". Use a playlist `override`.
 20. **Name every label in a drawing.** A box that holds a priority says "Company priority #1" above it. A finished week says "Complete", never "Done" beside a "Done by" date. One idea keeps one word across every drawing in the deck.
 21. **A path map with more than eight stages uses two rows.** One row of ten shrinks the labels below what a projector shows.
-22. **A new meeting gets its own agenda slide.** The meeting check holds three cards. A fourth card does not fit: put the added meeting on the next slide.
+22. **A new meeting gets its own agenda slide.** Give a newly taught meeting its own agenda slide. The Q3 check rates four existing meetings on one slide.
 
 Learned reviewing the Q3 deck (Byron, 23-Nov-2026):
 
-23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use it in the quarterly decks only, as a playlist `override`: a Kick Off team has no account yet. Use text, never a screenshot of Metronome. A full-width drawing slide cannot show the line yet.
+23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use a quarterly playlist `override` when the team checks existing work in Metronome. The Kick Off account is set up before the session ends. Use text, never a screenshot of Metronome. Full-width artwork can carry an instruction line.
 
 Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 

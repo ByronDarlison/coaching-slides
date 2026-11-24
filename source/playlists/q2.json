@@ -289,7 +289,8 @@
           "Check it against the customers the team has just named. Add a customer the map missed, or a future one.",
           "Ask what changed in the market last quarter. Update the map.",
           "Homework: update the Market Map in the War Room in Metronome."
-        ]
+        ],
+        "support": "Put your own Market Map on the screen. What changed last quarter?"
       }
     },
     {
@@ -317,7 +318,7 @@
         "notes": [
           "Ask a leader to read the plan aloud. Invite the team to identify contradictions and untested assumptions.",
           "Test it against the Core Customer: does each capability serve their three ranked needs?",
-          "Question the math: do the five widget targets add up to the revenue?",
+          "Do the widget volumes, conversion rates and prices support the revenue target? Which assumption explains any gap?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
         ],
         "support": "In Metronome: open One Page Plans. Read it aloud before you move on."
@@ -362,7 +363,19 @@
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-first"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
+          "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the Core Customer changed.",
+          "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
+          "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
+          "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
+          "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
+          "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
+          "Agree on the done-by date, the measure of success and the date it will be achieved by."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -440,7 +453,28 @@
         "priorities"
       ]
     },
-    "kickoff:individual",
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "definition",
+        "my-priorities",
+        "read-back"
+      ]
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "plan-check"
+      ],
+      "override": {
+        "notes": [
+          "Run this as the final read-back, top of the board to bottom.",
+          "Anything that fails goes on the homework list with an owner.",
+          "Check that last quarter’s open priorities are on the new QHAG.",
+          "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
+        ]
+      }
+    },
     {
       "id": "kickoff:rhythm-teaching",
       "slides": [

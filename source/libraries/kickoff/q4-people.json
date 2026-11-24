@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "plans-check",
-      "title": "Where is each plan now?",
-      "support": "Everyone below A has a plan. Each leader answers for their own team.",
+      "title": "How is the plan for everyone below A going?",
+      "support": "Each leader answers for their own team.",
       "checklist": true,
       "body": [
         "For each B: how are you coaching them to A?",
@@ -18,12 +18,12 @@
       ],
       "notes": [
         "The team placed every direct report last quarter and wrote a plan for everyone below A. This is the check on those plans.",
-        "A leader scores as the lowest score on their team. Leave a B in place and you become one.",
+        "A leader scores no higher than the lowest person on their team. Leave a B in place and you become one.",
         "Talk about the Bs and how each is being coached to A, and any A who has slipped. For each C, the leader says what has been done.",
-        "The plan will hold the company back from its goals if leaders do not act on people. Any plan without movement goes on the homework list with a date.",
+        "The company will not reach its goals if leaders do not act on people. Any plan without movement goes on the homework list with a date.",
         "The CEO’s own assessment of the leadership team stays private."
       ],
-      "headline": "Where is each plan now?",
+      "headline": "How is the plan for everyone below A going?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
