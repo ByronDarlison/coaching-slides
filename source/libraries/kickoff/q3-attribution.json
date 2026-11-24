@@ -118,7 +118,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-competitors.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Us today and the 3HAG line are dimmed. The three competitor lines are bright: A is strongest on integrations, B on feature breadth, customization and partner network, C is low almost everywhere. Callout: Why: the lines show where everyone competes. Ask: how would each competitor score?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Us today is dimmed. The 3HAG line is not shown. The three competitor lines are bright: A is strongest on integrations, B on feature breadth, customization and partner network, C is low almost everywhere. Callout: Why: the lines show where everyone competes. Ask: how would each competitor score?"
       }
     },
     {
