@@ -379,21 +379,25 @@
         "notes": [
           "Read the 1HAG aloud, top to bottom, then run the six checks.",
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
-          "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
+          "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner.",
+          "Success is measured by a critical number where possible.",
+          "The 3HAG line is the test: a priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG."
         ],
-        "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud.",
+        "body": [
+          "Every number and priority has one owner with capacity.",
+          "Each priority builds a 3HAG capability or moves a KFFM lever.",
+          "No priority invests in an attribute you chose to let drop.",
+          "Each measure has a target and an achieved-by date.",
+          "Each priority moves its number enough, and soon enough to see.",
+          "The targets reach the 3HAG, the widgets support the revenue, and head count is set."
+        ]
       }
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-numbers"
-      ]
-    },
-    {
-      "id": "kickoff:priorities",
-      "slides": [
-        "quality"
       ]
     },
     {
@@ -425,7 +429,12 @@
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-rest"
-      ]
+      ],
+      "override": {
+        "body": [
+          "Connect each to a 1HAG priority. Give each an owner, a done-by date, a measure of success and an achieved-by date."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -462,7 +471,8 @@
           "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers add up to the quarter’s targets.",
           "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
           "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
-        ]
+        ],
+        "support": "Work together on the 13-Week Sprint Lanes page of your board."
       }
     },
     {
@@ -573,7 +583,7 @@
       "override": {
         "title": "Is your Monthly Town Hall working?",
         "headline": "Is your Monthly Town Hall working?",
-        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings.",
         "notes": [
           "Rate the Town Hall the same way as the other meetings: 0 below, 1 meets, 2 exceeds.",
           "It runs 30 to 45 minutes, with everyone. The CEO owns it.",
@@ -581,6 +591,13 @@
           "This is the only meeting where the whole company hears the same thing at the same time.",
           "Financial transparency builds the financial literacy of the whole team.",
           "Show the Team View at a Town Hall only when it changes."
+        ],
+        "body": [
+          "Running? Working? What to change? Rate it 0, 1 or 2.",
+          "Good news, then values recognition",
+          "QHAG progress on the #1 priority, and how everyone can help",
+          "Financial transparency: what is working and what is not",
+          "One thing we can do as a company to improve our financial health"
         ]
       }
     },
@@ -588,7 +605,9 @@
     {
       "id": "kickoff:cascade-messages",
       "override": {
-        "support": "Write them together now. Each leader shares them with their team tomorrow."
+        "support": "Write them together now. Each leader shares them with their team tomorrow.",
+        "title": "What 3 messages will you share with the whole company?",
+        "headline": "What 3 messages will you share with the whole company?"
       }
     },
     "kickoff:q3-close",
