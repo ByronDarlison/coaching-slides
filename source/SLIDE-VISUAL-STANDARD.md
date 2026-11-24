@@ -100,6 +100,7 @@ Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 27. **Every line on screen earns its place.** A person reading it cold must know why it is asked. Test a line before lifting it from the notes.
 28. **Trace what each exercise needs.** When an exercise needs something the team must bring, an earlier session sets it as homework and this session checks it before the exercise starts. The A-Player grid needs a scorecard for every direct report, so direct reports have scorecards by Q3.
 29. **Fix the pattern, not the slide.** When one slide is wrong, sweep the whole deck and its sister decks for the same fault. Bring Byron the full list before he finds the next one.
+30. **A check asks whether the tool is being used, not only whether it is right.** Before removing a slide as a replay, ask what check it carries. The KFFM check walks all six levers every quarter: is each one being pushed, and what moved.
 
 ## Layouts
 
