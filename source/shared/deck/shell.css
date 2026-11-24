@@ -1344,7 +1344,7 @@ body.art-zoom-open { overflow: hidden; }
 /* Full-width artwork with one instruction line between the title and the picture (comp-story art_full "support"). */
 .story-frame--full.story-frame--lede { grid-template-rows: auto auto minmax(0, 1fr); }
 .story-frame--full.story-frame--fit.story-frame--lede { grid-template-rows: auto auto auto; }
-.story-frame--full .story-lede { margin: calc(-0.5 * clamp(12px, 2vh, 24px)) 0 0; color: var(--ink); font-size: clamp(1rem, 1.5vw, 1.45rem); font-weight: 500; line-height: 1.3; text-wrap: balance; }
+.story-frame--full .story-lede { margin: calc(-0.5 * clamp(12px, 2vh, 24px)) 0 0; color: var(--ink); font-size: clamp(1rem, 1.5vw, 1.45rem); font-weight: 500; line-height: 1.3; }
 
 /* Links a person can click (artwork "links", and the address beside a deck QR code). */
 .deck-link { color: var(--blue-deep, var(--blue)); text-decoration: underline; text-underline-offset: .18em; }
@@ -1363,6 +1363,7 @@ body.art-zoom-open { overflow: hidden; }
 
 /* A hover term that shows a picture (a "terms" entry with "image"), and terms in a slide title. */
 .term .term-image { display: block; margin-top: .5em; width: min(30rem, 56vw, min(42vh, 19rem, var(--img-room, 100vh)) * var(--ar)); aspect-ratio: var(--ar); height: auto; max-width: 100%; object-fit: contain; background: #fff; border-radius: 6px; }
+/* The box is as wide as its picture; long text wraps under it (--ar sits on the box, so both can use it). */
 .term--image .hotspot-tip { max-width: none; }
 .term--image .hotspot-tip strong, .term--image .term-line { max-width: min(30rem, 56vw, min(42vh, 19rem, var(--img-room, 100vh)) * var(--ar)); }
 .term--below .hotspot-tip { bottom: auto; top: calc(100% + 10px); }
@@ -1378,3 +1379,7 @@ h1 .term .hotspot-tip { letter-spacing: normal; text-wrap: wrap; }
   .term .term-image { width: 100%; max-height: 46vh; max-height: 46dvh; aspect-ratio: auto; }
   .term--image .hotspot-tip strong, .term--image .term-line { max-width: none; }
 }
+
+/* Titles balance their lines. Supporting text, list lines and the ask line on a card slide fill the
+   line and break at its end, so a two-line item is as wide as the one-line items around it (Byron, 24-Nov-2026). */
+.story-frame .support, .card-lede { text-wrap: pretty; }

@@ -170,7 +170,7 @@
       "terms": [
         {
           "term": "Market Map",
-          "tip": "The picture of where each competitor sits.",
+          "tip": "The picture of where each competitor sits on the two attributes your core customer cares about most, so the open space is easy to see.",
           "image": {
             "src": "assets/market-map.svg",
             "alt": "An example Market Map with four competitors and us in the top right."

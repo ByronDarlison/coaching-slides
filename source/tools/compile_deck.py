@@ -99,10 +99,13 @@ def safe_link(value: Any) -> str:
     return value
 
 
+MISSING = object()  # a field that was not written, as distinct from one written as null
+
+
 def link_label(value: Any, href: str) -> str:
-    if value is not None and not isinstance(value, str):
+    if not isinstance(value, str) and value is not MISSING:
         raise CompileError("a link label is a line of text")
-    label = visible_text(value) or display_url(href)
+    label = (visible_text(value) if value is not MISSING else "") or display_url(href)
     if "://" in label:
         raise CompileError("a link label shows the address without https://")
     return label
@@ -114,7 +117,9 @@ def link_tag(href: str, extra: str = "") -> str:
     Every address is checked here as well as where it is read, so no caller can skip the check.
     """
     css = f"deck-link {extra}".strip()
-    return f'<a class="{css}" href="{escape(safe_link(href))}" target="_blank" rel="noopener"'
+    # Parentheses are legal in an address; written as %28 and %29 they cannot read as a CSS url().
+    address = safe_link(href).replace("(", "%28").replace(")", "%29")
+    return f'<a class="{css}" href="{escape(address)}" target="_blank" rel="noopener"'
 
 
 def repo_root() -> Path:
@@ -283,7 +288,7 @@ def bundle_asset(root: Path, src: Any, dest: Path) -> tuple[str, str]:
         raise CompileError("an image needs a local src")
     try:
         source = (root / src).resolve()
-    except (OSError, ValueError) as exc:
+    except (OSError, ValueError, RuntimeError) as exc:  # RuntimeError: a link that points at itself
         raise CompileError("artwork must be an image inside its library") from exc
     if not source.is_relative_to(root) or source.suffix.lower() not in IMAGE_SUFFIXES:
         raise CompileError("artwork must be an image inside its library")
@@ -399,7 +404,7 @@ def link_parts(art: dict[str, Any], width: float, height: float) -> tuple[list[s
         if w <= 0 or h <= 0 or x < 0 or y < 0 or x + w > width or y + h > height:
             raise CompileError("a link area must sit inside the picture's viewbox")
         href = safe_link(link.get("href"))
-        label = link_label(link.get("label"), href)
+        label = link_label(link.get("label", MISSING), href)
         pos = f"left:{x / width * 100:.3f}%;top:{y / height * 100:.3f}%;width:{w / width * 100:.3f}%;height:{h / height * 100:.3f}%"
         areas.append(f'{link_tag(href, "art-link")} style="{pos}" aria-label="{escape(label)}, opens in a new tab"></a>')
         texts.append(f'{link_tag(href, "art-link-text")}>{escape(label)}</a>')
@@ -411,8 +416,8 @@ def art_overlay(image: str, art: dict[str, Any]) -> tuple[str, str]:
 
     Returns the wrapped picture and the row of text links that goes beneath it.
     """
-    has_spots, has_links = bool(art.get("hotspots")), art.get("links") is not None
-    if art.get("qr") is not None and not isinstance(art.get("qr"), bool):
+    has_spots, has_links = bool(art.get("hotspots")), "links" in art
+    if "qr" in art and not isinstance(art["qr"], bool):
         raise CompileError('artwork "qr" is true or false')
     if art.get("qr") is True and not has_links:
         raise CompileError('a picture marked "qr": true must record a link for each code in "links"')
@@ -461,7 +466,7 @@ def prepare_terms(unit: dict[str, Any], root: Path, dest: Path) -> None:
         return
     prepared = []
     for entry in terms:
-        if isinstance(entry, dict) and entry.get("image") is not None:
+        if isinstance(entry, dict) and "image" in entry:
             image = entry["image"]
             if not isinstance(image, dict) or set(image) - {"src", "alt"} or not isinstance(image.get("alt"), str) or not visible_text(image["alt"]):
                 raise CompileError("a term image needs a local src and descriptive alt text")
@@ -584,7 +589,7 @@ def term_tips(html: str, unit: dict[str, Any], below: bool = False) -> str:
         term, tip = visible_text(entry.get("term")) if isinstance(entry, dict) else "", entry.get("tip") if isinstance(entry, dict) else None
         lines = tip if isinstance(tip, list) else [tip]
         lines = [visible_text(line) for line in lines if visible_text(line)]
-        wants_image = isinstance(entry, dict) and entry.get("image") is not None
+        wants_image = isinstance(entry, dict) and "image" in entry
         picture = entry.get("_image") if wants_image else None
         if wants_image and not picture:
             raise CompileError("a term image needs preparing before the slide renders")
@@ -593,16 +598,17 @@ def term_tips(html: str, unit: dict[str, Any], below: bool = False) -> str:
         label = escape(term)
         body = "".join(f'<span class="term-line">{escape(line)}</span>' for line in lines)
         spoken = " ".join(lines)
-        css = "term"
+        css, ratio = "term", ""
         if picture:
             body += (f'<img class="term-image" src="./{escape(picture["src"])}" alt="{escape(picture["alt"])}" '
                      f'style="--ar:{picture["ratio"]}">')
+            ratio = f' style="--ar:{picture["ratio"]}"'
             spoken = f'{spoken} {picture["alt"]}'.strip()
             css += " term--image"
         if below:
             css += " term--below"
         span = (f'<span class="{css}" tabindex="0" aria-label="{label}: {escape(spoken)}">{label}'
-                f'<span class="hotspot-tip" role="tooltip"><strong>{label}</strong>{body}</span></span>')
+                f'<span class="hotspot-tip" role="tooltip"{ratio}><strong>{label}</strong>{body}</span></span>')
         for place in range(0, len(tokens), 2):
             taken = claimed.get(place, [])
             start = tokens[place].find(label)
@@ -955,6 +961,9 @@ def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_fil
         if dest.exists():
             shutil.rmtree(dest)
         shutil.copytree(stage, dest)
+    # Every route that builds a deck (compile, publish) reports dropped text, once.
+    for warning in WARNINGS:
+        print(f"WARNING: {warning}", file=sys.stderr)
     return dest
 
 
@@ -1298,8 +1307,6 @@ def main(argv: list[str] | None = None) -> int:
                 print(name)
             return 0
         dest = compile_playlist(args.playlist, args.out, args.playlist_file, args.fail_on_dropped_text)
-        for warning in WARNINGS:
-            print(f"WARNING: {warning}", file=sys.stderr)
         playlist = load_playlist_file(args.playlist_file) if args.playlist_file else load_playlist(args.playlist)
         units = resolve_playlist(playlist)
         print(f"Compiled {playlist['id']} -> {dest}")

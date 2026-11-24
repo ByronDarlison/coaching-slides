@@ -641,6 +641,9 @@ def test_the_dropped_text_switch_reaches_the_command_line(tmp_path: Path, capsys
     playlist = _library(tmp_path, _story(art_full=True, body=["Lost line."], artwork=dict(ART)), {"assets/a.svg": "<svg></svg>"})
     assert compile_deck.main(["--playlist-file", str(playlist), "--out", str(tmp_path / "out")]) == 0
     assert "WARNING: unit-s: a full-width drawing slide" in capsys.readouterr().err
+    # The publish route builds through the same function, so it reports the same warning, once.
+    compile_deck.compile_playlist("x", tmp_path / "out3", playlist)
+    assert capsys.readouterr().err.count("WARNING: unit-s: a full-width drawing slide") == 1
     assert compile_deck.main(["--playlist-file", str(playlist), "--out", str(tmp_path / "out2"), "--fail-on-dropped-text"]) == 1
     assert "FAIL: unit-s: a full-width drawing slide" in capsys.readouterr().err
 
@@ -663,6 +666,10 @@ def test_artwork_links_render_as_real_links_over_the_picture_and_as_text() -> No
     assert 'class="story-panel story-panel--art story-panel--links"' in html
     assert html.index("art-hot") < html.index('class="art-links"')
     compile_deck.check_no_network(html)
+    # Parentheses are legal in an address and are written encoded, so the network check still passes.
+    wiki = compile_deck.render_slide(_linked(links=[{**LINK, "href": "https://example.com/guide_(overview)"}]), 1)
+    assert 'href="https://example.com/guide_%28overview%29"' in wiki
+    compile_deck.check_no_network(wiki)
 
 
 @pytest.mark.parametrize("href", [
@@ -690,6 +697,9 @@ def test_artwork_links_refuse_anything_but_a_plain_https_address(href: object) -
     ({"links": [{**LINK, "label": ["a"]}]}, "label is a line of text"),
     ({"links": [{**LINK, "label": 5}]}, "label is a line of text"),
     ({"qr": 1}, '"qr" is true or false'),
+    ({"qr": None}, '"qr" is true or false'),
+    ({"links": None}, "non-empty list"),
+    ({"links": [{**LINK, "label": None}]}, "label is a line of text"),
     ({"links": [{**LINK, "w": 0}]}, "inside the picture"),
     ({"links": [{**LINK, "x": 900}]}, "inside the picture"),
     ({"links": [{**LINK, "onclick": "x"}]}, "each link takes"),
@@ -759,6 +769,8 @@ def test_a_term_shows_a_library_picture_and_works_in_a_title(tmp_path: Path) -> 
     assert 'aria-label="Market Map: Where &lt;each&gt; competitor sits. A &quot;map&quot; drawing."' in title
     picture = re.search(r'<img class="term-image" src="\./(assets/[0-9a-f]{20}\.svg)" alt="A &quot;map&quot; drawing\." style="--ar:2\.0">', title)
     assert picture and (out / picture.group(1)).is_file()
+    # The box carries the picture's ratio too, so its text lines can share the picture's width.
+    assert '<span class="hotspot-tip" role="tooltip" style="--ar:2.0">' in title
     # The same term still works in support text, opening above the word by default.
     support = html.split("</h1>", 1)[1]
     assert 'class="term term--image" tabindex="0"' in support and "term-image" in support
@@ -778,12 +790,15 @@ def test_a_term_shows_a_library_picture_and_works_in_a_title(tmp_path: Path) -> 
     ({"src": "assets/\u0000.svg", "alt": "A map."}, "inside its library"),
     ({"src": "assets/map.svg", "alt": ["A map."]}, "descriptive alt text"),
     ({"src": "assets/map.svg", "alt": 7}, "descriptive alt text"),
+    ({"src": "assets/loop.svg", "alt": "A map."}, "inside its library|missing artwork"),
+    (None, "descriptive alt text"),
 ])
 def test_a_term_image_must_be_a_described_picture_inside_its_library(tmp_path: Path, image: object, message: str) -> None:
-    slide = _story(terms=[{"term": "Headline", "image": image}])
+    slide = _story(terms=[{"term": "Headline", "tip": "A line.", "image": image}])
     _library(tmp_path, slide, {"assets/map.svg": "<svg></svg>", "assets/notes.txt": "x"})
     library = tmp_path / "lib"
     (tmp_path / "outside.svg").write_text("<svg></svg>", encoding="utf-8")
+    (tmp_path / "lib" / "assets" / "loop.svg").symlink_to("loop.svg")
     out = tmp_path / "out"
     out.mkdir()
     with pytest.raises(compile_deck.CompileError, match=message):
@@ -884,3 +899,12 @@ def test_terms_work_in_the_accent_part_of_a_title() -> None:
             "attempts": [{"heading": "One"}], "terms": [{"term": "Map", "tip": "The picture."}]}
     html = compile_deck.render_slide(unit, 1)
     assert '<span class="title-accent"><span class="term term--below" tabindex="0" aria-label="Map: The picture.">Map' in html
+
+
+def test_titles_balance_and_supporting_text_fills_the_line() -> None:
+    css = (PRESENTATIONS / "shared" / "deck" / "shell.css").read_text(encoding="utf-8")
+    rule = lambda selector: re.search(r"(?m)^" + re.escape(selector) + r" \{([^}]*)\}", css).group(1)
+    assert "text-wrap: balance" in rule(".slide-title") and "text-wrap: balance" in rule(".story-title")
+    # The last text-wrap rule that reaches a story or card support line must not be balance.
+    assert ".story-frame .support, .card-lede { text-wrap: pretty; }" in css
+    assert css.rindex(".story-frame .support, .card-lede { text-wrap: pretty; }") > css.rindex("text-wrap: balance")

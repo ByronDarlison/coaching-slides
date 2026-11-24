@@ -636,8 +636,11 @@
     if (under) term.classList.add("term--below");
     const picture = tip.querySelector(".term-image");
     const room = under ? below : above;
-    if (picture && full > room) {
-      const chrome = full - picture.getBoundingClientRect().height;
+    // A smaller picture makes a narrower box, whose text may wrap onto more lines: measure again, a few times at most.
+    for (let pass = 0; picture && pass < 4; pass += 1) {
+      const tall = tip.getBoundingClientRect().height;
+      if (tall <= room) break;
+      const chrome = tall - picture.getBoundingClientRect().height;
       tip.style.setProperty("--img-room", Math.max(80, Math.floor(room - chrome)) + "px");
     }
     const r = tip.getBoundingClientRect();
