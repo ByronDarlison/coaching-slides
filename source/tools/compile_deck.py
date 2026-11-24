@@ -1164,6 +1164,9 @@ def freeze_copy(dest_root: Path, playlist_id: str, label: str, replace: bool, so
     return target
 
 
+QR_SLIDE_LINK = re.compile(r'<a class="deck-link art-link-img" href="([^"]*)"')
+
+
 def point_qr_at_copy(target: Path, source_url: str | None, copy_url: str) -> str | None:
     """Make the deck's own QR code open the frozen copy instead of the live master."""
     page = target / "index.html"
@@ -1173,20 +1176,54 @@ def point_qr_at_copy(target: Path, source_url: str | None, copy_url: str) -> str
         return None
     if not (target / DECK_QR).is_file():
         raise CompileError("the deck has a QR slide but no QR image to rewrite")
-    old = source_url
-    if old is None:
-        found = re.search(r'alt="QR code that opens these slides at ([^"]+)\."', sections[0])
-        if not found:
-            raise CompileError("cannot find the address the QR slide shows")
-        old = "https://" + html.unescape(found.group(1)) + "/"  # the page holds the address escaped
     write_deck_qr(target, copy_url)
     for section in sections:
-        new = section.replace(escape(deck_qr_alt(old)), escape(deck_qr_alt(copy_url))).replace(escape(display_url(old)), escape(display_url(copy_url)))
-        if new == section:
-            raise CompileError("the QR slide does not show the master address it should")
+        linked = QR_SLIDE_LINK.search(section)
+        new = requote_qr_slide(section, html.unescape(linked.group(1)), copy_url) if linked else legacy_requote(section, source_url, copy_url)
         text = text.replace(section, new, 1)
     page.write_text(text, encoding="utf-8")
     return copy_url
+
+
+def requote_qr_slide(section: str, master: str, copy_url: str) -> str:
+    """Repoint a QR slide whose code and address are links.
+
+    The master address is read from the slide's own link, never guessed. Each place that holds it
+    is replaced whole and once, then the result is checked: both links, the address shown and the
+    picture's description must all name the copy.
+    """
+    swaps = [
+        ('href="%s"' % escape(master), 'href="%s"' % escape(copy_url)),
+        ('alt="%s"' % escape(deck_qr_alt(master)), 'alt="%s"' % escape(deck_qr_alt(copy_url))),
+        ('aria-label="%s, opens in a new tab"' % escape(display_url(master)), 'aria-label="%s, opens in a new tab"' % escape(display_url(copy_url))),
+        ('rel="noopener">%s</a>' % escape(display_url(master)), 'rel="noopener">%s</a>' % escape(display_url(copy_url))),
+    ]
+    marks = [f"\x00{index}\x00" for index in range(len(swaps))]
+    new = section
+    for (old, _), mark in zip(swaps, marks):  # two steps, so a copy address that contains the master is not replaced twice
+        new = new.replace(old, mark)
+    for (_, fresh), mark in zip(swaps, marks):
+        new = new.replace(mark, fresh)
+    hrefs = [html.unescape(h) for h in re.findall(r'<a class="deck-link[^"]*" href="([^"]*)"', new)]
+    shown = 'rel="noopener">%s</a>' % escape(display_url(copy_url))
+    described = 'alt="%s"' % escape(deck_qr_alt(copy_url))
+    if len(hrefs) < 2 or any(h != copy_url for h in hrefs) or shown not in new or described not in new:
+        raise CompileError("the QR slide's links, address and picture do not all open the frozen copy")
+    return new
+
+
+def legacy_requote(section: str, source_url: str | None, copy_url: str) -> str:
+    """Repoint a QR slide published before its code and address became links."""
+    old = source_url
+    if old is None:
+        found = re.search(r'alt="QR code that opens these slides at ([^"]+)\."', section)
+        if not found:
+            raise CompileError("cannot find the address the QR slide shows")
+        old = "https://" + html.unescape(found.group(1)) + "/"
+    new = section.replace(escape(deck_qr_alt(old)), escape(deck_qr_alt(copy_url))).replace(escape(display_url(old)), escape(display_url(copy_url)))
+    if new == section:
+        raise CompileError("the QR slide does not show the master address it should")
+    return new
 
 
 def frozen_url(playlist_id: str, label: str) -> str:

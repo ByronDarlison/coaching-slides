@@ -20,7 +20,7 @@ Every compiled slide has a name: `<unit>-<slide>`, or just `<unit>` when the two
 
 ### Deck QR codes
 
-A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. The code and the address beside it are both real links to the deck. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
+A slide with `"deck_qr": true` shows a QR code that opens the deck it sits in. The compiler draws the code (`tools/qr_svg.py`, standard library only) from the deck's public address, and a body line of `{deck_url}` shows that address as text. Do not add `artwork` to that slide. The deck's address must be a plain folder address: `https`, ending in `/`, with no `?`, `#` or brackets. The code and the address beside it are both real links to the deck. Freezing a delivered copy repoints the code to the copy, so a phone that scans it during the session opens the frozen version, not a later edit of the master.
 
 ### Impact report
 

@@ -914,6 +914,9 @@ def test_titles_balance_and_supporting_text_fills_the_line() -> None:
     "https://example.com/decks/probe/",
     "https://example.com/deck_%28overview%29/",
     "https://example.com/a&b/decks/",
+    "https://example.com/deck//",
+    "https://byrondarlison.github.io/coaching-slides/",
+    "https://byrondarlison.github.io/coaching-slides/metronomics/probe/extra/",
 ])
 def test_freezing_rewrites_every_link_on_the_qr_slide(tmp_path: Path, master: str) -> None:
     slide = _story(id="qr", art_side=True, deck_qr=True, body=["{deck_url}"])
@@ -927,9 +930,39 @@ def test_freezing_rewrites_every_link_on_the_qr_slide(tmp_path: Path, master: st
     target = compile_deck.freeze_copy(site, "probe", "2026-11-24", False, source_rel="custom", today="2026-11-24")
     page = (target / "index.html").read_text(encoding="utf-8")
     copy_url = compile_deck.frozen_url("probe", "2026-11-24")
-    assert page.count(f'href="{copy_url}"') == 2
-    assert compile_deck.escape(master) not in page and compile_deck.escape(compile_deck.display_url(master)) not in page
-    assert f">{compile_deck.display_url(copy_url)}</a></p>" in page
+    section = re.search(r'<section[^>]*data-deck-qr="true".*?</section>', page, re.S).group(0)
+    # Every destination on the slide is the frozen address, exactly: both links, the text shown, the description, the code.
+    assert re.findall(r'href="([^"]*)"', section) == [copy_url, copy_url]
+    assert f'rel="noopener">{compile_deck.display_url(copy_url)}</a></p>' in section
+    assert f'alt="{compile_deck.deck_qr_alt(copy_url)}"' in section
+    assert f'aria-label="{compile_deck.display_url(copy_url)}, opens in a new tab"' in section
+    import qr_svg
+    assert (target / "assets" / "deck-qr.svg").read_text(encoding="utf-8") == qr_svg.svg(copy_url, compile_deck.deck_qr_alt(copy_url))
+
+
+def test_freeze_reads_the_master_address_from_the_slide_and_never_from_other_text(tmp_path: Path) -> None:
+    # The playlist declares its own address, and the slide's support text names the default one.
+    master = "https://example.com/deck_%28overview%29/"
+    decoy = "byrondarlison.github.io/coaching-slides/metronomics/probe"
+    slide = _story(id="qr", art_side=True, deck_qr=True, support=f"Not the address: {decoy}", body=["{deck_url}"])
+    playlist = _library(tmp_path, slide, {"assets/a.svg": "<svg></svg>"})
+    data = json.loads(playlist.read_text(encoding="utf-8"))
+    playlist.write_text(json.dumps({**data, "id": "probe", "public_url": master}), encoding="utf-8")
+    site = tmp_path / "site"
+    compile_deck.compile_playlist("probe", site / "metronomics" / "probe", playlist)
+    target = compile_deck.freeze_copy(site, "probe", "2026-11-24", False, today="2026-11-24")  # the default route
+    section = re.search(r'<section[^>]*data-deck-qr="true".*?</section>', (target / "index.html").read_text(encoding="utf-8"), re.S).group(0)
+    copy_url = compile_deck.frozen_url("probe", "2026-11-24")
+    assert re.findall(r'href="([^"]*)"', section) == [copy_url, copy_url]
+    assert f"Not the address: {decoy}</p>" in section  # ordinary text is left alone
+
+
+def test_freeze_fails_when_a_qr_slide_link_would_still_open_the_master(tmp_path: Path) -> None:
+    section = ('<section data-deck-qr="true"><a class="deck-link" href="https://example.com/other/" target="_blank" rel="noopener">example.com/other</a>'
+               '<a class="deck-link art-link-img" href="https://example.com/deck/" target="_blank" rel="noopener" aria-label="example.com/deck, opens in a new tab">'
+               '<img alt="QR code that opens these slides at example.com/deck."></a></section>')
+    with pytest.raises(compile_deck.CompileError, match="do not all open the frozen copy"):
+        compile_deck.requote_qr_slide(section, "https://example.com/deck/", "https://example.com/copy/")
 
 
 def test_a_deck_address_with_brackets_is_refused_before_anything_is_built(tmp_path: Path) -> None:
