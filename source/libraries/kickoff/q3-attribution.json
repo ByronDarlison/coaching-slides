@@ -5483,6 +5483,28 @@
       }
     },
     {
+      "id": "sheet-example",
+      "title": "Attribution Map sheet example",
+      "headline": "Attribution Map sheet example",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "art_full": true,
+      "artwork": {
+        "src": "assets/attribution-sheet-example.svg",
+        "alt": "The score table from the Attribution Map sheet, filled in for the example subscription company. Twelve attributes run down the side. Columns: Your Company Today, Competitor 1, Competitor 2, Competitor 3 and 3HAG Line. The first four columns hold scores from 1 to 5, the same scores as the example graph. The 3HAG Line column is empty and marked filled in later."
+      },
+      "notes": [
+        "This is what the sheet looks like once the scores are in. The numbers are the example company’s, the same as on the example graph.",
+        "The sheet names the competitors 1, 2 and 3. They are Competitors A, B and C on the Market Map.",
+        "Leave the 3HAG Line column empty for now. The team fills it in when it draws the 3HAG line.",
+        "Enter the attributes in any order. The sheet sorts them from best to worst for the chart."
+      ]
+    },
+    {
       "id": "draw",
       "title": "Draw your 3HAG line.",
       "headline": "Draw your 3HAG line.",
@@ -5493,9 +5515,8 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Test the white space against your Core Customer’s three ranked needs.",
+      "support": "Decide what to maintain, what to improve and what to let drop.",
       "body": [
-        "Decide what to maintain, what to improve and what to let drop.",
         "Enter a 3HAG score for each attribute.",
         "Ask: what will we be worse at in three years?"
       ],
