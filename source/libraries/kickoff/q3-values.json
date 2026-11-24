@@ -153,27 +153,27 @@
       "panels": [
         {
           "role": "Example",
-          "heading": "Own the outcome",
-          "support": "We take full responsibility for results, not effort or intent.",
+          "heading": "Honesty",
+          "support": "Tell the truth. Especially to yourself.",
           "mark": "structure"
         },
         {
           "role": "Example",
-          "heading": "Tell the truth",
-          "support": "Especially to yourself.",
+          "heading": "Persistence",
+          "support": "When blocked, dig in. Get creative. Get it done.",
           "mark": "structure"
         },
         {
           "role": "Example",
-          "heading": "Do what you say",
-          "support": "Every time.",
+          "heading": "Reliability",
+          "support": "Do what you say. Every time.",
           "mark": "structure"
         }
       ],
       "notes": [
-        "These are the example company’s Core Values. Use them to show the form: a short name, then the behaviour.",
+        "These are example Core Values. Use them to show the form: a short name, then the behavior it means.",
         "Do not recommend adopting them. The team’s values are its own.",
-        "Watch for a value with no clear behaviour behind it."
+        "Watch for a value with no clear behavior behind it."
       ]
     },
     {
