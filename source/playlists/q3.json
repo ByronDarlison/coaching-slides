@@ -442,7 +442,7 @@
         "qhag-check"
       ],
       "override": {
-        "support": "In Metronome: open Quarterly Priorities. Read your QHAG aloud before you move on."
+        "support": "Read your QHAG aloud from the board before you move on."
       }
     },
     {
@@ -497,10 +497,57 @@
     {
       "id": "kickoff:individual",
       "slides": [
-        "my-priorities",
-        "read-back",
-        "plan-check"
+        "my-priorities"
+      ],
+      "override": {
+        "panels": [
+          {
+            "role": "Measure",
+            "heading": "Critical number",
+            "support": "The one you named this morning. One for each function you own.",
+            "mark": "structure"
+          },
+          {
+            "role": "Commitment",
+            "heading": "Up to 5 work priorities",
+            "support": "Two delivered beat five started. A company priority you own goes first and wins if time runs short. Test each with the six questions. Add a done-by date and a measure of success.",
+            "mark": "action"
+          },
+          {
+            "role": "Development",
+            "heading": "Professional development",
+            "support": "Add a skill or behavior to develop, beyond the 5 work priorities.",
+            "mark": "structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "read-back"
       ]
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "plan-check"
+      ],
+      "override": {
+        "body": [
+          "Each individual priority supports a QHAG priority or the owner’s critical number.",
+          "The 1HAG, the QHAG and each person have ideally 3, up to 5 priorities.",
+          "Every priority has a done-by date and a measure of success.",
+          "Each QHAG priority advances a 1HAG priority."
+        ],
+        "notes": [
+          "Run this as the final read-back, top of the board to bottom.",
+          "Question the math: do the widgets add up to the revenue?",
+          "Anything that fails goes on the homework list with an owner.",
+          "At a quarterly, check that each Market Map circle has a home. It becomes a 3HAG capability, a KFFM change or a priority, or the team drops it. Check that last quarter’s open priorities are on the new QHAG.",
+          "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
+        ]
+      }
     },
     {
       "id": "kickoff:q3-path",
