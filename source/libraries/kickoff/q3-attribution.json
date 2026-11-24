@@ -5516,7 +5516,7 @@
       "copy_stack": true,
       "support": "Put your Core Customer on the screen.",
       "body": [
-        "Read your Core Customer’s three ranked needs aloud.",
+        "Read their three ranked needs aloud.",
         "For each patch of white space, ask: does it serve one of those needs?",
         "Keep the white space that does. Set the rest aside."
       ],
