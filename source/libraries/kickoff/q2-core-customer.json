@@ -262,7 +262,6 @@
         "q2"
       ],
       "art_full": true,
-      "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
         "The article explains the full profile. It covers what drives the buyer, how they buy and how to reach them.",
@@ -270,7 +269,30 @@
       ],
       "artwork": {
         "src": "assets/core-customer-links.svg",
-        "alt": "Two QR codes. Read the article: Who Is Your Most Valuable Customer? Run the prompt: Core Customer Discovery. Both open on darlison.com."
+        "alt": "Two QR codes. Read the article: Who Is Your Most Valuable Customer? Run the prompt: Core Customer Discovery. Both open on darlison.com.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 110,
+            "y": 20,
+            "w": 540,
+            "h": 600,
+            "href": "https://www.darlison.com/who-is-your-most-valuable-customer/",
+            "label": "Article: Who Is Your Most Valuable Customer?"
+          },
+          {
+            "x": 790,
+            "y": 20,
+            "w": 540,
+            "h": 600,
+            "href": "https://www.darlison.com/core-customer-discovery-prompt/",
+            "label": "Prompt: Core Customer Discovery"
+          }
+        ]
       }
     }
   ]

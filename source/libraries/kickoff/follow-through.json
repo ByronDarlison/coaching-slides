@@ -58,8 +58,9 @@
       "group": "",
       "notes": [
         "Read back the outcomes the team agreed at the start.",
-        "For each one, ask for a show of hands: answered, partly or still open.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+        "For each one, ask for a show of hands: met, partly met or still open.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
       "tags": [
         "kickoff",
@@ -67,9 +68,11 @@
       ],
       "eyebrow": "",
       "artwork": {
-        "src": "assets/two-days-sticky-checked.svg",
-        "alt": "Byron’s sticky note from the start of Day 1, handwritten with: Team clarity and commitment, now with a large green check mark beside it."
-      }
+        "src": "assets/two-days-sticky-purpose.svg",
+        "alt": "A sticky note with the coach’s outcome for the session: Team clarity and commitment."
+      },
+      "support": "For each outcome: met, partly met or still open?",
+      "art_side": true
     },
     {
       "id": "next-steps",

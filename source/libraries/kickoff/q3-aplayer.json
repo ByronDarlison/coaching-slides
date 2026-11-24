@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "objective",
-      "title": "An A-Player lives the values and delivers.",
-      "headline": "An A-Player lives the values and delivers.",
+      "title": "An A-Player lives the Core Values and delivers.",
+      "headline": "An A-Player lives the Core Values and delivers.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,13 +17,13 @@
         "q3"
       ],
       "art_side": true,
-      "support": "A-Players are the goal: 90% or more of the team.",
+      "support": "The goal: 90% or more of your people are A-Players.",
       "body": [
-        "A leader with A-Players has time to work on the business.",
-        "A leader without them is stuck in execution.",
-        "Today each leader assesses their direct reports, together."
+        "Today each leader assesses their direct reports. Peers weigh in.",
+        "The CEO’s assessment of the leadership team stays private."
       ],
       "notes": [
+        "A leader with A-Players has time to work on the business. A leader without them is stuck in execution.",
         "Most leaders can name their best people. It is harder to say why, and harder still to defend it to their peers.",
         "The team asks two questions. Does this person live the Core Values? Do they deliver on their scorecard?",
         "The CEO’s own assessment of the leadership team stays private. It is not part of this exercise."
@@ -35,8 +35,8 @@
     },
     {
       "id": "grid",
-      "title": "Assess each person on two questions.",
-      "headline": "Assess each person on two questions.",
+      "title": "Do they live the Core Values? Do they deliver?",
+      "headline": "Do they live the Core Values? Do they deliver?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -68,9 +68,9 @@
       "panels": [
         {
           "role": "Stage 1",
-          "heading": "No scorecards yet",
+          "heading": "Scorecards missing",
           "support": "Use what you have observed, the current job description and your judgment.",
-          "mark": "structure"
+          "mark": "action"
         },
         {
           "role": "Stage 2",
@@ -82,19 +82,20 @@
           "role": "Stage 3",
           "heading": "Scorecards and reviews",
           "support": "Use the evidence recorded in each person’s coaching reviews.",
-          "mark": "action"
+          "mark": "structure"
         }
       ],
       "notes": [
         "Do not wait for scorecards before the first assessment. Start with the evidence the team has.",
         "Record the date, the teams you assessed and the stage of evidence.",
         "If most people land on Behind, check the scorecards before you blame the people. Vague scorecards produce B-Players."
-      ]
+      ],
+      "support": "Say which stage you are at. Then use that evidence."
     },
     {
       "id": "place",
-      "title": "Place each of your direct reports.",
-      "headline": "Place each of your direct reports.",
+      "title": "Place each direct report on the grid.",
+      "headline": "Place each direct report on the grid.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -102,7 +103,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Write each person on a note, in your own colour. Place every note on the grid.",
+      "support": "Write each name on a note, in your own color. Place every note on the grid.",
       "body": [
         "Then present your team, one leader at a time.",
         "Peers say whether they see each person the same way."
@@ -116,8 +117,8 @@
     },
     {
       "id": "placed",
-      "title": "A-Player assessment example",
-      "headline": "A-Player assessment example",
+      "title": "Example: Jen places her six direct reports.",
+      "headline": "Example: Jen places her six direct reports.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -136,8 +137,8 @@
     },
     {
       "id": "zones",
-      "title": "Only one box holds A-Players.",
-      "headline": "Only one box holds A-Players.",
+      "title": "Only one box holds A-Players. What share of yours are in it?",
+      "headline": "Only one box holds A-Players. What share of yours are in it?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -157,8 +158,8 @@
     },
     {
       "id": "toxic",
-      "title": "A high performer who breaks the values is still a C.",
-      "headline": "A high performer who breaks the values is still a C.",
+      "title": "A high performer who breaks a Core Value is still a C.",
+      "headline": "A high performer who breaks a Core Value is still a C.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -178,8 +179,8 @@
     },
     {
       "id": "plans",
-      "title": "Everyone below A gets a plan.",
-      "headline": "Everyone below A gets a plan.",
+      "title": "Everyone below A gets a plan. Leave a B in place and you become one.",
+      "headline": "Everyone below A gets a plan. Leave a B in place and you become one.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -193,11 +194,12 @@
         "A C needs a plan right away. Do not wait for the next quarterly.",
         "For a values gap, the decision is about fit. For a performance gap, it is about improving.",
         "Review every plan at the agreed check-ins, and again next quarter.",
-        "Homework: each leader makes a plan and takes action on any C player."
+        "Homework: each leader makes a plan and takes action on any C-Player.",
+        "A leader with B-Players who stay at B for too long drops to that same level. The leader ends up doing the team’s work, not coaching the team to do it. Moving Bs back to As is not optional."
       ],
       "artwork": {
         "src": "assets/a-player-plans.svg",
-        "alt": "Plans for everyone below A, with columns for person, plan, accountable leader, next check-in and decision or completion date. Leo, B: close the gap to Ahead on the scorecard; Jen; weekly 1:1; within 90 days. Ravi, C: name the value and the behaviour, decide whether Ravi fits; Jen; weekly 1:1; within 30 days. Nora, C: set the scorecard standard, decide to improve or move on; Jen; weekly 1:1; within 30 days."
+        "alt": "Plans for everyone below A, with columns for person, plan, accountable leader, next check-in and decision or completion date. Leo, B: close the gap to Ahead on the scorecard; Jen; weekly 1:1; within 90 days. Ravi, C: name the value and the behavior, decide whether Ravi fits; Jen; weekly 1:1; within 30 days. Nora, C: set the scorecard standard, decide to improve or move on; Jen; weekly 1:1; within 30 days."
       }
     },
     {
@@ -211,7 +213,6 @@
         "q3"
       ],
       "art_full": true,
-      "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
         "The article explains each zone and what to do about it.",
@@ -219,7 +220,30 @@
       ],
       "artwork": {
         "src": "assets/a-player-links.svg",
-        "alt": "Two QR codes. Read the article: Who On Your Team Is An A-Player? Run the prompt: A-Player Team Assessment Prep. Both open on darlison.com."
+        "alt": "Two QR codes. Read the article: Who On Your Team Is An A-Player? Run the prompt: A-Player Team Assessment Prep. Both open on darlison.com.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 90,
+            "y": 20,
+            "w": 580,
+            "h": 600,
+            "href": "https://www.darlison.com/a-player-team-assessment/",
+            "label": "Article: Who On Your Team Is An A-Player?"
+          },
+          {
+            "x": 770,
+            "y": 20,
+            "w": 580,
+            "h": 600,
+            "href": "https://www.darlison.com/a-player-team-assessment-prompt/",
+            "label": "Prompt: A-Player Team Assessment Prep"
+          }
+        ]
       }
     }
   ]

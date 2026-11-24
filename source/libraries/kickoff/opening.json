@@ -1068,8 +1068,8 @@
     },
     {
       "id": "mirror",
-      "title": "Survey review",
-      "headline": "Survey review",
+      "title": "What did the prep survey tell us?",
+      "headline": "What did the prep survey tell us?",
       "layout": "comp-decision",
       "group": "",
       "eyebrow": "",
@@ -1111,7 +1111,8 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Ask each person to write an answer on a sticky note and share it. An example answer: team clarity and commitment. Agree on the outcomes. Return to these at the close. Allow 10 minutes."
+        "Ask each person to write an answer on a sticky note and share it. Agree on the outcomes. Return to these at the close. Allow 10 minutes.",
+        "The coach’s own outcome is “Team clarity and commitment”. Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
       ],
       "tags": [
         "kickoff",
@@ -1120,9 +1121,10 @@
       "support": "Write your answer, then share it with the team.",
       "eyebrow": "",
       "artwork": {
-        "src": "assets/two-days-sticky.jpg",
-        "alt": "Byron’s sticky note, handwritten with: Team clarity and commitment."
-      }
+        "src": "assets/valuable-sticky-question.svg",
+        "alt": "A blank sticky note with a large question mark on it."
+      },
+      "art_side": true
     },
     {
       "id": "two-days",

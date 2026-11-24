@@ -42,7 +42,7 @@
         "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each."
       ],
       "checklist": true,
-      "support": "Check the Team View in Metronome against your chart.",
+      "support": "In Metronome: open Team View. Check it against your chart.",
       "body": [
         "Every function on the chart is in the Team View, with its owner.",
         "Each owner names one critical number for the function: the one number that tells them whether they had a good day.",

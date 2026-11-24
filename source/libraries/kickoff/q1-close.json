@@ -56,17 +56,20 @@
       "group": "",
       "notes": [
         "Read back the outcomes the team agreed at the start.",
-        "For each one, ask for a show of hands: answered, partly or still open.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+        "For each one, ask for a show of hands: met, partly met or still open.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
       "tags": [
         "q1"
       ],
       "eyebrow": "",
       "artwork": {
-        "src": "assets/q1-sticky-checked.svg",
-        "alt": "Byron’s sticky note from the start of the day, handwritten with: Functional clarity with team accountability, now with a large green check mark beside it."
-      }
+        "src": "assets/q1-sticky-purpose.svg",
+        "alt": "A sticky note with the coach’s outcome for the session: Functional clarity with team accountability."
+      },
+      "support": "For each outcome: met, partly met or still open?",
+      "art_side": true
     }
   ]
 }

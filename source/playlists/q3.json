@@ -32,7 +32,12 @@
         "valuable"
       ]
     },
-    "kickoff:q3-appreciation",
+    {
+      "id": "kickoff:q3-appreciation",
+      "slides": [
+        "exercise"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -49,22 +54,68 @@
     {
       "id": "kickoff:function-chart",
       "slides": [
-        "ownership",
         "gaps"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-review",
-      "slides": [
-        "function-chart"
-      ]
+      ],
+      "override": {
+        "title": "Is your Function Chart still right?",
+        "headline": "Is your Function Chart still right?",
+        "support": "In Metronome: open Function Chart. Test it against how last quarter went.",
+        "panels": [
+          {
+            "role": "One person",
+            "heading": "Several functions?",
+            "support": "Make the load visible.",
+            "mark": "gap"
+          },
+          {
+            "role": "One function",
+            "heading": "Several owners?",
+            "support": "Agree who is accountable.",
+            "mark": "gap"
+          },
+          {
+            "role": "A gap",
+            "heading": "No owner?",
+            "support": "Name the person who will own it.",
+            "mark": "gap"
+          },
+          {
+            "role": "A new function",
+            "heading": "Not on the chart?",
+            "support": "Add it.",
+            "mark": "gap"
+          }
+        ],
+        "notes": [
+          "At a quarterly, put the current Function Chart on the screen. Ask where ownership was unclear last quarter, then fix the chart.",
+          "Restate the rule: every function has one accountable owner. One person is accountable for the work. Others may be responsible to contribute to the work.",
+          "In private mode, each person writes who holds each function; reveal, then agree. Resolve differences about current accountability. Add any new or planned functions.",
+          "Finish when every function has one owner who said yes out loud.",
+          "Allow about 25 minutes, with the Team View after it."
+        ]
+      }
     },
     {
       "id": "kickoff:q1-functions",
       "slides": [
-        "team-view",
         "numbers"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
+          "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
+          "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
+          "Show the Team View to the whole team at a town hall whenever it changes.",
+          "The critical number can be financial or not. A good place to start is what the function hands to the next one."
+        ],
+        "title": "Check your Team View and critical numbers.",
+        "headline": "Check your Team View and critical numbers.",
+        "body": [
+          "Every function is in the Team View, with its owner.",
+          "Each owner says their critical number: the one number that tells them whether they had a good day."
+        ],
+        "support": "In Metronome: open Team View. Check it against your Function Chart."
+      }
     },
     {
       "id": "kickoff:q3-path",
@@ -78,23 +129,22 @@
         "scorecard-intro"
       ],
       "override": {
+        "title": "Are your scorecards complete?",
+        "headline": "Are your scorecards complete?",
+        "support": "In Metronome: open Scorecards. Each leader answers in turn.",
+        "checklist": true,
+        "body": [
+          "Is your own scorecard complete?",
+          "Does each of your direct reports have one?",
+          "If not, say by when."
+        ],
         "notes": [
-          "At this session it is a check-in. Every leader completed their function scorecard in Metronome as homework.",
-          "Ask each leader where their scorecard stands, and which of its two metrics sits on the KFFM.",
-          "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
+          "By this session, each leader's direct reports have a scorecard too. Each leader rates their direct reports against it on the A-Player grid. If any are missing, say so now and agree a date.",
+          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's Core Values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
+          "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: complete the annual reviews on the function scorecards in Metronome."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q1-functions",
-      "slides": [
-        "scorecard"
-      ],
-      "override": {
-        "notes": [
-          "Purpose in one sentence. Three to five functional accountabilities, each starting Owns. Exactly two metrics: one widget the owner controls and one fiscal metric the role owns. Six to eight key competencies. The company’s core values.",
-          "The team agrees its Core Values later today. They then go on every scorecard."
         ]
       }
     },
@@ -105,67 +155,68 @@
       ]
     },
     {
-      "id": "kickoff:kffm",
-      "slides": [
-        "example-map"
-      ]
-    },
-    {
       "id": "kickoff:quarterly-kffm",
       "slides": [
         "map"
-      ]
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "widgets"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "widgets"
-      ]
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "status"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "numbers"
-      ]
-    },
-    {
-      "id": "kickoff:kffm",
-      "slides": [
-        "days-to-cash"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-kffm",
-      "slides": [
-        "days",
-        "profit-x"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open KFFM. Put it on the screen.",
+        "notes": [
+          "If the KFFM is not in Metronome yet, use the example drawing on the next slide.",
+          "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
+        ],
+        "body": [
+          "The 3 to 5 key functions are still the right ones.",
+          "Each owner rates their function red, yellow or green, by its critical number.",
+          "What will it take to turn it green?"
+        ]
+      }
     },
     {
       "id": "kickoff:kffm",
       "slides": [
         "levers"
-      ]
+      ],
+      "override": {
+        "title": "For each lever: did you push it? What moved?",
+        "headline": "For each lever: did you push it? What moved?",
+        "notes": [
+          "At a quarterly, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
+          "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
+          "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
+          "Price: has a good Profit per X emerged? If not, leave it blank.",
+          "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
+          "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
+          "Cost: what each function costs to run.",
+          "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
+        ],
+        "support": "In Metronome: open KFFM. Go lever by lever."
+      }
     },
     {
-      "id": "kickoff:quarterly-kffm",
+      "id": "kickoff:q3-kffm",
       "slides": [
-        "lever"
-      ]
+        "weekly"
+      ],
+      "override": {
+        "title": "Pick one lever, then review the KFFM every week.",
+        "headline": "Pick one lever, then review the KFFM every week.",
+        "support": "In Metronome: open KFFM. Which lever moves cash fastest?",
+        "body": [
+          "Make that lever a candidate for a QHAG priority.",
+          "Then open Meetings. Add a KFFM item to the weekly leadership meeting.",
+          "Each week, look at the flow: where is it stuck?",
+          "A red number needs a written plan: situation, cause, correction, follow-up."
+        ],
+        "notes": [
+          "The team picks the lever that moves cash fastest this quarter. Take it into the QHAG as a priority candidate.",
+          "New at this session: the KFFM joins the weekly leadership meeting. That is where the team watches the lever it picked.",
+          "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the KFFM. The KFFM changes at the quarterly.",
+          "Homework: review the KFFM in every weekly leadership meeting.",
+          "In Metronome, the weekly leadership meeting takes an agenda item of type KFFM. It shows the key functions and their flow inside the meeting. The scoreboard already reviews the numbers. The KFFM item shows the same numbers in flow order, so the team sees what a red function is holding up."
+        ]
+      }
     },
-    "kickoff:q3-kffm",
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -173,16 +224,9 @@
       ]
     },
     {
-      "id": "kickoff:quarterly-review",
-      "slides": [
-        "purpose"
-      ]
-    },
-    {
       "id": "kickoff:q3-values",
       "slides": [
-        "results",
-        "vote"
+        "review"
       ]
     },
     {
@@ -191,20 +235,19 @@
         "values"
       ],
       "override": {
-        "title": "Test your top three.",
-        "headline": "Test your top three.",
-        "support": "Take the three clusters with the most votes. Test each one:",
+        "title": "Test each Core Value.",
+        "headline": "Test each Core Value.",
+        "support": "Is it a value you hire and fire on, or a brand value?",
         "notes": [
-          "A cluster that fails the tests is a brand value or a wish, not a Core Value.",
+          "A value that fails the tests is a brand value or a wish, not a Core Value.",
           "A fourth or fifth value can earn its place here.",
           "Allow about 10 minutes."
         ],
         "body": [
-          "Is it a value you hire and fire on, or a brand value?",
           "When did you last let someone go for not living it?",
-          "Does someone who keeps breaching it belong here?",
+          "Does someone who keeps breaking it belong here?",
           "Would you build a new company around it, in any industry?",
-          "Then talk about anything important that was left out."
+          "Then ask: is an important value missing?"
         ]
       }
     },
@@ -217,13 +260,26 @@
       ]
     },
     {
+      "id": "kickoff:quarterly-review",
+      "slides": [
+        "purpose"
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans.",
+        "body": [
+          "Read your Core Purpose aloud. What needs to change?"
+        ]
+      }
+    },
+    {
       "id": "kickoff:bhag",
       "slides": [
         "test"
       ],
       "override": {
         "headline": "Does your BHAG still hold?",
-        "title": "Does your BHAG still hold?"
+        "title": "Does your BHAG still hold?",
+        "support": "In Metronome: open One Page Plans. Read your BHAG aloud."
       }
     },
     {
@@ -240,21 +296,6 @@
       ]
     },
     {
-      "id": "kickoff:q1-market-map",
-      "slides": [
-        "example"
-      ],
-      "override": {
-        "title": "Is your Market Map still right?",
-        "headline": "Is your Market Map still right?",
-        "notes": [
-          "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
-          "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
-          "Homework: update the Market Map in the War Room in Metronome."
-        ]
-      }
-    },
-    {
       "id": "kickoff:q3-attribution",
       "slides": [
         "objective",
@@ -263,26 +304,33 @@
         "us",
         "competitors",
         "white-space",
-        "line",
-        "brainstorm",
-        "score"
+        "line"
       ]
     },
     {
-      "id": "kickoff:q2-core-customer",
+      "id": "kickoff:q1-market-map",
       "slides": [
         "example"
       ],
       "override": {
-        "title": "Is this still your Core Customer?",
-        "headline": "Is this still your Core Customer?",
+        "title": "Are your top competitors on your Market Map?",
+        "headline": "Are your top competitors on your Market Map?",
         "notes": [
-          "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
-          "Read the three ranked needs aloud. The team tests the white space against them next.",
-          "Change only what is no longer true.",
-          "Homework: update the Core Customer in the War Room in Metronome."
-        ]
+          "Put the team’s own Market Map on the screen. The example here is a reminder of its parts.",
+          "Ask what changed in the market last quarter. Check that the top competitors are on the map. The team scores them next.",
+          "Homework: update the Market Map in the War Room in Metronome."
+        ],
+        "support": "Put your own Market Map on the screen. What changed last quarter?"
       }
+    },
+    {
+      "id": "kickoff:q3-attribution",
+      "slides": [
+        "brainstorm",
+        "score",
+        "sheet-example",
+        "core-customer"
+      ]
     },
     {
       "id": "kickoff:q3-attribution",
@@ -304,12 +352,21 @@
       ],
       "override": {
         "notes": [
-          "Ask a leader to read the plan aloud. Invite the team to identify contradictions and untested assumptions.",
+          "Ask a leader to read the 3HAG aloud. Invite the team to identify contradictions and untested assumptions.",
           "Test it against the 3HAG line: does each capability build an attribute where the company will lead?",
-          "Question the math: do the five widget targets add up to the revenue?",
-          "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
+          "Question the math: do the widget targets add up to the revenue?",
+          "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner.",
+          "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?",
+          "The 3HAG line gives things up. Check the other side too: if a capability still invests in an attribute the team chose to let drop, the 3HAG has not caught up with the line."
         ],
-        "support": "Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open One Page Plans. Read your 3HAG aloud. Then test it against your 3HAG line.",
+        "body": [
+          "Each capability builds an attribute where you will lead.",
+          "No capability builds an attribute you chose to let drop.",
+          "The statement and the “known for” describe the future company.",
+          "The numbers are set, each with an owner, and the widgets support the revenue.",
+          "Decide: what in the 3HAG changes?"
+        ]
       }
     },
     {
@@ -327,33 +384,73 @@
         "notes": [
           "Read the 1HAG aloud, top to bottom, then run the six checks.",
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
-          "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
+          "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner.",
+          "Success is measured by a critical number where possible.",
+          "The 3HAG line is the test: a priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG."
         ],
-        "support": "Read it aloud. Then test it against your 3HAG line."
+        "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud.",
+        "body": [
+          "Every number and priority has one owner with capacity.",
+          "Each priority builds a 3HAG capability or moves a KFFM lever.",
+          "No priority invests in an attribute you chose to let drop.",
+          "Each measure has a target and an achieved-by date.",
+          "Each priority moves its number enough, and soon enough to see.",
+          "The targets reach the 3HAG, the widgets support the revenue, and head count is set."
+        ]
       }
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "definition",
-        "map",
         "quarter-numbers"
-      ]
-    },
-    {
-      "id": "kickoff:priorities",
-      "slides": [
-        "quality",
-        "worked-priority"
       ]
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "quarter-first",
-        "quarter-rest",
+        "quarter-first"
+      ],
+      "override": {
+        "notes": [
+          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
+          "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the white space changed.",
+          "Run the six questions on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
+          "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
+          "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
+          "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
+          "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
+          "Agree on the done-by date, the measure of success and the date it will be achieved by.",
+          "Done is not the same as success. The owner commits to the done-by date. The achieved-by date is when the number must have moved. If it has not moved by then, find out why and fix the cause."
+        ],
+        "support": "What must you get done now to deliver the 1HAG?",
+        "body": [
+          "List candidates: last quarter’s open priorities, your 1HAG priorities, the lever you picked and what the white space changed.",
+          "Test each with the six questions, then rank.",
+          "Agree on the owner, done-by date, measure of success and achieved-by date."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-rest"
+      ],
+      "override": {
+        "body": [
+          "Connect each to a 1HAG priority. Give each an owner, a done-by date, a measure of success and an achieved-by date."
+        ],
+        "title": "What else must you get done this quarter?",
+        "headline": "What else must you get done this quarter?"
+      }
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
         "qhag-check"
-      ]
+      ],
+      "override": {
+        "support": "Read your QHAG aloud from the board before you move on."
+      }
     },
     {
       "id": "kickoff:q3-path",
@@ -362,14 +459,71 @@
       ]
     },
     {
+      "id": "eoa:meeting-6",
+      "slides": [
+        "sprint-lanes"
+      ],
+      "override": {
+        "headline": "What the sprint lanes page holds.",
+        "title": "What the sprint lanes page holds",
+        "panels": [
+          {
+            "role": "01",
+            "heading": "A widget forecast, week by week",
+            "support": "The weekly forecast adds up to the quarter’s widget targets.",
+            "mark": "action"
+          },
+          {
+            "role": "02",
+            "heading": "One lane for each company priority",
+            "support": "Each lane has the same owner as its priority.",
+            "mark": "structure"
+          },
+          {
+            "role": "03",
+            "heading": "One step each week",
+            "support": "Each week’s step moves the priority toward its measure of success.",
+            "mark": "structure"
+          }
+        ],
+        "notes": [
+          "A reminder before the team builds again. Every team started sprint lanes at Q2.",
+          "Update the page every week. A week that slips is a prompt to act."
+        ]
+      }
+    },
+    {
       "id": "kickoff:q2-sprint",
       "slides": [
-        "example",
-        "widgets",
-        "lanes",
-        "lane-one",
+        "example"
+      ],
+      "override": {
+        "title": "Example: sprint lanes.",
+        "headline": "Example: sprint lanes.",
+        "notes": [
+          "The same subscription company and the same QHAG as the Kick Off example.",
+          "This slide shows the shape of the whole page.",
+          "Priority #1 is done in week 8, so its lane shows Complete from week 9. Its measure of success stays on the QHAG."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
         "build"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Start with the widgets, then take the priorities in rank order. The owner of each lane drafts it and the team questions it.",
+          "Building the plan together develops the team as much as the plan.",
+          "Allow about 45 minutes.",
+          "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
+          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers add up to the quarter’s targets.",
+          "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
+          "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
+        ],
+        "support": "Work together on the 13-Week Sprint Lanes page of your board."
+      }
     },
     {
       "id": "kickoff:q2-sprint",
@@ -390,7 +544,60 @@
         "priorities"
       ]
     },
-    "kickoff:individual",
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "my-priorities"
+      ],
+      "override": {
+        "panels": [
+          {
+            "role": "Measure",
+            "heading": "Critical number",
+            "support": "The one you named on the Team View. One for each function you own.",
+            "mark": "structure"
+          },
+          {
+            "role": "Commitment",
+            "heading": "Up to 5 work priorities",
+            "support": "Two delivered beat five started. A company priority you own goes first. Test each with the six questions.",
+            "mark": "action"
+          },
+          {
+            "role": "Development",
+            "heading": "Professional development",
+            "support": "Add a skill or behavior to develop, beyond the 5 work priorities.",
+            "mark": "structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "read-back"
+      ]
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "plan-check"
+      ],
+      "override": {
+        "body": [
+          "Each individual priority supports a QHAG priority or the owner’s critical number.",
+          "The 1HAG, the QHAG and each person have ideally 3, up to 5 priorities.",
+          "Every priority has a done-by date and a measure of success.",
+          "Each QHAG priority advances a 1HAG priority."
+        ],
+        "notes": [
+          "Run this as the final read-back, top of the board to bottom.",
+          "Anything that fails goes on the homework list with an owner.",
+          "Check that last quarter’s open priorities are on the new QHAG.",
+          "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
+        ]
+      }
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -404,13 +611,19 @@
       ],
       "override": {
         "notes": [
-          "The team learned these roles at Q1. They now apply to next year’s forecast.",
+          "The team learned these roles at Q1. They now apply to next year’s forecast, which is new today.",
           "Finance builds the model. Each leader owns the numbers for their widgets. The CEO owns the total.",
           "When the forecast is wrong, the first question is which widget moved, not who to blame."
         ]
       }
     },
     "kickoff:q3-cash",
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "close"
+      ]
+    },
     {
       "id": "kickoff:rhythm-teaching",
       "slides": [
@@ -419,64 +632,60 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2.",
         "panels": [
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Metrics: yesterday’s widget actual and today’s forecast",
-              "The #1 thing to get done today",
-              "Stucks, and anything that can’t wait"
-            ]
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
+            "mark": "structure"
           },
           {
             "role": "Weekly",
             "heading": "Weekly 1:1",
             "support": "15 to 30 minutes. Each leader with each direct report, led by the direct report.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Metrics",
-              "Top 3 priorities for the week",
-              "Feedback both ways",
-              "Dynamic"
-            ]
+            "mark": "structure"
           },
           {
             "role": "Weekly",
             "heading": "Weekly leadership meeting",
             "support": "60 minutes or less. The CEO owns it.",
-            "mark": "structure",
-            "items": [
-              "Good news",
-              "Values recognition",
-              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
-              "Review the KFFM",
-              "QHAG, priority and sprint lane status",
-              "Stucks, asks and offers"
-            ]
+            "mark": "structure"
+          },
+          {
+            "role": "Monthly",
+            "heading": "Monthly Town Hall",
+            "support": "30 to 45 minutes. Everyone. The CEO owns it.",
+            "mark": "structure"
           }
         ],
         "notes": [
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
-          "All five meetings should be running: the three here, the Monthly Town Hall and Quarterly Planning.",
-          "New today: the KFFM review joins the weekly leadership meeting."
+          "Quarterly Planning is the fifth meeting. The team is in it now.",
+          "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
+          "Weekly 1:1: Good news; Metrics; Top 3 priorities for the week; Feedback both ways; Dynamic.",
+          "Weekly leadership meeting: Good news; Values recognition; Widget scoreboard; KFFM critical numbers; QHAG: numbers, priorities, sprint lanes; Stucks, asks and offers.",
+          "Monthly Town Hall: Good news, then values recognition; QHAG progress on the #1 priority, and how everyone can help; Financial transparency: what is working and what is not; One thing we can do as a company to improve our financial health.",
+          "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
+          "This is the only meeting where the whole company hears the same thing at the same time.",
+          "Financial transparency builds the financial literacy of the whole team.",
+          "Show the Team View at a Town Hall only when it changes.",
+          "New today: the KFFM review joins the weekly leadership meeting.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
       }
     },
-    {
-      "id": "kickoff:q2-meetings",
-      "slides": [
-        "town-hall"
-      ]
-    },
     "kickoff:q3-meetings",
-    "kickoff:cascade-messages",
+    {
+      "id": "kickoff:cascade-messages",
+      "override": {
+        "support": "Write them together now. Each leader shares them with their team tomorrow.",
+        "title": "What 3 messages will you share with the whole company?",
+        "headline": "What 3 messages will you share with the whole company?"
+      }
+    },
     "kickoff:q3-close",
     "kickoff:closing"
   ]

@@ -37,13 +37,14 @@
       ],
       "notes": [
         "Ask each person to write an answer and share it. Agree on the outcomes. Return to them at the close. Allow 10 minutes.",
-        "Byron’s note shows the purpose of Q2: planning and executing with increasing momentum."
+        "The coach’s own outcome is “Planning and executing with increasing momentum”. Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
       ],
       "support": "Write your answer, then share it with the team.",
       "artwork": {
-        "src": "assets/q2-sticky.jpg",
-        "alt": "Byron’s sticky note, handwritten with: Planning and executing with increasing momentum."
-      }
+        "src": "assets/valuable-sticky-question.svg",
+        "alt": "A blank sticky note with a large question mark on it."
+      },
+      "art_side": true
     }
   ]
 }

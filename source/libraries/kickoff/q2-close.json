@@ -27,7 +27,7 @@
         {
           "role": "Metronome",
           "heading": "KFFM and scorecards",
-          "support": "Put the KFFM into Metronome. Complete the function scorecards for all leaders.",
+          "support": "Put the KFFM into Metronome. Complete a scorecard for every leader and every direct report.",
           "mark": "structure"
         },
         {
@@ -39,7 +39,7 @@
         {
           "role": "Before next session",
           "heading": "Prepare",
-          "support": "Run Mission to Mars with your own team, and have them take StrengthsFinder 2.0. Read The Five Dysfunctions of a Team. Complete the prep survey.",
+          "support": "No agreed Core Values? Run Mission to Mars. Your team takes StrengthsFinder 2.0. Read The Five Dysfunctions of a Team. Complete the prep survey.",
           "mark": "structure"
         }
       ],
@@ -59,16 +59,18 @@
       "tags": [
         "q2"
       ],
-      "support": "For each outcome: answered, partly or still open?",
+      "support": "For each outcome: met, partly met or still open?",
       "notes": [
         "Read back the outcomes the team agreed at the start.",
         "Ask for a show of hands on each one.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date."
+        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
       ],
       "artwork": {
-        "src": "assets/q2-sticky-checked.svg",
-        "alt": "Byron’s sticky note from the start of the day, handwritten with: Planning and executing with increasing momentum, now with a large green check mark beside it."
-      }
+        "src": "assets/q2-sticky-purpose.svg",
+        "alt": "A sticky note with the coach’s outcome for the session: Planning and executing with increasing momentum."
+      },
+      "art_side": true
     }
   ]
 }

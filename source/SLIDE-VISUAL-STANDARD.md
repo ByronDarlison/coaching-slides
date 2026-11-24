@@ -76,7 +76,7 @@ Learned editing the Metronomics Kick Off. They apply to every deck.
 
 Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 
-12. **Open with the session's purpose.** The "What would make today valuable?" slide shows the session's objective on a sticky, such as "Functional clarity with team accountability" at Q1. The close shows the same sticky checked.
+12. **Hold the session’s purpose until the close (Byron, 24-Nov-2026).** The “What would make today valuable?” slide shows a sticky with a question mark, so the coach’s answer does not lead the room. The close shows the coach’s purpose on the sticky, such as “Functional clarity with team accountability” at Q1, with no check mark: the team decides whether it was met.
 13. **One continuing example in every deck.** Use our own subscription company everywhere: the same people, functions and numbers. Shannon's examples are a source to check against, not to copy. A person who holds two functions shows in red. The Kick Off's Function Chart and example pages are the canon for names, owners and numbers: check a later deck's example against them before adding a person or a figure (Byron, 16-Nov-2026: the Q1 Team View had invented a CEO, "Sam", where the Kick Off has Pat).
 14. **Teach why, not only what.** Each part of a tool says on screen why it matters, then the question to ask. End each tool by asking what it changes: the 3HAG capabilities, the KFFM, the 1HAG and the QHAG.
 15. **Build a picture before the plan it tests.** At Q1, the Market Map comes before the 3HAG pass. Its findings then test the 3HAG, the 1HAG and the QHAG.
@@ -87,6 +87,24 @@ Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 20. **Name every label in a drawing.** A box that holds a priority says "Company priority #1" above it. A finished week says "Complete", never "Done" beside a "Done by" date. One idea keeps one word across every drawing in the deck.
 21. **A path map with more than eight stages uses two rows.** One row of ten shrinks the labels below what a projector shows.
 22. **A new meeting gets its own agenda slide.** The meeting check holds three cards. A fourth card does not fit: put the added meeting on the next slide.
+
+Learned reviewing the Q3 deck (Byron, 23-Nov-2026):
+
+23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use it in the quarterly decks only, as a playlist `override`: a Kick Off team has no account yet. Use text, never a screenshot of Metronome. A full-width drawing slide cannot show the line yet.
+
+Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
+
+24. **A later session checks. It does not teach again.** Once the team has the tool, one slide checks it: a title that asks, the ask on screen, and the teaching in the notes. Drop the example slide. The Function Chart check at Q2 and Q3 is the model. The session that first teaches the tool keeps its teaching slides.
+25. **The check is on the screen.** A reused slide whose `override` changes only the notes still shows the old teaching. Change the title and the ask as well.
+26. **Never assume where the team is.** One team arrives with the work finished, another with a draft, another with nothing. Write each slide so it is true for all three. Keep "draft", "later today" and "once we agree" off the screen.
+27. **Every line on screen earns its place.** A person reading it cold must know why it is asked. Test a line before lifting it from the notes.
+28. **Trace what each exercise needs.** When an exercise needs something the team must bring, an earlier session sets it as homework and this session checks it before the exercise starts. The A-Player grid needs a scorecard for every direct report, so direct reports have scorecards by Q3.
+29. **Fix the pattern, not the slide.** When one slide is wrong, sweep the whole deck and its sister decks for the same fault. Bring Byron the full list before he finds the next one.
+30. **A check asks whether the tool is being used, not only whether it is right.** Before removing a slide as a replay, ask what check it carries. The KFFM check walks all six levers every quarter: is each one being pushed, and what moved.
+31. **Read the whole deck, then have three outsiders read it, before Byron sees it.** Read every slide in order, following the thread from each slide to the next. Then give the built deck to a cold reader, a copywriter and a visual designer who do not know what changed. Fix what they find. Bring Byron one list, with every new line marked, not one slide at a time.
+32. **Measure drawing type the way it is presented.** Check the smallest label in every drawing with the sidebar hidden at 1280 by 720 and 1366 by 768. The floor is 13 pixels. A drawing inside a narrow side panel needs names only.
+33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it.
+34. **Sprint lanes: taught at Q2, one refresher at Q3, none after (Byron, 24-Nov-2026).** Every team starts sprint lanes at Q2. Do not wait a quarter. Q3 repeats one Q2 slide, "What the sprint lanes page holds", by reference, before the team builds again. From Q4 the team has had enough exposure: no refresher.
 
 ## Layouts
 

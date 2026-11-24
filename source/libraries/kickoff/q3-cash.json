@@ -17,10 +17,10 @@
         "q3"
       ],
       "art_side": true,
-      "support": "The finance leader builds it in the 12-month template, before the annual.",
+      "support": "Use the 12-month template.",
       "body": [
         "Start from the KFFM widgets.",
-        "Each leader gives the numbers for their own widgets.",
+        "Before the annual, each leader gives Finance their own widget numbers.",
         "Put a name on every line of the profit and loss."
       ],
       "notes": [
@@ -31,7 +31,22 @@
       ],
       "artwork": {
         "src": "assets/cash-12-month.svg",
-        "alt": "One QR code. 12-month forecast: the finance leader builds next year in this. It opens the Example tab of the 12-month cash forecast template in Google Sheets."
+        "alt": "One QR code. 12-month forecast: the finance leader builds next year in this. It opens the Example tab of the 12-month cash forecast template in Google Sheets.",
+        "viewbox": [
+          660,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 40,
+            "y": 20,
+            "w": 580,
+            "h": 600,
+            "href": "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209",
+            "label": "12-month forecast template"
+          }
+        ]
       }
     }
   ]

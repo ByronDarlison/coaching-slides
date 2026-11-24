@@ -25,7 +25,8 @@
       ],
       "notes": [
         "This is the Mission to Mars exercise. It discovers the values the company already lives.",
-        "At Q2, teach the exercise so each leader can run it with their own team before the next session.",
+        "It is for a team with no agreed Core Values, or one whose values failed the test. A team whose values passed the test skips it.",
+        "At Q2, teach the exercise so the leadership team can run it with the wider team before the next session.",
         "In a small company, where the leadership team is most of the company, the team runs it together in the room. Allow about 60 minutes."
       ],
       "artwork": {
@@ -46,12 +47,12 @@
       "art_full": true,
       "art_fit": true,
       "notes": [
-        "Walk the five steps once, so each leader sees where the exercise ends.",
-        "A leader runs the same five steps with their team: pick, share and cluster, vote, test, agree."
+        "Walk the five steps once, so the leaders see where the exercise ends.",
+        "The leadership team runs these five steps in one session with the wider team."
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people: each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behaviour it means."
+        "alt": "Five steps in a row. 1, pick three people: each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
       }
     },
     {
@@ -74,7 +75,7 @@
       "notes": [
         "Each leader works in private. Reveal when everyone is done.",
         "The people must be outside the room, so nobody picks a colleague at the table.",
-        "Ask for behaviour the leader has seen, not a quality they admire in general."
+        "Ask for behavior the leader has seen, not a quality they admire in general."
       ]
     },
     {
@@ -95,30 +96,7 @@
       ],
       "notes": [
         "The coach groups the notes as each leader presents.",
-        "A few words that describe the behaviour are enough for now. The names come at the end."
-      ]
-    },
-    {
-      "id": "results",
-      "title": "Bring your teams’ values together.",
-      "headline": "Bring your teams’ values together.",
-      "layout": "comp-story",
-      "group": "",
-      "eyebrow": "",
-      "tags": [
-        "q3"
-      ],
-      "copy_stack": true,
-      "support": "Each leader shares their team’s top three values, and the behaviour behind each.",
-      "body": [
-        "Move similar values together.",
-        "Name each cluster with a word or a phrase."
-      ],
-      "notes": [
-        "Each leader ran Mission to Mars with their own team as homework. This is where the results meet.",
-        "The coach groups the notes as each leader presents. Values that came from several teams are the strongest signal.",
-        "If a leader did not run the exercise, say so and carry on with the results the team has.",
-        "Allow about 20 minutes for this slide and the three that follow."
+        "A few words that describe the behavior are enough for now. The names come at the end."
       ]
     },
     {
@@ -134,7 +112,6 @@
       "copy_stack": true,
       "support": "Each leader has three votes.",
       "body": [
-        "Put your votes on the clusters that best show your company’s values.",
         "Stack them on one cluster, or spread them."
       ],
       "notes": [
@@ -142,9 +119,32 @@
       ]
     },
     {
+      "id": "review",
+      "title": "Read your Core Values aloud.",
+      "headline": "Read your Core Values aloud.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q3"
+      ],
+      "copy_stack": true,
+      "support": "In Metronome: open One Page Plans.",
+      "body": [
+        "Read each value and the behavior it means."
+      ],
+      "notes": [
+        "At a quarterly, the team arrives in one of three places: agreed Core Values, a draft from a Mission to Mars session, or neither.",
+        "With agreed values, read them from the One Page Plan and go straight to the test.",
+        "With a draft, the leadership team reviews it, changes what needs changing and confirms it today.",
+        "With neither, say so. Agree a date for the Mission to Mars session and move on.",
+        "The Core Values are what each leader rates their direct reports against on the A-Player grid."
+      ]
+    },
+    {
       "id": "example",
-      "title": "A value is a name and the behaviour it means.",
-      "headline": "A value is a name and the behaviour it means.",
+      "title": "A Core Value is a name and the behavior it means.",
+      "headline": "A Core Value is a name and the behavior it means.",
       "layout": "comp-decision",
       "group": "",
       "eyebrow": "",
@@ -155,33 +155,33 @@
       "panels": [
         {
           "role": "Example",
-          "heading": "Own the outcome",
-          "support": "We take full responsibility for results, not effort or intent.",
+          "heading": "Honesty",
+          "support": "Tell the truth. Especially to yourself.",
           "mark": "structure"
         },
         {
           "role": "Example",
-          "heading": "Tell the truth",
-          "support": "Especially to yourself.",
+          "heading": "Persistence",
+          "support": "When blocked, dig in. Get creative. Get it done.",
           "mark": "structure"
         },
         {
           "role": "Example",
-          "heading": "Do what you say",
-          "support": "Every time.",
+          "heading": "Reliability",
+          "support": "Do what you say. Every time.",
           "mark": "structure"
         }
       ],
       "notes": [
-        "These are the example company’s Core Values. Use them to show the form: a short name, then the behaviour.",
-        "Do not recommend adopting them. The team’s values come from the people named in the exercise.",
-        "Watch for a value with no clear behaviour behind it."
+        "These are example Core Values. Use them to show the form: a short name, then the behavior it means.",
+        "Do not recommend adopting them. The team’s values are its own.",
+        "Watch for a value with no clear behavior behind it."
       ]
     },
     {
       "id": "agree",
-      "title": "Agree your Core Values.",
-      "headline": "Agree your Core Values.",
+      "title": "Confirm your Core Values.",
+      "headline": "Confirm your Core Values.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -189,14 +189,16 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Name each value. Write the behaviour it means.",
+      "support": "Change only what failed the test.",
       "body": [
-        "Preferably 3, definitely no more than 5.",
-        "Not aspirational. How your best people already act."
+        "Each value has a name and the behavior it means.",
+        "Ideally 3, up to 5.",
+        "They describe how your best people already act."
       ],
       "notes": [
-        "The wording does not have to be perfect today. Agree the name and the behaviour, then refine the words as homework.",
-        "Homework: share the Core Values with the whole team."
+        "A team with agreed values changes only what failed the test.",
+        "A team with a draft agrees on the name and the behavior today. The wording does not have to be perfect. Refine the words as homework.",
+        "Homework: share the Core Values with the whole company."
       ]
     },
     {
@@ -210,15 +212,37 @@
         "q3"
       ],
       "art_full": true,
-      "art_fit": true,
       "notes": [
         "Scan to open each page on darlison.com.",
-        "The first article shows how to describe each value at three levels of behaviour. It also shows how to hire on the values.",
-        "The second article and the prompt pressure-test each value against real stories."
+        "The article shows how to describe each value at three levels of behavior. It also shows how to hire on the values.",
+        "The prompt pressure-tests each value against real stories. Its page is for members. The article How to Discover Your Company’s Values Using AI explains the prompt and is open to everyone."
       ],
       "artwork": {
         "src": "assets/values-links.svg",
-        "alt": "Three QR codes. Read the article: Values: How Not To Chase Your Tail. Read the article: How to Discover Your Company’s Values Using AI. Run the prompt: Values Discovery. All three open on darlison.com."
+        "alt": "Two QR codes. Read the article: Values: How Not To Chase Your Tail. Run the prompt: Values Discovery. Both open on darlison.com.",
+        "viewbox": [
+          1440,
+          640
+        ],
+        "qr": true,
+        "links": [
+          {
+            "x": 258,
+            "y": 20,
+            "w": 444,
+            "h": 600,
+            "href": "https://www.darlison.com/values-how-not-to-chase-your-tail/",
+            "label": "Article: Values: How Not To Chase Your Tail"
+          },
+          {
+            "x": 738,
+            "y": 20,
+            "w": 444,
+            "h": 600,
+            "href": "https://www.darlison.com/values-discovery-prompt/",
+            "label": "Prompt: Values Discovery"
+          }
+        ]
       }
     }
   ]

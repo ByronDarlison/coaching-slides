@@ -50,22 +50,62 @@
     {
       "id": "kickoff:function-chart",
       "slides": [
-        "ownership",
         "gaps"
-      ]
-    },
-    {
-      "id": "kickoff:quarterly-review",
-      "slides": [
-        "function-chart"
-      ]
+      ],
+      "override": {
+        "title": "Is your Function Chart still right?",
+        "headline": "Is your Function Chart still right?",
+        "support": "In Metronome: open Function Chart. Test it against how the quarter really went.",
+        "panels": [
+          {
+            "role": "One person",
+            "heading": "Several functions?",
+            "support": "Make the load visible.",
+            "mark": "gap"
+          },
+          {
+            "role": "One function",
+            "heading": "Several owners?",
+            "support": "Agree who is accountable.",
+            "mark": "gap"
+          },
+          {
+            "role": "A gap",
+            "heading": "No owner?",
+            "support": "Name the person who will own it.",
+            "mark": "gap"
+          },
+          {
+            "role": "A new function",
+            "heading": "Not on the chart?",
+            "support": "Add it.",
+            "mark": "gap"
+          }
+        ],
+        "notes": [
+          "At a quarterly, put the current Function Chart on the screen. Ask where ownership was unclear last quarter, then fix the chart.",
+          "Restate the rule: every function has one accountable owner. One person is accountable for the work. Others may be responsible to contribute to the work.",
+          "In private mode, each person writes who holds each function; reveal, then agree. Resolve differences about current accountability. Add any new or planned functions.",
+          "Finish when every function has one owner who said yes out loud.",
+          "Allow about 25 minutes, with the Team View after it."
+        ]
+      }
     },
     {
       "id": "kickoff:q1-functions",
       "slides": [
-        "team-view",
         "numbers"
-      ]
+      ],
+      "override": {
+        "notes": [
+          "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
+          "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
+          "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
+          "Show the Team View to the whole team at a town hall whenever it changes."
+        ],
+        "title": "Check your Team View and critical numbers.",
+        "headline": "Check your Team View and critical numbers."
+      }
     },
     {
       "id": "kickoff:q2-path",
@@ -79,22 +119,21 @@
         "scorecard-intro"
       ],
       "override": {
+        "title": "Where does your scorecard stand?",
+        "headline": "Where does your scorecard stand?",
+        "support": "In Metronome: open Scorecards. The Head of Company goes first.",
+        "checklist": true,
+        "body": [
+          "Head of Company: walk the team through yours.",
+          "Each leader: where does yours stand?"
+        ],
         "notes": [
-          "At this session it is a check-in. Open the Head of Company scorecard in Metronome, and the Head of Company walks the team through it.",
+          "At a quarterly, this is a check-in. Open the Head of Company scorecard in Metronome, and the Head of Company walks the team through it.",
           "Then ask each leader where their own scorecard stands.",
-          "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q1-functions",
-      "slides": [
-        "scorecard"
-      ],
-      "override": {
-        "notes": [
-          "Purpose in one sentence. Three to five functional accountabilities, each starting Owns. Exactly two metrics: one widget the owner controls and one fiscal metric the role owns. Six to eight key competencies. The company’s core values.",
-          "Homework: every leader completes their function scorecard in Metronome."
+          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's core values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
+          "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "Homework: every leader completes their function scorecard in Metronome, and builds one for each direct report."
         ]
       }
     },
@@ -114,7 +153,10 @@
       "id": "kickoff:quarterly-kffm",
       "slides": [
         "map"
-      ]
+      ],
+      "override": {
+        "support": "Put your KFFM on the screen."
+      }
     },
     {
       "id": "kickoff:kffm",
@@ -157,7 +199,17 @@
       "id": "kickoff:kffm",
       "slides": [
         "levers"
-      ]
+      ],
+      "override": {
+        "title": "Are you pushing all six levers?",
+        "headline": "Are you pushing all six levers?",
+        "notes": [
+          "At a quarterly, the six levers are the check on the KFFM. The map is only right if the team is using it to move more cash faster.",
+          "The levers are quantity, conversion, price, timing, capacity and cost. They are the ways the owner manages cash.",
+          "Timing is how long one widget takes to get through. Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
+          "Use the example to name each lever. Then go to the team's own KFFM on the next slide."
+        ]
+      }
     },
     {
       "id": "kickoff:quarterly-kffm",
@@ -174,9 +226,20 @@
     {
       "id": "kickoff:quarterly-review",
       "slides": [
-        "purpose",
+        "purpose"
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. Read it aloud. Is it still true? What changes?"
+      }
+    },
+    {
+      "id": "kickoff:quarterly-review",
+      "slides": [
         "values"
-      ]
+      ],
+      "override": {
+        "support": "In Metronome: open One Page Plans. If you have Core Values, read them aloud and test each one:"
+      }
     },
     {
       "id": "kickoff:q3-values",
@@ -193,7 +256,8 @@
       ],
       "override": {
         "headline": "Does your BHAG still hold?",
-        "title": "Does your BHAG still hold?"
+        "title": "Does your BHAG still hold?",
+        "support": "In Metronome: open One Page Plans and read your BHAG aloud."
       }
     },
     {
@@ -255,7 +319,8 @@
           "Test it against the Core Customer: does each capability serve their three ranked needs?",
           "Question the math: do the five widget targets add up to the revenue?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner."
-        ]
+        ],
+        "support": "In Metronome: open One Page Plans. Read it aloud before you move on."
       }
     },
     {
@@ -274,7 +339,8 @@
           "Read the 1HAG aloud, top to bottom, then run the six checks.",
           "The status review already showed where the 1HAG stands. Test it against the Core Customer the team named.",
           "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner."
-        ]
+        ],
+        "support": "In Metronome: open Annual Priorities. Read it aloud before you move on."
       }
     },
     {
@@ -295,10 +361,23 @@
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "quarter-first",
-        "quarter-rest",
-        "qhag-check"
+        "quarter-first"
       ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "quarter-rest"
+      ]
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
+        "qhag-check"
+      ],
+      "override": {
+        "support": "Read your QHAG aloud from the board before you move on."
+      }
     },
     {
       "id": "kickoff:q2-path",
@@ -317,7 +396,7 @@
         ],
         "notes": [
           "New today. The sprint lanes are the last level of the cascade: every week traces back to the BHAG.",
-          "Start sprint lanes only once the team is good at its individual priorities. If not, wait a quarter."
+          "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle."
         ]
       }
     },
@@ -370,12 +449,12 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "For each: running? Working? What to change? Rate it 0, 1 or 2.",
+        "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2.",
         "panels": [
           {
             "role": "Daily",
             "heading": "Daily huddle",
-            "support": "7 to 10 minutes, every day except the day of the weekly meeting. The facilitator rotates.",
+            "support": "7 to 10 minutes, every day except the day of the weekly meeting.",
             "mark": "structure",
             "items": [
               "Good news",
@@ -405,7 +484,7 @@
             "items": [
               "Good news",
               "Values recognition",
-              "Scoreboard: last week’s widget forecast, actual and this week’s forecast",
+              "Widget scoreboard",
               "QHAG status",
               "Priority and sprint lane status",
               "Stucks, asks and offers"
@@ -416,7 +495,9 @@
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "All five meetings should be running by now: the three here, the Monthly Town Hall and Quarterly Planning.",
-          "New today: sprint lane status joins the weekly leadership meeting."
+          "New today: sprint lane status joins the weekly leadership meeting.",
+          "The daily huddle’s facilitator rotates.",
+          "The scoreboard shows last week’s widget forecast, the actual and this week’s forecast."
         ]
       }
     },
