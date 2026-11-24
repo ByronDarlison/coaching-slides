@@ -1,0 +1,61 @@
+{
+  "id": "q4-opening",
+  "artifact": "opening",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 Annual Planning and Road Map Q-4, Metronomics.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "welcome",
+      "title": "Metronomics Q4 Annual",
+      "layout": "title",
+      "group": "Day 1",
+      "notes": [
+        "The first annual planning session, one year after the Kick Off. Two days.",
+        "The objective is execution momentum, the strategy mapped out and a new 3HAG.",
+        "This reusable deck needs no company-specific edits."
+      ],
+      "artwork": {
+        "src": "assets/kickoff-title.png",
+        "alt": "Three neutral grey figures build a shared plan around a table."
+      },
+      "headline": "Metronomics Q4 Annual",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "two-days",
+      "title": "Day 1 is strategy. Day 2 is execution.",
+      "layout": "comp-decision",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Day 1",
+          "heading": "Strategy",
+          "support": "The team, the business, your BHAG, a new 3HAG, its differentiators and swim lanes.",
+          "mark": "structure"
+        },
+        {
+          "role": "Day 2",
+          "heading": "Execution",
+          "support": "The year in review, next year’s forecast, a new 1HAG, a new QHAG and sprint lanes.",
+          "mark": "action"
+        }
+      ],
+      "notes": [
+        "The annual is the quarterly with more time and more strategic depth. It is not a reset. It extends what the quarterlies built.",
+        "Day 1 validates the strategy and creates the new 3HAG. Day 2 builds the annual plan and the first quarter of it.",
+        "This is a working session. Protect time for the team to make decisions and capture its own plan."
+      ],
+      "headline": "Day 1 is strategy. Day 2 is execution.",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "q4-close",
+  "artifact": "close",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 Annual Planning and Road Map Q-4, Metronomics.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "homework",
+      "title": "What is the homework?",
+      "layout": "comp-decision",
+      "arrows": false,
+      "panels": [
+        {
+          "role": "Metronome",
+          "heading": "Update the plan",
+          "support": "The new 3HAG, 1HAG and QHAG. Each leader’s priorities. Each lane’s steps under its company priority. The Team View.",
+          "mark": "structure"
+        },
+        {
+          "role": "Strategy and cash",
+          "heading": "War Room and forecast",
+          "support": "War Room: add the differentiators and swim lanes. Finance enters the 12-month forecast as rolling metrics.",
+          "mark": "structure"
+        },
+        {
+          "role": "People",
+          "heading": "Team and A-Players",
+          "support": "Start the five actions from your Five Dysfunctions review. Act on the plan for everyone below A.",
+          "mark": "structure"
+        },
+        {
+          "role": "Before next session",
+          "heading": "Prepare",
+          "support": "Read The Speed of Trust. Complete the quarterly prep survey.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "On the One Page Plan, the differentiators replace the key capabilities. Keep the Market Map, Core Customer and Attribution Framework current in the War Room.",
+        "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
+        "If the Painted Picture wording was not finished in the room, finishing it is homework.",
+        "Give every item an owner and a date: what, owner, by when."
+      ],
+      "headline": "What is the homework?",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "outcomes-check",
+      "title": "Did we get what we came for?",
+      "support": "For each outcome: met, partly met or still open?",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-sticky-purpose.svg",
+        "alt": "A sticky note with the coach’s outcome for the session: Strategy mapped out. New 3HAG."
+      },
+      "notes": [
+        "Read back the outcomes the team agreed at the start of Day 1.",
+        "Ask for a show of hands on each one.",
+        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
+        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+      ],
+      "headline": "Did we get what we came for?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    }
+  ]
+}

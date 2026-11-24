@@ -1,0 +1,34 @@
+{
+  "id": "q4-cash",
+  "artifact": "forecast",
+  "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 (Cash System) and training of 26-Sep-2026; Byron Darlison, Cash! Who Owns the Forecast?",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "review",
+      "title": "Review next year’s forecast before you set the targets.",
+      "support": "Finance puts the 12-month forecast on the screen.",
+      "body": [
+        "Walk the widgets month by month. Each leader speaks for their own.",
+        "Does the year reach the first year of your new 3HAG?",
+        "Agree it. It becomes the approved plan for the year."
+      ],
+      "notes": [
+        "Finance built the 12-month widget forecast before today, from each leader’s widget numbers. The team reviews it. It does not build it in the room.",
+        "Start with the widgets, then the revenue, expenses, margin and cash they produce. It does not have to be complicated.",
+        "Once agreed, it is the approved plan. It holds, unchanged, until the next annual. The rolling forecast beside it moves every month.",
+        "Homework: Finance enters the widget forecast as rolling metrics in Metronome."
+      ],
+      "headline": "Review next year’s forecast before you set the targets.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

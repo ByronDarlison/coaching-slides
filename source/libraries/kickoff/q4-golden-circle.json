@@ -1,0 +1,40 @@
+{
+  "id": "q4-golden-circle",
+  "artifact": "core-purpose",
+  "seed": "Shannon Byrne Susko, System by System post Core Purpose: Simon Sinek’s Golden Circle; Byron Darlison, Why Does Your Company Exist?",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "circle",
+      "title": "Why does the company do what it does?",
+      "support": "Once a year, test your Core Purpose with three questions.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-golden-circle.svg",
+        "alt": "Three rings: Why at the centre, then How, then What, each joined to its question: why, how and what does the company do."
+      },
+      "body": [
+        "Each leader answers all three alone.",
+        "Share one question at a time, starting with What.",
+        "Read your Core Purpose aloud. Does your Why match it?",
+        "Confirm it or change it."
+      ],
+      "notes": [
+        "This is Simon Sinek’s Golden Circle. What the company does and how it does it are easy. Why is where drift shows up.",
+        "Each leader writes their answers alone, then the team shares one by one, question by question, starting with What.",
+        "If the team’s Why no longer matches the Core Purpose on the wall, that is not a failure. It is a signal the foundation needs attention.",
+        "The discussion creates a new Core Purpose, adjusts the current one or confirms it. A purpose that describes what the company does, not why, needs work.",
+        "The confirmed Core Purpose goes into the top circle on the next exercise."
+      ],
+      "headline": "Why does the company do what it does?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    }
+  ]
+}

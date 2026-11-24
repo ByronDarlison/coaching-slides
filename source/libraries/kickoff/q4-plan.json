@@ -1,0 +1,79 @@
+{
+  "id": "q4-plan",
+  "artifact": "aligned-priorities",
+  "seed": "Shannon Byrne Susko, training of 26-Sep-2026 (individual priorities outside the meeting from the annual); Byron, 17-Nov-2026 (weekly CEO email).",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "annual-first",
+      "title": "What must you build this year?",
+      "support": "Start from your differentiators and the first four quarters of your swim lanes.",
+      "body": [
+        "For each differentiator: what must this year deliver to build it?",
+        "Add a priority that moves a KFFM lever if cash needs it.",
+        "List every candidate."
+      ],
+      "notes": [
+        "At the Kick Off the team started from its key capabilities. The differentiators have taken their place.",
+        "The big moves in the first four quarters of the swim lanes are the natural candidates. Add anything burning on the KFFM.",
+        "List every candidate before choosing. Ideally 3, up to 5 priorities for the year, each with one owner, a done-by date and a measure of success."
+      ],
+      "headline": "What must you build this year?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "individual",
+      "title": "Set your individual priorities with your own team.",
+      "support": "This week, outside this session.",
+      "body": [
+        "Start from the new QHAG and your critical number.",
+        "Up to 5 work priorities. Two delivered beat five started.",
+        "Enter them in Metronome."
+      ],
+      "notes": [
+        "The team has set individual priorities in the room four times. From the annual on, each leader sets theirs outside the session, with their own team.",
+        "A company priority you own goes first and wins if time runs short.",
+        "Each leader’s priorities are in Metronome before the first weekly meeting of the quarter."
+      ],
+      "headline": "Set your individual priorities with your own team.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "email-check",
+      "title": "Is the CEO’s weekly email going out?",
+      "support": "One page, from the CEO to everyone, by Friday noon.",
+      "checklist": true,
+      "body": [
+        "Running: has it gone out every week?",
+        "Working: does it carry good news, the numbers and priority status?",
+        "What to change?"
+      ],
+      "notes": [
+        "The weekly email started last quarter. Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",
+        "Team members send their status to the CEO by Thursday noon."
+      ],
+      "headline": "Is the CEO’s weekly email going out?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

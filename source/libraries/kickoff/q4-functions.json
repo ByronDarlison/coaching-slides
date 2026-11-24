@@ -1,0 +1,59 @@
+{
+  "id": "q4-functions",
+  "artifact": "function-chart",
+  "seed": "Byron’s master board, Organizational Function Chart, Q4; Shannon Byrne Susko, 7 Systems One Pager, April 2026.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "team-view",
+      "title": "Is your Team View still right?",
+      "support": "In Metronome: open Team View. Check it against the Function Chart you just agreed.",
+      "checklist": true,
+      "body": [
+        "Which functions are missing, or planned for growth?",
+        "Who owns too many functions?",
+        "Is every function owned by an A-Player?"
+      ],
+      "notes": [
+        "Put today’s Team View on the screen. Fix any difference from the new Function Chart now, or put it on the homework list.",
+        "A person who owns several functions carries a load to watch. A planned function shows where the company will hire or where someone can grow.",
+        "The third question connects to the A-Player check later this morning. A function owned by someone below A needs a plan.",
+        "Homework: update the Team View in Metronome."
+      ],
+      "headline": "Is your Team View still right?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "reviews",
+      "title": "Are your scorecard reviews done?",
+      "support": "Each leader answers in turn.",
+      "checklist": true,
+      "body": [
+        "Has your leader reviewed you against your scorecard?",
+        "Have you reviewed each of your direct reports against theirs?",
+        "If not, say by when."
+      ],
+      "notes": [
+        "The homework from last quarter was to complete annual reviews on the function scorecards in Metronome.",
+        "A review is a conversation against the scorecard: the purpose, the accountabilities, the two metrics, the competencies and the Core Values.",
+        "This is a check, not a discussion of anyone’s review. Take the dates and move on."
+      ],
+      "headline": "Are your scorecard reviews done?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

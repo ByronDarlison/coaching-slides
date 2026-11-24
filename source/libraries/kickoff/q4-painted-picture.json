@@ -1,0 +1,77 @@
+{
+  "id": "q4-painted-picture",
+  "artifact": "painted-picture",
+  "seed": "Shannon Byrne Susko, System by System post Painted Picture: 10 to 30 Years and template, 2026; adapted from Cameron Herold.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "bhag",
+      "title": "Paint the picture of your BHAG.",
+      "support": "Each leader writes alone, in the present tense, as if already there. Use any of the prompts.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-painted-picture.svg",
+        "alt": "The question, 10 to 30 years from now, what do you see, hear and feel, above twelve numbered prompts from what you see to your impact on the world."
+      },
+      "notes": [
+        "A team cannot move in the same direction unless every member sees the same picture. The Painted Picture is why the BHAG and the 3HAG work.",
+        "Each leader walks through the company 10 to 30 years from now and writes what they see, hear and feel, in vivid detail, in the present tense. Use as many or as few prompts as you like.",
+        "The method is adapted from Cameron Herold.",
+        "Paint the picture only when the BHAG is solid. If the team is still working the BHAG after the last exercise, keep working it and paint the picture at the next session."
+      ],
+      "headline": "Paint the picture of your BHAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "agree",
+      "title": "Write one picture together.",
+      "support": "Reveal, then read each picture aloud.",
+      "body": [
+        "What did several people see?",
+        "Write one picture the whole team sees.",
+        "Present tense: what you see, hear and feel."
+      ],
+      "notes": [
+        "Read every picture aloud before discussing any of them.",
+        "Build the shared picture from what several people saw. Keep the detail: the clearer the picture, the easier it is for the wider team to build it with you.",
+        "Allow about 20 minutes for both slides. The wording can be finished as homework."
+      ],
+      "headline": "Write one picture together.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "three-year",
+      "title": "Now paint your 3HAG picture.",
+      "support": "The same prompts, three years from now.",
+      "body": [
+        "Each leader writes alone, in the present tense.",
+        "Reveal, read aloud, then write one picture together."
+      ],
+      "notes": [
+        "Once the BHAG picture is locked, the 3HAG picture goes fast, because the team already has clarity and confidence.",
+        "Skip this if the team did not paint the BHAG picture this morning. It is homework when the day runs long."
+      ],
+      "headline": "Now paint your 3HAG picture.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "q4-day-two",
+  "artifact": "day-two-opening",
+  "seed": "Byron Darlison, The Eight Meetings That Run Your Company; Shannon Byrne Susko, Prep Surveys post.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "day-two",
+      "title": "Yesterday, strategy. Today, execution.",
+      "layout": "comp-decision",
+      "arrows": false,
+      "group": "Day 2",
+      "panels": [
+        {
+          "role": "Yesterday",
+          "heading": "Where you are going",
+          "support": "Your BHAG, a new 3HAG, its differentiators and swim lanes.",
+          "mark": "action"
+        },
+        {
+          "role": "Today",
+          "heading": "How you get there",
+          "support": "The year in review, next year’s forecast, a new 1HAG, a new QHAG and sprint lanes.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "Open Day 2. Yesterday the team validated its strategy and wrote the new 3HAG.",
+        "Today turns that into next year and next quarter, with an owner on every number and priority.",
+        "If the swim lanes did not finish yesterday, finish them first."
+      ],
+      "headline": "Yesterday, strategy. Today, execution.",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "checklist",
+      "title": "What did the checklist survey tell us?",
+      "support": "Twenty statements, each true or false, answered before today.",
+      "body": [
+        "Where do we all agree?",
+        "Where do our answers differ?"
+      ],
+      "notes": [
+        "The Metronomics Checklist Survey is done once a year, before the annual. The leadership team answers it first, then the whole company.",
+        "Show the results. Where everyone says true, the habit is in place. Where answers differ, people are seeing different things: talk about why.",
+        "The results show the team how far it has come in a year and where to work next. Carry anything that needs action into today’s priorities."
+      ],
+      "headline": "What did the checklist survey tell us?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}
