@@ -9,7 +9,7 @@ lines = [[float(p.split(",")[1]) for p in m.group(1).split()] for m in re.findit
 score = lambda y: round(5 - (y - 112) / 90)
 NAMES = ["Speed of setup", "Ease of use", "Price predictability", "Reliability", "Billing simplicity", "Support from a person",
          "Security", "Integrations", "Reporting", "Feature breadth", "Customization", "Partner network"]
-COLS = ["Your Company\nToday", "Competitor 1", "Competitor 2", "Competitor 3", "3HAG Line"]
+COLS = ["Your Company\nToday", "Competitor A", "Competitor B", "Competitor C", "3HAG Line"]
 W, H = 1440, 760
 X0, CW0, CW, Y0, HH, RH = 60, 420, 180, 132, 78, 44
 out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{STYLE}<rect width="{W}" height="{H}" fill="white"/>',
