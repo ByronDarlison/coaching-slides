@@ -105,7 +105,7 @@
           "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
           "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
           "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
-          "Show the Team View to the whole team at a town hall whenever it changes.",
+          "Show the Team View to the whole company at a town hall whenever it changes.",
           "The critical number can be financial or not. A good place to start is what the function hands to the next one."
         ],
         "title": "Check your Team View and critical numbers.",
@@ -141,9 +141,9 @@
         "notes": [
           "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
           "By this session, each leader's direct reports have a scorecard too. Each leader rates their direct reports against it on the A-Player grid. If any are missing, say so now and agree a date.",
-          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's Core Values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and three to five functional accountabilities, each starting Owns. It also holds exactly two metrics, six to eight key competencies and the company's Core Values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
           "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
-          "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "Leaders review scorecards every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: complete the annual reviews on the function scorecards in Metronome."
         ]
       }
@@ -162,8 +162,8 @@
       "override": {
         "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
-          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board and agree a date to enter it.",
-          "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
+          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board. Agree a date to enter it.",
+          "Each owner colors their own function by where its critical number stands against target. Green is on track, yellow is at risk and red needs attention. Red is a conversation, not a verdict."
         ],
         "body": [
           "The 3 to 5 key functions are still the right ones.",
@@ -213,7 +213,7 @@
           "New at this session: the KFFM joins the weekly leadership meeting. That is where the team watches the lever it picked.",
           "The weekly meeting reviews the numbers on the KFFM in Metronome. It does not redraw the KFFM. The KFFM changes at the quarterly.",
           "Homework: review the KFFM in every weekly leadership meeting.",
-          "In Metronome, the weekly leadership meeting takes an agenda item of type KFFM. It shows the key functions and their flow inside the meeting. The scoreboard already reviews the numbers. The KFFM item shows the same numbers in flow order, so the team sees what a red function is holding up."
+          "In Metronome, the weekly leadership meeting takes an agenda item of type KFFM. It shows the key functions and their flow inside the meeting. The scoreboard already reviews the numbers. The KFFM item shows the same numbers in flow order. The team sees what a red function is holding up."
         ]
       }
     },
@@ -357,7 +357,7 @@
           "Do the widget volumes, conversion rates and prices support the revenue target? Which assumption explains any gap?",
           "Change only what fails or is no longer true. Anything unresolved goes on the homework list with an owner.",
           "This is the purpose of the day. Give the first test the most time: does each capability build an attribute where the company will lead?",
-          "The 3HAG line gives things up. Check the other side too: if a capability still invests in an attribute the team chose to let drop, the 3HAG has not caught up with the line."
+          "The 3HAG line gives things up. Check the other side too. A capability may still invest in an attribute the team chose to let drop. Then the 3HAG has not caught up with the line."
         ],
         "support": "In Metronome: open One Page Plans. Read your 3HAG aloud. Then test it against your 3HAG line.",
         "body": [
@@ -385,8 +385,8 @@
           "Read the 1HAG aloud, top to bottom, then run the six checks.",
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
           "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner.",
-          "Success is measured by a critical number where possible.",
-          "The 3HAG line is the test: a priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG."
+          "Measure success by a critical number where possible.",
+          "The 3HAG line is the test. A priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG."
         ],
         "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud.",
         "body": [
@@ -412,14 +412,14 @@
       ],
       "override": {
         "notes": [
-          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
-          "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the white space changed.",
+          "Every leader independently lists what the company must accomplish this quarter to deliver a 1HAG priority, then shares.",
+          "At a quarterly, the candidates include last quarter’s open priorities and the lever picked on the KFFM. Add what the white space changed.",
           "Run the six questions on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
           "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
           "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
           "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
           "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
-          "Agree on the done-by date, the measure of success and the date it will be achieved by.",
+          "Agree on the done-by date, the measure of success and the achieved-by date.",
           "Done is not the same as success. The owner commits to the done-by date. The achieved-by date is when the number must have moved. If it has not moved by then, find out why and fix the cause."
         ],
         "support": "What must you get done now to deliver the 1HAG?",
@@ -674,13 +674,13 @@
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "Quarterly Planning is the fifth meeting. The team is in it now.",
-          "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
+          "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",
           "Weekly 1:1: Good news; Metrics; Top 3 priorities for the week; Feedback both ways; Dynamic.",
-          "Weekly leadership meeting: Good news; Values recognition; Widget scoreboard; KFFM critical numbers; QHAG: numbers, priorities, sprint lanes; Stucks, asks and offers.",
-          "Monthly Town Hall: Good news, then values recognition; QHAG progress on the #1 priority, and how everyone can help; Financial transparency: what is working and what is not; One thing we can do as a company to improve our financial health.",
+          "Weekly leadership meeting: good news, values recognition, the widget scoreboard and the KFFM critical numbers. Then the QHAG: numbers, priorities and sprint lanes. Finish with stucks, asks and offers.",
+          "Monthly Town Hall: good news, then values recognition. Then QHAG progress on the #1 priority, and how everyone can help. Then financial transparency: what is working and what is not. Finish with one thing we can do as a company to improve our financial health.",
           "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
           "This is the only meeting where the whole company hears the same thing at the same time.",
-          "Financial transparency builds the financial literacy of the whole team.",
+          "Financial transparency builds the financial literacy of the whole company.",
           "Show the Team View at a Town Hall only when it changes.",
           "New today: the KFFM review joins the weekly leadership meeting.",
           "The daily huddle’s facilitator rotates.",

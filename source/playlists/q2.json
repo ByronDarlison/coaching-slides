@@ -101,7 +101,7 @@
           "Open the Team View in Metronome on the screen. Fix any difference from the chart now.",
           "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
           "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
-          "Show the Team View to the whole team at a town hall whenever it changes."
+          "Show the Team View to the whole company at a town hall whenever it changes."
         ],
         "title": "Check your Team View and critical numbers.",
         "headline": "Check your Team View and critical numbers."
@@ -130,9 +130,9 @@
         "notes": [
           "At a quarterly, this is a check-in. Open the Head of Company scorecard in Metronome, and the Head of Company walks the team through it.",
           "Then ask each leader where their own scorecard stands.",
-          "A scorecard is one page for a function. It says what success looks like: a purpose in one sentence, three to five functional accountabilities, each starting Owns, exactly two metrics, six to eight key competencies, and the company's core values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and three to five functional accountabilities, each starting Owns. It also holds exactly two metrics, six to eight key competencies and the company's core values. The two metrics are one widget the owner controls and one fiscal metric the role owns.",
           "The company's Core Values go on every scorecard. If the team has agreed them, check they are there. If not, they go on once the team agrees them.",
-          "Scorecards are reviewed every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
+          "Leaders review scorecards every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: every leader completes their function scorecard in Metronome, and builds one for each direct report."
         ]
       }
@@ -366,14 +366,14 @@
       ],
       "override": {
         "notes": [
-          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
-          "At a quarterly, the candidates include last quarter’s open priorities, the lever picked on the KFFM, and what the Core Customer changed.",
+          "Every leader independently lists what the company must accomplish this quarter to deliver a 1HAG priority, then shares.",
+          "At a quarterly, the candidates include last quarter’s open priorities and the lever picked on the KFFM. Add what the Core Customer changed.",
           "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
           "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
           "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
           "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
           "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
-          "Agree on the done-by date, the measure of success and the date it will be achieved by."
+          "Agree on the done-by date, the measure of success and the achieved-by date."
         ]
       }
     },
