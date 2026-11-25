@@ -19,7 +19,7 @@
       ],
       "notes": [
         "Watch one widget travel: each function adds days, and the counter shows time to cash. At the end the widget becomes money in the bank.",
-        "Pick them from the Function Chart. They are the primary functions; everything else is supporting.",
+        "Pick them from the Function Chart. They are the primary functions. Everything else is supporting.",
         "Same definition as the intro text on the board."
       ],
       "artwork": {
@@ -81,7 +81,7 @@
         "Each box: function, one owner, days it adds, its critical number, status. Finance’s 30 days is days to collect.",
         "Each arrow is a widget. Profit per subscription sits at the end, with a target and an owner. It is the economic engine from Good to Great. That is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
         "Time to cash adds the days: 72 from raw lead to cash.",
-        "The subscription example; days are illustrative.",
+        "This is the subscription example. The days are illustrative.",
         "Marketing hands Sales marketing qualified leads. Its critical number is sales qualified leads: the ones Sales has reviewed and agreed are good.",
         "Finance’s critical number, average days to collect, is days sales outstanding (some call it average AR days)."
       ],
@@ -312,7 +312,7 @@
             "w": 500,
             "h": 148,
             "term": "Price",
-            "tip": "The price customers pay. It shows in Sales, as new MRR, and in collected payments.",
+            "tip": "The price customers pay. It shows in Sales, as new monthly recurring revenue (MRR), and in collected payments.",
             "targets": [
               [
                 885.7,

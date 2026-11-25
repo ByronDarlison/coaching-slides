@@ -80,11 +80,11 @@
       "notes": [
         "Ask for the quarter’s numbers. Each leader can post theirs in private mode first.",
         "Ask questions about the math rather than telling them it is wrong. Ask who owns each number.",
-        "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count, month by month.",
+        "Compare answers and assumptions. Agree on the period, gross revenue, ending cash, widgets and head count, month by month.",
         "Use the same widget definitions as the 3-year plan. Distinguish new activity from cumulative totals.",
         "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
         "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
-        "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
+        "Revenue is a period flow. Cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
         "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If the later quarters must carry more than their share of the year, ask what makes them steeper.",
         "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the annualized December rate: $300 a year.",
         "When the team has no data for a number, set a best estimate and track it. The next status review asks where the estimate was wrong."
@@ -137,7 +137,7 @@
         "Run the six questions from the “Pick the priorities that contribute most to success” slide on each candidate. Hover over “six questions” to show them. In a 90-day window, “How soon will we see it?” counts for more.",
         "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
         "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
-        "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
+        "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed. Seek full commitment after discussion.",
         "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills. Name one accountable leader. If only the CEO can own it, name the leadership gap first.",
         "Agree on the done-by date, the measure of success and the achieved-by date."
       ],
@@ -179,10 +179,10 @@
       "notes": [
         "At a quarterly, list last quarter’s open priorities first. They stay on the new QHAG until their number has moved.",
         "Take the next candidates in rank order from the same list.",
-        "Discuss disagreement, tradeoffs, dependencies and capacity; agree on the rank together.",
+        "Discuss disagreement, tradeoffs, dependencies and capacity. Agree on the rank together.",
         "An owner claims the priority aloud. Agree on the done-by date, the measure and the achieved-by date.",
-        "The achieved-by date can fall after the quarter ends. The work is done this quarter; the priority stays open on the next QHAG until the number has moved.",
-        "Repeat for priorities 2 to 5 in order. Five is a ceiling; stop when the list covers the critical work."
+        "The achieved-by date can fall after the quarter ends. The work is done this quarter. The priority stays open on the next QHAG until the number has moved.",
+        "Repeat for priorities 2 to 5 in order. Five is a ceiling. Stop when the list covers the critical work."
       ],
       "tags": [
         "kickoff",
@@ -227,7 +227,7 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/hag-ladder-checked-qhag.svg",
-        "alt": "The planning cascade with the 3HAG, 1HAG and QHAG checked; individual priorities are still to come."
+        "alt": "The planning cascade with the 3HAG, 1HAG and QHAG checked. Individual priorities are still to come."
       },
       "art_side": true,
       "checklist": true,

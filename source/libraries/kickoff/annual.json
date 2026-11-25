@@ -80,7 +80,7 @@
       "group": "",
       "notes": [
         "Each leader independently proposes the targets before hearing anyone else’s answer.",
-        "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count.",
+        "Compare answers and assumptions. Agree on the period, gross revenue, ending cash, widgets and head count.",
         "Use the same widget definitions as the 3-year plan. Distinguish new activity from cumulative totals.",
         "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
         "Reconcile the targets with the 3HAG: is each one big enough to get you there in 3 years? If year 1 is a third of the way or less, ask what makes years 2 and 3 steeper. Discuss seasonality and assumptions rather than dividing targets mechanically."
@@ -132,7 +132,7 @@
         "Add a priority that moves a KFFM lever only if cash needs it now.",
         "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
         "Invite debate and explore disagreement. Do not let the CEO answer for everyone. At least 80 percent agreement supports 100 percent commitment.",
-        "List every candidate; do not filter yet. The next slide picks the few that contribute most.",
+        "List every candidate. Do not filter yet. The next slide picks the few that contribute most.",
         "Stop when every capability has at least one candidate.",
         "Each priority gets one owner. Name one accountable leader. If only the CEO can own it, name the leadership gap first."
       ],
@@ -161,9 +161,9 @@
       "group": "",
       "notes": [
         "Each leader proposes the next most important accomplishment, then shares it.",
-        "Discuss disagreement, tradeoffs, dependencies and capacity; agree on the rank together.",
+        "Discuss disagreement, tradeoffs, dependencies and capacity. Agree on the rank together.",
         "An owner claims the priority aloud. Agree on the outcome, measure and due date.",
-        "Repeat for priorities 2 to 5 in order. Five is a ceiling; stop when the list covers the critical work."
+        "Repeat for priorities 2 to 5 in order. Five is a ceiling. Stop when the list covers the critical work."
       ],
       "tags": [
         "kickoff",
@@ -208,7 +208,7 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/hag-ladder-checked-1hag.svg",
-        "alt": "The planning cascade with the 3HAG and 1HAG checked; the QHAG and individual priorities are still to come."
+        "alt": "The planning cascade with the 3HAG and 1HAG checked. The QHAG and individual priorities are still to come."
       },
       "art_side": true,
       "checklist": true,

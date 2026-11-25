@@ -117,7 +117,7 @@ MARS = [("Pick three|people", ["Each person", "picks three", "people.", "Name th
         ("Share and|cluster", ["Each person says", "who they picked", "and why. Move", "similar values", "together. Name", "each cluster."]),
         ("Vote", ["Three votes each,", "on the clusters", "that best show", "your values."]),
         ("Test the|top three", ["Test each one.", "Talk about", "anything", "left out."]),
-        ("Agree the|Core Values", ["Name each value.", "Write the", "behavior", "it means."])]
+        ("Agree on the|Core Values", ["Name each value.", "Write the", "behavior", "it means."])]
 
 
 def mars_steps():
