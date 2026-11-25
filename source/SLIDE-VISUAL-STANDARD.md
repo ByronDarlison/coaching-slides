@@ -120,6 +120,7 @@ Learned building the Q4 deck (24-Nov-2026):
 42. **When a comment exposes a flaw in the flow, lay out the whole stretch first.** List every slide from the stop before to the stop after, with what each picture shows, and make one considered change. Do not patch one slide at a time while the reviewer is reading.
 43. **A return visit says validate (Byron, 25-Nov-2026).** When a later session comes back to something the team already set (Core Purpose, Profit per X, the BHAG at the annual), the stop title and the first line of each slide say the team is validating it, not creating it from scratch. A blind write is still fine, as long as the slide then brings the current answer back to compare.
 44. **Read a slide before recommending its removal.** Open the slide as the deck renders it, with its playlist override. Do not judge it by its name. On 25-Nov-2026 the six BHAG tests were nearly cut because the slide was described from memory as a repeat.
+45. **No term before its slide, and no board words (Byron, 25-Nov-2026).** A slide does not name a concept the team has not been taught yet (differentiators, before their own section). Only the agenda may name what is coming. Say what the team does in plain words: "Show your answers", not "Reveal", which is the board's private mode. Before publishing, search the compiled deck for each taught term and confirm its first use is on or after its teaching slide.
 
 ## Layouts
 
