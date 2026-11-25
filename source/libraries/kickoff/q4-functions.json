@@ -1,0 +1,58 @@
+{
+  "id": "q4-functions",
+  "artifact": "function-chart",
+  "seed": "Byron’s master board, Organizational Function Chart, Q4; Shannon Byrne Susko, 7 Systems One Pager, April 2026.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "team-view",
+      "title": "Is your Team View still right?",
+      "support": "In Metronome: open Team View. Check it against the Function Chart you just agreed on.",
+      "body": [
+        "Which functions are missing or planned?",
+        "Who owns too many functions?"
+      ],
+      "notes": [
+        "Put today’s Team View on the screen. Resolve any difference in ownership now.",
+        "Entering the agreed chart in the Team View can be homework. Give it an owner and a date.",
+        "A person who owns several functions carries a load to watch. A planned function shows where the company will hire or where someone can grow.",
+        "Ask the CEO in private: does an A-Player own every function? Use a break or the next coach and CEO call. Never ask it of the room.",
+        "A function owned by someone below A needs a plan. The A-Player check follows the KFFM."
+      ],
+      "headline": "Is your Team View still right?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "reviews",
+      "title": "Are your scorecard reviews done?",
+      "support": "Each leader answers in turn.",
+      "body": [
+        "Have you reviewed each of your direct reports against their scorecard?",
+        "If you report to someone, have they reviewed you against yours?",
+        "If not, say by when."
+      ],
+      "notes": [
+        "Annual reviews on the function scorecards in Metronome were Q3 homework.",
+        "A review is a conversation against the scorecard. It covers the purpose, the accountabilities, the two metrics, the competencies and the Core Values.",
+        "This is a check, not a discussion of anyone’s review. Take the dates and move on.",
+        "Allow about 40 minutes for the scorecard, KFFM and A-Player checks together."
+      ],
+      "headline": "Are your scorecard reviews done?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

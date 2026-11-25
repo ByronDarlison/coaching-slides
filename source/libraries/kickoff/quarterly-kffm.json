@@ -103,7 +103,7 @@
         "quarterly"
       ],
       "notes": [
-        "It is optional at Q1. If no good X has emerged, leave it blank."
+        "Profit per X is optional before the annual. If no good X has emerged, leave it blank."
       ],
       "support": "Name Profit per X only if a good X has emerged.",
       "body": [

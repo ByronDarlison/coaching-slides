@@ -25,7 +25,7 @@
         {
           "role": "Daily",
           "heading": "Daily huddle",
-          "support": "Set the time and start date. Book it every workday for a year. Name who sends the invite.",
+          "support": "Set the time and start date. Book it for a year, every workday except the day of the weekly meeting. Name who sends the invite.",
           "mark": "structure"
         },
         {

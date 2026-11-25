@@ -1,0 +1,114 @@
+{
+  "id": "q4-hedgehog",
+  "artifact": "hedgehog",
+  "seed": "Shannon Byrne Susko, System by System post Hedgehog and BHAG and worksheet Hedgehog Concept and BHAG Validation; Jim Collins, Good to Great; Byron Darlison, Why Does Your Company Exist?; Byron, 27-Sep-2026 (horizon in its own field) and 4-Oct-2026 (X is usually a widget).",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "circles",
+      "title": "Your BHAG sits where three circles meet.",
+      "support": "This is the Hedgehog. Your Core Purpose goes in the top circle. Agree on the other two in turn. The BHAG comes last.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog.svg",
+        "alt": "Three circles overlap: Core Purpose, Core Business and Economic Engine. Each has its question. The BHAG sits where all three meet: a 10 to 30 year goal with no numbers."
+      },
+      "notes": [
+        "This is the Hedgehog Concept. The BHAG sits where three things meet. They are why the company exists, what its core business is and how it makes money.",
+        "The BHAG from the Kick Off was good enough to build execution momentum. A year on, use the current BHAG as the starting point for a full discussion.",
+        "The Hedgehog is about focus, not fantasy.",
+        "The Core Purpose from the Golden Circle goes in the top circle. Then work through the other two circles in order."
+      ],
+      "headline": "Your BHAG sits where three circles meet.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "business",
+      "title": "What is your core business?",
+      "support": "Each leader writes an answer alone. Then share.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-business.svg",
+        "alt": "The three Hedgehog circles with the Core business circle highlighted."
+      },
+      "body": [
+        "It is what you can be best in the world at, not what you want to be best at.",
+        "Which answer says it most clearly? Stay with it until the team agrees."
+      ],
+      "notes": [
+        "Many leadership teams find it hard to say what business they are in. Give it time.",
+        "Each leader writes an answer and all share. Ask which one says it most clearly, then wait. Once one leader makes a stand, the others agree or disagree. Keep the discussion going until the team agrees.",
+        "Best in the world means real capability, not ambition."
+      ],
+      "headline": "What is your core business?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "engine",
+      "title": "What is your Profit per X?",
+      "support": "Your economic engine. X is usually a widget from your KFFM.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-engine.svg",
+        "alt": "The three Hedgehog circles with the Economic engine circle highlighted."
+      },
+      "body": [
+        "If you have agreed on your X, read it aloud and confirm it.",
+        "If not, each leader writes an answer. Share, then agree."
+      ],
+      "notes": [
+        "Profit per X is the one profit ratio that drives the economics of the core business. X is the unit.",
+        "Look at the KFFM. X is usually a widget from the map. When it is not, ask how the team will count it each week.",
+        "Profit per employee is not the X unless the company’s business is placing people.",
+        "On the first pass Profit per X was a hypothesis. A year of running the KFFM is the test."
+      ],
+      "headline": "What is your Profit per X?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "goal",
+      "title": "What is your 10 to 30 year goal?",
+      "support": "Each leader writes one sentence alone. No date, no numbers. Then share.",
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-hedgehog-focus-goal.svg",
+        "alt": "The three Hedgehog circles with the BHAG at the center highlighted."
+      },
+      "body": [
+        "Which one is the BHAG? Stay with it until the team agrees.",
+        "Record the horizon, 10 to 30 years, beside the sentence.",
+        "You leave with a new BHAG, or the same BHAG well tested."
+      ],
+      "notes": [
+        "Only start this step when the team agrees on all three circles.",
+        "Each leader writes what they think the company’s 10 to 30 year goal is, and all share. Ask which one is the BHAG, then wait for a leader to make a stand.",
+        "The sentence carries no date and no numbers. The horizon goes in its own field beside it.",
+        "The team leaves with a new BHAG or the same BHAG, well tested. Either is a good result."
+      ],
+      "headline": "What is your 10 to 30 year goal?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    }
+  ]
+}

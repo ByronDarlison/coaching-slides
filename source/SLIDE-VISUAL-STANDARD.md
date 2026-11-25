@@ -86,11 +86,11 @@ Learned building the Metronomics Q1 deck (Byron, 16-Nov-2026):
 19. **A reused slide names its subject (Byron, 17-Nov-2026).** A slide moved out of its home section loses the slides that introduced it. Give it a title that names the thing: "Does your BHAG still hold?", not "Is the ambition clear, connected and exciting?". Use a playlist `override`.
 20. **Name every label in a drawing.** A box that holds a priority says "Company priority #1" above it. A finished week says "Complete", never "Done" beside a "Done by" date. One idea keeps one word across every drawing in the deck.
 21. **A path map with more than eight stages uses two rows.** One row of ten shrinks the labels below what a projector shows.
-22. **A new meeting gets its own agenda slide.** The meeting check holds three cards. A fourth card does not fit: put the added meeting on the next slide.
+22. **A new meeting gets its own agenda slide.** Give a newly taught meeting its own agenda slide. The Q3 check rates four existing meetings on one slide.
 
 Learned reviewing the Q3 deck (Byron, 23-Nov-2026):
 
-23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use it in the quarterly decks only, as a playlist `override`: a Kick Off team has no account yet. Use text, never a screenshot of Metronome. A full-width drawing slide cannot show the line yet.
+23. **A check the team does in Metronome says so, the same way everywhere.** Start the slide's instruction line with "In Metronome: open [menu name]", then the ask. Copy the menu name exactly from Metronome's menu. Use a quarterly playlist `override` when the team checks existing work in Metronome. The Kick Off account is set up before the session ends. Use text, never a screenshot of Metronome. Full-width artwork can carry an instruction line.
 
 Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 
@@ -105,6 +105,15 @@ Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 32. **Measure drawing type the way it is presented.** Check the smallest label in every drawing with the sidebar hidden at 1280 by 720 and 1366 by 768. The floor is 13 pixels. A drawing inside a narrow side panel needs names only.
 33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it.
 34. **Sprint lanes: taught at Q2, one refresher at Q3, none after (Byron, 24-Nov-2026).** Every team starts sprint lanes at Q2. Do not wait a quarter. Q3 repeats one Q2 slide, "What the sprint lanes page holds", by reference, before the team builds again. From Q4 the team has had enough exposure: no refresher.
+
+Learned building the Q4 deck (24-Nov-2026):
+
+35. **Sweep the notes of every reused slide.** A slide reused by reference brings its notes with it. Notes that name another session's news ("New today", the Kick Off's outcome, "the next slide shows") are wrong in the new deck. Read each reused slide's notes in the new deck's order and override the ones that no longer hold.
+36. **Read the words inside every reused drawing.** A reused example can contradict the new session. The Kick Off's 1HAG example says "builds a 3HAG capability"; at the annual the team has replaced capabilities with differentiators. Where the drawing's words are wrong for the session, use a text slide or a new drawing. Do not reuse the picture.
+37. **A text-only slide sets `copy_stack`.** Without it the title and lines render small in the corner. Every check slide and every plain ask slide in the quarterly decks uses it.
+38. **Break a long run of text slides with a focus picture.** When several slides in a row work through the parts of one model, show the model beside each, names only, with the current part at full strength and the rest dimmed (rule 9). Three or more text-only slides in a row is the signal.
+39. **A test must be answerable from what the team has.** "Does the year reach the first year of your 3HAG?" cannot be answered, because the 3HAG holds Year 3 numbers only. Before a check goes on a slide, name where each thing it compares was written down.
+40. **Say where a number or a plan comes from before asking for it.** When an earlier step produced the numbers (the forecast before the 1HAG targets), the ask says "take the numbers from", not "what are". A cold reader starts from scratch otherwise.
 
 ## Layouts
 

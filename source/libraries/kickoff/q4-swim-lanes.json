@@ -1,0 +1,136 @@
+{
+  "id": "q4-swim-lanes",
+  "artifact": "swimlanes",
+  "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron’s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "definition",
+      "title": "Swim lanes: one lane for each differentiator, over 12 quarters.",
+      "support": "What are the big things we must get done in each lane?",
+      "body": [
+        "Each quarter, the lanes feed your QHAG priorities and sprint lanes."
+      ],
+      "notes": [
+        "Each lane takes one differentiator and stretches it over the 12 quarters to the 3HAG. Head each lane with the differentiator’s name and its descriptor.",
+        "The lanes show the few things that must happen, and in what order. They give a good view of next year. The first 4 quarters are one of the things the team looks at when it sets the new 1HAG.",
+        "A lane with something in every quarter has become a project plan. Fewer milestones show a clearer path."
+      ],
+      "headline": "Swim lanes: one lane for each differentiator, over 12 quarters.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "outcomes",
+      "title": "Start at the end: what is true at Q12, Q8 and Q4?",
+      "support": "Agree on these as a team. Year 3 (3HAG) first, then Year 2 (2HAG), then Year 1 (1HAG).",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-swim-lanes-outcomes.svg",
+        "alt": "An example table of four swim lanes, one for each differentiator. Each lane shows a 3HAG outcome at Q12, a 2HAG outcome at Q8 and a 1HAG outcome at Q4."
+      },
+      "terms": [
+        {
+          "term": "2HAG",
+          "tip": "Where you stand at the end of Year 2, on the way to the 3HAG."
+        }
+      ],
+      "notes": [
+        "Beside each differentiator, agree on what is true at the 3HAG, when the team has achieved it. Then work back. What is true at the end of Year 2, and at the end of Year 1?",
+        "Each outcome says what will be true and how the team will know.",
+        "Fix those three outcomes in each lane before anyone writes a milestone. Do not move them to fit the milestones.",
+        "The example company’s Core Customer was promised one flat monthly price and a named contact for 90 days. The lanes make those promises true for every customer.",
+        "The same subscription company as the earlier examples. This is an example, not a recommendation."
+      ],
+      "headline": "Start at the end: what is true at Q12, Q8 and Q4?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "milestones",
+      "title": "Example: 3 milestones in each lane, worked back from the end.",
+      "support": "Q1, on the right, is next quarter. Place each milestone in the quarter it lands. Leave the rest empty. This is not a project plan.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-swim-lanes-example.svg",
+        "alt": "An example swim lane map. Four lanes run from Q12 on the left to Q1 on the right. Each lane has an outcome marker at Q12, Q8 and Q4, and three milestone stickies."
+      },
+      "notes": [
+        "Start at the 3HAG and work back toward today.",
+        "Write each milestone as what will be true by that quarter, not as a task.",
+        "Three milestones in a lane is usually enough. Five is the limit.",
+        "In the example each lane has three milestones and nine empty quarters."
+      ],
+      "headline": "Example: 3 milestones in each lane, worked back from the end.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build your swim lanes.",
+      "support": "Split into small groups, one lane each.",
+      "body": [
+        "Give each lane to people who are not its expert. An expert fills the first quarters with detail.",
+        "Work back from the agreed outcomes. Place 3 to 5 milestones. Name an owner for each.",
+        "Each group presents its lane to the team."
+      ],
+      "notes": [
+        "An expert fills the first 6 quarters with detail and cannot see beyond them. Someone further from the work sees the milestones.",
+        "Allow about 25 minutes.",
+        "Start with three sticky notes in each lane. Be stingy.",
+        "If the day has run out, stop here and open tomorrow with the swim lanes. Never skip them. They make the 1HAG and the QHAG faster and better."
+      ],
+      "headline": "Build your swim lanes.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "pass",
+      "title": "Do your swim lanes pass?",
+      "support": "Look at all the lanes together.",
+      "checklist": true,
+      "body": [
+        "Every lane has an outcome at Q4, Q8 and Q12. You can tell when each is true.",
+        "Every lane serves a top need of your Core Customer.",
+        "Every lane has 3 to 5 milestones, each with an owner, and empty quarters.",
+        "Where one lane waits on another, the order works.",
+        "The first 4 quarters show next year’s milestones."
+      ],
+      "notes": [
+        "Discuss the critical path across the lanes. Start with the lanes that depend on each other most.",
+        "Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",
+        "Question any lane or milestone that serves none of the Core Customer’s top needs.",
+        "A lane can be a team goal. Each milestone still has one accountable owner.",
+        "Homework: add the differentiators and swim lanes to the War Room in Metronome."
+      ],
+      "headline": "Do your swim lanes pass?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

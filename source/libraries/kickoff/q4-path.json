@@ -1,0 +1,330 @@
+{
+  "id": "q4-path",
+  "artifact": "path",
+  "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "team",
+      "title": "First, the team.",
+      "notes": [
+        "Day 1 has ten steps. Start with the team itself: appreciation, where each leader’s time goes, and the Five Dysfunctions review."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-team.svg",
+        "alt": "Q4 Day 1 path. Day 1 starts with Team, Functions, KFFM and A-Player Team. Then come Purpose and Values, Hedgehog and BHAG, and Market, Customer, Attribution. It ends with New 3HAG, Differentiators and Swim Lanes. Team is next."
+      },
+      "headline": "First, the team.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Next, who owns each function.",
+      "notes": [
+        "The business has changed in a year. Build the Function Chart again, then check the Team View and the scorecard reviews. Allow about 35 minutes for the Function Chart and the Team View."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-functions.svg",
+        "alt": "Q4 Day 1 path. Team done. Functions next."
+      },
+      "headline": "Next, who owns each function.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "kffm",
+      "title": "Next, how the work turns into cash.",
+      "notes": [
+        "Check the KFFM, walk all six levers, and check the weekly review."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-kffm.svg",
+        "alt": "Q4 Day 1 path. Team and Functions done. KFFM next."
+      },
+      "headline": "Next, how the work turns into cash.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "people",
+      "title": "Next, your people.",
+      "notes": [
+        "Check the plan for everyone below A."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-people.svg",
+        "alt": "Q4 Day 1 path. Team, Functions and KFFM done. A-Player Team next."
+      },
+      "headline": "Next, your people.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Next, why you exist and how you behave.",
+      "notes": [
+        "Test the Core Purpose with three questions, then test each Core Value. Allow about 30 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-culture.svg",
+        "alt": "Q4 Day 1 path. Team, Functions, KFFM and A-Player Team done. Purpose and Values next."
+      },
+      "headline": "Next, why you exist and how you behave.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "hedgehog",
+      "title": "Next, your BHAG.",
+      "notes": [
+        "Read back the Core Purpose the team agreed on. Then agree on the core business and the economic engine, and test the BHAG against all three. Allow about 45 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-hedgehog.svg",
+        "alt": "Q4 Day 1 path. Through Purpose and Values done. Hedgehog and BHAG next."
+      },
+      "headline": "Next, your BHAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "market",
+      "title": "Next, what your strategy rests on.",
+      "notes": [
+        "Check the Market Map, the Core Customer and the Attribution Framework before you plan from them. Allow about 20 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-market.svg",
+        "alt": "Q4 Day 1 path. Through Hedgehog and BHAG done. Market, Customer, Attribution next."
+      },
+      "headline": "Next, what your strategy rests on.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "threehag",
+      "title": "Next, your new 3HAG.",
+      "notes": [
+        "A year has passed. The 3HAG moves out one year. Each leader answers every question again. Allow about 45 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-threehag.svg",
+        "alt": "Q4 Day 1 path. Through Market, Customer, Attribution done. New 3HAG next."
+      },
+      "headline": "Next, your new 3HAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "differentiators",
+      "title": "Next, what makes the 3HAG line true.",
+      "notes": [
+        "The team builds its 3 to 5 differentiators from the ground up, starting from the 3HAG line. Allow about 45 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-differentiators.svg",
+        "alt": "Q4 Day 1 path. Through Market, Customer, Attribution done. New 3HAG is not marked done yet. Differentiators next."
+      },
+      "headline": "Next, what makes the 3HAG line true.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "lanes",
+      "title": "Last today, your swim lanes.",
+      "notes": [
+        "One swim lane for each differentiator. If time runs out today, the swim lanes open Day 2. Never skip them."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day1-path-lanes.svg",
+        "alt": "Q4 Day 1 path. Through Differentiators done. Swim Lanes next."
+      },
+      "headline": "Last today, your swim lanes.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-status",
+      "title": "First, how the year went.",
+      "notes": [
+        "Day 2 has six steps. Review the year and the last quarter, then plan the next ones."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-status.svg",
+        "alt": "Q4 Day 2 path. Day 2: Status next, then Forecast, New 1HAG, New QHAG, Sprint Lanes, and Meetings and close."
+      },
+      "headline": "First, how the year went.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-forecast",
+      "title": "Then, next year’s forecast.",
+      "notes": [
+        "Building the 12-month forecast was Finance’s Q3 homework. The team reviews it before it sets the year’s targets."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-forecast.svg",
+        "alt": "Q4 Day 2 path. Status done. Forecast next."
+      },
+      "headline": "Then, next year’s forecast.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-annual",
+      "title": "Next, your new 1HAG.",
+      "notes": [
+        "The 1HAG is the first year of the new 3HAG. Allow about 80 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-annual.svg",
+        "alt": "Q4 Day 2 path. Status and Forecast done. New 1HAG next."
+      },
+      "headline": "Next, your new 1HAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-quarter",
+      "title": "Next, your new QHAG.",
+      "notes": [
+        "Never leave a planning session without a quarterly plan. Allow about 60 minutes."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-quarter.svg",
+        "alt": "Q4 Day 2 path. Status, Forecast and New 1HAG done. New QHAG next."
+      },
+      "headline": "Next, your new QHAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-sprint",
+      "title": "Next, your sprint lanes.",
+      "notes": [
+        "Build sprint lanes for the new QHAG. The annual has no refresher."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-sprint.svg",
+        "alt": "Q4 Day 2 path. Through New QHAG done. Sprint Lanes next."
+      },
+      "headline": "Next, your sprint lanes.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "day2-close",
+      "title": "Last, your meetings and the close.",
+      "notes": [
+        "Read back the plan the team agreed on. Then check the meetings that keep it alive, agree on the messages and the homework, and close. Allow about 15 minutes for the meeting and email checks. Allow about 30 for the 3 messages, the homework and the close."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q4-day2-path-close.svg",
+        "alt": "Q4 Day 2 path. Through Sprint Lanes done. Meetings and close next."
+      },
+      "headline": "Last, your meetings and the close.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    }
+  ]
+}

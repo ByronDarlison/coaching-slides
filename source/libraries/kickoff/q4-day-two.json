@@ -1,0 +1,86 @@
+{
+  "id": "q4-day-two",
+  "artifact": "day-two-opening",
+  "seed": "Byron Darlison, The Eight Meetings That Run Your Company; Shannon Byrne Susko, Prep Surveys post and Metronomics Checklist Survey (19 statements and one question); Activity Fit Map playbook, Byron, 27-Sep-2026 (sleep on the differentiators).",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "day-two",
+      "title": "Yesterday, strategy. Today, execution.",
+      "layout": "comp-decision",
+      "arrows": false,
+      "group": "Day 2",
+      "panels": [
+        {
+          "role": "Yesterday",
+          "heading": "Where you are going",
+          "support": "Your BHAG, a new 3HAG, its differentiators and swim lanes.",
+          "mark": "action"
+        },
+        {
+          "role": "Today",
+          "heading": "How you get there",
+          "support": "The year in review, next year’s forecast, a new 1HAG, a new QHAG and sprint lanes.",
+          "mark": "structure"
+        }
+      ],
+      "notes": [
+        "Open Day 2. Read back what the team finished yesterday. Name what is still open.",
+        "Today turns the strategy into next year and next quarter, with an owner on every number and priority.",
+        "The plan gives Day 2 about 340 working minutes. That leaves about 65 for swim lanes or the 3HAG picture carried from Day 1.",
+        "Allow about 20 minutes for the Day 2 opening."
+      ],
+      "headline": "Yesterday, strategy. Today, execution.",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "sleep",
+      "title": "After a night’s sleep, would you change any differentiator?",
+      "support": "If your swim lanes are not finished, finish them first.",
+      "notes": [
+        "The team has slept on its differentiators. Ask what anyone would keep or change in the names, descriptors and dependencies. Confirm them before the team sets priorities.",
+        "If the swim lanes did not finish yesterday, finish them first."
+      ],
+      "headline": "After a night’s sleep, would you change any differentiator?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "checklist",
+      "title": "What did the checklist survey tell us?",
+      "support": "Your coach shows the results of the yearly checklist: 19 statements, each true or false.",
+      "body": [
+        "Where do you all agree?",
+        "Where do your answers differ?",
+        "Which differences need follow-up?"
+      ],
+      "notes": [
+        "The team takes the Metronomics Checklist Survey at least once a year, before the annual. Start with the leadership team. As Metronomics spreads through the company, the whole company answers it.",
+        "Show the results for statements 1 to 19. The last question only asks whether the person answering is the CEO.",
+        "Where answers differ, people are seeing different things. Ask what each person observed.",
+        "Some statements name tools the company has not started, such as the 36-month forecast and the Brand Promise. Read those answers in that light.",
+        "The results show how far the team has come in a year and where to work next. Record the differences that need follow-up.",
+        "If the team has not taken it, assign it with a date and move on.",
+        "Allow about 15 minutes."
+      ],
+      "headline": "What did the checklist survey tell us?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}

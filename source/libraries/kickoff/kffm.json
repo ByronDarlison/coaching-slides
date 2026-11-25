@@ -129,7 +129,7 @@
       ],
       "artwork": {
         "src": "assets/kffm-status.svg",
-        "alt": "The KFFM example with everything dimmed except the function boxes and their colours. A callout reads: rated by the critical number. On track, at risk, needs attention.",
+        "alt": "The KFFM example with everything dimmed except the function boxes and their colors. A callout reads: rated by the critical number. On track, at risk, needs attention.",
         "viewbox": [
           1440,
           710
@@ -137,7 +137,7 @@
         "hotspots": []
       },
       "notes": [
-        "At the Kick Off, every box starts grey. At a quarterly, each owner re-rates their function. Each owner colours their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red.",
+        "At the Kick Off, every box starts grey. At a quarterly, each owner re-rates their function. Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red.",
         "Then ask: what would it take to turn it green?",
         "Red is a conversation, not a verdict on the person."
       ],
@@ -188,12 +188,12 @@
         "5. Label the widget between each function.",
         "6. Add the days each function takes.",
         "7. Give each function its critical number.",
-        "8. Colour each one: green, yellow or red."
+        "8. Color each one: green, yellow or red."
       ],
       "notes": [
         "Good enough today beats perfect later. We finish a first version before we leave, then revisit the map at every quarterly planning session and improve it.",
         "Build it live on the board. Supporting functions go in their own row below.",
-        "Finish with Profit per X at the end of the flow and the total time to cash.",
+        "Finish with the total time to cash, and Profit per X if a good X has emerged.",
         "Read one customer through the finished map, ending at collected cash.",
         "A critical number can be financial, like new MRR. The widgets that move between functions cannot."
       ],

@@ -1,0 +1,84 @@
+{
+  "id": "q4-dysfunctions",
+  "artifact": "five-dysfunctions",
+  "seed": "Shannon Byrne Susko, System by System post Five Dysfunctions Assessment, Cohesive 90 Day Plan example and training of 26-Sep-2026; Patrick Lencioni, The Five Dysfunctions of a Team.",
+  "tags": [
+    "q4"
+  ],
+  "slides": [
+    {
+      "id": "model",
+      "title": "A team builds cohesion in five levels, from trust up.",
+      "support": "Each level rests on the one below it. Your Five Dysfunctions assessment scored each level.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-five-dysfunctions.svg",
+        "alt": "A five-level pyramid rises from Trust through Conflict, Commitment and Accountability to Results. A team score key: high is 4 and above, medium is 3 to 3.99, low is under 3."
+      },
+      "notes": [
+        "This is the model from The Five Dysfunctions of a Team. The book was the Q2 reading. The team assessment was Q3 homework.",
+        "The five levels, from the bottom: trust, conflict, commitment, accountability, results. A team that does not trust each other will not have honest conflict. Without honest conflict nobody truly commits. Without commitment nobody holds each other accountable. Without accountability the team’s results come second to each person’s own.",
+        "The assessment scores each level. High is 4 and above. Medium is 3 to 3.99. Low is under 3.",
+        "Do the assessment at least once a year. Use the scores to choose where the team works on its cohesiveness next. Keep them as the benchmark for next year.",
+        "If the team has not taken the assessment, assign it with a date and move to the Function Chart."
+      ],
+      "headline": "A team builds cohesion in five levels, from trust up.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "review",
+      "title": "What does your Five Dysfunctions assessment say?",
+      "support": "Your coach shows the team’s score for each level.",
+      "body": [
+        "What is working? What is not?",
+        "Start at the bottom. For each level: what do you see in how you work together?",
+        "Say what you observe. No blame. No shame.",
+        "Not taken yet? Set a date and move on."
+      ],
+      "notes": [
+        "Show the scores and pick out what is working and what is not. Do not hand out the full report first. It is long, and people read ahead instead of talking.",
+        "Ask for the team’s observations and lead the discussion level by level, from trust up.",
+        "Hand out the full report after the discussion.",
+        "Allow about 45 minutes with the next slide. The first time takes longer because it is uncomfortable."
+      ],
+      "headline": "What does your Five Dysfunctions assessment say?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "actions",
+      "title": "Agree on one action for each level.",
+      "support": "Each action gets an owner.",
+      "body": [
+        "Trust. Conflict. Commitment. Accountability. Results.",
+        "These five actions start your 90-day cohesiveness plan.",
+        "Start all five this quarter."
+      ],
+      "notes": [
+        "Write what the team sees and one action beside each level, with an owner.",
+        "Keep the actions small and regular. One example plan follows.",
+        "Daily: open the huddle with a Core Value story from yesterday. Weekly: ask one personal question, and the CEO answers first.",
+        "In month one of that example, each leader shares a timeline of five significant life events. The CEO goes first.",
+        "The actions go on the homework list. The team reviews them at the next quarterly."
+      ],
+      "headline": "Agree on one action for each level.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    }
+  ]
+}
