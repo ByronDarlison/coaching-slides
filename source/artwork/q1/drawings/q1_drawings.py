@@ -46,7 +46,7 @@ STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scor
 
 def path_svg(current):
     W, H = 1440, 300
-    o = [t(20, 56, "Q1", 26, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(20, 56, "Q1", 26, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap = 16
     x = 14.0
     for i, (key, label) in enumerate(STAGES):

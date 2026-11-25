@@ -6,6 +6,7 @@ STYLE = re.search(r"<style>.*?</style>", (ASSETS / "q1-path-status.svg").read_te
 BLUE, GREEN, DGREEN, ORANGE = "#326ab6", "#54b570", "#318549", "#a94f1f"
 SEQ = ["#54b570", "#4ca282", "#438f93", "#3b7da5", "#326ab6"]  # ordered things run green to blue
 INK, GREY, MID, LINE, CANVAS = "#20282f", "#5b6670", "#9aa3ab", "#d5d9dd", "#f6f4ef"
+CORNER = "#6b7780"  # corner labels ("Example", "Q4 · Day 1"): 4.5:1 on white
 NOTE, NOTE_EDGE = "#fbec9d", "#c9a227"  # sticky note, as in kffm-levers.svg
 
 def text(x, y, s, size=24, weight=500, fill=INK, anchor="middle", extra=""):

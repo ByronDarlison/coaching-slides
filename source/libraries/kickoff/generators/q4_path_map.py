@@ -2,7 +2,7 @@
 """Draw the Q4 Annual path maps, one SVG per stage, in the style of the Q3 path map.
 Day 1: ten stages in two rows of five (slide standard rule 21). Day 2: six stages in one row.
 Run from the library folder: python3 generators/q4_path_map.py"""
-from q4_common import svg, write, MID
+from q4_common import svg, write, CORNER
 DAY1 = [("team", ["Team"]), ("functions", ["Functions"]), ("kffm", ["KFFM"]), ("people", ["A-Player", "Team"]),
         ("culture", ["Purpose", "and Values"]), ("hedgehog", ["Hedgehog", "and BHAG"]),
         ("market", ["Market, Customer,", "Attribution"]), ("threehag", ["New", "3HAG"]),
@@ -16,7 +16,7 @@ def draw(stages, current, corner, per_row, bw, rowy, h):
     left = (W - per_row * bw - (per_row - 1) * GAP) / 2
     def pos(i):
         return left + (i % per_row) * (bw + GAP), rowy[i // per_row]
-    out = [f'<text x="40" y="52" font-size="28" font-weight="700" fill="{MID}" text-anchor="start" letter-spacing="2">{corner}</text>']
+    out = [f'<text x="40" y="52" font-size="28" font-weight="700" fill="{CORNER}" text-anchor="start" letter-spacing="2">{corner}</text>']
     for i, (_, label) in enumerate(stages):
         x, y = pos(i); cx, cy = x + bw / 2, y + BH / 2
         done, now = i < current, i == current

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw the example Activity Fit Map: four groups of activities and what each depends on.
 Run from the library folder: python3 generators/q4_activity_fit_map.py"""
-from q4_common import svg, write, text, block, BLUE, INK, GREY, MID, LINE, CANVAS, NOTE, NOTE_EDGE
+from q4_common import svg, write, text, block, BLUE, INK, GREY, MID, CORNER, LINE, CANVAS, NOTE, NOTE_EDGE
 W, H = 1440, 700
 PW, PH, LX, RX, TY, BY = 630, 232, 40, 770, 86, 436
 # name, x, y, activities (line breaks set by hand)
@@ -12,7 +12,7 @@ GROUPS = [("A Named Person for 90 Days", LX, TY, [["One contact", "from sign-up"
 NW, NH, PAD, NGAP = 188, 132, 16, 17
 REGIONS = {}
 defs = f'<defs><marker id="dep" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="30" refX="26" refY="15" orient="auto"><path d="M0,0 L30,15 L0,30 Z" fill="{BLUE}"/></marker></defs>'
-out = [text(40, 52, "Example", 28, 700, MID, "start", ' letter-spacing="2"')]
+out = [text(40, 52, "Example", 28, 700, CORNER, "start", ' letter-spacing="2"')]
 for name, x, y, notes in GROUPS:
     out.append(f'<rect x="{x}" y="{y}" width="{PW}" height="{PH}" rx="16" fill="{CANVAS}" stroke="{LINE}" stroke-width="2"/>')
     out.append(text(x + PW / 2, y + 50, name, 32, 700, BLUE))
@@ -34,7 +34,7 @@ print("wrote q4-activity-fit-map-example.svg")
 # The four group names only, for a narrow side panel: same layout, arrows and legend, no activities
 W2, H2, PW2, PH2, LX2, RX2, TY2, BY2 = 900, 690, 370, 220, 30, 500, 96, 436
 NAMES = {"A Named Person for 90 Days": ["A Named Person", "for 90 Days"], "Standard, Not Custom": ["Standard,", "Not Custom"]}
-out = [text(LX2, 56, "Example", 30, 700, MID, "start", ' letter-spacing="2"')]
+out = [text(LX2, 56, "Example", 30, 700, CORNER, "start", ' letter-spacing="2"')]
 for (name, x, y, _) in GROUPS:
     x, y = (LX2 if x == LX else RX2), (TY2 if y == TY else BY2)
     out.append(f'<rect x="{x}" y="{y}" width="{PW2}" height="{PH2}" rx="18" fill="{CANVAS}" stroke="{LINE}" stroke-width="3"/>')

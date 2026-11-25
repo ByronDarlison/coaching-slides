@@ -74,7 +74,7 @@ PER_ROW = 6
 def path_svg(current):
     """Two rows of six (rule 21), so the labels read from the back of the room."""
     W, H = 1440, 464
-    o = [t(40, 52, "Q3", 28, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(40, 52, "Q3", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap, w, h, x0 = 24, 206, 150, 42
     rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):

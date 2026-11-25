@@ -63,7 +63,7 @@ STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scor
 def path_svg(current):
     """Two rows of five, so the labels read from the back of the room. Row one runs into row two."""
     W, H = 1440, 464
-    o = [t(40, 52, "Q2", 28, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(40, 52, "Q2", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap, w, h, x0 = 30, 248, 150, 40
     rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):
@@ -195,35 +195,48 @@ SW = 1440
 
 
 class Grid:
-    """Week columns. `label` is the width of the name column; `k` scales the type."""
-    def __init__(self, label, k):
+    """Week columns. `label` is the width of the name column; `k` scales the type.
+    `floor` is the smallest type on the page, in drawing units. The page shows at about 0.76
+    of its size at 1280 by 720, so 17.2 units is the 13-pixel floor (visual standard, rule 32)."""
+    def __init__(self, label, k, floor=18):
         self.x0 = label
         self.cw = (SW - label - 10) / 13
         self.k = k
+        self.floor = floor
+
+    def f(self, size):
+        """A type size scaled by k, never under the floor."""
+        return round(max(size * self.k, self.floor), 2)
 
     def head(self, y):
         o, w0 = [], 0
         for name, n in zip(MONTHS, WEEKS):
             x = self.x0 + w0 * self.cw
             o.append(f'<rect x="{x + 3}" y="{y}" width="{n * self.cw - 6}" height="{30 * self.k:.0f}" rx="6" fill="{CARD}"/>')
-            o.append(t(x + n * self.cw / 2, y + 22 * self.k, name, 19 * self.k, 700, MUTE))
+            o.append(t(x + n * self.cw / 2, y + 22 * self.k, name, self.f(19), 700, MUTE))
             w0 += n
         y += 34 * self.k
         for w in range(13):
-            o.append(t(self.x0 + w * self.cw + self.cw / 2, y + 22 * self.k, f"Wk {w + 1}", 19 * self.k, 700, MUTE))
+            o.append(t(self.x0 + w * self.cw + self.cw / 2, y + 22 * self.k, f"Wk {w + 1}", self.f(19), 700, MUTE))
         return "".join(o), y + 30 * self.k
 
     def band(self, y, title):
         return (f'<rect x="10" y="{y}" width="{SW - 20}" height="{34 * self.k:.0f}" rx="6" fill="{BFILL}"/>'
-                + t(22, y + 24 * self.k, title, 20 * self.k, 700, B, "start")), y + 40 * self.k
+                + t(22, y + 24 * self.k, title, self.f(20), 700, B, "start")), y + 40 * self.k
 
-    def widgets(self, y, rh):
+    def widgets(self, y, rh, inline=False):
+        """inline: the owner sits at the end of the name's last line, for a page with short rows."""
         o, y = [self.band(y, "Company Widgets: Week by Week")[0]], y + 40 * self.k
         k = self.k
         for name, owner, months in WIDGETS:
-            top = y + rh / 2 - (len(name) * 20 * k + 18 * k) / 2 + 16 * k
-            o.append(lines(18, top, name, 19 * k, 20 * k, 700, INK, "start"))
-            o.append(t(18, top + len(name) * 20 * k, owner, 17 * k, 500, MUTE, "start"))
+            if inline:
+                top = y + rh / 2 - (len(name) * 20 * k) / 2 + 16 * k
+                o.append(lines(18, top, name, self.f(19), 20 * k, 700, INK, "start"))
+                o.append(t(self.x0 - 10, top + (len(name) - 1) * 20 * k, owner, self.f(17), 500, MUTE, "end"))
+            else:
+                top = y + rh / 2 - (len(name) * 20 * k + 18 * k) / 2 + 16 * k
+                o.append(lines(18, top, name, self.f(19), 20 * k, 700, INK, "start"))
+                o.append(t(18, top + len(name) * 20 * k, owner, self.f(17), 500, MUTE, "start"))
             for w, v in enumerate(weekly(months)):
                 cx = self.x0 + w * self.cw
                 o.append(f'<rect x="{cx + 3:.1f}" y="{y + 3}" width="{self.cw - 6:.1f}" height="{rh - 6}" rx="6" fill="{GFILL}" stroke="{G}" stroke-width="1.5"/>')
@@ -236,28 +249,34 @@ class Grid:
         k = self.k
         for num, name, owner, by, steps in LANES:
             o.append(f'<circle cx="32" cy="{y + 24 * k}" r="{16 * k:.0f}" fill="{B}"/>')
-            o.append(t(32, y + 24 * k + 6 * k, num[1:], 18 * k, 700, "white"))
-            o.append(lines(56, y + 24 * k + 5 * k, name, 18 * k, 21 * k, 700, INK, "start"))
-            o.append(t(56, y + 24 * k + 5 * k + 21 * k * len(name) + 2, f"{owner} · Done by {by}", 17 * k, 500, MUTE, "start"))
+            o.append(t(32, y + 24 * k + 6 * k, num[1:], self.f(18), 700, "white"))
+            o.append(lines(56, y + 24 * k + 5 * k, name, self.f(18), 21 * k, 700, INK, "start"))
+            o.append(t(56, y + 24 * k + 5 * k + 21 * k * len(name) + 2, f"{owner} · Done by {by}", self.f(17), 500, MUTE, "start"))
             for w, step in enumerate(steps):
                 cx = self.x0 + w * self.cw
                 box = f'<rect x="{cx + 3:.1f}" y="{y + 3}" width="{self.cw - 6:.1f}" height="{rh - 6}" rx="6" '
                 if step is DONE:
-                    o.append(box + f'fill="{CARD}" stroke="{LINE}" stroke-width="1.5"/>')
-                    o.append(t(cx + self.cw / 2, y + rh / 2 + 6 * k, "Complete", 15 * k, 700, MUTE))
+                    # One box across the weeks after the priority is done, with one label:
+                    # "Complete" does not fit a single week cell at a readable size.
+                    if w and steps[w - 1] is DONE:
+                        continue
+                    span = len(steps) - w
+                    o.append(f'<rect x="{cx + 3:.1f}" y="{y + 3}" width="{span * self.cw - 6:.1f}" height="{rh - 6}" rx="6" '
+                             f'fill="{CARD}" stroke="{LINE}" stroke-width="1.5"/>')
+                    o.append(t(cx + span * self.cw / 2, y + rh / 2 + 6 * k, "Complete", self.f(18), 700, MUTE))
                 else:
                     o.append(box + f'fill="{GFILL}" stroke="{G}" stroke-width="1.5"/>')
                     lh = 21 * k
-                    o.append(lines(cx + self.cw / 2, y + rh / 2 + 6 * k - (len(step) - 1) * lh / 2, step, 18 * k, lh, 600, INK))
+                    o.append(lines(cx + self.cw / 2, y + rh / 2 + 6 * k - (len(step) - 1) * lh / 2, step, self.f(18), lh, 600, INK))
             y += rh
         return "".join(o), y
 
 
-def lanes_page(widgets=True, lanes=True, note=None, label=262, k=1.0, wrow=54, lrow=96):
-    g = Grid(label, k)
+def lanes_page(widgets=True, lanes=True, note=None, label=262, k=1.0, wrow=54, lrow=96, floor=18, inline=False):
+    g = Grid(label, k, floor)
     body, y = g.head(4)
     if widgets:
-        part, y = g.widgets(y + 6, wrow)
+        part, y = g.widgets(y + 6, wrow, inline)
         body += part
     if lanes:
         part, y = g.lanes(y + 10, lrow)
@@ -270,13 +289,13 @@ def lanes_page(widgets=True, lanes=True, note=None, label=262, k=1.0, wrow=54, l
 
 
 # the whole page once: an overview of its shape, sized to fill a 16:9 panel
-(OUT / "sprint-lanes-example.svg").write_text(lanes_page(k=0.92, wrow=46, lrow=84), encoding="utf-8")
+(OUT / "sprint-lanes-example.svg").write_text(lanes_page(label=272, k=0.92, wrow=46, lrow=84, floor=17.2, inline=True), encoding="utf-8")
 # then each block on its own, at a size a projector can show
 (OUT / "sprint-lanes-widgets.svg").write_text(lanes_page(lanes=False, wrow=66, note=(
     "Company Widgets: Week by Week",
     ["Why: a weekly number shows a miss while there is time to act.",
      "Ask: can each owner reach this week’s number?"])), encoding="utf-8")
-(OUT / "sprint-lanes-lanes.svg").write_text(lanes_page(widgets=False, label=250, lrow=112, note=(
+(OUT / "sprint-lanes-lanes.svg").write_text(lanes_page(widgets=False, label=258, lrow=112, floor=17.2, note=(
     "Company Priorities: Week by Week",
     ["Why: the team sees each week how the priority gets done.",
      "Ask: what must be done this week to finish on time?"])), encoding="utf-8")
