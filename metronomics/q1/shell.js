@@ -620,7 +620,20 @@
   const fitTip = (event) => {
     if (small.matches) return;
     const term = event.target && event.target.closest ? event.target.closest(".term") : null;
-    if (!term) return;
+    if (!term) {
+      // A hover box on a drawing: keep it inside the drawing's panel, which clips it.
+      const spot = event.target && event.target.closest ? event.target.closest(".hotspot") : null;
+      const spotTip = spot ? spot.querySelector(":scope > .hotspot-tip") : null;
+      const panel = spot ? spot.closest(".story-panel--art") || spot.closest(".slide-content") || spot.closest(".slide") : null;
+      if (!spotTip || !panel) return;
+      spotTip.style.setProperty("--tip-dx", "0px");
+      const edge = panel.getBoundingClientRect(), at = spotTip.getBoundingClientRect(), inset = 8;
+      let shift = 0;
+      if (at.left < edge.left + inset) shift = edge.left + inset - at.left;
+      else if (at.right > edge.right - inset) shift = edge.right - inset - at.right;
+      spotTip.style.setProperty("--tip-dx", shift + "px");
+      return;
+    }
     const tip = term.querySelector(".hotspot-tip");
     const frame = term.closest(".slide-content") || term.closest(".slide");
     if (!tip || !frame) return;
