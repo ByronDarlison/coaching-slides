@@ -406,6 +406,44 @@
           "Risk: ask how badly we could mess this up.",
           "The team uses the six questions on the company priorities, then on its own priorities. Those slides show them again when you hover over “six questions”.",
           "Hover over “KFFM lever” to show the six levers."
+        ],
+        "panels": [
+          {
+            "role": "Builds",
+            "heading": "What does it build or move?",
+            "support": "It advances a 1HAG priority, or moves a KFFM lever that brings cash in faster.",
+            "mark": "structure"
+          },
+          {
+            "role": "Impact",
+            "heading": "How much will it move a critical number?",
+            "support": "Name the number and the target. If it barely moves, think twice.",
+            "mark": "structure"
+          },
+          {
+            "role": "Speed",
+            "heading": "How soon will we see it?",
+            "support": "Name the achieved-by date for the measure of success. If it takes a long time to show, think twice.",
+            "mark": "structure"
+          },
+          {
+            "role": "Owner",
+            "heading": "Who can own it and succeed?",
+            "support": "One person, with the capacity and the skills to deliver it.",
+            "mark": "action"
+          },
+          {
+            "role": "Cost",
+            "heading": "What will it cost?",
+            "support": "Money, time and attention. Choose the most impact for the least cost.",
+            "mark": "action"
+          },
+          {
+            "role": "Risk",
+            "heading": "What could go wrong?",
+            "support": "Think through the second-order consequences.",
+            "mark": "action"
+          }
         ]
       }
     },
