@@ -27,11 +27,11 @@
         "This is the Mission to Mars exercise. It discovers the values the company already lives.",
         "It is for a team with no agreed Core Values, or one whose values failed the test. A team whose values passed the test skips it.",
         "At Q2, teach the exercise. The leadership team then runs it with the whole company before the next session.",
-        "In a small company, the leadership team is most of the company. The team runs it together in the room. Allow about 60 minutes."
+        "In a small company, the leadership team is most or all of the company. That company runs Mission to Mars in the room at Q3. Add these slides to that client’s Q3 deck. Allow about 60 minutes."
       ],
       "artwork": {
         "src": "assets/mission-to-mars.jpg",
-        "alt": "Three neutral grey figures stand beside a small rocket. A fourth figure holds a clipboard and gestures toward them, choosing who boards. One of the three wears a green badge."
+        "alt": "Three neutral gray figures stand beside a small rocket. A fourth figure holds a clipboard and gestures toward them, choosing who boards. One of the three wears a green badge."
       }
     },
     {
@@ -52,7 +52,7 @@
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people. Each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
+        "alt": "Five steps in a row. 1, pick three people. Each person picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
       }
     },
     {

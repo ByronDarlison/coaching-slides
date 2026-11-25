@@ -112,7 +112,7 @@ for i, (key, _) in enumerate(STAGES):
 
 # ---------------------------------------------------------------- Mission to Mars
 # Step names and wording follow the master board's "Core Values, Q3: Mission to Mars" area.
-MARS = [("Pick three|people", ["Three people not", "in the room.", "Name the value", "each one lives."]),
+MARS = [("Pick three|people", ["Each person", "picks three not", "in the room.", "Name the value", "each one lives."]),
         ("Share and|cluster", ["Say who and why.", "Move similar", "values together.", "Name each", "cluster."]),
         ("Vote", ["Three votes each,", "on the clusters", "that best show", "your values."]),
         ("Test the|top three", ["Test each one.", "Talk about", "anything", "left out."]),
