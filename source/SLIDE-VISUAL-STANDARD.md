@@ -118,6 +118,8 @@ Learned building the Q4 deck (24-Nov-2026):
 40. **Say where a number or a plan comes from before asking for it.** When an earlier step produced the numbers (the forecast before the 1HAG targets), the ask says "take the numbers from", not "what are". A cold reader starts from scratch otherwise.
 41. **One picture shows position, and its stops are real (Byron, 25-Nov-2026).** The flow map is the only picture that shows where the team is in the session. Do not put a second position picture, such as the vertical planning chain, beside a check slide: two styles on consecutive slides are jarring. Name every stop for what the team works on there (3HAG, 1HAG, QHAG), never for a grouping the slides do not use (Plan). Each stop sits directly in front of the slides it names. The chain stays only where it teaches a level for the first time.
 42. **When a comment exposes a flaw in the flow, lay out the whole stretch first.** List every slide from the stop before to the stop after, with what each picture shows, and make one considered change. Do not patch one slide at a time while the reviewer is reading.
+43. **A return visit says validate (Byron, 25-Nov-2026).** When a later session comes back to something the team already set (Core Purpose, Profit per X, the BHAG at the annual), the stop title and the first line of each slide say the team is validating it, not creating it from scratch. A blind write is still fine, as long as the slide then brings the current answer back to compare.
+44. **Read a slide before recommending its removal.** Open the slide as the deck renders it, with its playlist override. Do not judge it by its name. On 25-Nov-2026 the six BHAG tests were nearly cut because the slide was described from memory as a repeat.
 
 ## Layouts
 
