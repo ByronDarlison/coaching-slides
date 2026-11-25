@@ -964,35 +964,35 @@
     },
     {
       "reference": "kickoff:q4-swim-lanes#definition",
-      "sha256": "75badad0d6f18f8af3cb2a61c50a481cd031071db3dac2a6493ef04d949c6b56",
+      "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-swim-lanes#outcomes",
-      "sha256": "75badad0d6f18f8af3cb2a61c50a481cd031071db3dac2a6493ef04d949c6b56",
+      "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
       "artwork_sha256": "db072303bb97c9f7ae1f8ebbe0874583f34294d1bbd79160a80c72149a3d8606"
     },
     {
       "reference": "kickoff:q4-swim-lanes#milestones",
-      "sha256": "75badad0d6f18f8af3cb2a61c50a481cd031071db3dac2a6493ef04d949c6b56",
+      "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
       "artwork_sha256": "14658bb778c8ec821093e3a3adf9c4a922df3bcefadcc037e7aab36b12e3c931"
     },
     {
       "reference": "kickoff:q4-swim-lanes#build",
-      "sha256": "75badad0d6f18f8af3cb2a61c50a481cd031071db3dac2a6493ef04d949c6b56",
+      "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-swim-lanes#pass",
-      "sha256": "75badad0d6f18f8af3cb2a61c50a481cd031071db3dac2a6493ef04d949c6b56",
+      "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
       "artwork_sha256": null
@@ -1209,21 +1209,21 @@
     },
     {
       "reference": "kickoff:q4-close#homework",
-      "sha256": "4b2ac87fdc22c42715edb9f990475fd9773666635c47e40e64fe55717b475448",
+      "sha256": "aa3f2ddb488302a8c554193c262d0f7e0cb8b9c0acda8c9e9fa724dc7d1153ff",
       "artifact": "close",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 Annual Planning and Road Map Q-4, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-close#homework-people",
-      "sha256": "4b2ac87fdc22c42715edb9f990475fd9773666635c47e40e64fe55717b475448",
+      "sha256": "aa3f2ddb488302a8c554193c262d0f7e0cb8b9c0acda8c9e9fa724dc7d1153ff",
       "artifact": "close",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 Annual Planning and Road Map Q-4, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-close#outcomes-check",
-      "sha256": "4b2ac87fdc22c42715edb9f990475fd9773666635c47e40e64fe55717b475448",
+      "sha256": "aa3f2ddb488302a8c554193c262d0f7e0cb8b9c0acda8c9e9fa724dc7d1153ff",
       "artifact": "close",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 Annual Planning and Road Map Q-4, Metronomics.",
       "artwork_sha256": "c32e4dd70221a1ff3042b9998c7adbaf0291bd6787730aa31020af68db12c53b"

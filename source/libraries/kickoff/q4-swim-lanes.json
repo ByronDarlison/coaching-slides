@@ -121,7 +121,7 @@
         "Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",
         "Question any lane or milestone that serves none of the Core Customer’s top needs.",
         "A lane can be a team goal. Each milestone still has one accountable owner.",
-        "Homework: add the differentiators and swim lanes to the War Room in Metronome."
+        "Homework: add the differentiators and their milestones to Swimlanes in Metronome."
       ],
       "headline": "Do your swim lanes pass?",
       "layout": "comp-story",
