@@ -17,7 +17,7 @@
         "Review established values today. If none exist, do not create them today.",
         "Values are alive, constant behavioral rules with consequences for violations.",
         "Review where values shape real decisions. Address repeated violations through the company’s established people process.",
-        "This workshop reviews existing values; it does not create a new dismissal process."
+        "This workshop reviews existing values. It does not create a new dismissal process."
       ],
       "tags": [
         "kickoff",
@@ -72,7 +72,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Circle’s Kick Off checklist calls for reviewing values when they already exist. Ask for concrete behaviors. If the company has no established values, do not create them here."
+        "Review the values when they already exist. Ask for concrete behaviors. If the company has no established values, do not create them here."
       ],
       "tags": [
         "kickoff",

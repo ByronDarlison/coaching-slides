@@ -29,7 +29,8 @@
         "src": "assets/hag-ladder-at-3hag.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. 3HAG is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "map",
@@ -104,7 +105,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Introduce 3HAG as the 3-year Highly Achievable Goal. Have each leader write targets independently, then share and agree. Record exact units and the future date. Distinguish cash from profit.",
+        "Introduce 3HAG as the 3 Year Highly Achievable Goal. Have each leader write targets independently, then share and agree. Record exact units and the future date. Distinguish cash from profit.",
         "Agree on gross revenue, ending cash and widgets, using consistent definitions across all three horizons. The 3HAG fiscal measures are gross revenue, margin and cash."
       ],
       "tags": [
@@ -140,7 +141,8 @@
         "Gross revenue, margin and year-end cash, for Year 3 alone.",
         "Name the widget for each hand-off on your KFFM. Estimate the quantity where you can.",
         "Name an owner for every number."
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "statement",
@@ -178,7 +180,8 @@
           }
         ]
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "capabilities",
@@ -218,7 +221,8 @@
       "support": "What must be in place to make the numbers and the statement true?",
       "body": [
         "If revenue tripled, what would we need to be able to do?"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "known-for",
@@ -253,7 +257,8 @@
           }
         ]
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "read-back",
@@ -274,7 +279,7 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/hag-ladder-checked-3hag.svg",
-        "alt": "The planning cascade with the 3HAG checked; the 1HAG, QHAG and individual priorities are still to come."
+        "alt": "The planning cascade with the 3HAG checked. The 1HAG, QHAG and individual priorities are still to come."
       },
       "art_side": true,
       "support": "Read it aloud before you move on.",
@@ -304,7 +309,7 @@
       ],
       "artwork": {
         "src": "assets/twelve-quarters-spiral.svg",
-        "alt": "A continuous line of 12 loops climbing from Today to the 3HAG. Each loop is one quarter, Q1 to Q12, grouped into Year 1, Year 2 and Year 3. Q4 and Q8 are each a 1HAG; Q12 lands the 3HAG. The line fades from blue to green. Each loop: plan the quarter, do the work, review and learn."
+        "alt": "A continuous line of 12 loops climbing from Today to the 3HAG. Each loop is one quarter, Q1 to Q12, grouped into Year 1, Year 2 and Year 3. Q4 and Q8 are each a 1HAG. Q12 lands the 3HAG. The line fades from blue to green. Each loop: plan the quarter, do the work, review and learn."
       },
       "eyebrow": "",
       "art_full": true

@@ -46,7 +46,7 @@ STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scor
 
 def path_svg(current):
     W, H = 1440, 300
-    o = [t(20, 56, "Q1", 26, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(20, 56, "Q1", 26, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap = 16
     x = 14.0
     for i, (key, label) in enumerate(STAGES):
@@ -290,7 +290,7 @@ CALLOUTS = {  # each says why the part is on the map, then the coach's question
     "associations": (BL, "Associations", ["Why: they shape how buyers think", "before you ever meet them.", "Ask: whom can you leverage to grow?"]),
     "suppliers": (BL, "Suppliers", ["Why: find the dependency that could", "switch you off tomorrow.", "Ask: where does the most money go?"]),
     "partners": (BL, "Paid Partners", ["Why: see whom you rely on to reach", "or serve your customers.", "Ask: is any player in two places?"]),
-    "competitors": ((10, 568), "Competitors", ["Why: overlap is a head-on fight;", "gaps may be open space.", "Ask: could one block us anywhere?"]),
+    "competitors": ((10, 568), "Competitors", ["Why: overlap is a head-on fight.", "Gaps may be open space.", "Ask: could one block us anywhere?"]),
 }
 CALLOUT_W = {"competitors": 450}  # fits left of the lit competitors
 LIT = {  # what each callout lights besides its own group: the money that belongs to it

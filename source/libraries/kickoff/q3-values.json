@@ -52,7 +52,7 @@
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people. Each person picks three people and names the value each one lives. 2, share and cluster. Each person says who they picked and why. Move similar values together and name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
+        "alt": "Five steps in a row. 1, pick three people. Each person picks three people and names the value each one lives. 2, share and cluster. Each person says who they picked and why. Move similar values together and name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree on the Core Values: name each value and write the behavior it means."
       }
     },
     {
@@ -137,7 +137,7 @@
         "At a quarterly, the team arrives in one of three places. It has agreed Core Values, a draft from a Mission to Mars session, or neither.",
         "With agreed values, read them from the One Page Plan and go straight to the test.",
         "With a draft, the leadership team reviews it, changes what needs changing and confirms it today.",
-        "With neither, say so. Agree a date for the Mission to Mars session and move on.",
+        "With neither, say so. Agree on a date for the Mission to Mars session and move on.",
         "The Core Values are what each leader rates their direct reports against on the A-Player grid."
       ]
     },

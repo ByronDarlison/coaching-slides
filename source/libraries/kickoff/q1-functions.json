@@ -19,11 +19,11 @@
       "notes": [
         "The Team View shows each function, the person who volunteered to own it, and their title. It is all in one view.",
         "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
-        "Show it to the whole company at a town hall whenever it changes."
+        "Show it to the whole company at a Town Hall whenever it changes."
       ],
       "artwork": {
         "src": "assets/team-view-example.svg",
-        "alt": "The Team View for the example subscription company, matching the Function Chart’s agreed owners. Head of Company: Pat, CEO. Below: Marketing, Chris; Sales, Andrew; Operations, Jen; Development, Jen; Finance, Allison; People, Pat. Pat and Jen each own two functions, so their cards are red. A dashed, planned Customer Success function sits below Sales, for next year."
+        "alt": "The Team View for the example subscription company, matching the Function Chart’s agreed owners. Head of Company: Pat, CEO. Below: Marketing, Chris. Sales, Andrew. Operations, Jen. Development, Jen. Finance, Allison. People, Pat. Pat and Jen each own two functions, so their cards are red. A dashed, planned Customer Success function sits below Sales, for next year."
       },
       "art_full": true
     },

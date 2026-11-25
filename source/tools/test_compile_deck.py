@@ -614,6 +614,15 @@ def _story(**extra: object) -> dict:
     return {"id": "s", "layout": "comp-story", "title": "T", "headline": "Headline", **extra}
 
 
+def test_side_picture_width_flags_set_their_own_classes() -> None:
+    plain = compile_deck.render_slide(_story(art_side=True, support="Ask.", artwork=dict(ART)), 1)
+    large = compile_deck.render_slide(_story(art_side=True, art_large=True, support="Ask.", artwork=dict(ART)), 1)
+    small = compile_deck.render_slide(_story(art_side=True, art_small=True, support="Ask.", artwork=dict(ART)), 1)
+    assert "story-frame--art-large" not in plain and "story-frame--art-small" not in plain
+    assert 'class="story-frame story-frame--side story-frame--art-large"' in large
+    assert 'class="story-frame story-frame--side story-frame--art-small"' in small
+
+
 def test_full_width_drawing_shows_its_support_line_between_title_and_picture() -> None:
     html = compile_deck.render_slide(_story(art_full=True, support="In Metronome: open **Team View** <now>.", artwork=dict(ART)), 1)
     assert '<p class="support story-lede">In Metronome: open <strong class="hl">Team View</strong> &lt;now&gt;.</p>' in html

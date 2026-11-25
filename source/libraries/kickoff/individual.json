@@ -29,7 +29,8 @@
         "src": "assets/hag-ladder-at-priorities.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. Priorities is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "my-priorities",
@@ -40,7 +41,7 @@
       "notes": [
         "Start with the owner of company priority #1, then the other company-priority owners.",
         "Each owner places that commitment first in their individual plan. Add other aligned work and a development commitment.",
-        "Allow up to five work priorities and one development priority. Two that are delivered beat five that are started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
+        "Allow up to 5 work priorities and one development priority. Two delivered beat five started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
         "Include every company priority you own. Do not drop one because you own several.",
         "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
         "Run the six questions from the “Pick the priorities that contribute most to success” slide on each individual priority. Hover over “six questions” to show them.",

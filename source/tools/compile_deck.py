@@ -746,6 +746,10 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
         if image and unit.get("art_side") is True:
             copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
             narrow = " story-frame--art-narrow" if unit.get("art_narrow") is True else ""
+            # art_large: a drawing the room must read keeps the wide picture column.
+            # art_small: a names-only focus picture takes the narrower column.
+            narrow += " story-frame--art-large" if unit.get("art_large") is True else ""
+            narrow += " story-frame--art-small" if unit.get("art_small") is True else ""
             inner = f'<div class="slide-stage"><div class="story-frame story-frame--side{narrow}">{copy}<div class="story-panel{art_class}">{panel}</div></div></div>'
         elif not image and (unit.get("checklist") is True or unit.get("copy_stack") is True):
             copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
