@@ -21,7 +21,7 @@
         "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
         "Put last year’s 1HAG, with its results, beside the new one.",
         "Each number gets one owner.",
-        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets the team set yesterday."
+        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets in the new 3HAG."
       ],
       "headline": "What are your annual targets?",
       "layout": "comp-story",
@@ -94,7 +94,7 @@
         "What to change? Rate it 0 to 2."
       ],
       "notes": [
-        "The CEO’s weekly email was set to start at Q3. Check whether it is going out.",
+        "Q3 introduced the CEO’s weekly email. Check whether it is going out.",
         "Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",
         "Team members send their status to the CEO by Thursday noon."
       ],

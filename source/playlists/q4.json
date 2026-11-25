@@ -172,8 +172,8 @@
         "title": "For each lever: did you push it? What moved?",
         "headline": "For each lever: did you push it? What moved?",
         "notes": [
-          "At a quarterly, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
-          "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
+          "At the annual, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
+          "Open the team’s own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
           "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
           "Price: what price did customers pay? What changed when you raised it?",
           "Profit per X: has a good one emerged? If not, leave it blank.",
@@ -334,7 +334,7 @@
         "support": "Put your own agreed line on the screen. This one is the example.",
         "artwork": {
           "src": "assets/q4-attribution-3hag.svg",
-          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a grey ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
+          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
         },
         "notes": [
           "At the annual, this is a reminder. Read back the line you agreed. The example shows the line that the next slides make true.",
@@ -523,9 +523,9 @@
           "Ask these six questions of every candidate. Keep the few that contribute most: ideally 3, up to 5. A routine task list is not a set of company priorities.",
           "Builds: fix the cause, not the symptom. An annual priority builds a differentiator or moves a KFFM lever.",
           "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
-          "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
+          "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner. If only the CEO can own it, name the leadership gap first.",
           "Risk: ask how badly this could go wrong.",
-          "Once chosen, ask an owner to claim each priority aloud. Agree the done-by date, the measure and its achieved-by date. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The work is done by one date. The number reaches its target by its own date, often later.",
+          "Once chosen, ask an owner to claim each priority aloud. Agree the done-by date, the measure and its achieved-by date. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The owner finishes the work by one date. The number reaches its target by its own date, often later.",
           "Hover over “KFFM lever” to show the six levers."
         ]
       }
@@ -582,7 +582,7 @@
           "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
           "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If Q1 is a quarter of the way or less, ask what makes the later quarters steeper.",
           "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the annualized December rate: $300 a year.",
-          "If the team changes a number, say why and keep the approved forecast as it was agreed. The next status review asks where the estimate was wrong."
+          "If the team changes a number, say why and keep the approved forecast as the team agreed it. The next status review asks where the estimate was wrong."
         ]
       }
     },
@@ -617,7 +617,15 @@
           "Connect each to a 1HAG priority. Give each an owner, a done-by date, a measure of success and an achieved-by date."
         ],
         "title": "What else must you get done this quarter?",
-        "headline": "What else must you get done this quarter?"
+        "headline": "What else must you get done this quarter?",
+        "notes": [
+          "At a quarterly, list last quarter’s open priorities first. They stay on the new QHAG until their number has moved.",
+          "Take the next candidates in rank order from the same list.",
+          "Discuss disagreement, tradeoffs, dependencies and capacity. Agree on the rank together.",
+          "An owner claims the priority aloud. Agree on the done-by date, the measure and the achieved-by date.",
+          "The achieved-by date can fall after the quarter ends. The owner finishes the work this quarter. The priority stays open on the next QHAG until the number has moved.",
+          "Repeat for priorities 2 to 5 in order. Five is a ceiling. Stop when the list covers the critical work."
+        ]
       }
     },
     {
@@ -661,7 +669,7 @@
           "Allow about 45 minutes.",
           "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
           "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers you count add up to the quarter’s targets.",
-          "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
+          "Lanes: the team sees each week how the owner will deliver the priority. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
           "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
         ],
         "support": "Work together on the 13-Week Sprint Lanes page of your board."
