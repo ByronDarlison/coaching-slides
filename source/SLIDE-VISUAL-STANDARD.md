@@ -116,6 +116,8 @@ Learned building the Q4 deck (24-Nov-2026):
 38. **Break a long run of text slides with a focus picture.** When several slides in a row work through the parts of one model, show the model beside each, names only, with the current part at full strength and the rest dimmed (rule 9). Three or more text-only slides in a row is the signal.
 39. **A test must be answerable from what the team has.** "Does the year reach the first year of your 3HAG?" cannot be answered, because the 3HAG holds Year 3 numbers only. Before a check goes on a slide, name where each thing it compares was written down.
 40. **Say where a number or a plan comes from before asking for it.** When an earlier step produced the numbers (the forecast before the 1HAG targets), the ask says "take the numbers from", not "what are". A cold reader starts from scratch otherwise.
+41. **One picture shows position, and its stops are real (Byron, 25-Nov-2026).** The flow map is the only picture that shows where the team is in the session. Do not put a second position picture, such as the vertical planning chain, beside a check slide: two styles on consecutive slides are jarring. Name every stop for what the team works on there (3HAG, 1HAG, QHAG), never for a grouping the slides do not use (Plan). Each stop sits directly in front of the slides it names. The chain stays only where it teaches a level for the first time.
+42. **When a comment exposes a flaw in the flow, lay out the whole stretch first.** List every slide from the stop before to the stop after, with what each picture shows, and make one considered change. Do not patch one slide at a time while the reviewer is reading.
 
 ## Layouts
 
