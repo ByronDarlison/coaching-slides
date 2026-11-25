@@ -21,7 +21,7 @@
         "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
         "Put last year’s 1HAG, with its results, beside the new one.",
         "Each number gets one owner.",
-        "The 1HAG is the first year of the new 3HAG. Check each number against the three-year targets the team set yesterday."
+        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets the team set yesterday."
       ],
       "headline": "What are your annual targets?",
       "layout": "comp-story",
@@ -35,7 +35,7 @@
     {
       "id": "annual-first",
       "title": "What must you build this year?",
-      "support": "Start from your differentiators and the first four quarters of your swim lanes.",
+      "support": "Start from your differentiators and the first 4 quarters of your swim lanes.",
       "body": [
         "For each differentiator: what must this year deliver to build it?",
         "Add a priority that moves a KFFM lever if cash needs it.",
@@ -45,7 +45,7 @@
       ],
       "notes": [
         "At the Kick Off the team started from its key capabilities. The differentiators have taken their place.",
-        "The big moves in the first four quarters of the swim lanes are the natural candidates. Add anything burning on the KFFM.",
+        "The big moves in the first 4 quarters of the swim lanes are the natural candidates. Add anything burning on the KFFM.",
         "List every candidate before choosing. Do not filter yet. The six questions pick the few that contribute most.",
         "Once chosen, each priority gets one owner, a done-by date and a measure of success with an achieved-by date."
       ],
