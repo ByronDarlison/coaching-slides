@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw the Q4 3HAG page from the Kick Off 3HAG page, so the team sees the page they already know
 (slide standard rule 43). Each Q4 picture is the matching Kick Off picture with one change: block 3 is
-"Differentiators (3 to 5)" in place of the key capabilities. Block 3 is empty until the team builds the
+"Differentiators (3 to 5)" in place of the key capabilities, and the end date is one year later. Block 3 is empty until the team builds the
 differentiators, then it lists the four from the Activity Fit Map example. Run from the library folder:
 python3 generators/q4_3hag_focus.py"""
 import re
@@ -20,6 +20,10 @@ def draw(key):
     if "Key capabilities (3 to 5)" not in page:
         raise SystemExit(f"{SOURCES[key]} no longer has a 'Key capabilities (3 to 5)' heading")
     page = page.replace("Key capabilities (3 to 5)", "Differentiators (3 to 5)")
+    # The new 3HAG is one year further out than the Kick Off example.
+    if "December 31, 2029" not in page:
+        raise SystemExit(f"{SOURCES[key]} no longer shows 'December 31, 2029'")
+    page = page.replace("December 31, 2029", "December 31, 2030")
     seen = [0]
     def swap(match):
         name = BUILT[seen[0] % 4] if key == "differentiators" else None
