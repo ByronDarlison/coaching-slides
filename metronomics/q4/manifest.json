@@ -1114,7 +1114,7 @@
       "sha256": "a65399162d73a2309057c6aadd0f59d307f8ffb00fc1d24fdcf62da308bcb21c",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "dab56d70bb3b10a541a3a5a94a6c0ae57ac96f2c088bee886b4a01d5144f231e"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-path#day2-quarter",
@@ -1149,7 +1149,7 @@
       "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "f476ab36869dc2e6a82634e245dbaa3fd833d589ed1ec0f8f67ecfe479485bff"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-path#day2-sprint",

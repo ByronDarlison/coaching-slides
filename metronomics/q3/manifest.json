@@ -55,8 +55,9 @@
     "apply",
     "strategy",
     "read-back",
-    "plan",
+    "annual",
     "1hag-check",
+    "plan",
     "quarter-numbers",
     "quarter-first",
     "quarter-rest",
@@ -344,8 +345,8 @@
     },
     {
       "number": 53,
-      "name": "q3-path-plan",
-      "reference": "kickoff:q3-path#plan"
+      "name": "q3-path-annual",
+      "reference": "kickoff:q3-path#annual"
     },
     {
       "number": 54,
@@ -354,116 +355,121 @@
     },
     {
       "number": 55,
+      "name": "q3-path-plan",
+      "reference": "kickoff:q3-path#plan"
+    },
+    {
+      "number": 56,
       "name": "quarterly-quarter-numbers",
       "reference": "kickoff:quarterly#quarter-numbers"
     },
     {
-      "number": 56,
+      "number": 57,
       "name": "quarterly-quarter-first",
       "reference": "kickoff:quarterly#quarter-first"
     },
     {
-      "number": 57,
+      "number": 58,
       "name": "quarterly-quarter-rest",
       "reference": "kickoff:quarterly#quarter-rest"
     },
     {
-      "number": 58,
+      "number": 59,
       "name": "quarterly-qhag-check",
       "reference": "kickoff:quarterly#qhag-check"
     },
     {
-      "number": 59,
+      "number": 60,
       "name": "q3-path-lanes",
       "reference": "kickoff:q3-path#lanes"
     },
     {
-      "number": 60,
+      "number": 61,
       "name": "meeting-6-sprint-lanes",
       "reference": "eoa:meeting-6#sprint-lanes"
     },
     {
-      "number": 61,
+      "number": 62,
       "name": "q2-sprint-build",
       "reference": "kickoff:q2-sprint#build"
     },
     {
-      "number": 62,
+      "number": 63,
       "name": "q2-sprint-check",
       "reference": "kickoff:q2-sprint#check"
     },
     {
-      "number": 63,
+      "number": 64,
       "name": "q3-path-priorities",
       "reference": "kickoff:q3-path#priorities"
     },
     {
-      "number": 64,
+      "number": 65,
       "name": "individual-my-priorities",
       "reference": "kickoff:individual#my-priorities"
     },
     {
-      "number": 65,
+      "number": 66,
       "name": "individual-read-back",
       "reference": "kickoff:individual#read-back"
     },
     {
-      "number": 66,
+      "number": 67,
       "name": "individual-plan-check",
       "reference": "kickoff:individual#plan-check"
     },
     {
-      "number": 67,
+      "number": 68,
       "name": "q3-path-forecast",
       "reference": "kickoff:q3-path#forecast"
     },
     {
-      "number": 68,
+      "number": 69,
       "name": "q1-cash-owners",
       "reference": "kickoff:q1-cash#owners"
     },
     {
-      "number": 69,
+      "number": 70,
       "name": "q3-cash-template",
       "reference": "kickoff:q3-cash#template"
     },
     {
-      "number": 70,
+      "number": 71,
       "name": "q3-path-close",
       "reference": "kickoff:q3-path#close"
     },
     {
-      "number": 71,
+      "number": 72,
       "name": "rhythm-teaching-daily-weekly",
       "reference": "kickoff:rhythm-teaching#daily-weekly"
     },
     {
-      "number": 72,
+      "number": 73,
       "name": "q3-meetings-weekly-email",
       "reference": "kickoff:q3-meetings#weekly-email"
     },
     {
-      "number": 73,
+      "number": 74,
       "name": "cascade-messages-three-messages",
       "reference": "kickoff:cascade-messages#three-messages"
     },
     {
-      "number": 74,
+      "number": 75,
       "name": "q3-close-homework",
       "reference": "kickoff:q3-close#homework"
     },
     {
-      "number": 75,
+      "number": 76,
       "name": "q3-close-outcomes-check",
       "reference": "kickoff:q3-close#outcomes-check"
     },
     {
-      "number": 76,
+      "number": 77,
       "name": "closing-one-phrase",
       "reference": "kickoff:closing#one-phrase"
     },
     {
-      "number": 77,
+      "number": 78,
       "name": "closing-deck-link",
       "reference": "kickoff:closing#deck-link"
     }
@@ -513,10 +519,10 @@
     },
     {
       "reference": "kickoff:q3-path#status",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "d403ecf923f794e6b02221aee533a8ee57e7c4745d212e64f714c56677bf1198"
+      "artwork_sha256": "6b02902432e9491bd2386ed597c552040b3a32af1dd2597b731d32bc9f141141"
     },
     {
       "reference": "kickoff:quarterly-status#review",
@@ -527,10 +533,10 @@
     },
     {
       "reference": "kickoff:q3-path#functions",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "ed0cb17cbf4fd103372cff3eb3bffb8e114ed0306c55ec9f46226aac1ed2c616"
+      "artwork_sha256": "7f8bc5e5104b14eb1fa7ca951c925500a9d6f38225c6c9bce3140e81ef4abc7e"
     },
     {
       "reference": "kickoff:function-chart#gaps",
@@ -548,10 +554,10 @@
     },
     {
       "reference": "kickoff:q3-path#scorecards",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "2fa2bcc56a59f137234df064418546a81c42562c5c03dcf405aaa74a27681ad8"
+      "artwork_sha256": "b8680d6c68891f2eb4d5e97f1c88ffe8fc81e4fc147a7e35535b2e5abf182347"
     },
     {
       "reference": "kickoff:q1-functions#scorecard-intro",
@@ -562,10 +568,10 @@
     },
     {
       "reference": "kickoff:q3-path#kffm",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "b8375806c19a2cdb63d58d36897137a29c6a25953de19f7dedb7203551c68936"
+      "artwork_sha256": "7fac53b46b17bc3538e7730c25083d2e930517c93c03a13f9fc169a4a4a7ad2f"
     },
     {
       "reference": "kickoff:quarterly-kffm#map",
@@ -590,10 +596,10 @@
     },
     {
       "reference": "kickoff:q3-path#values",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "4791e4b059cf11025d9ab7b0dae3c540c75580a6d473f8993468cd9b8ccf493c"
+      "artwork_sha256": "a6547863a9c63f84aa24b93d9bef84398ff8d877d8ed40e3b5a40cffef9ee0a4"
     },
     {
       "reference": "kickoff:q3-values#review",
@@ -646,10 +652,10 @@
     },
     {
       "reference": "kickoff:q3-path#people",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "e9e1f944dd36a939c4cf6d003d9fd80c586b5c1fa93586e20074bf2962066c3f"
+      "artwork_sha256": "8e2fe3c45d3bc1fe2c42c104f048da63deb5180c8370a00c85ef366668d7e917"
     },
     {
       "reference": "kickoff:q3-aplayer#objective",
@@ -716,10 +722,10 @@
     },
     {
       "reference": "kickoff:q3-path#attribution",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "a4b4a2f4aa17112190170fa3ae030a2852972363c372b3218479f299e53d70dc"
+      "artwork_sha256": "1dcddd6a85e22cb5b73a6931abd6ba3632403ec0a427ddf74fa9d2a1b98e9d6e"
     },
     {
       "reference": "kickoff:q3-attribution#objective",
@@ -821,31 +827,38 @@
     },
     {
       "reference": "kickoff:q3-path#strategy",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "5c832660701f67c761fa425bdf57470c9f7c7fbf174343b40820192eb9fca2a2"
+      "artwork_sha256": "a660375fcd12d49b0d3a74fda5d71c3ec5fe15ca01155654c643b19cc5378ef3"
     },
     {
       "reference": "kickoff:three-year#read-back",
       "sha256": "121894ea16be50f09daa800e8e124191b91b107366ea631b2345294e4dd684da",
       "artifact": "three-year",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "a53ad6cf775010e326b9d599177eca003ce364ccbd7d7d9165e74eede7bea10b"
+      "artwork_sha256": null
     },
     {
-      "reference": "kickoff:q3-path#plan",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "reference": "kickoff:q3-path#annual",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "7b4f6cdca9036bf58f8ed2c8d7b81ed3f33cbc723fa0b381e69e26e024f95acb"
+      "artwork_sha256": "27d7c2ff7e92e1bf6b5bce7a27ca605ffc6790f08813a0eca09d03b4001daf1c"
     },
     {
       "reference": "kickoff:annual#1hag-check",
       "sha256": "a65399162d73a2309057c6aadd0f59d307f8ffb00fc1d24fdcf62da308bcb21c",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "dab56d70bb3b10a541a3a5a94a6c0ae57ac96f2c088bee886b4a01d5144f231e"
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q3-path#plan",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "artifact": "path",
+      "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
+      "artwork_sha256": "2a54ea4a9cf9711a2106ac52f4d5a8c6a872d431c2104853a6225e1a8f38dbcd"
     },
     {
       "reference": "kickoff:quarterly#quarter-numbers",
@@ -873,14 +886,14 @@
       "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "f476ab36869dc2e6a82634e245dbaa3fd833d589ed1ec0f8f67ecfe479485bff"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-path#lanes",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "809fedf93e5af6417b9e5db715f6c22ab7221602a49e719c3c4635876eb1023c"
+      "artwork_sha256": "34e196b1320854042fc0ce572a0aa0e914ab50d1fb0ac33c97eeac465485ffe0"
     },
     {
       "reference": "eoa:meeting-6#sprint-lanes",
@@ -905,10 +918,10 @@
     },
     {
       "reference": "kickoff:q3-path#priorities",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "09d33c4c64375f6008e9fbf46d723ecbfbbf411ae7e5c9739faf65d0f85e2710"
+      "artwork_sha256": "035d18f445e688f80c5fc9f8e7cb7798b495fc205f466c6790f7c5cf7c643d9c"
     },
     {
       "reference": "kickoff:individual#my-priorities",
@@ -929,14 +942,14 @@
       "sha256": "56578485b6748721f3ed8148abcc3190d7f3cf76c38eeefb3a5f1cd66dace258",
       "artifact": "individual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "7642da4e2d780659aa171b7d58d151997dddd071d157fbd3657ca321e2976d3f"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-path#forecast",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "e8efd58c5557489305678fac8167604051e67819cd23f140acdae3cbb5f15566"
+      "artwork_sha256": "ea6895cb37b8d993cfc57a7b9f88adfbd380183ed6d81c0b44f517e10a738a6b"
     },
     {
       "reference": "kickoff:q1-cash#owners",
@@ -954,10 +967,10 @@
     },
     {
       "reference": "kickoff:q3-path#close",
-      "sha256": "d533f3fe567e3d2e6cfd524b95c527985cd632cf6c8098d7fa9a15d800c9ec5b",
+      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
-      "artwork_sha256": "77927f6234ccb40c19bd686e86a57e795924378187f609182499511a9b5e6d06"
+      "artwork_sha256": "07414099878fde64a9abb5f03d9d9880c7d80fd1ad1d913bc52c8d9f4f7a5031"
     },
     {
       "reference": "kickoff:rhythm-teaching#daily-weekly",
