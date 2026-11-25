@@ -106,7 +106,7 @@
     },
     {
       "id": "connect",
-      "title": "Which differentiators depend on each other?",
+      "title": "What depends on what?",
       "support": "Draw an arrow from each differentiator to the one it depends on. Start with the most connected.",
       "art_side": true,
       "artwork": {
@@ -125,7 +125,7 @@
         "Take a break here. The team comes back to the map with fresh eyes before it lays the differentiators over time.",
         "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
       ],
-      "headline": "Which differentiators depend on each other?",
+      "headline": "What depends on what?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

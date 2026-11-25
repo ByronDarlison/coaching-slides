@@ -175,7 +175,8 @@
           "At a quarterly, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
           "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
           "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
-          "Price: has a good Profit per X emerged? If not, leave it blank.",
+          "Price: what price did customers pay? What changed when you raised it?",
+          "Profit per X: has a good one emerged? If not, leave it blank.",
           "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
@@ -659,7 +660,7 @@
           "Building the plan together develops the team as much as the plan.",
           "Allow about 45 minutes.",
           "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
-          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13.",
+          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers you count add up to the quarter’s targets.",
           "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
           "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
         ],
