@@ -533,7 +533,11 @@
           "Each measure has a target and an achieved-by date.",
           "The targets keep you on track for the 3HAG.",
           "The widgets support the revenue, and head count is set."
-        ]
+        ],
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
@@ -581,7 +585,7 @@
         ],
         "support": "What must you get done now to deliver the 1HAG?",
         "body": [
-          "List candidates: open priorities, 1HAG priorities, the lever you picked and Q1 of your swim lanes.",
+          "List candidates: open priorities, 1HAG priorities, the KFFM lever you picked and Q1 of your swim lanes.",
           "Test each with the six questions, then rank.",
           "Agree on the owner, done-by date, measure of success and achieved-by date."
         ]
@@ -614,7 +618,11 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your new QHAG aloud from the board before you move on."
+        "support": "Read your new QHAG aloud from the board before you move on.",
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {

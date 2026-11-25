@@ -105,7 +105,7 @@ Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 30. **A check asks whether the tool is being used, not only whether it is right.** Before removing a slide as a replay, ask what check it carries. The KFFM check walks all six levers every quarter: is each one being pushed, and what moved.
 31. **Read the whole deck, then have three outsiders read it, before Byron sees it.** Read every slide in order, following the thread from each slide to the next. Then give the built deck to a cold reader, a copywriter and a visual designer who do not know what changed. Fix what they find. Bring Byron one list, with every new line marked, not one slide at a time.
 32. **Measure drawing type the way it is presented.** Check the smallest label in every drawing with the sidebar hidden at 1280 by 720 and 1366 by 768. The floor is 13 pixels. A drawing inside a narrow side panel needs names only.
-33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it.
+33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it. One script draws each picture, never two. Before publishing, run `source/tools/check_drawings.py`: it fails if any script would change a committed picture (25-Nov-2026).
 34. **Sprint lanes: taught at Q2, one refresher at Q3, none after (Byron, 24-Nov-2026).** Every team starts sprint lanes at Q2. Do not wait a quarter. Q3 repeats one Q2 slide, "What the sprint lanes page holds", by reference, before the team builds again. From Q4 the team has had enough exposure: no refresher.
 
 Learned building the Q4 deck (24-Nov-2026):
@@ -116,6 +116,8 @@ Learned building the Q4 deck (24-Nov-2026):
 38. **Break a long run of text slides with a focus picture.** When several slides in a row work through the parts of one model, show the model beside each, names only, with the current part at full strength and the rest dimmed (rule 9). Three or more text-only slides in a row is the signal.
 39. **A test must be answerable from what the team has.** "Does the year reach the first year of your 3HAG?" cannot be answered, because the 3HAG holds Year 3 numbers only. Before a check goes on a slide, name where each thing it compares was written down.
 40. **Say where a number or a plan comes from before asking for it.** When an earlier step produced the numbers (the forecast before the 1HAG targets), the ask says "take the numbers from", not "what are". A cold reader starts from scratch otherwise.
+41. **One picture shows position, and its stops are real (Byron, 25-Nov-2026).** The flow map is the only picture that shows where the team is in the session. Do not put a second position picture, such as the vertical planning chain, beside a check slide: two styles on consecutive slides are jarring. Name every stop for what the team works on there (3HAG, 1HAG, QHAG), never for a grouping the slides do not use (Plan). Each stop sits directly in front of the slides it names. The chain stays only where it teaches a level for the first time.
+42. **When a comment exposes a flaw in the flow, lay out the whole stretch first.** List every slide from the stop before to the stop after, with what each picture shows, and make one considered change. Do not patch one slide at a time while the reviewer is reading.
 
 ## Layouts
 

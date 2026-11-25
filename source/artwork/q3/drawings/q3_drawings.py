@@ -59,55 +59,24 @@ def callout(x, y, w, title, rows):
     return "".join(o)
 
 
+# Pictures changed by hand after this script drew them (24-Nov-2026: the 3HAG line hidden until it is
+# introduced, taller callouts, the white-space band, one article on the links card). The approved files
+# are the committed ones. This script no longer writes them, so running it cannot undo those changes.
+# To change one, edit its drawing code here to match the committed file first, then remove it from KEPT.
+# Tracked in coaching-slides issue 86.
+KEPT = {"attribution-attributes.svg", "attribution-us.svg", "attribution-competitors.svg",
+        "attribution-white-space.svg", "attribution-3hag.svg", "values-links.svg"}
+
+
 def write(name, text):
+    if name in KEPT:
+        return
     (OUT / name).write_text(text, encoding="utf-8")
 
 
 # ---------------------------------------------------------------- stage maps
-STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scorecards"), ("kffm", "KFFM"),
-          ("values", "Core|Values"), ("people", "A-Player|Team"),
-          ("attribution", "Attribution|Framework"), ("strategy", "3HAG"), ("plan", "Plan"),
-          ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities"), ("forecast", "Forecast")]
-PER_ROW = 6
-
-
-def path_svg(current):
-    """Two rows of six (rule 21), so the labels read from the back of the room."""
-    W, H = 1440, 464
-    o = [t(40, 52, "Q3", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
-    gap, w, h, x0 = 24, 206, 150, 42
-    rows = [84, 284]
-    for i, (key, label) in enumerate(STAGES):
-        done, now = i < current, i == current
-        col, y = i % PER_ROW, rows[i // PER_ROW]
-        x = x0 + col * (w + gap)
-        mid = y + h / 2
-        stroke = G if done else LINE
-        if col < PER_ROW - 1:
-            o.append(f'<line x1="{x + w}" y1="{mid}" x2="{x + w + gap}" y2="{mid}" stroke="{stroke}" stroke-width="5"/>')
-        elif i < len(STAGES) - 1:
-            between = (rows[0] + h + rows[1]) / 2
-            nxt = rows[1] + h / 2
-            o.append(f'<polyline points="{x + w},{mid} {x + w + 18},{mid} {x + w + 18},{between} {x0 - 20},{between} {x0 - 20},{nxt} {x0},{nxt}" '
-                     f'fill="none" stroke="{stroke}" stroke-width="5" stroke-linejoin="round"/>')
-        cx = x + w / 2
-        two = label.split("|")
-        top = y + (58 if len(two) == 1 else 44)
-        if now:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{B}"/>')
-            o.append(lines(cx, y + (86 if len(two) == 1 else 68), two, 28, 34, 700, "white"))
-        elif done:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{GFILL}" stroke="{G}" stroke-width="3"/>')
-            o.append(lines(cx, top, two, 27, 34, 700, INK))
-            o.append(t(cx, y + 122, "✓ Done", 24, 700, G))
-        else:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="white" stroke="{LINE}" stroke-width="3"/>')
-            o.append(lines(cx, y + (86 if len(two) == 1 else 68), two, 27, 34, 600, MUTE))
-    return svg(W, H, "".join(o))
-
-
-for i, (key, _) in enumerate(STAGES):
-    write(f"q3-path-{key}.svg", path_svg(i))
+# The Q3 flow map is drawn by libraries/kickoff/generators/q3_path_map.py, not here.
+# Two scripts drew the same files until 25-Nov-2026, with different stops and spacing.
 
 
 # ---------------------------------------------------------------- Mission to Mars

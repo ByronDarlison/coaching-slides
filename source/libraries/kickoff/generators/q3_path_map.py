@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Draw the Q3 path map, one SVG per stage. Run from this folder: python3 generators/q3_path_map.py
-Thirteen stages in two rows (seven, then six), per slide standard rule 21."""
+Fourteen stages in two rows of seven. Every stop names what the team works on (slide standard rule 41)."""
 import re, pathlib
 HERE = pathlib.Path(__file__).resolve().parent.parent / "assets"
 STAGES = [("status", ["Status"]), ("functions", ["Functions"]), ("scorecards", ["Scorecards"]), ("kffm", ["KFFM"]),
           ("values", ["Core", "Values"]), ("people", ["A-Player", "Team"]), ("attribution", ["Attribution", "Framework"]),
-          ("strategy", ["3HAG"]), ("plan", ["Plan"]), ("lanes", ["Sprint", "Lanes"]), ("priorities", ["Individual", "Priorities"]),
+          ("strategy", ["3HAG"]), ("annual", ["1HAG"]), ("plan", ["QHAG"]), ("lanes", ["Sprint", "Lanes"]), ("priorities", ["Individual", "Priorities"]),
           ("forecast", ["Forecast"]), ("close", ["Meetings", "and close"])]
 TOP = 7
 W, H, BW, BH, GAP, LEFT = 1440, 464, 176, 150, 22, 38

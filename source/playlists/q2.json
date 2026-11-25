@@ -352,13 +352,17 @@
           "The statement and the “known for” describe the future company.",
           "The numbers are set, each with an owner, and the widgets support the revenue.",
           "Decide: what in the 3HAG changes?"
-        ]
+        ],
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
       "id": "kickoff:q2-path",
       "slides": [
-        "plan"
+        "annual"
       ]
     },
     {
@@ -380,14 +384,28 @@
           "Each measure has a target and an achieved-by date.",
           "Each priority moves its number enough, and soon enough to see.",
           "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
-        ]
+        ],
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
+    },
+    {
+      "id": "kickoff:q2-path",
+      "slides": [
+        "plan"
+      ]
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-numbers"
-      ]
+      ],
+      "override": {
+        "title": "Your QHAG: what are your quarterly targets?",
+        "headline": "Your QHAG: what are your quarterly targets?"
+      }
     },
     {
       "id": "kickoff:priorities",
@@ -467,7 +485,7 @@
         ],
         "support": "What must you get done now to deliver the 1HAG?",
         "body": [
-          "List candidates: last quarter’s open priorities, your 1HAG priorities, the lever you picked and what the Core Customer changed.",
+          "List candidates: last quarter’s open priorities, your 1HAG priorities, the KFFM lever you picked and what the Core Customer changed.",
           "Test each with the six questions, then rank.",
           "Agree on the owner, done-by date, measure of success and achieved-by date."
         ]
@@ -492,7 +510,11 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your QHAG aloud from the board before you move on."
+        "support": "Read your QHAG aloud from the board before you move on.",
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
@@ -500,21 +522,6 @@
       "slides": [
         "lanes"
       ]
-    },
-    {
-      "id": "eoa:meeting-6",
-      "slides": [
-        "at-sprint"
-      ],
-      "override": {
-        "body": [
-          "Plan each company priority week by week, with a weekly widget forecast."
-        ],
-        "notes": [
-          "New today. The sprint lanes are the weekly level of the plan: every week traces back to the BHAG.",
-          "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle."
-        ]
-      }
     },
     {
       "id": "eoa:meeting-6",
@@ -653,7 +660,11 @@
           "The 1HAG and the QHAG each have ideally 3, up to 5 priorities.",
           "Every priority has a done-by date and a measure of success.",
           "Each QHAG priority advances a 1HAG priority."
-        ]
+        ],
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {

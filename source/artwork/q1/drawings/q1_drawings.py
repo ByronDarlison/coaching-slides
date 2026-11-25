@@ -41,32 +41,40 @@ def svg(w, h, body, defs=""):
 
 # ---------------------------------------------------------------- stage maps
 STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scorecards"), ("kffm", "KFFM"),
-          ("culture", "Culture"), ("market-map", "Market Map"), ("strategy", "3HAG"), ("plan", "Plan"), ("cash", "Cash")]
+          ("culture", "Culture"), ("market-map", "Market Map"), ("strategy", "3HAG"), ("annual", "1HAG"), ("plan", "QHAG"), ("cash", "Cash")]
 
 
 def path_svg(current):
-    W, H = 1440, 300
-    o = [t(20, 56, "Q1", 26, 700, "#6b7780", "start", ' letter-spacing="2"')]
-    gap = 16
-    x = 14.0
+    """Two rows of five, the same map as Q2, so the labels read from the back of the room.
+    Every stop names what the team works on (Byron, review 25-Nov-2026)."""
+    W, H = 1440, 464
+    o = [t(40, 52, "Q1", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
+    gap, w, h, x0, N = 30, 248, 150, 40, 5
+    rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):
-        done = i < current
-        now = i == current
-        w, h, y = (152, 132, 104) if now else (140, 120, 110)
-        if i < len(STAGES) - 1:
-            o.append(f'<line x1="{x + w}" y1="170" x2="{x + w + gap}" y2="170" stroke="{G if done else LINE}" stroke-width="4"/>')
+        done, now = i < current, i == current
+        col, y = i % N, rows[i // N]
+        x = x0 + col * (w + gap)
+        mid = y + h / 2
+        stroke = G if done else LINE
+        if col < N - 1 and i < len(STAGES) - 1:
+            o.append(f'<line x1="{x + w}" y1="{mid}" x2="{x + w + gap}" y2="{mid}" stroke="{stroke}" stroke-width="5"/>')
+        elif i < len(STAGES) - 1:
+            between = (rows[0] + h + rows[1]) / 2
+            nxt = rows[1] + h / 2
+            o.append(f'<polyline points="{x + w},{mid} {x + w + 20},{mid} {x + w + 20},{between} {x0 - 20},{between} {x0 - 20},{nxt} {x0},{nxt}" '
+                     f'fill="none" stroke="{stroke}" stroke-width="5" stroke-linejoin="round"/>')
         cx = x + w / 2
         if now:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="16" fill="{B}"/>')
-            o.append(t(cx, 178, label, 23, 700, "white"))
+            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{B}"/>')
+            o.append(t(cx, y + 86, label, 30, 700, "white"))
         elif done:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="{GFILL}" stroke="{G}" stroke-width="3"/>')
-            o.append(t(cx, 164, label, 21, 700, INK))
-            o.append(t(cx, 196, "✓ Done", 20, 700, G))
+            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{GFILL}" stroke="{G}" stroke-width="3"/>')
+            o.append(t(cx, y + 58, label, 28, 700, INK))
+            o.append(t(cx, y + 122, "✓ Done", 25, 700, G))
         else:
-            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="white" stroke="{LINE}" stroke-width="3"/>')
-            o.append(t(cx, 178, label, 21, 600, GREY))
-        x += w + gap
+            o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="white" stroke="{LINE}" stroke-width="3"/>')
+            o.append(t(cx, y + 86, label, 28, 600, MUTE))
     return svg(W, H, "".join(o))
 
 

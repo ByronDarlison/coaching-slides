@@ -975,7 +975,7 @@ def compile_playlist(playlist_id: str, out_dir: Path | None = None, playlist_fil
             "title": playlist.get("title") or playlist_id,
             "unit_ids": [u["id"] for u in units],
             "slides": [{"number": i + 1, "name": u["_name"], "reference": u["_source"]} for i, u in enumerate(units)],
-            "sources": [{"reference": u["_source"], "sha256": u["_source_hash"], "artifact": u.get("artifact"), "seed": u.get("seed"), "artwork_sha256": u.get("artwork", {}).get("sha256")} for u in units],
+            "sources": [{"reference": u["_source"], "sha256": u["_source_hash"], "artifact": u.get("artifact"), "seed": u.get("seed"), "artwork_sha256": (u.get("artwork") or {}).get("sha256")} for u in units],
             "public_path": f"{COACHING_SLIDES_REL}/{playlist_id}/",
             "public_url": public_url(playlist_id),
             "shell": ["shell.css", "shell.js", "fonts/", "assets/"],
