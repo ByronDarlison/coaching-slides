@@ -9,7 +9,7 @@
     {
       "id": "circle",
       "title": "Why does the company do what it does?",
-      "support": "Each leader answers all three alone. Share one question at a time, starting with What. Then read your Core Purpose aloud. Does your Why match it?",
+      "support": "Each leader answers all three alone. Share one question at a time, starting with What. Agree on your Why. Then read your Core Purpose aloud. Do they match?",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-golden-circle.svg",
@@ -20,7 +20,7 @@
         "Each leader writes their answers alone. Then the team shares one by one, question by question, starting with What.",
         "Then ask which answer is the Core Purpose, and wait. Once one leader makes a stand, the others agree or disagree. Keep going until the team agrees on the Why.",
         "Only then read the Core Purpose aloud from the One Page Plan. Compare it with the team’s Why.",
-        "If the team’s Why no longer matches the Core Purpose, that is not a failure. It is a signal the foundation needs attention.",
+        "If the team’s Why no longer matches the Core Purpose, the foundation needs attention.",
         "The discussion creates a new Core Purpose, adjusts the current one or confirms it. A purpose that describes what the company does, not why, needs work.",
         "The agreed Core Purpose goes into the top circle when the team tests its BHAG."
       ],

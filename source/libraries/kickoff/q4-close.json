@@ -16,7 +16,7 @@
         {
           "role": "Metronome",
           "heading": "Update the plan",
-          "support": "The new 3HAG, 1HAG and QHAG. Each leader’s priorities. Each sprint lane’s steps. The Team View.",
+          "support": "The new BHAG, 3HAG, 1HAG and QHAG, with the differentiators in place of key capabilities. Each leader’s priorities. Each sprint lane’s steps. The Team View.",
           "mark": "structure"
         },
         {
@@ -24,28 +24,47 @@
           "heading": "War Room and forecast",
           "support": "War Room: add the differentiators and swim lanes. Finance enters the 12‑month widget forecast as rolling metrics.",
           "mark": "structure"
-        },
+        }
+      ],
+      "notes": [
+        "Enter any change to the Core Purpose, Core Values or BHAG. On the One Page Plan, the differentiators replace the key capabilities. Keep the Market Map, Core Customer and Attribution Framework current in the War Room.",
+        "Also: review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome.",
+        "Give every item an owner and a date: what, owner, by when."
+      ],
+      "headline": "What is the homework?",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
+      "id": "homework-people",
+      "title": "Homework for your people, and before next session.",
+      "layout": "comp-decision",
+      "arrows": false,
+      "support": "Give every item an owner and a date.",
+      "panels": [
         {
           "role": "People",
           "heading": "Team and A-Players",
-          "support": "Start the five actions from your Five Dysfunctions review. Act on the plan for everyone below A.",
+          "support": "Start the five actions from your Five Dysfunctions review. Act on the plan for everyone below A. Any scorecard review still open.",
           "mark": "structure"
         },
         {
           "role": "Before next session",
           "heading": "Prepare",
-          "support": "Read The Speed of Trust. Complete the quarterly prep survey and share it.",
+          "support": "Read The Speed of Trust. Complete the quarterly prep survey and share it. Finish both pictures.",
           "mark": "structure"
         }
       ],
       "notes": [
-        "Enter any change to the Core Purpose, Core Values or BHAG. On the One Page Plan, the differentiators replace the key capabilities. Keep the Market Map, Core Customer and Attribution Framework current in the War Room.",
-        "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
+        "Share the 3 key messages with your team the day after.",
         "If the team did not finish the Painted Picture wording in the room, finishing it is homework.",
         "Add any scorecard review still open, with its date.",
         "Give every item an owner and a date: what, owner, by when."
       ],
-      "headline": "What is the homework?",
+      "headline": "Homework for your people, and before next session.",
       "group": "",
       "eyebrow": "",
       "tags": [
@@ -62,7 +81,7 @@
         "alt": "A sticky note with the coach’s answer for the session: Strategy mapped out. New 3HAG."
       },
       "notes": [
-        "Read back the answers the team agreed at the start of Day 1.",
+        "Read back the answers the team agreed on at the start of Day 1.",
         "Ask for a show of hands on each one.",
         "Still open is fine. Add each open answer to the homework list now. Read back its owner and date.",
         "The sticky shows the coach’s answer for the session. Ask the team whether they achieved it, along with their own."

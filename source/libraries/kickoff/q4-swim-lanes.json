@@ -11,8 +11,6 @@
       "title": "Swim lanes: one lane for each differentiator, over 12 quarters.",
       "support": "What are the big things we must get done in each lane?",
       "body": [
-        "3 to 5 big milestones in a lane. No more.",
-        "Most quarters stay empty. This is not a project plan.",
         "Each quarter, the lanes feed your QHAG priorities and sprint lanes."
       ],
       "notes": [
@@ -32,7 +30,7 @@
     {
       "id": "outcomes",
       "title": "Start at the end: what is true at Q12, Q8 and Q4?",
-      "support": "Agree these as a team. Year three (3HAG) first, then year two (2HAG), then year one (1HAG).",
+      "support": "Agree on these as a team. Year 3 (3HAG) first, then Year 2 (2HAG), then Year 1 (1HAG).",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-outcomes.svg",
@@ -41,14 +39,14 @@
       "terms": [
         {
           "term": "2HAG",
-          "tip": "Where you stand at the end of year two, on the way to the 3HAG."
+          "tip": "Where you stand at the end of Year 2, on the way to the 3HAG."
         }
       ],
       "notes": [
-        "Beside each differentiator, agree what is true when it is achieved, at the 3HAG. Then work back. What is true at the end of year two, and at the end of year one?",
+        "Beside each differentiator, agree on what is true at the 3HAG, when the team has achieved it. Then work back. What is true at the end of Year 2, and at the end of Year 1?",
         "Each outcome says what will be true and how the team will know.",
         "Fix those three outcomes in each lane before anyone writes a milestone. Do not move them to fit the milestones.",
-        "The Core Customer example promises one flat monthly price and a named contact for 90 days. The lanes make those promises true for every customer.",
+        "The example company’s Core Customer was promised one flat monthly price and a named contact for 90 days. The lanes make those promises true for every customer.",
         "The same subscription company as the earlier examples. This is an example, not a recommendation."
       ],
       "headline": "Start at the end: what is true at Q12, Q8 and Q4?",
@@ -61,8 +59,8 @@
     },
     {
       "id": "milestones",
-      "title": "Then work back: 3 to 5 milestones in each lane.",
-      "support": "Q1, on the right, is next quarter. Place each milestone in the quarter it lands. Leave the rest empty.",
+      "title": "Example: 3 milestones in each lane, worked back from the end.",
+      "support": "Q1, on the right, is next quarter. Place each milestone in the quarter it lands. Leave the rest empty. This is not a project plan.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-swim-lanes-example.svg",
@@ -74,7 +72,7 @@
         "Three milestones in a lane is usually enough. Five is the limit.",
         "In the example each lane has three milestones and nine empty quarters."
       ],
-      "headline": "Then work back: 3 to 5 milestones in each lane.",
+      "headline": "Example: 3 milestones in each lane, worked back from the end.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -88,7 +86,7 @@
       "support": "Split into small groups, one lane each.",
       "body": [
         "Give each lane to people who are not its expert. An expert fills the first quarters with detail.",
-        "Work back from the agreed outcomes. Place 3 to 5 milestones.",
+        "Work back from the agreed outcomes. Place 3 to 5 milestones. Name an owner for each.",
         "Each group presents its lane to the team."
       ],
       "notes": [
@@ -121,7 +119,7 @@
       "notes": [
         "Discuss the critical path across the lanes. Start with the lanes that depend on each other most.",
         "Lanes depend on each other, which is normal. Move a milestone when one lane has to wait for another.",
-        "A lane or milestone that serves none of the Core Customer’s top needs is a question to ask.",
+        "Question any lane or milestone that serves none of the Core Customer’s top needs.",
         "A lane can be a team goal. Each milestone still has one accountable owner.",
         "Homework: add the differentiators and swim lanes to the War Room in Metronome."
       ],

@@ -9,7 +9,7 @@
     {
       "id": "circles",
       "title": "Your BHAG sits where three circles meet.",
-      "support": "This is the Hedgehog. Agree each circle in turn. The BHAG comes last.",
+      "support": "This is the Hedgehog. Your Core Purpose goes in the top circle. Agree on the other two in turn. The BHAG comes last.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-hedgehog.svg",
@@ -65,7 +65,7 @@
         "alt": "The three Hedgehog circles with the Economic engine circle highlighted."
       },
       "body": [
-        "If you have agreed your X, read it aloud and confirm it.",
+        "If you have agreed on your X, read it aloud and confirm it.",
         "If not, each leader writes an answer. Share, then agree."
       ],
       "notes": [

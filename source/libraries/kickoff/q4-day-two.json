@@ -12,7 +12,6 @@
       "layout": "comp-decision",
       "arrows": false,
       "group": "Day 2",
-      "support": "After a night’s sleep, would you change any differentiator? If your swim lanes are not finished, finish them first.",
       "panels": [
         {
           "role": "Yesterday",
@@ -29,9 +28,9 @@
       ],
       "notes": [
         "Open Day 2. Read back what the team finished yesterday. Name what is still open.",
-        "The team has slept on its differentiators. Ask what anyone would keep or change in the names, descriptors and dependencies. Confirm them before the team sets priorities.",
         "Today turns the strategy into next year and next quarter, with an owner on every number and priority.",
-        "If the swim lanes did not finish yesterday, finish them first."
+        "The plan gives Day 2 about 340 working minutes. That leaves about 65 for swim lanes or the 3HAG picture carried from Day 1.",
+        "Allow about 20 minutes for the Day 2 opening."
       ],
       "headline": "Yesterday, strategy. Today, execution.",
       "eyebrow": "",
@@ -40,12 +39,30 @@
       ]
     },
     {
+      "id": "sleep",
+      "title": "After a night’s sleep, would you change any differentiator?",
+      "support": "If your swim lanes are not finished, finish them first.",
+      "notes": [
+        "The team has slept on its differentiators. Ask what anyone would keep or change in the names, descriptors and dependencies. Confirm them before the team sets priorities.",
+        "If the swim lanes did not finish yesterday, finish them first."
+      ],
+      "headline": "After a night’s sleep, would you change any differentiator?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
       "id": "checklist",
       "title": "What did the checklist survey tell us?",
-      "support": "The yearly checklist: 19 statements, each true or false, answered before today.",
+      "support": "Your coach shows the results of the yearly checklist: 19 statements, each true or false.",
       "body": [
         "Where do you all agree?",
-        "Where do your answers differ?"
+        "Where do your answers differ?",
+        "Which differences need follow-up?"
       ],
       "notes": [
         "The team takes the Metronomics Checklist Survey at least once a year, before the annual. Start with the leadership team. As Metronomics spreads through the company, the whole company answers it.",
@@ -53,6 +70,7 @@
         "Where answers differ, people are seeing different things. Ask what each person observed.",
         "Some statements name tools the company has not started, such as the 36-month forecast and the Brand Promise. Read those answers in that light.",
         "The results show how far the team has come in a year and where to work next. Record the differences that need follow-up.",
+        "If the team has not taken it, assign it with a date and move on.",
         "Allow about 15 minutes."
       ],
       "headline": "What did the checklist survey tell us?",
