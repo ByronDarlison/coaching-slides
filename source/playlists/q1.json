@@ -402,7 +402,13 @@
         "artwork": null,
         "art_side": false,
         "art_narrow": false,
-        "copy_stack": true
+        "copy_stack": true,
+        "body": [
+          "Each individual priority supports a QHAG priority or the owner’s critical number.",
+          "The 1HAG and the QHAG each have ideally 3, up to 5 priorities.",
+          "Every priority has a done-by date and a measure of success.",
+          "Each QHAG priority advances a 1HAG priority."
+        ]
       }
     },
     {
