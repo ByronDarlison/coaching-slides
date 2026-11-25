@@ -447,6 +447,8 @@ def cash_chart(gap_callout=False):
 
 # ---------------------------------------------------------------- forecast examples
 # Two QR codes that open the Example tab of each public forecast template (Byron, 16-Nov-2026).
+# The 36-month caption says when it is built: 12 months at the first annual, 36 from the second
+# (Byron, 25-Nov-2026).
 import sys
 sys.path.insert(0, str(ROOT / "tools"))
 import qr_svg  # noqa: E402
@@ -454,7 +456,7 @@ import qr_svg  # noqa: E402
 EXAMPLES = [
     ("12-month forecast", "Build this one first.",
      "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209"),
-    ("36-month forecast", "The 3-year view.",
+    ("36-month forecast", "The 3-year view, from the second annual.",
      "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588"),
 ]
 

@@ -130,7 +130,7 @@
       "body": [
         "Every number and priority has one owner with capacity.",
         "The 1HAG and the QHAG each have ideally 3, up to 5 priorities.",
-        "Every priority has a done-by date and a measure of success.",
+        "Every priority has a done-by date, a measure of success and an achieved-by date.",
         "Each 1HAG priority builds a 3HAG capability or moves a KFFM lever.",
         "Each QHAG priority advances a 1HAG priority.",
         "Each individual priority supports a QHAG priority or the owner’s critical number.",

@@ -292,7 +292,7 @@
       "arrows": false,
       "notes": [
         "At the Kick Off, the finance leader added the primary widgets to this year’s forecast. Ask how that went.",
-        "If there is no budget model, use the 12-month template. Extend it to 36 months once the monthly review runs well.",
+        "If there is no budget model, use the 12-month template.",
         "Weekly targets come from the QHAG the team set today. The scoreboard shows them each week.",
         "Build the review into a monthly meeting you already hold. A meeting with discipline makes the forecast stick. A forecast cannot make a meeting stick.",
         "Homework: the finance leader builds the model with each leader’s assumptions."
@@ -310,11 +310,11 @@
       ],
       "notes": [
         "Scan to open each template’s Example tab. In Google Sheets, choose File, then Make a copy.",
-        "Finance builds this year’s forecast in the 12-month template. The 36-month template extends it to 3 years."
+        "Finance builds this year’s forecast in the 12-month template. The 36-month template is the 3-year view. The team builds it from the second annual."
       ],
       "artwork": {
         "src": "assets/cash-forecast-examples.svg",
-        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the 3-year view: opens the Example tab of the 36-month template.",
+        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the 3-year view, from the second annual: opens the Example tab of the 36-month template.",
         "viewbox": [
           1440,
           640
