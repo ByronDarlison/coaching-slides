@@ -106,7 +106,7 @@
           "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
           "Each owner says their critical number out loud. It answers one question: did I have a good day? A person who owns two functions names one for each.",
           "Show the Team View to the whole company at a town hall whenever it changes.",
-          "The critical number can be financial or not. A good place to start is what the function hands to the next one."
+          "The critical number can be financial or not. A widget, what the function hands to the next one, is the better choice."
         ],
         "title": "Check your Team View and critical numbers.",
         "headline": "Check your Team View and critical numbers.",
@@ -184,7 +184,7 @@
           "At a quarterly, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
           "Open the team's own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
           "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
-          "Price: has a good Profit per X emerged? If not, leave it blank.",
+          "Price: what price did customers pay? What changed when you raised it?",
           "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
@@ -418,7 +418,7 @@
           "The team ranks the survivors together. At least 80 percent agreement supports 100 percent commitment.",
           "Challenge vague aspirations and repeated revenue targets. Ask which specific work will produce the result.",
           "Invite debate and explore disagreement. Do not let the CEO answer for everyone. Ask holdouts what the team may have missed; seek full commitment after discussion.",
-          "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills; preferably not the CEO.",
+          "Ask an owner to claim the #1 priority aloud. Check they have the capacity and skills. Name one accountable leader. If only the CEO can own it, name the leadership gap first.",
           "Agree on the done-by date, the measure of success and the achieved-by date.",
           "Done is not the same as success. The owner commits to the done-by date. The achieved-by date is when the number must have moved. If it has not moved by then, find out why and fix the cause."
         ],
@@ -487,23 +487,8 @@
           }
         ],
         "notes": [
-          "A reminder before the team builds again. Every team started sprint lanes at Q2.",
+          "A reminder before the team builds again. Sprint lanes start at Q2. A team that has not started builds its first lanes today.",
           "Update the page every week. A week that slips is a prompt to act."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q2-sprint",
-      "slides": [
-        "example"
-      ],
-      "override": {
-        "title": "Example: sprint lanes.",
-        "headline": "Example: sprint lanes.",
-        "notes": [
-          "The same subscription company and the same QHAG as the Kick Off example.",
-          "This slide shows the shape of the whole page.",
-          "Priority #1 is done in week 8, so its lane shows Complete from week 9. Its measure of success stays on the QHAG."
         ]
       }
     },
@@ -518,7 +503,7 @@
           "Building the plan together develops the team as much as the plan.",
           "Allow about 45 minutes.",
           "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
-          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers add up to the quarter’s targets.",
+          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers you count add up to the quarter’s targets.",
           "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
           "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
         ],
@@ -577,7 +562,7 @@
           "Include every company priority you own. Do not drop one because you own several.",
           "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
           "Hover over “six questions” and use them to test each individual priority.",
-          "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Ask: did I have a good day? A person who owns two functions has one for each.",
+          "Critical number: it heads each person’s column, above their priorities. It can be financial or not. A widget, what the function hands to the next one, is the better choice. Ask: did I have a good day? A person who owns two functions has one for each.",
           "At a quarterly, start from the critical number you named for your function on the Team View.",
           "At a quarterly, list your open priorities from last quarter first. They stay until their number has moved."
         ]
@@ -597,7 +582,7 @@
       "override": {
         "body": [
           "Each individual priority supports a QHAG priority or the owner’s critical number.",
-          "The 1HAG, the QHAG and each person have ideally 3, up to 5 priorities.",
+          "The 1HAG and the QHAG each have ideally 3, up to 5 priorities.",
           "Every priority has a done-by date and a measure of success.",
           "Each QHAG priority advances a 1HAG priority."
         ],
