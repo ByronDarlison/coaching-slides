@@ -312,13 +312,19 @@
             "w": 500,
             "h": 148,
             "term": "Price",
-            "tip": "Profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
+            "tip": "The price customers pay. It shows in Sales, as new MRR, and in collected payments.",
             "targets": [
               [
-                220.1,
-                419.1,
-                416.5,
-                231.9
+                885.7,
+                42.1,
+                350.6,
+                263.6
+              ],
+              [
+                1177.0,
+                449.4,
+                348.0,
+                101.5
               ],
               [
                 942.4,
