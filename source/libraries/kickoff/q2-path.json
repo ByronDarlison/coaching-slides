@@ -23,7 +23,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-status.svg",
-        "alt": "Q2 path: Status next, then Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status next, then Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -43,7 +43,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-functions.svg",
-        "alt": "Q2 path: Status done. Functions next, then Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status done. Functions next, then Scorecards, KFFM, Culture, Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -63,7 +63,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-scorecards.svg",
-        "alt": "Q2 path: Status, Functions done. Scorecards next, then KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions done. Scorecards next, then KFFM, Culture, Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -83,7 +83,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-kffm.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards done. KFFM next, then Culture, Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards done. KFFM next, then Culture, Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -104,7 +104,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-culture.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM done. Culture next, then Core Customer, 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM done. Culture next, then Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -124,13 +124,13 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-customer.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture done. Core Customer next, then 3HAG, Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture done. Core Customer next, then 3HAG, 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
       "id": "strategy",
-      "title": "Next, confirm where you’re going.",
-      "headline": "Next, confirm where you’re going.",
+      "title": "Next, check your 3HAG.",
+      "headline": "Next, check your 3HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -144,13 +144,13 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-strategy.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer done. 3HAG next, then Plan, Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer done. 3HAG next, then 1HAG, QHAG, Sprint Lanes, Individual Priorities."
       }
     },
     {
-      "id": "plan",
-      "title": "Next, plan the next quarter.",
-      "headline": "Next, plan the next quarter.",
+      "id": "annual",
+      "title": "Then, check your 1HAG.",
+      "headline": "Then, check your 1HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -158,13 +158,33 @@
         "q2"
       ],
       "notes": [
-        "Start from the 1HAG, then build the new QHAG from it. Never leave a quarterly without a quarterly plan."
+        "Test the 1HAG against the 3HAG the team just confirmed."
+      ],
+      "art_full": true,
+      "art_fit": true,
+      "artwork": {
+        "src": "assets/q2-path-annual.svg",
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG done. 1HAG next, then QHAG, Sprint Lanes, Individual Priorities."
+      }
+    },
+    {
+      "id": "plan",
+      "title": "Next, build your QHAG.",
+      "headline": "Next, build your QHAG.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "notes": [
+        "Build the new QHAG from the 1HAG. Never leave a quarterly without a quarterly plan."
       ],
       "art_full": true,
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-plan.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG done. Plan next, then Sprint Lanes, Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, 1HAG done. QHAG next, then Sprint Lanes, Individual Priorities."
       }
     },
     {
@@ -184,7 +204,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-lanes.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan done. Sprint Lanes next, then Individual Priorities."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, 1HAG, QHAG done. Sprint Lanes next, then Individual Priorities."
       }
     },
     {
@@ -204,7 +224,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q2-path-priorities.svg",
-        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, Plan, Sprint Lanes done. Individual Priorities next."
+        "alt": "Q2 path: Status, Functions, Scorecards, KFFM, Culture, Core Customer, 3HAG, 1HAG, QHAG, Sprint Lanes done. Individual Priorities next."
       }
     }
   ]

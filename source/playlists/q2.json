@@ -360,6 +360,12 @@
       }
     },
     {
+      "id": "kickoff:q2-path",
+      "slides": [
+        "annual"
+      ]
+    },
+    {
       "id": "kickoff:annual",
       "slides": [
         "1hag-check"
@@ -395,7 +401,11 @@
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-numbers"
-      ]
+      ],
+      "override": {
+        "title": "Your QHAG: what are your quarterly targets?",
+        "headline": "Your QHAG: what are your quarterly targets?"
+      }
     },
     {
       "id": "kickoff:priorities",

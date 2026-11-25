@@ -57,22 +57,23 @@ def callout(x, y, w, title, rows):
 # ---------------------------------------------------------------- stage maps
 STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scorecards"), ("kffm", "KFFM"),
           ("culture", "Culture"), ("customer", "Core|Customer"),
-          ("strategy", "3HAG"), ("plan", "Plan"), ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities")]
+          ("strategy", "3HAG"), ("annual", "1HAG"), ("plan", "QHAG"), ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities")]
 
 
 def path_svg(current):
-    """Two rows of five, so the labels read from the back of the room. Row one runs into row two."""
+    """Six stops on the first row and five on the second. Row one runs into row two.
+    Every stop is named for what the team works on there (Byron, review of the Q2 deck, 25-Nov-2026)."""
     W, H = 1440, 464
     o = [t(40, 52, "Q2", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
-    gap, w, h, x0 = 30, 248, 150, 40
+    gap, w, h, x0, N = 24, 206, 150, 40, 6
     rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):
         done, now = i < current, i == current
-        col, y = i % 5, rows[i // 5]
+        col, y = i % N, rows[i // N]
         x = x0 + col * (w + gap)
         mid = y + h / 2
         stroke = G if done else LINE
-        if col < 4:
+        if col < N - 1 and i < len(STAGES) - 1:
             o.append(f'<line x1="{x + w}" y1="{mid}" x2="{x + w + gap}" y2="{mid}" stroke="{stroke}" stroke-width="5"/>')
         elif i < len(STAGES) - 1:
             between = (rows[0] + h + rows[1]) / 2
