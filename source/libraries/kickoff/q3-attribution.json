@@ -31,7 +31,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-team.jpg",
-        "alt": "Three neutral grey figures stand at a wall chart of crossing lines. One points at the chart. The empty upper left of the chart is shaded green."
+        "alt": "Three neutral gray figures stand at a wall chart of crossing lines. One points at the chart. The empty upper left of the chart is shaded green."
       }
     },
     {
@@ -248,7 +248,7 @@
           "tip": "Everyone with power in your market, on one page.",
           "image": {
             "src": "assets/market-map-example.svg",
-            "alt": "The example subscription company in the centre. Customers are on the left: small businesses 55%, mid-size companies 35% and non-profits 10%. Schools are dashed, not served yet. Customers buy through channels: resellers 30% and direct website 70%. App marketplaces are dashed, not used. Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands run to suppliers: contract developers 45%, cloud hosting 30% and payment processor 10%. One runs to a paid partner, the implementation partner, 15%. Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with. A is on app marketplaces. B is on resellers and the implementation partner. C is on cloud hosting and the industry association."
+            "alt": "The example subscription company in the center. Customers are on the left: small businesses 55%, mid-size companies 35% and non-profits 10%. Schools are dashed, not served yet. Customers buy through channels: resellers 30% and direct website 70%. App marketplaces are dashed, not used. Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands run to suppliers: contract developers 45%, cloud hosting 30% and payment processor 10%. One runs to a paid partner, the implementation partner, 15%. Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with. A is on app marketplaces. B is on resellers and the implementation partner. C is on cloud hosting and the industry association."
           }
         }
       ]
@@ -313,7 +313,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-white-space.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Us today and the three competitor lines are dimmed, on a grey ground. The 3HAG line is not shown. The empty area above the lines stays white, with a dashed outline. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Us today and the three competitor lines are dimmed, on a gray ground. The 3HAG line is not shown. The empty area above the lines stays white, with a dashed outline. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
       }
     },
     {
@@ -335,7 +335,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-3hag.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a grey ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
       }
     },
     {
