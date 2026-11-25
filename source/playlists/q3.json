@@ -44,7 +44,12 @@
         "status"
       ]
     },
-    "kickoff:quarterly-status",
+    {
+      "id": "kickoff:quarterly-status",
+      "slides": [
+        "review"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -288,7 +293,20 @@
         "people"
       ]
     },
-    "kickoff:q3-aplayer",
+    {
+      "id": "kickoff:q3-aplayer",
+      "slides": [
+        "objective",
+        "grid",
+        "evidence",
+        "place",
+        "placed",
+        "zones",
+        "toxic",
+        "plans",
+        "go-deeper"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -367,16 +385,16 @@
           "The numbers are set, each with an owner, and the widgets support the revenue.",
           "Decide: what in the 3HAG changes?"
         ],
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked-3hag.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities, each feeding the next. The 3HAG is checked."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
       "id": "kickoff:q3-path",
       "slides": [
-        "plan"
+        "annual"
       ]
     },
     {
@@ -401,17 +419,27 @@
           "Each priority moves its number enough, and soon enough to see.",
           "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
         ],
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked-1hag.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG and 1HAG are checked."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
+    },
+    {
+      "id": "kickoff:q3-path",
+      "slides": [
+        "plan"
+      ]
     },
     {
       "id": "kickoff:quarterly",
       "slides": [
         "quarter-numbers"
-      ]
+      ],
+      "override": {
+        "title": "Your QHAG: what are your quarterly targets?",
+        "headline": "Your QHAG: what are your quarterly targets?"
+      }
     },
     {
       "id": "kickoff:quarterly",
@@ -458,10 +486,10 @@
       ],
       "override": {
         "support": "Read your QHAG aloud from the board before you move on.",
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked-qhag.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG, 1HAG and QHAG are checked. Sprint Lanes come next."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
@@ -604,10 +632,10 @@
           "Check that last quarter’s open priorities are on the new QHAG.",
           "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
         ],
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. Everything below the BHAG is checked."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
@@ -629,7 +657,12 @@
         ]
       }
     },
-    "kickoff:q3-cash",
+    {
+      "id": "kickoff:q3-cash",
+      "slides": [
+        "template"
+      ]
+    },
     {
       "id": "kickoff:q3-path",
       "slides": [
@@ -689,7 +722,12 @@
         ]
       }
     },
-    "kickoff:q3-meetings",
+    {
+      "id": "kickoff:q3-meetings",
+      "slides": [
+        "weekly-email"
+      ]
+    },
     {
       "id": "kickoff:cascade-messages",
       "override": {
@@ -698,7 +736,19 @@
         "headline": "What 3 messages will you share with the whole company?"
       }
     },
-    "kickoff:q3-close",
-    "kickoff:closing"
+    {
+      "id": "kickoff:q3-close",
+      "slides": [
+        "homework",
+        "outcomes-check"
+      ]
+    },
+    {
+      "id": "kickoff:closing",
+      "slides": [
+        "one-phrase",
+        "deck-link"
+      ]
+    }
   ]
 }

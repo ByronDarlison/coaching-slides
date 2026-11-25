@@ -534,10 +534,10 @@
           "The targets keep you on track for the 3HAG.",
           "The widgets support the revenue, and head count is set."
         ],
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked-1hag.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG and 1HAG are checked."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
@@ -619,10 +619,10 @@
       ],
       "override": {
         "support": "Read your new QHAG aloud from the board before you move on.",
-        "artwork": {
-          "src": "assets/hag-chain-sprint-checked-qhag.svg",
-          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG, 1HAG and QHAG are checked. Sprint Lanes come next."
-        }
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {

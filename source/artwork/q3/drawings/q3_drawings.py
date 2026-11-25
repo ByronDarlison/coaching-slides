@@ -66,16 +66,16 @@ def write(name, text):
 # ---------------------------------------------------------------- stage maps
 STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scorecards"), ("kffm", "KFFM"),
           ("values", "Core|Values"), ("people", "A-Player|Team"),
-          ("attribution", "Attribution|Framework"), ("strategy", "3HAG"), ("plan", "Plan"),
-          ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities"), ("forecast", "Forecast")]
-PER_ROW = 6
+          ("attribution", "Attribution|Framework"), ("strategy", "3HAG"), ("annual", "1HAG"), ("plan", "QHAG"),
+          ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities"), ("forecast", "Forecast"), ("close", "Meetings|and close")]
+PER_ROW = 7
 
 
 def path_svg(current):
-    """Two rows of six (rule 21), so the labels read from the back of the room."""
+    """Two rows of seven, so the labels read from the back of the room. Every stop names what the team works on (Byron, review 25-Nov-2026)."""
     W, H = 1440, 464
     o = [t(40, 52, "Q3", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
-    gap, w, h, x0 = 24, 206, 150, 42
+    gap, w, h, x0 = 20, 176, 150, 42
     rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):
         done, now = i < current, i == current

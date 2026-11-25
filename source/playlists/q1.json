@@ -31,14 +31,25 @@
         "valuable"
       ]
     },
-    "kickoff:q1-workstyles",
+    {
+      "id": "kickoff:q1-workstyles",
+      "slides": [
+        "styles",
+        "exercise"
+      ]
+    },
     {
       "id": "kickoff:q1-path",
       "slides": [
         "status"
       ]
     },
-    "kickoff:quarterly-status",
+    {
+      "id": "kickoff:quarterly-status",
+      "slides": [
+        "review"
+      ]
+    },
     {
       "id": "kickoff:q1-path",
       "slides": [
@@ -228,7 +239,23 @@
         "market-map"
       ]
     },
-    "kickoff:q1-market-map",
+    {
+      "id": "kickoff:q1-market-map",
+      "slides": [
+        "objective",
+        "example",
+        "customers",
+        "channels",
+        "associations",
+        "suppliers",
+        "partners",
+        "competitors",
+        "money",
+        "circles",
+        "build",
+        "apply"
+      ]
+    },
     {
       "id": "kickoff:q1-path",
       "slides": [
@@ -241,13 +268,17 @@
         "read-back"
       ],
       "override": {
-        "support": "In Metronome: open One Page Plans. Read it aloud before you move on."
+        "support": "In Metronome: open One Page Plans. Read it aloud before you move on.",
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
     {
       "id": "kickoff:q1-path",
       "slides": [
-        "plan"
+        "annual"
       ]
     },
     {
@@ -256,8 +287,18 @@
         "1hag-check"
       ],
       "override": {
-        "support": "In Metronome: open Annual Priorities. Read it aloud before you move on."
+        "support": "In Metronome: open Annual Priorities. Read it aloud before you move on.",
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
+    },
+    {
+      "id": "kickoff:q1-path",
+      "slides": [
+        "plan"
+      ]
     },
     {
       "id": "kickoff:quarterly",
@@ -337,10 +378,33 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your QHAG aloud from the board before you move on."
+        "support": "Read your QHAG aloud from the board before you move on.",
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
       }
     },
-    "kickoff:individual",
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "definition",
+        "my-priorities",
+        "read-back"
+      ]
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
+        "plan-check"
+      ],
+      "override": {
+        "artwork": null,
+        "art_side": false,
+        "art_narrow": false,
+        "copy_stack": true
+      }
+    },
     {
       "id": "kickoff:q1-path",
       "slides": [
@@ -421,8 +485,25 @@
         "support": "In Metronome: open Meetings. Running? Working? What to change? Rate 0 to 2."
       }
     },
-    "kickoff:cascade-messages",
-    "kickoff:q1-close",
-    "kickoff:closing"
+    {
+      "id": "kickoff:cascade-messages",
+      "slides": [
+        "three-messages"
+      ]
+    },
+    {
+      "id": "kickoff:q1-close",
+      "slides": [
+        "homework",
+        "outcomes-check"
+      ]
+    },
+    {
+      "id": "kickoff:closing",
+      "slides": [
+        "one-phrase",
+        "deck-link"
+      ]
+    }
   ]
 }
