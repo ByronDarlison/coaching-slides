@@ -1448,3 +1448,46 @@ h1 .term .hotspot-tip { letter-spacing: normal; text-wrap: wrap; }
   .story-frame--copy.story-frame--short .story-title { font-size: max(3.8rem, min(4vw, 7.111vh, 76.8px)); }
   .story-frame--copy.story-frame--short .story-copy .support { font-size: max(1.9rem, min(2vw, 3.556vh, 38.4px)); }
 }
+
+/* ---------------------------------------------------------------------------
+   Second readability pass (25-Nov-2026).
+   --------------------------------------------------------------------------- */
+@media (min-width: 900px) and (min-height: 600px) {
+  /* A. A picture beside the copy: its panel takes the picture's shape (--par, set by the compiler),
+     so a small picture never sits in a tall white box. The panel is as wide as its column allows,
+     or as tall as the stage allows, whichever comes first. */
+  .story-frame--side:not(.story-frame--copy), .story-frame:not(.story-frame--full):not(.story-frame--wide):not(.story-frame--side) { container-type: size; }
+  .story-frame:not(.story-frame--full):not(.story-frame--wide) > .story-panel--art[style*="--par"] {
+    --art-pad: clamp(0.5rem, 1vw, 1rem);
+    display: block; align-self: center; justify-self: center; container-type: normal;
+    width: min(100%, (100cqh - 2 * var(--art-pad) - var(--links-h, 0px)) * var(--par) + 2 * var(--art-pad));
+    height: auto; min-height: 0; padding: var(--art-pad);
+  }
+  .story-frame:not(.story-frame--full):not(.story-frame--wide) > .story-panel--art[style*="--par"] img {
+    position: static; inset: auto; display: block; width: 100%; height: auto; max-height: none; aspect-ratio: var(--par);
+  }
+  .story-frame:not(.story-frame--full):not(.story-frame--wide) > .story-panel--art[style*="--par"] > .art-hot { width: 100%; }
+  .story-frame:not(.story-frame--full):not(.story-frame--wide) > .story-panel--art[style*="--par"] .art-link-img { position: static; display: block; }
+
+  /* B. A check list beside the cascade: the cascade is a small picture, so the checks take the width. */
+  .story-frame--side.story-frame--art-narrow { grid-template-columns: minmax(0, 1fr) minmax(0, .24fr); }
+  .story-frame--art-narrow .story-copy .support.check-item,
+  .story-frame--art-narrow .story-copy .support:not(.check-item) {
+    font-size: clamp(1rem, min(1.75vw, 2.8vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.0205), 1.45rem);
+  }
+
+  /* C. Six cards: the support line keeps step with the card label. */
+  /* It grows only as far as the stage's own width allows, so six cards still fit with the sidebar open. */
+  #presentation .grid-6 .panel .support { font-size: clamp(13px, max(1.2vw, min(1.35vw, 2.4vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.0143)), 20px); }
+}
+@media (min-width: 1600px) and (min-height: 900px) {
+  .story-frame--art-narrow .story-copy .support,
+  .story-frame--art-narrow .story-copy .support.check-item,
+  .story-frame--art-narrow .story-copy .support:not(.check-item) {
+    font-size: clamp(1rem, min(1.75vw, 2.8vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.0205), 1.9rem);
+  }
+  #presentation .grid-6 .panel .support { font-size: max(20px, min(1.35vw, 2.4vh, 25.9px)); }
+  /* D. The footer marks grow in step with the type. */
+  .slide-footer { font-size: max(0.95rem, min(1.05vw, 1.867vh, 20.2px)); }
+  .footer-logo { width: max(210px, min(16vw, 28.44vh, 307px)); }
+}

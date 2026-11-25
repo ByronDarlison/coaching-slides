@@ -2,7 +2,7 @@
   "id": "q4",
   "title": "Metronomics Q4 Annual",
   "sidebar_title": "Metronomics Q4 Annual",
-  "sidebar_blurb": "Annual planning, two days",
+  "sidebar_blurb": "Annual planning, 2 days",
   "sources": {
     "kickoff": "../libraries/kickoff",
     "eoa": "../libraries/eoa"
@@ -35,28 +35,13 @@
       "id": "kickoff:opening",
       "slides": [
         "engagement"
-      ],
-      "override": {
-        "notes": [
-          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
-          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
-          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:opening",
       "slides": [
         "mirror"
-      ],
-      "override": {
-        "notes": [
-          "Hand back the compiled survey answers now, printed or on the board. Go question by question, with everyone’s words side by side. Do not assume everyone has read them.",
-          "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate.",
-          "Park each difference on the board against the agenda block that will resolve it. Examples are the Function Chart, the KFFM, purpose or the targets.",
-          "Allow about 15 minutes. Today is for decisions, not data gathering."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:opening",
@@ -94,10 +79,11 @@
         "assessment"
       ],
       "override": {
-        "support": "Enter today’s split across the four. It totals 100%. Compare it with your last entry, if you have one.",
+        "support": "On the Leadership Time Assessment page of your board, enter today’s split across the four categories. It totals 100%. Compare it with your last entry, if you have one.",
         "notes": [
           "The team reviews this every second quarter. Each leader enters today’s split. Record how the time is really spent, not an ideal split.",
           "Compare with the last entry where there is one. The founder also has the baseline from the call before Q1.",
+          "With no baseline, today’s numbers are the baseline.",
           "As leaders hand off functions and hire A-Players, the CEO’s time in execution should fall first.",
           "Keep today’s entry. The next review compares against it.",
           "When the leadership team is the whole company, skip this slide and ask the owner privately.",
@@ -122,17 +108,17 @@
       "override": {
         "title": "Who owns each function now?",
         "headline": "Who owns each function now?",
+        "copy_stack": true,
         "body": [
-          "Start a fresh Function Chart. Agree the functions: add, rename or remove.",
+          "Start a fresh Function Chart. Agree on the functions: add, rename or remove.",
           "In private mode, each person writes who owns each function.",
-          "Reveal, then agree one owner for each. Each owner says yes aloud."
+          "Reveal, then agree on one owner for each. Each owner says yes aloud."
         ],
         "notes": [
           "At the annual, build the Function Chart again on a fresh page. A year of growth changes who does what.",
-          "Agree the functions first. Add new or planned functions, rename any that changed and remove any that ended.",
+          "Agree on the functions first. Add new or planned functions, rename any that changed and remove any that ended.",
           "One person is accountable for each function. Others may be responsible for part of the work.",
-          "Finish when every function has one owner who said yes out loud.",
-          "Allow about 25 minutes, with the Team View after it."
+          "Finish when every function has one owner who said yes out loud."
         ]
       }
     },
@@ -153,14 +139,16 @@
       "override": {
         "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
-          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board. Agree a date to enter it.",
+          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board. Agree on a date to enter it.",
           "Each owner colors their own function by where its critical number stands against target. Green is on track, yellow is at risk and red needs attention. Red is a conversation, not a verdict."
         ],
         "body": [
           "The 3 to 5 key functions are still the right ones.",
           "Each owner rates their function red, yellow or green, by its critical number.",
           "What will it take to turn it green?"
-        ]
+        ],
+        "checklist": false,
+        "copy_stack": true
       }
     },
     {
@@ -216,7 +204,7 @@
           "At the annual, the team arrives in one of three places. It has agreed Core Values, a draft from a Mission to Mars session, or neither.",
           "With agreed values, read them from the One Page Plan and go straight to the test.",
           "With a draft, the leadership team reviews it, changes what needs changing and confirms it today.",
-          "With neither, say so. Agree a date for the Mission to Mars session and move on.",
+          "With neither, say so. Agree on a date for the Mission to Mars session and move on.",
           "The Core Values are what each leader rates their direct reports against on the A-Player grid."
         ]
       }
@@ -265,7 +253,7 @@
           "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
           "Test leader enthusiasm separately from the whole company’s.",
           "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
-          "At the annual, test the BHAG the team agreed in the Hedgehog. If a test fails, revise the statement and test it again.",
+          "At the annual, test the BHAG the team agreed on in the Hedgehog. If a test fails, revise the statement and test it again.",
           "Go back to a circle only when the discussion shows the team disagrees about it."
         ]
       }
@@ -337,7 +325,7 @@
           "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
         },
         "notes": [
-          "At the annual, this is a reminder. Read back the line you agreed. The example shows the line that the next slides make true.",
+          "At the annual, this is a reminder. Read back the line you agreed on. The example shows the line that the next slides make true.",
           "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
           "In the example, reporting and customization drop, so that setup, price and support can lead."
         ]
@@ -385,34 +373,36 @@
     {
       "id": "kickoff:day-two-opening",
       "slides": [
-        "good-news",
-        "reflection"
+        "good-news"
       ]
     },
     {
       "id": "kickoff:day-two-opening",
       "slides": [
-        "outcome-check"
+        "reflection"
       ],
       "override": {
-        "notes": [
-          "Read back the Day 1 answers to “What would make these 2 days valuable?” The team sorts each one. Coach-led and quick, not another round.",
-          "For anything at risk, name when you will address it today before moving on."
-        ]
+        "support": "One reflection from each person.",
+        "art_side": true
       }
     },
     {
       "id": "kickoff:day-two-opening",
       "slides": [
+        "outcome-check"
+      ]
+    },
+    {
+      "id": "kickoff:day-two-opening",
+      "slides": [
         "engagement-day-two"
-      ],
-      "override": {
-        "notes": [
-          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
-          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
-          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
-        ]
-      }
+      ]
+    },
+    {
+      "id": "kickoff:q4-day-two",
+      "slides": [
+        "sleep"
+      ]
     },
     {
       "id": "kickoff:q4-path",
@@ -426,13 +416,6 @@
         "title": "How did the year go?",
         "headline": "How did the year go?",
         "support": "In Metronome: open One Page Plans. Review the 1HAG, then the last QHAG.",
-        "body": [
-          "Fiscal numbers: gross revenue, margin and ending cash.",
-          "Non-fiscal numbers: widgets and head count.",
-          "Each priority: was it done, and did it succeed?",
-          "Where was your estimate wrong, and what did you learn?",
-          "Bring the brutal facts."
-        ],
         "notes": [
           "At the annual, the 1HAG is closing. Review the whole year first, then the last quarter.",
           "Updating status in Metronome was prep for today. Confirm it is current before you read the numbers. Record any gap.",
@@ -497,7 +480,7 @@
           {
             "role": "Speed",
             "heading": "How soon will we see it?",
-            "support": "Name the date the measure of success will be achieved by. If it takes a long time to show, think twice.",
+            "support": "Name the achieved-by date for the measure of success. If it takes a long time to show, think twice.",
             "mark": "structure"
           },
           {
@@ -525,7 +508,7 @@
           "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
           "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner. If only the CEO can own it, name the leadership gap first.",
           "Risk: ask how badly this could go wrong.",
-          "Once chosen, ask an owner to claim each priority aloud. Agree the done-by date, the measure and its achieved-by date. If two priorities compete for the same people or cash, agree which one wins. Done and success are different dates. The owner finishes the work by one date. The number reaches its target by its own date, often later.",
+          "Once chosen, ask an owner to claim each priority aloud. Agree on the done-by date, the measure and the achieved-by date. If two priorities compete for the same people or cash, agree on which one wins. Done and success are different dates. The owner finishes the work by one date. The number reaches its target by its own date, often later.",
           "Hover over “KFFM lever” to show the six levers."
         ]
       }
@@ -573,16 +556,13 @@
           "Is each target big enough to keep you on track for your 1HAG?"
         ],
         "notes": [
-          "At the annual, the quarter’s numbers start from the first 3 months of the forecast the team agreed. Confirm them. Do not rebuild them.",
+          "At the annual, the quarter’s numbers start from the first 3 months of the forecast the team agreed on. Confirm them. Do not rebuild them.",
           "Ask questions about the math rather than telling them it is wrong. Ask who owns each number.",
-          "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count, month by month.",
-          "Use the same widget definitions as the 3-year plan. Distinguish new activity from cumulative totals.",
           "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
-          "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
-          "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
+          "Revenue is a period flow. Cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
           "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If the later quarters must carry more than their share of the year, ask what makes them steeper.",
           "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the annualized December rate: $300 a year.",
-          "If the team changes a number, say why and keep the approved forecast as the team agreed it. The next status review asks where the estimate was wrong."
+          "If the team changes a number, say why and keep the approved forecast as the team approved it. The next status review asks where the estimate was wrong."
         ]
       }
     },
@@ -619,7 +599,7 @@
         "title": "What else must you get done this quarter?",
         "headline": "What else must you get done this quarter?",
         "notes": [
-          "At a quarterly, list last quarter’s open priorities first. They stay on the new QHAG until their number has moved.",
+          "List last quarter’s open priorities first. They stay on the new QHAG until their number has moved.",
           "Take the next candidates in rank order from the same list.",
           "Discuss disagreement, tradeoffs, dependencies and capacity. Agree on the rank together.",
           "An owner claims the priority aloud. Agree on the done-by date, the measure and the achieved-by date.",
@@ -634,21 +614,7 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your new QHAG aloud from the board before you move on.",
-        "body": [
-          "Every number and priority has one owner with capacity.",
-          "Each priority advances a 1HAG priority, with success measured by a critical number, preferably.",
-          "Each priority is done by quarter end, with a target and an achieved-by date.",
-          "Each priority moves its number enough, and soon enough to see.",
-          "The targets are big enough to stay on track for the 1HAG.",
-          "The months build to the quarter. Revenue and widgets you count add up. Cash and head count match month 3.",
-          "Head count is set."
-        ],
-        "notes": [
-          "Read the QHAG aloud, top to bottom, then run the seven checks.",
-          "Revenue and the widgets you count add up across the months. Cash and head count are balances: the quarter ends at month 3’s number. Margin is for the whole quarter: the quarter’s profit over the quarter’s revenue.",
-          "Anything that fails goes on the homework list with an owner."
-        ]
+        "support": "Read your new QHAG aloud from the board before you move on."
       }
     },
     {
@@ -667,10 +633,10 @@
           "Start with the widgets, then take the priorities in rank order. The owner of each lane drafts it and the team questions it.",
           "Building the plan together develops the team as much as the plan.",
           "Allow about 45 minutes.",
-          "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
           "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers you count add up to the quarter’s targets.",
           "Lanes: the team sees each week how the owner will deliver the priority. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
-          "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
+          "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane.",
+          "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome."
         ],
         "support": "Work together on the 13-Week Sprint Lanes page of your board."
       }
@@ -685,11 +651,6 @@
           "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",
           "Lanes show the work. They are not the measure of success. That stays on the QHAG.",
           "The weekly leadership meeting reviews sprint lane status."
-        ],
-        "body": [
-          "You have the people to do it.",
-          "You have the cash to do it.",
-          "The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13."
         ]
       }
     },
@@ -713,7 +674,7 @@
       "override": {
         "headline": "How are your meetings going?",
         "title": "How are your meetings going?",
-        "support": "In Metronome: open Meetings. Rate each: 0 below, 1 meets, 2 exceeds.",
+        "support": "In Metronome: open Meetings. Rate each against what you expect of it: 0 below, 1 meets, 2 exceeds.",
         "panels": [
           {
             "role": "Daily",
@@ -741,7 +702,7 @@
           }
         ],
         "notes": [
-          "Give it about 10 minutes. For each meeting ask: is it running, is it working, and what should change?",
+          "Allow about 10 minutes. For each meeting ask: is it running, is it working, and what should change?",
           "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations.",
           "Today is the annual. This check covers the meetings that run between planning sessions.",
           "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",

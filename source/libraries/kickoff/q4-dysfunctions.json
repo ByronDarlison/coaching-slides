@@ -19,7 +19,8 @@
         "This is the model from The Five Dysfunctions of a Team. The book was the Q2 reading. The team assessment was Q3 homework.",
         "The five levels, from the bottom: trust, conflict, commitment, accountability, results. A team that does not trust each other will not have honest conflict. Without honest conflict nobody truly commits. Without commitment nobody holds each other accountable. Without accountability the team’s results come second to each person’s own.",
         "The assessment scores each level. High is 4 and above. Medium is 3 to 3.99. Low is under 3.",
-        "Do the assessment at least once a year. Use the scores to choose where the team works on its cohesiveness next. Keep them as the benchmark for next year."
+        "Do the assessment at least once a year. Use the scores to choose where the team works on its cohesiveness next. Keep them as the benchmark for next year.",
+        "If the team has not taken the assessment, assign it with a date and move to the Function Chart."
       ],
       "headline": "A team builds cohesion in five levels, from trust up.",
       "layout": "comp-story",
@@ -36,13 +37,13 @@
       "body": [
         "What is working? What is not?",
         "Start at the bottom. For each level: what do you see in how you work together?",
-        "Say what you observe. No blame. No shame."
+        "Say what you observe. No blame. No shame.",
+        "Not taken yet? Set a date and move on."
       ],
       "notes": [
         "Show the scores and pick out what is working and what is not. Do not hand out the full report first. It is long, and people read ahead instead of talking.",
         "Ask for the team’s observations and lead the discussion level by level, from trust up.",
         "Hand out the full report after the discussion.",
-        "If the team has not taken the assessment, assign it with a date and move to the Function Chart.",
         "Allow about 45 minutes with the next slide. The first time takes longer because it is uncomfortable."
       ],
       "headline": "What does your Five Dysfunctions assessment say?",
@@ -56,7 +57,7 @@
     },
     {
       "id": "actions",
-      "title": "Agree one action for each level.",
+      "title": "Agree on one action for each level.",
       "support": "Each action gets an owner.",
       "body": [
         "Trust. Conflict. Commitment. Accountability. Results.",
@@ -70,7 +71,7 @@
         "In month one of that example, each leader shares a timeline of five significant life events. The CEO goes first.",
         "The actions go on the homework list. The team reviews them at the next quarterly."
       ],
-      "headline": "Agree one action for each level.",
+      "headline": "Agree on one action for each level.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

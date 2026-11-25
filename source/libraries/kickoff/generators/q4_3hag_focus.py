@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Draw the parts of the 3HAG, names only, for a narrow side panel: one part at full strength, the rest dimmed
-(slide standard rules 9 and 38). The order is the board's 3HAG area. Run from the library folder:
+(slide standard rules 9 and 38). The order is the order the deck works in: the differentiators go in last. Run from the library folder:
 python3 generators/q4_3hag_focus.py"""
 from q4_common import svg, write, text, BLUE, INK, LINE, CANVAS, MID
 W, H, X, BW, BH, GAP, TOP = 900, 830, 120, 660, 116, 22, 128
 PARTS = [("date", "End date"), ("numbers", "Numbers"), ("statement", "Statement"),
-         ("differentiators", "Differentiators"), ("known-for", "Known for")]
+         ("known-for", "Known for"), ("differentiators", "Differentiators")]
 
 def draw(focus):
     out = [text(X, 84, "3HAG", 44, 700, MID, "start", ' letter-spacing="2"')]

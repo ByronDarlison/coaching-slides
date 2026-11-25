@@ -9,7 +9,7 @@
     {
       "id": "circles",
       "title": "Your BHAG sits where three circles meet.",
-      "support": "This is the Hedgehog. Agree each circle in turn. The BHAG comes last.",
+      "support": "This is the Hedgehog. Your Core Purpose goes in the top circle. Agree on the other two in turn. The BHAG comes last.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-hedgehog.svg",
@@ -34,6 +34,7 @@
       "title": "What is your core business?",
       "support": "Each leader writes an answer alone. Then share.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-hedgehog-focus-business.svg",
         "alt": "The three Hedgehog circles with the Core business circle highlighted."
@@ -60,12 +61,13 @@
       "title": "What is your Profit per X?",
       "support": "Your economic engine. X is usually a widget from your KFFM.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-hedgehog-focus-engine.svg",
         "alt": "The three Hedgehog circles with the Economic engine circle highlighted."
       },
       "body": [
-        "If you have agreed your X, read it aloud and confirm it.",
+        "If you have agreed on your X, read it aloud and confirm it.",
         "If not, each leader writes an answer. Share, then agree."
       ],
       "notes": [
@@ -87,6 +89,7 @@
       "title": "What is your 10 to 30 year goal?",
       "support": "Each leader writes one sentence alone. No date, no numbers. Then share.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-hedgehog-focus-goal.svg",
         "alt": "The three Hedgehog circles with the BHAG at the center highlighted."

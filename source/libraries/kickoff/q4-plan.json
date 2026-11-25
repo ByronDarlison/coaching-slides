@@ -9,7 +9,7 @@
     {
       "id": "annual-numbers",
       "title": "What are your annual targets?",
-      "support": "Take the numbers from the forecast you just agreed. Confirm the fiscal year and its end date.",
+      "support": "Take the numbers from the forecast you just agreed on. Confirm the fiscal year and its end date.",
       "body": [
         "Show last year’s 1HAG and its results beside the new one.",
         "Gross revenue, margin and ending cash.",
@@ -18,10 +18,10 @@
         "Is each target big enough to keep you on track for your new 3HAG?"
       ],
       "notes": [
-        "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
+        "The numbers come from the forecast the team just agreed on. Confirm them. Do not rebuild them.",
         "Put last year’s 1HAG, with its results, beside the new one.",
         "Each number gets one owner.",
-        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets in the new 3HAG."
+        "Check each number against the 3-year targets in the new 3HAG."
       ],
       "headline": "What are your annual targets?",
       "layout": "comp-story",
@@ -36,8 +36,21 @@
       "id": "annual-first",
       "title": "What must you build this year?",
       "support": "Look at everything: your swim lanes, your KFFM and its six levers, and what is going on around you.",
+      "terms": [
+        {
+          "term": "six questions",
+          "tip": [
+            "What does it build or move?",
+            "How much will it move a critical number?",
+            "How soon will we see it?",
+            "Who can own it and succeed?",
+            "What will it cost?",
+            "What could go wrong?"
+          ]
+        }
+      ],
       "body": [
-        "Each leader writes candidates alone. Then share. List every candidate.",
+        "Each leader writes candidate priorities alone. Then share. List every candidate.",
         "Test each with the six questions. Then pick ideally 3, up to 5.",
         "Give each an owner, a done-by date, a measure of success and an achieved-by date."
       ],
@@ -61,7 +74,7 @@
     {
       "id": "individual",
       "title": "Set your own priorities with your own team.",
-      "support": "Outside this session. Agree the date before you leave.",
+      "support": "Outside this session. Agree on the date before you leave.",
       "body": [
         "Start from the new QHAG and your critical number, one for each function you own.",
         "Up to 5 work priorities. A company priority you own goes first.",
@@ -71,7 +84,8 @@
       "notes": [
         "Until now the team set individual priorities in the room. From the annual on, each leader sets theirs outside the session, with their own team.",
         "Two delivered beat five started. A company priority you own wins if time runs short.",
-        "Before the session ends, agree the date by which each leader’s priorities are in Metronome."
+        "Before the session ends, agree on the date by which each leader’s priorities are in Metronome.",
+        "Allow about 5 minutes."
       ],
       "headline": "Set your own priorities with your own team.",
       "layout": "comp-story",
@@ -86,7 +100,6 @@
       "id": "email-check",
       "title": "Is the CEO’s weekly email going out?",
       "support": "One page, from the CEO to everyone, by Friday noon.",
-      "checklist": true,
       "body": [
         "Running: has it gone out every week?",
         "Working: does it carry good news, the numbers, priority status and a positive close?",

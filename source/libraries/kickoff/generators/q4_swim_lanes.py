@@ -46,8 +46,10 @@ write("q4-swim-lanes-outcomes.svg", svg(W, H1, "".join(out)))
 
 # 2. The full map: lane name, then each outcome marker followed by its four quarters, Q12 down to Q1
 REGIONS_MAP = {}
-X0, NAMEW, MW, HY, HH, RH = 4, 108, 46, 62, 62, 116
-QW = (W - 2 * X0 - NAMEW - 3 * MW) / 12
+# A slightly wider canvas and narrower name and marker columns give each quarter about 7 more units,
+# so the sticky words do not run edge to edge.
+WM, X0, NAMEW, MW, HY, HH, RH = 1464, 2, 100, 30, 62, 62, 116
+QW = (WM - 2 * X0 - NAMEW - 3 * MW) / 12
 H2 = HY + HH + 4 * RH + 12
 cols, x = [], X0 + NAMEW  # (kind, quarter, x, width)
 for q in range(12, 0, -1):
@@ -63,18 +65,18 @@ for kind, q, x, w in cols:
         out.append(text(x + w / 2, HY + 36, f"Q{q}", 22, 700, GREY))
 for r, (name, _, narrow, _, stickies) in enumerate(LANES):
     y = HY + HH + r * RH
-    out.append(f'<rect x="{X0}" y="{y}" width="{W-2*X0}" height="{RH-8}" rx="10" fill="{CANVAS}"/>')
+    out.append(f'<rect x="{X0}" y="{y}" width="{WM-2*X0}" height="{RH-8}" rx="10" fill="{CANVAS}"/>')
     out.append(block(X0 + 8, y + (RH - 8) / 2, narrow, 18, 23, weight=700, fill=BLUE, anchor="start"))
-    REGIONS_MAP[name] = [X0, y, W - 2 * X0, RH - 8]
+    REGIONS_MAP[name] = [X0, y, WM - 2 * X0, RH - 8]
     for kind, q, x, w in cols:
         if kind == "marker":
-            out.append(f'<rect x="{x+w/2-20:g}" y="{y+(RH-8)/2-20:g}" width="40" height="40" rx="9" fill="{OUTCOME[q]}"/>')
-            REGIONS_MAP[f"{name}: {HAG[q]} outcome (Q{q})"] = [round(x + w / 2 - 20), round(y + (RH - 8) / 2 - 20), 40, 40]
+            out.append(f'<rect x="{x+w/2-13:g}" y="{y+(RH-8)/2-20:g}" width="26" height="40" rx="8" fill="{OUTCOME[q]}"/>')
+            REGIONS_MAP[f"{name}: {HAG[q]} outcome (Q{q})"] = [round(x + w / 2 - 13), round(y + (RH - 8) / 2 - 20), 26, 40]
             continue
         out.append(f'<rect x="{x+1:g}" y="{y+4}" width="{w-2:g}" height="{RH-16}" rx="7" fill="white" stroke="{LINE}" stroke-width="1.5"/>')
         if q in stickies:
             out.append(f'<rect x="{x+1:g}" y="{y+4}" width="{w-2:g}" height="{RH-16}" rx="7" fill="{NOTE}" stroke="{NOTE_EDGE}" stroke-width="2"/>')
             out.append(block(x + w / 2, y + (RH - 8) / 2, stickies[q], 18, 22, weight=600, fill=INK))
             REGIONS_MAP[f"{name}: Q{q} {' '.join(stickies[q])}"] = [round(x + 1), y + 4, round(w - 2), RH - 16]
-write("q4-swim-lanes-example.svg", svg(W, H2, "".join(out)))
+write("q4-swim-lanes-example.svg", svg(WM, H2, "".join(out)))
 print("wrote q4-swim-lanes-outcomes.svg and q4-swim-lanes-example.svg")
