@@ -22,7 +22,7 @@
       ],
       "support": "Each person’s step toward the QHAG.",
       "body": [
-        "Commit to the few priorities that deliver the QHAG. Each has an owner, a done-by date, a measure of success and an achieved-by date."
+        "Commit to the few priorities that deliver the QHAG. Each has an owner, a done-by date and a measure of success."
       ],
       "eyebrow": "",
       "artwork": {
@@ -62,7 +62,7 @@
         {
           "role": "Commitment",
           "heading": "Up to 5 work priorities",
-          "support": "Two delivered beat five started. A company priority you own goes first and wins if time runs short. Test each with the six questions. Add a done-by date, measure and achieved-by date.",
+          "support": "Two delivered beat five started. A company priority you own goes first and wins if time runs short. Test each with the six questions. Add a done-by date and a measure of success.",
           "mark": "action"
         },
         {
