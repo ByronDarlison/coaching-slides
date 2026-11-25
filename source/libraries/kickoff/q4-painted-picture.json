@@ -31,12 +31,12 @@
     },
     {
       "id": "agree",
-      "title": "Write one picture together.",
-      "support": "Reveal, then read each picture aloud.",
+      "title": "Turn your pictures into one.",
+      "support": "Each leader has written their own. Now the team writes one.",
       "body": [
+        "Show every leader’s picture. Read each one aloud.",
         "What does each person see that the others missed?",
-        "Write one picture every leader sees.",
-        "Present tense: what you see, hear and feel."
+        "Write one picture every leader sees, in the present tense: what you see, hear and feel."
       ],
       "notes": [
         "Read every picture aloud before discussing any of them.",
@@ -44,7 +44,7 @@
         "Keep the detail. The clearer the picture, the easier it is for the whole company to build it with you.",
         "Allow about 20 minutes for both slides. If the wording is not finished, name who will finish it and by when."
       ],
-      "headline": "Write one picture together.",
+      "headline": "Turn your pictures into one.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -56,7 +56,7 @@
     {
       "id": "three-year",
       "title": "Now paint your 3HAG picture.",
-      "support": "Each leader writes alone, in the present tense. Reveal, read aloud, then write one picture together.",
+      "support": "Each leader writes alone, in the present tense. Show every picture and read each one aloud. Then write one picture together.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-painted-picture-3hag.svg",
