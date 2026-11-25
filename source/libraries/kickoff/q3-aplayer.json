@@ -45,13 +45,13 @@
       ],
       "art_full": true,
       "notes": [
-        "Core Values first: how often does this person live every value? The lowest value sets the row.",
+        "Core Values first: how often does this person live every value? The lowest value sets the row. One value never lived puts the person in the bottom row.",
         "Then performance: where do they stand against their function scorecard?",
         "Ahead does not mean above target. It means the person meets or exceeds every part of the scorecard."
       ],
       "artwork": {
         "src": "assets/a-player-grid.svg",
-        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The grid is empty."
+        "alt": "A three by three grid. Core Values run down the side. Most of the time: every Core Value is lived most of the time. Some of the time: the lowest-rated Core Value is lived some of the time. None of the time: at least one Core Value is lived none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The grid is empty."
       }
     },
     {
@@ -132,7 +132,7 @@
       ],
       "artwork": {
         "src": "assets/a-player-placed.svg",
-        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The grid places Jen’s direct reports. Most of the time and Ahead: Maya, Omar and Priya. Most of the time and Behind: Leo. Most of the time and Being Carried: Nora. Some of the time and Ahead: Ravi."
+        "alt": "A three by three grid. Core Values run down the side. Most of the time: every Core Value is lived most of the time. Some of the time: the lowest-rated Core Value is lived some of the time. None of the time: at least one Core Value is lived none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The grid places Jen’s direct reports. Most of the time and Ahead: Maya, Omar and Priya. Most of the time and Behind: Leo. Most of the time and Being Carried: Nora. Some of the time and Ahead: Ravi."
       }
     },
     {
@@ -153,7 +153,7 @@
       ],
       "artwork": {
         "src": "assets/a-player-zones.svg",
-        "alt": "A three by three grid. Core Values run down the side: most of the time, some of the time, none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The zones are shown. Most of the time and Ahead is A, with Maya, Omar and Priya. Most of the time and Behind is B, with Leo. The other seven boxes are C, with Nora and Ravi."
+        "alt": "A three by three grid. Core Values run down the side. Most of the time: every Core Value is lived most of the time. Some of the time: the lowest-rated Core Value is lived some of the time. None of the time: at least one Core Value is lived none of the time. Performance Expectations run along the bottom. Being Carried: not meeting most of the scorecard. Behind: meets most of the scorecard. Ahead: meets or exceeds all of the scorecard. The zones are shown. Most of the time and Ahead is A, with Maya, Omar and Priya. Most of the time and Behind is B, with Leo. The other seven boxes are C, with Nora and Ravi."
       }
     },
     {
