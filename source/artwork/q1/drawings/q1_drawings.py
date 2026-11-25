@@ -445,7 +445,7 @@ import qr_svg  # noqa: E402
 EXAMPLES = [
     ("12-month forecast", "Build this one first.",
      "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209"),
-    ("36-month forecast", "The three-year view.",
+    ("36-month forecast", "The 3-year view.",
      "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588"),
 ]
 

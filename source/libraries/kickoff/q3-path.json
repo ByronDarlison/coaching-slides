@@ -17,13 +17,13 @@
         "q3"
       ],
       "notes": [
-        "Q3 has thirteen steps. Review last quarter, confirm the Core Values, assess the team, find the white space, plan the quarter, then check the meetings and close."
+        "Q3 has thirteen steps. Review last quarter, confirm the Core Values and assess the team. Find the white space and plan the quarter. Then check the meetings and close."
       ],
       "art_full": true,
       "art_fit": true,
       "artwork": {
         "src": "assets/q3-path-status.svg",
-        "alt": "Q3 path: Status next, then Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
+        "alt": "Q3 path: Status next. Then Functions, Scorecards, KFFM, Core Values, A-Player Team and Attribution Framework. Then 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
       }
     },
     {
@@ -43,7 +43,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q3-path-functions.svg",
-        "alt": "Q3 path: Status done. Functions next, then Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
+        "alt": "Q3 path: Status done. Functions next, then Scorecards, KFFM, Core Values, A-Player Team and Attribution Framework. Then 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
       }
     },
     {
@@ -63,7 +63,7 @@
       "art_fit": true,
       "artwork": {
         "src": "assets/q3-path-scorecards.svg",
-        "alt": "Q3 path: Status, Functions done. Scorecards next, then KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
+        "alt": "Q3 path: Status, Functions done. Scorecards next, then KFFM, Core Values, A-Player Team and Attribution Framework. Then 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast, Meetings and close."
       }
     },
     {
@@ -240,7 +240,7 @@
         "q3"
       ],
       "notes": [
-        "The plan is set. Now the finance leader hears what to build before the annual."
+        "The team has set the plan. Now the finance leader hears what to build before the annual."
       ],
       "art_full": true,
       "art_fit": true,
@@ -260,13 +260,13 @@
         "q3"
       ],
       "notes": [
-        "The plan is set. Now check the meetings that keep it alive, agree the messages and the homework, and close."
+        "The team has set the plan. Now check the meetings that keep it alive, agree the messages and the homework, and close."
       ],
       "art_full": true,
       "art_fit": true,
       "artwork": {
         "src": "assets/q3-path-close.svg",
-        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team, Attribution Framework, 3HAG, Plan, Sprint Lanes, Individual Priorities, Forecast done. Meetings and close next."
+        "alt": "Q3 path: Status, Functions, Scorecards, KFFM, Core Values, A-Player Team and Attribution Framework done. 3HAG, Plan, Sprint Lanes, Individual Priorities and Forecast done too. Meetings and close next."
       }
     }
   ]

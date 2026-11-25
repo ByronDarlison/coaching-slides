@@ -14,7 +14,7 @@
       "group": "",
       "notes": [
         "The 1HAG turns the 3HAG into this year’s targets and priorities.",
-        "Every number and priority is built from the 3HAG above it.",
+        "Build every number and priority from the 3HAG above it.",
         "Point to the 3HAG we finished yesterday, then to the 1HAG we build now."
       ],
       "tags": [
@@ -23,7 +23,7 @@
       ],
       "support": "This year’s step toward the 3HAG.",
       "body": [
-        "Set this year’s targets and the few priorities that move the three-year plan forward."
+        "Set this year’s targets and the few priorities that move the 3-year plan forward."
       ],
       "eyebrow": "",
       "artwork": {
@@ -45,7 +45,7 @@
       ],
       "artwork": {
         "src": "assets/1hag-map.svg",
-        "alt": "Example 1HAG page for the same subscription business. Year 1 ends December 31, 2027. 1, Numbers, each with an owner: gross revenue $6 million, Andrew; profit margin 10%, Allison; cash in the bank $1.5 million, Allison; widgets: 10,000 subscription leads and 4,000 marketing qualified subscription leads, Chris; 1,000 new subscriptions, Andrew; 950 activated subscriptions, Jen; 24,000 collected payments, Allison; profit per subscription $300 a year, Allison; head count 40, Pat. 2, Priorities: #1 cut activation from 7 days to 2, Jen, done by June 30, 2027, builds Activation in a day, success: days to activate 2 or fewer achieved by September 30; #2 hire and ramp 2 account executives, Andrew, done by September 30, 2027, builds A sales team that adds new MRR every month, success: new MRR at or above $50K a month achieved by December 31; #3 move every customer to automatic billing, Allison, done by September 30, 2027, builds Billing that collects on time, success: days to collect 10 or fewer achieved by December 31.",
+        "alt": "Example 1HAG page for the same subscription business. Year 1 ends December 31, 2027. 1, Numbers, each with an owner. Gross revenue $6 million, Andrew. Profit margin 10%, Allison. Cash in the bank $1.5 million, Allison. Widgets: 10,000 subscription leads and 4,000 marketing qualified subscription leads, Chris. 1,000 new subscriptions, Andrew. 950 activated subscriptions, Jen. 24,000 collected payments, Allison. Profit per subscription $300 a year, Allison. Head count 40, Pat. 2, Priorities. #1 cut activation from 7 days to 2, Jen, done by June 30, 2027. It builds Activation in a day. Success: days to activate 2 or fewer achieved by September 30. #2 hire and ramp 2 account executives, Andrew, done by September 30, 2027. It builds A sales team that adds new MRR every month. Success: new MRR at or above $50K a month achieved by December 31. #3 move every customer to automatic billing, Allison, done by September 30, 2027. It builds Billing that collects on time. Success: days to collect 10 or fewer achieved by December 31.",
         "viewbox": [
           1800,
           880
@@ -57,7 +57,7 @@
             "w": 917.5,
             "h": 46,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
             "icon": [
               430,
               668
@@ -68,8 +68,8 @@
       "art_full": true,
       "notes": [
         "Same page as the 3HAG, one year out. Every number keeps its owner.",
-        "The widget owners come straight from the KFFM: Chris owns the leads Marketing hands on, Andrew new subscriptions, Jen activations, Allison collected payments.",
-        "Then ideally 3, up to 5 company priorities, each with one owner, a done-by date and a measure of success."
+        "The widget owners come straight from the KFFM. Chris owns the leads Marketing hands on. Andrew owns new subscriptions, Jen activations and Allison collected payments.",
+        "Then ideally 3, up to 5 company priorities. Each has one owner, a done-by date and a measure of success."
       ]
     },
     {
@@ -81,9 +81,9 @@
       "notes": [
         "Each leader independently proposes the targets before hearing anyone else’s answer.",
         "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count.",
-        "Use the same widget definitions as the three-year plan. Distinguish new activity from cumulative totals.",
+        "Use the same widget definitions as the 3-year plan. Distinguish new activity from cumulative totals.",
         "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
-        "Reconcile the targets with the 3HAG: is each one big enough to get you there in three years? If year 1 is a third of the way or less, ask what makes years 2 and 3 steeper. Discuss seasonality and assumptions rather than dividing targets mechanically."
+        "Reconcile the targets with the 3HAG: is each one big enough to get you there in 3 years? If year 1 is a third of the way or less, ask what makes years 2 and 3 steeper. Discuss seasonality and assumptions rather than dividing targets mechanically."
       ],
       "tags": [
         "kickoff",
@@ -104,7 +104,7 @@
             "w": 917.5,
             "h": 46,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
             "icon": [
               430,
               668
@@ -163,7 +163,7 @@
         "Each leader proposes the next most important accomplishment, then shares it.",
         "Discuss disagreement, tradeoffs, dependencies and capacity; agree on the rank together.",
         "An owner claims the priority aloud. Agree on the outcome, measure and due date.",
-        "Repeat for priorities 2 to 5 in order. Five is a ceiling; stop when the critical work is covered."
+        "Repeat for priorities 2 to 5 in order. Five is a ceiling; stop when the list covers the critical work."
       ],
       "tags": [
         "kickoff",
@@ -188,7 +188,7 @@
       "group": "",
       "notes": [
         "Read the 1HAG aloud, top to bottom, then run the six checks.",
-        "Point at each priority and ask what it builds or which lever it moves, and which critical number will show it worked. If none, question the priority.",
+        "Point at each priority. Ask what it builds or which lever it moves, and which critical number will show it worked. If none, question the priority.",
         "Anything that fails goes on the homework list with an owner.",
         "At a quarterly, the status review already showed where the 1HAG stands. Test it against what the Market Map showed. Change only what fails or is no longer true."
       ],

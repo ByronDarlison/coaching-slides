@@ -19,7 +19,7 @@
       "notes": [
         "The Team View shows each function, the person who volunteered to own it, and their title. It is all in one view.",
         "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
-        "Show it to the whole team at a town hall whenever it changes."
+        "Show it to the whole company at a town hall whenever it changes."
       ],
       "artwork": {
         "src": "assets/team-view-example.svg",
@@ -62,7 +62,7 @@
       ],
       "artwork": {
         "src": "assets/scorecard-review.png",
-        "alt": "A team member and their team lead sit at a table with one scorecard between them, each speaking in turn."
+        "alt": "A team member and their team lead sit at a table with one scorecard between them. Each speaks in turn."
       },
       "art_side": true,
       "body": [

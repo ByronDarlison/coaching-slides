@@ -45,7 +45,7 @@
       ],
       "notes": [
         "Also: share the 3 key messages with your team the day after. Review the KFFM in every weekly leadership meeting. Keep running all company meetings through Metronome. Add the widget-based company metric, if defined.",
-        "The two surveys are the Metronomics Checklist Survey and the Kick-Off and Annual prep survey.",
+        "The two surveys are the Metronomics Checklist Survey and the Kick-Off and Annual prep survey. Complete the prep survey and share it before the annual. Each leader reviews the status of the current plan. The coach sends a prep article to read.",
         "The CEO starts the weekly email this week.",
         "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area."
       ]
@@ -60,16 +60,16 @@
       "tags": [
         "q3"
       ],
-      "support": "For each outcome: met, partly met or still open?",
+      "support": "For each answer: met, partly met or still open?",
       "notes": [
-        "Read back the outcomes the team agreed at the start.",
+        "Read back the answers the team agreed at the start.",
         "Ask for a show of hands on each one.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
-        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+        "Still open is fine. Add each open answer to the homework with an owner and a date.",
+        "The sticky shows the coach’s answer for the session. Ask the team whether they achieved it, along with their own."
       ],
       "artwork": {
         "src": "assets/q3-sticky-purpose.svg",
-        "alt": "A sticky note with the coach’s outcome for the session: 3HAG validation."
+        "alt": "A sticky note with the coach’s answer for the session: 3HAG validation."
       },
       "art_side": true
     }

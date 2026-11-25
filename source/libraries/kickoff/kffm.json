@@ -19,12 +19,12 @@
       ],
       "notes": [
         "Watch one widget travel: each function adds days, and the counter shows time to cash. At the end the widget becomes money in the bank.",
-        "Pick them from the Function Chart. Shannon calls them primary functions; everything else is supporting.",
+        "Pick them from the Function Chart. They are the primary functions; everything else is supporting.",
         "Same definition as the intro text on the board."
       ],
       "artwork": {
         "src": "assets/kffm-flow.svg",
-        "alt": "Animated KFFM example. A widget enters Marketing, then moves through Sales, Operations and Finance, each function lighting up in turn, and becomes cash in the bank. A Time to cash counter climbs from 0 to 72 days as it moves.",
+        "alt": "Animated KFFM example. A widget enters Marketing, then moves through Sales, Operations and Finance. Each function lights up in turn. The widget becomes cash in the bank. A Time to cash counter climbs from 0 to 72 days as it moves.",
         "replay": true,
         "viewbox": [
           1440,
@@ -37,7 +37,7 @@
             "w": 300,
             "h": 160,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
           }
         ]
       },
@@ -60,7 +60,7 @@
       ],
       "artwork": {
         "src": "assets/kffm-example.svg",
-        "alt": "KFFM example. Subscription leads enter Marketing (Chris, 14 days, critical number sales qualified subscription leads, yellow), which hands marketing qualified subscription leads to Sales (Andrew, 21 days, critical number new MRR, red), which hands new subscriptions to Operations (Jen, 7 days, critical number time to subscription activation, red), which hands activated subscriptions to Finance (Allison, 30 days to collect, critical number average days to collect, green), which hands collected payments to cash. Profit per subscription is the Profit per X: target $300 a year, owned by Allison. Time to cash is 72 days. Supporting functions: Development (yellow, critical number releases on time), IT (green, system uptime) and People (red, days to fill a role). A legend shows green as on track, yellow as at risk, red as needs attention, and brackets as the critical number.",
+        "alt": "KFFM example. Subscription leads enter Marketing: Chris, 14 days, critical number sales qualified subscription leads, yellow. Marketing hands marketing qualified subscription leads to Sales: Andrew, 21 days, critical number new MRR, red. Sales hands new subscriptions to Operations: Jen, 7 days, critical number time to subscription activation, red. Operations hands activated subscriptions to Finance: Allison, 30 days to collect, critical number average days to collect, green. Finance hands collected payments to cash. Profit per subscription is the Profit per X: target $300 a year, owned by Allison. Time to cash is 72 days. Supporting functions: Development (yellow, critical number releases on time) and IT (green, system uptime). People is red, with days to fill a role. A legend shows green as on track, yellow as at risk and red as needs attention. Brackets mark the critical number.",
         "viewbox": [
           1440,
           710
@@ -72,16 +72,16 @@
             "w": 300,
             "h": 160,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
           }
         ]
       },
       "notes": [
         "Walk one customer through it, left to right, ending at cash.",
         "Each box: function, one owner, days it adds, its critical number, status. Finance’s 30 days is days to collect.",
-        "Each arrow is a widget. Profit per subscription sits at the end, with a target and an owner. It is Jim Collins’s economic engine from Good to Great: the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
+        "Each arrow is a widget. Profit per subscription sits at the end, with a target and an owner. It is the economic engine from Good to Great. That is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
         "Time to cash adds the days: 72 from raw lead to cash.",
-        "Shannon’s subscription example; days are illustrative.",
+        "The subscription example; days are illustrative.",
         "Marketing hands Sales marketing qualified leads. Its critical number is sales qualified leads: the ones Sales has reviewed and agreed are good.",
         "Finance’s critical number, average days to collect, is days sales outstanding (some call it average AR days)."
       ],
@@ -99,7 +99,7 @@
         "day-1"
       ],
       "notes": [
-        "A widget is a countable, non-financial thing one function receives and then hands to the next. Point to each highlighted label on the map: subscription leads, marketing qualified subscription leads, new subscriptions, activated subscriptions, collected payments.",
+        "A widget is a countable, non-financial thing one function receives and then hands to the next. Point to each highlighted label on the map. They are subscription leads, marketing qualified subscription leads, new subscriptions, activated subscriptions and collected payments.",
         "Widgets drive cash. Name each one with the company’s unit: subscription leads, new subscriptions.",
         "The owner of each function must control the widget they hand on.",
         "Not revenue or cash: those are outcomes of the whole flow.",
@@ -107,7 +107,7 @@
       ],
       "artwork": {
         "src": "assets/kffm-widgets.svg",
-        "alt": "The KFFM example with every widget highlighted: subscription leads into Marketing, marketing qualified subscription leads to Sales, new subscriptions to Operations, activated subscriptions to Finance, and collected payments to cash. A widget is a countable, non-financial thing one function receives and then hands to the next. Widgets drive cash.",
+        "alt": "The KFFM example with every widget highlighted. Subscription leads go into Marketing and marketing qualified subscription leads to Sales. New subscriptions go to Operations, activated subscriptions to Finance and collected payments to cash. A widget is a countable, non-financial thing one function receives and then hands to the next. Widgets drive cash.",
         "viewbox": [
           1440,
           710
@@ -137,7 +137,7 @@
         "hotspots": []
       },
       "notes": [
-        "At the Kick Off, every box starts grey. At a quarterly, each owner re-rates their function. Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red.",
+        "At the Kick Off, every box starts grey. At a quarterly, each owner re-rates their function. Each owner colors their own function by where its critical number stands against target. Green is on track, yellow is at risk and red needs attention.",
         "Then ask: what would it take to turn it green?",
         "Red is a conversation, not a verdict on the person."
       ],
@@ -156,7 +156,7 @@
       ],
       "artwork": {
         "src": "assets/kffm-days.svg",
-        "alt": "The KFFM example with everything dimmed except the days each function takes and the time to cash. Marketing 14 days, Sales 21, Operations 7, Finance 30. A callout reads: days to cash. Add the days each function takes: 14 + 21 + 7 + 30 = 72 days from subscription lead to cash.",
+        "alt": "The KFFM example with everything dimmed except the days each function takes and the time to cash. Marketing 14 days, Sales 21, Operations 7, Finance 30. A callout reads: days to cash. Add the days each function takes. 14 + 21 + 7 + 30 = 72 days from subscription lead to cash.",
         "viewbox": [
           1440,
           710
@@ -191,7 +191,7 @@
         "8. Color each one: green, yellow or red."
       ],
       "notes": [
-        "Good enough today beats perfect later. We finish a first version before we leave, then revisit the map at every quarterly planning session and improve it.",
+        "Good enough today beats perfect later. We finish a first version before we leave. Then we revisit the map at every quarterly planning session and improve it.",
         "Build it live on the board. Supporting functions go in their own row below.",
         "Finish with the total time to cash, and Profit per X if a good X has emerged.",
         "Read one customer through the finished map, ending at collected cash.",
@@ -218,7 +218,7 @@
       "art_full": true,
       "artwork": {
         "src": "assets/kffm-levers.svg",
-        "alt": "The KFFM example on the left. On the right, six levers to move more cash faster: Quantity, more widgets into the first function; Conversion, more widgets pass each hand-off; Price, raise the price customers pay; Timing, fewer days from first widget to cash; Capacity, each function handles more widgets a month; Cost, lower what each function costs to run.",
+        "alt": "The KFFM example on the left. On the right, six levers to move more cash faster. Quantity: more widgets into the first function. Conversion: more widgets pass each hand-off. Price: raise the price customers pay. Timing: fewer days from first widget to cash. Capacity: each function handles more widgets a month. Cost: lower what each function costs to run.",
         "viewbox": [
           2428,
           936
@@ -230,7 +230,7 @@
             "w": 395.5,
             "h": 210.9,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
           },
           {
             "x": 1918,
@@ -540,7 +540,7 @@
       "art_full": true,
       "notes": [
         "Every box on the map already states what it receives, what it produces, its critical number and its days. Those are the tests for whether an AI agent could do that work.",
-        "If a person activates 10 subscriptions a day and an agent handles 100, around the clock, days to cash drops and volume rises for every function downstream.",
+        "Say a person activates 10 subscriptions a day and an agent handles 100, around the clock. Days to cash drops and volume rises for every function downstream.",
         "Do not automate work that depends on judgment, relationships or trust. The critical number will punish a bad automation quickly.",
         "Keep the map current: it is the roadmap for where AI goes next."
       ]

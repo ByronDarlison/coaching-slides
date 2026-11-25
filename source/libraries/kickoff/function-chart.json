@@ -68,7 +68,7 @@
       ],
       "artwork": {
         "src": "assets/traditional-vs-functional.svg",
-        "alt": "Left: a traditional hierarchy of people and job titles. Right: the same organisation as a Function Chart, starting with Head of company, Marketing, Sales and Finance, then naming their owners."
+        "alt": "Left: a traditional hierarchy of people and job titles. Right: the same organization as a Function Chart. It starts with Head of company, Marketing, Sales and Finance, then names their owners."
       },
       "eyebrow": "",
       "art_wide": true

@@ -39,7 +39,7 @@
         {
           "role": "Before next session",
           "heading": "Prepare",
-          "support": "No agreed Core Values? Run Mission to Mars. Your team takes StrengthsFinder 2.0. Read The Five Dysfunctions of a Team. Complete the prep survey.",
+          "support": "No agreed Core Values? Run Mission to Mars. Your team takes StrengthsFinder 2.0. Read The Five Dysfunctions of a Team. Complete the prep survey and share it.",
           "mark": "structure"
         }
       ],
@@ -59,16 +59,16 @@
       "tags": [
         "q2"
       ],
-      "support": "For each outcome: met, partly met or still open?",
+      "support": "For each answer: met, partly met or still open?",
       "notes": [
-        "Read back the outcomes the team agreed at the start.",
+        "Read back the answers the team agreed at the start.",
         "Ask for a show of hands on each one.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
-        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+        "Still open is fine. Add each open answer to the homework with an owner and a date.",
+        "The sticky shows the coach’s answer for the session. Ask the team whether they achieved it, along with their own."
       ],
       "artwork": {
         "src": "assets/q2-sticky-purpose.svg",
-        "alt": "A sticky note with the coach’s outcome for the session: Planning and executing with increasing momentum."
+        "alt": "A sticky note with the coach’s answer for the session: Planning and executing with increasing momentum."
       },
       "art_side": true
     }

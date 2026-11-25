@@ -20,7 +20,7 @@
         "kickoff",
         "day-1"
       ],
-      "support": "A three-year stepping stone toward the BHAG.",
+      "support": "A 3-year stepping stone toward the BHAG.",
       "body": [
         "Connect the future company to the capabilities and targets needed to get there."
       ],
@@ -44,7 +44,7 @@
       ],
       "artwork": {
         "src": "assets/3hag-map.svg",
-        "alt": "Example 3HAG page for the same subscription business as the KFFM example. Year 3 ends December 31, 2029. 1, Numbers, each with an owner: gross revenue $12 million, Andrew; profit margin 20%, Allison; cash in the bank $3 million, Allison; widgets: 20,000 subscription leads and 8,000 marketing qualified subscription leads, Chris; 2,000 new subscriptions, Andrew; 1,900 activated subscriptions, Jen; 48,000 collected payments, Allison; profit per subscription $600 a year, Allison; head count 70, Pat. 2, Statement: the subscription service our customers can’t imagine running without. 3, Key capabilities: marketing that brings in qualified leads; a sales team that adds new MRR every month; activation in a day, without hand-holding; billing that collects on time, every time. 4, Known for: up and running in a day.",
+        "alt": "Example 3HAG page for the same subscription business as the KFFM example. Year 3 ends December 31, 2029. 1, Numbers, each with an owner. Gross revenue $12 million, Andrew. Profit margin 20%, Allison. Cash in the bank $3 million, Allison. Widgets: 20,000 subscription leads and 8,000 marketing qualified subscription leads, Chris. 2,000 new subscriptions, Andrew. 1,900 activated subscriptions, Jen. 48,000 collected payments, Allison. Profit per subscription $600 a year, Allison. Head count 70, Pat. 2, Statement: the subscription service our customers can’t imagine running without. 3, Key capabilities. Marketing that brings in qualified leads. A sales team that adds new MRR every month. Activation in a day, without hand-holding. Billing that collects on time, every time. 4, Known for: up and running in a day.",
         "viewbox": [
           1800,
           880
@@ -80,7 +80,7 @@
             "w": 855,
             "h": 46,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
             "icon": [
               415,
               730
@@ -93,19 +93,19 @@
         "This is what we will build together today: one page, four blocks. By the end of the day this page is yours.",
         "Same subscription business as the KFFM example. The five widgets are the five hand-offs on that map, counted for Year 3.",
         "Every number has an owner, the same owner it will have in the 1HAG and QHAG. In Metronome each 3-year target sits on a metric, and every metric has an owner.",
-        "The numbers hang together: about 4,000 subscribers at roughly $250 a month is $12 million, and 4,000 subscribers paying monthly is 48,000 collected payments.",
+        "The numbers hang together. About 4,000 subscribers at roughly $250 a month is $12 million. And 4,000 subscribers paying monthly is 48,000 collected payments.",
         "The statement has no numbers. Each capability strengthens one function on the map. Known for is what customers would say."
       ]
     },
     {
       "id": "numbers",
-      "title": "What are your three-year targets?",
-      "headline": "What are your three-year targets?",
+      "title": "What are your 3-year targets?",
+      "headline": "What are your 3-year targets?",
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Introduce 3HAG as the three-year Highly Achievable Goal. Have each leader write targets independently, then share and agree. Record exact units and the future date. Distinguish cash from profit.",
-        "Agree on gross revenue, ending cash and widgets, using consistent definitions across all three horizons. Shannon’s 3HAG fiscal measures are gross revenue and cash."
+        "Introduce 3HAG as the 3-year Highly Achievable Goal. Have each leader write targets independently, then share and agree. Record exact units and the future date. Distinguish cash from profit.",
+        "Agree on gross revenue, ending cash and widgets, using consistent definitions across all three horizons. The 3HAG fiscal measures are gross revenue and cash."
       ],
       "tags": [
         "kickoff",
@@ -126,7 +126,7 @@
             "w": 855,
             "h": 46,
             "term": "Profit per X",
-            "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
+            "tip": "Jim Collins’s economic engine, from Good to Great. It is the one profit ratio that, raised steadily over time, does the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target.",
             "icon": [
               415,
               730
@@ -263,7 +263,7 @@
       "group": "",
       "notes": [
         "Ask a leader to read the plan aloud. Invite the team to identify contradictions and untested assumptions.",
-        "Check each field is captured. Record unresolved assumptions for validation without reopening every agreed phrase.",
+        "Check the team captured each field. Record unresolved assumptions for validation without reopening every agreed phrase.",
         "Do the widget volumes, conversion rates and prices support the revenue target? Which assumption explains any gap? Anything that fails goes on the homework list with an owner.",
         "At a quarterly, test it against what the Market Map showed. Change only what fails or is no longer true."
       ],
@@ -295,7 +295,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "The three-year direction becomes annual plans and quarterly commitments.",
+        "The 3-year direction becomes annual plans and quarterly commitments.",
         "The team reviews and learns each quarter instead of writing a plan once and leaving it untouched."
       ],
       "tags": [
@@ -304,7 +304,7 @@
       ],
       "artwork": {
         "src": "assets/twelve-quarters-spiral.svg",
-        "alt": "A continuous line of twelve loops climbing from Today to the 3HAG. Each loop is one quarter, Q1 to Q12, grouped into Year 1, Year 2 and Year 3. Q4 and Q8 are each a 1HAG; Q12 lands the 3HAG. The line fades from blue to green. Each loop: plan the quarter, do the work, review and learn."
+        "alt": "A continuous line of 12 loops climbing from Today to the 3HAG. Each loop is one quarter, Q1 to Q12, grouped into Year 1, Year 2 and Year 3. Q4 and Q8 are each a 1HAG; Q12 lands the 3HAG. The line fades from blue to green. Each loop: plan the quarter, do the work, review and learn."
       },
       "eyebrow": "",
       "art_full": true

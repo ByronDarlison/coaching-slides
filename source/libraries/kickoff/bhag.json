@@ -24,7 +24,7 @@
       "art_full": true,
       "art_fit": true,
       "notes": [
-        "We know why we exist and how we behave. Now: how far do we want to go, and what does the next three years look like?"
+        "We know why we exist and how we behave. Now: how far do we want to go, and what does the next 3 years look like?"
       ]
     },
     {
@@ -41,11 +41,11 @@
       "art_full": true,
       "artwork": {
         "src": "assets/hag-ladder-anim.svg",
-        "alt": "Animated cascade, dimmed except the active level. BHAG lights up, then a marker moves down to 3HAG, 1HAG, QHAG and Individual Quarterly Priorities in turn. At the end every level lights together: each level is built from the one above it and directs the one below.",
+        "alt": "Animated cascade, dimmed except the active level. BHAG lights up, then a marker moves down to 3HAG, 1HAG, QHAG and Individual Quarterly Priorities in turn. At the end every level lights together. Each level is built from the one above it and directs the one below.",
         "replay": true
       },
       "notes": [
-        "This is where the two days are going. Today: BHAG and 3HAG. Tomorrow: 1HAG, QHAG and each leader’s priorities.",
+        "This is where the 2 days are going. Today: BHAG and 3HAG. Tomorrow: 1HAG, QHAG and each leader’s priorities.",
         "Each level is built from the one above it and directs the one below."
       ]
     },
@@ -56,7 +56,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "BHAG: Big Hairy Audacious Goal (Jim Collins).",
+        "BHAG: Big Hairy Audacious Goal.",
         "It should need the company to grow well beyond what it can do today.",
         "The 3HAG carries the numbers. The BHAG carries the ambition."
       ],
@@ -153,8 +153,8 @@
       "layout": "comp-decision",
       "group": "",
       "notes": [
-        "Use Jim Collins’s tests as presented in Shannon’s source. Distinguish the 10 to 30 year horizon from this specific 25-year test.",
-        "Test leader enthusiasm separately from wider-team enthusiasm.",
+        "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
+        "Test leader enthusiasm separately from the whole company’s.",
         "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
         "At a quarterly, change only what fails or is no longer true."
       ],
@@ -189,7 +189,7 @@
         },
         {
           "role": "05",
-          "heading": "Exciting to the wider team?",
+          "heading": "Exciting to the whole company?",
           "support": "Would others want to pursue it?",
           "mark": "structure"
         },
