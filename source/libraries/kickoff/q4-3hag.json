@@ -37,6 +37,7 @@
       "title": "What are your new 3‑year targets?",
       "support": "Each leader writes the numbers alone. Reveal, then agree.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-numbers.svg",
         "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Numbers is highlighted."
@@ -65,6 +66,7 @@
       "title": "What will the company be in 3 years?",
       "support": "Write one sentence that describes the company you will become.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-statement.svg",
         "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Statement is highlighted."
@@ -90,6 +92,7 @@
       "title": "What do you want to be known for?",
       "support": "In 3 years, when someone says your company name, what should people think?",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-known-for.svg",
         "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Known for is highlighted."
@@ -113,6 +116,7 @@
       "title": "Put your differentiators in your 3HAG.",
       "support": "This finishes your 3HAG. They take the place of last year’s key capabilities.",
       "art_side": true,
+      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-differentiators.svg",
         "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Differentiators is highlighted."

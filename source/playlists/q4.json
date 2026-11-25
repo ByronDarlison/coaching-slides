@@ -35,28 +35,13 @@
       "id": "kickoff:opening",
       "slides": [
         "engagement"
-      ],
-      "override": {
-        "notes": [
-          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
-          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
-          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:opening",
       "slides": [
         "mirror"
-      ],
-      "override": {
-        "notes": [
-          "Hand back the compiled survey answers now, printed or on the board. Go question by question, with everyone’s words side by side. Do not assume everyone has read them.",
-          "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate.",
-          "Park each difference on the board against the agenda block that will resolve it. Examples are the Function Chart, the KFFM, purpose or the targets.",
-          "Allow about 15 minutes. Today is for decisions, not data gathering."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:opening",
@@ -98,6 +83,7 @@
         "notes": [
           "The team reviews this every second quarter. Each leader enters today’s split. Record how the time is really spent, not an ideal split.",
           "Compare with the last entry where there is one. The founder also has the baseline from the call before Q1.",
+          "With no baseline, today’s numbers are the baseline.",
           "As leaders hand off functions and hire A-Players, the CEO’s time in execution should fall first.",
           "Keep today’s entry. The next review compares against it.",
           "When the leadership team is the whole company, skip this slide and ask the owner privately.",
@@ -184,307 +170,7 @@
           "Cost: what each function costs to run.",
           "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
         ],
-        "support": "In Metronome: open KFFM. Go lever by lever.",
-        "artwork": {
-          "src": "assets/kffm-levers.svg",
-          "alt": "The KFFM example on the left. On the right, six levers to move more cash faster. Quantity: more widgets into the first function. Conversion: more widgets pass each hand-off. Price: raise the price customers pay. Timing: fewer days from first widget to cash. Capacity: each function handles more widgets a month. Cost: lower what each function costs to run.",
-          "viewbox": [
-            2428,
-            936
-          ],
-          "hotspots": [
-            {
-              "x": 230.6,
-              "y": 429.7,
-              "w": 395.5,
-              "h": 210.9,
-              "term": "Profit per X",
-              "tip": "Jim Collins’s economic engine (Good to Great): the one profit ratio that, if you raised it steadily over time, would do the most to drive your economics. Here, profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year."
-            },
-            {
-              "x": 1918,
-              "y": 4,
-              "w": 500,
-              "h": 148,
-              "term": "Quantity",
-              "tip": "Subscription leads coming into Marketing.",
-              "targets": [
-                [
-                  18.5,
-                  83.1,
-                  241.2,
-                  104.1
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            },
-            {
-              "x": 1918,
-              "y": 160,
-              "w": 500,
-              "h": 148,
-              "term": "Conversion",
-              "tip": "The widgets passed at each hand-off after subscription leads.",
-              "targets": [
-                [
-                  597.1,
-                  83.1,
-                  295.2,
-                  104.1
-                ],
-                [
-                  1229.8,
-                  83.1,
-                  295.2,
-                  104.1
-                ],
-                [
-                  1515.8,
-                  299.3,
-                  191.1,
-                  112.1
-                ],
-                [
-                  1177.0,
-                  449.4,
-                  348.0,
-                  101.5
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            },
-            {
-              "x": 1918,
-              "y": 316,
-              "w": 500,
-              "h": 148,
-              "term": "Price",
-              "tip": "Profit per subscription: profit divided by the average number of active subscriptions. Allison owns hitting the target, $300 a year.",
-              "targets": [
-                [
-                  220.1,
-                  419.1,
-                  416.5,
-                  231.9
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            },
-            {
-              "x": 1918,
-              "y": 472,
-              "w": 500,
-              "h": 148,
-              "term": "Timing",
-              "tip": "The days each function adds, and the time to cash.",
-              "targets": [
-                [
-                  253.1,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  885.7,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  403.3,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1439.4,
-                  756.6,
-                  429.7,
-                  158.2
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            },
-            {
-              "x": 1918,
-              "y": 628,
-              "w": 500,
-              "h": 148,
-              "term": "Capacity",
-              "tip": "All the functions.",
-              "targets": [
-                [
-                  253.1,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  885.7,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  403.3,
-                  350.6,
-                  263.6
-                ],
-                [
-                  15.9,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  319.0,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  622.2,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            },
-            {
-              "x": 1918,
-              "y": 784,
-              "w": 500,
-              "h": 148,
-              "term": "Cost",
-              "tip": "All the functions.",
-              "targets": [
-                [
-                  253.1,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  885.7,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  42.1,
-                  350.6,
-                  263.6
-                ],
-                [
-                  1518.4,
-                  403.3,
-                  350.6,
-                  263.6
-                ],
-                [
-                  15.9,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  319.0,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  622.2,
-                  772.3,
-                  297.8,
-                  147.7
-                ],
-                [
-                  942.4,
-                  416.5,
-                  237.2,
-                  237.2
-                ]
-              ],
-              "dim": [
-                0,
-                0,
-                1898,
-                936
-              ]
-            }
-          ]
-        }
+        "support": "In Metronome: open KFFM. Go lever by lever."
       }
     },
     {
@@ -675,11 +361,7 @@
       "override": {
         "notes": [
           "Close Day 1. Read back what the team finished today. Name what is still open and when it comes up tomorrow. Then invite everyone to answer."
-        ],
-        "artwork": {
-          "src": "assets/one-phrase-close.jpg",
-          "alt": "Four team members stand together talking, each with a speech bubble. One bubble is green."
-        }
+        ]
       }
     },
     {
@@ -708,26 +390,13 @@
       "id": "kickoff:day-two-opening",
       "slides": [
         "outcome-check"
-      ],
-      "override": {
-        "notes": [
-          "Read back the Day 1 answers to “What would make these 2 days valuable?” The team sorts each one. Coach-led and quick, not another round.",
-          "For anything at risk, name when you will address it today before moving on."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:day-two-opening",
       "slides": [
         "engagement-day-two"
-      ],
-      "override": {
-        "notes": [
-          "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
-          "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
-          "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
-        ]
-      }
+      ]
     },
     {
       "id": "kickoff:q4-day-two",
@@ -747,13 +416,6 @@
         "title": "How did the year go?",
         "headline": "How did the year go?",
         "support": "In Metronome: open One Page Plans. Review the 1HAG, then the last QHAG.",
-        "body": [
-          "Fiscal numbers: gross revenue, margin and ending cash.",
-          "Non-fiscal numbers: widgets and head count.",
-          "Each priority: was it done, and did it succeed?",
-          "Where was your estimate wrong, and what did you learn?",
-          "Bring the brutal facts."
-        ],
         "notes": [
           "At the annual, the 1HAG is closing. Review the whole year first, then the last quarter.",
           "Updating status in Metronome was prep for today. Confirm it is current before you read the numbers. Record any gap.",
@@ -846,7 +508,7 @@
           "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
           "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner. If only the CEO can own it, name the leadership gap first.",
           "Risk: ask how badly this could go wrong.",
-          "Once chosen, ask an owner to claim each priority aloud. Agree on the done-by date, the measure and its achieved-by date. If two priorities compete for the same people or cash, agree on which one wins. Done and success are different dates. The owner finishes the work by one date. The number reaches its target by its own date, often later.",
+          "Once chosen, ask an owner to claim each priority aloud. Agree on the done-by date, the measure and the achieved-by date. If two priorities compete for the same people or cash, agree on which one wins. Done and success are different dates. The owner finishes the work by one date. The number reaches its target by its own date, often later.",
           "Hover over “KFFM lever” to show the six levers."
         ]
       }
@@ -871,11 +533,7 @@
           "Each measure has a target and an achieved-by date.",
           "The targets keep you on track for the 3HAG.",
           "The widgets support the revenue, and head count is set."
-        ],
-        "artwork": {
-          "src": "assets/hag-ladder-checked-1hag.svg",
-          "alt": "The planning cascade with the 3HAG and 1HAG checked. The QHAG and individual priorities are still to come."
-        }
+        ]
       }
     },
     {
@@ -947,11 +605,7 @@
           "An owner claims the priority aloud. Agree on the done-by date, the measure and the achieved-by date.",
           "The achieved-by date can fall after the quarter ends. The owner finishes the work this quarter. The priority stays open on the next QHAG until the number has moved.",
           "Repeat for priorities 2 to 5 in order. Five is a ceiling. Stop when the list covers the critical work."
-        ],
-        "artwork": {
-          "src": "assets/qhag-priorities-crop.svg",
-          "alt": "The QHAG page’s block 2, Priorities, all three shown. #1 is above. The next is hire the first account executive, Andrew, done by March 15. Success: new MRR of $25K a month or more by June 30. The last is move the 100 largest customers to automatic billing, Allison, done by March 31. Success: days to collect 20 or fewer by June 30."
-        }
+        ]
       }
     },
     {
@@ -960,25 +614,7 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your new QHAG aloud from the board before you move on.",
-        "body": [
-          "Every number and priority has one owner with capacity.",
-          "Each priority advances a 1HAG priority, with success measured by a critical number, preferably.",
-          "Each priority is done by quarter end, with a target and an achieved-by date.",
-          "Each priority moves its number enough, and soon enough to see.",
-          "The targets are big enough to stay on track for the 1HAG.",
-          "The months build to the quarter. Revenue and widgets you count add up. Cash and head count match month 3.",
-          "Head count is set."
-        ],
-        "notes": [
-          "Read the QHAG aloud, top to bottom, then run the seven checks.",
-          "Revenue and the widgets you count add up across the months. Cash and head count are balances: the quarter ends at month 3’s number. Margin is for the whole quarter: the quarter’s profit over the quarter’s revenue.",
-          "Anything that fails goes on the homework list with an owner."
-        ],
-        "artwork": {
-          "src": "assets/hag-ladder-checked-qhag.svg",
-          "alt": "The planning cascade with the 3HAG, 1HAG and QHAG checked. Individual priorities are still to come."
-        }
+        "support": "Read your new QHAG aloud from the board before you move on."
       }
     },
     {
@@ -1015,11 +651,6 @@
           "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",
           "Lanes show the work. They are not the measure of success. That stays on the QHAG.",
           "The weekly leadership meeting reviews sprint lane status."
-        ],
-        "body": [
-          "You have the people to do it.",
-          "You have the cash to do it.",
-          "The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13."
         ]
       }
     },
@@ -1116,11 +747,7 @@
       "override": {
         "notes": [
           "Close the session. Trace this quarter’s priorities back to the differentiators. Confirm when the next daily huddle is. Then invite everyone to answer."
-        ],
-        "artwork": {
-          "src": "assets/one-phrase-close.jpg",
-          "alt": "Four team members stand together talking, each with a speech bubble. One bubble is green."
-        }
+        ]
       }
     },
     {
