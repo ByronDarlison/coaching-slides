@@ -251,20 +251,7 @@
     {
       "id": "kickoff:q3-values",
       "slides": [
-        "scenario"
-      ],
-      "override": {
-        "notes": [
-          "This is the Mission to Mars exercise. It discovers the values the company already lives.",
-          "It is for a team with no agreed Core Values, or one whose values failed the test. A team whose values passed the test skips it.",
-          "At Q2, teach the exercise. The leadership team then runs it with the whole company before the next session.",
-          "In a small company, the leadership team is most or all of the company. That team runs it together in the room at the next session."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q3-values",
-      "slides": [
+        "scenario",
         "steps"
       ]
     },
@@ -467,7 +454,7 @@
           {
             "role": "01",
             "heading": "A widget forecast, week by week",
-            "support": "The weekly forecast adds up to the quarter’s widget targets.",
+            "support": "The 13 weeks build to the quarter’s widget targets.",
             "mark": "action"
           },
           {
@@ -488,7 +475,33 @@
         ]
       }
     },
-    "kickoff:q2-sprint",
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "example"
+      ]
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "weekly-number"
+      ],
+      "override": {
+        "title": "Turn each month’s number into weekly numbers.",
+        "headline": "Turn each month’s number into weekly numbers."
+      }
+    },
+    {
+      "id": "kickoff:q2-sprint",
+      "slides": [
+        "widgets",
+        "lanes",
+        "lane-one",
+        "rocks",
+        "build",
+        "check"
+      ]
+    },
     {
       "id": "kickoff:q2-path",
       "slides": [
@@ -511,7 +524,7 @@
           {
             "role": "Commitment",
             "heading": "Up to 5 work priorities",
-            "support": "Two delivered beat five started. A company priority you own goes first. Test each with the six questions.",
+            "support": "Two delivered beat five started. A company priority you own goes first and wins if time runs short. Test each with the six questions. Add a done-by date and a measure of success.",
             "mark": "action"
           },
           {
@@ -595,7 +608,7 @@
           "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
           "Five meetings make the rhythm: the three here, the Monthly Town Hall and Quarterly Planning. The team is in Quarterly Planning now.",
           "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",
-          "Weekly 1:1: good news, metrics, the top 3 priorities for the week, feedback both ways, then dynamic. Dynamic is stucks, important information and things that cannot wait. The direct report leads it.",
+          "Weekly 1:1: good news, metrics and the top 3 priorities for the week. Then feedback both ways and the dynamic part. The dynamic part is stucks, important information and things that cannot wait. The direct report leads it.",
           "Weekly leadership meeting: good news, values recognition, the widget scoreboard and QHAG status. Then priority and sprint lane status. Finish with stucks, asks and offers.",
           "Stucks: what is blocked. Asks: help I need. Offers: help I can give.",
           "New today: sprint lane status joins the weekly leadership meeting.",
@@ -613,9 +626,7 @@
     {
       "id": "kickoff:cascade-messages",
       "override": {
-        "support": "Write them together now. Each leader shares them with their team tomorrow.",
-        "title": "What 3 messages will you share with the whole company?",
-        "headline": "What 3 messages will you share with the whole company?"
+        "support": "Write them together now. Each leader shares them with their team tomorrow."
       }
     },
     "kickoff:q2-close",
