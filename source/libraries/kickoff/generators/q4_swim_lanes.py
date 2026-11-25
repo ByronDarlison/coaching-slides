@@ -9,13 +9,13 @@ HAG = {12: "3HAG", 8: "2HAG", 4: "1HAG"}
 # lane, name as wrapped in the wide and the narrow name column, outcomes by quarter, milestones by quarter.
 # Each milestone says what is true by that quarter, not the activity (Byron, 26-Sep-2026); wording from the Q4 brief.
 LANES = [("Live in a Day", ["Live in a Day"], ["Live in", "a Day"],
-          {12: "Setup needs no help from us", 8: "Every new customer active in 1 day", 4: "Most new customers active in 1 day"},
+          {12: "Every new customer can activate in 1 day without our help", 8: "Every new customer active in 1 day", 4: "Most new customers active in 1 day"},
           {2: ["Guided", "setup", "replaces", "the call"], 6: ["Data", "import is", "automatic"], 10: ["Setup", "checks", "itself"]}),
          ("One Flat Price", ["One Flat Price"], ["One Flat", "Price"],
-          {12: "No customer is surprised by an invoice", 8: "Every customer on the flat plan", 4: "One published plan for new customers"},
+          {12: "Customers can predict each invoice from the flat monthly price", 8: "Every customer on the flat plan", 4: "One published plan for new customers"},
           {1: ["Add-ons", "closed", "to new", "customers"], 5: ["Old plans", "moved", "over"], 9: ["Annual", "prepay", "offered"]}),
          ("A Named Person for 90 Days", ["A Named Person", "for 90 Days"], ["A Named", "Person", "for 90", "Days"],
-          {12: "Customers name their contact when they recommend us", 8: "Contacts answer in one business day", 4: "Every new customer has a named contact"},
+          {12: "Every new customer can name and reach their contact for 90 days", 8: "Contacts answer in one business day", 4: "Every new customer has a named contact"},
           {3: ["Contact", "assigned", "at sign-up"], 7: ["Week-one", "call is", "standard"], 11: ["Contact", "team", "sized to", "demand"]}),
          ("Standard, Not Custom", ["Standard,", "Not Custom"], ["Standard,", "Not", "Custom"],
           {12: "One product, one setup, for everyone", 8: "Existing custom work retired", 4: "No new custom work sold"},

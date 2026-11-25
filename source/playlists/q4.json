@@ -596,7 +596,7 @@
           "At the annual, start with last quarter’s open priorities and the new 1HAG priorities. Add the lever the team picked and the first quarter of each swim lane.",
           "Done is not the same as success. Each priority has a done-by date for the work and an achieved-by date for the result.",
           "Run the six questions on each candidate. Hover over “six questions” to show them.",
-          "The team ranks the survivors together. Pick the #1 priority first. Give it one owner."
+          "The team ranks the survivors together. Pick the #1 priority first. Name one accountable leader. If only the CEO can own it, name the leadership gap first."
         ],
         "support": "What must you get done now to deliver the 1HAG?",
         "body": [
@@ -625,7 +625,21 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your new QHAG aloud from the board before you move on."
+        "support": "Read your new QHAG aloud from the board before you move on.",
+        "body": [
+          "Every number and priority has one owner with capacity.",
+          "Each priority advances a 1HAG priority, with success measured by a critical number, preferably.",
+          "Each priority is done by quarter end, with a target and an achieved-by date.",
+          "Each priority moves its number enough, and soon enough to see.",
+          "The targets are big enough to stay on track for the 1HAG.",
+          "The months build to the quarter. Revenue and widgets you count add up. Cash and head count match month 3.",
+          "Head count is set."
+        ],
+        "notes": [
+          "Read the QHAG aloud, top to bottom, then run the seven checks.",
+          "Revenue and the widgets you count add up across the months. Cash and head count are balances: the quarter ends at month 3’s number. Margin is for the whole quarter: the quarter’s profit over the quarter’s revenue.",
+          "Anything that fails goes on the homework list with an owner."
+        ]
       }
     },
     {
@@ -645,7 +659,7 @@
           "Building the plan together develops the team as much as the plan.",
           "Allow about 45 minutes.",
           "Homework: add each lane’s steps as sub-priorities under its company priority in Metronome.",
-          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The weekly numbers add up to the quarter’s targets.",
+          "Widgets: a weekly number shows a miss while there is time to act. Ask each owner: can you reach this week’s number? The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13.",
           "Lanes: the team sees each week how the priority gets done. Lanes belong to company priorities, never to a function. Each lane keeps its priority’s owner.",
           "Steps: a step can be a decision made, a test run, a result verified or a checkpoint. It only has to be real and checkable. A live priority that cannot name its weekly work is too vague, or too small for a lane."
         ],
@@ -662,6 +676,11 @@
           "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",
           "Lanes show the work. They are not the measure of success. That stays on the QHAG.",
           "The weekly leadership meeting reviews sprint lane status."
+        ],
+        "body": [
+          "You have the people to do it.",
+          "You have the cash to do it.",
+          "The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13."
         ]
       }
     },
