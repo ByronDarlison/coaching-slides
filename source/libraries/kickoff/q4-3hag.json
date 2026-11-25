@@ -12,7 +12,7 @@
       "support": "Set the end date to your new Year 3 fiscal year-end. Then answer three questions again: the numbers, the statement and what you want to be known for.",
       "body": [
         "Keep last year’s numbers, statement and “known for” out of sight until you reveal your answers.",
-        "Each leader answers alone. Reveal, then agree.",
+        "Each leader answers alone. Show your answers, then agree.",
         "Start from what the year taught you. You review its numbers tomorrow."
       ],
       "notes": [
@@ -35,7 +35,7 @@
     {
       "id": "numbers",
       "title": "What are your new 3‑year targets?",
-      "support": "Each leader writes the numbers alone. Reveal, then agree.",
+      "support": "Each leader writes the numbers alone. Show your answers, then agree.",
       "art_side": true,
       "art_small": true,
       "artwork": {
@@ -98,7 +98,7 @@
         "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Known for is highlighted."
       },
       "body": [
-        "Each leader writes it alone. Reveal, then agree."
+        "Each leader writes it alone. Show your answers, then agree."
       ],
       "notes": [
         "Use the customer’s words, not a claim about yourselves. What would they tell a friend when they recommend you?"
