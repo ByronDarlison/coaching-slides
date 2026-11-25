@@ -614,6 +614,21 @@ def _story(**extra: object) -> dict:
     return {"id": "s", "layout": "comp-story", "title": "T", "headline": "Headline", **extra}
 
 
+def test_side_picture_panel_carries_its_picture_shape() -> None:
+    html = compile_deck.render_slide(_story(art_side=True, support="Ask.", artwork=dict(ART), _art_ratio=1.5), 1)
+    assert 'class="story-panel story-panel--art" style="--par:1.5"' in html
+    plain = compile_deck.render_slide(_story(art_side=True, support="Ask.", artwork=dict(ART)), 1)
+    assert "--par" not in plain
+
+
+def test_image_ratio_reads_a_jpeg(tmp_path: Path) -> None:
+    # SOI, then a baseline frame header: 8-bit, 300 tall, 600 wide.
+    data = b"\xff\xd8" + b"\xff\xe0\x00\x04\x00\x00" + b"\xff\xc0\x00\x0b\x08" + (300).to_bytes(2, "big") + (600).to_bytes(2, "big") + b"\x01\x01\x11\x00"
+    picture = tmp_path / "p.jpg"
+    picture.write_bytes(data)
+    assert compile_deck.image_ratio(picture) == 2.0
+
+
 def test_side_picture_width_flags_set_their_own_classes() -> None:
     plain = compile_deck.render_slide(_story(art_side=True, support="Ask.", artwork=dict(ART)), 1)
     large = compile_deck.render_slide(_story(art_side=True, art_large=True, support="Ask.", artwork=dict(ART)), 1)
