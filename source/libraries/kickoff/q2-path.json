@@ -198,7 +198,9 @@
         "q2"
       ],
       "notes": [
-        "New today: each company priority gets a sprint lane, and each company widget gets a weekly forecast."
+        "New today: each company priority gets a sprint lane, and each company widget gets a weekly forecast.",
+        "The sprint lanes are the weekly steps that deliver the QHAG. Every week traces back to the BHAG.",
+        "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle."
       ],
       "art_full": true,
       "art_fit": true,

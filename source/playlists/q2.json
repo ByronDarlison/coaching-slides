@@ -526,21 +526,6 @@
     {
       "id": "eoa:meeting-6",
       "slides": [
-        "at-sprint"
-      ],
-      "override": {
-        "body": [
-          "Plan each company priority week by week, with a weekly widget forecast."
-        ],
-        "notes": [
-          "New today. The sprint lanes are the weekly level of the plan: every week traces back to the BHAG.",
-          "Every team starts sprint lanes at Q2. Do not wait a quarter for the individual priorities to settle."
-        ]
-      }
-    },
-    {
-      "id": "eoa:meeting-6",
-      "slides": [
         "sprint-lanes"
       ],
       "override": {
