@@ -52,8 +52,9 @@
     "apply",
     "strategy",
     "read-back",
-    "plan",
+    "annual",
     "1hag-check",
+    "plan",
     "definition",
     "map",
     "quarter-numbers",
@@ -331,8 +332,8 @@
     },
     {
       "number": 50,
-      "name": "q1-path-plan",
-      "reference": "kickoff:q1-path#plan"
+      "name": "q1-path-annual",
+      "reference": "kickoff:q1-path#annual"
     },
     {
       "number": 51,
@@ -341,141 +342,146 @@
     },
     {
       "number": 52,
+      "name": "q1-path-plan",
+      "reference": "kickoff:q1-path#plan"
+    },
+    {
+      "number": 53,
       "name": "quarterly-definition",
       "reference": "kickoff:quarterly#definition"
     },
     {
-      "number": 53,
+      "number": 54,
       "name": "quarterly-map",
       "reference": "kickoff:quarterly#map"
     },
     {
-      "number": 54,
+      "number": 55,
       "name": "quarterly-quarter-numbers",
       "reference": "kickoff:quarterly#quarter-numbers"
     },
     {
-      "number": 55,
+      "number": 56,
       "name": "priorities-quality",
       "reference": "kickoff:priorities#quality"
     },
     {
-      "number": 56,
+      "number": 57,
       "name": "priorities-worked-priority",
       "reference": "kickoff:priorities#worked-priority"
     },
     {
-      "number": 57,
+      "number": 58,
       "name": "quarterly-quarter-first",
       "reference": "kickoff:quarterly#quarter-first"
     },
     {
-      "number": 58,
+      "number": 59,
       "name": "quarterly-quarter-rest",
       "reference": "kickoff:quarterly#quarter-rest"
     },
     {
-      "number": 59,
+      "number": 60,
       "name": "quarterly-qhag-check",
       "reference": "kickoff:quarterly#qhag-check"
     },
     {
-      "number": 60,
+      "number": 61,
       "name": "individual-definition",
       "reference": "kickoff:individual#definition"
     },
     {
-      "number": 61,
+      "number": 62,
       "name": "individual-my-priorities",
       "reference": "kickoff:individual#my-priorities"
     },
     {
-      "number": 62,
+      "number": 63,
       "name": "individual-read-back",
       "reference": "kickoff:individual#read-back"
     },
     {
-      "number": 63,
+      "number": 64,
       "name": "individual-plan-check",
       "reference": "kickoff:individual#plan-check"
     },
     {
-      "number": 64,
+      "number": 65,
       "name": "q1-path-cash",
       "reference": "kickoff:q1-path#cash"
     },
     {
-      "number": 65,
+      "number": 66,
       "name": "q1-cash-objective",
       "reference": "kickoff:q1-cash#objective"
     },
     {
-      "number": 66,
+      "number": 67,
       "name": "q1-cash-why",
       "reference": "kickoff:q1-cash#why"
     },
     {
-      "number": 67,
+      "number": 68,
       "name": "q1-cash-chain",
       "reference": "kickoff:q1-cash#chain"
     },
     {
-      "number": 68,
+      "number": 69,
       "name": "q1-cash-owners",
       "reference": "kickoff:q1-cash#owners"
     },
     {
-      "number": 69,
+      "number": 70,
       "name": "q1-cash-columns",
       "reference": "kickoff:q1-cash#columns"
     },
     {
-      "number": 70,
+      "number": 71,
       "name": "q1-cash-miss",
       "reference": "kickoff:q1-cash#miss"
     },
     {
-      "number": 71,
+      "number": 72,
       "name": "q1-cash-act",
       "reference": "kickoff:q1-cash#act"
     },
     {
-      "number": 72,
+      "number": 73,
       "name": "q1-cash-build",
       "reference": "kickoff:q1-cash#build"
     },
     {
-      "number": 73,
+      "number": 74,
       "name": "q1-cash-examples",
       "reference": "kickoff:q1-cash#examples"
     },
     {
-      "number": 74,
+      "number": 75,
       "name": "rhythm-teaching-daily-weekly",
       "reference": "kickoff:rhythm-teaching#daily-weekly"
     },
     {
-      "number": 75,
+      "number": 76,
       "name": "cascade-messages-three-messages",
       "reference": "kickoff:cascade-messages#three-messages"
     },
     {
-      "number": 76,
+      "number": 77,
       "name": "q1-close-homework",
       "reference": "kickoff:q1-close#homework"
     },
     {
-      "number": 77,
+      "number": 78,
       "name": "q1-close-outcomes-check",
       "reference": "kickoff:q1-close#outcomes-check"
     },
     {
-      "number": 78,
+      "number": 79,
       "name": "closing-one-phrase",
       "reference": "kickoff:closing#one-phrase"
     },
     {
-      "number": 79,
+      "number": 80,
       "name": "closing-deck-link",
       "reference": "kickoff:closing#deck-link"
     }
@@ -532,10 +538,10 @@
     },
     {
       "reference": "kickoff:q1-path#status",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "2af0691c265f0b1e9694058febff61352dd05083df6d6ebacc1b1b17306ff4fd"
+      "artwork_sha256": "dede40ae142647d0903f4ff34ef49eb3ee174f09617587e37260e392c2b8eff6"
     },
     {
       "reference": "kickoff:quarterly-status#review",
@@ -546,10 +552,10 @@
     },
     {
       "reference": "kickoff:q1-path#functions",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "a1a7d04e913de514c0460effa9f7a95fb5e9fc3d469cddcd79454efacb616801"
+      "artwork_sha256": "3cb07cc2dcbb76d256c671539c119786ae5ea19b9c49c22f043da5f8a37aa27b"
     },
     {
       "reference": "kickoff:function-chart#ownership",
@@ -588,10 +594,10 @@
     },
     {
       "reference": "kickoff:q1-path#scorecards",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "0ffd1bf6c70d671c6a0a0b0aebe366e49ec0d2b5d6bcddb81c9dc25acfcda469"
+      "artwork_sha256": "95668a6f9edd8f4b003f306af562e68b6235f69aca4c7f0678e45eea3bba32c6"
     },
     {
       "reference": "kickoff:q1-functions#scorecard-intro",
@@ -609,10 +615,10 @@
     },
     {
       "reference": "kickoff:q1-path#kffm",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "7269c9f100156bd6e596335bb7c7fb975baa605d1580472d7a4d05e55be8b63e"
+      "artwork_sha256": "7bead860b42b72c743ec4a5d651be364920b0cb0edf7e8269c27dfc8c218bea7"
     },
     {
       "reference": "kickoff:kffm#example-map",
@@ -693,10 +699,10 @@
     },
     {
       "reference": "kickoff:q1-path#culture",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "1601ed2b26df83de7b8174fd5efa5dff93969edcdb7a49b0d6721457862d709f"
+      "artwork_sha256": "072beb2d65e3fd28a3ff6a21eeeba289c119cdac04e996b2629260341796086f"
     },
     {
       "reference": "kickoff:quarterly-review#purpose",
@@ -721,10 +727,10 @@
     },
     {
       "reference": "kickoff:q1-path#market-map",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "af723d410a968041ed34e57de9ed2a9e271bbd3618788b2b0206bac1f218d35a"
+      "artwork_sha256": "b582b46df7c987a1c81514dff4f72dbb6c22bd7e46733eb5fa7fe236b606fe7a"
     },
     {
       "reference": "kickoff:q1-market-map#objective",
@@ -812,31 +818,38 @@
     },
     {
       "reference": "kickoff:q1-path#strategy",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "707d8818e2bc8185538af92fed4af8d01bb1e12a4f0917ba1cd9d73d707aa1e6"
+      "artwork_sha256": "e63c44c02b6302fb01ed1bc099dd04625989e9814c324e7a6fa5dbe1c8272b97"
     },
     {
       "reference": "kickoff:three-year#read-back",
       "sha256": "121894ea16be50f09daa800e8e124191b91b107366ea631b2345294e4dd684da",
       "artifact": "three-year",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "a53ad6cf775010e326b9d599177eca003ce364ccbd7d7d9165e74eede7bea10b"
+      "artwork_sha256": null
     },
     {
-      "reference": "kickoff:q1-path#plan",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "reference": "kickoff:q1-path#annual",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "fcfac45e690d5a6241deb1908f6e0f7a3625b1c3f5f48602a04546a904d99736"
+      "artwork_sha256": "d16844997664c89e572ff8026a1dbbcadad86c6032e2a99a46999422390fa4e3"
     },
     {
       "reference": "kickoff:annual#1hag-check",
       "sha256": "a65399162d73a2309057c6aadd0f59d307f8ffb00fc1d24fdcf62da308bcb21c",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "dab56d70bb3b10a541a3a5a94a6c0ae57ac96f2c088bee886b4a01d5144f231e"
+      "artwork_sha256": null
+    },
+    {
+      "reference": "kickoff:q1-path#plan",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "artifact": "q1-path",
+      "seed": "Byron's Q1 day structure, 16-Nov-2026.",
+      "artwork_sha256": "518c8807fbd810a466b1a03d1e783f67da9a155936236adae0f551eef9dbf405"
     },
     {
       "reference": "kickoff:quarterly#definition",
@@ -892,7 +905,7 @@
       "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
-      "artwork_sha256": "f476ab36869dc2e6a82634e245dbaa3fd833d589ed1ec0f8f67ecfe479485bff"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:individual#definition",
@@ -920,14 +933,14 @@
       "sha256": "56578485b6748721f3ed8148abcc3190d7f3cf76c38eeefb3a5f1cd66dace258",
       "artifact": "individual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
-      "artwork_sha256": "7642da4e2d780659aa171b7d58d151997dddd071d157fbd3657ca321e2976d3f"
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q1-path#cash",
-      "sha256": "ed80d758e0009e710000f310e0a05013e492e9868ac43858f0025f7f4b2a8ef6",
+      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
-      "artwork_sha256": "5463a982afb83b7c6be805ee0d69a04df028291226a37dbb04e4eed7ffb07f38"
+      "artwork_sha256": "c4bb75456a308f10cf752c3b702e43a4df0a6e86a8d92fcdb303abfc988a8812"
     },
     {
       "reference": "kickoff:q1-cash#objective",
