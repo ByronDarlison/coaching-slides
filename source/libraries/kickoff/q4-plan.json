@@ -21,7 +21,7 @@
         "The numbers come from the forecast the team just agreed. Confirm them. Do not rebuild them.",
         "Put last year’s 1HAG, with its results, beside the new one.",
         "Each number gets one owner.",
-        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets the team set yesterday."
+        "The 1HAG is the first year of the new 3HAG. Check each number against the 3-year targets in the new 3HAG."
       ],
       "headline": "What are your annual targets?",
       "layout": "comp-story",
@@ -35,17 +35,16 @@
     {
       "id": "annual-first",
       "title": "What must you build this year?",
-      "support": "Start from your differentiators and the first 4 quarters of your swim lanes.",
+      "support": "Look at everything: your swim lanes, your KFFM and its six levers, and what is going on around you.",
       "body": [
-        "For each differentiator: what must this year deliver to build it?",
-        "Add a priority that moves a KFFM lever if cash needs it.",
         "Each leader writes candidates alone. Then share. List every candidate.",
         "Test each with the six questions. Then pick ideally 3, up to 5.",
         "Give each an owner, a done-by date, a measure of success and an achieved-by date."
       ],
       "notes": [
-        "At the Kick Off the team started from its key capabilities. The differentiators have taken their place.",
-        "The big moves in the first 4 quarters of the swim lanes are the natural candidates. Add anything burning on the KFFM.",
+        "The team looks at everything before it decides. That means the swim lanes, the KFFM and its six levers, and what is going on around the company.",
+        "The swim lanes are one of the things the team looks at. They do not set the priorities.",
+        "Keep this simple. The team decides what matters most this year.",
         "List every candidate before choosing. Do not filter yet. The six questions pick the few that contribute most.",
         "Once chosen, each priority gets one owner, a done-by date and a measure of success with an achieved-by date.",
         "Name one accountable leader. If only the CEO can own it, name the leadership gap first."
@@ -94,7 +93,7 @@
         "What to change? Rate it 0 to 2."
       ],
       "notes": [
-        "The CEO’s weekly email was set to start at Q3. Check whether it is going out.",
+        "Q3 introduced the CEO’s weekly email. Check whether it is going out.",
         "Rate it the same way as the meetings: 0 below, 1 meets, 2 exceeds expectations.",
         "Team members send their status to the CEO by Thursday noon."
       ],
