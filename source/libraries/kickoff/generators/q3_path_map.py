@@ -20,7 +20,7 @@ def pos(i):
 def draw(current):
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{STYLE}',
            f'<rect width="{W}" height="{H}" fill="white"/>',
-           '<text x="40" y="52" font-size="28" font-weight="700" fill="#9aa3ab" text-anchor="start" letter-spacing="2">Q3</text>']
+           '<text x="40" y="52" font-size="28" font-weight="700" fill="#6b7780" text-anchor="start" letter-spacing="2">Q3</text>']
     for i, (_, label) in enumerate(STAGES):
         x, y = pos(i); cx, cy = x + BW / 2, y + BH / 2
         done, now = i < current, i == current

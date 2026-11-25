@@ -57,7 +57,7 @@ A populated title requires artwork.
 
 ### Drawing slides, hotspots, links and hover terms
 
-A `comp-story` slide with artwork shows its title and picture. `art_side: true` puts the title, `support` and `body` beside the picture. `art_full: true` gives the picture the full width, and `art_fit: true` lets a short wide drawing set its own height.
+A `comp-story` slide with artwork shows its title and picture. `art_side: true` puts the title, `support` and `body` beside the picture. The copy takes about 45% of the width. Add `art_large: true` when the picture is a drawing the room must read (a plan page, a chart): it keeps the wide picture column. Add `art_small: true` for a names-only focus picture: it takes about 45%. `art_full: true` gives the picture the full width, and `art_fit: true` lets a short wide drawing set its own height.
 
 **Instruction line.** An `art_full` slide shows `support` as one line under the title, above the drawing. It cannot show `body`. Text a drawing slide cannot show prints a `WARNING` naming the slide. Pass `--fail-on-dropped-text` to make it stop the build. Stopping is the intended default; it is a switch for now only because published slides still carry such text.
 

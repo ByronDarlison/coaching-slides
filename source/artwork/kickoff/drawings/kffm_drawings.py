@@ -56,7 +56,8 @@ ys=y2+H_+40
 o.append(f'<line x1="20" y1="{ys}" x2="1420" y2="{ys}" stroke="{MUTE}" stroke-width="2" stroke-dasharray="8 8"/>')
 t(20,ys+36,'Supporting functions',20,700,MUTE,'start')
 for i,(n,k,cn) in enumerate([('Development','y','Releases on time'),('IT','g','System uptime'),('People','r','Days to fill a role')]):
-    c,f=ST[k]; x=20+i*230; n0=len(o); o.append(f'<rect x="{x}" y="{ys+56}" width="210" height="96" rx="10" fill="{f}" stroke="{c}" stroke-width="3"/>'); t(x+105,ys+96,n,22,700,B); t(x+105,ys+128,'('+cn+')',18,700,INK); BX.extend(o[n0:])
+    # 222 wide (was 210): room for the critical number at the levers drawing's larger type (rule 32).
+    c,f=ST[k]; x=20+i*236; n0=len(o); o.append(f'<rect x="{x}" y="{ys+56}" width="222" height="96" rx="10" fill="{f}" stroke="{c}" stroke-width="3"/>'); t(x+111,ys+96,n,22,700,B); t(x+111,ys+128,'('+cn+')',18,700,INK); BX.extend(o[n0:])
 for i,(k,l) in enumerate([('g','On track'),('y','At risk'),('r','Needs attention')]):
     c,f=ST[k]; yy=ys+46+i*30; o.append(f'<rect x="820" y="{yy}" width="24" height="24" rx="4" fill="{f}" stroke="{c}" stroke-width="2"/>'); t(858,yy+19,l,20,600,INK,'start')
 t(832,ys+46+3*30+19,'( )',20,700,INK); t(858,ys+46+3*30+19,'Critical number',20,600,INK,'start')
@@ -163,25 +164,31 @@ def lw(k):
     x,y,w,h,ls,lx,ly,an=WL[k]; return AR[k]+lab(ls,lx,ly,an)
 open(A+'kffm-ai.svg','w').write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{style}<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="{B}"/></marker></defs><rect width="{W}" height="{H}" fill="white"/>'+''.join(o)+dim+lw(2)+lw(3)+''.join(BXG[2])+ai+'</svg>')
 
-# ---- six levers (slide 22): the example plus the lever cards ----
+# ---- six levers: the example plus the lever cards ----
+# The example fills the left of a 2428-wide page at 1898 wide (scale 1.318), so it
+# reads when projected. The six cards stack on the right, a heading and two lines each.
 ex=open(A+'kffm-example.svg').read()
 style=re.search(r'<style>.*?</style>',ex).group(0)
-EH=int(re.search(r'viewBox="0 0 1440 (\d+)"',ex).group(1)); MH=round(EH*1460/1440); MY=round((96+896)/2-MH/2)
+EH=int(re.search(r'viewBox="0 0 1440 (\d+)"',ex).group(1))
 inner=re.sub(r'^<svg[^>]*>','',ex); inner=inner[:inner.rfind('</svg>')]
 inner=inner.replace(style,'').replace('id="a"','id="am"').replace('url(#a)','url(#am)')
-B='#326ab6';INK='#20282f';MUTE='#5b6670';G='#318549'
-L=[('Quantity','More in','More widgets into the first function.'),('Conversion','More through','More widgets pass each hand-off.'),('Price','More per sale','Raise the price customers pay.'),('Timing','Faster','Fewer days from first widget to cash.'),('Capacity','More per month','Each function handles more widgets a month.'),('Cost','Less out','Lower what each function costs to run.')]
+# Type inside the embedded example. It is drawn smaller here than on its own slide,
+# so its smallest labels are raised to LEVER_MIN. At 1280 by 720 with the sidebar
+# hidden, 22 renders at 13.1 pixels: the 13-pixel floor (visual standard, rule 32).
+LEVER_MIN='22'
+inner=re.sub(r'font-size="(17|18|19|20|21)"',f'font-size="{LEVER_MIN}"',inner)
+B='#326ab6';INK='#20282f';G='#318549'
+L=[('Quantity','more in','More widgets into','the first function.'),('Conversion','more through','More widgets pass','each hand-off.'),('Price','more per sale','Raise the price','customers pay.'),('Timing','faster','Fewer days from first','widget to cash.'),('Capacity','more per month','Each function handles','more widgets a month.'),('Cost','less out','Lower what each','function costs to run.')]
 o=[]
-x0=1490
-for i,(r,h,s) in enumerate(L):
-    y=96+i*136
+W,H=2428,936; EW=round(1440*H/EH); x0=EW+20
+for i,(r,h,s1,s2) in enumerate(L):
+    y=4+i*156
     c=G if i==5 else B
-    o.append(f'<rect x="{x0}" y="{y}" width="680" height="124" rx="10" fill="#f6f4ef" stroke="#e1ded6"/><rect x="{x0}" y="{y}" width="8" height="124" rx="4" fill="{c}"/>')
-    o.append(f'<text x="{x0+30}" y="{y+29}" font-size="21" font-weight="700" fill="{MUTE}" letter-spacing="1">{r.upper()}</text>')
-    o.append(f'<text x="{x0+30}" y="{y+78}" font-size="42" font-weight="700" fill="{INK}">{h}</text>')
-    o.append(f'<text x="{x0+30}" y="{y+112}" font-size="29" font-weight="500" fill="{INK}">{s}</text>')
-W,H=2200,936
-svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{style}<rect width="{W}" height="{H}" fill="white"/><g><svg x="0" y="{MY}" width="1460" height="{MH}" viewBox="0 0 1440 {EH}">{inner}</svg></g>'+''.join(o)+'</svg>'
+    o.append(f'<rect x="{x0}" y="{y}" width="500" height="148" rx="10" fill="#f6f4ef" stroke="#e1ded6"/><rect x="{x0}" y="{y}" width="8" height="148" rx="4" fill="{c}"/>')
+    o.append(f'<text x="{x0+28}" y="{y+50}" font-size="31" font-weight="700" fill="{INK}">{r}: {h}</text>')
+    o.append(f'<text x="{x0+28}" y="{y+92}" font-size="30" font-weight="500" fill="{INK}">{s1}</text>')
+    o.append(f'<text x="{x0+28}" y="{y+128}" font-size="30" font-weight="500" fill="{INK}">{s2}</text>')
+svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">{style}<rect width="{W}" height="{H}" fill="white"/><g><svg x="0" y="0" width="{EW}" height="{H}" viewBox="0 0 1440 {EH}">{inner}</svg></g>'+''.join(o)+'</svg>'
 open(A+'kffm-levers.svg','w').write(svg)
 
 # ---- projector type (16-Nov-2026): raise the smallest type in every KFFM drawing ----

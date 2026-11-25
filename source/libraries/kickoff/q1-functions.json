@@ -19,11 +19,11 @@
       "notes": [
         "The Team View shows each function, the person who volunteered to own it, and their title. It is all in one view.",
         "When one person owns two functions, it shows in red: a load to watch. Planned functions show where people can grow.",
-        "Show it to the whole team at a town hall whenever it changes."
+        "Show it to the whole company at a Town Hall whenever it changes."
       ],
       "artwork": {
         "src": "assets/team-view-example.svg",
-        "alt": "The Team View for the example subscription company, matching the Function Chart’s agreed owners. Head of Company: Pat, CEO. Below: Marketing, Chris; Sales, Andrew; Operations, Jen; Development, Jen; Finance, Allison; People, Pat. Pat and Jen each own two functions, so their cards are red. A dashed, planned Customer Success function sits below Sales, for next year."
+        "alt": "The Team View for the example subscription company, matching the Function Chart’s agreed owners. Head of Company: Pat, CEO. Below: Marketing, Chris. Sales, Andrew. Operations, Jen. Development, Jen. Finance, Allison. People, Pat. Pat and Jen each own two functions, so their cards are red. A dashed, planned Customer Success function sits below Sales, for next year."
       },
       "art_full": true
     },
@@ -46,7 +46,7 @@
       "body": [
         "Every function on the chart is in the Team View, with its owner.",
         "Each owner names one critical number for the function: the one number that tells them whether they had a good day.",
-        "The number can be financial or not. Start with what your function hands to the next one."
+        "The number can be financial or not. A widget, what your function hands to the next one, is the better choice."
       ],
       "copy_stack": true
     },
@@ -62,7 +62,7 @@
       ],
       "artwork": {
         "src": "assets/scorecard-review.png",
-        "alt": "A team member and their team lead sit at a table with one scorecard between them, each speaking in turn."
+        "alt": "A team member and their team lead sit at a table with one scorecard between them. Each speaks in turn."
       },
       "art_side": true,
       "body": [
@@ -73,7 +73,7 @@
       ],
       "notes": [
         "The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
-        "A scorecard is not a job description or a list of priorities. It belongs to a function on the KFFM.",
+        "A scorecard is not a job description or a list of priorities. It belongs to a function on the Team View. Where that function is on the KFFM, the numbers agree.",
         "The review is a two-way conversation. The learning is where the two scores differ. At the end, the team member gives their leader feedback.",
         "First time, keep it to the team member and their team lead. Metronome runs the reviews."
       ]

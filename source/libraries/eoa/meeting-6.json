@@ -75,7 +75,8 @@
       },
       "notes": [
         "Where we are: the 3HAG. The next slide shows what it holds."
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "at-1hag",
@@ -95,7 +96,8 @@
       },
       "notes": [
         "Where we are: the 1HAG. Every number and priority comes from the 3HAG above it."
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "at-qhag",
@@ -115,7 +117,8 @@
       },
       "notes": [
         "Where we are: the QHAG. The sprint lanes come next."
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "at-sprint",
@@ -135,7 +138,8 @@
       },
       "notes": [
         "Where we are: the sprint lanes, the last level of the cascade. Every week traces back to the BHAG."
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "sprint-lanes",

@@ -29,9 +29,10 @@
       ],
       "artwork": {
         "src": "assets/cash-rolling.svg",
-        "alt": "A small copy of the cash chart: actual cash for January and February, then the approved and rolling forecasts to December."
+        "alt": "A small copy of the cash chart. It shows actual cash for January and February, then the approved and rolling forecasts to December."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "why",
@@ -52,7 +53,7 @@
         },
         {
           "role": "Financial statements",
-          "heading": "Two to ten weeks late",
+          "heading": "2 to 10 weeks late",
           "support": "They confirm what already happened, too late to change it. A miss could have a dozen causes.",
           "mark": "gap"
         },
@@ -88,7 +89,7 @@
       ],
       "artwork": {
         "src": "assets/kffm-forecast.svg",
-        "alt": "The KFFM example from the Kick Off, with the supporting functions dimmed. Subscription leads flow to Marketing, Chris, 14 days; Sales, Andrew, 21 days; Operations, Jen, 7 days; Finance, Allison, 30 days to collect; then Cash. The days and the time-to-cash sticky, 72 days, are highlighted. A callout reads: One month of widgets. 650 subscription leads in January become 65 new subscriptions, worth $16,250 a month, collected about 72 days later, in March."
+        "alt": "The KFFM example from the Kick Off, with the supporting functions dimmed. Subscription leads flow to Marketing, Chris, 14 days, then Sales, Andrew, 21 days. Next come Operations, Jen, 7 days, and Finance, Allison, 30 days to collect. Then Cash. The days and the time-to-cash sticky, 72 days, are highlighted. A callout reads: One month of widgets. 650 subscription leads in January become 65 new subscriptions, worth $16,250 a month. Collected about 72 days later, in March."
       },
       "art_full": true
     },
@@ -146,7 +147,7 @@
       ],
       "artwork": {
         "src": "assets/cash-rolling.svg",
-        "alt": "Cash in the bank by month for the subscription company, January to December, $0.8 to $1.6 million. January and February are closed and shown in green as Actual. The Approved plan, a dashed blue line, eases from $1.1 million in January to $1.0 million in March, then rises to $1.5 million in December. Rolling, in orange, is Actual to date plus forecasted Approved, finishing near $1.19 million in December."
+        "alt": "Cash in the bank by month for the subscription company, January to December, $0.8 to $1.6 million. January and February are closed and shown in green as Actual. The Approved plan is a dashed blue line. It eases from $1.1 million in January to $1.0 million in March, then rises to $1.5 million in December. Rolling, in orange, is Actual to date plus forecasted Approved, finishing near $1.19 million in December."
       },
       "art_full": true
     },
@@ -236,7 +237,7 @@
         {
           "role": "Same week",
           "heading": "Corrected",
-          "support": "Andrew fixes the cause: demos within two days. The forecast stays as it is.",
+          "support": "Andrew fixes the cause: demos within 2 days. The forecast stays as it is.",
           "mark": "action"
         },
         {
@@ -292,7 +293,7 @@
       "arrows": false,
       "notes": [
         "At the Kick Off, the finance leader added the primary widgets to this year’s forecast. Ask how that went.",
-        "If there is no budget model, use the 12-month template. Extend it to 36 months once the monthly review runs well.",
+        "If there is no budget model, use the 12-month template.",
         "Weekly targets come from the QHAG the team set today. The scoreboard shows them each week.",
         "Build the review into a monthly meeting you already hold. A meeting with discipline makes the forecast stick. A forecast cannot make a meeting stick.",
         "Homework: the finance leader builds the model with each leader’s assumptions."
@@ -310,11 +311,11 @@
       ],
       "notes": [
         "Scan to open each template’s Example tab. In Google Sheets, choose File, then Make a copy.",
-        "Finance builds this year’s forecast in the 12-month template. The 36-month template extends it to three years."
+        "Finance builds this year’s forecast in the 12-month template. The 36-month template is the 3-year view. The team builds it from the second annual."
       ],
       "artwork": {
         "src": "assets/cash-forecast-examples.svg",
-        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the three-year view: opens the Example tab of the 36-month template.",
+        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the 3-year view, from the second annual: opens the Example tab of the 36-month template.",
         "viewbox": [
           1440,
           640

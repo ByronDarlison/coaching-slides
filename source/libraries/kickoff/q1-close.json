@@ -43,7 +43,7 @@
         {
           "role": "Before Q2",
           "heading": "Prepare",
-          "support": "Read The Four Obsessions of an Extraordinary Executive. Do StrengthsFinder 2.0. Complete the prep survey.",
+          "support": "Read The Four Obsessions of an Extraordinary Executive and StrengthsFinder 2.0. Complete the assessment. Complete the prep survey and share it.",
           "mark": "structure"
         }
       ]
@@ -55,10 +55,10 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Read back the outcomes the team agreed at the start.",
+        "Read back the answers the team agreed on at the start.",
         "For each one, ask for a show of hands: met, partly met or still open.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
-        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+        "Still open is fine. Add each open answer to the homework with an owner and a date.",
+        "The sticky shows the coach’s answer for the session. Ask the team whether they achieved it, along with their own."
       ],
       "tags": [
         "q1"
@@ -66,9 +66,9 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/q1-sticky-purpose.svg",
-        "alt": "A sticky note with the coach’s outcome for the session: Functional clarity with team accountability."
+        "alt": "A sticky note with the coach’s answer for the session: Functional clarity with team accountability."
       },
-      "support": "For each outcome: met, partly met or still open?",
+      "support": "For each answer: met, partly met or still open?",
       "art_side": true
     }
   ]

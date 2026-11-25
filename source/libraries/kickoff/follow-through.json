@@ -13,7 +13,7 @@
       "layout": "comp-decision",
       "group": "",
       "notes": [
-        "Check that the financial and operating targets reconcile across the three-year, annual and quarterly plans.",
+        "Check that the financial and operating targets reconcile across the 3-year, annual and quarterly plans.",
         "Confirm every commitment and metric has an owner. Everything is on the board. Entering it in Metronome is homework.",
         "Record the widget-based company metric and its definition. Keep the scoreboard accessible to the team."
       ],
@@ -37,7 +37,7 @@
         {
           "role": "Plan",
           "heading": "3HAG, 1HAG and QHAG",
-          "support": "Targets with owners, 3HAG capabilities, and priorities with a done-by date and a measure of success.",
+          "support": "Targets with owners, 3HAG capabilities, and priorities with a done-by date, a measure of success and an achieved-by date.",
           "mark": "structure"
         },
         {
@@ -57,10 +57,10 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Read back the outcomes the team agreed at the start.",
+        "Read back the answers the team agreed on at the start.",
         "For each one, ask for a show of hands: met, partly met or still open.",
-        "Still open is fine. Add each open outcome to the homework with an owner and a date.",
-        "The sticky shows the coach’s outcome for the session. Ask the team whether it was met, along with their own."
+        "Still open is fine. Add each open answer to the homework with an owner and a date.",
+        "The sticky shows the coach’s answer for the session. Ask the team whether they achieved it, along with their own."
       ],
       "tags": [
         "kickoff",
@@ -69,9 +69,9 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/two-days-sticky-purpose.svg",
-        "alt": "A sticky note with the coach’s outcome for the session: Team clarity and commitment."
+        "alt": "A sticky note with the coach’s answer for the session: Team clarity and commitment."
       },
-      "support": "For each outcome: met, partly met or still open?",
+      "support": "For each answer: met, partly met or still open?",
       "art_side": true
     },
     {
@@ -81,10 +81,10 @@
       "layout": "comp-decision",
       "group": "",
       "notes": [
-        "Circle’s Kick Off guidance also assigns CEO/coach preparation: team assessment, Head of Company scorecard preparation and review before the next session. Confirm these privately with the CEO. Add any outcomes still open from the previous check, with owners.",
+        "The CEO and coach also prepare before the next session. It covers the team assessment and the Head of Company scorecard preparation and review. Confirm these privately with the CEO. Add any answers still open from the previous check, with owners.",
         "Agree on an owner and completion date for each follow-through action. Confirm when the team will review completion.",
-        "In Metronome: Core Purpose, Core Values, BHAG, 3HAG, 1HAG, QHAG and individual priorities; each leader adds the priorities they own; the widget-based company metric, if defined; the Team View, built from the function chart.",
-        "Finance leader: add the primary widgets to this year’s forecast (Shannon’s Kick Off company homework).",
+        "In Metronome, enter the Core Purpose, Core Values, BHAG, 3HAG, 1HAG, QHAG and individual priorities. Each leader adds the priorities they own. Add the widget-based company metric, if defined. Enter the agreed functions and owners in Function Chart. Build the reporting relationships in Team View.",
+        "Finance leader: add the primary widgets to this year’s forecast.",
         "Give every item an owner and a date (What, Owner, By When), as on the board’s Homework area. Review completion at the next agreed meeting."
       ],
       "tags": [
@@ -95,7 +95,7 @@
         {
           "role": "Metronome",
           "heading": "Enter the plan",
-          "support": "The whole plan, each leader’s critical number and priorities, and the Team View from the function chart.",
+          "support": "The whole plan, and each leader’s critical number and priorities. Enter the agreed functions and owners in Function Chart. Build the reporting relationships in Team View.",
           "mark": "structure"
         },
         {
@@ -113,7 +113,7 @@
         {
           "role": "Before Q1",
           "heading": "Prepare",
-          "support": "Read The 3HAG Way. Complete the Q1 prep survey.",
+          "support": "Read The 3HAG Way. Complete the Q1 prep survey and share it.",
           "mark": "structure"
         }
       ],

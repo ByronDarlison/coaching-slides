@@ -22,6 +22,8 @@ Artwork may use blue `#326ab5` and green `#54b570` sparingly.
 Keep headline-to-content spacing about 24 to 37 pixels on desktop.
 On the desktop stage, centre the title and its content together as one block between the top of the slide and the footer, so a short slide does not leave the bottom half empty. Slides that fill the page do not move.
 Supporting text uses a shared scale across card layouts, reaching 24 pixels at presentation sizes.
+Type keeps its 1280 by 720 proportion up to 1920 by 1080 (25-Nov-2026). Card role labels never drop under 14 pixels.
+Beside a picture (`art_side`) the ask takes about 45% of the width at 20 pixels or more. A drawing the room must read sets `art_large` and keeps the wide picture column; a names-only focus picture sets `art_small`.
 Do not shrink dense-card text merely to preserve empty space.
 Reference tables that hold a whole framework on one slide may drop to 13 to 18 pixels, provided they still fit at 1280 by 720.
 

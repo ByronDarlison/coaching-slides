@@ -46,7 +46,7 @@ STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scor
 
 def path_svg(current):
     W, H = 1440, 300
-    o = [t(20, 56, "Q1", 26, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(20, 56, "Q1", 26, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap = 16
     x = 14.0
     for i, (key, label) in enumerate(STAGES):
@@ -78,6 +78,11 @@ for i, (key, _) in enumerate(STAGES):
 # Layout and colours follow the master board's Market Map area: Customers, then Channels
 # on the left (customers buy through channels), the company in the centre with
 # Associations above and Competitors below, Suppliers then Paid Partners on the right.
+# LABEL is the smallest type on the map. The example shows at 0.642 of its size on the
+# quarterly check slides (1280 by 720, sidebar hidden), so 21 renders at 13.5 pixels:
+# above the 13-pixel floor (visual standard, rule 32). Boxes are sized to hold their
+# names at that size with 12 units clear each side.
+LABEL = 21
 # Money is drawn as bands whose thickness is the share: green in, blue out. The bands from
 # customers to channels show the split (shares of all money in), each with its own label.
 W, H = 1440, 760
@@ -89,23 +94,23 @@ COLOURS = {  # board sticky colour, and a darker edge
     "suppliers": ("#8FE3D1", "#2F9C84"), "partners": ("#FFD8A8", "#D08A3C"), "competitors": ("#FF8A80", "#C94A40")}
 # key: (label, header x, header y, [(id, name, pct, x, y, w, h)], money side)
 GROUPS = {
-    "customers": ("Customers", 24, 136, [("small", "Small businesses", 55, 24, 150, 210, 116),
-                                         ("mid", "Mid-size companies", 35, 24, 282, 210, 104),
-                                         ("np", "Non-profits", 10, 24, 402, 210, 70),
-                                         ("schools", "Schools", 0, 24, 488, 210, 70)], "in"),
+    "customers": ("Customers", 24, 136, [("small", "Small businesses", 55, 24, 150, 228, 116),
+                                         ("mid", "Mid-size companies", 35, 24, 282, 228, 104),
+                                         ("np", "Non-profits", 10, 24, 402, 228, 70),
+                                         ("schools", "Schools", 0, 24, 488, 228, 70)], "in"),
     "channels": ("Channels", 384, 136, [("res", "Resellers", 30, 384, 150, 176, 96),
                                         ("web", "Direct: website", 70, 384, 262, 176, 170),
-                                        ("mkt", "App marketplaces", 0, 384, 452, 176, 70)], "in"),
-    "associations": ("Associations", 488, 36, [("ia", "Industry association", 0, 488, 50, 222, 68),
-                                               ("cc", "Chamber of commerce", 0, 730, 50, 222, 68)], None),
-    "suppliers": ("Suppliers", 926, 162, [("dev", "Contract developers", 45, 926, 176, 214, 100),
-                                          ("host", "Cloud hosting", 30, 926, 302, 214, 100),
-                                          ("pay", "Payment processor", 10, 926, 466, 214, 90)], "out"),
-    "partners": ("Paid Partners", 1190, 348, [("impl", "Implementation partner", 15, 1190, 362, 226, 152)], "out"),
-    "competitors": ("Competitors", 489, 606, [("ca", "Competitor A", 0, 489, 620, 146, 68),
-                                              ("cb", "Competitor B", 0, 647, 620, 146, 68),
-                                              ("cc2", "Competitor C", 0, 805, 620, 146, 68),
-                                              ("subs", "Substitutes", 0, 963, 620, 262, 68)], None),
+                                        ("mkt", "App marketplaces", 0, 364, 452, 216, 70)], "in"),
+    "associations": ("Associations", 470, 36, [("ia", "Industry association", 0, 470, 50, 232, 68),
+                                               ("cc", "Chamber of commerce", 0, 716, 50, 254, 68)], None),
+    "suppliers": ("Suppliers", 926, 162, [("dev", "Contract developers", 45, 926, 176, 230, 100),
+                                          ("host", "Cloud hosting", 30, 926, 302, 230, 100),
+                                          ("pay", "Payment processor", 10, 926, 466, 230, 90)], "out"),
+    "partners": ("Paid Partners", 1190, 348, [("impl", "Implementation|partner", 15, 1190, 362, 226, 152)], "out"),
+    "competitors": ("Competitors", 470, 606, [("ca", "Competitor A", 0, 470, 620, 160, 68),
+                                              ("cb", "Competitor B", 0, 642, 620, 160, 68),
+                                              ("cc2", "Competitor C", 0, 814, 620, 160, 68),
+                                              ("subs", "Substitutes", 0, 986, 620, 327, 68)], None),
 }
 # players on the field we don't reach yet: drawn dashed, with no share
 # (caption, keep the category fill): substitutes are competitors that are not companies
@@ -173,7 +178,7 @@ def split_label(f, at=.3):
     x = (1 - at) ** 3 * x0 + 3 * (1 - at) ** 2 * at * xm + 3 * (1 - at) * at * at * xm + at ** 3 * x1
     y = (t0 + b0) / 2 + ((t1 + b1) / 2 - (t0 + b0) / 2) * s
     return (f'<rect x="{x - 30}" y="{y - 15}" width="60" height="30" rx="15" fill="white" stroke="{G}" stroke-width="2.5"/>'
-            + t(x, y + 7, f"{f[2]}%", 19, 700, G))
+            + t(x, y + 7, f"{f[2]}%", LABEL, 700, G))
 
 
 def split_bands():
@@ -199,25 +204,29 @@ def group_svg(key, hi=False):
             o[-1] = o[-1].replace('stroke-width=', 'stroke-dasharray="9 7" stroke-width=')
             if not keep:
                 o[-1] = o[-1].replace(f'fill="{fill}"', 'fill="white"')
-            o.append(t(x + w / 2, y + h / 2 - 4, name, 19, 600, INK) + t(x + w / 2, y + h / 2 + 22, caption, 16, 600, INK if keep else "#6B7280"))
+            o.append(t(x + w / 2, y + h / 2 - 4, name, LABEL, 600, INK) + t(x + w / 2, y + h / 2 + 22, caption, LABEL, 600, INK if keep else "#6B7280"))
+        elif pct and "|" in name:  # a name on two lines, then its share
+            a, b = name.split("|")
+            o.append(t(x + w / 2, y + h / 2 - 18, a, LABEL, 600, INK) + t(x + w / 2, y + h / 2 + 6, b, LABEL, 600, INK)
+                     + t(x + w / 2, y + h / 2 + 37, f"{pct}%", 24, 700, G if side == "in" else B))
         elif pct:
-            o.append(t(x + w / 2, y + h / 2 - 4, name, 19, 600, INK) + t(x + w / 2, y + h / 2 + 26, f"{pct}%", 24, 700, G if side == "in" else B))
+            o.append(t(x + w / 2, y + h / 2 - 4, name, LABEL, 600, INK) + t(x + w / 2, y + h / 2 + 26, f"{pct}%", 24, 700, G if side == "in" else B))
         else:
-            o.append(t(x + w / 2, y + h / 2 + 7, name, 18 if key == "competitors" else 19, 600, INK))
+            o.append(t(x + w / 2, y + h / 2 + 7, name, LABEL, 600, INK))
     return "".join(o)
 
 
 def company():
     cx, cy, cw, ch = CO
     return (f'<rect x="{cx}" y="{cy}" width="{cw}" height="{ch}" rx="12" fill="#2E6B4F"/>'
-            + t(cx + cw / 2, cy + ch / 2 - 4, "The company", 26, 700, "white") + t(cx + cw / 2, cy + ch / 2 + 28, "Subscriptions", 20, 600, "white"))
+            + t(cx + cw / 2, cy + ch / 2 - 4, "The company", 26, 700, "white") + t(cx + cw / 2, cy + ch / 2 + 28, "Subscriptions", LABEL, 600, "white"))
 
 
 def legend():
     return (f'<rect x="24" y="716" width="64" height="22" rx="4" fill="{G}" fill-opacity="{BAND_OPACITY}"/>'
-            + t(100, 734, "Money in", 20, 700, G, "start")
+            + t(100, 734, "Money in", LABEL, 700, G, "start")
             + f'<rect x="{W - 88}" y="716" width="64" height="22" rx="4" fill="{B}" fill-opacity="{BAND_OPACITY}"/>'
-            + t(W - 100, 734, "Money out", 20, 700, B, "end"))
+            + t(W - 100, 734, "Money out", LABEL, 700, B, "end"))
 
 
 def money_bands():
@@ -245,14 +254,14 @@ def badges(only=None):
             continue
         x, y, w, _ = NODES[nid]
         o.append(f'<circle cx="{x + w - 4}" cy="{y + 4}" r="16" fill="{red}" stroke="white" stroke-width="3"/>'
-                 + t(x + w - 4, y + 10, letter, 18, 700, "white"))
+                 + t(x + w - 4, y + 11.5, letter, LABEL, 700, "white"))
     return "".join(o)
 
 
 def badge_legend():
     red = COLOURS["competitors"][1]
-    return (f'<circle cx="{W / 2 - 170}" cy="{727}" r="13" fill="{red}"/>' + t(W / 2 - 170, 733, "B", 15, 700, "white")
-            + t(W / 2 - 148, 734, "A competitor works with them too", 19, 700, red, "start"))
+    return (f'<circle cx="{W / 2 - 172}" cy="{727}" r="15" fill="{red}"/>' + t(W / 2 - 172, 734.5, "B", LABEL, 700, "white")
+            + t(W / 2 - 148, 734, "A competitor works with them too", LABEL, 700, red, "start"))
 
 
 def full_map():
@@ -281,9 +290,9 @@ CALLOUTS = {  # each says why the part is on the map, then the coach's question
     "associations": (BL, "Associations", ["Why: they shape how buyers think", "before you ever meet them.", "Ask: whom can you leverage to grow?"]),
     "suppliers": (BL, "Suppliers", ["Why: find the dependency that could", "switch you off tomorrow.", "Ask: where does the most money go?"]),
     "partners": (BL, "Paid Partners", ["Why: see whom you rely on to reach", "or serve your customers.", "Ask: is any player in two places?"]),
-    "competitors": ((10, 568), "Competitors", ["Why: overlap is a head-on fight;", "gaps may be open space.", "Ask: could one block us anywhere?"]),
+    "competitors": ((10, 568), "Competitors", ["Why: overlap is a head-on fight.", "Gaps may be open space.", "Ask: could one block us anywhere?"]),
 }
-CALLOUT_W = {"competitors": 468}  # fits left of the lit competitors
+CALLOUT_W = {"competitors": 450}  # fits left of the lit competitors
 LIT = {  # what each callout lights besides its own group: the money that belongs to it
     "customers": split_bands, "channels": lambda: split_bands() + in_bands(),
     "suppliers": lambda: out_bands({"dev", "host", "pay"}), "partners": lambda: out_bands({"impl"}),
@@ -300,7 +309,7 @@ for key, ((x, y), title, lines) in CALLOUTS.items():
     (OUT / f"market-map-{key}.svg").write_text(svg(W, H, body, ARROW), encoding="utf-8")
 money_body = (full_map() + DIM + money_bands() + "".join(group_svg(k) for k in ("customers", "channels", "suppliers", "partners"))
               + company() + legend() + badges({"res", "mkt", "host", "impl"})
-              + callout(432, 568, "Money lines", ["Why: look for concentration, not precision.", "Rough shares are enough.", "Ask: where does cash come in?"]))
+              + callout(432, 568, "Money lines", ["Why: look for concentration, not precision.", "Rough shares are enough.", "Ask: where does cash come in?"], w=548))
 (OUT / "market-map-money.svg").write_text(svg(W, H, money_body, ARROW), encoding="utf-8")
 
 # circle what worries you (dashed red) and what excites you (green), then pull up to three into the QHAG
@@ -319,7 +328,7 @@ circles_body = (full_map() + DIM + group_svg("customers") + group_svg("channels"
                 + callout(432, 538, "Circle what matters", [("Worry: 55% of money from one segment.", RED),
                                                             ("Worry: Competitor B could block resellers.", RED),
                                                             ("Open space: a segment nobody serves yet.", G),
-                                                            ("Opportunity: win C’s association first.", G)], w=520))
+                                                            ("Opportunity: win C’s association first.", G)], w=548))
 (OUT / "market-map-circles.svg").write_text(svg(W, H, circles_body, ARROW), encoding="utf-8")
 
 
@@ -438,6 +447,8 @@ def cash_chart(gap_callout=False):
 
 # ---------------------------------------------------------------- forecast examples
 # Two QR codes that open the Example tab of each public forecast template (Byron, 16-Nov-2026).
+# The 36-month caption says when it is built: 12 months at the first annual, 36 from the second
+# (Byron, 25-Nov-2026).
 import sys
 sys.path.insert(0, str(ROOT / "tools"))
 import qr_svg  # noqa: E402
@@ -445,7 +456,7 @@ import qr_svg  # noqa: E402
 EXAMPLES = [
     ("12-month forecast", "Build this one first.",
      "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209"),
-    ("36-month forecast", "The three-year view.",
+    ("36-month forecast", "The 3-year view, from the second annual.",
      "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588"),
 ]
 

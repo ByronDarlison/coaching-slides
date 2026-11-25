@@ -26,12 +26,12 @@
       "notes": [
         "This is the Mission to Mars exercise. It discovers the values the company already lives.",
         "It is for a team with no agreed Core Values, or one whose values failed the test. A team whose values passed the test skips it.",
-        "At Q2, teach the exercise so the leadership team can run it with the wider team before the next session.",
-        "In a small company, where the leadership team is most of the company, the team runs it together in the room. Allow about 60 minutes."
+        "At Q2, teach the exercise. The leadership team then runs it with the whole company before the next session.",
+        "In a small company, the leadership team is most or all of the company. That company runs Mission to Mars in the room at Q3. Add these slides to that client’s Q3 deck. Allow about 60 minutes."
       ],
       "artwork": {
         "src": "assets/mission-to-mars.jpg",
-        "alt": "Three neutral grey figures stand beside a small rocket. A fourth figure holds a clipboard and gestures toward them, choosing who boards. One of the three wears a green badge."
+        "alt": "Three neutral gray figures stand beside a small rocket. A fourth figure holds a clipboard and gestures toward them, choosing who boards. One of the three wears a green badge."
       }
     },
     {
@@ -48,11 +48,11 @@
       "art_fit": true,
       "notes": [
         "Walk the five steps once, so the leaders see where the exercise ends.",
-        "The leadership team runs these five steps in one session with the wider team."
+        "The leadership team runs these five steps in one session with the whole company."
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people: each leader picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
+        "alt": "Five steps in a row. 1, pick three people. Each person picks three people and names the value each one lives. 2, share and cluster. Each person says who they picked and why. Move similar values together and name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree on the Core Values: name each value and write the behavior it means."
       }
     },
     {
@@ -134,10 +134,10 @@
         "Read each value and the behavior it means."
       ],
       "notes": [
-        "At a quarterly, the team arrives in one of three places: agreed Core Values, a draft from a Mission to Mars session, or neither.",
+        "At a quarterly, the team arrives in one of three places. It has agreed Core Values, a draft from a Mission to Mars session, or neither.",
         "With agreed values, read them from the One Page Plan and go straight to the test.",
         "With a draft, the leadership team reviews it, changes what needs changing and confirms it today.",
-        "With neither, say so. Agree a date for the Mission to Mars session and move on.",
+        "With neither, say so. Agree on a date for the Mission to Mars session and move on.",
         "The Core Values are what each leader rates their direct reports against on the A-Player grid."
       ]
     },

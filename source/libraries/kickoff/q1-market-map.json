@@ -18,7 +18,7 @@
       ],
       "notes": [
         "Power: who can say yes or no to your growth. Open space: customers you reach that competitors don’t. Reachable: can you reach your target at a profit?",
-        "Coach’s prompts from Shannon: whom can we make happy, annoy and leverage to scale quickly? Where does cash come in, and what share from each source? Can our current channels get us to our 3HAG?",
+        "Coach’s prompts: whom can we make happy, annoy and use to scale quickly? Where does cash come in, and what share from each source? Can our current channels get us to our 3HAG?",
         "Over time the map shows shifts in the market. It is the first step of the strategy build."
       ],
       "support": "Each leader sees only their slice of the market. The map shows the whole field:",
@@ -29,9 +29,10 @@
       ],
       "artwork": {
         "src": "assets/market-map-example.svg",
-        "alt": "A small copy of the example Market Map: customers and channels on the left, the company in the centre with associations above and competitors below, suppliers and a paid partner on the right, with money-in and money-out bands."
+        "alt": "A small copy of the example Market Map. Customers and channels sit on the left. The company is in the center, with associations above and competitors below. Suppliers and a paid partner sit on the right. Bands show money in and money out."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "example",
@@ -49,7 +50,7 @@
       ],
       "artwork": {
         "src": "assets/market-map-example.svg",
-        "alt": "The example subscription company in the centre. On the left, customers (small businesses 55%, mid-size companies 35%, non-profits 10%, and schools, dashed, not served yet) buy through channels (resellers 30%, direct website 70%, and app marketplaces, dashed, not used). Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands to suppliers (contract developers 45%, cloud hosting 30%, payment processor 10%) and a paid partner (implementation partner 15%). Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with: A on app marketplaces, B on resellers and the implementation partner, C on cloud hosting and the industry association."
+        "alt": "The example subscription company in the center. Customers are on the left: small businesses 55%, mid-size companies 35% and non-profits 10%. Schools are dashed, not served yet. Customers buy through channels: resellers 30% and direct website 70%. App marketplaces are dashed, not used. Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands run to suppliers: contract developers 45%, cloud hosting 30% and payment processor 10%. One runs to a paid partner, the implementation partner, 15%. Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with. A is on app marketplaces. B is on resellers and the implementation partner. C is on cloud hosting and the industry association."
       },
       "art_full": true
     },
@@ -87,7 +88,7 @@
       ],
       "artwork": {
         "src": "assets/market-map-channels.svg",
-        "alt": "The example map dimmed except the channels: resellers (Competitor B sells there too), direct website, and app marketplaces (not used; Competitor A sells there). Callout: Why: find the gatekeepers, and the channels your competitors use. Ask: can these get you to your 3HAG?"
+        "alt": "The example map dimmed except the channels. They are resellers, where Competitor B sells too, and the direct website. The company does not use app marketplaces. Competitor A sells there. Callout: Why: find the gatekeepers, and the channels your competitors use. Ask: can these get you to your 3HAG?"
       },
       "art_full": true
     },
@@ -162,11 +163,11 @@
         "Start with the top three direct competitors, then add the substitutes.",
         "Mark every channel, supplier, association and paid partner each competitor also works with. If a competitor could block you from one, that is a serious risk: circle it.",
         "Then the reverse: which player could you win that a competitor depends on? Capturing it is an opportunity: circle that too.",
-        "Add the substitutes teams forget: doing nothing, and building it in-house. Include doing nothing and building in-house. Ask which alternatives actually account for this company’s lost deals."
+        "Add the substitutes teams forget: doing nothing, and building it in-house. Ask which alternatives actually account for this company’s lost deals."
       ],
       "artwork": {
         "src": "assets/market-map-competitors.svg",
-        "alt": "The example map dimmed except the competitors A, B and C, the dashed substitutes box (do nothing, or build in-house), and the red letter badges on every player a competitor also works with. Callout: Why: overlap is a head-on fight; gaps may be open space. Ask: could one block us anywhere?"
+        "alt": "The example map dimmed except the competitors A, B and C. The dashed substitutes box stays lit: do nothing, or build in-house. So do the red letter badges on every player a competitor also works with. Callout: Why: overlap is a head-on fight. Gaps may be open space. Ask: could one block us anywhere?"
       },
       "art_full": true
     },
@@ -181,11 +182,11 @@
         "q1"
       ],
       "notes": [
-        "The team draws the money lines last, with the share for each. Note any supplier used but not paid."
+        "Draw the money lines last. Ask the team for each share. Note any supplier used but not paid."
       ],
       "artwork": {
         "src": "assets/market-map-money.svg",
-        "alt": "The example map with every money line drawn: green lines from customers and channels into the company with their shares, blue lines out to suppliers and the paid partner with their shares. Callout: Why: look for concentration, not precision; rough shares are enough. Ask: where does cash come in?"
+        "alt": "The example map with every money line drawn. Green lines run from customers and channels into the company, with their shares. Blue lines run out to suppliers and the paid partner, with their shares. Callout: Why: look for concentration, not precision. Rough shares are enough. Ask: where does cash come in?"
       },
       "art_full": true
     },
@@ -205,7 +206,7 @@
       ],
       "artwork": {
         "src": "assets/market-map-circles.svg",
-        "alt": "The example map dimmed except the customers, channels and associations. Dashed red rings around small businesses (worry: 55% of money from one segment) and resellers (worry: Competitor B could block resellers). Green rings around schools (open space: a segment nobody serves yet) and the industry association (opportunity: win Competitor C’s association first)."
+        "alt": "The example map dimmed except the customers, channels and associations. Dashed red rings mark two worries. Small businesses: 55% of money from one segment. Resellers: Competitor B could block resellers. Green rings mark two openings. Schools: open space, a segment nobody serves yet. The industry association: an opportunity to win Competitor C’s association first."
       },
       "art_full": true
     },

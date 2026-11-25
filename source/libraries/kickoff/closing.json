@@ -13,7 +13,7 @@
       "layout": "comp-rule",
       "group": "",
       "notes": [
-        "Close the session. Recap verbally how the plan connects, from the 3HAG capabilities to this quarter’s priorities, and when the next daily huddle is. Then invite everyone to answer."
+        "Close the session. Recap verbally how the plan connects, from the 3HAG capabilities to this quarter’s priorities. Say when the next daily huddle is. Then invite everyone to answer."
       ],
       "tags": [
         "kickoff",
@@ -23,7 +23,7 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/one-phrase-close.jpg",
-        "alt": "Four team members stand together talking, each with a speech bubble; one bubble is green."
+        "alt": "Four team members stand together talking, each with a speech bubble. One bubble is green."
       }
     },
     {

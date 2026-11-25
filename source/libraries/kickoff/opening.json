@@ -13,7 +13,7 @@
       "layout": "title",
       "group": "Day 1",
       "notes": [
-        "Two-day workshop for the CEO and leadership team. Establish functional ownership and shared direction before annual and quarterly commitments. This reusable deck needs no company-specific edits."
+        "A 2-day workshop for the CEO and leadership team. Establish functional ownership and shared direction before annual and quarterly commitments. This reusable deck needs no company-specific edits."
       ],
       "tags": [
         "kickoff",
@@ -21,7 +21,7 @@
       ],
       "artwork": {
         "src": "assets/kickoff-title.png",
-        "alt": "Three neutral grey figures build a shared plan around a table."
+        "alt": "Three neutral gray figures build a shared plan around a table."
       },
       "eyebrow": ""
     },
@@ -877,7 +877,7 @@
       "eyebrow": "",
       "figure": {
         "src": "assets/about-me/cash-shape.svg",
-        "alt": "Cash from 1989 to 2022: flat with small bumps through four attempts to scale, then a steep climb after the fifth, in 2018, ending at a 270 times return on coaching"
+        "alt": "Cash from 1989 to 2022. It stays flat with small bumps through four attempts to scale. After the fifth, in 2018, it climbs steeply. It ends at a 270 times return on coaching."
       },
       "attempts": [
         {
@@ -940,7 +940,7 @@
       ],
       "artwork": {
         "src": "assets/cohesive-open.png",
-        "alt": "Simple grey figures share positive news around a table."
+        "alt": "Four gray figures stand and share good news. One speech bubble holds a green check mark. A chart on an easel shows a rising line."
       },
       "eyebrow": ""
     },
@@ -1031,7 +1031,7 @@
       "notes": [
         "Confirm agreement on how the team will work. Invite difficult facts and constructive disagreement.",
         "Strong convictions, loosely held: argue your view fully, and change it when the facts change.",
-        "Disagree and commit: the disagreement is said in the room. Once the team decides, everyone backs the decision outside it."
+        "Disagree and commit: say where you disagree while everyone is in the room. Once the team decides, everyone backs the decision outside it."
       ],
       "tags": [
         "kickoff",
@@ -1095,8 +1095,8 @@
       ],
       "arrows": false,
       "notes": [
-        "Everyone read the compiled survey answers 2 to 5 days ago. Hand them back now, printed or on the board, question by question, everyone’s words side by side.",
-        "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate. Park each difference on the board against the agenda block that will resolve it, such as the Function Chart, the KFFM, purpose or the targets.",
+        "Hand back the compiled survey answers now, printed or on the board. Go question by question, with everyone’s words side by side. Do not assume everyone has read them.",
+        "Do not read the answers aloud. Pick the 2 or 3 questions where the answers differ most. Ask each author what they meant, without debate. Park each difference on the board beside the agenda block that will resolve it. Use the Function Chart, the KFFM, purpose or the targets.",
         "Allow about 15 minutes. Today is for decisions, not data gathering."
       ],
       "tags": [
@@ -1111,8 +1111,8 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Ask each person to write an answer on a sticky note and share it. Agree on the outcomes. Return to these at the close. Allow 10 minutes.",
-        "The coach’s own outcome is “Team clarity and commitment”. Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
+        "Ask each person to write an answer on a sticky note and share it. Agree on the answers. Return to these at the close. Allow 10 minutes.",
+        "The coach’s own answer is “Team clarity and commitment.” Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
       ],
       "tags": [
         "kickoff",
@@ -1144,7 +1144,7 @@
         {
           "role": "Day 1",
           "heading": "Shared direction",
-          "support": "Functions, purpose, values, ambition and the three-year plan.",
+          "support": "Functions, purpose, values, ambition and the 3-year plan.",
           "mark": "structure"
         },
         {

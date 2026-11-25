@@ -15,9 +15,9 @@
       "notes": [
         "Values are the team’s handful of behavioral rules. They remain useful when decisions are difficult.",
         "Review established values today. If none exist, do not create them today.",
-        "Shannon describes values as alive, constant behavioral rules with consequences for violations.",
+        "Values are alive, constant behavioral rules with consequences for violations.",
         "Review where values shape real decisions. Address repeated violations through the company’s established people process.",
-        "This workshop reviews existing values; it does not create a new dismissal process."
+        "This workshop reviews existing values. It does not create a new dismissal process."
       ],
       "tags": [
         "kickoff",
@@ -72,7 +72,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Circle’s Kick Off checklist calls for reviewing values when they already exist. Ask for concrete behaviors. If the company has no established values, do not create them here."
+        "Review the values when they already exist. Ask for concrete behaviors. If the company has no established values, do not create them here."
       ],
       "tags": [
         "kickoff",
@@ -83,9 +83,9 @@
         "Test each one:",
         "Is it a value you hire and fire on, or a brand value?",
         "When did you last let someone go for not living it?",
-        "Does someone who keeps breaching it belong here?",
+        "Does someone who keeps breaking it belong here?",
         "Would you build a new company around it, in any industry?",
-        "Preferably 3, definitely no more than 5."
+        "Ideally 3, up to 5."
       ],
       "eyebrow": ""
     }

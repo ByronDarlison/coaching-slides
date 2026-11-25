@@ -24,7 +24,7 @@
       ],
       "artwork": {
         "src": "assets/sprint-lanes-example.svg",
-        "alt": "An example 13-Week Sprint Lanes page for the subscription company, weeks 1 to 13 under January, February and March. Company widgets, week by week, each with an owner: subscription leads and marketing qualified subscription leads, Chris; new subscriptions, Andrew; activated subscriptions, Jen; collected payments, Allison. Company priorities, week by week: #1 remove the first 2 days of activation, Jen, done by February 28, eight weekly steps then complete; #2 hire the first account executive, Andrew, done by March 15, ten weekly steps then complete; #3 move the 100 largest customers to automatic billing, Allison, done by March 31, thirteen weekly steps."
+        "alt": "An example 13-Week Sprint Lanes page for the subscription company, weeks 1 to 13 under January, February and March. Company widgets, week by week, each with an owner. Subscription leads and marketing qualified subscription leads, Chris. New subscriptions, Andrew. Activated subscriptions, Jen. Collected payments, Allison. Company priorities, week by week. #1 remove the first 2 days of activation, Jen, done by February 28: 8 weekly steps, then complete. #2 hire the first account executive, Andrew, done by March 15: 10 weekly steps, then complete. #3 move the 100 largest customers to automatic billing, Allison, done by March 31: 13 weekly steps."
       }
     },
     {
@@ -40,12 +40,12 @@
       "art_full": true,
       "notes": [
         "The month’s numbers come from the QHAG the team has just set.",
-        "The 13 weeks split 4, 4 and 5 across the three months.",
-        "March is the highest month in the example, yet its weekly number is the lowest. Five weeks carry it."
+        "The 13 weeks split 4, 4 and 5 across the 3 months.",
+        "March is the highest month in the example, yet its weekly number is the lowest. 5 weeks carry it."
       ],
       "artwork": {
         "src": "assets/weekly-number.svg",
-        "alt": "Three rows. A produced number divides: January’s 65 new subscriptions become 16, 16, 16 and 17 across four weeks. A longer month spreads further: March’s 75 become 15 a week across five weeks. A held number does not divide: a head count of 30 shows 30 in every week."
+        "alt": "Three rows. A produced number divides: January’s 65 new subscriptions become 16, 16, 16 and 17 across 4 weeks. A longer month spreads further: March’s 75 become 15 a week across 5 weeks. A held number does not divide: a head count of 30 shows 30 in every week."
       }
     },
     {
@@ -60,12 +60,12 @@
       ],
       "art_full": true,
       "notes": [
-        "Each widget keeps its owner from the QHAG. The weekly numbers add up to the quarter’s targets.",
+        "Each widget keeps its owner from the QHAG. The weekly numbers you count add up to the quarter’s targets.",
         "A weekly number makes the quarter’s target achievable, not just aspirational."
       ],
       "artwork": {
         "src": "assets/sprint-lanes-widgets.svg",
-        "alt": "The company widgets block of the sprint lanes example on its own, weeks 1 to 13, each widget with its owner. Callout: Why: a weekly number shows a miss while there is time to act. Ask: can each owner reach this week’s number?"
+        "alt": "The company widgets block of the sprint lanes example on its own. It covers weeks 1 to 13, each widget with its owner. Callout: Why: a weekly number shows a miss while there is time to act. Ask: can each owner reach this week’s number?"
       }
     },
     {
@@ -106,7 +106,7 @@
       ],
       "artwork": {
         "src": "assets/sprint-lane-one.svg",
-        "alt": "Lane #1 on its own: remove the first 2 days of activation, owner Jen, done by February 28. January: week 1, steps mapped; week 2, slowest 2 days found; week 3, fix chosen; week 4, welcome flow drafted. February: week 5, tested with 5 accounts; week 6, team trained; week 7, new flow live; week 8, old flow switched off. March: priority complete. Weeks 9 to 13 need no steps."
+        "alt": "Lane #1 on its own: remove the first 2 days of activation, owner Jen, done by February 28. January: week 1, steps mapped. Week 2, slowest 2 days found. Week 3, fix chosen. Week 4, welcome flow drafted. February: week 5, tested with 5 accounts. Week 6, team trained. Week 7, new flow live. Week 8, old flow switched off. March: priority complete. Weeks 9 to 13 need no steps."
       }
     },
     {
@@ -186,7 +186,7 @@
       "body": [
         "You have the people to do it.",
         "You have the cash to do it.",
-        "The weekly forecasts add up to the quarter’s targets."
+        "The 13 weeks build to the quarter. Numbers you count add up. Cash and head count match week 13."
       ],
       "notes": [
         "If the answer is no, change the plan now. Move a step, change an owner or drop a priority.",

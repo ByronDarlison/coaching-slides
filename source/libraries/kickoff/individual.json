@@ -29,7 +29,8 @@
         "src": "assets/hag-ladder-at-priorities.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. Priorities is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "my-priorities",
@@ -40,11 +41,11 @@
       "notes": [
         "Start with the owner of company priority #1, then the other company-priority owners.",
         "Each owner places that commitment first in their individual plan. Add other aligned work and a development commitment.",
-        "Allow up to five work priorities and one development priority. Two that are delivered beat five that are started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
+        "Allow up to 5 work priorities and one development priority. Two delivered beat five started. When capacity conflicts, the company priority wins. Protect enough time for real discussion.",
         "Include every company priority you own. Do not drop one because you own several.",
         "Leaders without an owned company priority identify the aligned work they must deliver. Keep all commitments within capacity.",
         "Run the six questions from the “Pick the priorities that contribute most to success” slide on each individual priority. Hover over “six questions” to show them.",
-        "Critical number: it heads each person’s column, above their priorities. It can be financial or not. Ask: did I have a good day? A person who owns two functions has one for each.",
+        "Critical number: it heads each person’s column, above their priorities. It can be financial or not. A widget, what the function hands to the next one, is the better choice. Ask: did I have a good day? A person who owns two functions has one for each.",
         "At a quarterly, start from the critical number you named for your function on the Team View.",
         "At a quarterly, list your open priorities from last quarter first. They stay until their number has moved."
       ],
@@ -96,7 +97,7 @@
       "group": "",
       "notes": [
         "Before the read-back starts, the team names company priority #1 and its owner. If it is not named, go back to the “What is the #1 priority for the quarter?” slide.",
-        "Each person reads their critical number, then each priority with its done-by date, measure and achieved-by date, then their professional development.",
+        "Each person reads their critical number. Then they read each priority with its done-by date, measure and achieved-by date, then their professional development.",
         "Peers ask about missing work, dependencies and assumed handoffs. Resolve gaps and overlaps.",
         "Challenge whether the commitments fit the quarter’s capacity. This exercise can take an hour."
       ],
@@ -129,8 +130,8 @@
       ],
       "body": [
         "Every number and priority has one owner with capacity.",
-        "The 1HAG, the QHAG and each person have ideally 3, up to 5 priorities.",
-        "Every priority has a done-by date and a measure of success.",
+        "The 1HAG and the QHAG each have ideally 3, up to 5 priorities.",
+        "Every priority has a done-by date, a measure of success and an achieved-by date.",
         "Each 1HAG priority builds a 3HAG capability or moves a KFFM lever.",
         "Each QHAG priority advances a 1HAG priority.",
         "Each individual priority supports a QHAG priority or the owner’s critical number.",

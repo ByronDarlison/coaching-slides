@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw the example swim lanes: the outcomes table, and the full twelve-quarter map.
 Run from the library folder: python3 generators/q4_swim_lanes.py"""
-from q4_common import svg, write, text, block, wrap, BLUE, INK, GREY, MID, LINE, CANVAS, NOTE, NOTE_EDGE, SEQ
+from q4_common import svg, write, text, block, wrap, BLUE, INK, GREY, MID, CORNER, LINE, CANVAS, NOTE, NOTE_EDGE, SEQ
 W = 1440
 OUTCOME = {12: BLUE, 8: SEQ[2], 4: SEQ[0]}
 TINT = {12: "#e3ebf6", 8: "#e2eef0", 4: "#e7f2ea"}
@@ -20,7 +20,7 @@ LANES = [("Live in a Day", ["Live in a Day"], ["Live in", "a Day"],
          ("Standard, Not Custom", ["Standard,", "Not Custom"], ["Standard,", "Not", "Custom"],
           {12: "One product, one setup, for everyone", 8: "Existing custom work retired", 4: "No new custom work sold"},
           {1: ["Custom", "work off", "the price", "list"], 4: ["Reporting", "cut to the", "fixed set"], 8: ["Last", "custom", "build", "retired"]})]
-corner = lambda x: text(x, 44, "Example", 28, 700, MID, "start", ' letter-spacing="2"')
+corner = lambda x: text(x, 44, "Example", 28, 700, CORNER, "start", ' letter-spacing="2"')
 HEAD = {12: BLUE, 8: "#2f7377", 4: "#318549"}  # darker than the sequence colours, so type on or in them reads
 
 # 1. The outcomes table

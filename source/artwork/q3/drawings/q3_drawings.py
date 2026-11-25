@@ -74,7 +74,7 @@ PER_ROW = 6
 def path_svg(current):
     """Two rows of six (rule 21), so the labels read from the back of the room."""
     W, H = 1440, 464
-    o = [t(40, 52, "Q3", 28, 700, GREY, "start", ' letter-spacing="2"')]
+    o = [t(40, 52, "Q3", 28, 700, "#6b7780", "start", ' letter-spacing="2"')]
     gap, w, h, x0 = 24, 206, 150, 42
     rows = [84, 284]
     for i, (key, label) in enumerate(STAGES):
@@ -111,12 +111,13 @@ for i, (key, _) in enumerate(STAGES):
 
 
 # ---------------------------------------------------------------- Mission to Mars
-# Step names and wording follow the master board's "Core Values, Q3: Mission to Mars" area.
-MARS = [("Pick three|people", ["Three people not", "in the room.", "Name the value", "each one lives."]),
-        ("Share and|cluster", ["Say who and why.", "Move similar", "values together.", "Name each", "cluster."]),
+# Step names and wording follow the master board's Mission to Mars area.
+# Step 1 has no "not in the room"; step 2 has each person share (Byron, 25-Nov-2026).
+MARS = [("Pick three|people", ["Each person", "picks three", "people.", "Name the value", "each one lives."]),
+        ("Share and|cluster", ["Each person says", "who they picked", "and why. Move", "similar values", "together. Name", "each cluster."]),
         ("Vote", ["Three votes each,", "on the clusters", "that best show", "your values."]),
         ("Test the|top three", ["Test each one.", "Talk about", "anything", "left out."]),
-        ("Agree the|Core Values", ["Name each value.", "Write the", "behaviour", "it means."])]
+        ("Agree on the|Core Values", ["Name each value.", "Write the", "behavior", "it means."])]
 
 
 def mars_steps():
@@ -143,9 +144,10 @@ write("mars-steps.svg", mars_steps())
 # ---------------------------------------------------------------- A-Player Team Assessment
 # Axis labels and explanations are the master board's "A-Player Team Assessment" area
 # (Shannon's ABC Team Assessment, Updated Guidance, November 2025). "Being Carried": Byron, 17-Nov-2026.
-VALUE_ROWS = [("Most of the time", ["Consistent behaviours", "aligned with the", "Core Values."]),
-              ("Some of the time", ["Inconsistent behaviours.", "Does not meet all", "the Core Values."]),
-              ("None of the time", ["Behaviours not aligned.", "Does not meet any", "Core Values."])]
+# Row descriptions: Byron, 25-Nov-2026. One value never lived puts a person in the bottom row.
+VALUE_ROWS = [("Most of the time", ["Every Core Value", "is lived most", "of the time."]),
+              ("Some of the time", ["The lowest-rated", "Core Value is lived", "some of the time."]),
+              ("None of the time", ["At least one", "Core Value is lived", "none of the time."])]
 PERF_COLS = [("Being Carried", ["Not meeting most", "of the scorecard"]),
              ("Behind", ["Meets most", "of the scorecard"]),
              ("Ahead", ["Meets or exceeds all", "of the scorecard"])]
@@ -210,7 +212,7 @@ write("a-player-ravi.svg", grid(people=True, zones=True, dim={"Ravi"}, note=(
     GX + CW + 8, GY + CH + 6, CW - 34, "Still a C", ["A high performer who", "breaks a Core Value."], (GX + 2 * CW + 14, GY + CH + 88))))
 
 PLANS = [("Leo", "B", ["Close the gap to Ahead", "on the scorecard."], "Jen", "Weekly 1:1", "Within 90 days"),
-         ("Ravi", "C", ["Name the value and the behaviour.", "Decide: does Ravi fit?"], "Jen", "Weekly 1:1", "Within 30 days"),
+         ("Ravi", "C", ["Name the value and the behavior.", "Decide: does Ravi fit?"], "Jen", "Weekly 1:1", "Within 30 days"),
          ("Nora", "C", ["Set the scorecard standard.", "Decide: improve or move on."], "Jen", "Weekly 1:1", "Within 30 days")]
 
 

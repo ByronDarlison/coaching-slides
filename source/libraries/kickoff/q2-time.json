@@ -26,14 +26,14 @@
       ],
       "notes": [
         "Each leader enters their current allocation. Record how the time is really spent, not an ideal split.",
-        "Then talk about what the allocations show. The founder compares with the baseline from the call before Q1.",
+        "Then talk about what the allocations show. The founder compares with the baseline from the call before Q1. With no baseline, today’s numbers are the baseline.",
         "Keep the completed assessment. The next review compares against it.",
         "When the leadership team is the whole company, skip this slide and ask the owner privately.",
         "Allow about 10 minutes."
       ],
       "artwork": {
         "src": "assets/time-allocation.jpg",
-        "alt": "One neutral grey figure, hand on chin, studies a circle divided into four unequal slices: one green, one blue and two grey."
+        "alt": "One neutral gray figure, hand on chin, studies a circle divided into four unequal slices. One slice is green, one blue and two gray."
       }
     }
   ]

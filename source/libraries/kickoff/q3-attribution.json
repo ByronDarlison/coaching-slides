@@ -21,7 +21,7 @@
       "body": [
         "Where does everyone compete on the same thing?",
         "Where is the white space, where nobody competes yet?",
-        "Where will you be in three years?"
+        "Where will you be in 3 years?"
       ],
       "notes": [
         "Strategy is a unique and valuable position. You get there by moving into white space that matters to your Core Customer.",
@@ -31,13 +31,13 @@
       ],
       "artwork": {
         "src": "assets/attribution-team.jpg",
-        "alt": "Three neutral grey figures stand at a wall chart of crossing lines. One points at the chart. The empty upper left of the chart is shaded green."
+        "alt": "Three neutral gray figures stand at a wall chart of crossing lines. One points at the chart. The empty upper left of the chart is shaded green."
       }
     },
     {
       "id": "example",
-      "title": "Example: the Attribution Framework.",
-      "headline": "Example: the Attribution Framework.",
+      "title": "Example: the Attribution Map.",
+      "headline": "Example: the Attribution Map.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -54,7 +54,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-example.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Five lines: Us today, Competitor A, Competitor B, Competitor C and the 3HAG line. Us today runs from 4 on the left to 2 on the right. The 3HAG line rises to 5 on speed of setup, price predictability and support from a person, and drops on reporting and customization.",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Five lines: Us today, Competitor A, Competitor B, Competitor C and the 3HAG line. Us today runs from 4 on the left to 2 on the right. The 3HAG line rises to 5 on speed of setup, price predictability and support from a person. It drops on reporting and customization.",
         "viewbox": [1440, 770],
         "hotspots": [
           {
@@ -240,7 +240,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-attributes.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed and the attribute names are bright. Callout: Why: the market sets the attributes, not our product. Ask: what describes the whole market?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed and the attribute names are bright. Callout: Why: the market sets the attributes, not our product. Ask: what describes the whole market?"
       },
       "terms": [
         {
@@ -248,7 +248,7 @@
           "tip": "Everyone with power in your market, on one page.",
           "image": {
             "src": "assets/market-map-example.svg",
-            "alt": "The example subscription company in the centre. On the left, customers (small businesses 55%, mid-size companies 35%, non-profits 10%, and schools, dashed, not served yet) buy through channels (resellers 30%, direct website 70%, and app marketplaces, dashed, not used). Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands to suppliers (contract developers 45%, cloud hosting 30%, payment processor 10%) and a paid partner (implementation partner 15%). Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with: A on app marketplaces, B on resellers and the implementation partner, C on cloud hosting and the industry association."
+            "alt": "The example subscription company in the center. Customers are on the left: small businesses 55%, mid-size companies 35% and non-profits 10%. Schools are dashed, not served yet. Customers buy through channels: resellers 30% and direct website 70%. App marketplaces are dashed, not used. Green bands show the split from each customer to each channel, then into the company. Associations above. On the right, blue money-out bands run to suppliers: contract developers 45%, cloud hosting 30% and payment processor 10%. One runs to a paid partner, the implementation partner, 15%. Competitors A, B and C below, with a dashed substitutes box: do nothing, or build in-house. Red letter badges mark players a competitor also works with. A is on app marketplaces. B is on resellers and the implementation partner. C is on cloud hosting and the industry association."
           }
         }
       ]
@@ -271,7 +271,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-us.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except Us today, which falls from 4 on the left to 2 on the right. Callout: Why: an honest score shows where we stand today. Ask: how well do we serve each attribute, 1 to 5?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except Us today, which falls from 4 on the left to 2 on the right. Callout: Why: an honest score shows where we stand today. Ask: how well do we serve each attribute, 1 to 5?"
       }
     },
     {
@@ -292,7 +292,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-competitors.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Us today is dimmed. The 3HAG line is not shown. The three competitor lines are bright: A is strongest on integrations, B on feature breadth, customization and partner network, C is low almost everywhere. Callout: Why: the lines show where everyone competes. Ask: how would each competitor score?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Us today is dimmed. The 3HAG line is not shown. The three competitor lines are bright. A is strongest on integrations. B is strongest on feature breadth, customization and partner network. C is low almost everywhere. Callout: Why: the lines show where everyone competes. Ask: how would each competitor score?"
       }
     },
     {
@@ -313,13 +313,13 @@
       ],
       "artwork": {
         "src": "assets/attribution-white-space.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Us today and the three competitor lines are dimmed, on a grey ground. The 3HAG line is not shown. The empty area above the lines is left white, with a dashed outline. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Us today and the three competitor lines are dimmed, on a gray ground. The 3HAG line is not shown. The empty area above the lines stays white, with a dashed outline. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
       }
     },
     {
       "id": "line",
-      "title": "The 3HAG line is where you will be in three years.",
-      "headline": "The 3HAG line is where you will be in three years.",
+      "title": "The 3HAG line is where you will be in 3 years.",
+      "headline": "The 3HAG line is where you will be in 3 years.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -335,7 +335,7 @@
       ],
       "artwork": {
         "src": "assets/attribution-3hag.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. The white space above the other lines is left white on a grey ground, and the part the 3HAG line moves into is shaded green. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
       }
     },
     {
@@ -357,7 +357,7 @@
       ],
       "notes": [
         "Each leader works in private. Reveal when everyone is done.",
-        "In a small team, each person writes 7 to 10, so the team still ends with 12 to 15 after grouping.",
+        "In a small team, each person writes 7 to 10. The team then still ends with 12 to 15 after grouping.",
         "Keep the attributes about the whole market, not one customer.",
         "Think beyond the buyer. Channels, influencers and acquirers weigh attributes too.",
         "Allow about 20 minutes."
@@ -385,7 +385,7 @@
         "Scan the code, then choose File and Make a copy in Google Sheets. One person shares the copy on screen.",
         "Each leader writes scores in private. Then compare them, and the CEO shares last.",
         "The spread between scores is where the discussion is.",
-        "Enter scores in any order. The sheet orders the attributes from best to worst.",
+        "Enter scores in any order. The sheet orders the attributes from best to worst. Keep 3 competitors on the sheet, so the 3HAG line keeps its own style.",
         "The first pass is directional. Do not argue decimals.",
         "Then ask: where is the white space?",
         "Allow about 25 minutes."
@@ -447,7 +447,7 @@
       ],
       "notes": [
         "The white space only counts if it matters to the Core Customer.",
-        "Use the team’s own Core Customer, from wherever it is kept. In Metronome it belongs on a wall in the War Room, which starts empty until the team adds walls.",
+        "Use the team’s own Core Customer, from wherever the team keeps it. In Metronome it belongs on a wall in the War Room, which starts empty until the team adds walls.",
         "Hold each patch of white space against the needs. The ones that serve a need are where the 3HAG line can lead.",
         "Change only what is no longer true about the Core Customer.",
         "Homework: update the Core Customer in the War Room in Metronome."
@@ -467,7 +467,7 @@
       "support": "Decide what to maintain, what to improve and what to let drop.",
       "body": [
         "Enter a 3HAG score for each attribute.",
-        "Ask: what will we be worse at in three years?"
+        "Ask: what will we be worse at in 3 years?"
       ],
       "notes": [
         "In the example, Dana needs fast setup, a predictable cost and a person to call. The 3HAG line leads on all three.",

@@ -109,7 +109,7 @@
     {
       "id": "connect",
       "title": "What depends on what?",
-      "support": "Draw an arrow from each differentiator to the one it depends on. Start with the one most others lean on.",
+      "support": "Draw an arrow from each differentiator to the one it depends on. Start with the most-connected differentiator.",
       "art_side": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-groups.svg",
@@ -122,7 +122,7 @@
       ],
       "notes": [
         "Draw the arrows only between the 3 to 5 the team kept.",
-        "Take the differentiator most others lean on first. For each of the others, ask: does this depend on that? Draw the arrow when the team agrees.",
+        "Start with the most-connected differentiator. For each of the others, ask: does this depend on that? Draw the arrow when the team agrees.",
         "It is rare to get this far and find they are not connected. The connections are what make the strategy hard to copy.",
         "Take a break here. After it, the team puts the differentiators in its 3HAG and reads the whole 3HAG back.",
         "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."

@@ -45,7 +45,7 @@
       "eyebrow": "",
       "artwork": {
         "src": "assets/function-chart-mural.svg",
-        "alt": "Mock of the Function Chart. Functions down the left: Head of Company, Marketing, Sales, Operations, Development, Finance, People. Each team member, Pat, Chris, Andrew, Jen and Allison, posts on their own colored sticky who holds each function. Most agree; Development and People show different answers and gaps. A green column on the right records the one agreed owner for each function."
+        "alt": "Mock of the Function Chart. Functions down the left: Head of Company, Marketing, Sales, Operations, Development, Finance, People. Each team member, Pat, Chris, Andrew, Jen and Allison, posts on their own colored sticky who holds each function. Most agree. Development and People show different answers and gaps. A green column on the right records the one agreed owner for each function."
       },
       "art_full": true
     },
@@ -68,7 +68,7 @@
       ],
       "artwork": {
         "src": "assets/traditional-vs-functional.svg",
-        "alt": "Left: a traditional hierarchy of people and job titles. Right: the same organisation as a Function Chart, starting with Head of company, Marketing, Sales and Finance, then naming their owners."
+        "alt": "Left: a traditional hierarchy of people and job titles. Right: the same organization as a Function Chart. It starts with Head of company, Marketing, Sales and Finance, then names their owners."
       },
       "eyebrow": "",
       "art_wide": true
@@ -80,7 +80,7 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Restate the rule: one accountable owner for each function; others can contribute.",
+        "Restate the rule: one accountable owner for each function. Others can contribute.",
         "At the Kick Off: have leaders list every required function. Include support functions, not only the cash-producing flow. Agree on one accountable owner for each function. Capture current reality before resolving gaps."
       ],
       "tags": [
@@ -97,7 +97,7 @@
       "layout": "comp-decision",
       "group": "",
       "notes": [
-        "In private mode, each person writes who holds each function; reveal, then agree. Add any missing functions. Resolve differences about current accountability. At the Kick Off, do not design the future organization here. At a quarterly, add any planned functions in the next step."
+        "In private mode, each person writes who holds each function. Reveal, then agree. Add any missing functions. Resolve differences about current accountability. At the Kick Off, do not design the future organization here. At a quarterly, add any planned functions in the next step."
       ],
       "tags": [
         "kickoff",
@@ -113,7 +113,7 @@
         {
           "role": "One function",
           "heading": "Several owners?",
-          "support": "Agree who is accountable.",
+          "support": "Agree on who is accountable.",
           "mark": "gap"
         },
         {

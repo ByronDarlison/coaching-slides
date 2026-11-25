@@ -32,7 +32,7 @@
       ],
       "artwork": {
         "src": "assets/core-customer-one.jpg",
-        "alt": "Three neutral grey figures look toward a crowd of grey figures. One figure in the crowd is green, and one of the three gestures toward it."
+        "alt": "Three neutral gray figures look toward a crowd of gray figures. One figure in the crowd is green, and one of the three gestures toward it."
       }
     },
     {
@@ -60,7 +60,7 @@
         },
         {
           "role": "After",
-          "heading": "20% net profit, five years running",
+          "heading": "20% net profit, 5 years running",
           "support": "Up from break-even. Growth rose to 20% a year.",
           "mark": "action"
         }
@@ -122,11 +122,11 @@
       "notes": [
         "The same subscription company as the Market Map example. Small businesses are 55% of its revenue.",
         "Walk the page once. Start with who they are, then the ranked needs and benefits. End with the persona and their share of revenue and profit.",
-        "Need #1 is why QHAG priority #1 removes two days from activation."
+        "Need #1 is why QHAG priority #1 removes 2 days from activation."
       ],
       "artwork": {
         "src": "assets/core-customer-example.svg",
-        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff, who decides alone, pays by card, and wants it working this month without an IT person. Prioritized needs: 1, up and running in days; 2, a cost they can predict; 3, a person to call when stuck. Prioritized benefits: 1, active in 5 days or fewer; 2, one flat monthly price; 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
+        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff. They decide alone, pay by card, and want it working this month without an IT person. Prioritized needs. 1, up and running in days. 2, a cost they can predict. 3, a person to call when stuck. Prioritized benefits. 1, active in 5 days or fewer. 2, one flat monthly price. 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
       }
     },
     {
@@ -169,7 +169,7 @@
       ],
       "notes": [
         "Each person fills in their own column in private. Reveal when everyone is done.",
-        "Shannon’s worksheet calls the benefits drivers.",
+        "The worksheet calls the benefits drivers.",
         "Allow about 15 minutes."
       ]
     },
@@ -224,7 +224,7 @@
       ],
       "artwork": {
         "src": "assets/core-customer-persona.jpg",
-        "alt": "Three neutral grey figures sit at a table. A portrait card of a green-outlined figure with a blank name tag stands on the table, and the three turn toward it."
+        "alt": "Three neutral gray figures sit at a table. A portrait card of a green-outlined figure with a blank name tag stands on the table. The three turn toward it."
       }
     },
     {
@@ -247,7 +247,7 @@
       ],
       "notes": [
         "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG.",
-        "A BrandScript tells the company’s story with the customer as the hero and the company as the guide. It comes from Donald Miller’s book Building a StoryBrand.",
+        "A BrandScript tells the company’s story with the customer as the hero and the company as the guide. It comes from the book Building a StoryBrand.",
         "Homework: add the Core Customer to the War Room in Metronome."
       ]
     },

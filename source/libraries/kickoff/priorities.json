@@ -18,7 +18,7 @@
         "Impact and speed are the two warning signs. If the impact takes a long time to show, or it barely moves a critical number, think twice. There can be good reasons to go ahead anyway, but weigh both every time.",
         "Owner: can one person be accountable? Do they have the time, given what they already carry? Do they have the skills, or the support, to succeed? If no one fits, the priority is not ready, or the first step is to find the owner.",
         "Risk: ask how badly we could mess this up.",
-        "Once chosen, ask an owner to claim each priority aloud and agree the done-by date, the measure and the date it will be achieved by. If two priorities compete for the same people or cash, agree which one wins. The next slide shows why done and success are different dates.",
+        "Once chosen, ask an owner to claim each priority aloud. Agree on the done-by date, the measure and the achieved-by date. If two priorities compete for the same people or cash, agree on which one wins. The next slide shows why done and success are different dates.",
         "Hover over “KFFM lever” to show the six levers."
       ],
       "tags": [
@@ -41,7 +41,7 @@
         {
           "role": "Speed",
           "heading": "How soon will we see it?",
-          "support": "Name the date the measure of success will be achieved by. If it takes a long time to show, think twice.",
+          "support": "Name the achieved-by date for the measure of success. If it takes a long time to show, think twice.",
           "mark": "structure"
         },
         {

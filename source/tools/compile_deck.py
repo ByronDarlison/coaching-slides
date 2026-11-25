@@ -453,6 +453,16 @@ def image_ratio(path: Path) -> float:
             if data[:8] == b"\x89PNG\r\n\x1a\n":
                 wide, tall = struct.unpack(">II", data[16:24])
                 ratio = wide / tall if tall else None
+        elif path.suffix.lower() in (".jpg", ".jpeg"):
+            data = path.read_bytes()
+            at = 2
+            while data[:2] == b"\xff\xd8" and at + 9 < len(data) and data[at] == 0xFF:
+                marker, size = data[at + 1], struct.unpack(">H", data[at + 2:at + 4])[0]
+                if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+                    tall, wide = struct.unpack(">HH", data[at + 5:at + 9])
+                    ratio = wide / tall if tall else None
+                    break
+                at += 2 + size
     except (OSError, ValueError, struct.error):
         ratio = None
     return round(min(4.0, max(0.4, ratio)), 4) if ratio else 1.6
@@ -504,6 +514,7 @@ def prepare_artwork(units: list[dict[str, Any]], dest: Path, deck_url: str | Non
                 raise CompileError("a deck_qr slide needs the deck's public URL")
             write_deck_qr(dest, deck_url)
             unit["artwork"] = {"src": DECK_QR, "alt": deck_qr_alt(deck_url)}
+            unit["_art_ratio"] = 1
             # Freezing rewrites this address by its folder form, so a query or fragment would be left behind.
             if not deck_url.endswith("/") or "?" in deck_url or "#" in deck_url:
                 raise CompileError("a deck's public address is a folder address ending in /, with no ? or #")
@@ -515,6 +526,10 @@ def prepare_artwork(units: list[dict[str, Any]], dest: Path, deck_url: str | Non
         if art:
             if not isinstance(art, dict) or not isinstance(art.get("src"), str) or not art.get("alt"):
                 raise CompileError("artwork needs a local src and descriptive alt text")
+            # The picture's shape, so a side panel can fit its picture before the picture loads.
+            box = art.get("viewbox")
+            unit["_art_ratio"] = (round(box[0] / box[1], 4) if isinstance(box, list) and len(box) == 2 and all(number(v) for v in box) and box[1]
+                                  else image_ratio((root / art["src"]).resolve()) if (root / art["src"]).is_file() else None)
             relative, digest = bundle_asset(root, art["src"], dest)
             unit["artwork"] = {**art, "src": relative, "sha256": digest}
         prepare_terms(unit, root, dest)
@@ -741,11 +756,17 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
     elif layout == "comp-story":
         panel = (image + links_row) if image else support_paragraphs(unit)
         art_class = (" story-panel--art" + (" story-panel--links" if links_row else "")) if image else ""
+        if image and unit.get("_art_ratio"):
+            art_class += f'" style="--par:{unit["_art_ratio"]:g}'
         fit = " story-frame--fit" if image and unit.get("art_fit") is True else ""
         wide = (" story-frame--full" + fit) if image and unit.get("art_full") is True else (" story-frame--wide" if image and unit.get("art_wide") is True else "")
         if image and unit.get("art_side") is True:
             copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
             narrow = " story-frame--art-narrow" if unit.get("art_narrow") is True else ""
+            # art_large: a drawing the room must read keeps the wide picture column.
+            # art_small: a names-only focus picture takes the narrower column.
+            narrow += " story-frame--art-large" if unit.get("art_large") is True else ""
+            narrow += " story-frame--art-small" if unit.get("art_small") is True else ""
             inner = f'<div class="slide-stage"><div class="story-frame story-frame--side{narrow}">{copy}<div class="story-panel{art_class}">{panel}</div></div></div>'
         elif not image and (unit.get("checklist") is True or unit.get("copy_stack") is True):
             copy = f'<div class="story-copy">{title_of("story-title")}{support_paragraphs(unit)}</div>'
