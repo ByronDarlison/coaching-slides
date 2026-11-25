@@ -69,7 +69,7 @@
       "notes": [
         "Same page as the 3HAG, one year out. Every number keeps its owner.",
         "The widget owners come straight from the KFFM. Chris owns the leads Marketing hands on. Andrew owns new subscriptions, Jen activations and Allison collected payments.",
-        "Then ideally 3, up to 5 company priorities. Each has one owner, a done-by date and a measure of success."
+        "Then ideally 3, up to 5 company priorities. Each has one owner, a done-by date, a measure of success and an achieved-by date."
       ]
     },
     {
@@ -149,7 +149,7 @@
       ],
       "artwork": {
         "src": "assets/1hag-map-priorities.svg",
-        "alt": "The 1HAG page with block 2, the priorities, highlighted. Each priority shows what it builds, its owner, its done-by date and its measure of success."
+        "alt": "The 1HAG page with block 2, the priorities, highlighted. Each priority shows what it builds, its owner, its done-by date, its measure of success and its achieved-by date."
       },
       "art_side": true
     },

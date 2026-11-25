@@ -190,7 +190,7 @@
       ],
       "support": "Ideally 3, up to 5 company priorities in total, including #1.",
       "body": [
-        "Connect each to an annual priority. Give each an owner, a done-by date and a measure of success."
+        "Connect each to an annual priority. Give each an owner, a done-by date, a measure of success and an achieved-by date."
       ],
       "eyebrow": "",
       "artwork": {
