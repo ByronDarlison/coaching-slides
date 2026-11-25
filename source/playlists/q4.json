@@ -161,14 +161,14 @@
         "headline": "For each lever: did you push it? What moved?",
         "notes": [
           "At the annual, the six levers are the check on the KFFM. The KFFM is only right if the team is using it to move more cash faster.",
-          "Open the team’s own KFFM in Metronome beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
+          "Keep the team’s own KFFM beside this drawing. Go lever by lever. For each one, ask its owner what they did to push it last quarter and what moved. A lever nobody is pushing is a finding. Write it down.",
           "Quantity and conversion: every hand-off has a named widget. Each widget is countable, and it is not revenue or cash. Its owner controls it and counts it every week.",
           "Price: what price did customers pay? What changed when you raised it?",
-          "Profit per X: has a good one emerged? If not, leave it blank.",
+          "Profit per X: has a good one emerged? Take any open Profit per X question to today’s Hedgehog.",
           "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
-          "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
+          "Each critical number should tell the owner whether the function is working. Keep one critical number for each function. Focus the discussion on at most 4."
         ],
         "support": "In Metronome: open KFFM. Go lever by lever."
       }
@@ -220,7 +220,7 @@
         "support": "Is it a value you hire and fire on, or a brand value?",
         "notes": [
           "A value that fails the tests is a brand value or a wish, not a Core Value.",
-          "A fourth or fifth value can earn its place here.",
+          "Ideally 3, up to 5. Test every value.",
           "Allow about 10 minutes."
         ],
         "body": [
@@ -319,7 +319,7 @@
       "override": {
         "title": "Start from your 3HAG line.",
         "headline": "Start from your 3HAG line.",
-        "support": "Put your own agreed line on the screen. This one is the example.",
+        "support": "Put your own 3HAG line on the screen. This one is the example.",
         "artwork": {
           "src": "assets/q4-attribution-3hag.svg",
           "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
