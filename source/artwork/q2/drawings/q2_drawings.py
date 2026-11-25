@@ -57,7 +57,7 @@ def callout(x, y, w, title, rows):
 # ---------------------------------------------------------------- stage maps
 STAGES = [("status", "Status"), ("functions", "Functions"), ("scorecards", "Scorecards"), ("kffm", "KFFM"),
           ("culture", "Culture"), ("customer", "Core|Customer"),
-          ("strategy", "3HAG|and 1HAG"), ("plan", "QHAG"), ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities")]
+          ("strategy", "3HAG"), ("plan", "Plan"), ("lanes", "Sprint|Lanes"), ("priorities", "Individual|Priorities")]
 
 
 def path_svg(current):
