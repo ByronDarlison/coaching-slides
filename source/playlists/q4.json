@@ -241,6 +241,24 @@
       "id": "kickoff:q4-hedgehog"
     },
     {
+      "id": "kickoff:bhag",
+      "slides": [
+        "test"
+      ],
+      "override": {
+        "title": "Does your BHAG pass?",
+        "headline": "Does your BHAG pass?",
+        "support": "Double-check the BHAG you just validated. Read it aloud. Test it.",
+        "notes": [
+          "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
+          "Test leader enthusiasm separately from the whole company’s.",
+          "Do not accept an ambition that only repeats today’s business at a larger scale without meaningful stretch.",
+          "At the annual, test the BHAG the team agreed on in the Hedgehog. If a test fails, revise the statement and test it again.",
+          "Go back to a circle only when the discussion shows the team disagrees about it."
+        ]
+      }
+    },
+    {
       "id": "kickoff:q4-painted-picture",
       "slides": [
         "bhag",

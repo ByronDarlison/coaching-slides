@@ -9,7 +9,7 @@
     {
       "id": "circles",
       "title": "Your BHAG sits where three circles meet.",
-      "support": "This is the Hedgehog. Today you test the Core Purpose, Profit per X and BHAG you already set. Your Core Purpose goes in the top circle. Agree on the other two in turn. The BHAG comes last.",
+      "support": "This is the Hedgehog. You use it to validate the BHAG you already have. Your Core Purpose goes in the top circle. Agree on the other two in turn. Validate the BHAG last.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-hedgehog.svg",
@@ -17,7 +17,7 @@
       },
       "notes": [
         "This is the Hedgehog Concept. The BHAG sits where three things meet. They are why the company exists, what its core business is and how it makes money.",
-        "The BHAG from the Kick Off was good enough to build execution momentum. A year on, the team tests it in full. Nothing here is new to them except the core business question.",
+        "The BHAG from the Kick Off was good enough to build execution momentum. A year on, the team validates it in full. They are not creating it from scratch. Only the core business question is new.",
         "The Hedgehog is about focus, not fantasy.",
         "The Core Purpose from the Golden Circle goes in the top circle. Then work through the other two circles in order."
       ],
@@ -87,7 +87,7 @@
     {
       "id": "goal",
       "title": "What is your 10 to 30 year goal?",
-      "support": "Each leader writes one sentence alone. No date, no numbers. Then share.",
+      "support": "A blind test of your BHAG. Each leader writes one sentence alone, without looking at it. No date, no numbers. Then share.",
       "art_side": true,
       "art_small": true,
       "artwork": {
@@ -103,8 +103,7 @@
         "Only start this step when the team agrees on all three circles.",
         "Each leader writes what they think the company’s 10 to 30 year goal is, and all share. Ask which one is the BHAG, then wait for a leader to make a stand. Do not show the current BHAG yet.",
         "The sentence carries no date and no numbers. The horizon goes in its own field beside it.",
-        "Only then read the current BHAG aloud from the One Page Plan. The team keeps it or replaces it. A new BHAG or the same BHAG, well tested: either is a good result.",
-        "Go back to a circle only when the discussion shows the team disagrees about it."
+        "Only then read the current BHAG aloud from the One Page Plan. The team keeps it or replaces it. A new BHAG or the same BHAG, well tested: either is a good result."
       ],
       "headline": "What is your 10 to 30 year goal?",
       "layout": "comp-story",
