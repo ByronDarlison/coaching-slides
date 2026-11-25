@@ -8,23 +8,21 @@
   "slides": [
     {
       "id": "example",
-      "title": "Example: four differentiators and what each depends on.",
-      "support": "This is what you build next. Activities, grouped and named. Each arrow shows what one depends on.",
+      "title": "Example: an Activity Fit Map.",
+      "support": "Activities, in groups. Each group has a name. Those names are your differentiators. This is what you build next.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "An example Activity Fit Map. Four differentiators each hold three activities. A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom."
+        "alt": "An example Activity Fit Map. Four named groups each hold three activities: A Named Person for 90 Days, Live in a Day, One Flat Price, and Standard, Not Custom."
       },
       "notes": [
+        "This is the Activity Fit Map. The team brainstorms activities, groups them and names each group. The names are the differentiators.",
         "Show the finished thing first. The slides that follow build the team’s own.",
         "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
-        "The example company kept four differentiators. Then it drew the arrows.",
-        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
-        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer.",
         "In this example, Standard, Not Custom explains the lower reporting and customization scores.",
         "This is an example. Do not recommend these differentiators to a team."
       ],
-      "headline": "Example: four differentiators and what each depends on.",
+      "headline": "Example: an Activity Fit Map.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -125,7 +123,9 @@
         "Start with the most-connected differentiator. For each of the others, ask: does this depend on that? Draw the arrow when the team agrees.",
         "It is rare to get this far and find they are not connected. The connections are what make the strategy hard to copy.",
         "Take a break here. After it, the team puts the differentiators in its 3HAG and reads the whole 3HAG back.",
-        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
+        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change.",
+        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
+        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer."
       ],
       "headline": "What depends on what?",
       "layout": "comp-story",
