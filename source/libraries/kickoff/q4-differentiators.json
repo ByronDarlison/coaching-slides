@@ -7,10 +7,37 @@
   ],
   "slides": [
     {
+      "id": "example",
+      "title": "Example: four differentiators and what each depends on.",
+      "support": "This is what you build next. Activities, grouped and named. Each arrow shows what one depends on.",
+      "art_full": true,
+      "artwork": {
+        "src": "assets/q4-activity-fit-map-example.svg",
+        "alt": "An example Activity Fit Map. Four differentiators each hold three activities. A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom."
+      },
+      "notes": [
+        "Show the finished thing first. The slides that follow build the team’s own.",
+        "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
+        "The example company kept four differentiators. Then it drew the arrows.",
+        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
+        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer.",
+        "In this example, Standard, Not Custom explains the lower reporting and customization scores.",
+        "This is an example. Do not recommend these differentiators to a team."
+      ],
+      "headline": "Example: four differentiators and what each depends on.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ]
+    },
+    {
       "id": "write",
-      "title": "What must we do to make the whole 3HAG line true?",
+      "title": "What must you do to make the whole 3HAG line true?",
       "support": "Each leader writes 5 to 7 activities alone, one on each sticky note.",
       "body": [
+        "A differentiator is a group of activities that makes your 3HAG line true.",
         "The whole line: where you will lead, what you will maintain and what you will let drop.",
         "An activity can be something to stop doing.",
         "Present your activities. Put them all on the board."
@@ -20,7 +47,7 @@
         "Keep asking the one question: what activities need to be in place to make the whole 3HAG line true?",
         "Each leader presents their activities. Start grouping similar ones as they go up."
       ],
-      "headline": "What must we do to make the whole 3HAG line true?",
+      "headline": "What must you do to make the whole 3HAG line true?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -56,21 +83,21 @@
     },
     {
       "id": "agree",
-      "title": "Agree your 3 to 5 differentiators.",
+      "title": "Agree on your 3 to 5 differentiators.",
       "support": "Keep the strongest groups. Each one heads a swim lane.",
       "body": [
         "Check back against your 3HAG line: every place you will lead has a group behind it.",
         "Each one serves a need of your Core Customer.",
         "A group you do not keep can stay as a supporting activity.",
-        "Give each a short descriptor: what is true when it is achieved."
+        "Give each a short descriptor: what is true when you achieve it."
       ],
       "notes": [
-        "Most teams end up with 4 to 6 groups. Agree the 3 to 5 that carry the strategy before anyone draws an arrow.",
+        "Most teams end up with 4 to 6 groups. Agree on the 3 to 5 that carry the strategy before anyone draws an arrow.",
         "Check each group back against the Attribution Framework. Which chosen attribute does it move? Which Core Customer need does it serve?",
         "A group that connects to nothing the market values is a task, not a differentiator.",
         "The descriptor heads the swim lane. It keeps the team aligned after people forget the workshop."
       ],
-      "headline": "Agree your 3 to 5 differentiators.",
+      "headline": "Agree on your 3 to 5 differentiators.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -80,34 +107,9 @@
       "copy_stack": true
     },
     {
-      "id": "example",
-      "title": "Example: an Activity Fit Map.",
-      "support": "Four differentiators and their activities. Each arrow shows what one depends on.",
-      "art_full": true,
-      "artwork": {
-        "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "An example Activity Fit Map. Four differentiators each hold three activities. A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom."
-      },
-      "notes": [
-        "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
-        "The example company kept four differentiators. Then it drew the arrows.",
-        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
-        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer.",
-        "In this example, Standard, Not Custom explains the lower reporting and customization scores.",
-        "This is an example. Do not recommend these differentiators to a team."
-      ],
-      "headline": "Example: an Activity Fit Map.",
-      "layout": "comp-story",
-      "group": "",
-      "eyebrow": "",
-      "tags": [
-        "q4"
-      ]
-    },
-    {
       "id": "connect",
       "title": "What depends on what?",
-      "support": "Draw an arrow from each differentiator to the one it depends on. Start with the most connected.",
+      "support": "Draw an arrow from each differentiator to the one it depends on. Start with the one most others lean on.",
       "art_side": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-groups.svg",
@@ -120,9 +122,9 @@
       ],
       "notes": [
         "Draw the arrows only between the 3 to 5 the team kept.",
-        "Take the most connected differentiator first. Ask of each other one: does this depend on that? Draw the arrow when the team agrees.",
+        "Take the differentiator most others lean on first. For each of the others, ask: does this depend on that? Draw the arrow when the team agrees.",
         "It is rare to get this far and find they are not connected. The connections are what make the strategy hard to copy.",
-        "Take a break here. The team comes back to the map with fresh eyes before it lays the differentiators over time.",
+        "Take a break here. After it, the team puts the differentiators in its 3HAG and reads the whole 3HAG back.",
         "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
       ],
       "headline": "What depends on what?",

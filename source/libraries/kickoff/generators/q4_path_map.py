@@ -12,14 +12,15 @@ DAY2 = [("status", ["Status"]), ("forecast", ["Forecast"]), ("annual", ["New", "
 W, BH, GAP = 1440, 150, 22
 GREEN, GREY, BLUE = "#318549", "#d5d9dd", "#326ab6"
 
-def draw(stages, current, corner, per_row, bw, rowy, h):
+def draw(stages, current, corner, per_row, bw, rowy, h, unfinished=()):
+    """unfinished: stages behind the current one that are not marked done yet (drawn like a stage still to come)."""
     left = (W - per_row * bw - (per_row - 1) * GAP) / 2
     def pos(i):
         return left + (i % per_row) * (bw + GAP), rowy[i // per_row]
     out = [f'<text x="40" y="52" font-size="28" font-weight="700" fill="{MID}" text-anchor="start" letter-spacing="2">{corner}</text>']
     for i, (_, label) in enumerate(stages):
         x, y = pos(i); cx, cy = x + bw / 2, y + BH / 2
-        done, now = i < current, i == current
+        done, now = i < current and stages[i][0] not in unfinished, i == current
         line = GREEN if done else GREY
         if i % per_row == per_row - 1 and i < len(stages) - 1:
             x2, y2 = pos(i + 1)
@@ -43,7 +44,8 @@ def draw(stages, current, corner, per_row, bw, rowy, h):
     return svg(W, h, "".join(out))
 
 for i, (name, _) in enumerate(DAY1):
-    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464))
+    # The new 3HAG is finished only when the differentiators go into it, so it is not marked done on that map.
+    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464, unfinished=("threehag",) if name == "differentiators" else ()))
 for i, (name, _) in enumerate(DAY2):
     write(f"q4-day2-path-{name}.svg", draw(DAY2, i, "Q4 · Day 2", 6, 208, [84], 264))
 print("wrote", len(DAY1) + len(DAY2), "path maps")

@@ -10,14 +10,13 @@
       "id": "customer",
       "title": "Is your Core Customer still right?",
       "support": "In Metronome: open War Room. Read your Core Customer aloud.",
-      "checklist": true,
       "body": [
         "Is this still the customer you most want more of?",
         "Are their three needs still right, in the same order?",
         "What did the year teach you about them?"
       ],
       "notes": [
-        "Choosing one Core Customer and ranking their three needs was the Q2 work. If the War Room has none, say so and agree when the team will choose.",
+        "Choosing one Core Customer and ranking their three needs was the Q2 work. If the War Room has none, say so and agree on when the team will choose.",
         "Change only what the evidence changes. The differentiators must serve these needs."
       ],
       "headline": "Is your Core Customer still right?",
@@ -32,12 +31,11 @@
     {
       "id": "line",
       "title": "Is your 3HAG line agreed?",
-      "support": "In Metronome: open War Room. Put your Attribution Framework on the screen.",
-      "checklist": true,
+      "support": "In Metronome: open War Room. Put your Attribution Map on the screen.",
       "body": [
         "Read the line: where you will lead, what you will maintain and what you will let drop.",
         "Has anything changed since you drew it?",
-        "Agree the line now. You build your differentiators from it."
+        "Agree on the line now, for your new 3‑year date. You build your differentiators from it."
       ],
       "notes": [
         "Drawing the 3HAG line was the Q3 work. The differentiators need the whole line agreed before they start.",

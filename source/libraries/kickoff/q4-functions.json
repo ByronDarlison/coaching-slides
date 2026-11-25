@@ -9,8 +9,7 @@
     {
       "id": "team-view",
       "title": "Is your Team View still right?",
-      "support": "In Metronome: open Team View. Check it against the Function Chart you just agreed.",
-      "checklist": true,
+      "support": "In Metronome: open Team View. Check it against the Function Chart you just agreed on.",
       "body": [
         "Which functions are missing or planned?",
         "Who owns too many functions?"
@@ -35,16 +34,16 @@
       "id": "reviews",
       "title": "Are your scorecard reviews done?",
       "support": "Each leader answers in turn.",
-      "checklist": true,
       "body": [
         "Have you reviewed each of your direct reports against their scorecard?",
-        "If you have a team lead, have they reviewed you against yours?",
+        "If you report to someone, have they reviewed you against yours?",
         "If not, say by when."
       ],
       "notes": [
         "Annual reviews on the function scorecards in Metronome were Q3 homework.",
         "A review is a conversation against the scorecard. It covers the purpose, the accountabilities, the two metrics, the competencies and the Core Values.",
-        "This is a check, not a discussion of anyone’s review. Take the dates and move on."
+        "This is a check, not a discussion of anyone’s review. Take the dates and move on.",
+        "Allow about 40 minutes for the scorecard, KFFM and A-Player checks together."
       ],
       "headline": "Are your scorecard reviews done?",
       "layout": "comp-story",

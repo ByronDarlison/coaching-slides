@@ -9,18 +9,18 @@
     {
       "id": "review",
       "title": "Review next year’s forecast before you set the targets.",
-      "support": "Finance puts the 12‑month forecast on the screen.",
+      "support": "Finance puts the 12‑month forecast on the screen. Walk the widgets month by month.",
       "body": [
-        "Finance shows the model. Walk the widgets month by month.",
         "Each leader speaks for their own widgets. The CEO confirms the total.",
         "Does the year keep you on track for your new 3HAG targets?",
-        "Agree it. It becomes the approved forecast for the year."
+        "Agree on it. It becomes the approved forecast for the year.",
+        "Not finished? Name the missing inputs, their owners and the date you will approve it."
       ],
       "notes": [
         "Building the 12-month forecast from each leader’s widget numbers was Finance’s Q3 homework. The team reviews it and does not build it in the room.",
         "Finance owns the model. Each leader owns the assumptions for their widgets. The CEO owns the total.",
         "Start with the widgets, then the revenue, expenses, margin and cash they produce. It does not have to be complicated.",
-        "If the forecast is not finished, name the missing inputs and their owners. Agree the date the team will approve it.",
+        "If the forecast is not finished, name the missing inputs and their owners. Agree on the date the team will approve it.",
         "Once agreed, it is the approved forecast. It does not change until the next annual. The rolling forecast beside it moves every month.",
         "Homework: Finance enters the 12-month widget forecast as rolling metrics in Metronome.",
         "Allow about 30 minutes."

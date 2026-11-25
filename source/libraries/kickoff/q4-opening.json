@@ -13,7 +13,8 @@
       "group": "Day 1",
       "notes": [
         "The first annual planning session, one year after the Kick Off. 2 days.",
-        "The objective is the strategy mapped out and a new 3HAG."
+        "The objective is the strategy mapped out and a new 3HAG.",
+        "Allow about 30 minutes for the opening and the prep survey."
       ],
       "artwork": {
         "src": "assets/kickoff-title.png",
@@ -35,19 +36,20 @@
           "role": "Day 1",
           "heading": "Strategy",
           "support": "The team, the business, your BHAG, a new 3HAG, its differentiators and swim lanes.",
-          "mark": "structure"
+          "mark": "action"
         },
         {
           "role": "Day 2",
           "heading": "Execution",
           "support": "The year in review, next year’s forecast, a new 1HAG, a new QHAG and sprint lanes.",
-          "mark": "action"
+          "mark": "structure"
         }
       ],
       "notes": [
-        "The annual is the quarterly with more time and more strategic depth. It is not a reset. It extends what the quarterlies built.",
+        "The annual is the quarterly with more time and more strategic depth. It extends what the quarterlies built.",
         "Day 1 tests the strategy and writes the new 3HAG. Day 2 builds the annual plan and the first quarter of it.",
-        "This is a working session. Protect time for the team to make decisions and capture its own plan."
+        "This is a working session. Protect time for the team to make decisions and capture its own plan.",
+        "The plan gives Day 1 about 405 working minutes, with no spare. Day 2 has about 340, which leaves about 65 for work carried over."
       ],
       "headline": "Day 1 is strategy. Day 2 is execution.",
       "group": "",

@@ -13,16 +13,33 @@
       "checklist": true,
       "body": [
         "The KFFM is on the agenda every week.",
-        "Every red number has a written plan: situation, cause, correction, follow-up.",
-        "Which lever moves cash fastest now? Name the function, the widget and the owner.",
-        "Make it a candidate for a QHAG priority."
+        "Every red number has a written plan: situation, cause, correction, follow-up."
       ],
       "notes": [
         "Q3 introduced the weekly KFFM review. Check whether it is running.",
-        "Whatever is burning on the KFFM today must show up in tomorrow’s priorities. Note each red or yellow function the team wants to move.",
-        "Tomorrow the team looks at this list, the swim lanes and what is going on around it. Then it decides its priorities."
+        "Whatever is burning on the KFFM today must show up in tomorrow’s priorities. Note each red or yellow function the team wants to move."
       ],
       "headline": "Is the KFFM in your weekly leadership meeting?",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q4"
+      ],
+      "copy_stack": true
+    },
+    {
+      "id": "lever",
+      "title": "Which lever moves cash fastest now?",
+      "support": "Name the function, the widget and the owner.",
+      "body": [
+        "Make it a candidate for a QHAG priority."
+      ],
+      "notes": [
+        "Write it on the parking list. The team uses it tomorrow.",
+        "Tomorrow the team looks at the parking list, the swim lanes and what is going on around it. Then it decides its priorities."
+      ],
+      "headline": "Which lever moves cash fastest now?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

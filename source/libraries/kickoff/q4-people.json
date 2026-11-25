@@ -10,12 +10,11 @@
       "id": "plans-check",
       "title": "How is the plan for everyone below A going?",
       "support": "Each leader answers for their own team.",
-      "checklist": true,
       "body": [
         "For each B: how are you coaching them to A?",
         "Has any A fallen back to B?",
         "For each C: what action have you taken, and when is the decision due?",
-        "No plan yet? Agree the action, the accountable leader and the date now."
+        "No plan yet? Agree on the action, the accountable leader and the date now."
       ],
       "notes": [
         "A plan for everyone below A was Q3 homework. This checks those plans.",
