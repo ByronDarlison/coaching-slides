@@ -141,7 +141,7 @@
         "notes": [
           "At a quarterly, this is a check-in. The homework was for every leader to complete their function scorecard in Metronome.",
           "By this session, each leader's direct reports have a scorecard too. Each leader rates their direct reports against it on the A-Player grid. If any are missing, say so now and agree on a date.",
-          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and 3 to 5 functional accountabilities, each starting Owns. It also holds exactly 2 metrics, 6 to 8 key competencies and the company’s Core Values. The 2 metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and up to 5 functional accountabilities, each starting Owns. It also holds exactly 2 metrics, 6 to 8 key competencies and the company’s Core Values. The 2 metrics are one widget the owner controls and one fiscal metric the role owns.",
           "The company’s Core Values go on every scorecard. If the team has agreed on them, check they are there. If not, they go on once the team agrees on them.",
           "Leaders review scorecards every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: complete the annual reviews on the function scorecards in Metronome."
@@ -188,7 +188,7 @@
           "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
-          "Each critical number should tell the owner whether the function is working. Focus on a few, at most four, on the KFFM."
+          "Each critical number should tell the owner whether the function is working. Keep one critical number for each function. Focus the discussion on at most 4."
         ],
         "support": "In Metronome: open KFFM. Go lever by lever."
       }
@@ -206,7 +206,7 @@
           "Make that lever a candidate for a QHAG priority.",
           "Then open Meetings. Add a KFFM item to the weekly leadership meeting.",
           "Each week, look at the flow: where is it stuck?",
-          "A red number needs a written plan: situation, cause, correction, follow-up."
+          "For each red critical number, its owner writes the situation, cause, correction and follow-up."
         ],
         "notes": [
           "The team picks the lever that moves cash fastest this quarter. Take it into the QHAG as a priority candidate.",
@@ -240,7 +240,7 @@
         "support": "Is it a value you hire and fire on, or a brand value?",
         "notes": [
           "A value that fails the tests is a brand value or a wish, not a Core Value.",
-          "A fourth or fifth value can earn its place here.",
+          "Ideally 3, up to 5. Test every value.",
           "Allow about 10 minutes."
         ],
         "body": [
@@ -395,7 +395,7 @@
           "No priority invests in an attribute you chose to let drop.",
           "Each measure has a target and an achieved-by date.",
           "Each priority moves its number enough, and soon enough to see.",
-          "The targets reach the 3HAG, the widgets support the revenue, and head count is set."
+          "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
         ]
       }
     },
@@ -657,7 +657,7 @@
         ],
         "notes": [
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
-          "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
+          "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations.",
           "Quarterly Planning is the fifth meeting. The team is in it now.",
           "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",
           "Weekly 1:1: good news, metrics and the top 3 priorities for the week. Then feedback both ways and the dynamic part.",

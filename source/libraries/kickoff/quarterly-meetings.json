@@ -27,7 +27,7 @@
         "Running? Yes or no, with the date.",
         "Working? Is the time, the length and the agenda right?",
         "Write what to change, or no change.",
-        "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations."
+        "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations."
       ]
     }
   ]

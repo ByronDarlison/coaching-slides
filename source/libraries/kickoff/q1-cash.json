@@ -311,7 +311,7 @@
       ],
       "notes": [
         "Scan to open each template’s Example tab. In Google Sheets, choose File, then Make a copy.",
-        "Finance builds this year’s forecast in the 12-month template. The 36-month template is the 3-year view. The team builds it from the second annual."
+        "Finance builds this year’s forecast in the 12-month template. The 36-month template is the 3-year view. Finance adds the next 24 months to the existing 12 after Q6. The team reviews and approves the 36-month forecast at the second annual."
       ],
       "artwork": {
         "src": "assets/cash-forecast-examples.svg",

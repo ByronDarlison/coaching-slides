@@ -141,7 +141,7 @@
         "notes": [
           "At a quarterly, this is a check-in. Open the Head of Company scorecard in Metronome, and the Head of Company walks the team through it.",
           "Then ask each leader where their own scorecard stands.",
-          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and 3 to 5 functional accountabilities, each starting Owns. It also holds exactly 2 metrics, 6 to 8 key competencies and the company’s Core Values. The 2 metrics are one widget the owner controls and one fiscal metric the role owns.",
+          "A scorecard is one page for a function. It says what success looks like. It holds a purpose in one sentence and up to 5 functional accountabilities, each starting Owns. It also holds exactly 2 metrics, 6 to 8 key competencies and the company’s Core Values. The 2 metrics are one widget the owner controls and one fiscal metric the role owns.",
           "The company’s Core Values go on every scorecard. If the team has agreed on them, check they are there. If not, they go on once the team agrees on them.",
           "Leaders review scorecards every 90 days. The scores: 0 below, 1 meets, 2 exceeds. The owner scores first, then their team lead, then they talk about the differences.",
           "Homework: every leader completes their function scorecard in Metronome, and builds one for each direct report."
@@ -195,7 +195,7 @@
           "Timing: add the days each function really took last quarter. Where did the work wait? Which function added the most days? Compare with the days the team estimated last time.",
           "Capacity is how many widgets a function can handle in a month. A function can be fast and still too small.",
           "Cost: what each function costs to run.",
-          "Each critical number should tell the owner whether the function is working. It moves when the work gets better or worse, and its owner looks at it every day. Focus on a few, at most four, on the KFFM.",
+          "Each critical number should tell the owner whether the function is working. It moves when the work gets better or worse, and its owner looks at it every day. Keep one critical number for each function. Focus the discussion on at most 4.",
           "Profit per X: has a good one emerged? If not, leave it blank. X is usually a widget from the KFFM."
         ],
         "support": "On your own KFFM, go lever by lever."
@@ -379,7 +379,7 @@
           "Each priority builds a 3HAG capability or moves a KFFM lever.",
           "Each measure has a target and an achieved-by date.",
           "Each priority moves its number enough, and soon enough to see.",
-          "The targets reach the 3HAG, the widgets support the revenue, and head count is set."
+          "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
         ]
       }
     },
@@ -649,7 +649,7 @@
         ],
         "notes": [
           "Give it about 10 minutes, on the board’s Meeting Rhythm Check-In.",
-          "Rate each meeting: 0 below, 1 meets, 2 exceeds expectations.",
+          "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations.",
           "Five meetings make the rhythm: the three here, the Monthly Town Hall and Quarterly Planning. The team is in Quarterly Planning now.",
           "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",
           "Weekly 1:1: good news, metrics and the top 3 priorities for the week. Then feedback both ways and the dynamic part. The dynamic part is stucks, important information and things that cannot wait. The direct report leads it. The leader will usually have a few topics.",
