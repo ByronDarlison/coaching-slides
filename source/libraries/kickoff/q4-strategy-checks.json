@@ -30,10 +30,11 @@
     },
     {
       "id": "line",
-      "title": "Is your 3HAG line agreed?",
+      "title": "Is the line on your Attribution Map still right?",
       "support": "In Metronome: open War Room. Put your Attribution Map on the screen.",
       "body": [
-        "Read the line: where you will lead, what you will maintain and what you will let drop.",
+        "At Q3 you drew your 3HAG line: where you will be in 3 years on each attribute.",
+        "Read it: where you will lead, what you will maintain and what you will let drop.",
         "Has anything changed since you drew it?",
         "Agree on the line now, for your new 3‑year date."
       ],
@@ -41,7 +42,7 @@
         "Drawing the 3HAG line was the Q3 work.",
         "If the line is not agreed or the competitors are not scored, keep going and mark the result draft."
       ],
-      "headline": "Is your 3HAG line agreed?",
+      "headline": "Is the line on your Attribution Map still right?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
