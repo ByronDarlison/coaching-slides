@@ -446,16 +446,16 @@ def cash_chart(gap_callout=False):
 (OUT / "cash-rolling-miss.svg").write_text(cash_chart(True), encoding="utf-8")
 
 # ---------------------------------------------------------------- forecast examples
-# Two QR codes that open the Example tab of each public forecast template (Byron, 16-Nov-2026).
+# One QR code that opens the Example tab of the public 12-month forecast template (Byron, 16-Nov-2026).
+# The 36-month template is not offered at Q1: 12 months at the first annual, 36 from the second
+# (Byron, 25-Nov-2026).
 import sys
 sys.path.insert(0, str(ROOT / "tools"))
 import qr_svg  # noqa: E402
 
 EXAMPLES = [
-    ("12-month forecast", "Build this one first.",
+    ("12-month forecast", "This year’s forecast.",
      "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209"),
-    ("36-month forecast", "The 3-year view.",
-     "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588"),
 ]
 
 
@@ -472,7 +472,7 @@ def forecast_examples():
     W, H, size = 1440, 640, 380
     o = []
     for i, (title, sub, url) in enumerate(EXAMPLES):
-        cx = 380 + i * 680
+        cx = W / 2 + (i - (len(EXAMPLES) - 1) / 2) * 680
         o.append(f'<rect x="{cx - 250}" y="20" width="500" height="600" rx="8" fill="white" stroke="{LINE}" stroke-width="3"/>')
         o.append(f'<rect x="{cx - 250}" y="20" width="500" height="8" fill="{G if i == 0 else B}"/>')
         o.append(t(cx, 92, title, 34, 700, INK))

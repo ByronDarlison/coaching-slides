@@ -292,7 +292,7 @@
       "arrows": false,
       "notes": [
         "At the Kick Off, the finance leader added the primary widgets to this year’s forecast. Ask how that went.",
-        "If there is no budget model, use the 12-month template. Extend it to 36 months once the monthly review runs well.",
+        "If there is no budget model, use the 12-month template.",
         "Weekly targets come from the QHAG the team set today. The scoreboard shows them each week.",
         "Build the review into a monthly meeting you already hold. A meeting with discipline makes the forecast stick. A forecast cannot make a meeting stick.",
         "Homework: the finance leader builds the model with each leader’s assumptions."
@@ -300,8 +300,8 @@
     },
     {
       "id": "examples",
-      "title": "Start from the worked examples.",
-      "headline": "Start from the worked examples.",
+      "title": "Start from the worked example.",
+      "headline": "Start from the worked example.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -309,12 +309,12 @@
         "q1"
       ],
       "notes": [
-        "Scan to open each template’s Example tab. In Google Sheets, choose File, then Make a copy.",
-        "Finance builds this year’s forecast in the 12-month template. The 36-month template extends it to 3 years."
+        "Scan to open the template’s Example tab. In Google Sheets, choose File, then Make a copy.",
+        "Finance builds this year’s forecast in the 12-month template."
       ],
       "artwork": {
         "src": "assets/cash-forecast-examples.svg",
-        "alt": "Two QR codes. 12-month forecast, build this one first: opens the Example tab of the 12-month cash forecast template. 36-month forecast, the 3-year view: opens the Example tab of the 36-month template.",
+        "alt": "One QR code. 12-month forecast, this year’s forecast: opens the Example tab of the 12-month cash forecast template.",
         "viewbox": [
           1440,
           640
@@ -322,20 +322,12 @@
         "qr": true,
         "links": [
           {
-            "x": 130,
+            "x": 470,
             "y": 20,
             "w": 500,
             "h": 600,
             "href": "https://docs.google.com/spreadsheets/d/1Gopb6QtY_HixT8lOjo7Tu4HZ-2Yy2M02jxbSptdoSJM/edit#gid=1174451209",
             "label": "12-month forecast template"
-          },
-          {
-            "x": 810,
-            "y": 20,
-            "w": 500,
-            "h": 600,
-            "href": "https://docs.google.com/spreadsheets/d/1qhzbTYzfBUSeTjJf08UJ4kRKDljA65IgIOSnc82OGV4/edit#gid=861046588",
-            "label": "36-month forecast template"
           }
         ]
       },
