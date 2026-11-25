@@ -37,10 +37,9 @@
       "title": "What are your new 3‑year targets?",
       "support": "Each leader writes the numbers alone. Show your answers, then agree.",
       "art_side": true,
-      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-numbers.svg",
-        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Numbers is highlighted."
+        "alt": "The 3HAG page with block 1, Numbers, highlighted. Block 3 reads Differentiators and is empty."
       },
       "body": [
         "Gross revenue, margin and ending cash, for Year 3 alone.",
@@ -59,17 +58,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "statement",
       "title": "What will the company be in 3 years?",
       "support": "Write one sentence that describes the company you will become.",
       "art_side": true,
-      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-statement.svg",
-        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Statement is highlighted."
+        "alt": "The 3HAG page with block 2, the statement, highlighted. Block 3 reads Differentiators and is empty."
       },
       "body": [
         "Keep numbers in the targets.",
@@ -85,17 +84,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "known-for",
       "title": "What do you want to be known for?",
       "support": "In 3 years, when someone says your company name, what should people think?",
       "art_side": true,
-      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-known-for.svg",
-        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Known for is highlighted."
+        "alt": "The 3HAG page with block 4, known for, highlighted. Block 3 reads Differentiators and is empty."
       },
       "body": [
         "Each leader writes it alone. Show your answers, then agree."
@@ -109,17 +108,17 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "differentiators-in",
       "title": "Put your differentiators in your 3HAG.",
       "support": "This finishes your 3HAG. They take the place of last year’s key capabilities.",
       "art_side": true,
-      "art_small": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-differentiators.svg",
-        "alt": "The five parts of the 3HAG: End date, Numbers, Statement, Known for and Differentiators. Differentiators is highlighted."
+        "alt": "The 3HAG page with block 3, Differentiators, highlighted. It lists the four example differentiators."
       },
       "body": [
         "Do they make the numbers and the statement true?"
@@ -134,7 +133,8 @@
       "eyebrow": "",
       "tags": [
         "q4"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "pass",
