@@ -29,7 +29,8 @@
         "src": "assets/hag-ladder-at-priorities.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. Priorities is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "my-priorities",

@@ -45,7 +45,8 @@
       "body": [
         "If we didn’t do them, no cash would reach the bank."
       ],
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "example-map",

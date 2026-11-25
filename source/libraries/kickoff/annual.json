@@ -30,7 +30,8 @@
         "src": "assets/hag-ladder-at-1hag.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. 1HAG is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "map",
@@ -119,7 +120,8 @@
         "One widget for each hand-off on your KFFM, plus head count.",
         "Name an owner for every number.",
         "Is each target big enough to get you to your 3HAG targets?"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "annual-first",
@@ -151,7 +153,8 @@
         "src": "assets/1hag-map-priorities.svg",
         "alt": "The 1HAG page with block 2, the priorities, highlighted. Each priority shows what it builds, its owner, its done-by date, its measure of success and its achieved-by date."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "annual-rest",

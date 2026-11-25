@@ -31,7 +31,8 @@
         "src": "assets/cash-rolling.svg",
         "alt": "A small copy of the cash chart. It shows actual cash for January and February, then the approved and rolling forecasts to December."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "why",

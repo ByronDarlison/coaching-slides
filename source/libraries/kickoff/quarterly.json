@@ -29,7 +29,8 @@
         "src": "assets/hag-ladder-at-qhag.svg",
         "alt": "The cascade from BHAG to priorities: BHAG, 3HAG, 1HAG, QHAG, then individual quarterly priorities. Each level is built from the one above it and directs the one below. QHAG is highlighted: this is where we are."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "map",
@@ -123,7 +124,8 @@
         "Name an owner for every number.",
         "No data yet? Set your best estimate, then track it.",
         "Is each target big enough to keep you on track for your 1HAG?"
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "quarter-first",
@@ -168,7 +170,8 @@
             "What could go wrong?"
           ]
         }
-      ]
+      ],
+      "art_large": true
     },
     {
       "id": "quarter-rest",
@@ -197,7 +200,8 @@
         "src": "assets/qhag-priorities-crop.svg",
         "alt": "The QHAG page’s block 2, Priorities, all three shown. #1 is above. The next is hire the first account executive, Andrew, done by March 15. Success: new MRR of $25K a month or more by June 30. The last is move the 100 largest customers to automatic billing, Allison, done by March 31. Success: days to collect 20 or fewer by June 30."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "qhag-check",

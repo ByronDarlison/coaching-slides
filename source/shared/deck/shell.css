@@ -1383,3 +1383,68 @@ h1 .term .hotspot-tip { letter-spacing: normal; text-wrap: wrap; }
 /* Titles balance their lines. Supporting text, list lines and the ask line on a card slide fill the
    line and break at its end, so a two-line item is as wide as the one-line items around it (Byron, 24-Nov-2026). */
 .story-frame .support, .card-lede { text-wrap: pretty; }
+
+/* ---------------------------------------------------------------------------
+   Readability pass (25-Nov-2026). Each numbered block stands alone.
+   --------------------------------------------------------------------------- */
+
+/* 1. Card role labels ("ENGAGE", "DAILY"): never under 14px (visual standard, rule 32).
+   The heading under a label sits a little closer, so a card is no taller than before. */
+.role { font-size: clamp(14px, 1.1vw, 21px); }
+.role + h2 { margin-top: 0.25rem; }
+
+/* The "i" mark on a hover area of a drawing: at the 13px floor. */
+.hotspot-i { font-size: clamp(13px, 1.02vw, 19px); }
+
+@media (min-width: 900px) and (min-height: 600px) {
+  /* 2. A check list beside the cascade: the instruction line is as large as the checks under it. */
+  .story-frame--art-narrow .story-copy .support:not(.check-item) {
+    font-size: clamp(1rem, min(1.75vw, 2.6vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.019), 1.45rem); line-height: 1.22;
+  }
+
+  /* 3. Side pictures: the ask gets about 45% of the width and type the room can read.
+     art_large keeps the wide picture column for a drawing the room must read;
+     art_small gives a names-only focus picture the narrower column. */
+  .story-frame--side:not(.story-frame--art-narrow):not(.story-frame--copy):not(.story-frame--art-large) { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+  .story-frame--side.story-frame--art-small:not(.story-frame--art-narrow) { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+  .story-frame--side:not(.story-frame--art-narrow):not(.story-frame--copy) .story-copy .support { font-size: clamp(1rem, min(1.75vw, 2.8vh), 1.45rem); line-height: 1.3; }
+  /* Beside a wide drawing the copy column is narrow, so its type grows less and follows the stage's width. */
+  .story-frame--side.story-frame--art-large:not(.story-frame--art-narrow) .story-copy .support {
+    font-size: clamp(.85rem, max(min(1.4vw, 2.2vh), min(1.55vw, 2.5vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.0172)), 1.45rem);
+  }
+}
+
+/* 4. Large screens: type keeps its 1280 by 720 proportion up to 1920 by 1080.
+   Each size is the larger of today's rule and the 1280 by 720 size scaled by width and by height,
+   so nothing here is ever smaller than before and nothing outgrows the stage. */
+@media (min-width: 1600px) and (min-height: 900px) {
+  /* The title's measure grows with its type, so a title breaks where it does at 1280 by 720. */
+  .slide-title { font-size: max(3.25rem, min(3.35vw, 5.956vh, 64.3px)); max-width: min(100%, 21.7em); }
+  .layout-title .slide-title { font-size: max(3.5rem, min(4.375vw, 7.778vh, 84px)); }
+  .support { font-size: max(24px, min(1.875vw, 3.333vh, 36px)); }
+  .panel h2 { font-size: max(2.1rem, min(2.4vw, 4.267vh, 46px)); }
+  .stack-3 .panel h2 { font-size: max(1.65rem, min(1.9vw, 3.378vh, 36.5px)); }
+  .meet-grid .panel h2 { font-size: max(1.7rem, min(2vw, 3.556vh, 38.4px)); }
+  .stack-3 .panel .support { font-size: max(24px, min(1.7vw, 3.022vh, 32.6px)); }
+  .meet-grid .panel .support { font-size: max(24px, min(1.35vw, 2.4vh, 25.9px)); }
+  #presentation .grid-6 .panel h2 { font-size: max(1.55rem, min(1.6vw, 2.844vh, 30.7px)); }
+  #presentation .grid-6 .panel .support { font-size: max(20px, min(1.2vw, 2.133vh, 23px)); }
+  .panel:has(> .panel-items) .support { font-size: max(21px, min(1.35vw, 2.4vh, 25.9px)); }
+  .panel .panel-items { font-size: max(1.25rem, min(1.3vw, 2.311vh, 25px)); }
+  .bullet-panel p, .panel .support-list { font-size: max(22px, min(1.55vw, 2.756vh, 29.8px)); }
+  .story-title { font-size: max(3.6rem, min(4vw, 7.111vh, 76.8px)); }
+  .story-frame--wide .story-title { font-size: max(3rem, min(3vw, 5.333vh, 57.6px)); }
+  .story-frame--full .story-title { font-size: max(2.8rem, min(2.8vw, 4.978vh, 53.8px)); }
+  .story-frame--full .story-lede { font-size: max(1.45rem, min(1.5vw, 2.667vh, 28.8px)); }
+  .story-frame--side .story-title { font-size: clamp(1.4rem, min(3vw, 4.6vh), 3.11rem); }
+  .story-frame:not(.story-frame--side) .story-panel .support { font-size: max(24px, min(1.5vw, 2.667vh, 28.8px)); }
+  .story-frame--side:not(.story-frame--art-narrow):not(.story-frame--copy) .story-copy .support { font-size: clamp(1rem, min(1.75vw, 2.8vh), 1.9rem); }
+  .story-frame--side.story-frame--art-large:not(.story-frame--art-narrow) .story-copy .support {
+    font-size: clamp(.85rem, max(min(1.4vw, 2.2vh), min(1.55vw, 2.5vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.0172)), 1.7rem);
+  }
+  .story-frame--art-narrow .story-copy .support,
+  .story-frame--art-narrow .story-copy .support.check-item,
+  .story-frame--art-narrow .story-copy .support:not(.check-item) { font-size: clamp(1rem, min(1.75vw, 2.6vh, (100vw - var(--deck-nav-space, 0px) - 4.5rem) * 0.019), 1.76rem); }
+  .story-frame--copy.story-frame--short .story-title { font-size: max(3.8rem, min(4vw, 7.111vh, 76.8px)); }
+  .story-frame--copy.story-frame--short .story-copy .support { font-size: max(1.9rem, min(2vw, 3.556vh, 38.4px)); }
+}

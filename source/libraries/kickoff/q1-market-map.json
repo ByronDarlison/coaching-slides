@@ -31,7 +31,8 @@
         "src": "assets/market-map-example.svg",
         "alt": "A small copy of the example Market Map. Customers and channels sit on the left. The company is in the center, with associations above and competitors below. Suppliers and a paid partner sit on the right. Bands show money in and money out."
       },
-      "art_side": true
+      "art_side": true,
+      "art_large": true
     },
     {
       "id": "example",
