@@ -360,12 +360,6 @@
       }
     },
     {
-      "id": "kickoff:q2-path",
-      "slides": [
-        "plan"
-      ]
-    },
-    {
       "id": "kickoff:annual",
       "slides": [
         "1hag-check"
@@ -390,6 +384,12 @@
           "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG and 1HAG are checked."
         }
       }
+    },
+    {
+      "id": "kickoff:q2-path",
+      "slides": [
+        "plan"
+      ]
     },
     {
       "id": "kickoff:quarterly",

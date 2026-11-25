@@ -39,14 +39,14 @@ def draw(checked):
         ty = y + BOX_H / 2 + 12
         if name == "BHAG":
             out.append(f'<rect x="{X}" y="{y}" width="{BOX_W}" height="{BOX_H}" rx="16" fill="white" stroke="{BLUE}" stroke-width="4"/>')
-            out.append(f'<text x="38.0" y="{ty}" font-size="33" font-weight="700" fill="{BLUE}">{name}</text>')
+            out.append(f'<text x="30.0" y="{ty}" font-size="30" font-weight="700" fill="{BLUE}">{name}</text>')
         elif done:
             out.append(f'<rect x="{X}" y="{y}" width="{BOX_W}" height="{BOX_H}" rx="16" fill="#e7f2ea" stroke="{GREEN}" stroke-width="4"/>')
-            out.append(f'<text x="38.0" y="{ty}" font-size="33" font-weight="700" fill="{INK}">{name}</text>')
-            out.append(f'<text x="262.0" y="{ty + 1}" font-size="38" font-weight="700" fill="{GREEN}" text-anchor="end">✓</text>')
+            out.append(f'<text x="30.0" y="{ty}" font-size="30" font-weight="700" fill="{INK}">{name}</text>')
+            out.append(f'<text x="268.0" y="{ty + 1}" font-size="32" font-weight="700" fill="{GREEN}" text-anchor="end">✓</text>')
         else:
             out.append(f'<rect x="{X}" y="{y}" width="{BOX_W}" height="{BOX_H}" rx="16" fill="white" stroke="{GREY}" stroke-width="3"/>')
-            out.append(f'<text x="38.0" y="{ty}" font-size="33" font-weight="600" fill="{MUTED}">{name}</text>')
+            out.append(f'<text x="30.0" y="{ty}" font-size="30" font-weight="600" fill="{MUTED}">{name}</text>')
     out.append("</svg>")
     return "".join(out)
 
