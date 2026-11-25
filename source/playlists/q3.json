@@ -366,7 +366,11 @@
           "The statement and the “known for” describe the future company.",
           "The numbers are set, each with an owner, and the widgets support the revenue.",
           "Decide: what in the 3HAG changes?"
-        ]
+        ],
+        "artwork": {
+          "src": "assets/hag-chain-sprint-checked-3hag.svg",
+          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities, each feeding the next. The 3HAG is checked."
+        }
       }
     },
     {
@@ -396,7 +400,11 @@
           "Each measure has a target and an achieved-by date.",
           "Each priority moves its number enough, and soon enough to see.",
           "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
-        ]
+        ],
+        "artwork": {
+          "src": "assets/hag-chain-sprint-checked-1hag.svg",
+          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG and 1HAG are checked."
+        }
       }
     },
     {
@@ -449,7 +457,11 @@
         "qhag-check"
       ],
       "override": {
-        "support": "Read your QHAG aloud from the board before you move on."
+        "support": "Read your QHAG aloud from the board before you move on.",
+        "artwork": {
+          "src": "assets/hag-chain-sprint-checked-qhag.svg",
+          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. The 3HAG, 1HAG and QHAG are checked. Sprint Lanes come next."
+        }
       }
     },
     {
@@ -591,7 +603,11 @@
           "Anything that fails goes on the homework list with an owner.",
           "Check that last quarter’s open priorities are on the new QHAG.",
           "At a quarterly, the 1HAG and QHAG checks have already covered owners, targets, widgets and head count. This slide checks only that each person’s priorities line up with the plan."
-        ]
+        ],
+        "artwork": {
+          "src": "assets/hag-chain-sprint-checked.svg",
+          "alt": "The planning chain: BHAG, 3HAG, 1HAG, QHAG, Sprint Lanes and Priorities. Everything below the BHAG is checked."
+        }
       }
     },
     {
