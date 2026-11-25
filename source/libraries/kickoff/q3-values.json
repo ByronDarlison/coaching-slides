@@ -52,7 +52,7 @@
       ],
       "artwork": {
         "src": "assets/mars-steps.svg",
-        "alt": "Five steps in a row. 1, pick three people. Each person picks three people not in the room and names the value each one lives. 2, share and cluster: say who and why, move similar values together, name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
+        "alt": "Five steps in a row. 1, pick three people. Each person picks three people and names the value each one lives. 2, share and cluster. Each person says who they picked and why. Move similar values together and name each cluster. 3, vote: three votes each, on the clusters that best show your values. 4, test the top three: test each one and talk about anything left out. 5, agree the Core Values: name each value and write the behavior it means."
       }
     },
     {
