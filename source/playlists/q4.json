@@ -65,8 +65,8 @@
       ],
       "override": {
         "notes": [
-          "Ask each person to write an answer on a sticky note and share it. Agree on the outcomes. Return to these at the close. Allow 10 minutes.",
-          "The coach’s own outcome is “Strategy mapped out. New 3HAG.” Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
+          "Ask each person to write an answer on a sticky note and share it. Agree on the answers. Return to these at the close. Allow 10 minutes.",
+          "The coach’s own answer is “Strategy mapped out. New 3HAG.” Hold it back until everyone has shared theirs, so it does not lead the room. It shows on the “Did we get what we came for?” slide."
         ]
       }
     },
@@ -153,8 +153,8 @@
       "override": {
         "support": "In Metronome: open KFFM. Put it on the screen.",
         "notes": [
-          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board and agree a date to enter it.",
-          "Each owner colors their own function by where its critical number stands against target: on track is green, at risk is yellow, needs attention is red. Red is a conversation, not a verdict."
+          "If the KFFM is not in Metronome yet, show the team’s own KFFM from the board. Agree a date to enter it.",
+          "Each owner colors their own function by where its critical number stands against target. Green is on track, yellow is at risk and red needs attention. Red is a conversation, not a verdict."
         ],
         "body": [
           "The 3 to 5 key functions are still the right ones.",
@@ -333,7 +333,7 @@
         "support": "Put your own agreed line on the screen. This one is the example.",
         "artwork": {
           "src": "assets/q4-attribution-3hag.svg",
-          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. Every line is dimmed except the 3HAG line, which rises to 5 on speed of setup, price predictability and support from a person and drops to 2 on reporting and 1 on customization. The white space above the other lines is left white on a grey ground, and the part the 3HAG line moves into is shaded green. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
+          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a grey ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
         },
         "notes": [
           "At the annual, this is a reminder. Read back the line you agreed. The example shows the line that the next slides make true.",
@@ -537,8 +537,8 @@
       "override": {
         "notes": [
           "Read the new 1HAG aloud, top to bottom, then run the six checks. Each priority must move its number enough, and soon enough to see.",
-          "Check each priority against the first four quarters of its swim lane. Check the lever the team picked on the KFFM.",
-          "Check that the approved forecast carries the people and cash the first four quarters need.",
+          "Check each priority against the first 4 quarters of its swim lane. Check the lever the team picked on the KFFM.",
+          "Check that the approved forecast carries the people and cash the first 4 quarters need.",
           "Fix what you can now. Give each open item an owner and a date on the homework list."
         ],
         "support": "Read your new 1HAG aloud from the board before you move on.",
@@ -564,7 +564,7 @@
         "quarter-numbers"
       ],
       "override": {
-        "support": "Take the first three months of your agreed forecast.",
+        "support": "Take the first 3 months of your agreed forecast.",
         "body": [
           "Gross revenue, margin, ending cash, each widget, Profit per X and head count, month by month.",
           "Name an owner for every number.",
@@ -572,15 +572,15 @@
           "Is each target big enough to keep you on track for your 1HAG?"
         ],
         "notes": [
-          "At the annual, the quarter’s numbers start from the first three months of the forecast the team agreed. Confirm them. Do not rebuild them.",
+          "At the annual, the quarter’s numbers start from the first 3 months of the forecast the team agreed. Confirm them. Do not rebuild them.",
           "Ask questions about the math rather than telling them it is wrong. Ask who owns each number.",
           "Compare answers and assumptions. Agree on the period, gross revenue, ending cash balance, operating widgets and head count, month by month.",
-          "Use the same widget definitions as the three-year plan. Distinguish new activity from cumulative totals.",
+          "Use the same widget definitions as the 3-year plan. Distinguish new activity from cumulative totals.",
           "Ask who owns each metric. Wait for each owner to claim responsibility aloud. Record the owner beside the target.",
           "Reconcile the targets with the longer-term plan. Discuss seasonality and assumptions rather than dividing targets mechanically.",
           "Revenue is a period flow; cash is an ending balance. Do not divide every target by four or add up successive cash balances.",
           "Reconcile with the 1HAG: is each quarter’s target big enough to stay on track for the year? If Q1 is a quarter of the way or less, ask what makes the later quarters steeper.",
-          "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the 1HAG’s $300 a year.",
+          "Profit per subscription ramps through the year: $10 to $15 a month this quarter, $25 a month by December. That is the annualized December rate: $300 a year.",
           "If the team changes a number, say why and keep the approved forecast as it was agreed. The next status review asks where the estimate was wrong."
         ]
       }
@@ -592,7 +592,7 @@
       ],
       "override": {
         "notes": [
-          "Every leader independently lists what must be accomplished this quarter to deliver a 1HAG priority, then shares.",
+          "Every leader independently lists what the company must accomplish this quarter to deliver a 1HAG priority, then shares.",
           "At the annual, start with last quarter’s open priorities and the new 1HAG priorities. Add the lever the team picked and the first quarter of each swim lane.",
           "Done is not the same as success. Each priority has a done-by date for the work and an achieved-by date for the result.",
           "Run the six questions on each candidate. Hover over “six questions” to show them.",
@@ -716,10 +716,10 @@
           "Give it about 10 minutes. For each meeting ask: is it running, is it working, and what should change?",
           "Rate each meeting that is running: 0 below, 1 meets, 2 exceeds expectations.",
           "Today is the annual. This check covers the meetings that run between planning sessions.",
-          "Daily huddle: Good news; Metrics: yesterday’s widget actual and today’s forecast; The #1 thing to get done today; Stucks, and anything that can’t wait.",
+          "Daily huddle: good news, then metrics. Metrics are yesterday’s widget actual and today’s forecast. Then the #1 thing to get done today, stucks, and anything that can’t wait.",
           "Weekly 1:1: Good news; Metrics; Top 3 priorities for the week; Feedback both ways; Dynamic.",
-          "Weekly leadership meeting: Good news; Values recognition; Widget scoreboard; KFFM critical numbers; QHAG: numbers, priorities, sprint lanes; Stucks, asks and offers.",
-          "Monthly Town Hall: Good news, then values recognition; QHAG progress on the #1 priority, and how everyone can help; Financial transparency: what is working and what is not; One thing we can do as a company to improve our financial health.",
+          "Weekly leadership meeting: good news, values recognition, the widget scoreboard and the KFFM critical numbers. Then the QHAG: numbers, priorities and sprint lanes. Finish with stucks, asks and offers.",
+          "Monthly Town Hall: good news, then values recognition. Then QHAG progress on the #1 priority, and how everyone can help. Then financial transparency: what is working and what is not. Finish with one thing we can do as a company to improve our financial health.",
           "Values recognition: name someone in front of the whole company. Name the value. Name what they did.",
           "This is the only meeting where the whole company hears the same thing at the same time.",
           "Financial transparency builds the financial literacy of the whole company.",
