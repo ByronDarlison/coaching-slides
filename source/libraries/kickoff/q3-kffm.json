@@ -20,7 +20,7 @@
       "support": "Put the KFFM on the weekly agenda in Metronome.",
       "body": [
         "Each owner reports their critical number: green, yellow or red.",
-        "A red number comes with a written plan: situation, cause, correction, follow-up."
+        "For each red critical number, its owner writes the situation, cause, correction and follow-up."
       ],
       "notes": [
         "The KFFM is in Metronome with its metrics, from last quarter’s homework.",
