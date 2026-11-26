@@ -8,21 +8,23 @@
   "slides": [
     {
       "id": "example",
-      "title": "How you build your Activity Fit Map.",
-      "support": "Your 3HAG line gives you white space: you are unique and valuable, and you do not compete head on. To create it, there are things you must do more of or less of. Those are your activities. Grouped and named, they become your 3 to 5 differentiators, your swim lanes for the next three years.",
+      "title": "Build your Activity Fit Map in four steps.",
+      "support": "To create your white space, you must invest in some things and give up others. Those are your activities.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-steps.svg",
-        "alt": "Four small pictures in a row. 1, write the activities: loose notes, each leader alone, one on each sticky note. 2, group them and name each group: the notes sit around five named circles, with a test in the middle, tell your strategy using only the names. 3, keep 3 to 5: four circles take a color and one fades. These are your differentiators. 4, draw the lines: lines join the differentiators that depend on each other."
+        "alt": "A bar marked Start: your white space, as agreed on your Attribution Map. Then four small pictures in a row. 1, write the activities: loose notes, one activity on each. 2, group them and name each group: the notes sit around five named circles. The name sums up what the group does. 3, keep 3 to 5 groups: four circles take a color and one is struck out. These are your differentiators. 4, draw the lines: lines join the differentiators, to show how they depend on each other. Then a bar marked End: your differentiators become your swim lanes, what you must get done, quarter by quarter, for three years."
       },
       "notes": [
-        "Say why first. The 3HAG line gives the company white space. To create that white space, there are things it must do more of or less of. Those are the activities.", "The team brainstorms every activity that could create the 3HAG line. Then it groups them and names each group. The named groups are the differentiators.", "This is the Activity Fit Map. The idea is Michael Porter’s: strategy is the set of activities a company does differently from its competitors. Shannon Susko builds it from the ground up.", "The end is a map of what the company must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
-        "Walk the four steps. The team writes activities, groups them and names each group. It keeps 3 to 5. Those are the differentiators. Then it draws the lines.",
+        "Start from the white space the team just agreed on. To create it, the company must invest in some things and give up others. Those are the activities.",
+        "Walk the four steps. The team brainstorms every activity, groups them and names each group. It keeps 3 to 5. Those are the differentiators. Then it draws the lines.",
+        "This is the Activity Fit Map. The idea is Michael Porter’s: strategy is the set of activities a company does differently from its competitors. Shannon Susko builds it from the ground up.",
         "Do not start from the attributes at the top of the 3HAG line and work down. That gives generic names.",
         "The lines are the point. Differentiators that depend on each other are hard to copy. With no lines, the team has a list of capabilities.",
+        "The end is a map of what the company must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
         "The next four slides take one step each. The last one shows a finished example."
       ],
-      "headline": "How you build your Activity Fit Map.",
+      "headline": "Build your Activity Fit Map in four steps.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -126,7 +128,8 @@
         "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy using only the names. A Named Person for 90 Days has three activities: a single contact, a call in week one, answers in one day. Live in a Day has two: guided setup, ready-made templates. Standard, Not Custom has three: one product for all, no custom work, a short, fixed report set. One Flat Price has two: one plan, no add-ons. Three lines carry a reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price."
       },
       "notes": [
-        "Draw the lines only between the 3 to 5 the team kept.", "When the lines are drawn, the team has a map of what it must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
+        "Draw the lines only between the 3 to 5 the team kept.",
+        "When the lines are drawn, the team has a map of what it must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
         "Start with the most-connected differentiator. For each of the others, ask: does this depend on that? If we cannot do that one, can we win with this one? Draw the line when the team agrees.",
         "A differentiator can depend on more than one other.",
         "One with no lines is either what sets the company apart or a task. Ask the team to tell you more. If it is still unclear, leave it where it is.",
