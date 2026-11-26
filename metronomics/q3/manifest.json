@@ -519,7 +519,7 @@
     },
     {
       "reference": "kickoff:q3-path#status",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "6b02902432e9491bd2386ed597c552040b3a32af1dd2597b731d32bc9f141141"
@@ -533,7 +533,7 @@
     },
     {
       "reference": "kickoff:q3-path#functions",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "7f8bc5e5104b14eb1fa7ca951c925500a9d6f38225c6c9bce3140e81ef4abc7e"
@@ -554,7 +554,7 @@
     },
     {
       "reference": "kickoff:q3-path#scorecards",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "b8680d6c68891f2eb4d5e97f1c88ffe8fc81e4fc147a7e35535b2e5abf182347"
@@ -568,7 +568,7 @@
     },
     {
       "reference": "kickoff:q3-path#kffm",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "7fac53b46b17bc3538e7730c25083d2e930517c93c03a13f9fc169a4a4a7ad2f"
@@ -596,7 +596,7 @@
     },
     {
       "reference": "kickoff:q3-path#values",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "a6547863a9c63f84aa24b93d9bef84398ff8d877d8ed40e3b5a40cffef9ee0a4"
@@ -652,7 +652,7 @@
     },
     {
       "reference": "kickoff:q3-path#people",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "8e2fe3c45d3bc1fe2c42c104f048da63deb5180c8370a00c85ef366668d7e917"
@@ -722,56 +722,56 @@
     },
     {
       "reference": "kickoff:q3-path#attribution",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "1dcddd6a85e22cb5b73a6931abd6ba3632403ec0a427ddf74fa9d2a1b98e9d6e"
     },
     {
       "reference": "kickoff:q3-attribution#objective",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
-      "artwork_sha256": "384ec3d86aa71afabfd547faeff6caef72cd6a1e627bedd6718167c633c62553"
+      "artwork_sha256": "2f95f282d956a4a4b5e60996018af52cb4fee2ac45227baeaf96ea9e9ccd6323"
     },
     {
       "reference": "kickoff:q3-attribution#example",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "869bcedfbe973d2b1fed813802ccf6037bf978f729a2a33709f16c115f4bb467"
     },
     {
       "reference": "kickoff:q3-attribution#attributes",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "59dee377e5cac8c510092fc0719b4e272c6dd40e9e8693902262b8d042e93547"
     },
     {
       "reference": "kickoff:q3-attribution#us",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b61f4b48e0c6dea931ed3ddedeec987d1a3bab8d71a6fac5972ce5df7bc33129"
     },
     {
       "reference": "kickoff:q3-attribution#competitors",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b4036bfc8b373038d320a869818511b3befc2130992e9f3a87b8bff446823781"
     },
     {
       "reference": "kickoff:q3-attribution#white-space",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "a129926b371e77d95a40e1a75be1c4cce182c4bc00f3d8c61721caf0216c8190"
     },
     {
       "reference": "kickoff:q3-attribution#line",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "e757b7e395c5b9d8c03d260e2e9e2a3f45114128c5fcd0d458c1a1bfe2c4577a"
@@ -785,49 +785,49 @@
     },
     {
       "reference": "kickoff:q3-attribution#brainstorm",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#score",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "4996c3665641c2b4999819fbec4f2a482cd744cc91818b0bcd9905629397295e"
     },
     {
       "reference": "kickoff:q3-attribution#sheet-example",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "089019d91587078bd1e2799209a60f6e290073222530ff474b99c2bc527dddd3"
     },
     {
       "reference": "kickoff:q3-attribution#core-customer",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#draw",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#apply",
-      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
+      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-path#strategy",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "a660375fcd12d49b0d3a74fda5d71c3ec5fe15ca01155654c643b19cc5378ef3"
@@ -841,7 +841,7 @@
     },
     {
       "reference": "kickoff:q3-path#annual",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "27d7c2ff7e92e1bf6b5bce7a27ca605ffc6790f08813a0eca09d03b4001daf1c"
@@ -855,7 +855,7 @@
     },
     {
       "reference": "kickoff:q3-path#plan",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "2a54ea4a9cf9711a2106ac52f4d5a8c6a872d431c2104853a6225e1a8f38dbcd"
@@ -890,7 +890,7 @@
     },
     {
       "reference": "kickoff:q3-path#lanes",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "34e196b1320854042fc0ce572a0aa0e914ab50d1fb0ac33c97eeac465485ffe0"
@@ -918,7 +918,7 @@
     },
     {
       "reference": "kickoff:q3-path#priorities",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "035d18f445e688f80c5fc9f8e7cb7798b495fc205f466c6790f7c5cf7c643d9c"
@@ -946,7 +946,7 @@
     },
     {
       "reference": "kickoff:q3-path#forecast",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "ea6895cb37b8d993cfc57a7b9f88adfbd380183ed6d81c0b44f517e10a738a6b"
@@ -967,7 +967,7 @@
     },
     {
       "reference": "kickoff:q3-path#close",
-      "sha256": "eb8d7bde298cd55bd204d2e110883fd49d67814a0d52823c546c74e298d2b2f9",
+      "sha256": "3d6e07181b659b9ac13fa707defb6c9d629a4b4980419f5e0887a7a015a346a1",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "07414099878fde64a9abb5f03d9d9880c7d80fd1ad1d913bc52c8d9f4f7a5031"

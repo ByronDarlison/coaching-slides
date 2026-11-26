@@ -832,14 +832,14 @@
     },
     {
       "reference": "kickoff:q4-strategy-checks#customer",
-      "sha256": "e6c3efe0b17924369fa99352e066549c4106d263d07ba176f2044b16c53f45c3",
+      "sha256": "20657166e06cc412739d7dd59492bc94c1d4210390b7a3b44993ab082f62de0b",
       "artifact": "strategy",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and worksheet Build Up 3-5 Differentiators (prerequisite).",
-      "artwork_sha256": "79008729e3a0ec8430815d12b2f2cd6f539150a917759c93dd8d15a558d75f52"
+      "artwork_sha256": "3e85552fbd151e04dadad05038d8b832c9c1126c9fbe280fc2c120f48a3a8b52"
     },
     {
       "reference": "kickoff:q4-strategy-checks#line",
-      "sha256": "e6c3efe0b17924369fa99352e066549c4106d263d07ba176f2044b16c53f45c3",
+      "sha256": "20657166e06cc412739d7dd59492bc94c1d4210390b7a3b44993ab082f62de0b",
       "artifact": "strategy",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and worksheet Build Up 3-5 Differentiators (prerequisite).",
       "artwork_sha256": "e757b7e395c5b9d8c03d260e2e9e2a3f45114128c5fcd0d458c1a1bfe2c4577a"
@@ -961,7 +961,7 @@
       "sha256": "e424ce1d23746f47235051c5c333df8db315555a3413c0c5ab3d83db0a9038e6",
       "artifact": "swimlanes",
       "seed": "Shannon Byrne Susko, System by System post Swimlanes; training of 26 and 27-Sep-2026; Byron\u2019s master board, Swim Lanes; Byron, 26 and 27-Sep-2026 (verifiable outcomes, anchors first, Core Customer needs, descriptor); Strategic Swimlanes playbook.",
-      "artwork_sha256": "db072303bb97c9f7ae1f8ebbe0874583f34294d1bbd79160a80c72149a3d8606"
+      "artwork_sha256": "c9953d5433b1ce3f1ce75c70aa6b095e93cd8d6ec03d79c83a52f69c67112eef"
     },
     {
       "reference": "kickoff:q4-swim-lanes#milestones",
