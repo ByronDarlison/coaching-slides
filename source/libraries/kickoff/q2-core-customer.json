@@ -160,7 +160,6 @@
       "tags": [
         "q2"
       ],
-      "copy_stack": true,
       "support": "Work on your own first. For each customer, write:",
       "body": [
         "Description: who makes the buying decision, and can we serve their needs at a profit? 50 words or fewer.",
@@ -171,7 +170,12 @@
         "Each person fills in their own column in private. Show your answers, then agree.",
         "The worksheet calls the benefits drivers.",
         "Allow about 15 minutes."
-      ]
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/core-customer-focus-views.svg",
+        "alt": "The Core Customer page with names only. Three blocks are lit: Description, Prioritized Needs and Prioritized Benefits. Core Customer, Persona, and Revenue and Profit are dim."
+      }
     },
     {
       "id": "choose",
@@ -183,7 +187,6 @@
       "tags": [
         "q2"
       ],
-      "copy_stack": true,
       "support": "Cluster everyone’s answers into possible customers. For each one:",
       "body": [
         "Brainstorm 5 to 8 needs, then rank the top 3. Needs, not wants.",
@@ -198,7 +201,12 @@
         "Settle differences with a decision, not a compromise.",
         "A team that cannot choose today ranks its candidates. Choosing then becomes homework, with an owner and a date.",
         "Expect a couple of rounds before it is right. Allow about 40 minutes."
-      ]
+      ],
+      "art_side": true,
+      "artwork": {
+        "src": "assets/core-customer-focus-choose.svg",
+        "alt": "The Core Customer page with names only. Four blocks are lit: Core Customer, Prioritized Needs, Prioritized Benefits, and Revenue and Profit. Description and Persona are dim."
+      }
     },
     {
       "id": "persona",
@@ -215,7 +223,8 @@
       "body": [
         "A first name.",
         "A job title.",
-        "Their daily reality."
+        "Their daily reality.",
+        "Last, record their share of revenue and profit."
       ],
       "notes": [
         "Test the persona: what are they doing on a Tuesday at 7 AM?",
@@ -226,6 +235,27 @@
         "src": "assets/core-customer-persona.jpg",
         "alt": "Three neutral gray figures sit at a table. A portrait card of a green-outlined figure with a blank name tag stands on the table. The three turn toward it."
       }
+    },
+    {
+      "id": "finished",
+      "title": "Your Core Customer, on one page.",
+      "headline": "Your Core Customer, on one page.",
+      "layout": "comp-story",
+      "group": "",
+      "eyebrow": "",
+      "tags": [
+        "q2"
+      ],
+      "art_full": true,
+      "notes": [
+        "End on the finished page. Ask one leader to read the team’s own Core Customer aloud, top to bottom.",
+        "If a block is still open, give it an owner and a date."
+      ],
+      "artwork": {
+        "src": "assets/core-customer-example.svg",
+        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff. They decide alone, pay by card, and want it working this month without an IT person. Prioritized needs. 1, up and running in days. 2, a cost they can predict. 3, a person to call when stuck. Prioritized benefits. 1, live in 5 days or fewer. 2, one flat monthly price. 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
+      },
+      "support": "This one is the example. Read yours aloud."
     },
     {
       "id": "apply",
@@ -242,12 +272,12 @@
         "3HAG: does each capability serve their three ranked needs?",
         "KFFM: does a widget, a function or a critical number change?",
         "1HAG and QHAG: does a priority change?",
-        "Marketing: does your message speak to this customer? A StoryBrand BrandScript can help you craft it.",
+        "Marketing: does your message speak to this customer?",
         "Would you turn away revenue that does not fit?"
       ],
       "notes": [
         "Next, test the 3HAG and the 1HAG with these answers, then build the QHAG.",
-        "A BrandScript tells the company’s story with the customer as the hero and the company as the guide. It comes from the book Building a StoryBrand.",
+        "A StoryBrand BrandScript can help the team craft the message. It tells the company’s story with the customer as the hero and the company as the guide. It comes from the book Building a StoryBrand.",
         "Homework: add the Core Customer to the War Room in Metronome."
       ]
     },

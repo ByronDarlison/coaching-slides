@@ -258,7 +258,8 @@
       "id": "kickoff:q3-values",
       "slides": [
         "scenario",
-        "steps"
+        "steps",
+        "example"
       ]
     },
     {
@@ -323,6 +324,7 @@
         "each-view",
         "choose",
         "persona",
+        "finished",
         "apply",
         "go-deeper"
       ]
@@ -529,8 +531,8 @@
         "sprint-lanes"
       ],
       "override": {
-        "headline": "What the sprint lanes page holds.",
-        "title": "What the sprint lanes page holds",
+        "headline": "Sprint lanes are the weekly steps that deliver your QHAG.",
+        "title": "Sprint lanes are the weekly steps that deliver your QHAG.",
         "panels": [
           {
             "role": "01",

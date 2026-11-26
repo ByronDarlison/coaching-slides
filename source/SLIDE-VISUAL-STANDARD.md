@@ -106,7 +106,7 @@ Learned reviewing the Q3 deck (Byron, 24-Nov-2026):
 31. **Read the whole deck, then have three outsiders read it, before Byron sees it.** Read every slide in order, following the thread from each slide to the next. Then give the built deck to a cold reader, a copywriter and a visual designer who do not know what changed. Fix what they find. Bring Byron one list, with every new line marked, not one slide at a time.
 32. **Measure drawing type the way it is presented.** Check the smallest label in every drawing with the sidebar hidden at 1280 by 720 and 1366 by 768. The floor is 13 pixels. A drawing inside a narrow side panel needs names only.
 33. **Keep the generator with the drawing.** A drawing made by a script keeps that script in `libraries/kickoff/generators/`. A drawing with no script has to be reverse-engineered to change it. One script draws each picture, never two. Before publishing, run `source/tools/check_drawings.py`: it fails if any script would change a committed picture (25-Nov-2026).
-34. **Sprint lanes: taught at Q2, one refresher at Q3, none after (Byron, 24-Nov-2026).** Every team starts sprint lanes at Q2. Do not wait a quarter. Q3 repeats one Q2 slide, "What the sprint lanes page holds", by reference, before the team builds again. From Q4 the team has had enough exposure: no refresher.
+34. **Sprint lanes: taught at Q2, one refresher at Q3, none after (Byron, 24-Nov-2026).** Every team starts sprint lanes at Q2. Do not wait a quarter. Q3 repeats one Q2 slide, "Sprint lanes are the weekly steps that deliver your QHAG.", by reference, before the team builds again. From Q4 the team has had enough exposure: no refresher.
 
 Learned building the Q4 deck (24-Nov-2026):
 
@@ -126,7 +126,7 @@ Learned building the Q4 deck (24-Nov-2026):
 48. On a path map, every step behind the current one is marked done. A step left unmarked reads as a mistake.
 49. A page the team fills in is filled in its own order, top to bottom. If one block needs an exercise first, run the exercise before the page starts. Do not leave the page and come back to it.
 50. A drawing of white space is white, and it follows one rule the coach can say in a sentence. Here: the gap between the company and its best competitor. Before the 3HAG line is drawn, the company’s line is today’s. Once it is drawn, it is the 3HAG line.
-51. Check slides that sit together share one layout. When one check shows the example of its tool, the others show theirs.
+51. Check slides that sit together share one layout. When one check shows the example of its tool, the others show theirs. The Function Chart check (rule 24) keeps its card grid: it is the model for a check that asks four questions of a chart the team has open.
 52. A "Next" slide ties the step to the one before it. Its title says why the next step follows, in the words the team just used, not only the name of the next tool.
 
 ## Layouts

@@ -188,7 +188,7 @@
     },
     {
       "id": "lanes",
-      "title": "Last today, your swim lanes.",
+      "title": "Last today, your swim lanes: one for each differentiator.",
       "notes": [
         "One swim lane for each differentiator. If time runs out today, the swim lanes open Day 2. Never skip them."
       ],
@@ -198,7 +198,7 @@
         "src": "assets/q4-day1-path-lanes.svg",
         "alt": "Q4 Day 1 path. Through New 3HAG done. Swim Lanes next."
       },
-      "headline": "Last today, your swim lanes.",
+      "headline": "Last today, your swim lanes: one for each differentiator.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -228,7 +228,7 @@
     },
     {
       "id": "day2-forecast",
-      "title": "Then, next year’s forecast.",
+      "title": "Then, next year’s forecast, which Finance built from your widgets.",
       "notes": [
         "Building the 12-month forecast was Finance’s Q3 homework. The team reviews it before it sets the year’s targets."
       ],
@@ -238,7 +238,7 @@
         "src": "assets/q4-day2-path-forecast.svg",
         "alt": "Q4 Day 2 path. Status done. Forecast next."
       },
-      "headline": "Then, next year’s forecast.",
+      "headline": "Then, next year’s forecast, which Finance built from your widgets.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -248,7 +248,7 @@
     },
     {
       "id": "day2-annual",
-      "title": "Next, your new 1HAG.",
+      "title": "Next, your new 1HAG: the first year of your new 3HAG.",
       "notes": [
         "The 1HAG is the first year of the new 3HAG. Allow about 80 minutes."
       ],
@@ -258,7 +258,7 @@
         "src": "assets/q4-day2-path-annual.svg",
         "alt": "Q4 Day 2 path. Status and Forecast done. New 1HAG next."
       },
-      "headline": "Next, your new 1HAG.",
+      "headline": "Next, your new 1HAG: the first year of your new 3HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -268,7 +268,7 @@
     },
     {
       "id": "day2-quarter",
-      "title": "Next, your new QHAG.",
+      "title": "Next, the QHAG that starts your new 1HAG.",
       "notes": [
         "Never leave a planning session without a quarterly plan. Allow about 60 minutes."
       ],
@@ -278,7 +278,7 @@
         "src": "assets/q4-day2-path-quarter.svg",
         "alt": "Q4 Day 2 path. Status, Forecast and New 1HAG done. New QHAG next."
       },
-      "headline": "Next, your new QHAG.",
+      "headline": "Next, the QHAG that starts your new 1HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -288,7 +288,7 @@
     },
     {
       "id": "day2-sprint",
-      "title": "Next, your sprint lanes.",
+      "title": "Next, sprint lanes for your new QHAG.",
       "notes": [
         "Build sprint lanes for the new QHAG. The annual has no refresher."
       ],
@@ -298,7 +298,7 @@
         "src": "assets/q4-day2-path-sprint.svg",
         "alt": "Q4 Day 2 path. Through New QHAG done. Sprint Lanes next."
       },
-      "headline": "Next, your sprint lanes.",
+      "headline": "Next, sprint lanes for your new QHAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

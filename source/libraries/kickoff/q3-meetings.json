@@ -8,8 +8,8 @@
   "slides": [
     {
       "id": "weekly-email",
-      "title": "New today: the CEO’s weekly email.",
-      "headline": "New today: the CEO’s weekly email.",
+      "title": "The CEO’s weekly email keeps the whole company on the plan.",
+      "headline": "The CEO’s weekly email keeps the whole company on the plan.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -17,7 +17,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "It keeps the whole company on the plan.",
+      "support": "New today.",
       "body": [
         "One page, from the CEO to everyone, by Friday noon.",
         "In it: good news, the numbers, priority status and a positive close.",
