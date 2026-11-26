@@ -44,8 +44,8 @@ def draw(stages, current, corner, per_row, bw, rowy, h, unfinished=()):
     return svg(W, h, "".join(out))
 
 for i, (name, _) in enumerate(DAY1):
-    # The new 3HAG is finished only when the differentiators go into it, so it is not marked done on that map.
-    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464, unfinished=("threehag",) if name == "differentiators" else ()))
+    # Every step behind the current one is marked done. A step left unmarked reads as a mistake (Byron, 26-Nov-2026).
+    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464))
 for i, (name, _) in enumerate(DAY2):
     write(f"q4-day2-path-{name}.svg", draw(DAY2, i, "Q4 · Day 2", 6, 208, [84], 264))
 print("wrote", len(DAY1) + len(DAY2), "path maps")
