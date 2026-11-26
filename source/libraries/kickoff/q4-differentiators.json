@@ -13,7 +13,7 @@
       "art_full": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-steps.svg",
-        "alt": "A bar marked Start: your white space, as agreed on your Attribution Map. Then four small pictures in a row. 1, write the activities: loose notes, one activity on each. 2, group them and name each group: the notes sit around five named circles. The name sums up what the group does. 3, keep 3 to 5 groups: four circles take a color and one is struck out. These are your differentiators. 4, draw the lines: lines join the differentiators, to show how they depend on each other. Then a bar marked End: your differentiators become your swim lanes, what you must get done, quarter by quarter, for three years."
+        "alt": "Four small pictures in a row. 1, write the activities: loose notes, everything you must do to create your white space. 2, group them and name each group: the notes sit around five named circles. The name sums up what the group does. 3, keep 3 to 5 groups: four circles take a color and one is struck out. These are your differentiators. 4, draw the lines: lines join the differentiators. They depend on each other. They become your swim lanes."
       },
       "notes": [
         "Start from the white space the team just agreed on. To create it, the company must invest in some things and give up others. Those are the activities.",
@@ -67,14 +67,13 @@
       "body": [
         "Put similar activities together.",
         "Name each group for exactly what it will accomplish.",
-        "“Support” is too generic. Ask again: what will this group accomplish?",
-        "Test: tell your strategy using only the group names. If you cannot, rename."
+        "“Support” is too generic. Ask again: what will this group accomplish?"
       ],
       "notes": [
         "Name each group together. The name says what will be true when that group of activities is in place.",
         "Ask why the group matters. Expect to ask about five times before the name tells the team’s own story.",
-        "Then test the whole set. If the team cannot tell the company’s strategy using only the names, the names are too generic. Rename.",
-        "Do not skip this step. Take the time it needs."
+        "Do not skip this step. Take the time it needs.",
+        "Do not ask the team to tell the strategy yet. That comes after the lines are drawn."
       ],
       "headline": "Group the activities. Name each group.",
       "layout": "comp-story",
@@ -86,7 +85,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-group.svg",
-        "alt": "Step 2 of the example. The same notes now sit around five named groups: A Named Person for 90 Days, Live in a Day, Standard, Not Custom, One Flat Price and New Billing System. A dashed circle in the middle reads: tell the strategy using only the names."
+        "alt": "Step 2 of the example. The same notes now sit around five named groups: A Named Person for 90 Days, Live in a Day, Standard, Not Custom, One Flat Price and New Billing System."
       }
     },
     {
@@ -122,10 +121,10 @@
     {
       "id": "connect",
       "title": "Draw the lines: what depends on what?",
-      "support": "Take two differentiators. If you cannot do this one, can you still win with that one? If not, draw a line and write why.",
+      "support": "If you cannot do this one, can you still win with that one? If not, draw a line and write why. Then tell your strategy with the names and the lines.",
       "artwork": {
         "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy using only the names. A Named Person for 90 Days has three activities: a single contact, a call in week one, answers in one day. Live in a Day has two: guided setup, ready-made templates. Standard, Not Custom has three: one product for all, no custom work, a short, fixed report set. One Flat Price has two: one plan, no add-ons. Three lines carry a reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, a key for reading the lines. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities."
+        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy with the names and the lines. A Named Person for 90 Days has three activities: a single contact, a call in week one, answers in one day. Live in a Day has two: guided setup, ready-made templates. Standard, Not Custom has three: one product for all, no custom work, a short, fixed report set. One Flat Price has two: one plan, no add-ons. Three lines carry a reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, a key for reading the lines. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities."
       },
       "notes": [
         "Draw the lines only between the 3 to 5 the team kept. A line joins two differentiators. It does not join two activities.",
@@ -136,6 +135,8 @@
         "All joined: the differentiators work as one set. A competitor who copies one piece gets little.",
         "One left alone: it is either what sets the company apart or a task. Ask the team to tell you more. If it is still unclear, leave it where it is.",
         "None joined: the team has a list of capabilities. It is rare to get this far and find that.",
+        "Last, one leader tells the company’s strategy aloud, using only the names and the lines. If the story does not hold, fix a name or a line.",
+        "Telling the strategy after the lines is Darlison practice. Shannon tests the names alone, before the lines.",
         "When the lines are drawn, the team has a map of what it must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
         "In the example, Live in a Day and One Flat Price each depend on Standard, Not Custom. A Named Person for 90 Days depends on Live in a Day.",
         "The example is the same subscription company as before. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",

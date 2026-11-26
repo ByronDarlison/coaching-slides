@@ -115,12 +115,12 @@ def draw(g, stage, names=True, bold=1.0):
         o.append(body if kept else f'<g opacity="{0.7 if small else 0.42}">{body}</g>')
         if names and not kept:
             o.append(text(c[0], c[1] + r + 34, "Not kept", g["name"], 600, REASON, "middle"))
-    # Shannon's test, in the middle: tell the strategy using only the names.
+    # In the middle of the finished map: tell the strategy with the names and the lines (Byron, 26-Nov-2026: the
+    # telling comes after the lines are drawn; at the naming step the team only checks that each name is specific).
     c, r = g["centre"], g["centre_r"]
-    if names:
+    if names and stage == "map":
         o.append(circle(c, r, "#FFFFFF", TEST, 2.5 * bold, f' stroke-dasharray="{7 * bold:g} {5 * bold:g}"'))
-    if names:
-        o.append(block(c[0], c[1], ["Tell the", "strategy", "using only", "the names"], g["name"] - 2, 25, weight=600, fill="#1F3F6E"))
+        o.append(block(c[0], c[1], ["Tell the", "strategy with", "the names", "and the lines"], g["name"] - 3, 25, weight=600, fill="#1F3F6E"))
     if stage == "map" and "reason" in g:
         for a, b, why in LINKS:
             (x1, y1), (x2, y2) = g["hubs"][a], g["hubs"][b]
@@ -151,11 +151,11 @@ for k, (head, sub) in enumerate(READ):
 write("q4-activity-fit-map-example.svg", svg(FULL["w"], 706, example(40, 46) + draw(FULL, "map") + "".join(key)))
 
 # How you build it: the four steps side by side, small, with the step under each.
-STEPS = [("write", "1. Write the activities.", ["One on each note."]),
+STEPS = [("write", "1. Write the activities.", ["Everything you must do to", "create your white space."]),
          ("group", "2. Group them. Name each group.", ["The name sums up", "what the group does."]),
          ("keep", "3. Keep 3 to 5 groups.", ["These are your", "differentiators."]),
-         ("map", "4. Draw the lines.", ["Show how they depend", "on each other."])]
-W, H, SCALE, CARD, GAP, TOP = 1440, 600, 0.355, 328, 26, 92
+         ("map", "4. Draw the lines.", ["They depend on each other.", "They become your swim lanes."])]
+W, H, SCALE, CARD, GAP, TOP = 1440, 462, 0.355, 328, 26, 34
 left = (W - 4 * CARD - 3 * GAP) / 2
 strip = []
 for k, (stage, head, sub) in enumerate(STEPS):
@@ -170,17 +170,5 @@ for k, (stage, head, sub) in enumerate(STEPS):
     strip.append(text(x + CARD / 2, ty, head, 24, 700, "#20282f"))
     strip += [text(x + CARD / 2, ty + 38 + n * 30, s, 22, 500, "#5b6670") for n, s in enumerate(sub)]
 # The end: where the differentiators go.
-def band(y, tag, words):
-    """The start and the end of the four steps: a bar with a tag at its left."""
-    return (f'<rect x="{left:.1f}" y="{y}" width="{W - 2 * left:.1f}" height="54" rx="14" fill="#EEF4FB" stroke="#326AB6" stroke-width="2"/>'
-            f'<rect x="{left + 12:.1f}" y="{y + 10}" width="96" height="34" rx="17" fill="#1F3F6E"/>'
-            + text(left + 60, y + 34, tag, 19, 700, "#FFFFFF", "middle", ' letter-spacing="1.5"')
-            + text(left + 128, y + 36, words, 24, 600, "#1F3F6E", "start"))
-def down(x, y):
-    return f'<path d="M{x - 11:.1f} {y:.1f} L{x:.1f} {y + 12:.1f} L{x + 11:.1f} {y:.1f}" fill="none" stroke="{CORNER}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>'
-strip.append(band(14, "START", "Your white space, as agreed on your Attribution Map."))
-strip.append(down(left + CARD / 2, 72))
-strip.append(down(left + 3 * (CARD + GAP) + CARD / 2, 500))
-strip.append(band(522, "END", "Your differentiators become your swim lanes: what you must get done, quarter by quarter, for three years."))
 write("q4-activity-fit-map-steps.svg", svg(W, H, "".join(strip)))
 print("wrote q4-activity-fit-map-{write,group,keep,example,steps}.svg")
