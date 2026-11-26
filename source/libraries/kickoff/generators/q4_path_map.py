@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Draw the Q4 Annual path maps, one SVG per stage, in the style of the Q3 path map.
-Day 1: ten stages in two rows of five (slide standard rule 21). Day 2: six stages in one row.
+Day 1: ten stages in two rows of five (slide standard rule 21). The differentiators come before the new 3HAG, so
+the team writes the 3HAG page in order (Byron, 26-Nov-2026). Day 2: six stages in one row.
 Run from the library folder: python3 generators/q4_path_map.py"""
 from q4_common import svg, write, CORNER
 DAY1 = [("team", ["Team"]), ("functions", ["Functions"]), ("kffm", ["KFFM"]), ("people", ["A-Player", "Team"]),
         ("culture", ["Purpose", "and Values"]), ("hedgehog", ["Hedgehog", "and BHAG"]),
-        ("market", ["Market, Customer,", "Attribution"]), ("threehag", ["New", "3HAG"]),
-        ("differentiators", ["Differentiators"]), ("lanes", ["Swim", "Lanes"])]
+        ("market", ["Market, Customer,", "Attribution"]), ("differentiators", ["Differentiators"]),
+        ("threehag", ["New", "3HAG"]), ("lanes", ["Swim", "Lanes"])]
 DAY2 = [("status", ["Status"]), ("forecast", ["Forecast"]), ("annual", ["New", "1HAG"]), ("quarter", ["New", "QHAG"]),
         ("sprint", ["Sprint", "Lanes"]), ("close", ["Meetings", "and close"])]
 W, BH, GAP = 1440, 150, 22
@@ -44,8 +45,8 @@ def draw(stages, current, corner, per_row, bw, rowy, h, unfinished=()):
     return svg(W, h, "".join(out))
 
 for i, (name, _) in enumerate(DAY1):
-    # The new 3HAG is finished only when the differentiators go into it, so it is not marked done on that map.
-    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464, unfinished=("threehag",) if name == "differentiators" else ()))
+    # Every step behind the current one is marked done. A step left unmarked reads as a mistake (Byron, 26-Nov-2026).
+    write(f"q4-day1-path-{name}.svg", draw(DAY1, i, "Q4 · Day 1", 5, 250, [84, 284], 464))
 for i, (name, _) in enumerate(DAY2):
     write(f"q4-day2-path-{name}.svg", draw(DAY2, i, "Q4 · Day 2", 6, 208, [84], 264))
 print("wrote", len(DAY1) + len(DAY2), "path maps")

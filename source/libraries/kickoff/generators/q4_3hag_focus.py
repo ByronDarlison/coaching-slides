@@ -1,22 +1,39 @@
 #!/usr/bin/env python3
-"""Draw the parts of the 3HAG, names only, for a narrow side panel: one part at full strength, the rest dimmed
-(slide standard rules 9 and 38). The order is the order the deck works in: the differentiators go in last. Run from the library folder:
+"""Draw the Q4 3HAG page from the Kick Off 3HAG page, so the team sees the page they already know
+(slide standard rule 43). Each Q4 picture is the matching Kick Off picture with one change: block 3 is
+"Differentiators (3 to 5)" in place of the key capabilities, and the end date is one year later. The team builds its differentiators
+before it writes the new 3HAG, so block 3 lists the four from the Activity Fit Map example in every picture. Run from the library folder:
 python3 generators/q4_3hag_focus.py"""
-from q4_common import svg, write, text, BLUE, INK, LINE, CANVAS, MID
-W, H, X, BW, BH, GAP, TOP = 900, 830, 120, 660, 116, 22, 128
-PARTS = [("date", "End date"), ("numbers", "Numbers"), ("statement", "Statement"),
-         ("known-for", "Known for"), ("differentiators", "Differentiators")]
+import re
+from q4_common import ASSETS
 
-def draw(focus):
-    out = [text(X, 84, "3HAG", 44, 700, MID, "start", ' letter-spacing="2"')]
-    for k, (key, name) in enumerate(PARTS):
-        y, on = TOP + k * (BH + GAP), key == focus
-        dim = "" if on else ' opacity=".3"'
-        fill, stroke, ink = (BLUE, BLUE, "white") if on else (CANVAS, LINE, INK)
-        out.append(f'<g{dim}><rect x="{X}" y="{y}" width="{BW}" height="{BH}" rx="18" fill="{fill}" stroke="{stroke}" stroke-width="3"/>'
-                   + text(X + BW / 2, y + BH / 2 + 16, name, 46, 700, ink) + "</g>")
-    return svg(W, H, "".join(out))
+# Q4 picture -> the Kick Off picture with the same block highlighted.
+SOURCES = {"numbers": "3hag-map-1.svg", "statement": "3hag-map-2.svg",
+           "differentiators": "3hag-map-3.svg", "known-for": "3hag-map-4.svg"}
+# The four differentiators in q4-activity-fit-map-example.svg.
+BUILT = ["A Named Person for 90 Days", "Live in a Day", "One Flat Price", "Standard, Not Custom"]
+BULLET = re.compile(r'(<text x="980" y="(?:428|480|532|584)"[^>]*>)•  [^<]*(</text>)')
 
-for key in ("numbers", "statement", "known-for", "differentiators"):
-    write(f"q4-3hag-focus-{key}.svg", draw(key))
-print("wrote four 3HAG focus variants")
+def draw(key):
+    """The highlighted Kick Off picture draws its lit block twice, so block 3 may appear more than once."""
+    page = (ASSETS / SOURCES[key]).read_text()
+    if "Key capabilities (3 to 5)" not in page:
+        raise SystemExit(f"{SOURCES[key]} no longer has a 'Key capabilities (3 to 5)' heading")
+    page = page.replace("Key capabilities (3 to 5)", "Differentiators (3 to 5)")
+    # The new 3HAG is one year further out than the Kick Off example.
+    if "December 31, 2029" not in page:
+        raise SystemExit(f"{SOURCES[key]} no longer shows 'December 31, 2029'")
+    page = page.replace("December 31, 2029", "December 31, 2030")
+    seen = [0]
+    def swap(match):
+        name = BUILT[seen[0] % 4]
+        seen[0] += 1
+        return f"{match.group(1)}•  {name}{match.group(2)}"
+    page = BULLET.sub(swap, page)
+    if seen[0] == 0 or seen[0] % 4:
+        raise SystemExit(f"{SOURCES[key]}: expected capability lines in fours; found {seen[0]}")
+    return page
+
+for key in SOURCES:
+    (ASSETS / f"q4-3hag-focus-{key}.svg").write_text(draw(key))
+print("wrote four Q4 3HAG page variants")

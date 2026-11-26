@@ -577,14 +577,14 @@
     },
     {
       "reference": "kickoff:q3-values#scenario",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": "78da214097c671a4ef0220a6b953ccc0fc1a99f1913795b2ff8a71380927198a"
     },
     {
       "reference": "kickoff:q3-values#steps",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": "b4020e389fec055f44017e21eae59fe12dd7674dbb7aec0750281ac5bf699845"
@@ -612,35 +612,35 @@
     },
     {
       "reference": "kickoff:q2-core-customer#objective",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "0504f216930e1b994de4fbc701994e3e7561a5aa86728b53d4288ffa3462c687"
     },
     {
       "reference": "kickoff:q2-core-customer#story",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#buyer",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#example",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "79008729e3a0ec8430815d12b2f2cd6f539150a917759c93dd8d15a558d75f52"
     },
     {
       "reference": "kickoff:q2-core-customer#candidates",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
@@ -654,35 +654,35 @@
     },
     {
       "reference": "kickoff:q2-core-customer#each-view",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#choose",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#persona",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "ebde204675fa490ca6115b3247a16c18c192dc9f537d2c8a107fd80ef310da12"
     },
     {
       "reference": "kickoff:q2-core-customer#apply",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#go-deeper",
-      "sha256": "b58c53cad1bc9520c22179d642e97664f88a64d64a9368ac0284c3beb05c1d91",
+      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "c18d598f285ca3cc873b76ebcc14bb7a9801669a5d40e5ad601291a2eaed1c58"

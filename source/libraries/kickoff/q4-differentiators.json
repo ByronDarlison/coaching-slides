@@ -8,23 +8,23 @@
   "slides": [
     {
       "id": "example",
-      "title": "Example: four differentiators and what each depends on.",
-      "support": "This is what you build next. Activities, grouped and named. Each arrow shows what one depends on.",
+      "title": "Build your Activity Fit Map in four steps.",
+      "support": "To create your white space, you must invest in some things and give up others. Those are your activities.",
       "art_full": true,
       "artwork": {
-        "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "An example Activity Fit Map. Four differentiators each hold three activities. A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom."
+        "src": "assets/q4-activity-fit-map-steps.svg",
+        "alt": "Four small pictures in a row. 1, write the activities: loose notes, everything you must do to create your white space. 2, group them and name each group: the notes sit around five named circles. The name sums up what the group does. 3, keep 3 to 5 groups: four circles take a color and one is struck out. These are your differentiators. 4, draw the lines: lines join the differentiators. They depend on each other. They become your swim lanes."
       },
       "notes": [
-        "Show the finished thing first. The slides that follow build the team’s own.",
-        "The same subscription company as the earlier examples. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
-        "The example company kept four differentiators. Then it drew the arrows.",
-        "Live in a Day and One Flat Price each depend on Standard, Not Custom. One product for everyone keeps setup fast and the price flat.",
-        "A Named Person for 90 Days depends on Live in a Day. When setup is fast, the contact has time for the customer.",
-        "In this example, Standard, Not Custom explains the lower reporting and customization scores.",
-        "This is an example. Do not recommend these differentiators to a team."
+        "Start from the white space the team just agreed on. To create it, the company must invest in some things and give up others. Those are the activities.",
+        "Walk the four steps. The team brainstorms every activity, groups them and names each group. It keeps 3 to 5. Those are the differentiators. Then it draws the lines.",
+        "This is the Activity Fit Map. The idea is Michael Porter’s: strategy is the set of activities a company does differently from its competitors. Shannon Susko builds it from the ground up.",
+        "Do not start from the attributes at the top of the 3HAG line and work down. That gives generic names.",
+        "The lines are the point. Differentiators that depend on each other are hard to copy. With no lines, the team has a list of capabilities.",
+        "The end is a map of what the company must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
+        "The next four slides take one step each. The last one shows a finished example."
       ],
-      "headline": "Example: four differentiators and what each depends on.",
+      "headline": "Build your Activity Fit Map in four steps.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -54,7 +54,11 @@
       "tags": [
         "q4"
       ],
-      "copy_stack": true
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-activity-fit-map-write.svg",
+        "alt": "Step 1 of the example. Twenty-one loose notes on a board, one activity on each, not yet grouped."
+      }
     },
     {
       "id": "group",
@@ -63,14 +67,13 @@
       "body": [
         "Put similar activities together.",
         "Name each group for exactly what it will accomplish.",
-        "“Support” is too generic. Ask again: what will this group accomplish?",
-        "Test: tell your strategy using only the group names. If you cannot, rename."
+        "“Support” is too generic. Ask again: what will this group accomplish?"
       ],
       "notes": [
         "Name each group together. The name says what will be true when that group of activities is in place.",
         "Ask why the group matters. Expect to ask about five times before the name tells the team’s own story.",
-        "Then test the whole set. If the team cannot tell the company’s strategy using only the names, the names are too generic. Rename.",
-        "Do not skip this step. Take the time it needs."
+        "Do not skip this step. Take the time it needs.",
+        "Do not ask the team to tell the strategy yet. That comes after the lines are drawn."
       ],
       "headline": "Group the activities. Name each group.",
       "layout": "comp-story",
@@ -79,7 +82,11 @@
       "tags": [
         "q4"
       ],
-      "copy_stack": true
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-activity-fit-map-group.svg",
+        "alt": "Step 2 of the example. The same notes now sit around five named groups: A Named Person for 90 Days, Live in a Day, Standard, Not Custom, One Flat Price and New Billing System."
+      }
     },
     {
       "id": "agree",
@@ -95,7 +102,8 @@
         "Most teams end up with 4 to 6 groups. Agree on the 3 to 5 that carry the strategy before anyone draws an arrow.",
         "Check each group back against the Attribution Framework. Which chosen attribute does it move? Which Core Customer need does it serve?",
         "A group that connects to nothing the market values is a task, not a differentiator.",
-        "The descriptor heads the swim lane. It keeps the team aligned after people forget the workshop."
+        "The descriptor heads the swim lane. It keeps the team aligned after people forget the workshop.",
+        "In the example, New Billing System is not kept. It is a task. It serves no place where the company will lead."
       ],
       "headline": "Agree on your 3 to 5 differentiators.",
       "layout": "comp-story",
@@ -104,36 +112,89 @@
       "tags": [
         "q4"
       ],
-      "copy_stack": true
+      "art_side": true,
+      "artwork": {
+        "src": "assets/q4-activity-fit-map-keep.svg",
+        "alt": "Step 3 of the example. Four groups are kept and take a color: A Named Person for 90 Days, Live in a Day, Standard, Not Custom and One Flat Price. New Billing System fades and is marked not kept."
+      }
     },
     {
       "id": "connect",
-      "title": "What depends on what?",
-      "support": "Draw an arrow from each differentiator to the one it depends on. Start with the most-connected differentiator.",
-      "art_side": true,
+      "title": "Draw the lines: what depends on what?",
+      "support": "If you cannot do this one, can you still win with that one? If not, draw a line and write why. Then test it: tell your strategy with the names and the lines.",
       "artwork": {
-        "src": "assets/q4-activity-fit-map-groups.svg",
-        "alt": "The four example differentiators by name, with arrows showing which depends on which."
+        "src": "assets/q4-activity-fit-map-example.svg",
+        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: test, tell the strategy with the names and the lines. A Named Person for 90 Days has five activities: a single contact, a call in week one, answers in one day, a 30-day check-in, a handover at day 90. Live in a Day has four: guided setup, ready-made templates, import from a sheet, nothing to install. Standard, Not Custom has five: one product for all, no custom work, a short fixed report set, say no to one-offs, fewer settings. One Flat Price has four: one plan, no add-ons, no setup fee, price on the site. Three lines join the differentiators, each with its reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, what the lines tell you. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities. Point at each for more.",
+        "viewbox": [
+          1440,
+          706
+        ],
+        "hotspots": [
+          {
+            "x": 628,
+            "y": 213,
+            "w": 184,
+            "h": 184,
+            "icon": [
+              786,
+              236
+            ],
+            "term": "Test your strategy",
+            "tip": "One leader tells the company’s strategy aloud, using only the names and the lines: we do this, which lets us do that. If the story does not hold together, fix a name or a line."
+          },
+          {
+            "x": 286,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "All joined",
+            "tip": "Every differentiator has a line to at least one other. They work as one set. A competitor who copies one piece gets little."
+          },
+          {
+            "x": 662,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "One left alone",
+            "tip": "One differentiator has no line to the others. Ask the team to tell you more. It is either what sets you apart, or a task for the to-do list."
+          },
+          {
+            "x": 1038,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "None joined",
+            "tip": "No differentiator depends on another. You have a list of things you do well. It is not yet a strategy."
+          }
+        ]
       },
-      "body": [
-        "A differentiator can depend on more than one other.",
-        "One with no arrows is either what sets you apart or a task. Ask which.",
-        "Then take a break."
-      ],
       "notes": [
-        "Draw the arrows only between the 3 to 5 the team kept.",
-        "Start with the most-connected differentiator. For each of the others, ask: does this depend on that? Draw the arrow when the team agrees.",
-        "It is rare to get this far and find they are not connected. The connections are what make the strategy hard to copy.",
-        "Take a break here. After it, the team puts the differentiators in its 3HAG and reads the whole 3HAG back.",
-        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
+        "Draw the lines only between the 3 to 5 the team kept. A line joins two differentiators. It does not join two activities.",
+        "A line means one depends on the other. Start with the most-connected differentiator. For each of the others, ask: if we cannot do that one, can we win with this one? Draw the line when the team agrees.",
+        "A line has no arrow. Say which one depends on which. A differentiator can depend on more than one other.",
+        "Write the reason on the line. This is Darlison practice, not Shannon’s. It makes the team say why.",
+        "Then read the lines. They answer one question: is this one strategy, or a list?",
+        "All joined: the differentiators work as one set. A competitor who copies one piece gets little.",
+        "One left alone: it is either what sets the company apart or a task. Ask the team to tell you more. If it is still unclear, leave it where it is.",
+        "None joined: the team has a list of capabilities. It is rare to get this far and find that.",
+        "Last, one leader tells the company’s strategy aloud, using only the names and the lines. If the story does not hold, fix a name or a line.",
+        "Telling the strategy after the lines is Darlison practice. Shannon tests the names alone, before the lines.",
+        "When the lines are drawn, the team has a map of what it must do to create its 3HAG. The 3 to 5 differentiators become the swim lanes: what must get done, quarter by quarter, over the next three years.",
+        "In the example, Live in a Day and One Flat Price each depend on Standard, Not Custom. A Named Person for 90 Days depends on Live in a Day.",
+        "The example is the same subscription company as before. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
+        "This is an example. Do not recommend these differentiators to a team.",
+        "Take a break here. After it, the team writes its new 3HAG. The differentiators go into it, in place of the key capabilities.",
+        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change.",
+        "The three boxes under the map answer to a mouse. Point at one to show what that reading means."
       ],
-      "headline": "What depends on what?",
+      "headline": "Draw the lines: what depends on what?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
       "tags": [
         "q4"
-      ]
+      ],
+      "art_full": true
     }
   ]
 }

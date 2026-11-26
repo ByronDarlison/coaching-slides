@@ -112,7 +112,7 @@
         "body": [
           "Start a fresh Function Chart. Agree on the functions: add, rename or remove.",
           "In private mode, each person writes who owns each function.",
-          "Reveal, then agree on one owner for each. Each owner says yes aloud."
+          "Show your answers, then agree on one owner for each. Each owner says yes aloud."
         ],
         "notes": [
           "At the annual, build the Function Chart again on a fresh page. A year of growth changes who does what.",
@@ -248,7 +248,7 @@
       "override": {
         "title": "Does your BHAG pass?",
         "headline": "Does your BHAG pass?",
-        "support": "Read your BHAG aloud. Test it.",
+        "support": "Double-check the BHAG you just validated. Read it aloud. Test it.",
         "notes": [
           "The BHAG horizon is 10 to 30 years. The third test uses 25 years as one point inside it.",
           "Test leader enthusiasm separately from the whole company’s.",
@@ -293,6 +293,15 @@
     {
       "id": "kickoff:q4-path",
       "slides": [
+        "differentiators"
+      ]
+    },
+    {
+      "id": "kickoff:q4-differentiators"
+    },
+    {
+      "id": "kickoff:q4-path",
+      "slides": [
         "threehag"
       ]
     },
@@ -302,42 +311,8 @@
         "fresh",
         "numbers",
         "statement",
-        "known-for"
-      ]
-    },
-    {
-      "id": "kickoff:q4-path",
-      "slides": [
-        "differentiators"
-      ]
-    },
-    {
-      "id": "kickoff:q3-attribution",
-      "slides": [
-        "line"
-      ],
-      "override": {
-        "title": "Start from your 3HAG line.",
-        "headline": "Start from your 3HAG line.",
-        "support": "Put your own 3HAG line on the screen. This one is the example.",
-        "artwork": {
-          "src": "assets/q4-attribution-3hag.svg",
-          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what will make this whole line true?"
-        },
-        "notes": [
-          "At the annual, this is a reminder. Read back the line you agreed on. The example shows the line that the next slides make true.",
-          "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
-          "In the example, reporting and customization drop, so that setup, price and support can lead."
-        ]
-      }
-    },
-    {
-      "id": "kickoff:q4-differentiators"
-    },
-    {
-      "id": "kickoff:q4-3hag",
-      "slides": [
         "differentiators-in",
+        "known-for",
         "pass"
       ]
     },

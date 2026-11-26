@@ -20,7 +20,7 @@
       "support": "It compares your whole company with your competitors, across your market.",
       "body": [
         "Where does everyone compete on the same thing?",
-        "Where is the white space, where nobody competes yet?",
+        "Where is the white space between you and your best competitor?",
         "Where will you be in 3 years?"
       ],
       "notes": [
@@ -297,8 +297,8 @@
     },
     {
       "id": "white-space",
-      "title": "White space is where nothing is drawn.",
-      "headline": "White space is where nothing is drawn.",
+      "title": "White space is the gap between you and your best competitor.",
+      "headline": "White space is the gap between you and your best competitor.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -307,19 +307,21 @@
       ],
       "art_full": true,
       "notes": [
-        "Look for a gap above or below the competitors’ lines on an attribute. Then test whether occupying that position would matter to the Core Customer.",
-        "In the example, nobody scores a 5 on speed of setup, price predictability or support from a person.",
+        "White space is the gap between the company and its best competitor on an attribute. It can be above the competitor line or below it.",
+        "The dashed line is the highest of the competitor scores on each attribute. Where the two lines touch, the company competes head on.",
+        "Today’s gaps were not chosen. In the example the company leads a little on the left and trails on the right without having decided to.",
+        "The 3HAG line is where the team chooses its white space. That is the next slide.",
         "Ask the team where the white space is before you point at it."
       ],
       "artwork": {
-        "src": "assets/attribution-white-space.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Us today and the three competitor lines are dimmed, on a gray ground. The 3HAG line is not shown. The empty area above the lines stays white, with a dashed outline. Callout: Why: white space is a position with no rivals. Ask: where on the graph is nothing drawn?"
+        "src": "assets/attribution-white-space-today.svg",
+        "alt": "A line graph for the example subscription company. Twelve market attributes run along the bottom, from speed of setup to partner network. Scores run from 1 to 5. A solid line shows Us today. A dashed line shows the best competitor score on each attribute. The space between the two lines is white on a gray ground. On the left the company is a little above its best competitor. On the right it is well below. Where the two lines touch there is no white."
       }
     },
     {
       "id": "line",
-      "title": "The 3HAG line is where you will be in 3 years.",
-      "headline": "The 3HAG line is where you will be in 3 years.",
+      "title": "Your 3HAG line opens your white space.",
+      "headline": "Your 3HAG line opens your white space.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -328,15 +330,17 @@
       ],
       "art_full": true,
       "notes": [
-        "Decide what to maintain, what to improve and what to let drop.",
+        "The 3HAG line is where the company will be in 3 years on each attribute. Decide where to invest, what to maintain and what to give up.",
+        "White space takes investment, and the company does not have unlimited funds. What it gives up pays for what it invests in. It does not overextend.",
         "A good 3HAG line gives something up. If every score goes up, go again. Do not force it on the first round.",
         "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
         "In the example, reporting and customization drop, so that setup, price and support can lead."
       ],
       "artwork": {
-        "src": "assets/attribution-3hag.svg",
-        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The white space above the other lines stays white on a gray ground. Green shading marks the part the 3HAG line moves into. Callout: Why: a real position means trade-offs. Ask: what could we afford not to be as good at?"
-      }
+        "src": "assets/q4-attribution-3hag.svg",
+        "alt": "A line graph for the example subscription company. Twelve market attributes run along the bottom: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. A green 3HAG line and a dashed Best competitor line cross the chart. The space between them is white on a gray ground. On the left the 3HAG line is above the competitor line, at 5 on speed of setup, price predictability and support from a person. That white is marked Invest. On the right the 3HAG line drops below it, to 2 on reporting and 1 on customization. That white is marked Give up. Where the two lines touch, on ease of use and reliability, there is no white. A faint line shows Us today."
+      },
+      "support": "It is where you will be in 3 years. You invest to lead in some places and pay for it by giving up others."
     },
     {
       "id": "brainstorm",
@@ -356,7 +360,7 @@
         "Finish with 12 to 15 attributes as a team."
       ],
       "notes": [
-        "Each leader works in private. Reveal when everyone is done.",
+        "Each leader works in private. Show your answers, then agree.",
         "In a small team, each person writes 7 to 10. The team then still ends with 12 to 15 after grouping.",
         "Keep the attributes about the whole market, not one customer.",
         "Think beyond the buyer. Channels, influencers and acquirers weigh attributes too.",
@@ -388,12 +392,16 @@
         "Enter scores in any order. The sheet orders the attributes from best to worst. Keep 3 competitors on the sheet, so the 3HAG line keeps its own style.",
         "The first pass is directional. Do not argue decimals.",
         "Then ask: where is the white space?",
+        "The sheet draws two charts. The first is the Attribution Map. Under it, the White Space chart shows the gap between the 3HAG line and the best competitor. It fills in once the team enters its 3HAG line.",
         "Allow about 25 minutes."
       ],
       "artwork": {
         "src": "assets/attribution-sheet.svg",
         "alt": "One QR code. Attribution Map sheet: make a copy, then enter your scores. It opens the Attribution Map master sheet in Google Sheets.",
-        "viewbox": [660, 640],
+        "viewbox": [
+          660,
+          640
+        ],
         "qr": true,
         "links": [
           {
@@ -425,7 +433,8 @@
       "notes": [
         "This is what the sheet looks like once the scores are in. The numbers are the example company’s, the same as on the example graph.",
         "Leave the 3HAG Line column empty for now. The team fills it in when it draws the 3HAG line.",
-        "Enter the attributes in any order. The sheet sorts them from best to worst for the chart."
+        "Enter the attributes in any order. The sheet sorts them from best to worst for the chart.",
+        "Under the first chart the sheet draws a second one, White Space. It needs the 3HAG Line column, so it is empty until the team draws its line."
       ]
     },
     {
@@ -464,13 +473,14 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Decide what to maintain, what to improve and what to let drop.",
+      "support": "Decide where to invest, what to maintain and what to give up.",
       "body": [
         "Enter a 3HAG score for each attribute.",
         "Ask: what will we be worse at in 3 years?"
       ],
       "notes": [
         "In the example, Dana needs fast setup, a predictable cost and a person to call. The 3HAG line leads on all three.",
+        "What the team gives up pays for what it invests in. Then look at the White Space chart on the sheet: is there enough white between the 3HAG line and the best competitor?",
         "Let the team sleep on it. The line can change before the annual.",
         "Homework: add the Attribution Framework to the War Room in Metronome."
       ]
