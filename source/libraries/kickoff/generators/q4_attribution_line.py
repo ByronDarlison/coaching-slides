@@ -8,6 +8,8 @@ compete there. What it gives up pays for what it invests in. Where the two lines
 
 The scores are read from the Q3 drawing (assets/attribution-3hag.svg), so the example stays the one the team
 already knows. The three competitor lines become one line, the best competitor score on each attribute.
+The same script draws the Q3 picture, attribution-white-space-today.svg: the company today against the best
+competitor, before the 3HAG line exists. The Q3 deck uses both pictures.
 Run from the library folder: python3 generators/q4_attribution_line.py"""
 import re
 from q4_common import ASSETS, svg, write, text, INK, GREY, LINE, CORNER
@@ -57,4 +59,22 @@ o.append(key(540, f'<line x1="540" y1="41" x2="596" y2="41" stroke="{RIVAL}" str
 o.append(key(850, f'<line x1="850" y1="41" x2="906" y2="41" stroke="{BLUE}" stroke-opacity="0.3" stroke-width="6"/>', "Us today", GREY))
 o.append(key(1090, f'<rect x="1090" y="27" width="56" height="28" fill="white" stroke="{GREY}" stroke-width="2"/>', "White space"))
 write("q4-attribution-3hag.svg", svg(W, H, "".join(str(p) for p in o)))
-print("wrote q4-attribution-3hag.svg; best competitor", BEST)
+
+# The Q3 picture, before the team draws its 3HAG line: the same chart with the company today against the best
+# competitor. The gap between them is white. No side is named yet: today's gaps were not chosen.
+q = [f'<rect x="{LEFT}" y="{TOP}" width="{RIGHT - LEFT}" height="{BOTTOM - TOP}" fill="{GROUND}"/>']
+q.append(f'<polygon points="{pts(TODAY)} {back}" fill="white" fill-rule="nonzero"/>')
+for s in range(1, 6):
+    q.append(text(LEFT - 16, y(s) + 9, s, 26, 600, GREY, "end"))
+for i, name in enumerate(NAMES):
+    low = i % 2
+    q.append(f'<line x1="{x(i):.1f}" y1="{BOTTOM}" x2="{x(i):.1f}" y2="{BOTTOM + (88 if low else 16)}" stroke="{LINE}" stroke-width="2"/>')
+    q += [text(x(i), BOTTOM + (114 if low else 42) + k * 28, t, 24, 600, GREY) for k, t in enumerate(name)]
+q.append(f'<polyline points="{pts(BEST)}" fill="none" stroke="{RIVAL}" stroke-width="4" stroke-linejoin="round" stroke-dasharray="14 8"/>' + dots(BEST, 5, RIVAL))
+q.append(f'<polyline points="{pts(TODAY)}" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linejoin="round"/>' + dots(TODAY, 8, BLUE))
+q.append(text(24, 50, "Example", 26, 700, CORNER, "start", ' letter-spacing="2"'))
+q.append(key(300, f'<line x1="300" y1="41" x2="356" y2="41" stroke="{BLUE}" stroke-width="7"/>', "Us today"))
+q.append(key(540, f'<line x1="540" y1="41" x2="596" y2="41" stroke="{RIVAL}" stroke-width="4" stroke-dasharray="14 8"/>', "Best competitor"))
+q.append(key(850, f'<rect x="850" y="27" width="56" height="28" fill="white" stroke="{GREY}" stroke-width="2"/>', "White space"))
+write("attribution-white-space-today.svg", svg(W, H, "".join(str(p) for p in q)))
+print("wrote q4-attribution-3hag.svg and attribution-white-space-today.svg; best competitor", BEST)
