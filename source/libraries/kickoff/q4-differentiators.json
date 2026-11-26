@@ -121,15 +121,27 @@
     {
       "id": "connect",
       "title": "Draw the lines: what depends on what?",
-      "support": "If you cannot do this one, can you still win with that one? If not, draw a line and write why. Then tell your strategy with the names and the lines.",
+      "support": "If you cannot do this one, can you still win with that one? If not, draw a line and write why. Then test it: tell your strategy with the names and the lines.",
       "artwork": {
         "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy with the names and the lines. A Named Person for 90 Days has five activities: a single contact, a call in week one, answers in one day, a 30-day check-in, a handover at day 90. Live in a Day has four: guided setup, ready-made templates, import from a sheet, nothing to install. Standard, Not Custom has five: one product for all, no custom work, a short fixed report set, say no to one-offs, fewer settings. One Flat Price has four: one plan, no add-ons, no setup fee, price on the site. Three lines join the differentiators, each with its reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, what the lines tell you. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities. Point at each for more.",
+        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: test, tell the strategy with the names and the lines. A Named Person for 90 Days has five activities: a single contact, a call in week one, answers in one day, a 30-day check-in, a handover at day 90. Live in a Day has four: guided setup, ready-made templates, import from a sheet, nothing to install. Standard, Not Custom has five: one product for all, no custom work, a short fixed report set, say no to one-offs, fewer settings. One Flat Price has four: one plan, no add-ons, no setup fee, price on the site. Three lines join the differentiators, each with its reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, what the lines tell you. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities. Point at each for more.",
         "viewbox": [
           1440,
           706
         ],
         "hotspots": [
+          {
+            "x": 628,
+            "y": 213,
+            "w": 184,
+            "h": 184,
+            "icon": [
+              786,
+              236
+            ],
+            "term": "Test your strategy",
+            "tip": "One leader tells the company’s strategy aloud, using only the names and the lines: we do this, which lets us do that. If the story does not hold together, fix a name or a line."
+          },
           {
             "x": 286,
             "y": 626,

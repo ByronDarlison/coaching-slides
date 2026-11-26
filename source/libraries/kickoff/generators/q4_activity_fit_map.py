@@ -131,7 +131,7 @@ def draw(g, stage, names=True, bold=1.0):
     c, r = g["centre"], g["centre_r"]
     if names and stage == "map":
         o.append(circle(c, r, "#FFFFFF", TEST, 2.5 * bold, f' stroke-dasharray="{7 * bold:g} {5 * bold:g}"'))
-        o.append(block(c[0], c[1], ["Tell the", "strategy with", "the names", "and the lines"], g["name"] - 3, 25, weight=600, fill="#1F3F6E"))
+        o.append(block(c[0], c[1], ["Test: tell", "the strategy", "with the names", "and the lines"], g["name"] - 3, 25, weight=600, fill="#1F3F6E"))
     if stage == "map" and "reason" in g:
         for a, b, why in LINKS:
             (x1, y1), (x2, y2) = g["hubs"][a], g["hubs"][b]
