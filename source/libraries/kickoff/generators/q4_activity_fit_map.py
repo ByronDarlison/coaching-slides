@@ -138,7 +138,17 @@ for stage in ("write", "group", "keep"):
     write(f"q4-activity-fit-map-{stage}.svg", svg(SIDE["w"], SIDE["h"], example() + draw(SIDE, stage)))
 
 # The finished map: every activity labelled, and the reason on every line.
-write("q4-activity-fit-map-example.svg", svg(FULL["w"], FULL["h"], example(40, 46) + draw(FULL, "map")))
+# Under it, what the finished lines tell the team: is this one strategy, or a list?
+READ = [("All joined", "One strategy. Hard to copy."),
+        ("One left alone", "It sets you apart, or it is a task."),
+        ("None joined", "A list of capabilities.")]
+key = [text(40, 668, "READ THE LINES", 21, 700, CORNER, "start", ' letter-spacing="1.5"')]
+for k, (head, sub) in enumerate(READ):
+    kx = 286 + k * 376
+    key.append(f'<rect x="{kx}" y="626" width="360" height="66" rx="12" fill="#FBFAF7" stroke="#D5D9DD" stroke-width="1.5"/>')
+    key.append(text(kx + 18, 653, head, 22, 700, "#20282f", "start"))
+    key.append(text(kx + 18, 680, sub, 20, 500, "#4D5560", "start"))
+write("q4-activity-fit-map-example.svg", svg(FULL["w"], 706, example(40, 46) + draw(FULL, "map") + "".join(key)))
 
 # How you build it: the four steps side by side, small, with the step under each.
 STEPS = [("write", "1. Write the activities.", ["One on each note."]),
