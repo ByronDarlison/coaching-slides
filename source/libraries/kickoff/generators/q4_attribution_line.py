@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Draw the Q4 picture of the 3HAG line: the white space it opens (Q4 slide "Your 3HAG line is how you stop
-competing head on.").
+"""Draw the Q4 picture of the 3HAG line: the white space it opens (Q4 slide "Does your 3HAG line give you
+enough white space?").
 
 One rule (Byron, 26-Nov-2026): white is the gap between the 3HAG line and the best competitor, wherever the two
 lines separate. Above the competitor line the company invests to lead. Below it the company gives things up, and does not
