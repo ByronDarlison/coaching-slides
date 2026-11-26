@@ -122,6 +122,8 @@ Learned building the Q4 deck (24-Nov-2026):
 44. **Read a slide before recommending its removal.** Open the slide as the deck renders it, with its playlist override. Do not judge it by its name. On 25-Nov-2026 the six BHAG tests were nearly cut because the slide was described from memory as a repeat.
 45. **No term before its slide, and no board words (Byron, 25-Nov-2026).** A slide does not name a concept the team has not been taught yet (differentiators, before their own section). Only the agenda may name what is coming. Say what the team does in plain words: "Show your answers", not "Reveal", which is the board's private mode. Before publishing, search the compiled deck for each taught term and confirm its first use is on or after its teaching slide.
 46. **A tool the team builds gets its steps, not only its picture.** Show how the team makes it, one step to a slide, and end on the finished example. When Byron has already drawn the tool, on the strategy site or elsewhere, open his drawing first and match its look.
+47. A slide that carries the point of a section says what the thing is for, in its title. A title that only tells the team where to start is a stage direction. Before Byron sees such a slide, send its words to a copywriter and its picture to a designer, and rework it once from both.
+48. On a path map, every step behind the current one is marked done. A step left unmarked reads as a mistake.
 
 ## Layouts
 
