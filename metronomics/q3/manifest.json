@@ -603,7 +603,7 @@
     },
     {
       "reference": "kickoff:q3-values#review",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": null
@@ -617,21 +617,21 @@
     },
     {
       "reference": "kickoff:q3-values#example",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-values#agree",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-values#go-deeper",
-      "sha256": "5ef3c0ec04ac51bfe593df482858558fe51b2489a39885a9b4de08dc44513b15",
+      "sha256": "d0bc171b83e755a66cc8e92112a0e17475fb64e0e313d0f5909987df8e62c9d5",
       "artifact": "core-values",
       "seed": "Shannon Byrne Susko, CULTURAL: Team Core Values Discovery, and Discovering or Confirming your Team Core Values with your Whole Leadership Team (adapted from Jim Collins\u2019 Mission to Mars), Metronomics. Byron Darlison, Values: How Not To Chase Your Tail (darlison.com).",
       "artwork_sha256": "43c74df3a7a7d1ede92010432e38a243cfa353f487cdd437295bd65583610164"
@@ -729,52 +729,52 @@
     },
     {
       "reference": "kickoff:q3-attribution#objective",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "384ec3d86aa71afabfd547faeff6caef72cd6a1e627bedd6718167c633c62553"
     },
     {
       "reference": "kickoff:q3-attribution#example",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "869bcedfbe973d2b1fed813802ccf6037bf978f729a2a33709f16c115f4bb467"
     },
     {
       "reference": "kickoff:q3-attribution#attributes",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "59dee377e5cac8c510092fc0719b4e272c6dd40e9e8693902262b8d042e93547"
     },
     {
       "reference": "kickoff:q3-attribution#us",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b61f4b48e0c6dea931ed3ddedeec987d1a3bab8d71a6fac5972ce5df7bc33129"
     },
     {
       "reference": "kickoff:q3-attribution#competitors",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b4036bfc8b373038d320a869818511b3befc2130992e9f3a87b8bff446823781"
     },
     {
       "reference": "kickoff:q3-attribution#white-space",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
-      "artwork_sha256": "d85e9aebf62c61e35c0f338b50c43750d5790f8ed8702a25e3cdbf8f410cfdc4"
+      "artwork_sha256": "a129926b371e77d95a40e1a75be1c4cce182c4bc00f3d8c61721caf0216c8190"
     },
     {
       "reference": "kickoff:q3-attribution#line",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
-      "artwork_sha256": "87ddf5822e74883f13ff21fb6655d06eefefa43d3a4b550ebfb2a0d0e9948023"
+      "artwork_sha256": "e757b7e395c5b9d8c03d260e2e9e2a3f45114128c5fcd0d458c1a1bfe2c4577a"
     },
     {
       "reference": "kickoff:q1-market-map#example",
@@ -785,42 +785,42 @@
     },
     {
       "reference": "kickoff:q3-attribution#brainstorm",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#score",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "4996c3665641c2b4999819fbec4f2a482cd744cc91818b0bcd9905629397295e"
     },
     {
       "reference": "kickoff:q3-attribution#sheet-example",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "089019d91587078bd1e2799209a60f6e290073222530ff474b99c2bc527dddd3"
     },
     {
       "reference": "kickoff:q3-attribution#core-customer",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#draw",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#apply",
-      "sha256": "7d9746a5956860e26cc3aed65af9a0ab47bda6169c77df87b452ac936a590e7e",
+      "sha256": "e88a1cd125b70cf453d0fe16b3eca3a42fe994b2ea9b600eeb86e20d11cdc08b",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
