@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Make the Q4 copy of the Q3 3HAG line drawing (assets/attribution-3hag.svg).
-Three changes, nothing else:
+Four changes, nothing else:
 1. The callout's question. At Q3 it asks what the team could afford not to be as good at. At the annual the line
    is agreed, and the question is what makes it true (slide standard rule 36).
 2. Readable words. The Q3 drawing dims the axis labels, the legend and the end labels with the competitor lines.
@@ -9,6 +9,8 @@ Three changes, nothing else:
 3. The white space is white. Where the 3HAG line rises above today and where it drops below today are both
    painted white on the gray ground. "Do more" and "Do less" name the two. The Q3 white band
    above the competitors is removed, so white means one thing: the company's own white space.
+4. No callout box. The line under the slide title says what the white is, and the chart is cropped to its labels
+   so it shows larger. (Change 1 still runs as a check that the Q3 drawing is the one this script expects.)
 Run from the library folder: python3 generators/q4_attribution_line.py"""
 import re
 from q4_common import ASSETS, write
@@ -67,11 +69,13 @@ def label(cx, cy, words, ink, ground):
     return (f'<text x="{cx:.1f}" y="{cy}" font-size="23" font-weight="700" fill="{ink}" text-anchor="middle" '
             f'stroke="{ground}" stroke-width="6" paint-order="stroke" stroke-linejoin="round">{words}</text>')
 labels = label((x(4) + x(5)) / 2 + 6, 258, "Do more", "#1d5c31", "white") + label(x(8), 345, "Do less", "#6D4B08", "white")
-WHY = "Why: a real position means trade-offs."
-assert out.count(WHY) == 1
-out = out.replace(WHY, "Your white space: where you do more and where you do less.")
+# 4. No callout. The slide's own line says what the white is, so the box goes and the chart takes its room.
 box = '<rect x="290" y="664"'
-assert out.count(box) == 1
-out = out.replace(box, labels + box)
+assert out.count(box) == 1 and out.endswith("</svg>")
+out = out[:out.index(box)] + labels + "</svg>"
+for old, new in (('width="1440" height="770" viewBox="0 0 1440 770"', 'width="1440" height="646" viewBox="0 0 1440 646"'),
+                 ('<rect width="1440" height="770" fill="white"/>', '<rect width="1440" height="646" fill="white"/>')):
+    assert out.count(old) == 1, old
+    out = out.replace(old, new)
 write("q4-attribution-3hag.svg", out)
 print("wrote q4-attribution-3hag.svg")
