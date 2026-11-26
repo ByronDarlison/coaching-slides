@@ -57,7 +57,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-write.svg",
-        "alt": "Step 1 of the example. Loose notes on a board, one activity on each, not yet grouped."
+        "alt": "Step 1 of the example. Twenty-one loose notes on a board, one activity on each, not yet grouped."
       }
     },
     {
@@ -124,7 +124,37 @@
       "support": "If you cannot do this one, can you still win with that one? If not, draw a line and write why. Then tell your strategy with the names and the lines.",
       "artwork": {
         "src": "assets/q4-activity-fit-map-example.svg",
-        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy with the names and the lines. A Named Person for 90 Days has three activities: a single contact, a call in week one, answers in one day. Live in a Day has two: guided setup, ready-made templates. Standard, Not Custom has three: one product for all, no custom work, a short, fixed report set. One Flat Price has two: one plan, no add-ons. Three lines carry a reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, a key for reading the lines. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities."
+        "alt": "The finished example Activity Fit Map. Four colored circles sit around a dashed circle that reads: tell the strategy with the names and the lines. A Named Person for 90 Days has five activities: a single contact, a call in week one, answers in one day, a 30-day check-in, a handover at day 90. Live in a Day has four: guided setup, ready-made templates, import from a sheet, nothing to install. Standard, Not Custom has five: one product for all, no custom work, a short fixed report set, say no to one-offs, fewer settings. One Flat Price has four: one plan, no add-ons, no setup fee, price on the site. Three lines join the differentiators, each with its reason. A Named Person for 90 Days to Live in a Day: a fast start leaves time for the customer. Live in a Day to Standard, Not Custom: one product makes setup fast. Standard, Not Custom to One Flat Price: no custom work keeps one price. Under the map, what the lines tell you. All joined: one strategy, hard to copy. One left alone: it sets you apart, or it is a task. None joined: a list of capabilities. Point at each for more.",
+        "viewbox": [
+          1440,
+          706
+        ],
+        "hotspots": [
+          {
+            "x": 286,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "All joined",
+            "tip": "Every differentiator has a line to at least one other. They work as one set. A competitor who copies one piece gets little."
+          },
+          {
+            "x": 662,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "One left alone",
+            "tip": "One differentiator has no line to the others. Ask the team to tell you more. It is either what sets you apart, or a task for the to-do list."
+          },
+          {
+            "x": 1038,
+            "y": 626,
+            "w": 360,
+            "h": 66,
+            "term": "None joined",
+            "tip": "No differentiator depends on another. You have a list of things you do well. It is not yet a strategy."
+          }
+        ]
       },
       "notes": [
         "Draw the lines only between the 3 to 5 the team kept. A line joins two differentiators. It does not join two activities.",
@@ -142,7 +172,8 @@
         "The example is the same subscription company as before. Its 3HAG line leads on speed of setup, price predictability and support from a person. Reporting and customization drop.",
         "This is an example. Do not recommend these differentiators to a team.",
         "Take a break here. After it, the team writes its new 3HAG. The differentiators go into it, in place of the key capabilities.",
-        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change."
+        "Let the team sleep on the differentiators before they are final. Day 2 opens by asking what anyone would change.",
+        "The three boxes under the map answer to a mouse. Point at one to show what that reading means."
       ],
       "headline": "Draw the lines: what depends on what?",
       "layout": "comp-story",

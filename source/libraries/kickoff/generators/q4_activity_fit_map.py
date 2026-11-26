@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """Draw the example Activity Fit Map, and how a team builds it, in the look of the map on the strategy site
-(darlison/strategy/build_activity_fit_map.py): the differentiators as coloured circles in a diamond around the
-names test, their activities as small gray circles on the outer side, thin gray lines between two that depend
-on each other, with the reason on the line.
+(darlison/strategy/build_activity_fit_map.py): the differentiators as coloured circles in a diamond, their
+activities as small gray circles on the outer side, thin gray lines between two that depend on each other, with
+the reason on the line.
 
 The team builds it from the activities up, so the pictures follow the steps:
   write  the activities, loose
-  group  the same notes in named groups, with the names test in the middle
+  group  the same notes in named groups
   keep   the 3 to 5 groups the team keeps, in colour; the group not kept fades
   map    the lines drawn: the finished map
 The three side pictures carry names only (slide standard rule 32). The finished map carries every label.
+The example has 18 activities, because each leader writes 5 to 7 and a real board is full (Byron, 26-Nov-2026).
+The telling of the strategy sits in the middle of the finished map only: it comes after the lines.
 Run from the library folder: python3 generators/q4_activity_fit_map.py"""
 import math
 from q4_common import svg, write, text, block, CORNER
@@ -20,31 +22,38 @@ PLAIN = ("#FFFFFF", "#8997A5", "#263746")  # a named group the team has not yet 
 # place -> name, (fill, stroke, ink) from the strategy site, activities (line breaks set by hand)
 GROUPS = {
     "L": (["A Named", "Person for", "90 Days"], ("#E9F0FA", "#326AB6", "#1F3F6E"),
-          [["A single", "contact"], ["A call in", "week one"], ["Answers", "in one", "day"]]),
+          [["A handover", "at day 90"], ["A 30-day", "check-in"], ["A single", "contact"], ["A call in", "week one"],
+           ["Answers", "in one", "day"]]),
     "T": (["Live in", "a Day"], ("#E4F3F0", "#167568", "#10594F"),
-          [["Guided", "setup"], ["Ready-made", "templates"]]),
+          [["Import", "from a", "sheet"], ["Guided", "setup"], ["Ready-made", "templates"], ["Nothing", "to install"]]),
     "R": (["Standard,", "Not Custom"], ("#F0EAF8", "#7952A3", "#563475"),
-          [["One", "product", "for all"], ["No custom", "work"], ["A short,", "fixed", "report set"]]),
+          [["Fewer", "settings"], ["One", "product", "for all"], ["No custom", "work"], ["A short,", "fixed", "report set"],
+           ["Say no to", "one-offs"]]),
     "B": (["One Flat", "Price"], ("#FBF1DB", "#A57516", "#6D4B08"),
-          [["One plan"], ["No add-ons"]]),
+          [["No setup", "fee"], ["One plan"], ["No add-ons"], ["Price on", "the site"]]),
 }
-# Why one depends on the other. The words sit on the line.
+# Why one depends on the other. The words sit on the line (Darlison practice).
 LINKS = [("L", "T", ["a fast start leaves", "time for the customer"]),
          ("T", "R", ["one product", "makes setup fast"]),
          ("R", "B", ["no custom work", "keeps one price"])]
 # A group the team names and then does not keep: a task, not a differentiator.
 SPARE = ["New", "Billing", "System"]
-# Which way each group's activities fan out, in degrees (0 is right, 90 is down).
-FAN = {"L": [225, 180, 135], "R": [-45, 0, 45]}
 
 SIDE = dict(w=900, h=690, hubs={"L": (160, 345), "T": (450, 104), "R": (740, 345), "B": (450, 586)}, hub_r=88,
-            centre=(450, 345), centre_r=86, note_r=26, ring=124, fan={**FAN, "T": [200, -20], "B": [160, 20]},
-            name=24, spare=((786, 574), 64, [200, 255], 100),
-            loose=[(96, 150), (268, 92), (452, 168), (640, 96), (806, 170), (190, 318), (392, 372), (590, 300),
-                   (776, 398), (120, 520), (330, 580), (560, 500), (720, 600)][:12])
+            centre=(450, 345), centre_r=86, note_r=26, ring=124, name=24,
+            # Which way each group's activities fan out, in degrees (0 is right, 90 is down).
+            fan={"L": [124, 152, 180, 208, 236], "R": [56, 28, 0, -28, -56], "T": [205, 170, 10, -25], "B": [155, 190, -10, 25]},
+            spare=((786, 574), 64, [175, 215, 255], 100),
+            loose=[(80 + c * 123 + dx, 130 + r * 205 + dy) for r, row in enumerate(
+                [[(0, 20), (10, -40), (-8, 30), (12, -10), (-6, 44), (8, -30), (-4, 16)],
+                 [(14, -6), (-10, 36), (6, -34), (-12, 10), (10, 40), (-6, -20), (4, 30)],
+                 [(-4, 22), (12, -24), (-10, 34), (8, -8), (-8, 26), (12, -36), (-2, 12)]]) for c, (dx, dy) in enumerate(row)])
 FULL = dict(w=1440, h=610, hubs={"L": (350, 305), "T": (720, 92), "R": (1090, 305), "B": (720, 518)}, hub_r=78,
-            centre=(720, 305), centre_r=92, note_r=62, ring=207, fan={**FAN, "T": [187, -7], "B": [173, 7]},
-            rings={"T": 177, "B": 177}, name=23, note=17.5, reason=18)
+            centre=(720, 305), centre_r=92, note_r=54, ring=230, name=23, note=17.5, reason=18,
+            fan={"L": [115, 147.5, 180, 212.5, 245], "R": [65, 32.5, 0, -32.5, -65]},
+            # The top and bottom groups set their activities in a row beside them.
+            spots={"T": [(445, 92), (570, 92), (870, 92), (995, 92)], "B": [(445, 518), (570, 518), (870, 518), (995, 518)]})
+assert len(SIDE["loose"]) == sum(len(g[2]) for g in GROUPS.values()) + len(SIDE["spare"][2])
 
 
 def at(centre, ring, degrees):
@@ -60,11 +69,15 @@ def line(a, b, stroke, width, extra=""):
     return f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}" stroke="{stroke}" stroke-width="{width:g}"{extra}/>'
 
 
+def strokes(c, wide, colour, width):
+    """Two short strokes stand for words where the picture is too small to carry them."""
+    return "".join(line((c[0] - w / 2, c[1] + dy), (c[0] + w / 2, c[1] + dy), colour, width, ' stroke-linecap="round"')
+                   for w, dy in ((wide, -width * 2.1), (wide * 0.6, width * 2.1)))
+
+
 def note(p, r, bold, written):
-    """A sticky note. Two short strokes stand for the words where the picture is too small to carry them."""
-    words = "".join(line((p[0] - w / 2, p[1] + dy), (p[0] + w / 2, p[1] + dy), NODE_STROKE, 2.4, ' stroke-linecap="round"')
-                    for w, dy in ((r * 0.95, -5), (r * 0.6, 5))) if written else ""
-    return circle(p, r, NODE_FILL, NODE_STROKE, 1.8 * bold) + words
+    """A sticky note."""
+    return circle(p, r, NODE_FILL, NODE_STROKE, 1.8 * bold) + (strokes(p, r * 0.95, NODE_STROKE, 2.4) if written else "")
 
 
 def draw(g, stage, names=True, bold=1.0):
@@ -74,15 +87,15 @@ def draw(g, stage, names=True, bold=1.0):
     small = not names  # the strip: no words fit, so marks stand for them
     if stage == "write":
         if small:
-            return "".join(circle(p, 34, NODE_FILL, "#5b6670", 1.8 * bold) for p in g["loose"])
+            return "".join(circle(p, g["note_r"], NODE_FILL, "#5b6670", 1.8 * bold) for p in g["loose"])
         return "".join(note(p, nr, bold, names) for p in g["loose"])
     if stage == "map":
         for a, b, _ in LINKS:
             o.append(line(g["hubs"][a], g["hubs"][b], "#263746" if small else LINK, 12 if small else 2.6 * bold))
     for key, (name, colours, notes) in GROUPS.items():
         hub = g["hubs"][key]
-        ring = g.get("rings", {}).get(key, g["ring"])
-        spots = [at(hub, ring, d) for d in g["fan"][key]]
+        spots = g.get("spots", {}).get(key) or [at(hub, g["ring"], d) for d in g["fan"][key]]
+        assert len(spots) == len(notes), key
         o += [line(hub, p, NODE_STROKE, 1.5 * bold, ' stroke-opacity="0.7"') for p in spots]
         for p, words in zip(spots, notes):
             o.append(note(p, nr, bold, names and not labelled))
@@ -95,8 +108,7 @@ def draw(g, stage, names=True, bold=1.0):
         else:
             o.append(circle(hub, g["hub_r"], fill, stroke, 3 * bold))
         if small:
-            o += [line((hub[0] - w / 2, hub[1] + dy), (hub[0] + w / 2, hub[1] + dy), stroke, 9, ' stroke-linecap="round"')
-                  for w, dy in ((g["hub_r"] * 0.9, -11), (g["hub_r"] * 0.5, 11))]
+            o.append(strokes(hub, g["hub_r"] * 0.9, stroke, 9))
         if names:
             o.append(block(hub[0], hub[1], name, g["name"], round(g["name"] * 1.2), weight=700, fill=ink))
     if "spare" in g and stage in ("group", "keep"):
@@ -106,8 +118,7 @@ def draw(g, stage, names=True, bold=1.0):
         body += "".join(note(at(c, ring, d), nr, bold, names) for d in fan)
         body += circle(c, r, "#FFFFFF", NODE_STROKE, 3 * bold, "" if kept else ' stroke-dasharray="7 6"')
         if small:
-            body += "".join(line((c[0] - w / 2, c[1] + dy), (c[0] + w / 2, c[1] + dy), NODE_STROKE, 9, ' stroke-linecap="round"')
-                            for w, dy in ((r * 0.9, -11), (r * 0.5, 11)))
+            body += strokes(c, r * 0.9, NODE_STROKE, 9)
         if names:
             body += block(c[0], c[1], SPARE, g["name"] - 2, round(g["name"] * 1.1), weight=700, fill=NODE_TEXT)
         if small and not kept:
@@ -142,7 +153,8 @@ for stage in ("write", "group", "keep"):
 READ = [("All joined", "One strategy. Hard to copy."),
         ("One left alone", "It sets you apart, or it is a task."),
         ("None joined", "A list of capabilities.")]
-key = [text(40, 668, "READ THE LINES", 21, 700, CORNER, "start", ' letter-spacing="1.5"')]
+key = [text(40, 654, "WHAT THE LINES", 19, 700, CORNER, "start", ' letter-spacing="1.5"'),
+       text(40, 680, "TELL YOU", 19, 700, CORNER, "start", ' letter-spacing="1.5"')]
 for k, (head, sub) in enumerate(READ):
     kx = 286 + k * 376
     key.append(f'<rect x="{kx}" y="626" width="360" height="66" rx="12" fill="#FBFAF7" stroke="#D5D9DD" stroke-width="1.5"/>')
@@ -150,25 +162,32 @@ for k, (head, sub) in enumerate(READ):
     key.append(text(kx + 18, 680, sub, 20, 500, "#4D5560", "start"))
 write("q4-activity-fit-map-example.svg", svg(FULL["w"], 706, example(40, 46) + draw(FULL, "map") + "".join(key)))
 
-# How you build it: the four steps side by side, small, with the step under each.
+# How you build it: the four steps side by side, with the step under each. The strip stretches the side picture
+# upward so each small picture fills its card.
+STRETCH = 1.5
+def tall(p): return (p[0], (p[1] - 345) * STRETCH + 345 * STRETCH)
+(sc, sr, sfan, sring) = SIDE["spare"]
+# Bigger notes and hubs than the side pictures, so they read at card size; the side hubs move in to make room.
+STRIP = dict(SIDE, h=690 * STRETCH, note_r=34, hub_r=100, ring=150,
+             hubs={k: tall((x + {"L": 34, "R": -34}.get(k, 0), y)) for k, (x, y) in SIDE["hubs"].items()},
+             centre=tall(SIDE["centre"]), spare=(tall(sc), sr, sfan, 104), loose=[tall(p) for p in SIDE["loose"]])
 STEPS = [("write", "1. Write the activities.", ["Everything you must do to", "create your white space."]),
          ("group", "2. Group them. Name each group.", ["The name sums up", "what the group does."]),
          ("keep", "3. Keep 3 to 5 groups.", ["These are your", "differentiators."]),
          ("map", "4. Draw the lines.", ["They depend on each other.", "They become your swim lanes."])]
-W, H, SCALE, CARD, GAP, TOP = 1440, 462, 0.355, 328, 26, 34
+W, SCALE, CARD, GAP, TOP = 1440, 0.355, 328, 26, 30
 left = (W - 4 * CARD - 3 * GAP) / 2
 strip = []
+pw, ph = STRIP["w"] * SCALE, STRIP["h"] * SCALE
 for k, (stage, head, sub) in enumerate(STEPS):
     x = left + k * (CARD + GAP)
-    pw, ph = SIDE["w"] * SCALE, SIDE["h"] * SCALE
     strip.append(f'<rect x="{x:.1f}" y="{TOP}" width="{CARD}" height="{ph + 28:.1f}" rx="14" fill="#FBFAF7" stroke="#D5D9DD" stroke-width="1.5"/>')
-    strip.append(f'<g transform="translate({x + (CARD - pw) / 2:.1f} {TOP + 14}) scale({SCALE})">{draw(SIDE, stage, names=False, bold=2.2)}</g>')
+    strip.append(f'<g transform="translate({x + (CARD - pw) / 2:.1f} {TOP + 14}) scale({SCALE})">{draw(STRIP, stage, names=False, bold=2.2)}</g>')
     if k:
         ax, ay = x - GAP / 2, TOP + 14 + ph / 2
         strip.append(f'<path d="M{ax - 7:.1f} {ay - 11:.1f} L{ax + 7:.1f} {ay:.1f} L{ax - 7:.1f} {ay + 11:.1f}" fill="none" stroke="{CORNER}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>')
     ty = TOP + ph + 28 + 48
     strip.append(text(x + CARD / 2, ty, head, 24, 700, "#20282f"))
     strip += [text(x + CARD / 2, ty + 38 + n * 30, s, 22, 500, "#5b6670") for n, s in enumerate(sub)]
-# The end: where the differentiators go.
-write("q4-activity-fit-map-steps.svg", svg(W, H, "".join(strip)))
+write("q4-activity-fit-map-steps.svg", svg(W, round(TOP + ph + 28 + 48 + 38 + 30 + 26), "".join(strip)))
 print("wrote q4-activity-fit-map-{write,group,keep,example,steps}.svg")
