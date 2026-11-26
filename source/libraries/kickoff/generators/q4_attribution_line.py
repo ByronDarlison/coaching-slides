@@ -3,8 +3,8 @@
 competing head on.").
 
 One rule (Byron, 26-Nov-2026): white is the gap between the 3HAG line and the best competitor, wherever the two
-lines separate. Above the competitor line the company does more. Below it the company does less, and does not
-compete there. Where the two lines touch there is no white: that is head-on competition.
+lines separate. Above the competitor line the company invests to lead. Below it the company gives things up, and does not
+compete there. What it gives up pays for what it invests in. Where the two lines touch there is no white: that is head-on competition.
 
 The scores are read from the Q3 drawing (assets/attribution-3hag.svg), so the example stays the one the team
 already knows. The three competitor lines become one line, the best competitor score on each attribute.
@@ -47,8 +47,8 @@ o.append(f'<polyline points="{pts(TODAY)}" fill="none" stroke="{BLUE}" stroke-op
 o.append(f'<polyline points="{pts(BEST)}" fill="none" stroke="{RIVAL}" stroke-width="4" stroke-linejoin="round" stroke-dasharray="14 8"/>' + dots(BEST, 5, RIVAL))
 o.append(f'<polyline points="{pts(HAG)}" fill="none" stroke="{GREEN}" stroke-width="7" stroke-linejoin="round"/>' + dots(HAG, 8, GREEN))
 # Name each side of the white once.
-o.append(halo(x(2), y(4) + 10, "Do more"))
-o.append(halo((x(9) + x(10)) / 2 + 20, y(3.45), "Do less"))
+o.append(halo(x(2), y(4) + 10, "Invest"))
+o.append(halo((x(9) + x(10)) / 2 + 20, y(3.45), "Give up"))
 # Legend.
 o.append(text(24, 50, "Example", 26, 700, CORNER, "start", ' letter-spacing="2"'))
 def key(x0, sample, words, ink=INK): return sample + text(x0 + 70, 50, words, 25, 600, ink, "start")
