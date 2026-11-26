@@ -353,7 +353,7 @@
         "q3"
       ],
       "copy_stack": true,
-      "support": "Start from your Market Map: buyers, channels, influencers and acquirers.",
+      "support": "Start from everyone on your Market Map.",
       "body": [
         "On your own, write 5 to 7 things your market compares companies on.",
         "Share them. Group the ones that mean the same thing, and name each group.",
@@ -447,20 +447,21 @@
       "tags": [
         "q3"
       ],
-      "copy_stack": true,
-      "support": "Put your Core Customer on the screen.",
-      "body": [
-        "Read their three ranked needs aloud.",
-        "For each patch of white space, ask: does it serve one of those needs?",
-        "Keep the white space that does. Set the rest aside."
-      ],
+      "support": "Put your Core Customer on the screen. Does each patch of white space serve one of their three ranked needs?",
       "notes": [
+        "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
+        "Read their three ranked needs aloud. For each patch of white space, ask: does it serve one of those needs? Keep the white space that does. Set the rest aside.",
         "The white space only counts if it matters to the Core Customer.",
         "Use the team’s own Core Customer, from wherever the team keeps it. In Metronome it belongs on a wall in the War Room, which starts empty until the team adds walls.",
         "Hold each patch of white space against the needs. The ones that serve a need are where the 3HAG line can lead.",
         "Change only what is no longer true about the Core Customer.",
         "Homework: update the Core Customer in the War Room in Metronome."
-      ]
+      ],
+      "art_full": true,
+      "artwork": {
+        "src": "assets/core-customer-example.svg",
+        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff. They decide alone, pay by card, and want it working this month without an IT person. Prioritized needs. 1, up and running in days. 2, a cost they can predict. 3, a person to call when stuck. Prioritized benefits. 1, live in 5 days or fewer. 2, one flat monthly price. 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
+      }
     },
     {
       "id": "draw",

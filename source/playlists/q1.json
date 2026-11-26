@@ -303,7 +303,17 @@
     {
       "id": "kickoff:quarterly",
       "slides": [
-        "definition",
+        "definition"
+      ],
+      "override": {
+        "title": "Your QHAG is this quarter’s step toward your 1HAG.",
+        "headline": "Your QHAG is this quarter’s step toward your 1HAG.",
+        "support": "QHAG stands for Quarterly Highly Achievable Goal."
+      }
+    },
+    {
+      "id": "kickoff:quarterly",
+      "slides": [
         "map",
         "quarter-numbers"
       ]
@@ -388,7 +398,17 @@
     {
       "id": "kickoff:individual",
       "slides": [
-        "definition",
+        "definition"
+      ],
+      "override": {
+        "title": "Your priorities are your step toward the QHAG.",
+        "headline": "Your priorities are your step toward the QHAG.",
+        "support": "Each leader’s Individual Quarterly Priorities."
+      }
+    },
+    {
+      "id": "kickoff:individual",
+      "slides": [
         "my-priorities",
         "read-back"
       ]

@@ -149,6 +149,27 @@ def core_customer():
 (OUT / "core-customer-example.svg").write_text(core_customer(), encoding="utf-8")
 
 
+def core_customer_focus(lit):
+    """The Core Customer page with names only (slide standard rule 32), for the side of a step slide.
+    The blocks that step fills are lit. Same layout as the example page."""
+    W, H = 900, 560
+    blocks = [("Core Customer", 40, 40, 400, 100), ("Description", 40, 164, 400, 196), ("Persona", 40, 384, 400, 136),
+              ("Prioritized Needs", 460, 40, 194, 320), ("Prioritized Benefits", 666, 40, 194, 320),
+              ("Revenue and Profit", 460, 384, 400, 136)]
+    o = []
+    for name, x, y, w, h in blocks:
+        on = name in lit
+        o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{GFILL if on else "#f4f6f8"}" '
+                 f'stroke="{G if on else LINE}" stroke-width="{4 if on else 2}"/>')
+        rows = name.split(" ", 1) if w < 300 else [name]
+        o.append(lines(x + w / 2, y + h / 2 + 11 - (len(rows) - 1) * 19, rows, 30, 38, 700 if on else 600, INK if on else GREY))
+    return svg(W, H, "".join(o))
+
+
+(OUT / "core-customer-focus-views.svg").write_text(core_customer_focus({"Description", "Prioritized Needs", "Prioritized Benefits"}), encoding="utf-8")
+(OUT / "core-customer-focus-choose.svg").write_text(core_customer_focus({"Core Customer", "Prioritized Needs", "Prioritized Benefits", "Revenue and Profit"}), encoding="utf-8")
+
+
 # ---------------------------------------------------------------- sprint lanes
 # Months of the example quarter and how many of its 13 weeks fall in each (4, 4, 5).
 MONTHS = ["January", "February", "March"]
