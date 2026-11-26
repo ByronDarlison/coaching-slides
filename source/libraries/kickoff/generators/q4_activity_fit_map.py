@@ -1,52 +1,147 @@
 #!/usr/bin/env python3
-"""Draw the example Activity Fit Map the way Shannon Susko's book and the strategy site draw it (Porter's
-activity system). Level 1: the differentiators as large circles, with a line between two that depend on each
-other. Level 2: the supporting activities as small circles around each differentiator. The centre stays empty:
-the One-Phrase Strategy goes there later. Run from the library folder: python3 generators/q4_activity_fit_map.py"""
+"""Draw the example Activity Fit Map, and how a team builds it, in the look of the map on the strategy site
+(darlison/strategy/build_activity_fit_map.py): the differentiators as coloured circles in a diamond around the
+names test, their activities as small gray circles on the outer side, thin gray lines between two that depend
+on each other, with the reason on the line.
+
+The team builds it from the activities up, so the pictures follow the steps:
+  write  the activities, loose
+  group  the same notes in named groups, with the names test in the middle
+  keep   the 3 to 5 groups the team keeps, in colour; the group not kept fades
+  map    the lines drawn: the finished map
+The three side pictures carry names only (slide standard rule 32). The finished map carries every label.
+Run from the library folder: python3 generators/q4_activity_fit_map.py"""
 import math
-from q4_common import svg, write, text, block, BLUE, CORNER
-HUB_FILL, HUB_TEXT = "#E9F0FA", "#1F3F6E"
-NODE_FILL, NODE_STROKE, NODE_TEXT, SPOKE = "#F4F6F8", "#8997A5", "#263746", "#B7C0C9"
-# name lines, corner, activities (line breaks set by hand)
-MAP = [(["A Named", "Person for", "90 Days"], "TL", [["One contact", "from sign-up"], ["A call in", "week one"], ["Answers in", "one business", "day"]]),
-       (["Live in", "a Day"], "TR", [["Guided", "setup"], ["Ready-made", "templates"], ["Automatic", "data import"]]),
-       (["One Flat", "Price"], "BL", [["One plan"], ["No add-ons"], ["Automatic", "billing"]]),
-       (["Standard,", "Not Custom"], "BR", [["One product", "for everyone"], ["No custom", "work"], ["A short,", "fixed", "report set"]])]
-# A Named Person for 90 Days depends on Live in a Day. Live in a Day and One Flat Price both depend on Standard, Not Custom.
-LINKS = [("TL", "TR"), ("TR", "BR"), ("BL", "BR")]
+from q4_common import svg, write, text, block, CORNER
 
-def link(a, b, r, width):
-    (x1, y1), (x2, y2) = a, b
-    d = math.hypot(x2 - x1, y2 - y1)
-    ux, uy = (x2 - x1) / d, (y2 - y1) / d
-    return f'<line x1="{x1 + ux * r:g}" y1="{y1 + uy * r:g}" x2="{x2 - ux * r:g}" y2="{y2 - uy * r:g}" stroke="{BLUE}" stroke-width="{width}" stroke-linecap="round"/>'
+NODE_FILL, NODE_STROKE, NODE_TEXT = "#F4F6F8", "#8997A5", "#263746"
+LINK, REASON, TEST = "#8A8A8A", "#4D5560", "#326AB6"
+PLAIN = ("#FFFFFF", "#8997A5", "#263746")  # a named group the team has not yet kept
+# place -> name, (fill, stroke, ink) from the strategy site, activities (line breaks set by hand)
+GROUPS = {
+    "L": (["A Named", "Person for", "90 Days"], ("#E9F0FA", "#326AB6", "#1F3F6E"),
+          [["A single", "contact"], ["A call in", "week one"], ["Answers", "in one", "day"]]),
+    "T": (["Live in", "a Day"], ("#E4F3F0", "#167568", "#10594F"),
+          [["Guided", "setup"], ["Ready-made", "templates"]]),
+    "R": (["Standard,", "Not Custom"], ("#F0EAF8", "#7952A3", "#563475"),
+          [["One", "product", "for all"], ["No custom", "work"], ["A short,", "fixed", "report set"]]),
+    "B": (["One Flat", "Price"], ("#FBF1DB", "#A57516", "#6D4B08"),
+          [["One plan"], ["No add-ons"]]),
+}
+# Why one depends on the other. The words sit on the line.
+LINKS = [("L", "T", ["a fast start leaves", "time for the customer"]),
+         ("T", "R", ["one product", "makes setup fast"]),
+         ("R", "B", ["no custom work", "keeps one price"])]
+# A group the team names and then does not keep: a task, not a differentiator.
+SPARE = ["New", "Billing", "System"]
+# Which way each group's activities fan out, in degrees (0 is right, 90 is down).
+FAN = {"L": [225, 180, 135], "R": [-45, 0, 45]}
 
-# Where the three activities sit around a top-left differentiator. The other corners mirror this.
-SPREAD = [(-170, -95), (-195, 60), (140, -100)]
-FLIP = {"TL": (1, 1), "TR": (-1, 1), "BL": (1, -1), "BR": (-1, -1)}
+SIDE = dict(w=900, h=690, hubs={"L": (160, 345), "T": (450, 104), "R": (740, 345), "B": (450, 586)}, hub_r=88,
+            centre=(450, 345), centre_r=86, note_r=26, ring=124, fan={**FAN, "T": [200, -20], "B": [160, 20]},
+            name=24, spare=((786, 574), 64, [200, 255], 100),
+            loose=[(96, 150), (268, 92), (452, 168), (640, 96), (806, 170), (190, 318), (392, 372), (590, 300),
+                   (776, 398), (120, 520), (330, 580), (560, 500), (720, 600)][:12])
+FULL = dict(w=1440, h=610, hubs={"L": (350, 305), "T": (720, 92), "R": (1090, 305), "B": (720, 518)}, hub_r=78,
+            centre=(720, 305), centre_r=92, note_r=62, ring=207, fan={**FAN, "T": [187, -7], "B": [173, 7]},
+            rings={"T": 177, "B": 177}, name=23, note=17.5, reason=18)
 
-def draw(w, h, at, r, size, activities=None):
-    """activities: (small radius, type size), or None for Level 1 only."""
-    out = [text(40, 52, "Example", 28, 700, CORNER, "start", ' letter-spacing="2"')]
-    out += [link(at[a], at[b], r, 7) for a, b in LINKS]
-    for name, corner, notes in MAP:
-        cx, cy = at[corner]
-        if activities:
-            nr, nsize = activities
-            fx, fy = FLIP[corner]
-            for lines, (dx, dy) in zip(notes, SPREAD):
-                nx, ny = cx + fx * dx, cy + fy * dy
-                out.append(f'<line x1="{cx:g}" y1="{cy:g}" x2="{nx:g}" y2="{ny:g}" stroke="{SPOKE}" stroke-width="3"/>')
-                out.append(f'<circle cx="{nx:g}" cy="{ny:g}" r="{nr}" fill="{NODE_FILL}" stroke="{NODE_STROKE}" stroke-width="2.5"/>')
-                out.append(block(nx, ny, lines, nsize, round(nsize * 1.2), weight=600, fill=NODE_TEXT))
-        out.append(f'<circle cx="{cx:g}" cy="{cy:g}" r="{r}" fill="{HUB_FILL}" stroke="{BLUE}" stroke-width="5"/>')
-        out.append(block(cx, cy, name, size, round(size * 1.2), weight=700, fill=HUB_TEXT))
-    return svg(w, h, "".join(out))
 
-# Level 1 and 2: the differentiators, their lines and the activities behind each one.
-write("q4-activity-fit-map-example.svg",
-      draw(1440, 640, {"TL": (420, 175), "TR": (1020, 175), "BL": (420, 465), "BR": (1020, 465)}, 85, 25, activities=(72, 20)))
-# Level 1 only, for a narrow side panel: the differentiators and their lines.
-write("q4-activity-fit-map-groups.svg",
-      draw(900, 690, {"TL": (230, 215), "TR": (670, 215), "BL": (230, 505), "BR": (670, 505)}, 122, 34))
-print("wrote q4-activity-fit-map-example.svg and q4-activity-fit-map-groups.svg")
+def at(centre, ring, degrees):
+    a = math.radians(degrees)
+    return centre[0] + ring * math.cos(a), centre[1] + ring * math.sin(a)
+
+
+def circle(c, r, fill, stroke, width, extra=""):
+    return f'<circle cx="{c[0]:.1f}" cy="{c[1]:.1f}" r="{r}" fill="{fill}" stroke="{stroke}" stroke-width="{width:g}"{extra}/>'
+
+
+def line(a, b, stroke, width, extra=""):
+    return f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}" stroke="{stroke}" stroke-width="{width:g}"{extra}/>'
+
+
+def note(p, r, bold, written):
+    """A sticky note. Two short strokes stand for the words where the picture is too small to carry them."""
+    words = "".join(line((p[0] - w / 2, p[1] + dy), (p[0] + w / 2, p[1] + dy), NODE_STROKE, 2.4, ' stroke-linecap="round"')
+                    for w, dy in ((r * 0.95, -5), (r * 0.6, 5))) if written else ""
+    return circle(p, r, NODE_FILL, NODE_STROKE, 1.8 * bold) + words
+
+
+def draw(g, stage, names=True, bold=1.0):
+    """One picture. bold thickens the strokes for a picture that is shown small."""
+    o, nr = [], g["note_r"]
+    labelled = "note" in g
+    if stage == "write":
+        return "".join(note(p, nr, bold, names) for p in g["loose"])
+    if stage == "map":
+        for a, b, _ in LINKS:
+            o.append(line(g["hubs"][a], g["hubs"][b], LINK, 2.6 * bold))
+    for key, (name, colours, notes) in GROUPS.items():
+        hub = g["hubs"][key]
+        ring = g.get("rings", {}).get(key, g["ring"])
+        spots = [at(hub, ring, d) for d in g["fan"][key]]
+        o += [line(hub, p, NODE_STROKE, 1.5 * bold, ' stroke-opacity="0.7"') for p in spots]
+        for p, words in zip(spots, notes):
+            o.append(note(p, nr, bold, names and not labelled))
+            if labelled:
+                o.append(block(p[0], p[1], words, g["note"], 21, weight=500, fill=NODE_TEXT))
+        fill, stroke, ink = PLAIN if stage == "group" else colours
+        o.append(circle(hub, g["hub_r"], fill, stroke, 3 * bold))
+        if names:
+            o.append(block(hub[0], hub[1], name, g["name"], round(g["name"] * 1.2), weight=700, fill=ink))
+    if "spare" in g and stage in ("group", "keep"):
+        c, r, fan, ring = g["spare"]
+        kept = stage == "group"
+        body = "".join(line(c, at(c, ring, d), NODE_STROKE, 1.5 * bold, ' stroke-opacity="0.7"') for d in fan)
+        body += "".join(note(at(c, ring, d), nr, bold, names) for d in fan)
+        body += circle(c, r, "#FFFFFF", NODE_STROKE, 3 * bold, "" if kept else ' stroke-dasharray="7 6"')
+        if names:
+            body += block(c[0], c[1], SPARE, g["name"] - 2, round(g["name"] * 1.1), weight=700, fill=NODE_TEXT)
+        o.append(body if kept else f'<g opacity="0.42">{body}</g>')
+        if names and not kept:
+            o.append(text(c[0], c[1] + r + 34, "Not kept", g["name"], 600, REASON, "middle"))
+    # Shannon's test, in the middle: tell the strategy using only the names.
+    c, r = g["centre"], g["centre_r"]
+    o.append(circle(c, r, "#FFFFFF", TEST, 2.5 * bold, f' stroke-dasharray="{7 * bold:g} {5 * bold:g}"'))
+    if names:
+        o.append(block(c[0], c[1], ["Tell the", "strategy", "using only", "the names"], g["name"] - 2, 25, weight=600, fill="#1F3F6E"))
+    if stage == "map" and "reason" in g:
+        for a, b, why in LINKS:
+            (x1, y1), (x2, y2) = g["hubs"][a], g["hubs"][b]
+            o.append(block((x1 + x2) / 2, (y1 + y2) / 2, why, g["reason"], 22, weight=500, fill=REASON,
+                           extra=' stroke="#fff" stroke-width="7" paint-order="stroke" stroke-linejoin="round"'))
+    return "".join(o)
+
+
+def example(x=40, y=50):
+    return text(x, y, "Example", 26, 700, CORNER, "start", ' letter-spacing="2"')
+
+
+# The three steps before the lines, for the side of the slide that asks for each one.
+for stage in ("write", "group", "keep"):
+    write(f"q4-activity-fit-map-{stage}.svg", svg(SIDE["w"], SIDE["h"], example() + draw(SIDE, stage)))
+
+# The finished map: every activity labelled, and the reason on every line.
+write("q4-activity-fit-map-example.svg", svg(FULL["w"], FULL["h"], example(40, 46) + draw(FULL, "map")))
+
+# How you build it: the four steps side by side, small, with the step under each.
+STEPS = [("write", "1. Write the activities.", ["Each leader, alone.", "One on each sticky note."]),
+         ("group", "2. Group them. Name each group.", ["Test: tell your strategy", "using only the names."]),
+         ("keep", "3. Keep 3 to 5.", ["These are your", "differentiators."]),
+         ("map", "4. Draw the lines.", ["Join two when one", "depends on the other."])]
+W, H, SCALE, CARD, GAP, TOP = 1440, 500, 0.355, 328, 26, 34
+left = (W - 4 * CARD - 3 * GAP) / 2
+strip = []
+for k, (stage, head, sub) in enumerate(STEPS):
+    x = left + k * (CARD + GAP)
+    pw, ph = SIDE["w"] * SCALE, SIDE["h"] * SCALE
+    strip.append(f'<rect x="{x:.1f}" y="{TOP}" width="{CARD}" height="{ph + 28:.1f}" rx="14" fill="#FBFAF7" stroke="#D5D9DD" stroke-width="1.5"/>')
+    strip.append(f'<g transform="translate({x + (CARD - pw) / 2:.1f} {TOP + 14}) scale({SCALE})">{draw(SIDE, stage, names=False, bold=2.2)}</g>')
+    if k:
+        ax, ay = x - GAP / 2, TOP + 14 + ph / 2
+        strip.append(f'<path d="M{ax - 7:.1f} {ay - 11:.1f} L{ax + 7:.1f} {ay:.1f} L{ax - 7:.1f} {ay + 11:.1f}" fill="none" stroke="{CORNER}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>')
+    ty = TOP + ph + 28 + 48
+    strip.append(text(x + CARD / 2, ty, head, 24, 700, "#20282f"))
+    strip += [text(x + CARD / 2, ty + 38 + n * 30, s, 22, 500, "#5b6670") for n, s in enumerate(sub)]
+write("q4-activity-fit-map-steps.svg", svg(W, H, "".join(strip)))
+print("wrote q4-activity-fit-map-{write,group,keep,example,steps}.svg")
