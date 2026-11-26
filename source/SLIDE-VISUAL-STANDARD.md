@@ -124,6 +124,8 @@ Learned building the Q4 deck (24-Nov-2026):
 46. **A tool the team builds gets its steps, not only its picture.** Show how the team makes it, one step to a slide, and end on the finished example. When Byron has already drawn the tool, on the strategy site or elsewhere, open his drawing first and match its look.
 47. A slide that carries the point of a section says what the thing is for, in its title. A title that only tells the team where to start is a stage direction. Before Byron sees such a slide, send its words to a copywriter and its picture to a designer, and rework it once from both.
 48. On a path map, every step behind the current one is marked done. A step left unmarked reads as a mistake.
+49. A page the team fills in is filled in its own order, top to bottom. If one block needs an exercise first, run the exercise before the page starts. Do not leave the page and come back to it.
+50. A drawing of white space is white, and it follows one rule the coach can say in a sentence. Here: the gap between the 3HAG line and the best competitor.
 
 ## Layouts
 
