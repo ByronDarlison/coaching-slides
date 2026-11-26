@@ -109,8 +109,8 @@
     },
     {
       "id": "customer",
-      "title": "Then, name your Core Customer.",
-      "headline": "Then, name your Core Customer.",
+      "title": "Then, pick your Core Customer from your Market Map.",
+      "headline": "Then, pick your Core Customer from your Market Map.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -129,8 +129,8 @@
     },
     {
       "id": "strategy",
-      "title": "Next, check your 3HAG.",
-      "headline": "Next, check your 3HAG.",
+      "title": "Next, test your 3HAG against your Core Customer.",
+      "headline": "Next, test your 3HAG against your Core Customer.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -149,8 +149,8 @@
     },
     {
       "id": "annual",
-      "title": "Then, check your 1HAG.",
-      "headline": "Then, check your 1HAG.",
+      "title": "Then, check that your 1HAG still leads to your 3HAG.",
+      "headline": "Then, check that your 1HAG still leads to your 3HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
@@ -169,8 +169,8 @@
     },
     {
       "id": "plan",
-      "title": "Next, build your QHAG.",
-      "headline": "Next, build your QHAG.",
+      "title": "Next, build the QHAG that delivers your 1HAG.",
+      "headline": "Next, build the QHAG that delivers your 1HAG.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

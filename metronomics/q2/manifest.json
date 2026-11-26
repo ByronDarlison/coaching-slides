@@ -479,7 +479,7 @@
     },
     {
       "reference": "kickoff:q2-path#status",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "b04df9d71f7c7df4e45917e96cccd275f09b1483b91cdc534d3ba455ed3f6751"
@@ -493,7 +493,7 @@
     },
     {
       "reference": "kickoff:q2-path#functions",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "c45b77247ba177ce06bc9cd37b3f1fb69c9ffdc7f58e54143ce58e9838677a8c"
@@ -514,7 +514,7 @@
     },
     {
       "reference": "kickoff:q2-path#scorecards",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "9d27e030e4c09ce6aa28f15d2baa920e7895be7066b175f52b15902c086704a5"
@@ -528,7 +528,7 @@
     },
     {
       "reference": "kickoff:q2-path#kffm",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "41c8860e640fc30d2a472e617a6f585367fbb3ce092562be1b275b9b9f2525ec"
@@ -556,7 +556,7 @@
     },
     {
       "reference": "kickoff:q2-path#culture",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "f33e0a80df5a359616a683bcc7babaaa29d3406d86397c04933ecb60a0050f02"
@@ -605,42 +605,42 @@
     },
     {
       "reference": "kickoff:q2-path#customer",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "fe53aa8d1eb2d06d29240db3b482281a7c30b6c049f194f6020206ecc2caa299"
     },
     {
       "reference": "kickoff:q2-core-customer#objective",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "0504f216930e1b994de4fbc701994e3e7561a5aa86728b53d4288ffa3462c687"
     },
     {
       "reference": "kickoff:q2-core-customer#story",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#buyer",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#example",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
-      "artwork_sha256": "79008729e3a0ec8430815d12b2f2cd6f539150a917759c93dd8d15a558d75f52"
+      "artwork_sha256": "3e85552fbd151e04dadad05038d8b832c9c1126c9fbe280fc2c120f48a3a8b52"
     },
     {
       "reference": "kickoff:q2-core-customer#candidates",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
@@ -654,42 +654,42 @@
     },
     {
       "reference": "kickoff:q2-core-customer#each-view",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#choose",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#persona",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "ebde204675fa490ca6115b3247a16c18c192dc9f537d2c8a107fd80ef310da12"
     },
     {
       "reference": "kickoff:q2-core-customer#apply",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q2-core-customer#go-deeper",
-      "sha256": "330e99ed740aa3a6cc99363f36875fc2df10b875d2c4b5a0032cae3fdd61dd34",
+      "sha256": "52908da0489f7b70862b190e38d8adce89eca380bb028faf00aef8faab3a6632",
       "artifact": "core-customer",
       "seed": "Shannon Byrne Susko, STRATEGY: Core Customer, and the Detailed Core Customer Analysis worksheet, Metronomics. Byron Darlison, Who Is Your Most Valuable Customer? (darlison.com).",
       "artwork_sha256": "c18d598f285ca3cc873b76ebcc14bb7a9801669a5d40e5ad601291a2eaed1c58"
     },
     {
       "reference": "kickoff:q2-path#strategy",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "e4a6d9a21ba0dec8d3f2c07e08163aab33af2f391f64a0678fc9fdbdea729097"
@@ -703,7 +703,7 @@
     },
     {
       "reference": "kickoff:q2-path#annual",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "9e49d2bf0b8b94d5ca8637fb7c66ed8cc20436fff54b3b7537282378cb060186"
@@ -717,7 +717,7 @@
     },
     {
       "reference": "kickoff:q2-path#plan",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "e9f3e934b114080d08a56b73711156dbc7f588b076d840a90cf8cbb6ee77fd4c"
@@ -759,7 +759,7 @@
     },
     {
       "reference": "kickoff:q2-path#lanes",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "8ae77b21fa967104d88ec3f6e0557016e2d0f1b8aa56ac923da42a51603da931"
@@ -829,7 +829,7 @@
     },
     {
       "reference": "kickoff:q2-path#priorities",
-      "sha256": "00c5704a2995733c95573813e5d78514c94f9b43285151f793bef4a5321fcc56",
+      "sha256": "74510081e2d015dc4817806e1ff84def02f11dd2b52d7f9ad2329f221e9ee3a0",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "faf366005c9715feec35b1ebe3cf8047e7d8a04f4f7269a8d446bb29f9102f07"

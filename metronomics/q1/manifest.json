@@ -538,7 +538,7 @@
     },
     {
       "reference": "kickoff:q1-path#status",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "dede40ae142647d0903f4ff34ef49eb3ee174f09617587e37260e392c2b8eff6"
@@ -552,7 +552,7 @@
     },
     {
       "reference": "kickoff:q1-path#functions",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "3cb07cc2dcbb76d256c671539c119786ae5ea19b9c49c22f043da5f8a37aa27b"
@@ -594,7 +594,7 @@
     },
     {
       "reference": "kickoff:q1-path#scorecards",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "95668a6f9edd8f4b003f306af562e68b6235f69aca4c7f0678e45eea3bba32c6"
@@ -615,7 +615,7 @@
     },
     {
       "reference": "kickoff:q1-path#kffm",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "7bead860b42b72c743ec4a5d651be364920b0cb0edf7e8269c27dfc8c218bea7"
@@ -699,7 +699,7 @@
     },
     {
       "reference": "kickoff:q1-path#culture",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "072beb2d65e3fd28a3ff6a21eeeba289c119cdac04e996b2629260341796086f"
@@ -727,7 +727,7 @@
     },
     {
       "reference": "kickoff:q1-path#market-map",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "b582b46df7c987a1c81514dff4f72dbb6c22bd7e46733eb5fa7fe236b606fe7a"
@@ -818,7 +818,7 @@
     },
     {
       "reference": "kickoff:q1-path#strategy",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "e63c44c02b6302fb01ed1bc099dd04625989e9814c324e7a6fa5dbe1c8272b97"
@@ -832,7 +832,7 @@
     },
     {
       "reference": "kickoff:q1-path#annual",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "d16844997664c89e572ff8026a1dbbcadad86c6032e2a99a46999422390fa4e3"
@@ -846,7 +846,7 @@
     },
     {
       "reference": "kickoff:q1-path#plan",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "518c8807fbd810a466b1a03d1e783f67da9a155936236adae0f551eef9dbf405"
@@ -937,7 +937,7 @@
     },
     {
       "reference": "kickoff:q1-path#cash",
-      "sha256": "5c0967ad144719bb919704204105a589529681ea4edbb132cd2e9da34c220a18",
+      "sha256": "367e947ff0ca4d139dc9254d6e7a2d56861c8f44b100215da550d6da245e771a",
       "artifact": "q1-path",
       "seed": "Byron's Q1 day structure, 16-Nov-2026.",
       "artwork_sha256": "c4bb75456a308f10cf752c3b702e43a4df0a6e86a8d92fcdb303abfc988a8812"

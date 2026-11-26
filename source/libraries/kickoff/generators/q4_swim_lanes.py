@@ -9,7 +9,7 @@ HAG = {12: "3HAG", 8: "2HAG", 4: "1HAG"}
 # lane, name as wrapped in the wide and the narrow name column, outcomes by quarter, milestones by quarter.
 # Each milestone says what is true by that quarter, not the activity (Byron, 26-Sep-2026); wording from the Q4 brief.
 LANES = [("Live in a Day", ["Live in a Day"], ["Live in", "a Day"],
-          {12: "Every new customer can activate in 1 day without our help", 8: "Every new customer active in 1 day", 4: "Most new customers active in 1 day"},
+          {12: "Every new customer can go live in 1 day without our help", 8: "Every new customer live in 1 day", 4: "Most new customers live in 1 day"},
           {2: ["Guided", "setup", "replaces", "the call"], 6: ["Data", "import is", "automatic"], 10: ["Setup", "checks", "itself"]}),
          ("One Flat Price", ["One Flat Price"], ["One Flat", "Price"],
           {12: "Customers can predict each invoice from the flat monthly price", 8: "Every customer on the flat plan", 4: "One published plan for new customers"},
