@@ -104,7 +104,7 @@ for i, (key, _) in enumerate(STAGES):
 # Labels and explanations are the master board's "Agreed Core Customers" block, in its order:
 # Core Customer, Description, Prioritized Needs, Prioritized Benefits, Persona, Revenue and Profit.
 NEEDS = [["Up and running", "in days"], ["A cost they", "can predict"], ["A person to call", "when stuck"]]
-BENEFITS = [["Active in 5 days", "or fewer"], ["One flat", "monthly price"], ["A named contact", "for 90 days"]]
+BENEFITS = [["Live in 5 days", "or fewer"], ["One flat", "monthly price"], ["A named contact", "for 90 days"]]
 
 
 def core_customer():

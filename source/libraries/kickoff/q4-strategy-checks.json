@@ -12,6 +12,7 @@
       "support": "In Metronome: open War Room. Read your Core Customer aloud. Is this still the customer you most want more of?",
       "notes": [
         "Put the team’s own Core Customer on the screen. The example here is a reminder of its parts.",
+        "In the example the company promises to have a customer live in 5 days today. Its differentiator, Live in a Day, is where that promise goes in 3 years.",
         "Ask: are their three needs still right, in the same order? What did the year teach you about them?",
         "Choosing one Core Customer and ranking their three needs was the Q2 work. If it is missing, keep going and mark the result draft.",
         "Change only what the evidence changes. The differentiators must serve these needs."
@@ -26,7 +27,7 @@
       "art_full": true,
       "artwork": {
         "src": "assets/core-customer-example.svg",
-        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff. They decide alone, pay by card, and want it working this month without an IT person. Prioritized needs. 1, up and running in days. 2, a cost they can predict. 3, a person to call when stuck. Prioritized benefits. 1, active in 5 days or fewer. 2, one flat monthly price. 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
+        "alt": "An example Core Customer for the subscription company. Core Customer: owner of a small business. Description: the owner of a business with 10 to 50 staff. They decide alone, pay by card, and want it working this month without an IT person. Prioritized needs. 1, up and running in days. 2, a cost they can predict. 3, a person to call when stuck. Prioritized benefits. 1, live in 5 days or fewer. 2, one flat monthly price. 3, a named contact for 90 days. Persona: Dana, owner of a 20-person business. Revenue 55%, profit 60%."
       }
     },
     {
