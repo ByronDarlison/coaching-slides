@@ -9,14 +9,14 @@
     {
       "id": "example",
       "title": "How you build your Activity Fit Map.",
-      "support": "It shows your 3 to 5 differentiators, the activities behind each one and how they depend on each other. You build it from the activities up.",
+      "support": "Your 3HAG line says where you will lead. Your differentiators are what you will do to get there. So you start from the activities and finish with 3 to 5 differentiators that depend on each other.",
       "art_full": true,
       "artwork": {
         "src": "assets/q4-activity-fit-map-steps.svg",
         "alt": "Four small pictures in a row. 1, write the activities: loose notes, each leader alone, one on each sticky note. 2, group them and name each group: the notes sit around five named circles, with a test in the middle, tell your strategy using only the names. 3, keep 3 to 5: four circles take a color and one fades. These are your differentiators. 4, draw the lines: lines join the differentiators that depend on each other."
       },
       "notes": [
-        "This is the Activity Fit Map. The idea is Michael Porter’s. Shannon Susko builds it from the ground up.",
+        "Say why first. The 3HAG line is a claim: where the company will lead in three years. It does not say how. The differentiators are the how.", "A differentiator is something the company does. That is why the team starts by writing activities, not by naming differentiators.", "This is the Activity Fit Map. The idea is Michael Porter’s: strategy is the set of activities a company does differently from its competitors. Shannon Susko builds it from the ground up.", "The end is 3 to 5 differentiators that depend on each other. Their names go on the 3HAG page and head the swim lanes on the One Page Plan.",
         "Walk the four steps. The team writes activities, groups them and names each group. It keeps 3 to 5. Those are the differentiators. Then it draws the lines.",
         "Do not start from the attributes at the top of the 3HAG line and work down. That gives generic names.",
         "The lines are the point. Differentiators that depend on each other are hard to copy. With no lines, the team has a list of capabilities.",
