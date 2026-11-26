@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Draw the Q4 3HAG page from the Kick Off 3HAG page, so the team sees the page they already know
 (slide standard rule 43). Each Q4 picture is the matching Kick Off picture with one change: block 3 is
-"Differentiators (3 to 5)" in place of the key capabilities, and the end date is one year later. Block 3 is empty until the team builds the
-differentiators, then it lists the four from the Activity Fit Map example. Run from the library folder:
+"Differentiators (3 to 5)" in place of the key capabilities, and the end date is one year later. The team builds its differentiators
+before it writes the new 3HAG, so block 3 lists the four from the Activity Fit Map example in every picture. Run from the library folder:
 python3 generators/q4_3hag_focus.py"""
 import re
 from q4_common import ASSETS
@@ -26,9 +26,9 @@ def draw(key):
     page = page.replace("December 31, 2029", "December 31, 2030")
     seen = [0]
     def swap(match):
-        name = BUILT[seen[0] % 4] if key == "differentiators" else None
+        name = BUILT[seen[0] % 4]
         seen[0] += 1
-        return f"{match.group(1)}•  {name}{match.group(2)}" if name else ""
+        return f"{match.group(1)}•  {name}{match.group(2)}"
     page = BULLET.sub(swap, page)
     if seen[0] == 0 or seen[0] % 4:
         raise SystemExit(f"{SOURCES[key]}: expected capability lines in fours; found {seen[0]}")

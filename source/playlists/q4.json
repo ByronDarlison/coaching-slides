@@ -293,21 +293,6 @@
     {
       "id": "kickoff:q4-path",
       "slides": [
-        "threehag"
-      ]
-    },
-    {
-      "id": "kickoff:q4-3hag",
-      "slides": [
-        "fresh",
-        "numbers",
-        "statement",
-        "known-for"
-      ]
-    },
-    {
-      "id": "kickoff:q4-path",
-      "slides": [
         "differentiators"
       ]
     },
@@ -339,9 +324,19 @@
       "id": "kickoff:q4-differentiators"
     },
     {
+      "id": "kickoff:q4-path",
+      "slides": [
+        "threehag"
+      ]
+    },
+    {
       "id": "kickoff:q4-3hag",
       "slides": [
+        "fresh",
+        "numbers",
+        "statement",
         "differentiators-in",
+        "known-for",
         "pass"
       ]
     },

@@ -9,7 +9,7 @@
     {
       "id": "fresh",
       "title": "Write your new 3HAG: one year further out.",
-      "support": "Set the end date to your new Year 3 fiscal year-end. Then answer three questions again: the numbers, the statement and what you want to be known for.",
+      "support": "Set the end date to your new Year 3 fiscal year-end. Then work down the page: the numbers, the statement, your differentiators and what you want to be known for.",
       "body": [
         "Keep last year’s numbers, statement and “known for” out of sight until you reveal your answers.",
         "Each leader answers alone. Show your answers, then agree.",
@@ -20,8 +20,8 @@
         "After each reveal, put last year’s answer beside the new ones. Ask what changed and why.",
         "Keep the choices the evidence still supports. Rebuild what the evidence changes.",
         "The end date is the fiscal year-end 3 years after the current one.",
-        "Work down the same questions as the Kick Off. Agree on the date, the numbers and their owners. Then write the statement and what you want to be known for.",
-        "The key capabilities are not on the list this time. The team builds its differentiators next and they take that place."
+        "Work down the same questions as the Kick Off. Agree on the date, the numbers and their owners. Then write the statement, put in the differentiators and write what you want to be known for.",
+        "The key capabilities are gone from the page. The differentiators the team just built take that place."
       ],
       "headline": "Write your new 3HAG: one year further out.",
       "layout": "comp-story",
@@ -39,7 +39,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-numbers.svg",
-        "alt": "The 3HAG page with block 1, Numbers, highlighted. Block 3 reads Differentiators and is empty."
+        "alt": "The 3HAG page with block 1, Numbers, highlighted. Block 3 reads Differentiators and lists the four from the Activity Fit Map example."
       },
       "body": [
         "Gross revenue, margin and ending cash, for Year 3 alone.",
@@ -68,7 +68,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-statement.svg",
-        "alt": "The 3HAG page with block 2, the statement, highlighted. Block 3 reads Differentiators and is empty."
+        "alt": "The 3HAG page with block 2, the statement, highlighted. Block 3 reads Differentiators and lists the four from the Activity Fit Map example."
       },
       "body": [
         "Keep numbers in the targets.",
@@ -94,7 +94,7 @@
       "art_side": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-known-for.svg",
-        "alt": "The 3HAG page with block 4, known for, highlighted. Block 3 reads Differentiators and is empty."
+        "alt": "The 3HAG page with block 4, known for, highlighted. Block 3 reads Differentiators and lists the four from the Activity Fit Map example."
       },
       "body": [
         "Each leader writes it alone. Show your answers, then agree."
@@ -114,7 +114,7 @@
     {
       "id": "differentiators-in",
       "title": "Put your differentiators in your 3HAG.",
-      "support": "This finishes your 3HAG. They take the place of last year’s key capabilities.",
+      "support": "Your key capabilities are now your differentiators. Write in the 3 to 5 you just agreed on.",
       "art_side": true,
       "artwork": {
         "src": "assets/q4-3hag-focus-differentiators.svg",
