@@ -77,4 +77,20 @@ q.append(key(300, f'<line x1="300" y1="41" x2="356" y2="41" stroke="{BLUE}" stro
 q.append(key(540, f'<line x1="540" y1="41" x2="596" y2="41" stroke="{RIVAL}" stroke-width="4" stroke-dasharray="14 8"/>', "Best competitor"))
 q.append(key(850, f'<rect x="850" y="27" width="56" height="28" fill="white" stroke="{GREY}" stroke-width="2"/>', "White space"))
 write("attribution-white-space-today.svg", svg(W, H, "".join(str(p) for p in q)))
+
+# The picture that opens the Q3 section: the idea alone, names only (slide standard rule 32). Your line in 3 years
+# against the best competitor, with the white between them.
+MW, MH = 900, 690
+def mx(i): return 80 + i * 740 / 11
+def my(score): return 610 - 108 * score
+def mpts(scores): return " ".join(f"{mx(i):.1f},{my(s):.1f}" for i, s in enumerate(scores))
+mback = " ".join(f"{mx(i):.1f},{my(s):.1f}" for i, s in reversed(list(enumerate(BEST))))
+m = [f'<rect x="40" y="36" width="820" height="500" rx="10" fill="{GROUND}"/>',
+     f'<polygon points="{mpts(HAG)} {mback}" fill="white" fill-rule="nonzero"/>',
+     f'<polyline points="{mpts(BEST)}" fill="none" stroke="{RIVAL}" stroke-width="6" stroke-linejoin="round" stroke-dasharray="18 10"/>',
+     f'<polyline points="{mpts(HAG)}" fill="none" stroke="{GREEN}" stroke-width="10" stroke-linejoin="round"/>',
+     text((mx(9) + mx(10)) / 2 + 14, my(3.4), "White space", 36, 700, INK, "middle", ' stroke="white" stroke-width="8" paint-order="stroke" stroke-linejoin="round"'),
+     f'<line x1="70" y1="600" x2="150" y2="600" stroke="{GREEN}" stroke-width="10"/>', text(168, 612, "You, in 3 years", 34, 600, INK, "start"),
+     f'<line x1="480" y1="600" x2="560" y2="600" stroke="{RIVAL}" stroke-width="6" stroke-dasharray="18 10"/>', text(578, 612, "Best competitor", 34, 600, INK, "start")]
+write("attribution-white-space-mark.svg", svg(MW, MH, "".join(m)))
 print("wrote q4-attribution-3hag.svg and attribution-white-space-today.svg; best competitor", BEST)
