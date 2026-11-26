@@ -31,16 +31,12 @@
     {
       "id": "line",
       "title": "Is the line on your Attribution Map still right?",
-      "support": "In Metronome: open War Room. Put your Attribution Map on the screen.",
-      "body": [
-        "At Q3 you drew your 3HAG line: where you will be in 3 years on each attribute.",
-        "Read it: where you will lead, what you will maintain and what you will let drop.",
-        "Has anything changed since you drew it?",
-        "Agree on the line now, for your new 3‑year date."
-      ],
+      "support": "In Metronome: open War Room. Put your Attribution Map on the screen. Is your 3HAG line still right?",
       "notes": [
+        "Put the team’s own Attribution Map on the screen. The example here is a reminder of its parts.",
+        "At Q3 the team drew its 3HAG line: where it will be in 3 years on each attribute. Read it: where it will lead, what it will maintain and what it will let drop.",
+        "Ask what has changed since the team drew it. Agree on the line now, for the new 3-year date.",
         "At the first annual this is a review. From the second annual on, rebuild the map from scratch: attributes, scores and line.",
-        "Drawing the 3HAG line was the Q3 work.",
         "If the line is not agreed or the competitors are not scored, keep going and mark the result draft."
       ],
       "headline": "Is the line on your Attribution Map still right?",
@@ -50,7 +46,11 @@
       "tags": [
         "q4"
       ],
-      "copy_stack": true
+      "art_full": true,
+      "artwork": {
+        "src": "assets/attribution-example.svg",
+        "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Five lines: Us today, Competitor A, Competitor B, Competitor C and the 3HAG line. Us today runs from 4 on the left to 2 on the right. The 3HAG line rises to 5 on speed of setup, price predictability and support from a person. It drops on reporting and customization."
+      }
     }
   ]
 }
