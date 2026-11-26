@@ -317,17 +317,21 @@
         "line"
       ],
       "override": {
-        "title": "Start from your 3HAG line.",
-        "headline": "Start from your 3HAG line.",
-        "support": "White is your white space: where you do more and where you do less. This one is the example.",
+        "title": "Your 3HAG line is how you stop competing head on.",
+        "headline": "Your 3HAG line is how you stop competing head on.",
+        "support": "The white is the space between you and your best competitor. You open it by doing more in some places and less in others.",
         "artwork": {
           "src": "assets/q4-attribution-3hag.svg",
-          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Every line is dimmed except the 3HAG line. It rises to 5 on speed of setup, price predictability and support from a person. It drops to 2 on reporting and 1 on customization. The chart sits on a gray ground. The white space is white. One part, marked Do more, is where the 3HAG line rises above today. The other, marked Do less, is where it drops below today, on reporting and customization."
+          "alt": "A line graph for the example subscription company. Twelve market attributes run along the bottom: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. A green 3HAG line and a dashed Best competitor line cross the chart. The space between them is white on a gray ground. On the left the 3HAG line is above the competitor line, at 5 on speed of setup, price predictability and support from a person. That white is marked Do more. On the right the 3HAG line drops below it, to 2 on reporting and 1 on customization. That white is marked Do less. Where the two lines touch, on ease of use and reliability, there is no white. A faint line shows Us today."
         },
         "notes": [
-          "At the annual, this is a reminder. Put your own 3HAG line on the screen and read it back. The example shows the line that the next slides make true.", "Then ask: what will make this whole line true? The next slides answer it.", "Say what the line is for. It gives the company white space, so it does not compete head on. It makes the company unique and valuable.", "Point to both kinds of white space. The white areas are the white space. One is where the company will do more. The other is where it will do less.",
+          "At the annual, this is a reminder. Put your own 3HAG line on the screen and read it back. This chart is the example.",
+          "Say what the line is for. It gives the company white space, so it does not compete head on. It makes the company unique and valuable.",
+          "The dashed line is the best competitor score on each attribute. The white is the gap between it and the 3HAG line.",
+          "Point to both sides. On the left the company will do more than anyone. On the right it will do less, and it will not compete there.",
+          "Where the two lines touch, the company competes head on.",
           "Competitors can copy what you add. They cannot copy what you drop without breaking their own business.",
-          "In the example, reporting and customization drop, so that setup, price and support can lead."
+          "Then ask: what will make this whole line true? The next slides answer it."
         ]
       }
     },

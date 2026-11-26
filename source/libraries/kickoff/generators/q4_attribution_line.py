@@ -1,81 +1,60 @@
 #!/usr/bin/env python3
-"""Make the Q4 copy of the Q3 3HAG line drawing (assets/attribution-3hag.svg).
-Four changes, nothing else:
-1. The callout's question. At Q3 it asks what the team could afford not to be as good at. At the annual the line
-   is agreed, and the question is what makes it true (slide standard rule 36).
-2. Readable words. The Q3 drawing dims the axis labels, the legend and the end labels with the competitor lines.
-   Here the twelve axis labels, the legend words and the A, B, C end labels are drawn at full strength in gray
-   #5b6670, and the five attributes the 3HAG line leads on or drops are in ink #20282f. The competitor lines stay dimmed.
-3. The white space is white. Where the 3HAG line rises above today and where it drops below today are both
-   painted white on the gray ground. "Do more" and "Do less" name the two. The Q3 white band
-   above the competitors is removed, so white means one thing: the company's own white space.
-4. No callout box. The line under the slide title says what the white is, and the chart is cropped to its labels
-   so it shows larger. (Change 1 still runs as a check that the Q3 drawing is the one this script expects.)
+"""Draw the Q4 picture of the 3HAG line: the white space it opens (Q4 slide "Your 3HAG line is how you stop
+competing head on.").
+
+One rule (Byron, 26-Nov-2026): white is the gap between the 3HAG line and the best competitor, wherever the two
+lines separate. Above the competitor line the company does more. Below it the company does less, and does not
+compete there. Where the two lines touch there is no white: that is head-on competition.
+
+The scores are read from the Q3 drawing (assets/attribution-3hag.svg), so the example stays the one the team
+already knows. The three competitor lines become one line, the best competitor score on each attribute.
 Run from the library folder: python3 generators/q4_attribution_line.py"""
 import re
-from q4_common import ASSETS, write
-OLD, NEW = "Ask: what could we afford not to be as good at?", "Ask: what will make this whole line true?"
-KEY = {"Speed of setup", "Price predictability", "Support from a person", "Reporting", "Customization"}
-INK, SOFT = "#20282f", "#5b6670"
+from q4_common import ASSETS, svg, write, text, INK, GREY, LINE, CORNER
+
+NAMES = [["Speed of", "setup"], ["Ease of", "use"], ["Price", "predictability"], ["Reliability"],
+         ["Billing", "simplicity"], ["Support from", "a person"], ["Security"], ["Integrations"], ["Reporting"],
+         ["Feature", "breadth"], ["Customization"], ["Partner", "network"]]
 src = (ASSETS / "attribution-3hag.svg").read_text()
-assert src.count(OLD) == 1, "the Q3 drawing no longer carries the callout this script replaces"
-src = src.replace(OLD, NEW)
-seen = {"axis": 0, "legend": 0, "end": 0}
+lines = [[round((562 - float(p.split(",")[1])) / 90) for p in pts.split()]
+         for pts in re.findall(r'<polyline points="([^"]+)"', src)]
+assert len(lines) == 5 and all(len(l) == 12 for l in lines), "the Q3 drawing no longer has its five lines of twelve"
+TODAY, A, B, C, HAG = lines
+BEST = [max(s) for s in zip(A, B, C)]
+assert src.count(">3HAG line<") == 1 and HAG[0] == 5, "the last line in the Q3 drawing is no longer the 3HAG line"
 
-def group(m):
-    opacity, inner = m.group(1), m.group(2)
-    words = " ".join(re.findall(r">([^<]+)</text>", inner))
-    if opacity == "0.35":                                   # an axis label with its tick
-        seen["axis"] += 1
-        fill = INK if words in KEY else SOFT
-        return "<g>" + inner.replace(f'fill="{INK}"', f'fill="{fill}"') + "</g>"
-    if opacity == "0.3":                                    # a legend entry: dim the sample line, not the word
-        seen["legend"] += 1
-        inner = re.sub(r"<line ", f'<line opacity="{opacity}" ', inner, count=1)
-        return "<g>" + inner.replace(f'fill="{INK}"', f'fill="{SOFT}"') + "</g>"
-    labels = re.findall(r"<text[^>]*>[ABC]</text>", inner)  # a competitor line: keep it dim, lift its end label out
-    for label in labels:
-        seen["end"] += 1
-        inner = inner.replace(label, "")
-    return f'<g opacity="{opacity}">{inner}</g>' + "".join(l.replace('fill="#7a858e"', f'fill="{SOFT}"') for l in labels)
-
-out = re.sub(r'<g opacity="([\d.]+)">(.*?)</g>', group, src)
-assert seen == {"axis": 12, "legend": 4, "end": 3}, seen
-
-# 3. The white space. The Q3 drawing shades green where the 3HAG line rises above today. The line also makes white
-#    space where it drops below today. Both are painted white. Each kind is named once, on the drawing.
-TODAY = [4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2]
-HAG = [5, 4, 5, 4, 4, 5, 3, 3, 2, 2, 1, 2]
-GREEN, AMBER = "#bfe3c9", "#f6dfa8"
+W, H = 1440, 664
+LEFT, RIGHT, TOP, BOTTOM = 102, 1392, 86, 502
+GROUND, GREEN, RIVAL, BLUE = "#e6e9ec", "#318549", "#5b6670", "#326ab6"
 def x(i): return 130 + i * 1250 / 11
-def y(score): return 562 - 90 * score
-drawn = [[tuple(round(float(n), 1) for n in pt.split(",")) for pt in pts.split()]
-         for pts in re.findall(r'<polyline points="([^"]+)"', out)]
-for name, line in (("Us today", TODAY), ("3HAG line", HAG)):
-    assert [(round(x(i), 1), float(y(s))) for i, s in enumerate(line)] in drawn, f"the {name} line in the Q3 drawing has moved"
-down = [i for i in range(12) if HAG[i] < TODAY[i]]
-assert down == [8, 10], down
-EDGE = 'fill="white" stroke="#326ab6" stroke-width="3" stroke-dasharray="10 8" stroke-linejoin="round"/>'
-# White means one thing here: the company's own white space. The Q3 band above the competitors goes back to gray.
-band = re.findall(r'<polygon points="[^"]+" ' + re.escape(EDGE), out)
-assert len(band) == 1, len(band)
-out = out.replace(band[0], "")
-EDGE = 'fill="white"/>'  # the gray ground and the 3HAG line give the white its edge
-less = "".join('<polygon points="' + " ".join(f"{px:.1f},{py:.1f}" for px, py in (
-    [(x(k), y(TODAY[k])) for k in (i - 1, i, i + 1)] + [(x(i), y(HAG[i]))])) + '" ' + EDGE for i in down)
-assert out.count(f'fill="{GREEN}"/>') == 1
-out = out.replace(f'fill="{GREEN}"/>', EDGE + less)
-def label(cx, cy, words, ink, ground):
-    return (f'<text x="{cx:.1f}" y="{cy}" font-size="23" font-weight="700" fill="{ink}" text-anchor="middle" '
-            f'stroke="{ground}" stroke-width="6" paint-order="stroke" stroke-linejoin="round">{words}</text>')
-labels = label((x(4) + x(5)) / 2 + 6, 258, "Do more", "#1d5c31", "white") + label(x(8), 345, "Do less", "#6D4B08", "white")
-# 4. No callout. The slide's own line says what the white is, so the box goes and the chart takes its room.
-box = '<rect x="290" y="664"'
-assert out.count(box) == 1 and out.endswith("</svg>")
-out = out[:out.index(box)] + labels + "</svg>"
-for old, new in (('width="1440" height="770" viewBox="0 0 1440 770"', 'width="1440" height="646" viewBox="0 0 1440 646"'),
-                 ('<rect width="1440" height="770" fill="white"/>', '<rect width="1440" height="646" fill="white"/>')):
-    assert out.count(old) == 1, old
-    out = out.replace(old, new)
-write("q4-attribution-3hag.svg", out)
-print("wrote q4-attribution-3hag.svg")
+def y(score): return 584 - 96 * score
+def pts(scores): return " ".join(f"{x(i):.1f},{y(s):.1f}" for i, s in enumerate(scores))
+def dots(scores, r, fill): return "".join(f'<circle cx="{x(i):.1f}" cy="{y(s):.1f}" r="{r}" fill="{fill}"/>' for i, s in enumerate(scores))
+def halo(cx, cy, words, size=27): return text(cx, cy, words, size, 700, INK, "middle", ' stroke="white" stroke-width="7" paint-order="stroke" stroke-linejoin="round"')
+
+o = [f'<rect x="{LEFT}" y="{TOP}" width="{RIGHT - LEFT}" height="{BOTTOM - TOP}" fill="{GROUND}"/>']
+# The white space: everything between the 3HAG line and the best competitor line, on either side of it.
+back = " ".join(f"{x(i):.1f},{y(s):.1f}" for i, s in reversed(list(enumerate(BEST))))
+o.append(f'<polygon points="{pts(HAG)} {back}" fill="white" fill-rule="nonzero"/>')
+for s in range(1, 6):
+    o.append(text(LEFT - 16, y(s) + 9, s, 26, 600, GREY, "end"))
+for i, name in enumerate(NAMES):
+    low = i % 2
+    moved = HAG[i] != TODAY[i]
+    o.append(f'<line x1="{x(i):.1f}" y1="{BOTTOM}" x2="{x(i):.1f}" y2="{BOTTOM + (88 if low else 16)}" stroke="{LINE}" stroke-width="2"/>')
+    o += [text(x(i), BOTTOM + (114 if low else 42) + k * 28, t, 24, 600, INK if moved else GREY) for k, t in enumerate(name)]
+o.append(f'<polyline points="{pts(TODAY)}" fill="none" stroke="{BLUE}" stroke-opacity="0.3" stroke-width="6" stroke-linejoin="round"/>')
+o.append(f'<polyline points="{pts(BEST)}" fill="none" stroke="{RIVAL}" stroke-width="4" stroke-linejoin="round" stroke-dasharray="14 8"/>' + dots(BEST, 5, RIVAL))
+o.append(f'<polyline points="{pts(HAG)}" fill="none" stroke="{GREEN}" stroke-width="7" stroke-linejoin="round"/>' + dots(HAG, 8, GREEN))
+# Name each side of the white once.
+o.append(halo(x(2), y(4) + 10, "Do more"))
+o.append(halo((x(9) + x(10)) / 2 + 20, y(3.45), "Do less"))
+# Legend.
+o.append(text(24, 50, "Example", 26, 700, CORNER, "start", ' letter-spacing="2"'))
+def key(x0, sample, words, ink=INK): return sample + text(x0 + 70, 50, words, 25, 600, ink, "start")
+o.append(key(300, f'<line x1="300" y1="41" x2="356" y2="41" stroke="{GREEN}" stroke-width="7"/>', "3HAG line"))
+o.append(key(540, f'<line x1="540" y1="41" x2="596" y2="41" stroke="{RIVAL}" stroke-width="4" stroke-dasharray="14 8"/>', "Best competitor"))
+o.append(key(850, f'<line x1="850" y1="41" x2="906" y2="41" stroke="{BLUE}" stroke-opacity="0.3" stroke-width="6"/>', "Us today", GREY))
+o.append(key(1090, f'<rect x="1090" y="27" width="56" height="28" fill="white" stroke="{GREY}" stroke-width="2"/>', "White space"))
+write("q4-attribution-3hag.svg", svg(W, H, "".join(str(p) for p in o)))
+print("wrote q4-attribution-3hag.svg; best competitor", BEST)
