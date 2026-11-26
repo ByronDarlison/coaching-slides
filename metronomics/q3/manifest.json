@@ -540,7 +540,7 @@
     },
     {
       "reference": "kickoff:function-chart#gaps",
-      "sha256": "fa701695738d0d525d70a10565148a8009401b820f8a20de970c3e9b860e21b7",
+      "sha256": "beefda463194ff3f027f8c64455fa5ce05087c7cb148c1655d66940d400fdcc4",
       "artifact": "function-chart",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
@@ -659,63 +659,63 @@
     },
     {
       "reference": "kickoff:q3-aplayer#objective",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "1a5f7ecfcba47de967c7d94576b107d69487ea1e3d22f49aa2456c81ab3b5588"
     },
     {
       "reference": "kickoff:q3-aplayer#grid",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "846cfd9067bcaf7082cd9350a02fc558d16c3fff9849814703ff8fdfe9499149"
     },
     {
       "reference": "kickoff:q3-aplayer#evidence",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-aplayer#place",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-aplayer#placed",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "5bf17613c2d3358b077fc58775dcdd7ed4056df68488b4d173ad579dbf7b2c2d"
     },
     {
       "reference": "kickoff:q3-aplayer#zones",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "2619d294d71c6be43857551678e472ceffb8b330e037c0ac57660558e372d223"
     },
     {
       "reference": "kickoff:q3-aplayer#toxic",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "e6d97c132672c68f12d07e20cf45f423ecf8fa6207e791f646c2585744317e64"
     },
     {
       "reference": "kickoff:q3-aplayer#plans",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "5c04ae29445a125c334b63e6d61dc11ffdbae0b7488aef004c46ea6fe99a6822"
     },
     {
       "reference": "kickoff:q3-aplayer#go-deeper",
-      "sha256": "fe13b71a8bd62b4921931558830207ed4b9bdb2bde90b5a2cbfa7456d59d5e98",
+      "sha256": "45102ec51d50bc891cbd9365790c82b54c8b3400ac65e046da8961d9ec58c8df",
       "artifact": "a-player-assessment",
       "seed": "Shannon Byrne Susko, HUMAN: Team Assessment (Evolved), the Team Assessment Instructions and ABC Team Assessment, Updated Guidance (November 2025), Metronomics. Byron Darlison, Who On Your Team Is An A-Player? (darlison.com).",
       "artwork_sha256": "cf0bc2069e7771d6d59d02e6fd1bf5263f6cef199d15fe54f2e5056d4da7d6db"
@@ -729,49 +729,49 @@
     },
     {
       "reference": "kickoff:q3-attribution#objective",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "2f95f282d956a4a4b5e60996018af52cb4fee2ac45227baeaf96ea9e9ccd6323"
     },
     {
       "reference": "kickoff:q3-attribution#example",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "869bcedfbe973d2b1fed813802ccf6037bf978f729a2a33709f16c115f4bb467"
     },
     {
       "reference": "kickoff:q3-attribution#attributes",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "59dee377e5cac8c510092fc0719b4e272c6dd40e9e8693902262b8d042e93547"
     },
     {
       "reference": "kickoff:q3-attribution#us",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b61f4b48e0c6dea931ed3ddedeec987d1a3bab8d71a6fac5972ce5df7bc33129"
     },
     {
       "reference": "kickoff:q3-attribution#competitors",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "b4036bfc8b373038d320a869818511b3befc2130992e9f3a87b8bff446823781"
     },
     {
       "reference": "kickoff:q3-attribution#white-space",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "a129926b371e77d95a40e1a75be1c4cce182c4bc00f3d8c61721caf0216c8190"
     },
     {
       "reference": "kickoff:q3-attribution#line",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "e757b7e395c5b9d8c03d260e2e9e2a3f45114128c5fcd0d458c1a1bfe2c4577a"
@@ -785,42 +785,42 @@
     },
     {
       "reference": "kickoff:q3-attribution#brainstorm",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#score",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "4996c3665641c2b4999819fbec4f2a482cd744cc91818b0bcd9905629397295e"
     },
     {
       "reference": "kickoff:q3-attribution#sheet-example",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "089019d91587078bd1e2799209a60f6e290073222530ff474b99c2bc527dddd3"
     },
     {
       "reference": "kickoff:q3-attribution#core-customer",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
-      "artwork_sha256": null
+      "artwork_sha256": "3e85552fbd151e04dadad05038d8b832c9c1126c9fbe280fc2c120f48a3a8b52"
     },
     {
       "reference": "kickoff:q3-attribution#draw",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-attribution#apply",
-      "sha256": "1008bf169c293a30c7672e3738743cae3fa8e6d9118e94b3a0975ed2f2881b78",
+      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": null
@@ -981,7 +981,7 @@
     },
     {
       "reference": "kickoff:q3-meetings#weekly-email",
-      "sha256": "8d80c0f237b6edf78db23ce4f7e9d1ec20a4ceb1704e321a9695452c16242fb4",
+      "sha256": "266ae75a758fc9221ee6426adceb108e7f3e32a0fd54c7b4ac4eef7d2df6c28a",
       "artifact": "meetings",
       "seed": "Shannon Byrne Susko, Meeting By Meeting (master deck, pages 357 to 372): Weekly Email, as recorded on the strategy site\u2019s Meetings page.",
       "artwork_sha256": null
@@ -995,14 +995,14 @@
     },
     {
       "reference": "kickoff:q3-close#homework",
-      "sha256": "fc66ad725d40fde0fa9eccade246fd5c512d3b76ada8b1cc06f4d57ed8161d61",
+      "sha256": "25d66f52ea73310ade42fe2c0ce9275ae33ef152cec63cf1dcf2dced17a40ab0",
       "artifact": "close",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
       "artwork_sha256": null
     },
     {
       "reference": "kickoff:q3-close#outcomes-check",
-      "sha256": "fc66ad725d40fde0fa9eccade246fd5c512d3b76ada8b1cc06f4d57ed8161d61",
+      "sha256": "25d66f52ea73310ade42fe2c0ce9275ae33ef152cec63cf1dcf2dced17a40ab0",
       "artifact": "close",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-3 (Quarter 3 checklist) and Road Map Q-3, Metronomics.",
       "artwork_sha256": "ecc3a169341b2fdef2ddaf18aba4aeb16e0b2ce47ac2be787f529896ec466f9b"

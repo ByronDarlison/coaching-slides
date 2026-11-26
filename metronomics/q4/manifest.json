@@ -615,7 +615,7 @@
     },
     {
       "reference": "kickoff:q4-path#team",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "9f1f764be9e29018305df9647acdfd34fdd42803507ccd0378ab22243e391972"
@@ -657,14 +657,14 @@
     },
     {
       "reference": "kickoff:q4-path#functions",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "8606638c929a29f93a8a1206b0017e10ce652bdef9bf96b0b0f5aa18e7c86fdb"
     },
     {
       "reference": "kickoff:function-chart#ownership",
-      "sha256": "fa701695738d0d525d70a10565148a8009401b820f8a20de970c3e9b860e21b7",
+      "sha256": "beefda463194ff3f027f8c64455fa5ce05087c7cb148c1655d66940d400fdcc4",
       "artifact": "function-chart",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
@@ -685,7 +685,7 @@
     },
     {
       "reference": "kickoff:q4-path#kffm",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "e83b42064f5b11e757925687675cccbb527a204039db189a14a807abd42760c8"
@@ -720,7 +720,7 @@
     },
     {
       "reference": "kickoff:q4-path#people",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "d92928a42028aaad483ac7a3652398a8002b8fa5daa55c93d969f97fff29dc14"
@@ -734,7 +734,7 @@
     },
     {
       "reference": "kickoff:q4-path#culture",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "24515f25af29b9fcf8a983a5a6b28dfbb32c52c5af7c9f55bbe3adfdadb9c721"
@@ -762,7 +762,7 @@
     },
     {
       "reference": "kickoff:q4-path#hedgehog",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "b2cc284bb11723975a85584ec135156b26491fb5fd7b6e42933c846a77191dbb"
@@ -818,7 +818,7 @@
     },
     {
       "reference": "kickoff:q4-path#market",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "7638a454ba7d666de266d27c9d935e992d16fb1cc78c387ea97b91d15daeb869"
@@ -846,7 +846,7 @@
     },
     {
       "reference": "kickoff:q4-path#differentiators",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "5953daa7cb6e0cf7bd5b2a87ef8ed4905fe26311d52685c1c0a8bfa33547978e"
@@ -888,7 +888,7 @@
     },
     {
       "reference": "kickoff:q4-path#threehag",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "f3a36d262b104db399f8b07bb95204e2c536f2d61b5f1b9588ccc925933006a2"
@@ -944,7 +944,7 @@
     },
     {
       "reference": "kickoff:q4-path#lanes",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "afd1fa0951fcb00363e04f5f26161537f832417fe0a36279c72f214ecfdfdd5e"
@@ -1035,7 +1035,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-status",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "9177dac58530abff36c3b9be296666ec0ce5cb552becda4b0d651f83ed8f61ba"
@@ -1056,7 +1056,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-forecast",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "f3971f0fdf3ffa0d770a78272303f717907cdf0ed9d381c985344192a2a61b3c"
@@ -1070,7 +1070,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-annual",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "a03b7655ae2dc7258cd596019c0c1fad0877f9c34f75a783dc3097502ea638c6"
@@ -1105,7 +1105,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-quarter",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "230a3544fef7130e12c1a330649878ddb2ffd49126b5aa7640bf5d869804b5c4"
@@ -1140,7 +1140,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-sprint",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "2d8e257bc2c61ca027d7715b6759beb0b7a71055927a63889cbf4befc1e37cf0"
@@ -1168,7 +1168,7 @@
     },
     {
       "reference": "kickoff:q4-path#day2-close",
-      "sha256": "f33fafdcf752438230eb029449f0844c1654a54909df72de1247ee9c09b3ec0f",
+      "sha256": "3bac015ee6d4b1dfe9517670a8dc9cdd9690e524603bfae6d977c5af5896466f",
       "artifact": "path",
       "seed": "Byron, 15-Nov-2026: show where we are at each turn in the day.",
       "artwork_sha256": "409ab8a5562c57ca7c3b0ee1b9ac656d22df8f5aa4fd796145f0775512784464"
