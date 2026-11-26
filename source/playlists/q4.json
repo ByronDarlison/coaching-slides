@@ -288,7 +288,37 @@
       }
     },
     {
-      "id": "kickoff:q4-strategy-checks"
+      "id": "kickoff:q4-strategy-checks",
+      "slides": [
+        "customer"
+      ]
+    },
+    {
+      "id": "kickoff:q3-attribution",
+      "slides": [
+        "example"
+      ],
+      "override": {
+        "title": "Start from the Attribution Map you drew at Q3.",
+        "headline": "Start from the Attribution Map you drew at Q3.",
+        "support": "In Metronome: open War Room. Put your Attribution Map on the screen. Find your line, each competitor and your 3HAG line.",
+        "tags": [
+          "q4"
+        ],
+        "notes": [
+          "Put the team\u2019s own Attribution Map on the screen. The example here is a reminder of its parts.",
+          "This is the map as the team drew it at Q3: the attributes, Us today, three competitors and the 3HAG line.",
+          "Walk it once. Point at a name in the legend, or click it, to show that line on its own.",
+          "The scores are directional. Do not argue a 3 against a 4.",
+          "Do not judge the line yet. The next slide shows the same map as white space."
+        ]
+      }
+    },
+    {
+      "id": "kickoff:q4-strategy-checks",
+      "slides": [
+        "line"
+      ]
     },
     {
       "id": "kickoff:q4-path",
