@@ -126,6 +126,7 @@ Learned building the Q4 deck (24-Nov-2026):
 48. On a path map, every step behind the current one is marked done. A step left unmarked reads as a mistake.
 49. A page the team fills in is filled in its own order, top to bottom. If one block needs an exercise first, run the exercise before the page starts. Do not leave the page and come back to it.
 50. A drawing of white space is white, and it follows one rule the coach can say in a sentence. Here: the gap between the 3HAG line and the best competitor.
+51. Check slides that sit together share one layout. When one check shows the example of its tool, the others show theirs.
 
 ## Layouts
 
