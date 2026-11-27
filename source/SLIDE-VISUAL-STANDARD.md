@@ -129,6 +129,10 @@ Learned building the Q4 deck (24-Nov-2026):
 51. Check slides that sit together share one layout. When one check shows the example of its tool, the others show theirs. The Function Chart check (rule 24) keeps its card grid: it is the model for a check that asks four questions of a chart the team has open.
 52. A "Next" slide ties the step to the one before it. Its title says why the next step follows, in the words the team just used, not only the name of the next tool.
 
+Learned reviewing Q4 Day 2 (27-Nov-2026):
+
+53. **A slide that asks the team to open something carries its link (Byron, 27-Nov-2026).** When a slide asks the team to open a sheet, template, article or prompt, it carries a clickable link with the name of the thing. It also carries the QR code where the team opens it on their own devices. The standard card is the name, the QR code and the link under it, as on the Q3 slide "Score your company and your competitors." When the picture needs the full width, the card gets its own slide just before it, and the picture slide keeps the link under the picture, as on the Q4 slide "The Attribution Map template, if you need it." When a slide reuses a picture from the session that introduced the thing, bring the link with it: reuse copies the picture, not the card. Q4 slides 39 and 40 reused the Q3 Attribution Map pictures and shipped with no link to the sheet.
+
 ## Layouts
 
 - `title`: opening headline and relevant illustration.

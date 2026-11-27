@@ -8,31 +8,39 @@
   "slides": [
     {
       "id": "review",
-      "title": "Review next year’s forecast before you set the targets.",
-      "support": "Finance puts the 12‑month forecast on the screen. Walk the widgets month by month.",
+      "title": "Next year’s forecast gives you your annual targets.",
+      "support": "At Q3, each leader gave Finance their widget numbers for next year. Finance puts that 12‑month forecast on the screen.",
       "body": [
-        "Each leader speaks for their own widgets. The CEO confirms the total.",
-        "Does the year keep you on track for your new 3HAG targets?",
-        "Agree on it. It becomes the approved forecast for the year.",
-        "Not finished? Keep going and mark it draft."
+        "1. Walk the widgets month by month. Each leader speaks for their own.",
+        "2. Check the year against your new 3HAG. Is it on track?",
+        "3. Agree on it. It becomes the approved forecast, and your annual targets come from it."
       ],
       "notes": [
         "Building the 12-month forecast from each leader’s widget numbers was Finance’s Q3 homework. The team reviews it and does not build it in the room.",
         "Finance owns the model. Each leader owns the assumptions for their widgets. The CEO owns the total.",
         "Start with the widgets, then the revenue, expenses, margin and cash they produce. It does not have to be complicated.",
+        "The CEO confirms the total.",
+        "The picture follows one widget, new subscriptions. Do the same check for every widget, and for revenue, margin and cash.",
+        "The dashed line is a guide. The team decides what on track means for them.",
+        "If the year is off track, the leader who owns the widget changes the assumption in the room. Finance reworks the model as homework.",
         "If the forecast is not finished, keep going and mark the result draft.",
         "Once agreed, it is the approved forecast. It does not change until the next annual. The rolling forecast beside it moves every month.",
         "Homework: Finance enters the 12-month widget forecast as rolling metrics in Metronome.",
         "Allow about 30 minutes."
       ],
-      "headline": "Review next year’s forecast before you set the targets.",
+      "headline": "Next year’s forecast gives you your annual targets.",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",
       "tags": [
         "q4"
       ],
-      "copy_stack": true
+      "artwork": {
+        "src": "assets/q4-forecast-check.svg",
+        "alt": "Two charts for the example subscription company, one above the other. The top chart shows new subscriptions for each of the 12 months of next year, rising from 70 in January to 110 in December. They add up to 1,100 for the year. The bottom chart asks if the year is on track for the new 3HAG. It shows three bars: this year at 1,000, next year at 1,100 and the 3HAG at 2,000. A dashed line marked On track runs straight from the top of this year to the top of the 3HAG. Next year’s bar stops below that line. The space between them is marked Gap."
+      },
+      "art_side": true,
+      "art_large": true
     }
   ]
 }

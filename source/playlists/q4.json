@@ -296,6 +296,50 @@
     {
       "id": "kickoff:q3-attribution",
       "slides": [
+        "score"
+      ],
+      "override": {
+        "title": "The Attribution Map template, if you need it.",
+        "headline": "The Attribution Map template, if you need it.",
+        "support": "Your map is in Metronome, in the War Room. Start there.",
+        "body": [
+          "This sheet is the template you built it from at Q3.",
+          "Need to rebuild the map? Scan the code and make a copy."
+        ],
+        "tags": [
+          "q4"
+        ],
+        "notes": [
+          "The team’s Attribution Map lives in Metronome, in the War Room. That is the one to put on the screen.",
+          "This sheet is the template the team used at Q3. Use it only if the team needs to rebuild the map or see the white space chart.",
+          "To use it, scan the code, then choose File and Make a copy in Google Sheets.",
+          "The sheet draws two charts. The first is the Attribution Map. Under it, the White Space chart shows the gap between the 3HAG line and the best competitor.",
+          "From the second annual on, the team rebuilds the map from scratch. Start from a new copy of this template."
+        ],
+        "artwork": {
+          "src": "assets/q4-attribution-template.svg",
+          "alt": "One QR code. Attribution Map template: only if you need to rebuild your map. It opens the Attribution Map master sheet in Google Sheets.",
+          "viewbox": [
+            660,
+            640
+          ],
+          "qr": true,
+          "links": [
+            {
+              "x": 40,
+              "y": 20,
+              "w": 580,
+              "h": 600,
+              "href": "https://docs.google.com/spreadsheets/d/1U7ezTJPoIBdC1HR5Z2H_XcRE0TcOxMHL4_XNJET0j3A/edit",
+              "label": "Attribution Map template"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kickoff:q3-attribution",
+      "slides": [
         "example"
       ],
       "override": {
@@ -306,12 +350,473 @@
           "q4"
         ],
         "notes": [
-          "Put the team\u2019s own Attribution Map on the screen. The example here is a reminder of its parts.",
+          "Put the team’s own Attribution Map on the screen. The example here is a reminder of its parts.",
+          "The link under the picture opens the Attribution Map template, in case the team needs it.",
           "This is the map as the team drew it at Q3: the attributes, Us today, three competitors and the 3HAG line.",
           "Walk it once. Point at a name in the legend, or click it, to show that line on its own.",
           "The scores are directional. Do not argue a 3 against a 4.",
           "Do not judge the line yet. The next slide shows the same map as white space."
-        ]
+        ],
+        "artwork": {
+          "src": "assets/attribution-example.svg",
+          "alt": "A line graph for the subscription company. Twelve market attributes run along the bottom, ordered from the one the company serves best. They start with speed of setup, ease of use, price predictability, reliability, billing simplicity and support from a person. Security, integrations, reporting, feature breadth, customization and partner network follow. Scores run from 1 to 5. Five lines: Us today, Competitor A, Competitor B, Competitor C and the 3HAG line. Us today runs from 4 on the left to 2 on the right. The 3HAG line rises to 5 on speed of setup, price predictability and support from a person. It drops on reporting and customization.",
+          "viewbox": [
+            1440,
+            770
+          ],
+          "hotspots": [
+            {
+              "x": 140,
+              "y": 16,
+              "w": 224,
+              "h": 48,
+              "term": "Us today",
+              "tip": "Shows this line on its own.",
+              "icon": false,
+              "targets": [
+                {
+                  "points": [
+                    [
+                      130.0,
+                      202.0
+                    ],
+                    [
+                      243.6,
+                      202.0
+                    ],
+                    [
+                      357.3,
+                      202.0
+                    ],
+                    [
+                      470.9,
+                      202.0
+                    ],
+                    [
+                      584.5,
+                      292.0
+                    ],
+                    [
+                      698.2,
+                      292.0
+                    ],
+                    [
+                      811.8,
+                      292.0
+                    ],
+                    [
+                      925.5,
+                      292.0
+                    ],
+                    [
+                      1039.1,
+                      292.0
+                    ],
+                    [
+                      1152.7,
+                      382.0
+                    ],
+                    [
+                      1266.4,
+                      382.0
+                    ],
+                    [
+                      1380.0,
+                      382.0
+                    ]
+                  ],
+                  "width": 18
+                },
+                [
+                  140,
+                  16,
+                  224,
+                  48
+                ],
+                [
+                  60,
+                  96,
+                  58,
+                  392
+                ],
+                [
+                  60,
+                  484,
+                  1380,
+                  160
+                ]
+              ],
+              "dim": [
+                0,
+                0,
+                1440,
+                770
+              ]
+            },
+            {
+              "x": 368,
+              "y": 16,
+              "w": 287,
+              "h": 48,
+              "term": "Competitor A",
+              "tip": "Shows this line on its own.",
+              "icon": false,
+              "targets": [
+                {
+                  "points": [
+                    [
+                      130.0,
+                      292.0
+                    ],
+                    [
+                      243.6,
+                      202.0
+                    ],
+                    [
+                      357.3,
+                      382.0
+                    ],
+                    [
+                      470.9,
+                      202.0
+                    ],
+                    [
+                      584.5,
+                      292.0
+                    ],
+                    [
+                      698.2,
+                      472.0
+                    ],
+                    [
+                      811.8,
+                      202.0
+                    ],
+                    [
+                      925.5,
+                      112.0
+                    ],
+                    [
+                      1039.1,
+                      292.0
+                    ],
+                    [
+                      1152.7,
+                      202.0
+                    ],
+                    [
+                      1266.4,
+                      382.0
+                    ],
+                    [
+                      1380.0,
+                      292.0
+                    ]
+                  ],
+                  "width": 18
+                },
+                [
+                  368,
+                  16,
+                  287,
+                  48
+                ],
+                [
+                  60,
+                  96,
+                  58,
+                  392
+                ],
+                [
+                  60,
+                  484,
+                  1380,
+                  160
+                ]
+              ],
+              "dim": [
+                0,
+                0,
+                1440,
+                770
+              ]
+            },
+            {
+              "x": 652,
+              "y": 16,
+              "w": 287,
+              "h": 48,
+              "term": "Competitor B",
+              "tip": "Shows this line on its own.",
+              "icon": false,
+              "targets": [
+                {
+                  "points": [
+                    [
+                      130.0,
+                      472.0
+                    ],
+                    [
+                      243.6,
+                      382.0
+                    ],
+                    [
+                      357.3,
+                      382.0
+                    ],
+                    [
+                      470.9,
+                      202.0
+                    ],
+                    [
+                      584.5,
+                      382.0
+                    ],
+                    [
+                      698.2,
+                      202.0
+                    ],
+                    [
+                      811.8,
+                      202.0
+                    ],
+                    [
+                      925.5,
+                      292.0
+                    ],
+                    [
+                      1039.1,
+                      202.0
+                    ],
+                    [
+                      1152.7,
+                      112.0
+                    ],
+                    [
+                      1266.4,
+                      112.0
+                    ],
+                    [
+                      1380.0,
+                      112.0
+                    ]
+                  ],
+                  "width": 18
+                },
+                [
+                  652,
+                  16,
+                  287,
+                  48
+                ],
+                [
+                  60,
+                  96,
+                  58,
+                  392
+                ],
+                [
+                  60,
+                  484,
+                  1380,
+                  160
+                ]
+              ],
+              "dim": [
+                0,
+                0,
+                1440,
+                770
+              ]
+            },
+            {
+              "x": 936,
+              "y": 16,
+              "w": 287,
+              "h": 48,
+              "term": "Competitor C",
+              "tip": "Shows this line on its own.",
+              "icon": false,
+              "targets": [
+                {
+                  "points": [
+                    [
+                      130.0,
+                      292.0
+                    ],
+                    [
+                      243.6,
+                      292.0
+                    ],
+                    [
+                      357.3,
+                      292.0
+                    ],
+                    [
+                      470.9,
+                      382.0
+                    ],
+                    [
+                      584.5,
+                      292.0
+                    ],
+                    [
+                      698.2,
+                      472.0
+                    ],
+                    [
+                      811.8,
+                      382.0
+                    ],
+                    [
+                      925.5,
+                      472.0
+                    ],
+                    [
+                      1039.1,
+                      472.0
+                    ],
+                    [
+                      1152.7,
+                      472.0
+                    ],
+                    [
+                      1266.4,
+                      472.0
+                    ],
+                    [
+                      1380.0,
+                      472.0
+                    ]
+                  ],
+                  "width": 18
+                },
+                [
+                  936,
+                  16,
+                  287,
+                  48
+                ],
+                [
+                  60,
+                  96,
+                  58,
+                  392
+                ],
+                [
+                  60,
+                  484,
+                  1380,
+                  160
+                ]
+              ],
+              "dim": [
+                0,
+                0,
+                1440,
+                770
+              ]
+            },
+            {
+              "x": 1220,
+              "y": 16,
+              "w": 218,
+              "h": 48,
+              "term": "3HAG line",
+              "tip": "Shows this line on its own.",
+              "icon": false,
+              "targets": [
+                {
+                  "points": [
+                    [
+                      130.0,
+                      112.0
+                    ],
+                    [
+                      243.6,
+                      202.0
+                    ],
+                    [
+                      357.3,
+                      112.0
+                    ],
+                    [
+                      470.9,
+                      202.0
+                    ],
+                    [
+                      584.5,
+                      202.0
+                    ],
+                    [
+                      698.2,
+                      112.0
+                    ],
+                    [
+                      811.8,
+                      292.0
+                    ],
+                    [
+                      925.5,
+                      292.0
+                    ],
+                    [
+                      1039.1,
+                      382.0
+                    ],
+                    [
+                      1152.7,
+                      382.0
+                    ],
+                    [
+                      1266.4,
+                      472.0
+                    ],
+                    [
+                      1380.0,
+                      382.0
+                    ]
+                  ],
+                  "width": 18
+                },
+                [
+                  1220,
+                  16,
+                  218,
+                  48
+                ],
+                [
+                  60,
+                  96,
+                  58,
+                  392
+                ],
+                [
+                  60,
+                  484,
+                  1380,
+                  160
+                ]
+              ],
+              "dim": [
+                0,
+                0,
+                1440,
+                770
+              ]
+            }
+          ],
+          "links": [
+            {
+              "x": 0,
+              "y": 664,
+              "w": 1440,
+              "h": 106,
+              "href": "https://docs.google.com/spreadsheets/d/1U7ezTJPoIBdC1HR5Z2H_XcRE0TcOxMHL4_XNJET0j3A/edit",
+              "label": "Attribution Map template"
+            }
+          ]
+        }
       }
     },
     {
@@ -668,12 +1173,6 @@
       }
     },
     {
-      "id": "kickoff:q4-plan",
-      "slides": [
-        "individual"
-      ]
-    },
-    {
       "id": "kickoff:q4-path",
       "slides": [
         "day2-close"
@@ -748,6 +1247,12 @@
           "Every leader shares the messages with their team the day after."
         ]
       }
+    },
+    {
+      "id": "kickoff:q4-plan",
+      "slides": [
+        "individual"
+      ]
     },
     {
       "id": "kickoff:q4-close"
