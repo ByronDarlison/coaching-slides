@@ -41,6 +41,7 @@
     "market",
     "example",
     "customer",
+    "score",
     "example",
     "line",
     "differentiators",
@@ -88,11 +89,11 @@
     "day2-sprint",
     "build",
     "check",
-    "individual",
     "day2-close",
     "daily-weekly",
     "email-check",
     "three-messages",
+    "individual",
     "homework",
     "homework-people",
     "outcomes-check",
@@ -292,243 +293,243 @@
     },
     {
       "number": 39,
+      "name": "q3-attribution-score",
+      "reference": "kickoff:q3-attribution#score"
+    },
+    {
+      "number": 40,
       "name": "q3-attribution-example",
       "reference": "kickoff:q3-attribution#example"
     },
     {
-      "number": 40,
+      "number": 41,
       "name": "q4-strategy-checks-line",
       "reference": "kickoff:q4-strategy-checks#line"
     },
     {
-      "number": 41,
+      "number": 42,
       "name": "q4-path-differentiators",
       "reference": "kickoff:q4-path#differentiators"
     },
     {
-      "number": 42,
+      "number": 43,
       "name": "q4-differentiators-example",
       "reference": "kickoff:q4-differentiators#example"
     },
     {
-      "number": 43,
+      "number": 44,
       "name": "q4-differentiators-write",
       "reference": "kickoff:q4-differentiators#write"
     },
     {
-      "number": 44,
+      "number": 45,
       "name": "q4-differentiators-group",
       "reference": "kickoff:q4-differentiators#group"
     },
     {
-      "number": 45,
+      "number": 46,
       "name": "q4-differentiators-agree",
       "reference": "kickoff:q4-differentiators#agree"
     },
     {
-      "number": 46,
+      "number": 47,
       "name": "q4-differentiators-connect",
       "reference": "kickoff:q4-differentiators#connect"
     },
     {
-      "number": 47,
+      "number": 48,
       "name": "q4-path-threehag",
       "reference": "kickoff:q4-path#threehag"
     },
     {
-      "number": 48,
+      "number": 49,
       "name": "q4-3hag-fresh",
       "reference": "kickoff:q4-3hag#fresh"
     },
     {
-      "number": 49,
+      "number": 50,
       "name": "q4-3hag-numbers",
       "reference": "kickoff:q4-3hag#numbers"
     },
     {
-      "number": 50,
+      "number": 51,
       "name": "q4-3hag-statement",
       "reference": "kickoff:q4-3hag#statement"
     },
     {
-      "number": 51,
+      "number": 52,
       "name": "q4-3hag-differentiators-in",
       "reference": "kickoff:q4-3hag#differentiators-in"
     },
     {
-      "number": 52,
+      "number": 53,
       "name": "q4-3hag-known-for",
       "reference": "kickoff:q4-3hag#known-for"
     },
     {
-      "number": 53,
+      "number": 54,
       "name": "q4-3hag-pass",
       "reference": "kickoff:q4-3hag#pass"
     },
     {
-      "number": 54,
+      "number": 55,
       "name": "q4-painted-picture-three-year",
       "reference": "kickoff:q4-painted-picture#three-year"
     },
     {
-      "number": 55,
+      "number": 56,
       "name": "q4-path-lanes",
       "reference": "kickoff:q4-path#lanes"
     },
     {
-      "number": 56,
+      "number": 57,
       "name": "q4-swim-lanes-definition",
       "reference": "kickoff:q4-swim-lanes#definition"
     },
     {
-      "number": 57,
+      "number": 58,
       "name": "q4-swim-lanes-outcomes",
       "reference": "kickoff:q4-swim-lanes#outcomes"
     },
     {
-      "number": 58,
+      "number": 59,
       "name": "q4-swim-lanes-milestones",
       "reference": "kickoff:q4-swim-lanes#milestones"
     },
     {
-      "number": 59,
+      "number": 60,
       "name": "q4-swim-lanes-build",
       "reference": "kickoff:q4-swim-lanes#build"
     },
     {
-      "number": 60,
+      "number": 61,
       "name": "q4-swim-lanes-pass",
       "reference": "kickoff:q4-swim-lanes#pass"
     },
     {
-      "number": 61,
+      "number": 62,
       "name": "day-one-close-close",
       "reference": "kickoff:day-one-close#close"
     },
     {
-      "number": 62,
+      "number": 63,
       "name": "q4-day-two-day-two",
       "reference": "kickoff:q4-day-two#day-two"
     },
     {
-      "number": 63,
+      "number": 64,
       "name": "day-two-opening-good-news",
       "reference": "kickoff:day-two-opening#good-news"
     },
     {
-      "number": 64,
+      "number": 65,
       "name": "day-two-opening-reflection",
       "reference": "kickoff:day-two-opening#reflection"
     },
     {
-      "number": 65,
+      "number": 66,
       "name": "day-two-opening-outcome-check",
       "reference": "kickoff:day-two-opening#outcome-check"
     },
     {
-      "number": 66,
+      "number": 67,
       "name": "day-two-opening-engagement-day-two",
       "reference": "kickoff:day-two-opening#engagement-day-two"
     },
     {
-      "number": 67,
+      "number": 68,
       "name": "q4-day-two-sleep",
       "reference": "kickoff:q4-day-two#sleep"
     },
     {
-      "number": 68,
+      "number": 69,
       "name": "q4-path-day2-status",
       "reference": "kickoff:q4-path#day2-status"
     },
     {
-      "number": 69,
+      "number": 70,
       "name": "quarterly-status-review",
       "reference": "kickoff:quarterly-status#review"
     },
     {
-      "number": 70,
+      "number": 71,
       "name": "q4-day-two-checklist",
       "reference": "kickoff:q4-day-two#checklist"
     },
     {
-      "number": 71,
+      "number": 72,
       "name": "q4-path-day2-forecast",
       "reference": "kickoff:q4-path#day2-forecast"
     },
     {
-      "number": 72,
+      "number": 73,
       "name": "q4-cash-review",
       "reference": "kickoff:q4-cash#review"
     },
     {
-      "number": 73,
+      "number": 74,
       "name": "q4-path-day2-annual",
       "reference": "kickoff:q4-path#day2-annual"
     },
     {
-      "number": 74,
+      "number": 75,
       "name": "q4-plan-annual-numbers",
       "reference": "kickoff:q4-plan#annual-numbers"
     },
     {
-      "number": 75,
+      "number": 76,
       "name": "q4-plan-annual-first",
       "reference": "kickoff:q4-plan#annual-first"
     },
     {
-      "number": 76,
+      "number": 77,
       "name": "priorities-quality",
       "reference": "kickoff:priorities#quality"
     },
     {
-      "number": 77,
+      "number": 78,
       "name": "annual-1hag-check",
       "reference": "kickoff:annual#1hag-check"
     },
     {
-      "number": 78,
+      "number": 79,
       "name": "q4-path-day2-quarter",
       "reference": "kickoff:q4-path#day2-quarter"
     },
     {
-      "number": 79,
+      "number": 80,
       "name": "quarterly-quarter-numbers",
       "reference": "kickoff:quarterly#quarter-numbers"
     },
     {
-      "number": 80,
+      "number": 81,
       "name": "quarterly-quarter-first",
       "reference": "kickoff:quarterly#quarter-first"
     },
     {
-      "number": 81,
+      "number": 82,
       "name": "quarterly-quarter-rest",
       "reference": "kickoff:quarterly#quarter-rest"
     },
     {
-      "number": 82,
+      "number": 83,
       "name": "quarterly-qhag-check",
       "reference": "kickoff:quarterly#qhag-check"
     },
     {
-      "number": 83,
+      "number": 84,
       "name": "q4-path-day2-sprint",
       "reference": "kickoff:q4-path#day2-sprint"
     },
     {
-      "number": 84,
+      "number": 85,
       "name": "q2-sprint-build",
       "reference": "kickoff:q2-sprint#build"
     },
     {
-      "number": 85,
+      "number": 86,
       "name": "q2-sprint-check",
       "reference": "kickoff:q2-sprint#check"
-    },
-    {
-      "number": 86,
-      "name": "q4-plan-individual",
-      "reference": "kickoff:q4-plan#individual"
     },
     {
       "number": 87,
@@ -552,26 +553,31 @@
     },
     {
       "number": 91,
+      "name": "q4-plan-individual",
+      "reference": "kickoff:q4-plan#individual"
+    },
+    {
+      "number": 92,
       "name": "q4-close-homework",
       "reference": "kickoff:q4-close#homework"
     },
     {
-      "number": 92,
+      "number": 93,
       "name": "q4-close-homework-people",
       "reference": "kickoff:q4-close#homework-people"
     },
     {
-      "number": 93,
+      "number": 94,
       "name": "q4-close-outcomes-check",
       "reference": "kickoff:q4-close#outcomes-check"
     },
     {
-      "number": 94,
+      "number": 95,
       "name": "closing-one-phrase",
       "reference": "kickoff:closing#one-phrase"
     },
     {
-      "number": 95,
+      "number": 96,
       "name": "closing-deck-link",
       "reference": "kickoff:closing#deck-link"
     }
@@ -838,21 +844,28 @@
     },
     {
       "reference": "kickoff:q4-strategy-checks#customer",
-      "sha256": "05d215e998625bbbc815166523d0cce7f7bf26a26d9b1627e8800f005acd549b",
+      "sha256": "4397f915cb065bd9397eaf04c01a3da5ff3c79d66a0aa7a999625b9ff7f89dfb",
       "artifact": "strategy",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and worksheet Build Up 3-5 Differentiators (prerequisite).",
       "artwork_sha256": "3e85552fbd151e04dadad05038d8b832c9c1126c9fbe280fc2c120f48a3a8b52"
     },
     {
+      "reference": "kickoff:q3-attribution#score",
+      "sha256": "d89235cb51d6e910babd8092808792e4ecbcd0e09bd874b213980c17576525be",
+      "artifact": "attribution-framework",
+      "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
+      "artwork_sha256": "347523d89834cd2ec35f90f14a099202053c298ba449bf627c5910eb01935931"
+    },
+    {
       "reference": "kickoff:q3-attribution#example",
-      "sha256": "7202e327e8ce6f2878f783db6ec7d90ca4786e9647bc63c57298a4f1cb096cd2",
+      "sha256": "d89235cb51d6e910babd8092808792e4ecbcd0e09bd874b213980c17576525be",
       "artifact": "attribution-framework",
       "seed": "Shannon Byrne Susko, STRATEGY: Attribution Map, and the Attribution Framework handout, Metronomics. Byron Darlison, How I Create Strategy (darlison.com).",
       "artwork_sha256": "869bcedfbe973d2b1fed813802ccf6037bf978f729a2a33709f16c115f4bb467"
     },
     {
       "reference": "kickoff:q4-strategy-checks#line",
-      "sha256": "05d215e998625bbbc815166523d0cce7f7bf26a26d9b1627e8800f005acd549b",
+      "sha256": "4397f915cb065bd9397eaf04c01a3da5ff3c79d66a0aa7a999625b9ff7f89dfb",
       "artifact": "strategy",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 and worksheet Build Up 3-5 Differentiators (prerequisite).",
       "artwork_sha256": "e757b7e395c5b9d8c03d260e2e9e2a3f45114128c5fcd0d458c1a1bfe2c4577a"
@@ -1006,7 +1019,7 @@
     },
     {
       "reference": "kickoff:q4-day-two#day-two",
-      "sha256": "b703f59d3591dd5b115c2d4473fcbac3d587b8d2a5a145adfc04ee01bb218701",
+      "sha256": "fdaa2e12545bde3feb4721c3c958dadd70950823195c3251e44c5661349b350d",
       "artifact": "day-two-opening",
       "seed": "Byron Darlison, The Eight Meetings That Run Your Company; Shannon Byrne Susko, Prep Surveys post and Metronomics Checklist Survey (19 statements and one question); Activity Fit Map playbook, Byron, 27-Sep-2026 (sleep on the differentiators).",
       "artwork_sha256": null
@@ -1041,7 +1054,7 @@
     },
     {
       "reference": "kickoff:q4-day-two#sleep",
-      "sha256": "b703f59d3591dd5b115c2d4473fcbac3d587b8d2a5a145adfc04ee01bb218701",
+      "sha256": "fdaa2e12545bde3feb4721c3c958dadd70950823195c3251e44c5661349b350d",
       "artifact": "day-two-opening",
       "seed": "Byron Darlison, The Eight Meetings That Run Your Company; Shannon Byrne Susko, Prep Surveys post and Metronomics Checklist Survey (19 statements and one question); Activity Fit Map playbook, Byron, 27-Sep-2026 (sleep on the differentiators).",
       "artwork_sha256": null
@@ -1062,7 +1075,7 @@
     },
     {
       "reference": "kickoff:q4-day-two#checklist",
-      "sha256": "b703f59d3591dd5b115c2d4473fcbac3d587b8d2a5a145adfc04ee01bb218701",
+      "sha256": "fdaa2e12545bde3feb4721c3c958dadd70950823195c3251e44c5661349b350d",
       "artifact": "day-two-opening",
       "seed": "Byron Darlison, The Eight Meetings That Run Your Company; Shannon Byrne Susko, Prep Surveys post and Metronomics Checklist Survey (19 statements and one question); Activity Fit Map playbook, Byron, 27-Sep-2026 (sleep on the differentiators).",
       "artwork_sha256": null
@@ -1076,10 +1089,10 @@
     },
     {
       "reference": "kickoff:q4-cash#review",
-      "sha256": "e1d0d6cc13e03397909afd418b9e8b41f824fe2ffc18e311993f41977b9d8343",
+      "sha256": "ff20f9fac3daab8ab4e2bd885667af8982e8fbf824541762fc4cb949e51a20e9",
       "artifact": "forecast",
       "seed": "Shannon Byrne Susko, Circle post Foundation Year: Q-4 (Cash System) and training of 26-Sep-2026; Byron Darlison, Cash! Who Owns the Forecast?; Byron, 16-Nov-2026 (Finance owns the model, each leader their assumptions, the CEO the total).",
-      "artwork_sha256": null
+      "artwork_sha256": "10bcae73287929e406429214b3609255cae9178a869ce9fb102ba84603750d71"
     },
     {
       "reference": "kickoff:q4-path#day2-annual",
@@ -1111,7 +1124,7 @@
     },
     {
       "reference": "kickoff:annual#1hag-check",
-      "sha256": "a65399162d73a2309057c6aadd0f59d307f8ffb00fc1d24fdcf62da308bcb21c",
+      "sha256": "8e5114c812a7a119170838f3e83a7799f71438bd353eb8bce87183587b7b119c",
       "artifact": "annual",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": null
@@ -1125,28 +1138,28 @@
     },
     {
       "reference": "kickoff:quarterly#quarter-numbers",
-      "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
+      "sha256": "4505e89ad12c7f820224682faabc32676dd7276fc8f475eb672a2c50b2684c8d",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": "5100f8b09d051fc31dea516dc761af07cfb75d0a9dd15b60566df02094ff1c3b"
     },
     {
       "reference": "kickoff:quarterly#quarter-first",
-      "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
+      "sha256": "4505e89ad12c7f820224682faabc32676dd7276fc8f475eb672a2c50b2684c8d",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": "555bd1b0acd5f4a609ed91bf2f9153f0b04ac3a24ac202e47d53b01f6df3cb7d"
     },
     {
       "reference": "kickoff:quarterly#quarter-rest",
-      "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
+      "sha256": "4505e89ad12c7f820224682faabc32676dd7276fc8f475eb672a2c50b2684c8d",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": "5321086edb43e52b8d2db7133588d33bdfa0f34c58d16bbc26b1a515f14b46a3"
     },
     {
       "reference": "kickoff:quarterly#qhag-check",
-      "sha256": "2c8ad36cebdd5f40d89156362913ed17958a6403435e30961940372ddc6bce39",
+      "sha256": "4505e89ad12c7f820224682faabc32676dd7276fc8f475eb672a2c50b2684c8d",
       "artifact": "quarterly",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics. Month-by-month QHAG numbers: Byron's ruling, 11 October 2026.",
       "artwork_sha256": null
@@ -1170,13 +1183,6 @@
       "sha256": "6ba55da9570a4020f9dfcb9141f292ac57e59c1f025c9f85a98b18325599840d",
       "artifact": "sprint-lanes",
       "seed": "Shannon Byrne Susko, EXECUTION: 13 Week Sprint Lanes, and the 13 Week Sprint Lanes template, Metronomics. Byron Darlison, Where Are You Going? (darlison.com): The QHAG and 13-Week Sprint.",
-      "artwork_sha256": null
-    },
-    {
-      "reference": "kickoff:q4-plan#individual",
-      "sha256": "60cfee7102b0ef83b826b61a3ce0ec0571b771358498870880143fe5f69dd2a1",
-      "artifact": "aligned-priorities",
-      "seed": "Shannon Byrne Susko, training of 26-Sep-2026 (individual priorities outside the meeting from the annual); Byron, 30-Sep-2026 (new 1HAG beside the previous one with its results); Byron, 17-Nov-2026 (weekly CEO email).",
       "artwork_sha256": null
     },
     {
@@ -1206,6 +1212,13 @@
       "artifact": "cascade-messages",
       "seed": "Shannon Byrne Susko, Master Deck with 2 Day Kick Off, November 2024, Metronomics.",
       "artwork_sha256": "a68a1f35b96db89cbad9cd4a4e24dd2ba1fa4cce3207b7b6830ccb11af911749"
+    },
+    {
+      "reference": "kickoff:q4-plan#individual",
+      "sha256": "60cfee7102b0ef83b826b61a3ce0ec0571b771358498870880143fe5f69dd2a1",
+      "artifact": "aligned-priorities",
+      "seed": "Shannon Byrne Susko, training of 26-Sep-2026 (individual priorities outside the meeting from the annual); Byron, 30-Sep-2026 (new 1HAG beside the previous one with its results); Byron, 17-Nov-2026 (weekly CEO email).",
+      "artwork_sha256": null
     },
     {
       "reference": "kickoff:q4-close#homework",

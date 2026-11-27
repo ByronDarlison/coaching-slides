@@ -408,7 +408,8 @@
           "The status review already showed where the 1HAG stands. Test it against the 3HAG line the team drew.",
           "Change only what fails or is no longer true. Anything that fails goes on the homework list with an owner.",
           "Measure success by a critical number where possible.",
-          "The 3HAG line is the test. A priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG."
+          "The 3HAG line is the test. A priority that builds an attribute the team chose to let drop no longer belongs on the 1HAG.",
+          "Ask of each priority: does it move its number enough, and soon enough to see?"
         ],
         "support": "In Metronome: open Annual Priorities. Read your 1HAG aloud.",
         "body": [
@@ -416,8 +417,8 @@
           "Each priority builds a 3HAG capability or moves a KFFM lever.",
           "No priority invests in an attribute you chose to let drop.",
           "Each measure has a target and an achieved-by date.",
-          "Each priority moves its number enough, and soon enough to see.",
-          "The 1HAG targets keep you on track for the 3HAG, the widgets support the revenue, and head count is set."
+          "The targets keep you on track for the 3HAG.",
+          "The widgets support the revenue, and head count is set."
         ],
         "artwork": null,
         "art_side": false,

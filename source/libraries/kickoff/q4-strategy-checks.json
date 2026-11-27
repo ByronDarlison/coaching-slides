@@ -36,6 +36,7 @@
       "support": "The same map, drawn as white space. Is there enough white between your 3HAG line and your best competitor?",
       "notes": [
         "Keep the team’s own Attribution Map on the screen. The example here shows how to read it as white space.",
+        "The link under the picture opens the Attribution Map template, in case the team needs it. Its second chart draws the white space once the 3HAG line is entered.",
         "Say what the line is for. It gives the company white space, so it does not compete head on. It makes the company unique and valuable.",
         "The dashed line is the best competitor score on each attribute. The white is the gap between it and the 3HAG line.",
         "Point to both sides. On the left the company invests to lead. On the right it gives things up, and it will not compete there.",
@@ -56,7 +57,21 @@
       "art_full": true,
       "artwork": {
         "src": "assets/q4-attribution-3hag.svg",
-        "alt": "A line graph for the example subscription company. Twelve market attributes run along the bottom: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. A green 3HAG line and a dashed Best competitor line cross the chart. The space between them is white on a gray ground. On the left the 3HAG line is above the competitor line, at 5 on speed of setup, price predictability and support from a person. That white is marked Invest. On the right the 3HAG line drops below it, to 2 on reporting and 1 on customization. That white is marked Give up. Where the two lines touch, on ease of use and reliability, there is no white. A faint line shows Us today."
+        "alt": "A line graph for the example subscription company. Twelve market attributes run along the bottom: speed of setup, ease of use, price predictability, reliability, billing simplicity, support from a person, security, integrations, reporting, feature breadth, customization and partner network. Scores run from 1 to 5. A green 3HAG line and a dashed Best competitor line cross the chart. The space between them is white on a gray ground. On the left the 3HAG line is above the competitor line, at 5 on speed of setup, price predictability and support from a person. That white is marked Invest. On the right the 3HAG line drops below it, to 2 on reporting and 1 on customization. That white is marked Give up. Where the two lines touch, on ease of use and reliability, there is no white. A faint line shows Us today.",
+        "viewbox": [
+          1440,
+          664
+        ],
+        "links": [
+          {
+            "x": 0,
+            "y": 16,
+            "w": 230,
+            "h": 52,
+            "href": "https://docs.google.com/spreadsheets/d/1U7ezTJPoIBdC1HR5Z2H_XcRE0TcOxMHL4_XNJET0j3A/edit",
+            "label": "Attribution Map template"
+          }
+        ]
       }
     }
   ]

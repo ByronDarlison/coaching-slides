@@ -428,7 +428,11 @@
       "art_full": true,
       "artwork": {
         "src": "assets/attribution-sheet-example.svg",
-        "alt": "The score table from the Attribution Map sheet, filled in for the example subscription company. Twelve attributes run down the side. Columns: Your Company Today, Competitor A, Competitor B, Competitor C and 3HAG Line. The first four columns hold scores from 1 to 5, the same scores as the example graph. The 3HAG Line column is empty and marked filled in later."
+        "alt": "The score table from the Attribution Map sheet, filled in for the example subscription company. Twelve attributes run down the side. Columns: Your Company Today, Competitor A, Competitor B, Competitor C and 3HAG Line. The first four columns hold scores from 1 to 5, the same scores as the example graph. The 3HAG Line column is empty and marked filled in later.",
+        "viewbox": [1440, 760],
+        "links": [
+          {"x": 220, "y": 8, "w": 640, "h": 92, "href": "https://docs.google.com/spreadsheets/d/1U7ezTJPoIBdC1HR5Z2H_XcRE0TcOxMHL4_XNJET0j3A/edit", "label": "Attribution Map sheet"}
+        ]
       },
       "notes": [
         "This is what the sheet looks like once the scores are in. The numbers are the example company’s, the same as on the example graph.",

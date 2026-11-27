@@ -57,8 +57,8 @@
     },
     {
       "id": "checklist",
-      "title": "What did the checklist survey tell us?",
-      "support": "Your coach shows the results of the yearly checklist: 19 statements, each true or false.",
+      "title": "How much of Metronomics is running after a year?",
+      "support": "This is the yearly Metronomics Checklist Survey, not the prep survey from yesterday. 19 statements, each true or false.",
       "body": [
         "Where do you all agree?",
         "Where do your answers differ?",
@@ -73,7 +73,7 @@
         "If the team has not taken it, assign it with a date and move on.",
         "Allow about 15 minutes."
       ],
-      "headline": "What did the checklist survey tell us?",
+      "headline": "How much of Metronomics is running after a year?",
       "layout": "comp-story",
       "group": "",
       "eyebrow": "",

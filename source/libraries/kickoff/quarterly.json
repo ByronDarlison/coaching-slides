@@ -210,7 +210,8 @@
       "layout": "comp-story",
       "group": "",
       "notes": [
-        "Read the QHAG aloud, top to bottom, then run the seven checks.",
+        "Read the QHAG aloud, top to bottom, then run the six checks.",
+        "Each priority is done by quarter end. Its success is measured by a critical number, preferably.",
         "Revenue and the widgets you count add up: the 3 months equal the quarter. Cash and head count are balances: the quarter ends at month 3’s number. Margin is for the whole quarter: the quarter’s profit over the quarter’s revenue.",
         "Anything that fails goes on the homework list with an owner."
       ],
@@ -221,12 +222,11 @@
       "support": "Read it aloud before you move on.",
       "body": [
         "Every number and priority has one owner with capacity.",
-        "Each priority advances a 1HAG priority, with success measured by a critical number, preferably.",
-        "Each priority is done by quarter end, with a target and an achieved-by date.",
+        "Each priority advances a 1HAG priority.",
+        "Each priority has a target and an achieved-by date.",
         "Each priority moves its number enough, and soon enough to see.",
-        "The targets are big enough to stay on track for the 1HAG.",
-        "The months build to the quarter. Revenue and widgets you count add up. Cash and head count match month 3.",
-        "Head count is set."
+        "The targets keep you on track for the 1HAG.",
+        "The months add up to the quarter, and head count is set."
       ],
       "eyebrow": "",
       "artwork": {
