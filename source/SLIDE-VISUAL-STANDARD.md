@@ -152,9 +152,9 @@ Cards share one shape: white panel, thin border, 4-pixel top border in the seque
 Bullets use green markers. Put the key term in bold blue.
 Define a term with a hover box on the term itself, never a side panel. Use the source's wording word for word.
 Open the hover box downward when the term sits near the top of the slide.
-For Coaching and Roundtable, every slide that uses a tool carries a clickable reference labelled with the tool name and **Instructions**. Use the tool's shared Instructions on [coach.darlison.com](https://coach.darlison.com). Open the link from the rendered slide and check that the audience can read the instructions. Use the named tool section as a draft reference if its Instructions are unavailable and record the gap.
+For each tool introduced, inspect the shared teaching slides. Select the definition, worked example and exercise that let participants use the tool in the room. Record the named sources and any material omissions in the ledger. When the room needs a framework to answer a question, teach it first.
 
-Put the action and the checks the room needs on the slide. Speaker notes carry only session-specific guidance, such as timing, prerequisites and facilitation cues. The shared Instructions hold the reusable procedure. This replaces the 22-Nov-2026 full-explanation rule (Byron, 28-Nov-2026). Keep sources and credits in the source records.
+Keep the room action on the projected slide. Speaker notes hold session-specific cues and the named coach reference to the tool’s shared Instructions on [coach.darlison.com](https://coach.darlison.com). Verify the reference from the notes panel. The coach uses the site to prepare. CEOs can complete the session without visiting it.
 EOA Meeting 4's `deck.css` in coaching-slides is the reference implementation until these patterns move into the shared shell.
 
 Composition badges stay hidden in audience view.

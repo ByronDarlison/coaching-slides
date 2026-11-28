@@ -345,11 +345,9 @@
         this.notesBody.appendChild(empty);
         return;
       }
-      notes.querySelectorAll("p").forEach((source) => {
-        const copy = document.createElement("p");
-        copy.textContent = source.textContent;
-        this.notesBody.appendChild(copy);
-      });
+      for (const item of notes.children) {
+        this.notesBody.appendChild(item.cloneNode(true));
+      }
     }
 
     toggleNotes(force) {

@@ -1349,6 +1349,9 @@ body.art-zoom-open { overflow: hidden; }
 /* Links a person can click (artwork "links", and the address beside a deck QR code). */
 .deck-link { color: var(--blue-deep, var(--blue)); text-decoration: underline; text-underline-offset: .18em; }
 .deck-link:hover { color: var(--blue); }
+.tool-instructions { display: flex; flex: 0 0 auto; flex-wrap: wrap; gap: .35rem 1.5rem; font-size: clamp(1rem, 1.35vw, 1.35rem); }
+.tool-instructions a { display: inline-flex; align-items: center; min-height: 44px; }
+.notes-body .tool-instructions a { color: inherit; }
 .deck-link:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; border-radius: 6px; }
 .art-link { position: absolute; display: block; border-radius: 10px; }
 .art-link:hover { box-shadow: 0 0 0 3px var(--blue); }

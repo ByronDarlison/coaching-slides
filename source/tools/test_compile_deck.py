@@ -20,6 +20,21 @@ sys.path.insert(0, str(TOOLS))
 import compile_deck  # noqa: E402
 
 
+def test_tool_instructions_on_a_text_slide() -> None:
+    slide = {"id": "exercise", "layout": "comp-story", "headline": "Work in pairs.",
+             "instructions": [{"tool": "Core Values", "href": "https://coach.darlison.com/#core-values"},
+                              {"tool": "Core Purpose", "href": "https://coach.darlison.com/#core-purpose"}]}
+    html = compile_deck.render_slide(slide, 1)
+    projected, notes = html.split('<aside class="speaker-notes">')
+    assert 'coach.darlison.com' not in projected
+    assert notes.count('target="_blank" rel="noopener"') == 2
+    assert "Core Values Instructions</a>" in html and "Core Purpose Instructions</a>" in html
+    compile_deck.check_no_network(html)
+    slide["instructions"][0]["href"] = "https://strategy.darlison.com/#core-values"
+    with pytest.raises(compile_deck.CompileError, match="coach.darlison.com"):
+        compile_deck.render_slide(slide, 1)
+
+
 def test_kickoff_playlist_units_resolve() -> None:
     playlist = compile_deck.load_playlist("kickoff")
     units = compile_deck.resolve_playlist(playlist)

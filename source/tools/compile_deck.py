@@ -121,6 +121,21 @@ def link_tag(href: str, extra: str = "") -> str:
     return f'<a class="{css}" href="{escape(safe_link(href))}" target="_blank" rel="noopener"'
 
 
+def instructions_html(unit: dict[str, Any]) -> str:
+    references = unit.get("instructions", [])
+    if not isinstance(references, list):
+        raise CompileError("instructions must be a list of tool references")
+    links = []
+    for reference in references:
+        if not isinstance(reference, dict) or not isinstance(reference.get("tool"), str) or not reference["tool"].strip():
+            raise CompileError("each Instructions reference needs a tool name")
+        href = safe_link(reference.get("href"))
+        if urlsplit(href).netloc != "coach.darlison.com":
+            raise CompileError("tool Instructions must link to coach.darlison.com")
+        links.append(f'{link_tag(href)}>{escape(reference["tool"].strip())} Instructions</a>')
+    return '<nav class="tool-instructions" aria-label="Tool instructions">' + "".join(links) + "</nav>" if links else ""
+
+
 def repo_root() -> Path:
     return PRESENTATIONS.parent.parent
 
@@ -846,7 +861,7 @@ def render_slide(unit: dict[str, Any], number: int, branding: dict[str, Any] | N
     css = "layout-title" if layout == "title" else layout
     return f'''    <section class="slide {css}" id="slide-{number}" data-name="{escape(unit.get('_name', ''))}"{' data-deck-qr="true"' if unit.get('deck_qr') is True else ''} data-group="{escape(unit.get('group', ''))}" data-title="{escape(title)}" data-unit="{escape(unit['id'])}" data-source="{escape(unit.get('_source', unit['id']))}">
       <div class="slide-content"><span class="slide-label">{number:02d} {layout}</span>{inner}{footer}</div>
-      <aside class="speaker-notes">{notes_html(unit.get('notes', []))}</aside>
+      <aside class="speaker-notes">{notes_html(unit.get('notes', []))}{instructions_html(unit)}</aside>
     </section>'''
 
 

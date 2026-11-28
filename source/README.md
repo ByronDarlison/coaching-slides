@@ -44,6 +44,7 @@ Each local library contains JSON units identified by filename and `id`.
 A unit can be one slide or an artifact containing a `slides` array.
 Each slide has its own stable `id`, `layout`, `title`, and `headline`.
 Optional fields include `support`, `body`, `eyebrow`, `group`, `tags`, `notes`, `seed`, and `artifact`.
+Set `group` on the first slide of each navigation section. Each nonempty value inserts a sidebar heading. When reusing a slide inside an existing section, clear its inherited group with `"override": {"group": ""}` if needed.
 Connected causal sequences accept up to three panels; decision layouts accept up to four.
 `panels` contains objects with `role`, `heading`, `support`, and `mark` (structure, action, or gap).
 For causal slides, `arrows: false` produces a summary row without connectors.
@@ -87,7 +88,15 @@ Mark a picture that holds a QR code with `"qr": true`. The compiler cannot see i
   "links": [{"x": 40, "y": 40, "w": 520, "h": 440, "href": "https://example.com/templates/one", "label": "12 month template"}]}
 ```
 
-A compiled deck still loads nothing from the network. These links are the one place an address may appear, and `check-shell.py` enforces that.
+**Shared tool Instructions.** Use an `instructions` entry on each slide that uses a tool. Supply the display name and the coach’s destination on coach.darlison.com. The compiler puts the clickable reference in the speaker notes. Verify it in the presenter notes panel. CEOs learn and use the tool from the projected teaching, examples, exercise and working materials. A named tool section may serve as a provisional coach reference while its Instructions are being completed.
+
+```json
+"instructions": [
+  {"tool": "Core Purpose", "href": "https://coach.darlison.com/#core-purpose"}
+]
+```
+
+The compiled deck bundles its assets locally. The shell permits external addresses in links a person chooses to open.
 
 **Hover terms.** `terms` on a slide is a list of words that show a definition box on hover, on keyboard focus, and as a tap-to-open sheet on a small screen. Each entry takes `term` and `tip` (one line or a list of lines). The first match is wrapped in each of these places: the slide title (and its `headline_accent`), `support` and each `body` line on a `comp-story` or `about-timeline` slide, and each card's `support` and `items`. The line under a card slide's title and the line on a `comp-rule` slide are not wrapped. A term is matched in the text as written, never inside another term's box. A term can also show a library picture with `image`, which takes a library-relative `src` and descriptive `alt`. With `image`, `tip` is optional. The picture is sized to stay inside the slide.
 
