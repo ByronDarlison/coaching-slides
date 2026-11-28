@@ -152,7 +152,9 @@ Cards share one shape: white panel, thin border, 4-pixel top border in the seque
 Bullets use green markers. Put the key term in bold blue.
 Define a term with a hover box on the term itself, never a side panel. Use the source's wording word for word.
 Open the hover box downward when the term sits near the top of the slide.
-Speaker notes hold the full explanation of the slide, in Byron's words, complete enough to draft an article from (Byron, 22-Nov-2026). Anything that must happen in the room goes on the slide, not in the notes. No sources or credits in the notes; keep them in the source records.
+For each tool introduced, inspect the shared teaching slides. Select the definition, worked example and exercise that let participants use the tool in the room. Record the named sources and any material omissions in the ledger. When the room needs a framework to answer a question, teach it first.
+
+Keep the room action on the projected slide. Speaker notes hold session-specific cues and the named coach reference to the tool’s shared Instructions on [coach.darlison.com](https://coach.darlison.com). Verify the reference from the notes panel. The coach uses the site to prepare. CEOs can complete the session without visiting it.
 EOA Meeting 4's `deck.css` in coaching-slides is the reference implementation until these patterns move into the shared shell.
 
 Composition badges stay hidden in audience view.

@@ -122,4 +122,4 @@ Items join the standing review block the month after they are coached:
 
 ## Speaker notes
 
-- Speaker notes carry only what the slide does not show: timing, facilitation cues, and anything the presenter must say that is not on screen. Do not repeat slide text in the notes.
+Follow the [shared slideshow standard](source/SLIDE-VISUAL-STANDARD.md#sequences-cards-and-emphasis) for tool Instructions references, room actions and session-specific notes.
